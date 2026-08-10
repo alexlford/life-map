@@ -1,0 +1,159 @@
+/* Visual alignment with alexlford.com
+   The surrounding site is clean and editorial, so the map keeps a restrained
+   navy/gold identity and uses category colors only as informational accents. */
+
+:root {
+  --ink: #f1f4f5;
+  --muted: #91a4b2;
+  --navy-950: #04131f;
+  --navy-900: #071d2d;
+  --navy-850: #0a2638;
+  --navy-800: #103247;
+  --panel: rgba(5, 20, 31, 0.91);
+  --panel-strong: rgba(4, 17, 29, 0.965);
+  --line: rgba(217, 169, 78, 0.24);
+  --line-soft: rgba(255, 255, 255, 0.085);
+  --gold: #d9a94e;
+  --gold-soft: #f1cd82;
+  --life: #e8a84c;
+  --education: #4ca6d8;
+  --home-campus: #f0c15c;
+  --ng-campus: #5b91c8;
+  --mission-site: #55ae9b;
+  --conference: #9276bd;
+  --professional-travel: #b77d96;
+  --shadow: 0 16px 46px rgba(0, 0, 0, 0.28);
+}
+
+body {
+  background: var(--navy-950);
+  font-family: "Helvetica Neue", Helvetica, Arial, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#map {
+  background: #88969f;
+}
+
+#map canvas {
+  filter: saturate(.42) brightness(.69) contrast(1.11) sepia(.035);
+}
+
+.map-tint {
+  background:
+    radial-gradient(circle at 72% 45%, transparent 0 24%, rgba(4,19,31,.08) 57%, rgba(4,19,31,.27) 100%),
+    linear-gradient(90deg, rgba(4,19,31,.46) 0, rgba(4,19,31,.18) 24%, rgba(4,19,31,.09) 72%, rgba(4,19,31,.30) 100%);
+}
+
+.map-grid {
+  opacity: .055;
+}
+
+.control-deck,
+.detail-panel {
+  border-color: rgba(217,169,78,.27);
+  box-shadow: var(--shadow);
+}
+
+.control-deck {
+  background:
+    linear-gradient(160deg, rgba(217,169,78,.045), transparent 24%),
+    var(--panel);
+}
+
+.detail-panel {
+  background:
+    linear-gradient(145deg, rgba(217,169,78,.055), transparent 27%),
+    var(--panel-strong);
+}
+
+.mode-switch {
+  border-color: rgba(217,169,78,.18);
+  background: rgba(4,19,31,.72);
+  box-shadow: 0 8px 30px rgba(0,0,0,.16), inset 0 0 0 1px rgba(255,255,255,.025);
+  backdrop-filter: blur(16px);
+}
+
+.mode-button.is-active {
+  color: #15202a;
+  background: var(--gold-soft);
+  box-shadow: 0 2px 10px rgba(217,169,78,.16);
+}
+
+.utility-button {
+  border-color: rgba(255,255,255,.075);
+  background: rgba(4,19,31,.72);
+  backdrop-filter: blur(16px);
+}
+
+.utility-button:hover,
+.utility-button[aria-pressed="true"] {
+  border-color: rgba(217,169,78,.29);
+  background: rgba(217,169,78,.065);
+}
+
+.search-box {
+  border-color: rgba(255,255,255,.075);
+  background: rgba(0,0,0,.14);
+}
+
+.search-box:focus-within {
+  border-color: rgba(217,169,78,.42);
+  box-shadow: 0 0 0 3px rgba(217,169,78,.05);
+}
+
+.filter-chip {
+  border-color: rgba(255,255,255,.07);
+  background: rgba(255,255,255,.018);
+}
+
+.filter-chip.is-active {
+  background: rgba(255,255,255,.045);
+}
+
+/* Tightened category palette. Inline values from the data UI are intentionally
+   overridden here so category color remains secondary to navy + gold. */
+.filter-chip[data-category="life"] { --chip-color: var(--life) !important; }
+.filter-chip[data-category="education"] { --chip-color: var(--education) !important; }
+.filter-chip[data-category="home-campus"] { --chip-color: var(--home-campus) !important; }
+.filter-chip[data-category="ng-campus"] { --chip-color: var(--ng-campus) !important; }
+.filter-chip[data-category="mission-site"] { --chip-color: var(--mission-site) !important; }
+.filter-chip[data-category="conference"] { --chip-color: var(--conference) !important; }
+.filter-chip[data-category="professional-travel"] { --chip-color: var(--professional-travel) !important; }
+
+.journey-stat,
+.career-chapter,
+.place-story {
+  border-color: rgba(217,169,78,.19);
+}
+
+.career-chapter::before,
+.place-story::before {
+  background: linear-gradient(90deg, var(--gold), transparent 80%);
+}
+
+.career-chapter:hover,
+.career-chapter.is-active {
+  border-color: rgba(217,169,78,.38);
+  background: rgba(217,169,78,.055);
+}
+
+.place-story {
+  background:
+    linear-gradient(145deg, rgba(217,169,78,.06), transparent 35%),
+    rgba(255,255,255,.018);
+}
+
+/* alexlford.com itself is intentionally spare. Remove a little dashboard-like
+   decoration in embed mode while preserving the aviation/navigation character. */
+body.is-embedded .control-deck::before {
+  opacity: .42;
+}
+
+body.is-embedded .map-grid {
+  opacity: .04;
+}
+
+body.is-embedded .panel-code,
+body.is-embedded .map-status-bar {
+  letter-spacing: .11em;
+}
