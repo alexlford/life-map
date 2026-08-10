@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the life-map source data and a few important geography invariants."""
+"""Validate the life-map source data and important geography invariants."""
 
 from __future__ import annotations
 
@@ -10,6 +10,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PLACES_PATH = ROOT / "data" / "places.json"
 EXPERIENCES_PATH = ROOT / "data" / "experiences.json"
+
+WORK_CATEGORIES = {"home-campus", "ng-campus", "mission-site", "conference"}
 
 
 def load(path: Path):
@@ -52,20 +54,32 @@ def main() -> None:
 
     for e in experiences:
         assert e["placeId"] in by_id, f"Unknown placeId in {e['id']}: {e['placeId']}"
+        if e["domain"] == "work":
+            assert e["category"] in WORK_CATEGORIES, (
+                f"Unexpected work category in {e['id']}: {e['category']}. "
+                f"Allowed: {sorted(WORK_CATEGORIES)}"
+            )
 
-    # Mid-Atlantic sanity check: Washington, DC is east and slightly north of DARPA HQ in Arlington.
+    # Mid-Atlantic sanity: DC is east/slightly north of DARPA; BWI is north/west of Annapolis.
     dc = by_id["washington-dc"]
     darpa = by_id["darpa-hq"]
     assert dc["coordinates"]["lng"] > darpa["coordinates"]["lng"], "DC must plot east of DARPA HQ"
     assert dc["coordinates"]["lat"] > darpa["coordinates"]["lat"], "DC must plot north of DARPA HQ"
 
-    # UK sanity check: RAF Molesworth and RAF Alconbury are close neighbors, not distant UK points.
+    bwi = by_id["ng-bwi"]
+    annapolis = by_id["ng-annapolis"]
+    assert bwi["coordinates"]["lat"] > annapolis["coordinates"]["lat"], "BWI must plot north of Annapolis"
+    assert bwi["coordinates"]["lng"] < annapolis["coordinates"]["lng"], "BWI must plot west of Annapolis"
+
+    # UK sanity: the two RAF sites are close neighbors at nearly the same latitude.
     molesworth = by_id["raf-molesworth"]
     alconbury = by_id["raf-alconbury"]
     uk_distance = distance_miles(molesworth, alconbury)
     assert 6.0 < uk_distance < 10.0, f"Molesworth/Alconbury distance looks wrong: {uk_distance:.2f} mi"
+    assert abs(molesworth["coordinates"]["lat"] - alconbury["coordinates"]["lat"]) < 0.02
+    assert molesworth["coordinates"]["lng"] < alconbury["coordinates"]["lng"], "Molesworth must plot west of Alconbury"
 
-    # Guam sanity checks: Apra Harbor is southwest; Camp Blaz and Andersen are clustered in the north.
+    # Guam sanity: Apra Harbor is southwest; Camp Blaz and Andersen are clustered in the north.
     naval = by_id["naval-base-guam"]
     blaz = by_id["camp-blaz"]
     andersen = by_id["andersen-afb"]
@@ -74,14 +88,32 @@ def main() -> None:
     assert blaz["coordinates"]["lng"] < andersen["coordinates"]["lng"], "Camp Blaz must plot west of Andersen AFB"
     assert distance_miles(blaz, andersen) < 7.0, "Camp Blaz and Andersen AFB should be a tight northern Guam cluster"
 
-    # Southern California sanity checks: Space Park and LA SFB are in the LA South Bay cluster; Azusa is east.
+    # Colorado Springs: Schriever is east of Peterson.
+    schriever = by_id["schriever-sfb"]
+    peterson = by_id["peterson-sfb"]
+    assert schriever["coordinates"]["lng"] > peterson["coordinates"]["lng"], "Schriever must plot east of Peterson"
+
+    # Dayton: Wright-Patterson is east/northeast of the NG Beavercreek/Dayton campus.
+    dayton = by_id["ng-dayton"]
+    wright_patt = by_id["wright-patterson-afb"]
+    assert wright_patt["coordinates"]["lng"] > dayton["coordinates"]["lng"], "WPAFB must plot east of the NG Dayton campus"
+    assert wright_patt["coordinates"]["lat"] > dayton["coordinates"]["lat"], "WPAFB must plot north of the NG Dayton campus"
+
+    # Southern California: Space Park and LA SFB are a tight South Bay cluster; Azusa is east.
     space_park = by_id["ng-space-park"]
     la_sfb = by_id["los-angeles-sfb"]
     azusa = by_id["ng-azusa"]
     assert distance_miles(space_park, la_sfb) < 5.0, "Space Park and LA SFB should plot near one another"
+    assert space_park["coordinates"]["lat"] < la_sfb["coordinates"]["lat"], "Space Park should plot south of LA SFB"
     assert azusa["coordinates"]["lng"] > la_sfb["coordinates"]["lng"], "Azusa should plot east of the LA South Bay sites"
 
+    # Known exact conference venue should remain in the Waltham location envelope.
+    waltham = by_id["westin-waltham-boston"]
+    assert abs(waltham["coordinates"]["lat"] - 42.39485) < 0.01
+    assert abs(waltham["coordinates"]["lng"] - (-71.25975)) < 0.01
+
     print(f"OK: {len(places)} places, {len(experiences)} experiences")
+    print(f"Work categories: {', '.join(sorted(WORK_CATEGORIES))}")
     print(f"RAF Molesworth ↔ RAF Alconbury: {uk_distance:.2f} mi")
     print(f"Camp Blaz ↔ Andersen AFB: {distance_miles(blaz, andersen):.2f} mi")
     print(f"Space Park ↔ Los Angeles SFB: {distance_miles(space_park, la_sfb):.2f} mi")
