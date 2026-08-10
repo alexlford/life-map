@@ -10,7 +10,8 @@
     : (embedded ? 'work' : null);
   const requestedProjection = params.get('projection');
   const requestedPlace = params.get('place');
-  const requestedYear = Number(params.get('year'));
+  const requestedYearRaw = params.get('year');
+  const requestedYear = requestedYearRaw === null ? NaN : Number(requestedYearRaw);
   const requestedTimeline = truthy(params.get('timeline')) || Number.isFinite(requestedYear);
 
   if (embedded) {
@@ -25,7 +26,7 @@
 
     if (requestedMode) activateMode(requestedMode);
     if (requestedTimeline) activateTimeline(requestedYear);
-    if (requestedProjection === 'globe') activateGlobe();
+    if (requestedProjection === 'globe') activateGlobeWhenReady();
     if (requestedPlace) openInitialPlace(requestedPlace);
 
     bindUrlState();
@@ -51,9 +52,22 @@
     }
   }
 
-  function activateGlobe() {
+  function activateGlobeWhenReady() {
     const button = document.getElementById('projection-button');
-    if (button && button.getAttribute('aria-pressed') !== 'true') button.click();
+    const status = document.getElementById('map-status-text');
+    if (!button) return;
+
+    let attempts = 0;
+    const timer = window.setInterval(() => {
+      const mapReady = status && !/NOMINAL|LOAD/i.test(status.textContent || '');
+      if (mapReady) {
+        window.clearInterval(timer);
+        if (button.getAttribute('aria-pressed') !== 'true') button.click();
+        return;
+      }
+      attempts += 1;
+      if (attempts >= 80) window.clearInterval(timer);
+    }, 100);
   }
 
   function openInitialPlace(placeId) {
@@ -67,7 +81,7 @@
         return;
       }
       attempts += 1;
-      if (attempts >= 50) window.clearInterval(timer);
+      if (attempts >= 80) window.clearInterval(timer);
     }, 100);
   }
 
