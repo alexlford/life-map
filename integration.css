@@ -141,23 +141,45 @@ body.is-embedded .maplibregl-ctrl-bottom-right {
     font-size: 10px;
   }
 
+  /* Mobile uses one vertically scrollable sheet. The desktop control deck has
+     overflow:hidden because only the place list scrolls; on iOS that clips the
+     lower sections once the sheet is height-constrained. */
   body.is-embedded .control-deck {
     top: auto;
     left: 10px;
     right: 10px;
-    bottom: 10px;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
     width: auto;
-    max-height: 46%;
+    max-height: min(54dvh, 560px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
     border-radius: 11px;
+  }
+
+  body.is-embedded .control-deck .list-section {
+    flex: 0 0 auto;
+    min-height: auto;
+  }
+
+  body.is-embedded .control-deck .place-list {
+    max-height: none;
+    overflow: visible;
   }
 
   body.is-embedded .detail-panel {
     left: 10px;
     right: 10px;
     top: auto;
-    bottom: 10px;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
     width: auto;
-    max-height: 60%;
+    max-height: min(68dvh, 660px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
     border-radius: 11px;
   }
 
@@ -178,4 +200,8 @@ body.is-embedded .maplibregl-ctrl-bottom-right {
   body.is-embedded .mode-button { padding-inline: 8px; }
   body.is-embedded .top-actions { gap: 4px; }
   body.is-embedded .utility-button { width: 32px; height: 32px; }
+
+  body.is-embedded .control-deck {
+    max-height: min(56dvh, 570px);
+  }
 }
