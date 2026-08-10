@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#071827" />
+  <meta name="description" content="An interactive map of the places that have shaped Alex Ford's life, education, and professional work." />
+  <title>Life Map | Alex Ford</title>
+
+  <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-block">
+        <span class="eyebrow">ALEX FORD // PERSONAL ATLAS</span>
+        <h1>Life Map</h1>
+        <p>Places that shaped my life, education, and work.</p>
+      </div>
+
+      <nav class="mode-switch" aria-label="Map view">
+        <button class="mode-button is-active" data-mode="combined" type="button">Combined</button>
+        <button class="mode-button" data-mode="life" type="button">Life</button>
+        <button class="mode-button" data-mode="work" type="button">Work</button>
+      </nav>
+
+      <div class="top-actions">
+        <button id="projection-button" class="utility-button" type="button" aria-pressed="false">
+          <span class="button-icon" aria-hidden="true">◉</span>
+          <span>Globe</span>
+        </button>
+        <button id="reset-view-button" class="utility-button" type="button">
+          <span class="button-icon" aria-hidden="true">⌖</span>
+          <span>Reset</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="map-stage">
+      <div id="map" role="application" aria-label="Interactive map of life and work locations"></div>
+      <div class="map-tint" aria-hidden="true"></div>
+      <div class="map-grid" aria-hidden="true"></div>
+
+      <aside class="control-deck" aria-label="Map controls">
+        <div class="deck-header">
+          <div>
+            <span class="panel-code">MAP // 01</span>
+            <h2>Explore the journey</h2>
+          </div>
+          <div class="location-counter" aria-live="polite">
+            <strong id="visible-count">0</strong>
+            <span>places</span>
+          </div>
+        </div>
+
+        <label class="search-box" for="place-search">
+          <span aria-hidden="true">⌕</span>
+          <input id="place-search" type="search" autocomplete="off" placeholder="Search a place or experience" />
+        </label>
+        <div id="search-results" class="search-results" hidden></div>
+
+        <section class="control-section" aria-labelledby="filters-heading">
+          <div class="section-heading-row">
+            <h3 id="filters-heading">Layers</h3>
+            <button id="clear-filters-button" class="text-button" type="button">Show all</button>
+          </div>
+          <div id="category-filters" class="filter-grid"></div>
+        </section>
+
+        <section class="control-section timeline-section" aria-labelledby="timeline-heading">
+          <div class="section-heading-row">
+            <h3 id="timeline-heading">Timeline</h3>
+            <button id="timeline-all-button" class="text-button is-active" type="button">Use timeline</button>
+          </div>
+          <div class="timeline-readout">
+            <span>1988</span>
+            <strong id="timeline-year">Present</strong>
+          </div>
+          <input id="timeline-slider" type="range" min="1988" max="2026" step="1" value="2026" aria-label="Show map through year" disabled />
+          <p id="timeline-note" class="microcopy">Turn on the timeline to build the story year by year. Undated work travel remains in the all-time view.</p>
+        </section>
+
+        <section class="control-section list-section" aria-labelledby="places-heading">
+          <div class="section-heading-row">
+            <h3 id="places-heading">Visible places</h3>
+            <span id="sort-caption" class="micro-label">Priority</span>
+          </div>
+          <div id="place-list" class="place-list"></div>
+        </section>
+      </aside>
+
+      <aside id="detail-panel" class="detail-panel" aria-live="polite" aria-label="Place details" hidden>
+        <button id="detail-close" class="detail-close" type="button" aria-label="Close place details">×</button>
+        <div id="detail-content"></div>
+      </aside>
+
+      <div class="map-status-bar" aria-hidden="true">
+        <span>GLOBAL / INTERACTIVE</span>
+        <span class="status-line"></span>
+        <span id="map-status-text">ALL SYSTEMS NOMINAL</span>
+      </div>
+
+      <noscript>
+        <div class="noscript-card">This map needs JavaScript enabled to load its interactive layers.</div>
+      </noscript>
+    </main>
+  </div>
+</body>
+</html>

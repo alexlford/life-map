@@ -2,32 +2,50 @@
 
 A live, expandable map of the places that have shaped my personal, educational, and professional life.
 
-The project is designed around two linked datasets:
+The site is intentionally data-first. Geography lives in structured JSON, while the interface turns that data into an interactive atlas with filtering, clustering, a timeline, search, and place detail cards.
 
-- `data/places.json` — canonical geographic places with coordinates, precision, region, and source metadata.
-- `data/experiences.json` — life, education, and work experiences that reference those places.
+## Live site
 
-Keeping **places** separate from **experiences** lets one place support multiple chapters of the story without duplicating coordinates. It also makes the map easy to expand as new locations are added.
+GitHub Pages is configured from the repository's `main` branch at the repository root:
 
-## Map views
+`https://alexlford.github.io/life-map/`
 
-The eventual website should support three primary views:
+## Interactive views
+
+The map supports three primary views:
 
 1. **Life** — birthplace, residences, and education.
 2. **Work** — home campuses, other Northrop Grumman campuses, government/military mission sites, conferences, and professional travel.
-3. **Combined** — the full geographic timeline with filters.
+3. **Combined** — the full geographic story with all layers available.
+
+The interface also includes:
+
+- category layer filters;
+- a cumulative year-by-year timeline for experiences with recorded dates;
+- clustered markers for dense regions;
+- exact-coordinate detail cards;
+- place and experience search;
+- flat-map and globe projections;
+- responsive desktop and mobile layouts.
 
 ## Design direction
 
 - Modern air-travel aesthetic: dark navy, warm gold, restrained blue/teal/purple accents.
-- Interactive map first; static poster graphics can be generated from the same data.
+- Interactive map first; static poster graphics can be generated from the same data later.
 - No decorative travel-route lines by default.
 - Exact facility coordinates are used when a specific campus/base/site is known.
 - City-center coordinates are deliberately used when the history is known only to the city level; the data records that lower precision explicitly rather than implying an exact former address.
-- Dense regions should be handled by zoom, clustering, and responsive label/card behavior rather than hard-coded poster insets.
-- The architecture should scale cleanly to future locations in **Alaska**, **Australia**, and elsewhere.
+- Dense regions are handled by zoom, clustering, and responsive labels rather than hard-coded poster insets.
+- The architecture is designed to scale cleanly to future locations in **Alaska**, **Australia**, and elsewhere.
 
-## Data principles
+## Data model
+
+The project uses two linked datasets:
+
+- `data/places.json` — canonical geographic places with coordinates, precision, region, and source metadata.
+- `data/experiences.json` — life, education, and work experiences that reference those places.
+
+Keeping **places** separate from **experiences** lets one place support multiple chapters of the story without duplicating coordinates.
 
 Every place has a stable `id`, coordinates, a `coordinatePrecision` value, verification metadata, and source information. Exact sites and representative city points are never treated as equivalent.
 
@@ -55,15 +73,35 @@ The seed data includes:
 
 ## Geography rules
 
-The map UI must never place a marker "by eye." Marker locations come directly from `data/places.json`.
+The map UI never places a marker "by eye." Marker locations come directly from `data/places.json`.
 
-A few important spatial checks are encoded in the seed data:
+Important spatial checks are encoded in the data validator:
 
 - Washington, DC is east and slightly north of DARPA Headquarters in Arlington.
 - RAF Molesworth and RAF Alconbury are only about 7.4 great-circle miles apart using the stored reference points.
 - On Guam, Naval Base Guam is at Apra Harbor on the west-central coast; Camp Blaz is in northern Guam; Andersen AFB is farther east/northeast.
 - Space Park, Los Angeles SFB, and Los Angeles conference travel are all in the Los Angeles metro area; Azusa is east of the core LA cluster.
 
-## Next build step
+Run the validator with:
 
-Use these files as the source of truth for an interactive web map with filtering, a timeline control, marker clustering, and detail cards. A global overview should gracefully accommodate Hawaii now and Alaska/Australia later without redesigning the data model.
+```bash
+python scripts/validate_data.py
+```
+
+JavaScript syntax is also checked in CI with:
+
+```bash
+node --check app.js
+```
+
+## Mapping stack
+
+The site is a dependency-light static build using **MapLibre GL JS** and OpenFreeMap vector tiles. It requires no API key and can be served directly through GitHub Pages.
+
+Local development only needs a static HTTP server, for example:
+
+```bash
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
