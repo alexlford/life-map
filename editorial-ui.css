@@ -1,0 +1,190 @@
+/* Editorial cleanup for the alexlford.com Experience-page embed.
+   The parent page owns the page title. The map should feel like an immersive
+   feature, not a separate operations dashboard. */
+
+body.is-embedded .panel-code,
+body.is-embedded .map-status-bar,
+body.is-embedded .micro-label {
+  display: none;
+}
+
+body.is-embedded .map-grid {
+  opacity: .018;
+}
+
+body.is-embedded .control-deck,
+body.is-embedded .detail-panel {
+  border-color: rgba(255,255,255,.10);
+  box-shadow: 0 16px 44px rgba(0,0,0,.24);
+}
+
+body.is-embedded .control-deck::before {
+  display: none;
+}
+
+body.is-embedded .deck-header {
+  align-items: center;
+  padding: 18px 18px 13px;
+}
+
+body.is-embedded .deck-header h2 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: -.025em;
+  line-height: 1.1;
+}
+
+body.is-embedded .location-counter strong {
+  color: var(--gold-soft);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+body.is-embedded .location-counter span {
+  color: #8395a2;
+  font-size: 9px;
+  letter-spacing: .04em;
+  text-transform: none;
+}
+
+body.is-embedded .control-section {
+  border-top-color: rgba(255,255,255,.055);
+}
+
+body.is-embedded .section-heading-row h3,
+body.is-embedded .chapter-heading span {
+  color: #cbd4da;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  text-transform: none;
+}
+
+body.is-embedded .chapter-heading small {
+  color: #7d909d;
+}
+
+body.is-embedded .career-chapter {
+  border-color: rgba(255,255,255,.075);
+  background: rgba(255,255,255,.018);
+}
+
+body.is-embedded .career-chapter::before {
+  height: 1px;
+  opacity: .48;
+}
+
+body.is-embedded .career-chapter-period {
+  color: var(--gold);
+  font-family: inherit;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .025em;
+  text-transform: none;
+}
+
+body.is-embedded .career-chapter strong {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+body.is-embedded .career-chapter-location {
+  color: #8194a1;
+  font-size: 8px;
+}
+
+body.is-embedded .search-box {
+  border-color: rgba(255,255,255,.08);
+  border-radius: 8px;
+}
+
+body.is-embedded .filter-chip {
+  border-color: rgba(255,255,255,.06);
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+body.is-embedded .filter-chip.is-active {
+  border-color: rgba(255,255,255,.12);
+  background: rgba(255,255,255,.04);
+}
+
+body.is-embedded .place-row-copy strong {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+body.is-embedded .place-row-meta {
+  font-family: inherit;
+  font-size: 8px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+body.is-embedded .detail-kicker,
+body.is-embedded .place-story-eyebrow,
+body.is-embedded .detail-section-label {
+  font-family: inherit;
+  letter-spacing: .035em;
+}
+
+body.is-embedded .detail-title {
+  font-weight: 500;
+  letter-spacing: -.03em;
+}
+
+body.is-embedded .place-story h3 {
+  font-weight: 500;
+  letter-spacing: -.025em;
+}
+
+body.is-embedded .place-story {
+  border-color: rgba(255,255,255,.09);
+}
+
+body.is-embedded .mode-switch,
+body.is-embedded .utility-button {
+  border-color: rgba(255,255,255,.10);
+}
+
+body.is-embedded .mode-button {
+  font-weight: 600;
+}
+
+body.is-embedded .mode-button.is-active {
+  background: var(--gold-soft);
+}
+
+@media (min-width: 721px) {
+  body.is-embedded .control-deck {
+    width: min(344px, calc(100vw - 28px));
+  }
+
+  body.is-embedded .journey-overview {
+    padding-inline: 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  body.is-embedded .deck-header {
+    padding: 14px 14px 10px;
+  }
+
+  body.is-embedded .deck-header h2 {
+    font-size: 18px;
+  }
+
+  body.is-embedded .journey-overview {
+    padding-inline: 12px;
+  }
+
+  body.is-embedded .career-chapter-track {
+    gap: 6px;
+  }
+
+  body.is-embedded .career-chapter {
+    flex-basis: 126px;
+  }
+}

@@ -3,6 +3,24 @@
   "updated": "2026-08-10",
   "careerChapters": [
     {
+      "id": "lawrence",
+      "period": "2010–2017",
+      "placeId": "ku-strong-hall",
+      "location": "Lawrence, Kansas",
+      "title": "Physics & Research",
+      "role": "Graduate Assistant",
+      "summary": "Graduate research and teaching in physics, including theoretical astrophysics, plasma physics, computational work, and undergraduate instruction."
+    },
+    {
+      "id": "charleston",
+      "period": "2017–2018",
+      "placeId": "charleston-sc",
+      "location": "Charleston, South Carolina",
+      "title": "Physics Project Management",
+      "role": "Physics Project Manager",
+      "summary": "A short transition from academia into industry, leading physics courseware work before moving into defense engineering."
+    },
+    {
       "id": "baltimore",
       "period": "2018–2021",
       "placeId": "ng-bwi",
@@ -31,8 +49,30 @@
     }
   ],
   "places": {
+    "ku-strong-hall": {
+      "eyebrow": "CAREER BASE // 2010–2017",
+      "headline": "Where physics became a profession",
+      "summary": "Lawrence was the center of my graduate research and teaching years at the University of Kansas and the starting point of my professional technical journey.",
+      "highlights": [
+        "Completed graduate research in theoretical astrophysics and plasma physics.",
+        "Taught undergraduate physics laboratories as instructor of record.",
+        "Built the first-principles and computational foundation that continues to shape my engineering work."
+      ],
+      "chapter": "Physics & Research"
+    },
+    "charleston-sc": {
+      "eyebrow": "CAREER BASE // 2017–2018",
+      "headline": "The bridge from academia to industry",
+      "summary": "Charleston was a short but important transition chapter. I moved from academic physics into industry as a Physics Project Manager at Hawkes Learning before beginning my engineering career in Baltimore.",
+      "highlights": [
+        "Led development of physics courseware for universities and colleges.",
+        "Applied technical depth in a product and project-management environment.",
+        "Spent approximately three months in Charleston before moving to Baltimore."
+      ],
+      "chapter": "Physics Project Management"
+    },
     "ng-bwi": {
-      "eyebrow": "CAREER HOME BASE // 2018–2021",
+      "eyebrow": "CAREER BASE // 2018–2021",
       "headline": "From RF design to engineering leadership",
       "summary": "BWI was the first Northrop Grumman home base in my career. I started as a Principal Engineer in RF/Microwave Design and later moved into hardware engineering management.",
       "highlights": [
@@ -43,7 +83,7 @@
       "chapter": "RF & Hardware"
     },
     "ng-boulder": {
-      "eyebrow": "CAREER HOME BASE // 2021–2025",
+      "eyebrow": "CAREER BASE // 2021–2025",
       "headline": "Scaling from subsystem engineering to systems leadership",
       "summary": "The Boulder Gunbarrel District became my home base as I moved into Space Systems and broader systems engineering leadership.",
       "highlights": [
@@ -54,7 +94,7 @@
       "chapter": "Systems Engineering Leadership"
     },
     "ng-aurora": {
-      "eyebrow": "CAREER HOME BASE // 2025–PRESENT",
+      "eyebrow": "CAREER BASE // 2025–PRESENT",
       "headline": "Back to a fully technical systems role",
       "summary": "Aurora marks the next chapter: Senior Staff Engineer, Systems, with a focus on lead systems engineering and technical mission execution.",
       "highlights": [

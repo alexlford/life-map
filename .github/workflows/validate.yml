@@ -21,6 +21,7 @@ jobs:
           node --check app.js
           node --check integration.js
           node --check story.js
+          node --check editorial-ui.js
 
       - name: Validate map data
         run: |
