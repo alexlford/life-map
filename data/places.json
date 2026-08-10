@@ -1,0 +1,738 @@
+{
+  "version": 1,
+  "updated": "2026-08-10",
+  "places": [
+    {
+      "id": "peoria-il",
+      "name": "Peoria",
+      "displayName": "Peoria, Illinois",
+      "kind": "city",
+      "city": "Peoria",
+      "region": "IL",
+      "country": "US",
+      "mapRegion": "midwest",
+      "coordinates": {
+        "lat": 40.6939,
+        "lng": -89.5891
+      },
+      "coordinatePrecision": "city",
+      "verificationStatus": "verified_representative",
+      "source": {
+        "name": "Mapcarta / OpenStreetMap / GeoNames",
+        "url": "https://mapcarta.com/Peoria_%28Illinois%29"
+      }
+    },
+    {
+      "id": "lewistown-il",
+      "name": "Lewistown",
+      "displayName": "Lewistown, Illinois",
+      "kind": "city",
+      "city": "Lewistown",
+      "region": "IL",
+      "country": "US",
+      "mapRegion": "midwest",
+      "coordinates": {
+        "lat": 40.3931,
+        "lng": -90.15484
+      },
+      "coordinatePrecision": "city",
+      "verificationStatus": "verified_representative",
+      "source": {
+        "name": "Mapcarta / OpenStreetMap / GeoNames",
+        "url": "https://mapcarta.com/22145008"
+      }
+    },
+    {
+      "id": "carterville-il",
+      "name": "Carterville",
+      "displayName": "Carterville, Illinois",
+      "kind": "city",
+      "city": "Carterville",
+      "region": "IL",
+      "country": "US",
+      "mapRegion": "midwest",
+      "coordinates": {
+        "lat": 37.76194,
+        "lng": -89.07727
+      },
+      "coordinatePrecision": "city",
+      "verificationStatus": "verified_representative",
+      "source": {
+        "name": "Mapcarta / OpenStreetMap / GeoNames",
+        "url": "https://mapcarta.com/20816300"
+      }
+    },
+    {
+      "id": "uiuc-alma-mater",
+      "name": "University of Illinois Urbana-Champaign",
+      "displayName": "University of Illinois Urbana-Champaign",
+      "kind": "university",
+      "city": "Urbana-Champaign",
+      "region": "IL",
+      "country": "US",
+      "mapRegion": "midwest",
+      "address": "1409 W Green St, Urbana, IL 61801",
+      "coordinates": {
+        "lat": 40.109912,
+        "lng": -88.228396
+      },
+      "coordinatePrecision": "campus",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "University of Illinois iCAP Places — Alma Mater",
+        "url": "https://icapdevel.web.illinois.edu/places/places-listing"
+      },
+      "coordinateNote": "Alma Mater / central campus landmark used as the map anchor."
+    },
+    {
+      "id": "ku-strong-hall",
+      "name": "University of Kansas",
+      "displayName": "University of Kansas — Lawrence Campus",
+      "kind": "university",
+      "city": "Lawrence",
+      "region": "KS",
+      "country": "US",
+      "mapRegion": "great-plains",
+      "address": "1450 Jayhawk Blvd, Lawrence, KS 66045",
+      "coordinates": {
+        "lat": 38.95844,
+        "lng": -95.24773
+      },
+      "coordinatePrecision": "campus",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "University of Kansas Strong Hall",
+        "url": "https://places.ku.edu/buildings/strong-hall"
+      },
+      "coordinateSource": {
+        "name": "Mapcarta / OpenStreetMap",
+        "url": "https://mapcarta.com/26813384"
+      },
+      "coordinateNote": "Strong Hall, KU's main administration building, used as the Lawrence-campus anchor."
+    },
+    {
+      "id": "charleston-sc",
+      "name": "Charleston",
+      "displayName": "Charleston, South Carolina",
+      "kind": "city",
+      "city": "Charleston",
+      "region": "SC",
+      "country": "US",
+      "mapRegion": "southeast",
+      "coordinates": {
+        "lat": 32.7884,
+        "lng": -79.9399
+      },
+      "coordinatePrecision": "city",
+      "verificationStatus": "verified_representative",
+      "source": {
+        "name": "Mapcarta / OpenStreetMap / GeoNames",
+        "url": "https://mapcarta.com/Charleston_%28South_Carolina%29"
+      }
+    },
+    {
+      "id": "baltimore-md",
+      "name": "Baltimore",
+      "displayName": "Baltimore, Maryland",
+      "kind": "city",
+      "city": "Baltimore",
+      "region": "MD",
+      "country": "US",
+      "mapRegion": "mid-atlantic",
+      "coordinates": {
+        "lat": 39.2909,
+        "lng": -76.6108
+      },
+      "coordinatePrecision": "city",
+      "verificationStatus": "verified_representative",
+      "source": {
+        "name": "Mapcarta / OpenStreetMap / GeoNames",
+        "url": "https://mapcarta.com/Baltimore"
+      }
+    },
+    {
+      "id": "denver-co",
+      "name": "Denver",
+      "displayName": "Denver, Colorado",
+      "kind": "city",
+      "city": "Denver",
+      "region": "CO",
+      "country": "US",
+      "mapRegion": "colorado-front-range",
+      "coordinates": {
+        "lat": 39.7392,
+        "lng": -104.9849
+      },
+      "coordinatePrecision": "city",
+      "verificationStatus": "verified_representative",
+      "source": {
+        "name": "Mapcarta / OpenStreetMap / GeoNames",
+        "url": "https://mapcarta.com/Denver"
+      }
+    },
+    {
+      "id": "ng-bwi",
+      "name": "Northrop Grumman BWI Campus",
+      "displayName": "NG BWI",
+      "kind": "corporate-campus",
+      "city": "Linthicum",
+      "region": "MD",
+      "country": "US",
+      "mapRegion": "mid-atlantic",
+      "address": "7323 Aviation Blvd, Linthicum, MD 21240",
+      "coordinates": {
+        "lat": 39.18364,
+        "lng": -76.68821
+      },
+      "coordinatePrecision": "building",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "OpenStreetMap building at 7323 Aviation Boulevard",
+        "url": "https://mapcarta.com/W112599711"
+      }
+    },
+    {
+      "id": "ng-boulder",
+      "name": "Northrop Grumman Boulder Campus",
+      "displayName": "Boulder Gunbarrel District",
+      "kind": "corporate-campus",
+      "city": "Boulder",
+      "region": "CO",
+      "country": "US",
+      "mapRegion": "colorado-front-range",
+      "address": "6120 Longbow Dr, Boulder, CO 80301",
+      "coordinates": {
+        "lat": 40.0642688,
+        "lng": -105.2112544
+      },
+      "coordinatePrecision": "building",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Northrop Grumman Federal Credit Union branch directory",
+        "url": "https://www.ngfcu.us/atms-and-branches/branches"
+      },
+      "coordinateSource": {
+        "name": "electronics.org company directory",
+        "url": "https://www.electronics.org/de/member-directory/571695/company-details"
+      },
+      "coordinateNote": "Source listing contains an apparent street-number typo, but its coordinate is for the Northrop Grumman Longbow campus and aligns with independently verified 6120 Longbow Drive address."
+    },
+    {
+      "id": "ng-aurora",
+      "name": "Northrop Grumman Aurora Campus",
+      "displayName": "Aurora Campus",
+      "kind": "corporate-campus",
+      "city": "Aurora",
+      "region": "CO",
+      "country": "US",
+      "mapRegion": "colorado-front-range",
+      "address": "17455 E Exposition Dr, Aurora, CO 80017",
+      "coordinates": {
+        "lat": 39.70558,
+        "lng": -104.78459
+      },
+      "coordinatePrecision": "building",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "OpenStreetMap building",
+        "url": "https://mapcarta.com/W143684748"
+      }
+    },
+    {
+      "id": "ng-azusa",
+      "name": "Northrop Grumman Azusa",
+      "displayName": "Azusa",
+      "kind": "corporate-campus",
+      "city": "Azusa",
+      "region": "CA",
+      "country": "US",
+      "mapRegion": "southern-california",
+      "address": "1111 W 3rd St, Azusa, CA 91702",
+      "coordinates": {
+        "lat": 34.126687,
+        "lng": -117.9266142
+      },
+      "coordinatePrecision": "building",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "OSHA / industry directory address and geocoded facility point",
+        "url": "https://www.osha.gov/"
+      }
+    },
+    {
+      "id": "ng-melbourne",
+      "name": "Northrop Grumman Melbourne",
+      "displayName": "Melbourne",
+      "kind": "corporate-campus",
+      "city": "Melbourne",
+      "region": "FL",
+      "country": "US",
+      "mapRegion": "florida",
+      "address": "2000 W NASA Blvd, Melbourne, FL 32904",
+      "coordinates": {
+        "lat": 28.092863,
+        "lng": -80.6523466
+      },
+      "coordinatePrecision": "building",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Northrop Grumman / public business records for 2000 W NASA Blvd",
+        "url": "https://www.northropgrumman.com/"
+      }
+    },
+    {
+      "id": "ng-colorado-springs",
+      "name": "Northrop Grumman Colorado Springs",
+      "displayName": "Colorado Springs Campus",
+      "kind": "corporate-campus",
+      "city": "Colorado Springs",
+      "region": "CO",
+      "country": "US",
+      "mapRegion": "colorado-front-range",
+      "address": "3535 Northrop Grumman Point, Colorado Springs, CO 80916",
+      "coordinates": {
+        "lat": 38.7794613,
+        "lng": -104.7019525
+      },
+      "coordinatePrecision": "building",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Northrop Grumman Federal Credit Union branch directory",
+        "url": "https://www.ngfcu.us/atms-and-branches/branches"
+      }
+    },
+    {
+      "id": "ng-space-park",
+      "name": "Northrop Grumman Space Park",
+      "displayName": "Space Park",
+      "kind": "corporate-campus",
+      "city": "Redondo Beach",
+      "region": "CA",
+      "country": "US",
+      "mapRegion": "southern-california",
+      "address": "One Space Park, Redondo Beach, CA 90278",
+      "coordinates": {
+        "lat": 33.8937972,
+        "lng": -118.3728567
+      },
+      "coordinatePrecision": "campus",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Northrop Grumman Space Park address",
+        "url": "https://www.northropgrumman.com/"
+      }
+    },
+    {
+      "id": "ng-dayton",
+      "name": "Northrop Grumman Dayton",
+      "displayName": "Dayton",
+      "kind": "corporate-campus",
+      "city": "Beavercreek",
+      "region": "OH",
+      "country": "US",
+      "mapRegion": "ohio",
+      "address": "4065 Colonel Glenn Hwy, Beavercreek, OH 45431",
+      "coordinates": {
+        "lat": 39.7730037,
+        "lng": -84.0822936
+      },
+      "coordinatePrecision": "building",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Industry directory / facility address",
+        "url": "https://www.electronics.org/"
+      }
+    },
+    {
+      "id": "ng-huntsville",
+      "name": "Northrop Grumman Huntsville",
+      "displayName": "Huntsville",
+      "kind": "corporate-campus",
+      "city": "Huntsville",
+      "region": "AL",
+      "country": "US",
+      "mapRegion": "southeast",
+      "address": "301 Voyager Way NW, Huntsville, AL 35806",
+      "coordinates": {
+        "lat": 34.7149164,
+        "lng": -86.6817498
+      },
+      "coordinatePrecision": "building",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Cummings Research Park / industry directory",
+        "url": "https://cummingsresearchpark.com/"
+      }
+    },
+    {
+      "id": "ng-annapolis",
+      "name": "Northrop Grumman Annapolis",
+      "displayName": "Annapolis",
+      "kind": "corporate-campus",
+      "city": "Annapolis",
+      "region": "MD",
+      "country": "US",
+      "mapRegion": "mid-atlantic",
+      "address": "895 Oceanic Dr, Annapolis, MD 21409",
+      "coordinates": {
+        "lat": 39.007722,
+        "lng": -76.40875
+      },
+      "coordinatePrecision": "building",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Public facility/FCC site records for 895 Oceanic Drive",
+        "url": "https://www.fcc.gov/"
+      }
+    },
+    {
+      "id": "schriever-sfb",
+      "name": "Schriever Space Force Base",
+      "displayName": "Schriever SFB",
+      "kind": "military-installation",
+      "city": "Colorado Springs",
+      "region": "CO",
+      "country": "US",
+      "mapRegion": "colorado-front-range",
+      "coordinates": {
+        "lat": 38.803306,
+        "lng": -104.526
+      },
+      "coordinatePrecision": "installation",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Wikidata installation reference point",
+        "url": "https://www.wikidata.org/"
+      }
+    },
+    {
+      "id": "buckley-sfb",
+      "name": "Buckley Space Force Base",
+      "displayName": "Buckley SFB",
+      "kind": "military-installation",
+      "city": "Aurora",
+      "region": "CO",
+      "country": "US",
+      "mapRegion": "colorado-front-range",
+      "coordinates": {
+        "lat": 39.7017611,
+        "lng": -104.7519611
+      },
+      "coordinatePrecision": "installation",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "FAA/AirNav airfield reference point",
+        "url": "https://www.airnav.com/"
+      }
+    },
+    {
+      "id": "los-angeles-sfb",
+      "name": "Los Angeles Space Force Base",
+      "displayName": "Los Angeles SFB",
+      "kind": "military-installation",
+      "city": "El Segundo",
+      "region": "CA",
+      "country": "US",
+      "mapRegion": "southern-california",
+      "coordinates": {
+        "lat": 33.918931,
+        "lng": -118.381042
+      },
+      "coordinatePrecision": "installation",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "California CEQA / Los Angeles AFB project coordinates",
+        "url": "https://www.spaceforce.mil/"
+      }
+    },
+    {
+      "id": "wright-patterson-afb",
+      "name": "Wright-Patterson Air Force Base",
+      "displayName": "Wright-Patterson AFB",
+      "kind": "military-installation",
+      "city": "Dayton",
+      "region": "OH",
+      "country": "US",
+      "mapRegion": "ohio",
+      "coordinates": {
+        "lat": 39.8259705,
+        "lng": -84.0461028
+      },
+      "coordinatePrecision": "installation",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "FAA/AirNav airfield reference point",
+        "url": "https://www.airnav.com/"
+      }
+    },
+    {
+      "id": "peterson-sfb",
+      "name": "Peterson Space Force Base",
+      "displayName": "Peterson SFB",
+      "kind": "military-installation",
+      "city": "Colorado Springs",
+      "region": "CO",
+      "country": "US",
+      "mapRegion": "colorado-front-range",
+      "coordinates": {
+        "lat": 38.82357,
+        "lng": -104.69501
+      },
+      "coordinatePrecision": "installation",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "OpenStreetMap/GeoNames installation reference point",
+        "url": "https://mapcarta.com/26880188"
+      }
+    },
+    {
+      "id": "darpa-hq",
+      "name": "DARPA Headquarters",
+      "displayName": "DARPA Headquarters",
+      "kind": "government-site",
+      "city": "Arlington",
+      "region": "VA",
+      "country": "US",
+      "mapRegion": "mid-atlantic",
+      "address": "675 N Randolph St, Arlington, VA 22203",
+      "coordinates": {
+        "lat": 38.87874,
+        "lng": -77.1086
+      },
+      "coordinatePrecision": "building",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "DARPA/USAGov address + OpenStreetMap building point",
+        "url": "https://www.darpa.mil/"
+      }
+    },
+    {
+      "id": "andersen-afb",
+      "name": "Andersen Air Force Base",
+      "displayName": "Andersen AFB",
+      "kind": "military-installation",
+      "city": "Yigo",
+      "region": "GU",
+      "country": "US",
+      "mapRegion": "guam",
+      "coordinates": {
+        "lat": 13.5838861,
+        "lng": 144.9300556
+      },
+      "coordinatePrecision": "installation",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "FAA Guam aerodrome reference point",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aip_html/part3_ad_2.0_guam.html"
+      }
+    },
+    {
+      "id": "naval-base-guam",
+      "name": "Naval Base Guam",
+      "displayName": "Naval Base Guam",
+      "kind": "military-installation",
+      "city": "Santa Rita",
+      "region": "GU",
+      "country": "US",
+      "mapRegion": "guam",
+      "coordinates": {
+        "lat": 13.4406,
+        "lng": 144.664475
+      },
+      "coordinatePrecision": "installation",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Library of Congress historic U.S. Naval Operating Base / Apra Harbor facility point",
+        "url": "https://www.loc.gov/"
+      },
+      "coordinateNote": "Map anchor represents the installation at Apra Harbor on Guam's west-central coast."
+    },
+    {
+      "id": "camp-blaz",
+      "name": "Marine Corps Base Camp Blaz",
+      "displayName": "Camp Blaz",
+      "kind": "military-installation",
+      "city": "Dededo",
+      "region": "GU",
+      "country": "US",
+      "mapRegion": "guam",
+      "coordinates": {
+        "lat": 13.5698056,
+        "lng": 144.8406944
+      },
+      "coordinatePrecision": "installation",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Wikidata installation coordinate",
+        "url": "https://www.wikidata.org/wiki/Q105750380"
+      }
+    },
+    {
+      "id": "raf-molesworth",
+      "name": "RAF Molesworth",
+      "displayName": "RAF Molesworth",
+      "kind": "military-installation",
+      "city": "Molesworth",
+      "region": "England",
+      "country": "GB",
+      "mapRegion": "great-britain",
+      "coordinates": {
+        "lat": 52.379389,
+        "lng": -0.405
+      },
+      "coordinatePrecision": "installation",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Wikidata installation coordinate",
+        "url": "https://www.wikidata.org/"
+      }
+    },
+    {
+      "id": "raf-alconbury",
+      "name": "RAF Alconbury",
+      "displayName": "RAF Alconbury",
+      "kind": "military-installation",
+      "city": "Alconbury",
+      "region": "England",
+      "country": "GB",
+      "mapRegion": "great-britain",
+      "coordinates": {
+        "lat": 52.373056,
+        "lng": -0.229167
+      },
+      "coordinatePrecision": "installation",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Wikidata installation coordinate",
+        "url": "https://www.wikidata.org/"
+      },
+      "coordinateNote": "Stored reference point is ~7.4 great-circle miles from RAF Molesworth."
+    },
+    {
+      "id": "washington-dc",
+      "name": "Washington",
+      "displayName": "Washington, DC",
+      "kind": "city",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "mapRegion": "mid-atlantic",
+      "coordinates": {
+        "lat": 38.895,
+        "lng": -77.0367
+      },
+      "coordinatePrecision": "city",
+      "verificationStatus": "verified_representative",
+      "source": {
+        "name": "Representative Washington, DC city point",
+        "url": "https://www.openstreetmap.org/"
+      },
+      "coordinateNote": "City-level professional travel; not intended to imply a specific building. This point is east and slightly north of DARPA HQ in Arlington."
+    },
+    {
+      "id": "kirtland-afb",
+      "name": "Kirtland Air Force Base",
+      "displayName": "Kirtland AFB",
+      "kind": "military-installation",
+      "city": "Albuquerque",
+      "region": "NM",
+      "country": "US",
+      "mapRegion": "southwest",
+      "coordinates": {
+        "lat": 35.040278,
+        "lng": -106.609167
+      },
+      "coordinatePrecision": "installation",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "Wikidata / airbase reference point",
+        "url": "https://www.wikidata.org/"
+      }
+    },
+    {
+      "id": "los-angeles-ca",
+      "name": "Los Angeles",
+      "displayName": "Los Angeles, California",
+      "kind": "city",
+      "city": "Los Angeles",
+      "region": "CA",
+      "country": "US",
+      "mapRegion": "southern-california",
+      "coordinates": {
+        "lat": 34.0537,
+        "lng": -118.2428
+      },
+      "coordinatePrecision": "city",
+      "verificationStatus": "verified_representative",
+      "source": {
+        "name": "Mapcarta / OpenStreetMap / GeoNames",
+        "url": "https://mapcarta.com/Los_Angeles"
+      }
+    },
+    {
+      "id": "big-sky-mt",
+      "name": "Big Sky",
+      "displayName": "Big Sky, Montana",
+      "kind": "city",
+      "city": "Big Sky",
+      "region": "MT",
+      "country": "US",
+      "mapRegion": "rocky-mountains",
+      "coordinates": {
+        "lat": 45.259,
+        "lng": -111.3087
+      },
+      "coordinatePrecision": "city",
+      "verificationStatus": "verified_representative",
+      "source": {
+        "name": "Mapcarta / OpenStreetMap / GeoNames",
+        "url": "https://mapcarta.com/Big_Sky"
+      }
+    },
+    {
+      "id": "westin-waltham-boston",
+      "name": "The Westin Waltham Boston",
+      "displayName": "The Westin Waltham Boston",
+      "kind": "conference-venue",
+      "city": "Waltham",
+      "region": "MA",
+      "country": "US",
+      "mapRegion": "new-england",
+      "address": "70 3rd Ave, Waltham, MA 02451",
+      "coordinates": {
+        "lat": 42.39485,
+        "lng": -71.25975
+      },
+      "coordinatePrecision": "venue",
+      "verificationStatus": "verified_exact",
+      "source": {
+        "name": "OpenStreetMap / GeoNames hotel point",
+        "url": "https://mapcarta.com/25298636"
+      },
+      "venueVerification": {
+        "name": "2019 IEEE International Symposium on Phased Array Systems and Technology venue listing",
+        "url": "https://www.militaryaerospace.com/directory/event/14061656/mercury-systems-2019-ieee-international-symposium-on-phased-array-systems-and-technology"
+      }
+    },
+    {
+      "id": "honolulu-hi",
+      "name": "Honolulu",
+      "displayName": "Honolulu, Hawaii",
+      "kind": "city",
+      "city": "Honolulu",
+      "region": "HI",
+      "country": "US",
+      "mapRegion": "hawaii",
+      "coordinates": {
+        "lat": 21.30333,
+        "lng": -157.85722
+      },
+      "coordinatePrecision": "city",
+      "verificationStatus": "verified_representative",
+      "source": {
+        "name": "Downtown Honolulu representative point",
+        "url": "https://mapcarta.com/Honolulu/Downtown"
+      }
+    }
+  ]
+}
