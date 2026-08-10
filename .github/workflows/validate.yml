@@ -22,4 +22,6 @@ jobs:
           node --check story.js
 
       - name: Validate map data
-        run: python scripts/validate_data.py
+        run: |
+          python scripts/validate_data.py
+          python scripts/validate_stories.py
