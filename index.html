@@ -4,12 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#04131f" />
+  <meta name="color-scheme" content="dark" />
   <meta name="description" content="An interactive geographic timeline of the places that have shaped Alex Ford's life, education, and professional work." />
   <title>Life Map | Alex Ford</title>
   <link rel="dns-prefetch" href="//a.basemaps.cartocdn.com" />
   <link rel="preconnect" href="https://a.basemaps.cartocdn.com" crossorigin />
-  <link rel="stylesheet" href="./fast-app.css?v=20260810-1505" />
-  <script defer src="./fast-app.js?v=20260810-1505"></script>
+  <link rel="stylesheet" href="./fast-app.css?v=20260810-1722" />
+  <script defer src="./fast-app.js?v=20260810-1722"></script>
 </head>
 <body>
   <main class="app">
@@ -26,9 +27,9 @@
     </div>
 
     <nav id="modeSwitch" class="mode-switch" aria-label="Map view">
-      <button type="button" data-mode="combined">Combined</button>
-      <button type="button" data-mode="life">Life</button>
-      <button type="button" data-mode="work">Work</button>
+      <button type="button" data-mode="combined" aria-pressed="false">Combined</button>
+      <button type="button" data-mode="life" aria-pressed="false">Life</button>
+      <button type="button" data-mode="work" aria-pressed="false">Work</button>
     </nav>
 
     <div class="map-toolbar" aria-label="Map controls">
@@ -40,7 +41,7 @@
     <aside class="panel" aria-label="Journey controls">
       <div class="panel-head">
         <div><small>Alex Ford · Experience</small><h1 id="panelTitle">Explore the journey</h1></div>
-        <div class="count"><strong id="count">0</strong><span>places</span></div>
+        <div class="count" aria-live="polite"><strong id="count">0</strong><span>places</span></div>
       </div>
 
       <section id="journey" class="journey">
@@ -55,14 +56,14 @@
         </div>
 
         <section class="section">
-          <div class="section-title"><h2>Show on map</h2></div>
+          <div class="section-title"><h2>Show on map</h2><button id="showAll" class="text-button" type="button">Show all</button></div>
           <div id="filters" class="filters"></div>
         </section>
 
         <section class="section">
-          <div class="section-title"><h2>Timeline</h2><button id="timelineToggle" class="text-button" type="button">Use timeline</button></div>
-          <div class="timeline-row"><input id="timeline" type="range" min="1988" max="2026" value="2026" disabled /><span id="timelineYear" class="timeline-year">Present</span></div>
-          <p class="micro">Build the journey year by year. Undated work travel remains in the all-time view.</p>
+          <div class="section-title"><h2>Timeline</h2><button id="timelineToggle" class="text-button" type="button" aria-pressed="false">Use timeline</button></div>
+          <div class="timeline-row"><input id="timeline" type="range" min="1988" max="2026" value="2026" disabled aria-label="Show experiences through year" /><span id="timelineYear" class="timeline-year">Present</span></div>
+          <p id="timelineNote" class="micro">Turn on the timeline to build the journey year by year.</p>
         </section>
 
         <section class="section">
@@ -72,12 +73,10 @@
       </div>
     </aside>
 
-    <aside id="detail" class="detail-panel" aria-live="polite" hidden>
+    <aside id="detail" class="detail-panel" aria-live="polite" aria-label="Place details" hidden>
       <button class="detail-close" type="button" data-close-detail aria-label="Close details">×</button>
       <div id="detailBody"></div>
     </aside>
-
-    <div class="status">Local interface · basemap loads progressively</div>
 
     <noscript><div class="empty">JavaScript is required to display the interactive locations.</div></noscript>
   </main>
