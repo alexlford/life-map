@@ -2,6 +2,14 @@
 
 The Life Map remains a standalone, version-controlled application in this repository while also supporting an embed mode for the Experience section of **alexlford.com**.
 
+## Architecture recommendation
+
+While alexlford.com remains on Squarespace, use the map as a **first-class full-width embed inside the existing Experience page** rather than sending visitors to a separate GitHub Pages site.
+
+This keeps the native alexlford.com navigation, page title, footer, SEO content, and surrounding professional timeline in one place while letting the map remain independently version-controlled and deployable. The iframe is an implementation detail; visually the map should read as the centerpiece of the page.
+
+Keep the standalone GitHub Pages URL for development, testing, deep links, and direct sharing. If alexlford.com later moves to a code-first framework, the preferred end state is to mount this application natively at `/experience` and retire the iframe without changing the data model.
+
 ## Production embed URL
 
 Use the Work view by default on the professional Experience page:
@@ -10,11 +18,11 @@ Use the Work view by default on the professional Experience page:
 https://alexlford.github.io/life-map/?embed=1&mode=work
 ```
 
-The `embed=1` flag removes the standalone branding and switches the application to a compact layout designed to feel like a native interactive feature inside alexlford.com.
+The `embed=1` flag removes standalone branding and switches the application to a full-bleed layout with floating map controls. The native alexlford.com page should provide the `My Professional Journey` heading and introductory copy.
 
 ## Experience-page presentation
 
-The embedded Work view is designed to act as the centerpiece of the Experience page rather than as a standalone novelty map. It now includes:
+The embedded Work view is designed to act as the centerpiece of the Experience page rather than as a standalone novelty map. It includes:
 
 - a compact professional-footprint summary,
 - three career chapters anchored to BWI, Boulder, and Aurora,
@@ -23,6 +31,17 @@ The embedded Work view is designed to act as the centerpiece of the Experience p
 - collapsed coordinate/source metadata so the professional story is presented before the mapping mechanics.
 
 Curated public-facing copy lives in `data/stories.json`. Coordinates remain canonical in `data/places.json`; the story layer never changes marker placement.
+
+## Visual relationship to alexlford.com
+
+The parent site is intentionally spare and editorial. The map should complement that rather than duplicate the surrounding page chrome.
+
+- The map is an intentional dark, immersive break inside the otherwise clean site.
+- Deep navy and warm gold are the visual identity.
+- Category colors are restrained informational accents.
+- Career home bases receive gold beacon/ring treatment so they read differently from destinations.
+- Embed mode removes the duplicate map title and uses floating controls, allowing the parent page to supply the page hierarchy.
+- Typography is kept neutral and modern so the interactive feature does not feel like a separate branded microsite.
 
 ## Recommended Squarespace code block
 
@@ -46,19 +65,21 @@ Curated public-facing copy lives in `data/stories.json`. Coordinates remain cano
   #alexford-life-map {
     display: block;
     width: 100%;
-    height: clamp(720px, 84svh, 980px);
+    height: clamp(720px, 86svh, 1000px);
     border: 0;
-    background: #04111d;
+    background: #04131f;
   }
 
   @media (max-width: 767px) {
     #alexford-life-map {
-      height: 80svh;
+      height: 82svh;
       min-height: 640px;
     }
   }
 </style>
 ```
+
+For the cleanest result, place the iframe in a full-width section with minimal top/bottom padding. Do not repeat a second heading immediately inside the map.
 
 ## URL state / deep links
 

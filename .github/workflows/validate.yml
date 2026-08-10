@@ -17,6 +17,7 @@ jobs:
 
       - name: Check JavaScript syntax
         run: |
+          node --check map-theme.js
           node --check app.js
           node --check integration.js
           node --check story.js
