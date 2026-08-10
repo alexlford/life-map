@@ -1,0 +1,24 @@
+.conference-entry .place-copy strong {
+  color: #f2edf8;
+  font-weight: 760;
+}
+
+.conference-entry .place-copy span {
+  color: #8f9fac;
+}
+
+.map-label.conference-map-label {
+  border-left: 2px solid #9276bd;
+  color: #e1d7f0;
+  background: rgba(14, 16, 29, .84);
+}
+
+.conference-detail .detail h2 {
+  max-width: 34ch;
+}
+
+@media (max-width: 430px) {
+  .conference-entry .place-copy strong {
+    line-height: 1.2;
+  }
+}

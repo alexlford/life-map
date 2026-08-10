@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "updated": "2026-08-10",
+  "conferences": [
+    {
+      "experienceId": "conference-kirtland-afb",
+      "placeId": "kirtland-afb",
+      "eventName": "VOLTRON Meeting",
+      "shortName": "VOLTRON",
+      "locationLabel": "Kirtland AFB · Albuquerque, New Mexico",
+      "organization": "Air Force Research Laboratory"
+    },
+    {
+      "experienceId": "conference-los-angeles",
+      "placeId": "los-angeles-ca",
+      "eventName": "Ground System Architectures Workshop (GSAW)",
+      "shortName": "GSAW",
+      "locationLabel": "Los Angeles, California",
+      "organization": "The Aerospace Corporation"
+    },
+    {
+      "experienceId": "conference-big-sky",
+      "placeId": "big-sky-mt",
+      "eventName": "IEEE Aerospace Conference",
+      "shortName": "IEEE Aerospace Conference",
+      "locationLabel": "Big Sky, Montana",
+      "organization": "IEEE"
+    },
+    {
+      "experienceId": "conference-ieee-past-2019",
+      "placeId": "westin-waltham-boston",
+      "eventName": "2019 IEEE International Symposium on Phased Array Systems and Technology",
+      "shortName": "IEEE Phased Array Symposium",
+      "locationLabel": "Waltham, Massachusetts",
+      "organization": "IEEE"
+    }
+  ]
+}
