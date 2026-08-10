@@ -7,20 +7,87 @@
   <meta name="description" content="An interactive geographic timeline of the places that have shaped Alex Ford's life, education, and professional work." />
   <title>Life Map | Alex Ford</title>
 
+  <link rel="dns-prefetch" href="//tiles.openfreemap.org" />
+  <link rel="dns-prefetch" href="//unpkg.com" />
   <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin />
   <link rel="preconnect" href="https://unpkg.com" crossorigin />
-  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.css" />
-  <link rel="stylesheet" href="./styles.css?v=20260810-1354" />
-  <link rel="stylesheet" href="./integration.css?v=20260810-1354" />
-  <link rel="stylesheet" href="./story.css?v=20260810-1354" />
-  <link rel="stylesheet" href="./site-theme.css?v=20260810-1354" />
-  <link rel="stylesheet" href="./editorial-ui.css?v=20260810-1354" />
-  <script defer src="https://unpkg.com/maplibre-gl@5.12.0/dist/maplibre-gl.js"></script>
-  <script defer src="./map-theme.js?v=20260810-1354"></script>
-  <script defer src="./app.js?v=20260810-1354"></script>
-  <script defer src="./integration.js?v=20260810-1354"></script>
-  <script defer src="./story.js?v=20260810-1354"></script>
-  <script defer src="./editorial-ui.js?v=20260810-1354"></script>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="./styles.css?v=20260810-1415" />
+  <link rel="stylesheet" href="./integration.css?v=20260810-1415" />
+  <link rel="stylesheet" href="./story.css?v=20260810-1415" />
+  <link rel="stylesheet" href="./site-theme.css?v=20260810-1415" />
+  <link rel="stylesheet" href="./editorial-ui.css?v=20260810-1415" />
+  <style>
+    #map-load-screen {
+      position: absolute;
+      inset: 0;
+      z-index: 8;
+      display: grid;
+      place-items: center;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 50% 42%, rgba(217,169,78,.075), transparent 28%),
+        #04131f;
+      opacity: 1;
+      transition: opacity .22s ease;
+    }
+
+    #map-load-screen::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 64px 64px;
+      mask-image: radial-gradient(circle at center, #000, transparent 70%);
+    }
+
+    .map-load-card {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 15px;
+      border: 1px solid rgba(217,169,78,.22);
+      border-radius: 999px;
+      background: rgba(7,29,45,.78);
+      color: #dce4e8;
+      box-shadow: 0 16px 46px rgba(0,0,0,.22);
+      backdrop-filter: blur(12px);
+      font: 600 12px/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: .02em;
+    }
+
+    .map-load-pulse {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #d9a94e;
+      box-shadow: 0 0 0 0 rgba(217,169,78,.38);
+      animation: map-load-pulse 1.35s ease-out infinite;
+    }
+
+    .map-has-loaded #map-load-screen { opacity: 0; }
+
+    @keyframes map-load-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(217,169,78,.38); }
+      70%, 100% { box-shadow: 0 0 0 9px rgba(217,169,78,0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .map-load-pulse { animation: none; }
+      #map-load-screen { transition: none; }
+    }
+  </style>
+  <script defer src="./bootstrap.js?v=20260810-1415"></script>
+  <script defer src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+  <script defer src="./map-performance.js?v=20260810-1415"></script>
+  <script defer src="./map-theme.js?v=20260810-1415"></script>
+  <script defer src="./app.js?v=20260810-1415"></script>
+  <script defer src="./integration.js?v=20260810-1415"></script>
+  <script defer src="./story.js?v=20260810-1415"></script>
+  <script defer src="./editorial-ui.js?v=20260810-1415"></script>
 </head>
 <body>
   <div class="app-shell">
@@ -56,6 +123,9 @@
 
     <main class="map-stage">
       <div id="map" role="application" aria-label="Interactive map of life and work locations"></div>
+      <div id="map-load-screen" role="status" aria-live="polite">
+        <div class="map-load-card"><span class="map-load-pulse" aria-hidden="true"></span><span>Loading the map…</span></div>
+      </div>
       <div class="map-tint" aria-hidden="true"></div>
       <div class="map-grid" aria-hidden="true"></div>
 
