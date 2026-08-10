@@ -64,7 +64,7 @@
       if (!conference) return;
       row.classList.add('conference-entry');
       const title = row.querySelector('strong');
-      const secondary = row.querySelector('.place-copy span, > span:last-child');
+      const secondary = row.querySelector('.place-copy span, :scope > span:last-child');
       if (title) title.textContent = conference.eventName;
       if (secondary) secondary.textContent = conference.locationLabel;
       row.setAttribute('aria-label', `${conference.eventName}, ${conference.locationLabel}`);
@@ -98,9 +98,9 @@
     if (!detail || detail.hidden) return;
     const placeId = new URLSearchParams(location.search).get('place');
     const conference = byPlace.get(placeId);
+    detail.classList.toggle('conference-detail', Boolean(conference));
     if (!conference) return;
 
-    detail.classList.add('conference-detail');
     const eyebrow = detail.querySelector('.detail-eyebrow');
     const heading = detail.querySelector('.detail h2');
     const location = detail.querySelector('.detail-location');
