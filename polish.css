@@ -1,0 +1,234 @@
+:root {
+  --sheet-compact: 46dvh;
+  --sheet-expanded: 76dvh;
+}
+
+/* Additive presentation layer: keep the fast map engine stable while refining hierarchy. */
+.panel-toggle {
+  display: none;
+}
+
+.chapter {
+  position: relative;
+  overflow: hidden;
+}
+
+.chapter.active::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--gold);
+  box-shadow: 0 0 18px rgba(217,169,78,.35);
+}
+
+.chapter.active strong {
+  color: #fff7e3;
+}
+
+.career-map-label {
+  position: absolute;
+  z-index: 4;
+  transform: translate(14px,-50%);
+  padding: 4px 7px 4px 8px;
+  border-left: 2px solid var(--gold);
+  border-radius: 2px 5px 5px 2px;
+  background: rgba(3,16,26,.86);
+  color: var(--gold-soft);
+  box-shadow: 0 4px 14px rgba(0,0,0,.20);
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: .01em;
+  white-space: nowrap;
+  pointer-events: none;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.cluster.career-cluster {
+  border-color: #f1cd82;
+  background: rgba(25,30,29,.96);
+  box-shadow: 0 0 0 6px rgba(217,169,78,.18), 0 7px 22px rgba(0,0,0,.38);
+  color: #fff0c8;
+}
+
+.marker.career {
+  box-shadow: 0 0 0 5px rgba(217,169,78,.20), 0 6px 20px rgba(0,0,0,.38);
+}
+
+.marker.career.selected {
+  box-shadow: 0 0 0 8px rgba(241,205,130,.27), 0 7px 22px rgba(0,0,0,.42);
+}
+
+@media (min-width: 901px) {
+  .panel {
+    background: rgba(7,29,45,.91);
+  }
+
+  .panel-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(217,169,78,.32) transparent;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --sheet-compact: 46dvh;
+    --sheet-expanded: 76dvh;
+  }
+
+  .mode-switch {
+    top: max(10px, env(safe-area-inset-top));
+    left: max(10px, env(safe-area-inset-left));
+  }
+
+  .map-toolbar {
+    top: max(10px, env(safe-area-inset-top));
+    right: max(10px, env(safe-area-inset-right));
+  }
+
+  .attribution {
+    top: calc(max(10px, env(safe-area-inset-top)) + 43px);
+    right: max(10px, env(safe-area-inset-right));
+    bottom: auto;
+    background: rgba(3,16,26,.72);
+  }
+
+  .panel {
+    max-height: min(var(--sheet-compact), 500px);
+    border-radius: 16px 16px 12px 12px;
+    background: rgba(7,29,45,.96);
+    transition: max-height .24s ease, background-color .24s ease;
+  }
+
+  .panel.is-expanded {
+    max-height: min(var(--sheet-expanded), 760px);
+    background: rgba(7,29,45,.985);
+  }
+
+  .panel::before {
+    content: "";
+    position: sticky;
+    z-index: 6;
+    top: 6px;
+    display: block;
+    width: 34px;
+    height: 4px;
+    margin: 7px auto 0;
+    border-radius: 999px;
+    background: rgba(241,244,245,.24);
+    pointer-events: none;
+  }
+
+  .panel-head {
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    align-items: center;
+    padding-top: 13px;
+    background: linear-gradient(180deg, rgba(7,29,45,.995) 72%, rgba(7,29,45,.92));
+    backdrop-filter: blur(14px);
+  }
+
+  .panel-head > div:first-child {
+    min-width: 0;
+  }
+
+  .panel-head h1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .panel-toggle {
+    display: grid;
+    flex: 0 0 auto;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 50%;
+    background: rgba(255,255,255,.035);
+    color: var(--gold-soft);
+    cursor: pointer;
+  }
+
+  .panel-toggle:hover,
+  .panel-toggle:focus-visible {
+    border-color: rgba(217,169,78,.45);
+    background: rgba(217,169,78,.08);
+  }
+
+  .panel-toggle-icon {
+    display: block;
+    font-size: 15px;
+    line-height: 1;
+    transition: transform .22s ease;
+  }
+
+  .panel.is-expanded .panel-toggle-icon {
+    transform: rotate(180deg);
+  }
+
+  .journey {
+    padding-top: 1px;
+  }
+
+  .chapters {
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chapter {
+    scroll-snap-align: center;
+  }
+
+  .career-map-label {
+    transform: translate(12px,-50%);
+    padding: 3px 6px 3px 7px;
+    font-size: 9px;
+  }
+
+  .detail-panel {
+    max-height: min(78dvh, 760px);
+  }
+}
+
+@media (max-width: 430px) {
+  :root {
+    --sheet-compact: 45dvh;
+    --sheet-expanded: 78dvh;
+  }
+
+  .panel-head {
+    padding-left: 15px;
+    padding-right: 12px;
+  }
+
+  .panel-head h1 {
+    font-size: 19px;
+  }
+
+  .panel-toggle {
+    width: 32px;
+    height: 32px;
+  }
+
+  .chapter {
+    flex-basis: 124px;
+  }
+
+  .career-map-label {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel,
+  .panel-toggle-icon {
+    transition: none;
+  }
+}
