@@ -1,0 +1,403 @@
+{
+  "version": 1,
+  "updated": "2026-08-10",
+  "experiences": [
+    {
+      "id": "birth-peoria-1988",
+      "placeId": "peoria-il",
+      "domain": "life",
+      "category": "birthplace",
+      "label": "Born in Peoria, Illinois",
+      "period": {
+        "start": "1988-02",
+        "end": "1988-02",
+        "precision": "month"
+      },
+      "displayPriority": 100
+    },
+    {
+      "id": "residence-lewistown-1988-1996",
+      "placeId": "lewistown-il",
+      "domain": "life",
+      "category": "residence",
+      "label": "Lived in Lewistown, Illinois",
+      "period": {
+        "start": "1988",
+        "end": "1996",
+        "precision": "year"
+      },
+      "displayPriority": 90
+    },
+    {
+      "id": "residence-carterville-1996-2006",
+      "placeId": "carterville-il",
+      "domain": "life",
+      "category": "residence",
+      "label": "Lived in Carterville, Illinois",
+      "period": {
+        "start": "1996",
+        "end": "2006",
+        "precision": "year"
+      },
+      "displayPriority": 90
+    },
+    {
+      "id": "education-uiuc-2006-2010",
+      "placeId": "uiuc-alma-mater",
+      "domain": "education",
+      "category": "university",
+      "label": "University of Illinois",
+      "organization": "University of Illinois Urbana-Champaign",
+      "period": {
+        "start": "2006",
+        "end": "2010",
+        "precision": "year"
+      },
+      "displayPriority": 95
+    },
+    {
+      "id": "education-ku-2010-2017",
+      "placeId": "ku-strong-hall",
+      "domain": "education",
+      "category": "university",
+      "label": "University of Kansas",
+      "organization": "University of Kansas",
+      "period": {
+        "start": "2010",
+        "end": "2017",
+        "precision": "year"
+      },
+      "displayPriority": 95
+    },
+    {
+      "id": "residence-charleston-2017-2018",
+      "placeId": "charleston-sc",
+      "domain": "life",
+      "category": "residence",
+      "label": "Lived in Charleston, South Carolina",
+      "period": {
+        "start": "2017",
+        "end": "2018",
+        "precision": "year"
+      },
+      "periodNote": "Approximately three months; exact months not yet recorded.",
+      "displayPriority": 80
+    },
+    {
+      "id": "residence-baltimore-2018-2021",
+      "placeId": "baltimore-md",
+      "domain": "life",
+      "category": "residence",
+      "label": "Lived in Baltimore, Maryland",
+      "period": {
+        "start": "2018",
+        "end": "2021",
+        "precision": "year"
+      },
+      "displayPriority": 90
+    },
+    {
+      "id": "residence-denver-2021-present",
+      "placeId": "denver-co",
+      "domain": "life",
+      "category": "residence",
+      "label": "Lives in Denver, Colorado",
+      "period": {
+        "start": "2021",
+        "end": null,
+        "precision": "year"
+      },
+      "ongoing": true,
+      "displayPriority": 100
+    },
+    {
+      "id": "work-home-ng-bwi",
+      "placeId": "ng-bwi",
+      "domain": "work",
+      "category": "home-campus",
+      "label": "NG BWI — home campus",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 100
+    },
+    {
+      "id": "work-home-ng-boulder",
+      "placeId": "ng-boulder",
+      "domain": "work",
+      "category": "home-campus",
+      "label": "Boulder Gunbarrel District — home campus",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 100
+    },
+    {
+      "id": "work-home-ng-aurora",
+      "placeId": "ng-aurora",
+      "domain": "work",
+      "category": "home-campus",
+      "label": "Aurora — home campus",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 100
+    },
+    {
+      "id": "work-campus-azusa",
+      "placeId": "ng-azusa",
+      "domain": "work",
+      "category": "ng-campus",
+      "label": "Azusa campus",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 70
+    },
+    {
+      "id": "work-campus-melbourne",
+      "placeId": "ng-melbourne",
+      "domain": "work",
+      "category": "ng-campus",
+      "label": "Melbourne campus",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 70
+    },
+    {
+      "id": "work-campus-colorado-springs",
+      "placeId": "ng-colorado-springs",
+      "domain": "work",
+      "category": "ng-campus",
+      "label": "Colorado Springs campus",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 70
+    },
+    {
+      "id": "work-campus-space-park",
+      "placeId": "ng-space-park",
+      "domain": "work",
+      "category": "ng-campus",
+      "label": "Space Park",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 70
+    },
+    {
+      "id": "work-campus-dayton",
+      "placeId": "ng-dayton",
+      "domain": "work",
+      "category": "ng-campus",
+      "label": "Dayton campus",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 70
+    },
+    {
+      "id": "work-campus-huntsville",
+      "placeId": "ng-huntsville",
+      "domain": "work",
+      "category": "ng-campus",
+      "label": "Huntsville campus",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 70
+    },
+    {
+      "id": "work-campus-annapolis",
+      "placeId": "ng-annapolis",
+      "domain": "work",
+      "category": "ng-campus",
+      "label": "Annapolis campus",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 70
+    },
+    {
+      "id": "work-site-schriever",
+      "placeId": "schriever-sfb",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "Worked on Schriever SFB",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 85
+    },
+    {
+      "id": "work-site-buckley",
+      "placeId": "buckley-sfb",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "Worked on Buckley SFB",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 85
+    },
+    {
+      "id": "work-site-los-angeles-sfb",
+      "placeId": "los-angeles-sfb",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "Worked on Los Angeles SFB",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 85
+    },
+    {
+      "id": "work-site-wright-patterson",
+      "placeId": "wright-patterson-afb",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "Worked on Wright-Patterson AFB",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 85
+    },
+    {
+      "id": "work-site-peterson",
+      "placeId": "peterson-sfb",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "Worked on Peterson SFB",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 85
+    },
+    {
+      "id": "work-site-darpa",
+      "placeId": "darpa-hq",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "Worked at DARPA Headquarters",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 85
+    },
+    {
+      "id": "work-site-andersen",
+      "placeId": "andersen-afb",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "Worked on Andersen AFB",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 90
+    },
+    {
+      "id": "work-site-naval-base-guam",
+      "placeId": "naval-base-guam",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "Worked at Naval Base Guam",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 90
+    },
+    {
+      "id": "work-site-camp-blaz",
+      "placeId": "camp-blaz",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "Worked at Camp Blaz",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 90
+    },
+    {
+      "id": "work-site-raf-molesworth",
+      "placeId": "raf-molesworth",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "Worked at RAF Molesworth",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 90
+    },
+    {
+      "id": "work-site-raf-alconbury",
+      "placeId": "raf-alconbury",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "Worked at RAF Alconbury",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 90
+    },
+    {
+      "id": "work-travel-washington-dc",
+      "placeId": "washington-dc",
+      "domain": "work",
+      "category": "professional-travel",
+      "label": "Washington, DC",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 65
+    },
+    {
+      "id": "work-travel-honolulu",
+      "placeId": "honolulu-hi",
+      "domain": "work",
+      "category": "professional-travel",
+      "label": "Honolulu, Hawaii",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 65
+    },
+    {
+      "id": "conference-kirtland-afb",
+      "placeId": "kirtland-afb",
+      "domain": "work",
+      "category": "conference",
+      "label": "Conference travel — Kirtland AFB",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 55
+    },
+    {
+      "id": "conference-los-angeles",
+      "placeId": "los-angeles-ca",
+      "domain": "work",
+      "category": "conference",
+      "label": "Conference travel — Los Angeles",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 55
+    },
+    {
+      "id": "conference-big-sky",
+      "placeId": "big-sky-mt",
+      "domain": "work",
+      "category": "conference",
+      "label": "Conference travel — Big Sky, Montana",
+      "period": null,
+      "dateStatus": "to-be-added",
+      "displayPriority": 55
+    },
+    {
+      "id": "conference-ieee-past-2019",
+      "placeId": "westin-waltham-boston",
+      "domain": "work",
+      "category": "conference",
+      "label": "2019 IEEE International Symposium on Phased Array Systems and Technology",
+      "organization": "IEEE",
+      "period": {
+        "start": "2019-10-15",
+        "end": "2019-10-18",
+        "precision": "day"
+      },
+      "displayPriority": 60,
+      "details": {
+        "eventName": "2019 IEEE International Symposium on Phased Array Systems and Technology",
+        "venue": "The Westin Waltham Boston",
+        "city": "Waltham, Massachusetts"
+      }
+    }
+  ]
+}
