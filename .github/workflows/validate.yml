@@ -20,6 +20,7 @@ jobs:
           node --check fast-app.js
           node --check polish.js
           node --check conference-display.js
+          node --check labels.js
           node --check bootstrap.js
           node --check map-performance.js
           node --check map-theme.js
