@@ -35,8 +35,8 @@ def main() -> None:
     assert '-webkit-overflow-scrolling:touch' in CSS
     assert 'touch-action:pan-y' in CSS
 
-    # Basemap images are progressive enhancement, not part of the critical HTML path.
-    assert 'basemaps.cartocdn.com' not in INDEX.replace('dns-prefetch', '').replace('preconnect', '') or 'script' not in INDEX
+    # Basemap images are progressive enhancement only: index may preconnect, but does not load tile assets itself.
+    assert INDEX.count('basemaps.cartocdn.com') == 2, "Only DNS/preconnect hints should mention the basemap host"
     assert 'basemaps.cartocdn.com' in APP
 
     print("OK: production entry point is dependency-free and mobile-scroll safe")
