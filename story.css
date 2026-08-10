@@ -1,0 +1,348 @@
+/* Professional storytelling layer for alexlford.com Experience integration. */
+
+.journey-overview {
+  padding: 0 18px 12px;
+  border-bottom: 1px solid rgba(255,255,255,.075);
+}
+
+.journey-overview[hidden] {
+  display: none;
+}
+
+.journey-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 11px;
+}
+
+.journey-stat {
+  min-width: 0;
+  padding: 8px 8px 7px;
+  border: 1px solid rgba(217,173,88,.18);
+  border-radius: 9px;
+  background: linear-gradient(145deg, rgba(217,173,88,.07), rgba(255,255,255,.02));
+}
+
+.journey-stat strong {
+  display: block;
+  color: var(--gold-soft);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.journey-stat span {
+  display: block;
+  margin-top: 5px;
+  overflow: hidden;
+  color: #8296a5;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 7px;
+  letter-spacing: .06em;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}
+
+.chapter-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 7px;
+}
+
+.chapter-heading span {
+  color: #c8d2da;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.chapter-heading small {
+  color: #718697;
+  font-size: 8px;
+}
+
+.career-chapter-track {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  padding: 1px 1px 3px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(217,173,88,.26) transparent;
+}
+
+.career-chapter {
+  position: relative;
+  flex: 0 0 145px;
+  min-width: 0;
+  padding: 9px 10px 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.085);
+  border-radius: 10px;
+  background: rgba(255,255,255,.025);
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+  transition: .17s ease;
+}
+
+.career-chapter::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent 75%);
+  opacity: .45;
+}
+
+.career-chapter:hover,
+.career-chapter.is-active {
+  transform: translateY(-1px);
+  border-color: rgba(217,173,88,.42);
+  background: rgba(217,173,88,.075);
+}
+
+.career-chapter.is-active {
+  box-shadow: inset 0 0 0 1px rgba(217,173,88,.12), 0 7px 22px rgba(0,0,0,.15);
+}
+
+.career-chapter-period {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--gold);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 8px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.career-chapter strong {
+  display: block;
+  font-size: 10px;
+  line-height: 1.22;
+}
+
+.career-chapter-location {
+  display: block;
+  margin-top: 4px;
+  color: #718697;
+  font-size: 8px;
+  line-height: 1.2;
+}
+
+.place-story {
+  position: relative;
+  margin: 16px 0 12px;
+  padding: 16px 16px 15px;
+  overflow: hidden;
+  border: 1px solid rgba(217,173,88,.28);
+  border-radius: 13px;
+  background:
+    linear-gradient(145deg, rgba(217,173,88,.085), transparent 34%),
+    rgba(255,255,255,.025);
+}
+
+.place-story::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(var(--gold-soft), rgba(217,173,88,.14));
+}
+
+.place-story-eyebrow,
+.detail-section-label {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.place-story-eyebrow {
+  display: block;
+  color: var(--gold);
+  font-size: 8px;
+  margin-bottom: 7px;
+}
+
+.place-story h3 {
+  margin: 0;
+  color: #f4f7f9;
+  font-size: 18px;
+  line-height: 1.15;
+  letter-spacing: -.025em;
+}
+
+.place-story > p {
+  margin: 9px 0 0;
+  color: #b2c0ca;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.place-story ul {
+  display: grid;
+  gap: 7px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.place-story li {
+  position: relative;
+  padding-left: 15px;
+  color: #d2dbe1;
+  font-size: 10px;
+  line-height: 1.42;
+}
+
+.place-story li::before {
+  content: "";
+  position: absolute;
+  top: .55em;
+  left: 1px;
+  width: 6px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.related-places {
+  margin-top: 13px;
+  padding-top: 11px;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.related-places > span {
+  display: block;
+  margin-bottom: 7px;
+  color: #718697;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.related-places > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.related-place {
+  padding: 6px 8px;
+  border: 1px solid rgba(217,173,88,.24);
+  border-radius: 999px;
+  background: rgba(217,173,88,.055);
+  color: #d7e0e6;
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.related-place:hover {
+  border-color: rgba(217,173,88,.48);
+  background: rgba(217,173,88,.1);
+  color: #fff;
+}
+
+.detail-section-label {
+  margin: 14px 0 7px;
+  color: #718697;
+  font-size: 8px;
+}
+
+.location-data-card {
+  margin-top: 14px;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.location-data-card summary {
+  padding: 11px 0 0;
+  color: #7f93a2;
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.location-data-card[open] summary {
+  color: var(--gold-soft);
+}
+
+.location-data-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin-top: 9px;
+}
+
+.location-data-body .detail-location {
+  width: 100%;
+  margin: 0 0 2px;
+  color: #92a4b2;
+}
+
+.location-data-body .detail-source {
+  width: 100%;
+  margin-top: 4px;
+}
+
+body.is-embedded .journey-overview {
+  padding-inline: 16px;
+}
+
+body.is-embedded .place-story h3 {
+  font-size: 17px;
+}
+
+@media (max-width: 720px) {
+  .journey-overview {
+    padding: 0 14px 9px;
+  }
+
+  .journey-stats {
+    display: none;
+  }
+
+  .chapter-heading {
+    margin-bottom: 5px;
+  }
+
+  .career-chapter {
+    flex-basis: 132px;
+    padding: 7px 9px 8px;
+  }
+
+  .career-chapter strong {
+    font-size: 9px;
+  }
+
+  .career-chapter-location {
+    display: none;
+  }
+
+  body.is-embedded .journey-overview {
+    padding-inline: 12px;
+  }
+
+  .place-story {
+    padding: 14px 14px 13px;
+  }
+}
+
+@media (max-height: 720px) and (min-width: 721px) {
+  .journey-stats {
+    display: none;
+  }
+
+  .journey-overview {
+    padding-bottom: 9px;
+  }
+}
