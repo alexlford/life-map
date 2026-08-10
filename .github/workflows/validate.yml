@@ -17,6 +17,8 @@ jobs:
 
       - name: Check JavaScript syntax
         run: |
+          node --check bootstrap.js
+          node --check map-performance.js
           node --check map-theme.js
           node --check app.js
           node --check integration.js
