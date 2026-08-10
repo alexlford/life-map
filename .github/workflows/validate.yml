@@ -18,6 +18,7 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           node --check fast-app.js
+          node --check polish.js
           node --check bootstrap.js
           node --check map-performance.js
           node --check map-theme.js
