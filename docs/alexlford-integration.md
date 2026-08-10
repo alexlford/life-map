@@ -18,16 +18,28 @@ Use the Work view by default on the professional Experience page:
 https://alexlford.github.io/life-map/?embed=1&mode=work
 ```
 
-The `embed=1` flag removes standalone branding and switches the application to a full-bleed layout with floating map controls. The native alexlford.com page should provide the `My Professional Journey` heading and introductory copy.
+The `embed=1` flag removes standalone branding. The native alexlford.com page should provide the `My Professional Journey` heading and introductory copy.
+
+## Production architecture
+
+The current production entry point is intentionally dependency-free so the Experience page cannot hang while waiting for a mapping library or vector-style service.
+
+- `index.html` loads local `fast-app.css` and `fast-app.js`.
+- Canonical data comes from `data/places.json`, `data/experiences.json`, and `data/stories.json`.
+- Marker placement uses Web Mercator projection from the exact stored coordinates.
+- Pan, zoom, clustering, filters, timeline, search, career chapters, and detail cards are implemented locally.
+- CARTO raster tiles load only as progressive-enhancement images beneath the markers. If tiles are delayed or unavailable, the interface remains usable on its navy/grid background.
+- Legacy MapLibre assets are not part of the production page's critical path.
 
 ## Experience-page presentation
 
 The embedded Work view is designed to act as the centerpiece of the Experience page rather than as a standalone novelty map. It includes:
 
-- a compact professional-footprint summary,
-- three career chapters anchored to BWI, Boulder, and Aurora,
-- curated story cards for selected home campuses, mission sites, international work, and conferences,
-- related-site navigation for geographic clusters such as Guam and the United Kingdom,
+- five career chapters: Lawrence, Charleston, Baltimore/BWI, Boulder, and Aurora;
+- gold beacon markers for career bases;
+- the four locked Work layers: Career bases, Other NG campuses, Mission/government/travel, and Conferences;
+- curated story cards for selected career bases, mission sites, international work, and conferences;
+- related-site navigation for geographic clusters such as Guam and the United Kingdom;
 - collapsed coordinate/source metadata so the professional story is presented before the mapping mechanics.
 
 Curated public-facing copy lives in `data/stories.json`. Coordinates remain canonical in `data/places.json`; the story layer never changes marker placement.
@@ -39,9 +51,10 @@ The parent site is intentionally spare and editorial. The map should complement 
 - The map is an intentional dark, immersive break inside the otherwise clean site.
 - Deep navy and warm gold are the visual identity.
 - Category colors are restrained informational accents.
-- Career home bases receive gold beacon/ring treatment so they read differently from destinations.
-- Embed mode removes the duplicate map title and uses floating controls, allowing the parent page to supply the page hierarchy.
-- Typography is kept neutral and modern so the interactive feature does not feel like a separate branded microsite.
+- Career bases receive gold beacon/ring treatment so they read differently from destinations.
+- Embed mode removes duplicate standalone branding and lets the parent page supply the page hierarchy.
+- Typography is neutral, modern, and deliberately more editorial than dashboard-like.
+- On mobile, the control panel is a single momentum-scroll sheet so no lower controls can be clipped or trapped.
 
 ## Recommended Squarespace code block
 
@@ -83,26 +96,27 @@ For the cleanest result, place the iframe in a full-width section with minimal t
 
 ## URL state / deep links
 
-The integration layer understands these query parameters:
+The production application understands these query parameters:
 
 | Parameter | Example | Purpose |
 |---|---|---|
-| `embed` | `embed=1` | Compact alexlford.com layout |
+| `embed` | `embed=1` | alexlford.com embed layout |
 | `mode` | `mode=work` | `work`, `life`, or `combined` |
 | `timeline` | `timeline=1` | Enables cumulative timeline mode |
 | `year` | `year=2019` | Shows dated experiences through a year |
-| `projection` | `projection=globe` | Starts in globe projection |
-| `place` | `place=raf-molesworth` | Opens a mapped place when it becomes available |
+| `place` | `place=raf-molesworth` | Opens and focuses a mapped place |
 
 Examples:
 
 ```text
 ?embed=1&mode=work&place=raf-molesworth
 ?embed=1&mode=life&timeline=1&year=2017
-?embed=1&mode=combined&projection=globe
+?embed=1&mode=combined&place=naval-base-guam
 ```
 
-The application updates the browser query string as the visitor changes modes, timeline settings, projection, or selected place. This allows a specific map state to be copied as a deep link.
+The application updates the browser query string as the visitor changes modes, timeline settings, or the selected place. This allows a specific state to be copied as a deep link.
+
+The previous MapLibre-only `projection=globe` deep link is intentionally not part of the dependency-free production experience. If an enhanced globe view returns later, it should be optional rather than the default critical path.
 
 ## Optional parent-page bridge
 
@@ -111,7 +125,7 @@ When embedded, the map posts two messages to its parent window:
 - `alexford-life-map:ready`
 - `alexford-life-map:resize`
 
-The payload includes the active mode and, for resize messages, the embedded document height. This gives alexlford.com the option to add tighter iframe integration later without changing the map application.
+The payload includes the active mode and, for resize messages, the embedded document height. This preserves the integration contract for tighter iframe behavior later without adding any external dependency.
 
 ## Page design recommendation
 
@@ -127,6 +141,6 @@ Below the map, retain a concise conventional professional timeline, education, s
 When adding a future location such as Alaska or Australia:
 
 1. Add or verify the canonical place in `data/places.json`.
-2. Add the mapped experience in `data/experiences.json`.
+2. Add the mapped experience in `data/experiences.json`, using one of the four Work categories when applicable.
 3. Add curated public-facing copy to `data/stories.json` only when the location benefits from a deeper narrative.
-4. Run `python scripts/validate_data.py` and `python scripts/validate_stories.py` before publishing.
+4. Run `python scripts/validate_data.py`, `python scripts/validate_stories.py`, and `python scripts/validate_frontend.py` before publishing.
