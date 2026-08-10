@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "updated": "2026-08-10",
+  "careerChapters": [
+    {
+      "id": "baltimore",
+      "period": "2018–2021",
+      "placeId": "ng-bwi",
+      "location": "Baltimore, Maryland",
+      "title": "RF & Hardware",
+      "role": "Principal Engineer, RF/Microwave Design → Hardware Engineering Manager",
+      "summary": "A transition from hands-on RF and computational electromagnetics into technical leadership, phased-array development, internal R&D, and management of a 16-person CEM team."
+    },
+    {
+      "id": "boulder",
+      "period": "2021–2025",
+      "placeId": "ng-boulder",
+      "location": "Boulder, Colorado",
+      "title": "Systems Engineering Leadership",
+      "role": "Systems Engineering Manager",
+      "summary": "Systems engineering leadership across ground processing and relay ground stations, including SEIT leadership for six next-generation sites on Guam."
+    },
+    {
+      "id": "aurora",
+      "period": "2025–present",
+      "placeId": "ng-aurora",
+      "location": "Aurora, Colorado",
+      "title": "Lead Systems Engineering",
+      "role": "Senior Staff Engineer, Systems",
+      "summary": "A return to a fully technical role focused on lead systems engineering, system architecture, integration, and mission execution."
+    }
+  ],
+  "places": {
+    "ng-bwi": {
+      "eyebrow": "CAREER HOME BASE // 2018–2021",
+      "headline": "From RF design to engineering leadership",
+      "summary": "BWI was the first Northrop Grumman home base in my career. I started as a Principal Engineer in RF/Microwave Design and later moved into hardware engineering management.",
+      "highlights": [
+        "Developed and maintained computational electromagnetics tools and modeling workflows.",
+        "Worked on active phased-array architecture, requirements, analysis, and performance modeling.",
+        "Led a 16-person computational electromagnetics team and an internal R&D portfolio."
+      ],
+      "chapter": "RF & Hardware"
+    },
+    "ng-boulder": {
+      "eyebrow": "CAREER HOME BASE // 2021–2025",
+      "headline": "Scaling from subsystem engineering to systems leadership",
+      "summary": "The Boulder Gunbarrel District became my home base as I moved into Space Systems and broader systems engineering leadership.",
+      "highlights": [
+        "Led systems engineering teams supporting operational ground-processing missions.",
+        "Served as SEIT lead for six next-generation relay ground stations on Guam.",
+        "Combined waterfall program milestones with Agile execution, including Scrum Master responsibilities."
+      ],
+      "chapter": "Systems Engineering Leadership"
+    },
+    "ng-aurora": {
+      "eyebrow": "CAREER HOME BASE // 2025–PRESENT",
+      "headline": "Back to a fully technical systems role",
+      "summary": "Aurora marks the next chapter: Senior Staff Engineer, Systems, with a focus on lead systems engineering and technical mission execution.",
+      "highlights": [
+        "Lead systems engineering across complex ground and mission-system problems.",
+        "Focus on architecture, interfaces, integration, verification, and technical decision-making.",
+        "Carry forward experience spanning RF hardware, software-enabled ground systems, and engineering leadership."
+      ],
+      "chapter": "Lead Systems Engineering"
+    },
+    "naval-base-guam": {
+      "eyebrow": "MISSION SITE // GUAM",
+      "headline": "Taking relay ground stations from design reviews to the field",
+      "summary": "Guam became one of the defining geographic footprints of my systems engineering work. I supported the design, verification, build, and on-island execution of six next-generation relay ground stations.",
+      "highlights": [
+        "SEIT lead through Critical Design Review for the six-site relay ground station effort.",
+        "Scrum Master from program startup through Preliminary Design Review.",
+        "Technical oversight of ground-terminal equipment and antenna subcontractors, including site visits."
+      ],
+      "relatedPlaceIds": ["camp-blaz", "andersen-afb"],
+      "chapter": "Systems Engineering Leadership"
+    },
+    "camp-blaz": {
+      "eyebrow": "MISSION SITE // GUAM",
+      "headline": "On-island systems engineering",
+      "summary": "Camp Blaz was one of the Guam locations connected to my relay ground station work and on-site technical exchanges.",
+      "highlights": [
+        "Field work tied to a six-site relay ground station program.",
+        "On-island coordination across government, industry, and subcontractor teams.",
+        "Part of a Guam mission footprint spanning northern and western installations."
+      ],
+      "relatedPlaceIds": ["andersen-afb", "naval-base-guam"],
+      "chapter": "Systems Engineering Leadership"
+    },
+    "andersen-afb": {
+      "eyebrow": "MISSION SITE // GUAM",
+      "headline": "Mission work on Guam's northern air base",
+      "summary": "Andersen AFB was part of the broader Guam mission footprint supporting my relay ground station systems engineering work.",
+      "highlights": [
+        "Worked on-site as part of Guam program execution.",
+        "Supported technical coordination for ground infrastructure and mission interfaces.",
+        "Connected geographically to Camp Blaz and Naval Base Guam within the same program footprint."
+      ],
+      "relatedPlaceIds": ["camp-blaz", "naval-base-guam"],
+      "chapter": "Systems Engineering Leadership"
+    },
+    "raf-molesworth": {
+      "eyebrow": "MISSION SITE // UNITED KINGDOM",
+      "headline": "Professional work at RAF Molesworth",
+      "summary": "RAF Molesworth expanded my professional map beyond the United States and Guam, adding on-site mission work in the United Kingdom.",
+      "highlights": [
+        "Worked on-site at RAF Molesworth.",
+        "Part of a UK work footprint that also included nearby RAF Alconbury.",
+        "Molesworth and Alconbury are separated by only about eight miles."
+      ],
+      "relatedPlaceIds": ["raf-alconbury"]
+    },
+    "raf-alconbury": {
+      "eyebrow": "MISSION SITE // UNITED KINGDOM",
+      "headline": "A second UK mission site",
+      "summary": "RAF Alconbury sits only a short drive from RAF Molesworth and forms the second installation in my United Kingdom work footprint.",
+      "highlights": [
+        "Worked on-site at RAF Alconbury.",
+        "Closely linked geographically with RAF Molesworth.",
+        "Part of the international expansion of my professional travel map."
+      ],
+      "relatedPlaceIds": ["raf-molesworth"]
+    },
+    "darpa-hq": {
+      "eyebrow": "GOVERNMENT SITE // ARLINGTON",
+      "headline": "Work at DARPA Headquarters",
+      "summary": "Professional travel to DARPA Headquarters added a government R&D destination to the Mid-Atlantic portion of my career map.",
+      "highlights": [
+        "Worked at DARPA Headquarters in Arlington, Virginia.",
+        "Distinct from Washington, DC professional travel on the map.",
+        "Part of a dense Mid-Atlantic work footprint centered on Baltimore, Annapolis, Arlington, and Washington."
+      ]
+    },
+    "westin-waltham-boston": {
+      "eyebrow": "CONFERENCE // 2019",
+      "headline": "Phased-array systems and technology in Waltham",
+      "summary": "I traveled to Waltham, Massachusetts for the 2019 IEEE International Symposium on Phased Array Systems and Technology.",
+      "highlights": [
+        "IEEE International Symposium on Phased Array Systems and Technology.",
+        "October 15–18, 2019.",
+        "The Westin Waltham Boston."
+      ]
+    },
+    "honolulu-hi": {
+      "eyebrow": "PROFESSIONAL TRAVEL // HAWAII",
+      "headline": "A Pacific stop in Honolulu",
+      "summary": "Honolulu extends the professional map into the central Pacific and gives the global view a natural bridge between the continental United States and Guam.",
+      "highlights": [
+        "Professional travel to Honolulu, Hawaii.",
+        "Mapped separately from the Guam mission-site footprint.",
+        "The architecture is ready to expand farther into Alaska and Australia."
+      ]
+    }
+  }
+}
