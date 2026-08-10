@@ -1,14 +1,28 @@
 (() => {
   'use strict';
 
-  document.addEventListener('DOMContentLoaded', () => {
-    if (!document.body.classList.contains('is-embedded')) return;
+  const LABELS = {
+    'Home campuses': 'Career bases',
+    'NG campuses': 'Other NG campuses',
+    'Mission sites': 'Mission & government',
+    'Work travel': 'Other work travel',
+    'Life / homes': 'Homes'
+  };
 
+  document.addEventListener('DOMContentLoaded', () => {
     const filters = document.getElementById('category-filters');
     if (filters) {
       relabelFilters(filters);
       new MutationObserver(() => relabelFilters(filters)).observe(filters, { childList: true, subtree: true });
     }
+
+    const detail = document.getElementById('detail-content');
+    if (detail) {
+      relabelExperienceTags(detail);
+      new MutationObserver(() => relabelExperienceTags(detail)).observe(detail, { childList: true, subtree: true });
+    }
+
+    if (!document.body.classList.contains('is-embedded')) return;
 
     const filtersHeading = document.getElementById('filters-heading');
     const placesHeading = document.getElementById('places-heading');
@@ -27,19 +41,18 @@
   });
 
   function relabelFilters(root) {
-    const labels = {
-      'Home campuses': 'Career bases',
-      'NG campuses': 'Other NG campuses',
-      'Mission sites': 'Mission & government',
-      'Work travel': 'Other work travel',
-      'Life / homes': 'Homes'
-    };
-
     root.querySelectorAll('.filter-chip').forEach(button => {
       const text = [...button.querySelectorAll('span')].find(span => !span.classList.contains('filter-dot'));
       if (!text) return;
-      const replacement = labels[text.textContent.trim()];
+      const replacement = LABELS[text.textContent.trim()];
       if (replacement) text.textContent = replacement;
+    });
+  }
+
+  function relabelExperienceTags(root) {
+    root.querySelectorAll('.experience-tag').forEach(tag => {
+      const replacement = LABELS[tag.textContent.trim()];
+      if (replacement) tag.textContent = replacement;
     });
   }
 
