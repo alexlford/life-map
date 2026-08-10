@@ -6,193 +6,80 @@
   <meta name="theme-color" content="#04131f" />
   <meta name="description" content="An interactive geographic timeline of the places that have shaped Alex Ford's life, education, and professional work." />
   <title>Life Map | Alex Ford</title>
-
-  <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
   <link rel="dns-prefetch" href="//a.basemaps.cartocdn.com" />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preconnect" href="https://a.basemaps.cartocdn.com" crossorigin />
-  <link rel="preconnect" href="https://b.basemaps.cartocdn.com" crossorigin />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css" />
-  <link rel="stylesheet" href="./styles.css?v=20260810-1448" />
-  <link rel="stylesheet" href="./integration.css?v=20260810-1448" />
-  <link rel="stylesheet" href="./story.css?v=20260810-1448" />
-  <link rel="stylesheet" href="./site-theme.css?v=20260810-1448" />
-  <link rel="stylesheet" href="./editorial-ui.css?v=20260810-1448" />
-  <style>
-    #map-load-screen {
-      position: absolute;
-      inset: 0;
-      z-index: 8;
-      display: grid;
-      place-items: center;
-      pointer-events: none;
-      background:
-        radial-gradient(circle at 50% 42%, rgba(217,169,78,.075), transparent 28%),
-        #04131f;
-      opacity: 1;
-      transition: opacity .22s ease;
-    }
-
-    #map-load-screen::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-      background-size: 64px 64px;
-      mask-image: radial-gradient(circle at center, #000, transparent 70%);
-    }
-
-    .map-load-card {
-      position: relative;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 12px 15px;
-      border: 1px solid rgba(217,169,78,.22);
-      border-radius: 999px;
-      background: rgba(7,29,45,.78);
-      color: #dce4e8;
-      box-shadow: 0 16px 46px rgba(0,0,0,.22);
-      backdrop-filter: blur(12px);
-      font: 600 12px/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
-      letter-spacing: .02em;
-    }
-
-    .map-load-pulse {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: #d9a94e;
-      box-shadow: 0 0 0 0 rgba(217,169,78,.38);
-      animation: map-load-pulse 1.35s ease-out infinite;
-    }
-
-    .map-has-loaded #map-load-screen { opacity: 0; }
-
-    @keyframes map-load-pulse {
-      0% { box-shadow: 0 0 0 0 rgba(217,169,78,.38); }
-      70%, 100% { box-shadow: 0 0 0 9px rgba(217,169,78,0); }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .map-load-pulse { animation: none; }
-      #map-load-screen { transition: none; }
-    }
-  </style>
-  <script defer src="./bootstrap.js?v=20260810-1448"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
-  <script defer src="./map-performance.js?v=20260810-1448"></script>
-  <script defer src="./map-theme.js?v=20260810-1448"></script>
-  <script defer src="./app.js?v=20260810-1448"></script>
-  <script defer src="./integration.js?v=20260810-1448"></script>
-  <script defer src="./story.js?v=20260810-1448"></script>
-  <script defer src="./editorial-ui.js?v=20260810-1448"></script>
+  <link rel="stylesheet" href="./fast-app.css?v=20260810-1505" />
+  <script defer src="./fast-app.js?v=20260810-1505"></script>
 </head>
 <body>
-  <div class="app-shell">
-    <header class="topbar">
-      <div class="brand-block">
-        <span class="eyebrow">ALEX FORD // PERSONAL ATLAS</span>
-        <h1>Life Map</h1>
-        <p>Places that shaped my life, education, and work.</p>
-      </div>
-
-      <div class="embed-context" aria-hidden="true">
-        <span class="eyebrow">ALEX FORD // EXPERIENCE</span>
-        <strong>My Professional Journey</strong>
-      </div>
-
-      <nav class="mode-switch" aria-label="Map view">
-        <button class="mode-button is-active" data-mode="combined" type="button">Combined</button>
-        <button class="mode-button" data-mode="life" type="button">Life</button>
-        <button class="mode-button" data-mode="work" type="button">Work</button>
-      </nav>
-
-      <div class="top-actions">
-        <button id="projection-button" class="utility-button" type="button" aria-pressed="false">
-          <span class="button-icon" aria-hidden="true">◉</span>
-          <span>Globe</span>
-        </button>
-        <button id="reset-view-button" class="utility-button" type="button">
-          <span class="button-icon" aria-hidden="true">⌖</span>
-          <span>Reset</span>
-        </button>
-      </div>
+  <main class="app">
+    <header class="site-intro">
+      <small>Alex Ford · Personal Atlas</small>
+      <strong>Life Map</strong>
     </header>
 
-    <main class="map-stage">
-      <div id="map" role="application" aria-label="Interactive map of life and work locations"></div>
-      <div id="map-load-screen" role="status" aria-live="polite">
-        <div class="map-load-card"><span class="map-load-pulse" aria-hidden="true"></span><span>Loading the map…</span></div>
-      </div>
-      <div class="map-tint" aria-hidden="true"></div>
-      <div class="map-grid" aria-hidden="true"></div>
+    <div id="map" class="fast-map" role="application" aria-label="Interactive geographic map">
+      <div id="tiles" class="tile-layer" aria-hidden="true"></div>
+      <div class="map-vignette" aria-hidden="true"></div>
+      <div id="markers" class="marker-layer"></div>
+      <div class="attribution">© OpenStreetMap contributors · © CARTO</div>
+    </div>
 
-      <aside class="control-deck" aria-label="Map controls">
-        <div class="deck-header">
-          <div>
-            <span class="panel-code">MAP // 01</span>
-            <h2>Explore the journey</h2>
-          </div>
-          <div class="location-counter" aria-live="polite">
-            <strong id="visible-count">0</strong>
-            <span>places</span>
-          </div>
+    <nav id="modeSwitch" class="mode-switch" aria-label="Map view">
+      <button type="button" data-mode="combined">Combined</button>
+      <button type="button" data-mode="life">Life</button>
+      <button type="button" data-mode="work">Work</button>
+    </nav>
+
+    <div class="map-toolbar" aria-label="Map controls">
+      <button id="zoomOut" class="map-tool" type="button" aria-label="Zoom out">−</button>
+      <button id="zoomIn" class="map-tool" type="button" aria-label="Zoom in">+</button>
+      <button id="reset" class="map-tool wide" type="button">Reset view</button>
+    </div>
+
+    <aside class="panel" aria-label="Journey controls">
+      <div class="panel-head">
+        <div><small>Alex Ford · Experience</small><h1 id="panelTitle">Explore the journey</h1></div>
+        <div class="count"><strong id="count">0</strong><span>places</span></div>
+      </div>
+
+      <section id="journey" class="journey">
+        <div class="journey-heading"><span>Career chapters</span><span>Select to zoom</span></div>
+        <div id="chapters" class="chapters"></div>
+      </section>
+
+      <div class="panel-scroll">
+        <div class="search-wrap">
+          <label class="search" for="search"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="Search a place or experience" /></label>
+          <div id="searchResults" class="search-results" hidden></div>
         </div>
 
-        <label class="search-box" for="place-search">
-          <span aria-hidden="true">⌕</span>
-          <input id="place-search" type="search" autocomplete="off" placeholder="Search a place or experience" />
-        </label>
-        <div id="search-results" class="search-results" hidden></div>
-
-        <section class="control-section" aria-labelledby="filters-heading">
-          <div class="section-heading-row">
-            <h3 id="filters-heading">Layers</h3>
-            <button id="clear-filters-button" class="text-button" type="button">Show all</button>
-          </div>
-          <div id="category-filters" class="filter-grid"></div>
+        <section class="section">
+          <div class="section-title"><h2>Show on map</h2></div>
+          <div id="filters" class="filters"></div>
         </section>
 
-        <section class="control-section timeline-section" aria-labelledby="timeline-heading">
-          <div class="section-heading-row">
-            <h3 id="timeline-heading">Timeline</h3>
-            <button id="timeline-all-button" class="text-button is-active" type="button">Use timeline</button>
-          </div>
-          <div class="timeline-readout">
-            <span>1988</span>
-            <strong id="timeline-year">Present</strong>
-          </div>
-          <input id="timeline-slider" type="range" min="1988" max="2026" step="1" value="2026" aria-label="Show map through year" disabled />
-          <p id="timeline-note" class="microcopy">Turn on the timeline to build the story year by year. Undated work travel remains in the all-time view.</p>
+        <section class="section">
+          <div class="section-title"><h2>Timeline</h2><button id="timelineToggle" class="text-button" type="button">Use timeline</button></div>
+          <div class="timeline-row"><input id="timeline" type="range" min="1988" max="2026" value="2026" disabled /><span id="timelineYear" class="timeline-year">Present</span></div>
+          <p class="micro">Build the journey year by year. Undated work travel remains in the all-time view.</p>
         </section>
 
-        <section class="control-section list-section" aria-labelledby="places-heading">
-          <div class="section-heading-row">
-            <h3 id="places-heading">Visible places</h3>
-            <span id="sort-caption" class="micro-label">Priority</span>
-          </div>
-          <div id="place-list" class="place-list"></div>
+        <section class="section">
+          <div class="section-title"><h2>Places</h2></div>
+          <div id="list" class="place-list"><div class="empty">Loading locations…</div></div>
         </section>
-      </aside>
-
-      <aside id="detail-panel" class="detail-panel" aria-live="polite" aria-label="Place details" hidden>
-        <button id="detail-close" class="detail-close" type="button" aria-label="Close place details">×</button>
-        <div id="detail-content"></div>
-      </aside>
-
-      <div class="map-status-bar" aria-hidden="true">
-        <span>GLOBAL / INTERACTIVE</span>
-        <span class="status-line"></span>
-        <span id="map-status-text">ALL SYSTEMS NOMINAL</span>
       </div>
+    </aside>
 
-      <noscript>
-        <div class="noscript-card">This map needs JavaScript enabled to load its interactive layers.</div>
-      </noscript>
-    </main>
-  </div>
+    <aside id="detail" class="detail-panel" aria-live="polite" hidden>
+      <button class="detail-close" type="button" data-close-detail aria-label="Close details">×</button>
+      <div id="detailBody"></div>
+    </aside>
+
+    <div class="status">Local interface · basemap loads progressively</div>
+
+    <noscript><div class="empty">JavaScript is required to display the interactive locations.</div></noscript>
+  </main>
 </body>
 </html>
