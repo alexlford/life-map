@@ -1,0 +1,193 @@
+/* alexlford.com integration layer
+   Keeps the standalone map intact while providing a compact, site-native embed mode. */
+
+.embed-context {
+  display: none;
+}
+
+html.embed-mode,
+html.embed-mode body,
+body.is-embedded,
+body.is-embedded .app-shell {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+body.is-embedded {
+  --topbar-h: 64px;
+  background: #04111d;
+}
+
+body.is-embedded .topbar {
+  height: var(--topbar-h);
+  grid-template-columns: minmax(180px, 1fr) auto auto;
+  gap: 16px;
+  padding: 10px 14px 9px 18px;
+  background:
+    linear-gradient(90deg, rgba(217,173,88,.07), transparent 28%),
+    rgba(4,17,29,.98);
+}
+
+body.is-embedded .topbar::after {
+  left: 18px;
+  right: 18px;
+  bottom: 4px;
+}
+
+body.is-embedded .brand-block {
+  display: none;
+}
+
+body.is-embedded .embed-context {
+  display: block;
+  min-width: 0;
+}
+
+body.is-embedded .embed-context .eyebrow {
+  margin: 0 0 2px;
+  font-size: 8px;
+}
+
+body.is-embedded .embed-context strong {
+  display: block;
+  overflow: hidden;
+  color: #eef4f6;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: -.015em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body.is-embedded .mode-switch {
+  justify-self: center;
+}
+
+body.is-embedded .mode-button {
+  padding: 8px 14px;
+  font-size: 12px;
+}
+
+body.is-embedded .top-actions {
+  justify-self: end;
+}
+
+body.is-embedded .map-stage {
+  height: calc(100dvh - var(--topbar-h));
+  min-height: 520px;
+}
+
+body.is-embedded .control-deck {
+  top: 14px;
+  left: 14px;
+  bottom: 38px;
+  width: min(352px, calc(100vw - 28px));
+  border-radius: 14px;
+}
+
+body.is-embedded .detail-panel {
+  top: 14px;
+  right: 14px;
+  width: min(380px, calc(100vw - 28px));
+  max-height: calc(100% - 54px);
+  border-radius: 14px;
+}
+
+body.is-embedded .map-status-bar {
+  left: 382px;
+}
+
+body.is-embedded .maplibregl-ctrl-top-right {
+  top: 8px;
+  right: 8px;
+}
+
+body.is-embedded .maplibregl-ctrl-bottom-right {
+  right: 8px;
+  bottom: 28px;
+}
+
+/* The standalone header remains richer; the embedded version should feel like
+   an interactive feature of alexlford.com rather than a second website. */
+@media (max-width: 900px) {
+  body.is-embedded {
+    --topbar-h: 58px;
+  }
+
+  body.is-embedded .topbar {
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    padding: 8px 10px;
+  }
+
+  body.is-embedded .embed-context {
+    display: none;
+  }
+
+  body.is-embedded .mode-switch {
+    justify-self: start;
+  }
+
+  body.is-embedded .utility-button {
+    padding: 7px 9px;
+  }
+
+  body.is-embedded .utility-button span:last-child {
+    display: none;
+  }
+
+  body.is-embedded .map-status-bar {
+    left: 14px;
+  }
+}
+
+@media (max-width: 720px) {
+  body.is-embedded {
+    --topbar-h: 56px;
+  }
+
+  body.is-embedded .mode-button {
+    padding: 7px 11px;
+    font-size: 11px;
+  }
+
+  body.is-embedded .top-actions {
+    gap: 5px;
+  }
+
+  body.is-embedded .control-deck {
+    top: auto;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: auto;
+    max-height: 45%;
+  }
+
+  body.is-embedded .detail-panel {
+    left: 10px;
+    right: 10px;
+    top: auto;
+    bottom: 10px;
+    width: auto;
+    max-height: 58%;
+  }
+
+  body.is-embedded .map-status-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  body.is-embedded .mode-button {
+    padding-inline: 9px;
+  }
+
+  body.is-embedded .utility-button {
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    padding: 0;
+  }
+}

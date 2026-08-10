@@ -16,7 +16,9 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Check JavaScript syntax
-        run: node --check app.js
+        run: |
+          node --check app.js
+          node --check integration.js
 
       - name: Validate map data
         run: python scripts/validate_data.py
