@@ -1,0 +1,36 @@
+/* DS-03: primary touch-target sizing only.
+   Keep visual hierarchy and map density intact while making the main
+   interactive controls easier to hit on touch devices. */
+
+.map-tool {
+  width: 44px;
+  height: 44px;
+}
+
+.map-tool.wide {
+  min-height: 44px;
+}
+
+.mode-switch button {
+  min-height: 44px;
+}
+
+.panel-toggle {
+  width: 44px;
+  height: 44px;
+}
+
+.detail-close {
+  width: 44px;
+  height: 44px;
+}
+
+.detail h2 {
+  margin-right: 56px;
+}
+
+@media (max-width: 900px) {
+  .attribution {
+    top: calc(max(10px, env(safe-area-inset-top)) + 52px);
+  }
+}
