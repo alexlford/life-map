@@ -1,0 +1,12 @@
+/* DS-08: shared Alex Ford parent/subsite convention for Life Map. */
+.site-intro .parent-brand {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-intro .parent-brand:hover,
+.site-intro .parent-brand:focus-visible {
+  color: var(--gold-soft);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
