@@ -1,0 +1,52 @@
+/* DS-02: readability-only overrides.
+   Keep layout, color, and interaction behavior unchanged while lifting
+   meaningful interface text out of the 9–11px range. */
+
+.site-intro small,
+.panel-head small,
+.count span,
+.journey-heading,
+.journey-heading span:last-child,
+.chapter span,
+.chapter em,
+.section-title h2,
+.text-button,
+.filter,
+.timeline-year,
+.micro,
+.place-copy span,
+.place-row b,
+.detail-eyebrow,
+.detail-location,
+.related-sites > span,
+.related-sites button,
+.experience span,
+.map-meta {
+  font-size: 12px;
+}
+
+.map-label,
+.map-tool.wide,
+.mode-switch button {
+  font-size: 12px;
+}
+
+.chapter strong,
+.search input,
+.search-result strong,
+.place-copy strong,
+.story-card p,
+.experience strong {
+  font-size: 13px;
+}
+
+.search-result span,
+.story-card li,
+.empty {
+  font-size: 12px;
+}
+
+/* Attribution is legally useful but intentionally peripheral. */
+.attribution {
+  font-size: 10px;
+}
