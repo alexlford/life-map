@@ -33,4 +33,28 @@
   .attribution {
     top: calc(max(10px, env(safe-area-inset-top)) + 52px);
   }
+
+  /* DS-16: secondary touch controls. Keep the denser desktop atlas intact. */
+  .search input,
+  .search-result,
+  .filter,
+  .text-button,
+  .timeline-row input,
+  .place-row,
+  .related-sites button,
+  .map-meta summary {
+    min-height: 44px;
+  }
+
+  .text-button,
+  .map-meta summary {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .filter,
+  .related-sites button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
