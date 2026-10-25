@@ -113,3 +113,11 @@ The user explicitly confirmed dining at République on **2026-10-24**, after Mar
 Yuan Wonton in Denver is a user-recalled confirmed visit (date unknown), and clearly qualifies for the curated collection through chef-owner Penelope Wong's **2026 James Beard Best Chef: Mountain** win. Source: https://www.jamesbeard.org/stories/james-beard-award-winners-2026. Do not assert the award predates the visit until a date is known. Bistro Barbès in Denver (closed June 2026, chef Jon Robbins) has no verified direct Michelin Guide or James Beard distinction. Preserve the user-supplied memory in `culture/data/excluded-dining-memories.json` rather than publishing it as a curated experience; this follows the user's preference for limiting displayed entries to qualified venues or explicitly selected favorites. Bistro Barbès is not currently a featured exception.
 
 October 25 merge: preserved the separately merged North Pond (Chicago) unreviewed memory lead and the original 20 typed reservation entries, then appended 39 supplemental review-only screenshot rows; Le Fou Frog was excluded entirely from the public ledger in accordance with user preference.
+
+## Story-first restaurant chapters
+
+Restaurant records tell the history of a place: its setting, origins, chefs and lasting contribution, with Alex's memory connecting the narrative to his life. Exact dates are secondary, and unverified details about dishes, companions or conversations must never be invented.
+
+North Pond in Chicago is now a confirmed October 2021 dinner, during the week following the October 10 Chicago Marathon. The setting is a century-old warming shelter beside a pond in Lincoln Park. Bruce Sherman won James Beard Best Chef: Great Lakes in 2012 at North Pond and departed the kitchen in 2019. One Michelin star was confirmed in the 2021 Chicago Guide before the visit. The record has a dedicated story, four historical chapter markers and source links.
+
+Nine additional Chicago Michelin or James Beard candidates remain unreviewed; PDT remains possibly visited and The Dead Rabbit is marked not visited in New York.

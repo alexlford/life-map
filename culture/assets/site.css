@@ -18,3 +18,17 @@
 .memory-option{display:inline-flex;align-items:center;gap:9px;color:var(--muted);font-size:12px;margin:15px 0}.memory-option input{accent-color:var(--wine);width:17px;height:17px}.interview-screen{padding:12px 0 20px}.interview-screen .eyebrow{margin-bottom:12px}.qualifies{font-size:10px!important;letter-spacing:.08em;color:var(--wine)!important;font-weight:800;text-transform:uppercase}.qualifies.neutral{color:var(--muted)!important}.interview-screen .tabstrip{margin-bottom:10px}
 
 .chapter-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.chapter-bar .chapter-symbol{color:#82577e}.chapter-bar .chapter-number{color:#82577e}@media(max-width:1100px){.chapter-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:720px){.chapter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:450px){.chapter-grid{grid-template-columns:1fr}}
+
+/* Editorial stories: place, people and history come before date precision. */
+.experience-story{margin:45px 0 50px;padding:42px clamp(20px,4vw,54px);background:var(--cream);border:1px solid var(--line)}
+.experience-story h2{font-size:clamp(28px,3.4vw,47px);max-width:680px;line-height:1.18;letter-spacing:-.035em;margin:0 0 27px}
+.experience-story .story-paragraph{font-size:clamp(14px,1.45vw,17px);line-height:1.85;color:#555259;margin-bottom:21px;max-width:760px}
+.experience-story .story-subheading{font:500 27px/1.3 var(--serif);margin:42px 0 20px}
+.story-chapters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.story-chapter{border-top:1px solid var(--line);padding:18px 0}
+.story-year{font:500 24px/1.2 var(--serif);color:var(--wine);display:block;margin-bottom:8px}
+.story-chapter>div{font-weight:700;font-size:13px}
+.story-chapter>p{color:var(--muted);font-size:12px;margin:7px 0 0}
+.story-sources{display:flex;flex-wrap:wrap;gap:10px 17px;border-top:1px solid var(--line);margin-top:20px;padding-top:17px;font-size:11px}
+.story-sources>a{color:var(--wine)}
+@media(max-width:650px){.experience-story{padding:24px 20px}.story-chapters{grid-template-columns:1fr}}
