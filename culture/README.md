@@ -130,3 +130,9 @@ Public Culture pages prioritize story over booking fields. Story copy migrated f
 ## NYC cocktail interview: Dante (October 25, 2026)
 
 Dante in Greenwich Village is explicitly **not visited** during the user's 2018–2020 New York City period, despite the bar's recognized 2018 James Beard semifinalist status. This result remains an interview exclusion and never creates a confirmed culture experience. Preserve prior answers: **PDT** possibly visited; **The Dead Rabbit** and **Leyenda** not visited. The next unreviewed, award-recognized NYC cocktail-bar candidate is **Bar Goto**.
+
+## Rapid-fire interview stability and Resy/Tock evidence (October 25, 2026)
+
+The interview previously replaced its entire card list every time a visitor selected Yes/Maybe/No. That causes focus and scroll loss on mobile, making questions seem to disappear. Now clicks update only the three answer buttons in-place; the page stays put. Candidates are shown in twelve-place batches with manual Next/Previous navigation. Both responses and current area/screen/batch persist in browser localStorage, with explicit warning if browser storage fails, and a copy-to-ChatGPT workflow. Previously locked confirmations and exclusions remain immutable in this on-site draft.
+
+Thirteen unique Tock/Resy historical reservations were extracted (duplicate screenshots deduplicated), including Sauvage January 2021 and Valentine's Day 2022, Charleston October 2020, Safta summer 2022, two Breckenridge Distillery bookings in January 2023, Manifesto drinks via The Rieger in October 2019, Q39 South, Willow Creek, the West Hollywood Butcher's Daughter and three Mountain House event bookings. These are archival supporting details, not independently proven meals. Nonqualifying or unconfirmed locations do not become public experience cards. Source screenshots remain in the user's ChatGPT conversation; the public repo stores only compact extracted metadata.
