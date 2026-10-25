@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "updated": "2026-10-25",
   "purpose": "Interview leads only, not evidence of actual visit",
   "periods": {
@@ -13,7 +13,7 @@
     "maybe",
     "not_visited"
   ],
-  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House.",
+  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House. Continued discovery batch 2026-10-25: 15 additional time-compatible Baltimore/DC restaurant candidates from dated historical sources. All remain unreviewed and excluded from public experience totals. Interview returns to Magdalena next; candidate discovery can continue periodically during future review sessions.",
   "candidates": [
     {
       "id": "altimore-charleston",
@@ -688,11 +688,218 @@
       "interviewCue": "Steamboat restaurant listed by the resort among 2020–21 openings; ask whether visited on same ski trip.",
       "sourceUrl": "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf",
       "visitStatus": "unreviewed"
+    },
+    {
+      "id": "baltimore-gunther-co",
+      "area": "Baltimore",
+      "name": "Gunther & Co.",
+      "recognition": "Opened 2016; historic Brewers Hill brewery space. Historical memory candidate, no Michelin/JBF distinction claimed.",
+      "recognitionYear": 2016,
+      "awardFamily": "context",
+      "interviewCue": "Huge main dining room, soaring ceilings, green living wall, brewery architecture and wood-burning oven.",
+      "sourceUrl": "https://www.baltimoremagazine.com/section/fooddrink/open-shut-pizza-press-gunther-co-opens-gnocco-coming-soon/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "baltimore-cafe-dear-leon",
+      "area": "Baltimore",
+      "name": "Café Dear Leon",
+      "recognition": "Opened August 2020; historic bakery visit candidate. No award claimed for the interview period.",
+      "recognitionYear": 2020,
+      "awardFamily": "context",
+      "interviewCue": "Tiny Canton pastry shop at O'Donnell Square; croissants and Japanese egg sandwiches, mainly takeout in 2020.",
+      "sourceUrl": "https://www.baltimoremagazine.com/section/fooddrink/open-shut-cafe-dear-leon-snow-cone-sisters-hungry-like-the-wolfe/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "baltimore-nihao",
+      "area": "Baltimore",
+      "name": "NiHao",
+      "recognition": "Opened Canton in August 2020; historic restaurant memory candidate. No restaurant James Beard award claimed.",
+      "recognitionYear": 2020,
+      "awardFamily": "context",
+      "interviewCue": "Contemporary Chinese restaurant at 2322 Boston Street; chefs Peter and Lisa Chang were involved.",
+      "sourceUrl": "https://www.cantoncommunity.org/news-and-notes/2020/8/7/neighborhood-notes-august-2020",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "washingtondc-komi",
+      "area": "Washington, DC",
+      "name": "Komi",
+      "recognition": "2019 James Beard Outstanding Restaurant semifinalist (not a Michelin-star claim)",
+      "recognitionYear": 2019,
+      "awardFamily": "beard",
+      "interviewCue": "Dupont Circle; intimate Mediterranean tasting menu, no menu posted outside.",
+      "sourceUrl": "https://washingtonian.com/2019/02/27/here-are-the-dc-area-semi-finalists-for-the-james-beard-awards/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "washingtondc-jaleo",
+      "area": "Washington, DC",
+      "name": "Jaleo",
+      "recognition": "2019 James Beard Outstanding Restaurant semifinalist (national recognition for José Andrés's restaurant)",
+      "recognitionYear": 2019,
+      "awardFamily": "beard",
+      "interviewCue": "Penn Quarter; Spanish tapas restaurant with a lively and colorful room.",
+      "sourceUrl": "https://washingtonian.com/2019/02/27/here-are-the-dc-area-semi-finalists-for-the-james-beard-awards/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "washingtondc-rooster-owl",
+      "area": "Washington, DC",
+      "name": "Rooster & Owl",
+      "recognition": "2020 James Beard Best New Restaurant semifinalist",
+      "recognitionYear": 2020,
+      "awardFamily": "beard",
+      "interviewCue": "14th Street NW; modern tasting menus and shared plates.",
+      "sourceUrl": "https://washingtonian.com/2020/02/26/here-are-the-dc-area-semifinalists-for-the-2020-james-beard-awards/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "washingtondc-thamee",
+      "area": "Washington, DC",
+      "name": "Thamee",
+      "recognition": "2020 James Beard Best New Restaurant semifinalist",
+      "recognitionYear": 2020,
+      "awardFamily": "beard",
+      "interviewCue": "H Street NE; Burmese food, tea leaf salad, brightly decorated space.",
+      "sourceUrl": "https://washingtonian.com/2020/02/26/here-are-the-dc-area-semifinalists-for-the-2020-james-beard-awards/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "washingtondc-anju",
+      "area": "Washington, DC",
+      "name": "Anju",
+      "recognition": "2020 James Beard Best Chef Mid-Atlantic semifinalist (Danny Lee)",
+      "recognitionYear": 2020,
+      "awardFamily": "beard",
+      "interviewCue": "Dupont Circle; Korean cooking with exposed brick and a bustling bar.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "washingtondc-poca-madre",
+      "area": "Washington, DC",
+      "name": "Poca Madre",
+      "recognition": "2020 James Beard Best Chef Mid-Atlantic semifinalist (Victor Albisu)",
+      "recognitionYear": 2020,
+      "awardFamily": "beard",
+      "interviewCue": "Chinatown; inventive Mexican dishes, tasting menu, chef Victor Albisu.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "washingtondc-himitsu",
+      "area": "Washington, DC",
+      "name": "Himitsu",
+      "recognition": "2019 James Beard Best Chef Mid-Atlantic semifinalist (Kevin Tien)",
+      "recognitionYear": 2019,
+      "awardFamily": "beard",
+      "interviewCue": "Petworth; small Japanese-inspired restaurant with eclectic plates.",
+      "sourceUrl": "https://archive.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "washingtondc-kith-and-kin",
+      "area": "Washington, DC",
+      "name": "Kith and Kin",
+      "recognition": "2019 James Beard Rising Star Chef semifinalist (Kwame Onwuachi)",
+      "recognitionYear": 2019,
+      "awardFamily": "beard",
+      "interviewCue": "The Wharf/InterContinental; Afro-Caribbean cooking, opened 2017.",
+      "sourceUrl": "https://washingtonian.com/2019/02/27/here-are-the-dc-area-semi-finalists-for-the-james-beard-awards/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "washingtondc-brothers-and-sisters",
+      "area": "Washington, DC",
+      "name": "Brothers and Sisters",
+      "recognition": "2019 James Beard Best Chef Mid-Atlantic semifinalist (Erik Bruner-Yang)",
+      "recognitionYear": 2019,
+      "awardFamily": "beard",
+      "interviewCue": "The LINE Hotel in Adams Morgan; modern restaurant on hotel mezzanine.",
+      "sourceUrl": "https://archive.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "washingtondc-cane",
+      "area": "Washington, DC",
+      "name": "Cane",
+      "recognition": "2020 James Beard Best Chef Mid-Atlantic semifinalist (Peter Prime)",
+      "recognitionYear": 2020,
+      "awardFamily": "beard",
+      "interviewCue": "H Street NE; Trinidadian flavors and Caribbean food.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "washingtondc-zenebech-restaurant",
+      "area": "Washington, DC",
+      "name": "Zenebech Restaurant",
+      "recognition": "2020 James Beard Best Chef Mid-Atlantic semifinalist (Zenebech Dessu)",
+      "recognitionYear": 2020,
+      "awardFamily": "beard",
+      "interviewCue": "Adams Morgan; Ethiopian injera, stews and shared platters.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
+    },
+    {
+      "id": "washingtondc-green-almond-pantry",
+      "area": "Washington, DC",
+      "name": "Green Almond Pantry",
+      "recognition": "2020 James Beard Best Chef Mid-Atlantic semifinalist (Cagla Onal-Urel)",
+      "recognitionYear": 2020,
+      "awardFamily": "beard",
+      "interviewCue": "Georgetown; tiny Mediterranean/vegetable-focused restaurant.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "researchStatus": "historical_candidate",
+      "addedOn": "2026-10-25"
     }
   ],
   "source": {
     "repository": "alexlford/life-map",
     "path": "data/dining-interview.json",
     "asOf": "2026-10-25"
+  },
+  "discoveryPolicy": {
+    "scope": [
+      "Baltimore 2018–2021",
+      "Washington DC 2018–2021",
+      "Denver Metro 2021–present"
+    ],
+    "rule": "Research additional real restaurants and historically dated Michelin/James Beard recognition; never infer the user attended.",
+    "newCandidateStatus": "unreviewed",
+    "confirmOnlyFrom": "explicit direct user answer",
+    "interviewOrder": "Continue pending Baltimore candidates (Magdalena then La Cuchara), then newly discovered Baltimore leads, then DC and Denver",
+    "sourceRequirement": "Each candidate has a cited real-world source URL and an era-specific memory cue."
   }
 }
