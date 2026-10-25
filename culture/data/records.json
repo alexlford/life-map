@@ -9,6 +9,11 @@
       "description": "Restaurants and remarkable tables"
     },
     {
+      "id": "bar",
+      "label": "Cocktail Bars",
+      "description": "Cocktail bars, speakeasies and beverage experiences"
+    },
+    {
       "id": "concert",
       "label": "Concerts",
       "description": "Live music worth remembering"
@@ -29,7 +34,12 @@
     "date": "Exact visit date remains null unless verified. An assigned year is approximate, and a range is retained as a range.",
     "awards": "Awards link to their actual recipient and their actual year; later recognition does not imply historical status at time of meal.",
     "map": "Map groups experiences at approximate city centers, not exact venue entrances.",
-    "favorites": "Favorites come only from explicit user preference statements, independent of restaurant awards."
+    "favorites": "Favorites come only from explicit user preference statements, independent of restaurant awards.",
+    "musicAndDining": "Attending a restaurant with live jazz does not automatically count as a distinct concert. Require a separately confirmed performance before adding a concert record.",
+    "awardFocusedCollection": "Default Culture Passport Dining chapter shows only venues with verified historical Michelin inclusion or James Beard recognition of restaurant itself or chef at that restaurant. Memory-only confirmed visits are preserved but hidden by default, discoverable with a separate toggle. Recognition year may differ from dinner year.",
+    "curated": "Default Culture Passport dining views show confirmed restaurants with documented Michelin Guide recognition (star, Bib, Selected, historic Plate) or directly associated James Beard awards, finalists or semifinalists. Those awards retain their recipient and year. Chef awards at unrelated restaurants or historical awards dated after a dinner may be context, not proof of qualification at the meal date. Unverified and outside-scope visits stay in archive but are hidden from curated browsing by default.",
+    "featuredExceptions": "Venue-specific Michelin/JBF honors are the default inclusion criteria, but the user's express favorites Sauvage, Gunther & Co., Death & Co Denver and provisional favorite The Majestic are displayed in the primary collection despite no established qualifying award.",
+    "beverages": "Stand-alone cocktail bars are type=bar, never counted as restaurants. James Beard Outstanding Bar Program includes bar semifinalists. Never borrow recognition from another location within a chain."
   },
   "venues": [
     {
@@ -166,6 +176,66 @@
         "precision": "city-centroid"
       },
       "sourceId": "thames-street-oyster-house-baltimore"
+    },
+    {
+      "id": "venue-majestic-kansas-city",
+      "name": "The Majestic Restaurant",
+      "city": "Kansas City",
+      "region": "Missouri",
+      "country": "USA",
+      "neighborhood": "Downtown",
+      "address": "931 Broadway Blvd, Kansas City, MO 64105",
+      "location": {
+        "lat": 39.0997,
+        "lng": -94.5786,
+        "precision": "city-centroid"
+      },
+      "sourceId": "majestic-kansas-city"
+    },
+    {
+      "id": "venue-rec-pier-chop-house-baltimore",
+      "name": "Rec Pier Chop House",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "USA",
+      "neighborhood": "Fells Point",
+      "address": "1715 Thames Street, Baltimore, MD 21231",
+      "location": {
+        "lat": 39.2904,
+        "lng": -76.6122,
+        "precision": "city-centroid"
+      },
+      "sourceId": "rec-pier-chop-house-baltimore"
+    },
+    {
+      "id": "venue-manifesto-kansas-city",
+      "name": "Manifesto",
+      "city": "Kansas City",
+      "region": "Missouri",
+      "country": "USA",
+      "neighborhood": "Crossroads",
+      "address": "1924 Main Street, Kansas City, MO 64108",
+      "location": {
+        "lat": 39.0997,
+        "lng": -94.5786,
+        "precision": "city-centroid"
+      },
+      "sourceId": "manifesto-kansas-city"
+    },
+    {
+      "id": "venue-death-and-co-denver",
+      "name": "Death & Co Denver",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "neighborhood": "RiNo",
+      "address": "1280 25th Street, Denver, CO 80205",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903,
+        "precision": "city-centroid"
+      },
+      "sourceId": "death-and-co-denver"
     }
   ],
   "records": [
@@ -202,7 +272,25 @@
         "sourceUrl": "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
         "historicalVisitDistinction": "unverified"
       },
-      "sourceUrl": "https://guide.michelin.com/en/california/hollywood/restaurant/republique"
+      "sourceUrl": "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "michelin_and_beard",
+        "note": "Michelin Selected 2026; Margarita Manzke 2023 JBF pastry winner at this restaurant."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "both",
+        "reason": "Michelin Selected in 2026; pastry chef Margarita Manzke won the 2023 James Beard Outstanding Pastry Chef or Baker award. Meal year not known.",
+        "evidenceUrls": [
+          "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
+          "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
+      }
     },
     {
       "id": "dining-minetta-tavern-nyc-2016-2017",
@@ -239,7 +327,24 @@
         "historicalVisitDistinction": "starred",
         "starsAtVisit": 1
       },
-      "sourceUrl": "https://michelinmedia.com/michelin-guide-nyc-2017/"
+      "sourceUrl": "https://michelinmedia.com/michelin-guide-nyc-2017/",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "michelin",
+        "note": "Michelin 1 star in both possible visit years, 2016 and 2017."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "One Michelin star in both plausible 2016 and 2017 Guide editions.",
+        "evidenceUrls": [
+          "https://michelinmedia.com/michelin-guide-nyc-2017/"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
+      }
     },
     {
       "id": "dining-beckon-denver-2023",
@@ -268,7 +373,24 @@
         "historicalVisitDistinction": "unverified",
         "starsAtVisit": null
       },
-      "sourceUrl": "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/"
+      "sourceUrl": "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "michelin",
+        "note": "Michelin 1 star in inaugural Colorado 2023 selection; meal date relative to award uncertain."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "Awarded one Michelin star in Colorado's inaugural 2023 Guide; meal date relative to award announcement remains unknown.",
+        "evidenceUrls": [
+          "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
+      }
     },
     {
       "id": "dining-charleston-baltimore-2018-2021",
@@ -336,7 +458,25 @@
         "sourceUrl": null,
         "note": "Baltimore was not covered by Michelin's US restaurant guide during the 2018–2021 visit window. Absence of stars here is not a negative dining assessment."
       },
-      "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf"
+      "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "james_beard",
+        "note": "Cindy Wolf Best Chef: Mid-Atlantic recognition during Baltimore period; restaurant-level wine program award in 2025, after meal."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "james_beard",
+        "reason": "Chef Cindy Wolf received James Beard Best Chef: Mid-Atlantic finalist recognition; restaurant won the 2025 Outstanding Wine and Other Beverages Program award, after the 2020 meal.",
+        "evidenceUrls": [
+          "https://archive.jamesbeard.org/chef/cindy-wolf",
+          "https://web.jamesbeard.org/stories/the-2025-james-beard-award-winners"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
+      }
     },
     {
       "id": "dining-woodberry-kitchen-baltimore-2018-2021",
@@ -374,7 +514,24 @@
         "sourceUrl": null,
         "note": "Baltimore was not within a Michelin restaurant Guide region in the 2018–2021 period; no star claim is being made."
       },
-      "sourceUrl": "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners"
+      "sourceUrl": "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "james_beard",
+        "note": "Spike Gjerde won 2015 JBF Best Chef: Mid-Atlantic while associated with Woodberry Kitchen."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "james_beard",
+        "reason": "Chef Spike Gjerde won James Beard Best Chef: Mid-Atlantic in 2015 at Woodberry Kitchen, before the approximate 2018 meal.",
+        "evidenceUrls": [
+          "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
+      }
     },
     {
       "id": "dining-momofuku-ccdc-washington-dc",
@@ -412,7 +569,24 @@
         "historicalVisitDistinction": "unverified",
         "note": "Michelin referred to Momofuku CCDC as The Plate in a 2019 Guide article. Its designation at the exact date of Alex's meal is not confirmed, and The Plate is not a Michelin star."
       },
-      "sourceUrl": "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week"
+      "sourceUrl": "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "michelin",
+        "note": "2019 Michelin Plate selection, a recommendation but NOT a Michelin star; 2013 David Chang JBF honor at NYC Momofuku Noodle Bar is excluded from basis."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "Listed with Michelin's historical Plate recommendation in the 2019 Washington, DC Guide, not a Michelin star. The visit date is unknown; David Chang's 2013 James Beard win belongs to a different NYC restaurant.",
+        "evidenceUrls": [
+          "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
+      }
     },
     {
       "id": "dining-sauvage-steamboat-2021-01",
@@ -441,7 +615,23 @@
         "sourceUrl": null,
         "note": "No historical Michelin distinction is asserted for this visit. Colorado's first Michelin Guide selection arrived in 2023; Baltimore was not covered."
       },
-      "sourceUrl": "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf"
+      "sourceUrl": "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf",
+      "editorial": {
+        "awardQualified": false,
+        "collection": "featured_personal_dining",
+        "basis": null,
+        "note": "Personally selected: one of the user's favorite dining experiences, January 2021, Steamboat Springs. No award claim.",
+        "featuredException": true,
+        "exceptionPriority": "permanent"
+      },
+      "curation": {
+        "status": "outside_scope",
+        "basis": "none_verified",
+        "reason": "A valued personal favorite; no verified Michelin Guide or James Beard award/nomination established for this restaurant.",
+        "evidenceUrls": [],
+        "reviewedOn": "2026-10-25",
+        "confidence": "no_qualifying_evidence_found"
+      }
     },
     {
       "id": "dining-gunther-and-co-baltimore-2020-02-14",
@@ -470,7 +660,23 @@
         "sourceUrl": null,
         "note": "No historical Michelin distinction is asserted for this visit. Colorado's first Michelin Guide selection arrived in 2023; Baltimore was not covered."
       },
-      "sourceUrl": "https://eatatgunther.com/contact"
+      "sourceUrl": "https://eatatgunther.com/contact",
+      "editorial": {
+        "awardQualified": false,
+        "collection": "featured_personal_dining",
+        "basis": null,
+        "note": "Personally selected: Valentine's Day 2020 dinner in Baltimore. No award claim.",
+        "featuredException": true,
+        "exceptionPriority": "permanent"
+      },
+      "curation": {
+        "status": "outside_scope",
+        "basis": "none_verified",
+        "reason": "A valued personal favorite; no verified Michelin Guide or James Beard award/nomination established for this restaurant.",
+        "evidenceUrls": [],
+        "reviewedOn": "2026-10-25",
+        "confidence": "no_qualifying_evidence_found"
+      }
     },
     {
       "id": "dining-thames-street-oyster-house-baltimore",
@@ -497,7 +703,183 @@
         "sourceUrl": null,
         "note": "No historical Michelin distinction is asserted for this visit. Colorado's first Michelin Guide selection arrived in 2023; Baltimore was not covered."
       },
-      "sourceUrl": "https://thamesstreetoysterhouse.com/"
+      "sourceUrl": "https://thamesstreetoysterhouse.com/",
+      "editorial": {
+        "awardQualified": false,
+        "collection": "personal_memories",
+        "basis": null,
+        "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+      },
+      "curation": {
+        "status": "outside_scope",
+        "basis": "none_verified",
+        "reason": "Confirmed dining memory; no verified Michelin Guide or James Beard recognition established for this restaurant.",
+        "evidenceUrls": [],
+        "reviewedOn": "2026-10-25",
+        "confidence": "no_qualifying_evidence_found"
+      }
+    },
+    {
+      "id": "dining-majestic-kansas-city",
+      "type": "dining",
+      "title": "The Majestic Restaurant",
+      "venueId": "venue-majestic-kansas-city",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Kansas City visits, 2010–present (exact date unknown)",
+        "precision": "unknown",
+        "source": "Alex directly confirmed The Majestic Restaurant in the Culture Passport interview on October 25, 2026."
+      },
+      "summary": "Confirmed visit to The Majestic, a downtown Kansas City steakhouse with a basement jazz supper club. Exact dining date and jazz performers are unknown.",
+      "recognitions": [],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No Michelin star or James Beard distinction is claimed for this venue or this visit."
+      },
+      "sourceUrl": "https://majestickc.com/jazz-club/",
+      "editorial": {
+        "awardQualified": false,
+        "collection": "featured_personal_dining",
+        "basis": null,
+        "note": "User wants The Majestic kept in the visible collection, provisionally, because of the memorable steakhouse and basement jazz experience. No award claim.",
+        "featuredException": true,
+        "exceptionPriority": "provisional"
+      },
+      "curation": {
+        "status": "outside_scope",
+        "basis": "none_verified",
+        "reason": "Confirmed jazz-steakhouse memory; no verified Michelin Guide or James Beard honor for the restaurant established.",
+        "evidenceUrls": [],
+        "reviewedOn": "2026-10-25",
+        "confidence": "no_qualifying_evidence_found"
+      }
+    },
+    {
+      "id": "dining-rec-pier-chop-house-baltimore",
+      "type": "dining",
+      "title": "Rec Pier Chop House",
+      "venueId": "venue-rec-pier-chop-house-baltimore",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "label": "Baltimore years, 2018–2021 (exact date unknown)",
+        "precision": "year_range",
+        "source": "Alex directly confirmed Rec Pier Chop House in the Culture Passport interview on October 25, 2026."
+      },
+      "summary": "Confirmed visit to Rec Pier Chop House, the Italian chophouse inside Sagamore Pendry Baltimore in Fells Point. Exact meal date remains unknown.",
+      "recognitions": [],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No Michelin star or James Beard distinction is claimed for this venue or this visit."
+      },
+      "sourceUrl": "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/",
+      "editorial": {
+        "awardQualified": false,
+        "collection": "personal_memories",
+        "basis": null,
+        "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+      },
+      "curation": {
+        "status": "needs_verification",
+        "basis": "associated_chef",
+        "reason": "Chef Andrew Carmellini had James Beard awards from earlier career and was associated with this restaurant, but no direct James Beard award for Rec Pier Chop House has been established. Founder association alone is insufficient.",
+        "evidenceUrls": [
+          "https://www.ciachef.edu/cia-bios/andrew-carmellini/",
+          "https://www.eater.com/2017/9/20/16301624/andrew-carmellini-rye-street-tavern-baltimore-opening"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "indirect_only"
+      }
+    },
+    {
+      "id": "bar-manifesto-kansas-city",
+      "type": "bar",
+      "title": "Manifesto",
+      "venueId": "venue-manifesto-kansas-city",
+      "status": "confirmed",
+      "favorite": true,
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Visited during Kansas City years, precise date unknown",
+        "precision": "unknown",
+        "source": "Alex directly recalled Manifesto as an amazing Kansas City cocktail bar on October 25, 2026."
+      },
+      "summary": "A memorable visit to Manifesto, the intimate basement speakeasy in Kansas City's historic Rieger Hotel building. The original bar closed around 2020. Exact visit date is unknown.",
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2018,
+          "result": "semifinalist",
+          "category": "Outstanding Bar Program",
+          "recipient": "Manifesto, Kansas City",
+          "relationship": "bar itself",
+          "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-semifinalists"
+        }
+      ],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "note": "Kansas City was not covered by Michelin during its operating years."
+      },
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-semifinalists",
+      "editorial": {
+        "awardQualified": true,
+        "featuredException": false,
+        "exceptionPriority": null,
+        "collection": "recognized_cocktail_bar",
+        "basis": "james_beard",
+        "note": "The user explicitly described Manifesto as an amazing cocktail-bar experience; the venue was a named 2018 James Beard semifinalist."
+      }
+    },
+    {
+      "id": "bar-death-and-co-denver",
+      "type": "bar",
+      "title": "Death & Co Denver",
+      "venueId": "venue-death-and-co-denver",
+      "status": "confirmed",
+      "favorite": true,
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Date unknown (Denver outpost opened May 2018)",
+        "precision": "unknown",
+        "source": "Alex directly recalled enjoying Death & Co in Denver on October 25, 2026."
+      },
+      "summary": "A personally memorable cocktail-bar experience at Death & Co inside Denver's Ramble Hotel in RiNo. This Denver outpost opened in May 2018; the date of the visit remains unknown.",
+      "recognitions": [],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "note": "No Michelin or venue-specific James Beard recognition has been verified for the Denver location."
+      },
+      "sourceUrl": "https://www.deathandcompany.com/location/death-and-company-denver/",
+      "editorial": {
+        "awardQualified": false,
+        "featuredException": true,
+        "exceptionPriority": "permanent",
+        "collection": "featured_cocktail_memory",
+        "basis": null,
+        "note": "The user expressly described Death & Co Denver as amazing and asked to include memorable cocktail bars. Awards earned by the New York location or at other competitions must not be attributed to the Denver site."
+      }
     }
   ],
   "origin": {

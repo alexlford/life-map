@@ -82,6 +82,18 @@
       {
         "title": "Rec Pier Chop House official hotel restaurant",
         "url": "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/"
+      },
+      {
+        "title": "The Majestic's official jazz supper club",
+        "url": "https://majestickc.com/jazz-club/"
+      },
+      {
+        "title": "Rec Pier Chop House official site",
+        "url": "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/"
+      },
+      {
+        "title": "Le Fou Frog official address and history",
+        "url": "https://www.lefoufrog.com/directions"
       }
     ],
     "jamesBeard": "James Beard recognitions record award category, result (winner/finalist/semifinalist), year, the honoree, and associated restaurant. Chef recognition does not mean the restaurant itself won an institutional award. Award years after a meal remain subsequent achievements. A restaurant recognized after a user's visit may be tagged as subsequently awarded, rather than suggesting it held the award on the dinner date.",
@@ -89,7 +101,8 @@
     "timeline": "Visit years are user-chosen approximate chronological placements when exact dates are unknown, not verified day-specific dates. Approximate placement must be marked separately from award dates.",
     "plate": "The historical Michelin Plate is a recommended-restaurant designation, not a Michelin star. A Plate in a known guide edition does not imply it existed on an unknown meal date.",
     "founderRecognition": "If a founder won a James Beard award for a different restaurant, preserve the credited venue and never attribute the award to the visited branch.",
-    "favorites": "Favorite dining experiences are user-designated and do not imply external culinary awards."
+    "favorites": "Favorite dining experiences are user-designated and do not imply external culinary awards.",
+    "curated": "Default Culture Passport dining views show confirmed restaurants with documented Michelin Guide recognition (star, Bib, Selected, historic Plate) or directly associated James Beard awards, finalists or semifinalists. Those awards retain their recipient and year. Chef awards at unrelated restaurants or historical awards dated after a dinner may be context, not proof of qualification at the meal date. Unverified and outside-scope visits stay in archive but are hidden from curated browsing by default."
   },
   "entries": [
     {
@@ -127,7 +140,19 @@
           "relationship": "chef at restaurant",
           "sourceUrl": "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
         }
-      ]
+      ],
+      "curation": {
+        "status": "qualifies",
+        "basis": "both",
+        "reason": "Michelin Selected in 2026; pastry chef Margarita Manzke won the 2023 James Beard Outstanding Pastry Chef or Baker award. Meal year not known.",
+        "evidenceUrls": [
+          "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
+          "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
+      }
     },
     {
       "id": "minetta-tavern-nyc-2016-2017",
@@ -186,7 +211,18 @@
         }
       ],
       "locationUrl": "https://www.google.com/maps/search/?api=1&query=Minetta+Tavern+113+MacDougal+St+New+York",
-      "recognitions": []
+      "recognitions": [],
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "One Michelin star in both plausible 2016 and 2017 Guide editions.",
+        "evidenceUrls": [
+          "https://michelinmedia.com/michelin-guide-nyc-2017/"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
+      }
     },
     {
       "id": "beckon-denver-2023",
@@ -218,7 +254,18 @@
       "summary": "Confirmed visit to Beckon around the time it received one Michelin star in the inaugural Colorado Guide, announced September 12, 2023. The precise visit date is still unknown.",
       "evidenceStatus": "reported",
       "locationUrl": "https://www.google.com/maps/search/?api=1&query=Beckon+2843+Larimer+St+Denver",
-      "recognitions": []
+      "recognitions": [],
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "Awarded one Michelin star in Colorado's inaugural 2023 Guide; meal date relative to award announcement remains unknown.",
+        "evidenceUrls": [
+          "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
+      }
     },
     {
       "id": "charleston-baltimore-2018-2021",
@@ -294,7 +341,19 @@
       ],
       "summary": "Confirmed Charleston visit, placed on the 2020 timeline (exact date unknown). Chef Cindy Wolf earned multiple James Beard nominations; Charleston later won the Outstanding Wine and Other Beverages Program award in 2025.",
       "evidenceStatus": "reported",
-      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Charleston+1000+Lancaster+Street+Baltimore+MD"
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Charleston+1000+Lancaster+Street+Baltimore+MD",
+      "curation": {
+        "status": "qualifies",
+        "basis": "james_beard",
+        "reason": "Chef Cindy Wolf received James Beard Best Chef: Mid-Atlantic finalist recognition; restaurant won the 2025 Outstanding Wine and Other Beverages Program award, after the 2020 meal.",
+        "evidenceUrls": [
+          "https://archive.jamesbeard.org/chef/cindy-wolf",
+          "https://web.jamesbeard.org/stories/the-2025-james-beard-award-winners"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
+      }
     },
     {
       "id": "woodberry-kitchen-baltimore-2018-2021",
@@ -339,7 +398,18 @@
       ],
       "summary": "Confirmed Woodberry Kitchen visit, placed on the 2018 timeline (exact date unknown). Chef Spike Gjerde won the James Beard Best Chef: Mid-Atlantic award in 2015, before this visit.",
       "evidenceStatus": "reported",
-      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Woodberry+Kitchen+Baltimore+Maryland"
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Woodberry+Kitchen+Baltimore+Maryland",
+      "curation": {
+        "status": "qualifies",
+        "basis": "james_beard",
+        "reason": "Chef Spike Gjerde won James Beard Best Chef: Mid-Atlantic in 2015 at Woodberry Kitchen, before the approximate 2018 meal.",
+        "evidenceUrls": [
+          "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
+      }
     },
     {
       "id": "momofuku-ccdc-washington-dc",
@@ -385,7 +455,18 @@
       ],
       "summary": "Confirmed visit to David Chang's Momofuku CCDC in Washington, DC. Exact meal date uncertain; restaurant operated 2015 to March 2020. Michelin listed it with The Plate designation in 2019 (not a star). Chang's 2013 James Beard Outstanding Chef award was for Momofuku Noodle Bar in New York, not this restaurant.",
       "evidenceStatus": "reported",
-      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Momofuku+CCDC+1090+I+Street+NW+Washington+DC"
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Momofuku+CCDC+1090+I+Street+NW+Washington+DC",
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "Listed with Michelin's historical Plate recommendation in the 2019 Washington, DC Guide, not a Michelin star. The visit date is unknown; David Chang's 2013 James Beard win belongs to a different NYC restaurant.",
+        "evidenceUrls": [
+          "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
+      }
     },
     {
       "id": "sauvage-steamboat-2021-01",
@@ -417,7 +498,15 @@
       "evidenceStatus": "reported",
       "favorite": true,
       "referenceUrl": "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf",
-      "locationUrl": "https://www.google.com/maps/search/?api=1&query=910%20Yampa%20Street%2C%20Unit%20C4%2C%20Steamboat%20Springs%2C%20CO%2080487"
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=910%20Yampa%20Street%2C%20Unit%20C4%2C%20Steamboat%20Springs%2C%20CO%2080487",
+      "curation": {
+        "status": "outside_scope",
+        "basis": "none_verified",
+        "reason": "A valued personal favorite; no verified Michelin Guide or James Beard award/nomination established for this restaurant.",
+        "evidenceUrls": [],
+        "reviewedOn": "2026-10-25",
+        "confidence": "no_qualifying_evidence_found"
+      }
     },
     {
       "id": "gunther-and-co-baltimore-2020-02-14",
@@ -450,7 +539,15 @@
       "evidenceStatus": "reported",
       "favorite": true,
       "referenceUrl": "https://eatatgunther.com/contact",
-      "locationUrl": "https://www.google.com/maps/search/?api=1&query=3650%20Toone%20Street%2C%20Baltimore%2C%20MD%2021224"
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=3650%20Toone%20Street%2C%20Baltimore%2C%20MD%2021224",
+      "curation": {
+        "status": "outside_scope",
+        "basis": "none_verified",
+        "reason": "A valued personal favorite; no verified Michelin Guide or James Beard award/nomination established for this restaurant.",
+        "evidenceUrls": [],
+        "reviewedOn": "2026-10-25",
+        "confidence": "no_qualifying_evidence_found"
+      }
     },
     {
       "id": "thames-street-oyster-house-baltimore",
@@ -480,7 +577,96 @@
       "evidenceStatus": "reported",
       "favorite": false,
       "referenceUrl": "https://thamesstreetoysterhouse.com/",
-      "locationUrl": "https://www.google.com/maps/search/?api=1&query=1728%20Thames%20Street%2C%20Baltimore%2C%20MD%2021231"
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=1728%20Thames%20Street%2C%20Baltimore%2C%20MD%2021231",
+      "curation": {
+        "status": "outside_scope",
+        "basis": "none_verified",
+        "reason": "Confirmed dining memory; no verified Michelin Guide or James Beard recognition established for this restaurant.",
+        "evidenceUrls": [],
+        "reviewedOn": "2026-10-25",
+        "confidence": "no_qualifying_evidence_found"
+      }
+    },
+    {
+      "id": "majestic-kansas-city",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "The Majestic Restaurant",
+      "city": "Kansas City",
+      "region": "Missouri",
+      "country": "USA",
+      "neighborhood": "Downtown",
+      "address": "931 Broadway Blvd, Kansas City, MO 64105",
+      "visit": {
+        "date": null,
+        "dateText": "Kansas City visits, 2010–present (exact date unknown)",
+        "precision": "unknown",
+        "source": "Alex directly confirmed The Majestic Restaurant in the Culture Passport interview on October 25, 2026."
+      },
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No Michelin star or James Beard distinction is claimed for this venue or this visit."
+      },
+      "recognitions": [],
+      "summary": "Confirmed visit to The Majestic, a downtown Kansas City steakhouse with a basement jazz supper club. Exact dining date and jazz performers are unknown.",
+      "evidenceStatus": "reported",
+      "referenceUrl": "https://majestickc.com/jazz-club/",
+      "curation": {
+        "status": "outside_scope",
+        "basis": "none_verified",
+        "reason": "Confirmed jazz-steakhouse memory; no verified Michelin Guide or James Beard honor for the restaurant established.",
+        "evidenceUrls": [],
+        "reviewedOn": "2026-10-25",
+        "confidence": "no_qualifying_evidence_found"
+      }
+    },
+    {
+      "id": "rec-pier-chop-house-baltimore",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Rec Pier Chop House",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "USA",
+      "neighborhood": "Fells Point",
+      "address": "1715 Thames Street, Baltimore, MD 21231",
+      "visit": {
+        "date": null,
+        "dateText": "Baltimore years, 2018–2021 (exact date unknown)",
+        "precision": "year_range",
+        "source": "Alex directly confirmed Rec Pier Chop House in the Culture Passport interview on October 25, 2026.",
+        "possibleYears": [
+          2018,
+          2019,
+          2020,
+          2021
+        ]
+      },
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No Michelin star or James Beard distinction is claimed for this venue or this visit."
+      },
+      "recognitions": [],
+      "summary": "Confirmed visit to Rec Pier Chop House, the Italian chophouse inside Sagamore Pendry Baltimore in Fells Point. Exact meal date remains unknown.",
+      "evidenceStatus": "reported",
+      "referenceUrl": "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/",
+      "curation": {
+        "status": "needs_verification",
+        "basis": "associated_chef",
+        "reason": "Chef Andrew Carmellini had James Beard awards from earlier career and was associated with this restaurant, but no direct James Beard award for Rec Pier Chop House has been established. Founder association alone is insufficient.",
+        "evidenceUrls": [
+          "https://www.ciachef.edu/cia-bios/andrew-carmellini/",
+          "https://www.eater.com/2017/9/20/16301624/andrew-carmellini-rye-street-tavern-baltimore-opening"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "indirect_only"
+      }
     }
   ],
   "excludedResearch": [

@@ -15,7 +15,7 @@
     "maybe",
     "not_visited"
   ],
-  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House. Continued discovery batch 2026-10-25: 15 additional time-compatible Baltimore/DC restaurant candidates from dated historical sources. All remain unreviewed and excluded from public experience totals. Interview returns to Magdalena next; candidate discovery can continue periodically during future review sessions. Gunther & Co. appears as a confirmed dining record in the Culture Passport source archive. Its candidate status is locked as confirmed rather than inviting duplicate confirmation. Two new interview areas from direct user history: Charleston, South Carolina, three-month stay 2017–2018, and Kansas City metro frequent visits from 2010–present. The Majestic Restaurant is a strong identification lead for steakhouse + basement jazz, not confirmed by name. Distinguish James Beard chef awards from awards for the restaurant; consider post-visit award years.",
+  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House. Continued discovery batch 2026-10-25: 15 additional time-compatible Baltimore/DC restaurant candidates from dated historical sources. All remain unreviewed and excluded from public experience totals. Interview returns to Magdalena next; candidate discovery can continue periodically during future review sessions. Gunther & Co. appears as a confirmed dining record in the Culture Passport source archive. Its candidate status is locked as confirmed rather than inviting duplicate confirmation. Two new interview areas from direct user history: Charleston, South Carolina, three-month stay 2017–2018, and Kansas City metro frequent visits from 2010–present. The Majestic Restaurant is a strong identification lead for steakhouse + basement jazz, not confirmed by name. Distinguish James Beard chef awards from awards for the restaurant; consider post-visit award years. Confirmed by user: The Majestic Restaurant (Kansas City), Rec Pier Chop House (Baltimore).",
   "candidates": [
     {
       "id": "altimore-charleston",
@@ -31,7 +31,22 @@
       "visitPeriod": "2020 (approximate timeline year; exact date unknown)",
       "visitSource": "Alex's explicit confirmation in conversation, 2026-10-24",
       "timelineYear": 2020,
-      "yearPlacementSource": "Alex's timeline placement on 2026-10-24"
+      "yearPlacementSource": "Alex's timeline placement on 2026-10-24",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Chef Cindy Wolf received James Beard Best Chef: Mid-Atlantic finalist recognition; restaurant won the 2025 Outstanding Wine and Other Beverages Program award, after the 2020 meal.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "altimore-woodberry-kitchen",
@@ -47,7 +62,22 @@
       "visitPeriod": "2018 (approximate timeline year; exact date unknown)",
       "visitSource": "Alex explicitly confirmed visiting Woodberry Kitchen in current Culinary Passport interview on 2026-10-24",
       "timelineYear": 2018,
-      "yearPlacementSource": "Alex's timeline placement on 2026-10-24"
+      "yearPlacementSource": "Alex's timeline placement on 2026-10-24",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Chef Spike Gjerde won James Beard Best Chef: Mid-Atlantic in 2015 at Woodberry Kitchen, before the approximate 2018 meal.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "altimore-clavel",
@@ -61,7 +91,22 @@
       "visitStatus": "not_visited",
       "reviewSource": "Alex explicitly said he did not visit Clavel during Baltimore years 2018–2021 in conversation 2026-10-24.",
       "reviewedOn": "2026-10-24",
-      "visitPeriod": "Did not visit in Baltimore period (2018–2021)"
+      "visitPeriod": "Did not visit in Baltimore period (2018–2021)",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.baltimoremagazine.com/section/fooddrink/clavel-and-chef-cindy-wolf-named-james-beard-semifinalists/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "altimore-cinghiale",
@@ -75,7 +120,22 @@
       "visitStatus": "not_visited",
       "reviewedOn": "2026-10-24",
       "reviewSource": "Alex's direct answer in the 2026-10-24 Culinary Passport interview",
-      "visitPeriod": "2018–2021: did not visit"
+      "visitPeriod": "2018–2021: did not visit",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "altimore-petit-louis-bistro",
@@ -89,7 +149,22 @@
       "visitStatus": "not_visited",
       "reviewedOn": "2026-10-24",
       "reviewSource": "Alex's explicit answer in the Culinary Passport interview: did not visit during 2018–2021.",
-      "visitPeriod": "2018–2021: did not visit"
+      "visitPeriod": "2018–2021: did not visit",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "altimore-foraged",
@@ -103,7 +178,22 @@
       "visitStatus": "not_visited",
       "reviewedOn": "2026-10-24",
       "reviewSource": "Alex explicitly responded 'did not visit' for Foraged in the 2018–2021 Baltimore Culinary Passport interview.",
-      "visitPeriod": "2018–2021: did not visit"
+      "visitPeriod": "2018–2021: did not visit",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2023-james-beard-awards-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "altimore-ekiben",
@@ -117,7 +207,22 @@
       "visitStatus": "not_visited",
       "reviewedOn": "2026-10-25",
       "reviewSource": "Alex explicitly said he did not visit Ekiben during the Baltimore 2018–2021 period.",
-      "visitPeriod": "2018–2021: did not visit"
+      "visitPeriod": "2018–2021: did not visit",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.thebanner.com/culture/food-drink/james-beard-award-finals-baltimore-maryland-TXFG4OX6UZDITGNA6PNRHIIOXI/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "altimore-alma-cocina-latina",
@@ -132,7 +237,22 @@
       "reviewedOn": "2026-10-25",
       "reviewSource": "Alex's direct answer in Culinary Passport interview on 2026-10-25: possibly visited during Baltimore years, 2018–2021.",
       "visitPeriod": "2018–2021, visit uncertain",
-      "interviewNote": "Possible visit only, not counted as confirmed. Confirm memory and date before including in the Culinary Passport."
+      "interviewNote": "Possible visit only, not counted as confirmed. Confirm memory and date before including in the Culinary Passport.",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.thebanner.com/culture/food-drink/james-beard-award-finals-baltimore-maryland-TXFG4OX6UZDITGNA6PNRHIIOXI/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "altimore-magdalena",
@@ -143,7 +263,22 @@
       "awardFamily": "context",
       "interviewCue": "Mount Vernon, 205 E Biddle Street, inside The Ivy Hotel's restored mansion: Garden Room overlooking a courtyard, Treasury, intimate wine cellar, and refined dining rooms. Fine dining in 2018–early 2020; reopened October 2020 as Magdalena, A Maryland Bistro.",
       "sourceUrl": "https://www.baltimoremagazine.com/event/the-dinner-party/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "altimore-la-cuchara",
@@ -154,7 +289,22 @@
       "awardFamily": "context",
       "interviewCue": "Woodberry; Basque-inspired pintxos and wood-fired cuisine.",
       "sourceUrl": "https://www.thebanner.com/culture/food-drink/james-beard-award-finals-baltimore-maryland-TXFG4OX6UZDITGNA6PNRHIIOXI/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-momofuku-ccdc",
@@ -177,7 +327,22 @@
       },
       "confirmedVisitId": "dining-momofuku-ccdc-washington-dc",
       "visitPeriod": "Date uncertain, historically operating 2015-10-24–2020-03-13; user was discussing 2018–2021 DC experiences",
-      "visitSource": "Alex directly identified Momofuku CCDC on 2026-10-25 as the David Chang DC restaurant previously remembered"
+      "visitSource": "Alex directly identified Momofuku CCDC on 2026-10-25 as the David Chang DC restaurant previously remembered",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Listed with Michelin's historical Plate recommendation in the 2019 Washington, DC Guide, not a Michelin star. The visit date is unknown; David Chang's 2013 James Beard win belongs to a different NYC restaurant.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-the-dabney",
@@ -188,7 +353,22 @@
       "awardFamily": "both",
       "interviewCue": "Shaw; open wood-burning hearth; Mid-Atlantic ingredients.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "both",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-rose-s-luxury",
@@ -199,7 +379,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Capitol Hill; iconic exposed-brick townhouse, eclectic small plates.",
       "sourceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-pineapple-and-pearls",
@@ -210,7 +405,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Capitol Hill; extravagant chef's tasting menu.",
       "sourceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-minibar-by-jose-andres",
@@ -221,7 +431,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Penn Quarter; avant-garde tasting counter with tiny dishes.",
       "sourceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-fiola",
@@ -232,7 +457,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Penn Quarter; upscale Italian and handmade pasta.",
       "sourceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-kinship",
@@ -243,7 +483,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Mount Vernon Square; refined à-la-carte modern American.",
       "sourceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-masseria",
@@ -254,7 +509,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Union Market; Italian tasting menu, covered garden.",
       "sourceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-tail-up-goat",
@@ -265,7 +535,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Adams Morgan; pasta, bread, and Mediterranean-style shared plates.",
       "sourceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-sushi-taro",
@@ -276,7 +561,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Dupont Circle; omakase counter and Japanese dining.",
       "sourceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/mo/en/article/news-and-views/2018-michelin-guide-washington-d-c-results",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-bresca",
@@ -287,7 +587,22 @@
       "awardFamily": "michelin",
       "interviewCue": "14th Street; neo-bistro with whimsical tasting dishes.",
       "sourceUrl": "https://guide.michelin.com/us/en/article/news-and-views/michelin-stars-washington-dc-2019-results",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/us/en/article/news-and-views/michelin-stars-washington-dc-2019-results",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-maydan",
@@ -298,7 +613,22 @@
       "awardFamily": "michelin",
       "interviewCue": "14th/U Street; large central live-fire hearth; Middle Eastern sharing.",
       "sourceUrl": "https://michelinmedia.com/pages/blog/detail/article/c0/a906/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://michelinmedia.com/pages/blog/detail/article/c0/a906/",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-little-pearl",
@@ -309,7 +639,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Capitol Hill; daytime cafe and evening tasting menu.",
       "sourceUrl": "https://michelinmedia.com/pages/blog/detail/article/c0/a906/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://michelinmedia.com/pages/blog/detail/article/c0/a906/",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-jont",
@@ -320,7 +665,22 @@
       "awardFamily": "michelin",
       "interviewCue": "14th Street; intimate counter above Bresca, luxurious tasting menu.",
       "sourceUrl": "https://guide.michelin.com/en/article/news-and-views/2021-washington-dc-michelin-stars",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/en/article/news-and-views/2021-washington-dc-michelin-stars",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-blue-duck-tavern",
@@ -331,7 +691,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Park Hyatt; sophisticated West End American dining.",
       "sourceUrl": "https://guide.michelin.com/us/en/article/news-and-views/michelin-stars-washington-dc-2019-results",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/us/en/article/news-and-views/michelin-stars-washington-dc-2019-results",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-rasika",
@@ -342,7 +717,22 @@
       "awardFamily": "beard",
       "interviewCue": "Penn Quarter or West End; Indian cuisine, palak chaat.",
       "sourceUrl": "https://archive.jamesbeard.org/chef/vikram-sunderam",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://archive.jamesbeard.org/chef/vikram-sunderam",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-bad-saint",
@@ -353,7 +743,22 @@
       "awardFamily": "beard",
       "interviewCue": "Columbia Heights; tiny Filipino restaurant and long waits.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2019-james-beard-award-winners",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2019-james-beard-award-winners",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-centrolina",
@@ -364,7 +769,22 @@
       "awardFamily": "beard",
       "interviewCue": "CityCenterDC; Italian pasta and market counter.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-nominees",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-nominees",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "ashington-oyster-oyster",
@@ -375,7 +795,22 @@
       "awardFamily": "beard",
       "interviewCue": "Vegetable-forward tasting menus; opened around 2020.",
       "sourceUrl": "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-the-wolf-s-tailor",
@@ -386,7 +821,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Sunnyside; tasting menu fusing different cuisines.",
       "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-brut",
@@ -397,7 +847,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Dairy Block; intimate open-fire chef's counter.",
       "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-frasca-food-and-wine",
@@ -408,7 +873,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Boulder/Pearl Street; Friulian fine dining and wine.",
       "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-alma-fonda-fina",
@@ -419,7 +899,22 @@
       "awardFamily": "both",
       "interviewCue": "LoHi; Johnny Curiel's Mexican menu and counter seating.",
       "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "both",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-annette",
@@ -430,7 +925,22 @@
       "awardFamily": "both",
       "interviewCue": "Stanley Marketplace, Aurora; small-plates restaurant.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2022-james-beard-award-winners",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2022-james-beard-award-winners",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "both",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-mercantile-dining-provision",
@@ -441,7 +951,22 @@
       "awardFamily": "beard",
       "interviewCue": "Union Station; farm-to-table bistro, market and bakery.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-rioja",
@@ -452,7 +977,22 @@
       "awardFamily": "beard",
       "interviewCue": "Larimer Square; Mediterranean cuisine and handmade pasta.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2019-james-beard-award-winners",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2019-james-beard-award-winners",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-yuan-wonton",
@@ -463,7 +1003,22 @@
       "awardFamily": "beard",
       "interviewCue": "Park Hill; wontons, dumplings, noodles; started as food truck.",
       "sourceUrl": "https://web.jamesbeard.org/stories/james-beard-award-winners-2026",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://web.jamesbeard.org/stories/james-beard-award-winners-2026",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-tavernetta",
@@ -474,7 +1029,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Union Station; polished Northern Italian restaurant.",
       "sourceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-hop-alley",
@@ -485,7 +1055,22 @@
       "awardFamily": "michelin",
       "interviewCue": "RiNo; Sichuan-inspired Chinese cuisine.",
       "sourceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-ash-kara",
@@ -496,7 +1081,22 @@
       "awardFamily": "michelin",
       "interviewCue": "LoHi; Israeli/Middle Eastern, fresh pita and hummus.",
       "sourceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-la-diabla-pozole-y-mezcal",
@@ -507,7 +1107,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Ballpark; pozole, tacos, mezcal and bright murals.",
       "sourceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-mister-oso",
@@ -518,7 +1133,22 @@
       "awardFamily": "michelin",
       "interviewCue": "RiNo; Latin American plates and plant-filled patio.",
       "sourceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-glo-noodle-house",
@@ -529,7 +1159,22 @@
       "awardFamily": "michelin",
       "interviewCue": "West Highland; ramen, noodles and Japanese small plates.",
       "sourceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-safta",
@@ -540,7 +1185,22 @@
       "awardFamily": "michelin",
       "interviewCue": "The Source hotel; Israeli-style hummus and pita.",
       "sourceUrl": "https://visitdenver.com/articles/post/denver-michelin-guide/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://visitdenver.com/articles/post/denver-michelin-guide/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-temaki-den",
@@ -551,7 +1211,22 @@
       "awardFamily": "michelin",
       "interviewCue": "RiNo; hand rolls and counter sushi.",
       "sourceUrl": "https://visitdenver.com/articles/post/denver-michelin-guide/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://visitdenver.com/articles/post/denver-michelin-guide/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-lucina-eatery-bar",
@@ -562,7 +1237,22 @@
       "awardFamily": "beard",
       "interviewCue": "Park Hill; Latin/Mediterranean-influenced neighborhood dining.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2024-james-beard-awards-semifinalists",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2024-james-beard-awards-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-makfam",
@@ -573,7 +1263,22 @@
       "awardFamily": "michelin",
       "interviewCue": "Baker; modern Chinese American comfort food.",
       "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-kizaki",
@@ -584,7 +1289,22 @@
       "awardFamily": "michelin",
       "interviewCue": "South Pearl Street; intimate Japanese omakase.",
       "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "enveretro-margot",
@@ -595,7 +1315,22 @@
       "awardFamily": "michelin",
       "interviewCue": "South Pearl Street; contemporary tasting menu.",
       "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-baltimore-rec-pier-chop-house",
@@ -606,12 +1341,32 @@
       "awardFamily": "context",
       "interviewCue": "The main Italian chophouse at the Sagamore Pendry Hotel in Fells Point; opened in March 2017. Stylish dining room with leather booths, green velvet banquettes, pasta, steaks and large windows overlooking Thames Street.",
       "sourceUrl": "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/",
-      "visitStatus": "unreviewed",
+      "visitStatus": "confirmed",
       "userMemoryLead": {
         "recalled": "Alex confirmed visiting a restaurant inside Sagamore Pendry Baltimore, but the specific venue has not yet been identified.",
         "candidateConfidence": "high",
-        "identityConfirmed": false,
-        "source": "Alex's recollection on 2026-10-25"
+        "identityConfirmed": true,
+        "source": "Alex's recollection on 2026-10-25",
+        "confirmedOn": "2026-10-25"
+      },
+      "confirmedVisitId": "dining-rec-pier-chop-house-baltimore",
+      "visitPeriod": "2018–2021; exact date unknown",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Direct user confirmation on 2026-10-25",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Chef Andrew Carmellini had James Beard awards from earlier career and was associated with this restaurant, but no direct James Beard award for Rec Pier Chop House has been established. Founder association alone is insufficient.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -623,7 +1378,22 @@
       "awardFamily": "context",
       "interviewCue": "Station North French wine bar and small plates, cozy exposed brick, 2018–2021 Baltimore candidate.",
       "sourceUrl": "https://www.baltimoremagazine.com/section/fooddrink/le-comptoir-du-vin-opens-in-station-north/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-baltimore-the-food-market",
@@ -634,7 +1404,22 @@
       "awardFamily": "context",
       "interviewCue": "Hampden restaurant on West 36th Street, inventive contemporary comfort food in a bustling modern dining room.",
       "sourceUrl": "https://www.thefoodmarketbaltimore.com/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-baltimore-cosima",
@@ -645,7 +1430,22 @@
       "awardFamily": "context",
       "interviewCue": "Italian and Sicilian restaurant in the restored Mill No. 1 by Jones Falls, near Hampden.",
       "sourceUrl": "https://www.cosimamill1.com/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-steamboat-springs-caf-diva",
@@ -656,7 +1456,22 @@
       "awardFamily": "context",
       "interviewCue": "Fine dining at the base of Steamboat resort, known for seasonal tasting-inspired menus, extensive wines and romantic dinners.",
       "sourceUrl": "https://www.cafediva.com/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-steamboat-springs-laundry-kitchen-cocktails",
@@ -667,7 +1482,22 @@
       "awardFamily": "context",
       "interviewCue": "Old Town Steamboat restaurant in former laundry building, known for inventive shared plates and cocktails.",
       "sourceUrl": "https://www.laundryrestaurant.com/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-steamboat-springs-b-same-steamboat",
@@ -678,7 +1508,22 @@
       "awardFamily": "context",
       "interviewCue": "Downtown Steamboat, Latin tapas-style plates and lively cocktails, existed by January 2021.",
       "sourceUrl": "https://www.besamesteamboat.com/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-steamboat-springs-primrose",
@@ -689,7 +1534,22 @@
       "awardFamily": "context",
       "interviewCue": "Steamboat restaurant listed by the resort among 2020–21 openings; ask whether visited on same ski trip.",
       "sourceUrl": "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf",
-      "visitStatus": "unreviewed"
+      "visitStatus": "unreviewed",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "baltimore-gunther-co",
@@ -705,7 +1565,22 @@
       "addedOn": "2026-10-25",
       "confirmedVisitId": "dining-gunther-and-co-baltimore-2020-02-14",
       "visitPeriod": "February 14, 2020",
-      "reviewSource": "Existing Culture Passport confirmed record derived from direct recollection dated October 25, 2026."
+      "reviewSource": "Existing Culture Passport confirmed record derived from direct recollection dated October 25, 2026.",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "A valued personal favorite; no verified Michelin Guide or James Beard award/nomination established for this restaurant.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "baltimore-cafe-dear-leon",
@@ -718,7 +1593,22 @@
       "sourceUrl": "https://www.baltimoremagazine.com/section/fooddrink/open-shut-cafe-dear-leon-snow-cone-sisters-hungry-like-the-wolfe/",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "baltimore-nihao",
@@ -731,7 +1621,22 @@
       "sourceUrl": "https://www.cantoncommunity.org/news-and-notes/2020/8/7/neighborhood-notes-august-2020",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-komi",
@@ -744,7 +1649,22 @@
       "sourceUrl": "https://washingtonian.com/2019/02/27/here-are-the-dc-area-semi-finalists-for-the-james-beard-awards/",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://washingtonian.com/2019/02/27/here-are-the-dc-area-semi-finalists-for-the-james-beard-awards/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-jaleo",
@@ -757,7 +1677,22 @@
       "sourceUrl": "https://washingtonian.com/2019/02/27/here-are-the-dc-area-semi-finalists-for-the-james-beard-awards/",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://washingtonian.com/2019/02/27/here-are-the-dc-area-semi-finalists-for-the-james-beard-awards/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-rooster-owl",
@@ -770,7 +1705,22 @@
       "sourceUrl": "https://washingtonian.com/2020/02/26/here-are-the-dc-area-semifinalists-for-the-2020-james-beard-awards/",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://washingtonian.com/2020/02/26/here-are-the-dc-area-semifinalists-for-the-2020-james-beard-awards/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-thamee",
@@ -783,7 +1733,22 @@
       "sourceUrl": "https://washingtonian.com/2020/02/26/here-are-the-dc-area-semifinalists-for-the-2020-james-beard-awards/",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://washingtonian.com/2020/02/26/here-are-the-dc-area-semifinalists-for-the-2020-james-beard-awards/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-anju",
@@ -796,7 +1761,22 @@
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-poca-madre",
@@ -809,7 +1789,22 @@
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-himitsu",
@@ -822,7 +1817,22 @@
       "sourceUrl": "https://archive.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://archive.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-kith-and-kin",
@@ -835,7 +1845,22 @@
       "sourceUrl": "https://washingtonian.com/2019/02/27/here-are-the-dc-area-semi-finalists-for-the-james-beard-awards/",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://washingtonian.com/2019/02/27/here-are-the-dc-area-semi-finalists-for-the-james-beard-awards/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-brothers-and-sisters",
@@ -848,7 +1873,22 @@
       "sourceUrl": "https://archive.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://archive.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-cane",
@@ -861,7 +1901,22 @@
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-zenebech-restaurant",
@@ -874,7 +1929,22 @@
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "washingtondc-green-almond-pantry",
@@ -887,7 +1957,22 @@
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
-      "addedOn": "2026-10-25"
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-fig",
@@ -901,7 +1986,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "high"
+      "priority": "high",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-husk",
@@ -915,7 +2015,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "high"
+      "priority": "high",
+      "screening": {
+        "status": "needs_award_verification",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "James Beard recognition to the restaurateur/group needs venue-level review; no automatic qualification."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Related chef, restaurant, or name has no direct qualifying award independently verified yet.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-the-ordinary",
@@ -929,7 +2044,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "high"
+      "priority": "high",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://holycitysinner.com/sports/charleston-s-james-beard-award-winners/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Related chef, restaurant, or name has no direct qualifying award independently verified yet.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-mccrady-s",
@@ -943,7 +2073,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "high"
+      "priority": "high",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://holycitysinner.com/sports/charleston-s-james-beard-award-winners/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-mccrady-s-tavern",
@@ -957,7 +2102,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-rodney-scott-s-bbq",
@@ -971,7 +2131,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "high"
+      "priority": "high",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-hominy-grill",
@@ -985,7 +2160,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://holycitysinner.com/sports/charleston-s-james-beard-award-winners/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-leon-s-oyster-shop",
@@ -999,7 +2189,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-167-raw",
@@ -1013,7 +2218,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-xiao-bao-biscuit",
@@ -1027,7 +2247,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-butcher-bee",
@@ -1041,7 +2276,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://carolinas.eater.com/2018/2/16/17017044/james-beard-awards-2018-charleston",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-the-grocery",
@@ -1055,7 +2305,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://carolinas.eater.com/2018/2/16/17017044/james-beard-awards-2018-charleston",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-chez-nous",
@@ -1069,7 +2334,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-zero-restaurant-bar",
@@ -1083,7 +2363,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-bertha-s-kitchen",
@@ -1097,7 +2392,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://holycitysinner.com/sports/charleston-s-james-beard-award-winners/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-charleston-sc-the-dewberry-living-room",
@@ -1111,7 +2421,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://carolinas.eater.com/2018/2/16/17017044/james-beard-awards-2018-charleston",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-the-majestic-restaurant",
@@ -1122,16 +2447,36 @@
       "awardFamily": "context",
       "interviewCue": "931 Broadway, downtown Kansas City. Historic steakhouse UPSTAIRS and a speakeasy-style jazz supper club DOWNSTAIRS, with live jazz in the basement and a piano.",
       "sourceUrl": "https://majestickc.com/jazz-club/",
-      "visitStatus": "unreviewed",
+      "visitStatus": "confirmed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
       "priority": "high",
       "userMemoryLead": {
         "recalled": "Alex remembers visiting a wonderful Kansas City steakhouse with a jazz bar in its basement during repeated Kansas City visits from 2010 onward.",
         "candidateConfidence": "very high",
-        "identityConfirmed": false,
+        "identityConfirmed": true,
         "source": "Direct user recollection, October 25, 2026",
-        "category": "restaurant identification"
+        "category": "restaurant identification",
+        "confirmedOn": "2026-10-25"
+      },
+      "confirmedVisitId": "dining-majestic-kansas-city",
+      "visitPeriod": "Date unknown; visited during repeated Kansas City trips",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Direct user confirmation on 2026-10-25",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "related_chef_or_unproven",
+        "reason": "Confirmed jazz-steakhouse memory; no verified Michelin Guide or James Beard honor for the restaurant established.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1146,7 +2491,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-stock-hill",
@@ -1160,21 +2520,51 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-corvino-supper-club-tasting-room",
       "area": "Kansas City Metro",
       "name": "Corvino Supper Club & Tasting Room",
-      "recognition": "Historical dining candidate, no Michelin star or restaurant-level James Beard honor asserted",
-      "recognitionYear": null,
-      "awardFamily": "context",
+      "recognition": "Michael Corvino, Corvino Supper Club & Tasting Room, was a 2019 and 2023 James Beard Best Chef: Midwest semifinalist.",
+      "recognitionYear": 2019,
+      "awardFamily": "beard",
       "interviewCue": "Crossroads destination with an expansive dining room, stage and live music; also offers an intimate tasting room. Another music-and-dinner memory candidate.",
-      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2023-james-beard-awards-semifinalists",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "high"
+      "priority": "high",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "james_beard",
+        "reason": "2023 James Beard Foundation Best Chef: Midwest semifinalist at this restaurant (verified official source).",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
     },
     {
       "id": "candidate-kansas-city-metro-the-antler-room",
@@ -1188,7 +2578,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-bluestem",
@@ -1202,7 +2607,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-rye-leawood",
@@ -1216,7 +2636,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-rye-plaza",
@@ -1230,7 +2665,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Related chef, restaurant, or name has no direct qualifying award independently verified yet.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-the-american-restaurant",
@@ -1244,7 +2694,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-q39",
@@ -1258,7 +2723,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-joe-s-kansas-city-bar-b-que",
@@ -1272,7 +2752,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-jack-stack-barbecue-freight-house",
@@ -1286,7 +2781,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-lidia-s-kansas-city",
@@ -1300,7 +2810,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-extra-virgin",
@@ -1314,7 +2839,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Related chef, restaurant, or name has no direct qualifying award independently verified yet.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-farina",
@@ -1328,7 +2868,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Related chef, restaurant, or name has no direct qualifying award independently verified yet.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-the-town-company",
@@ -1342,7 +2897,22 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+        "sourceTier": "secondary",
+        "verifiedAt": "2026-10-25",
+        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
     },
     {
       "id": "candidate-kansas-city-metro-gram-dun",
@@ -1356,7 +2926,325 @@
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
-      "priority": "standard"
+      "priority": "standard",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-fox-and-pearl",
+      "area": "Kansas City Metro",
+      "name": "Fox and Pearl",
+      "recognition": "2020 James Beard Best Chef: Midwest semifinalist — chef Vaughn Good at Fox and Pearl",
+      "recognitionYear": 2020,
+      "awardFamily": "beard",
+      "interviewCue": "Westside Kansas City butcher-driven restaurant, smoked meats, seasonal plates, patio and old-house interior.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "researchStatus": "documented_award_candidate",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "James Beard semifinalist while working at this named restaurant; user visit not confirmed."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-the-restaurant-at-1900",
+      "area": "Kansas City Metro",
+      "name": "The Restaurant at 1900",
+      "recognition": "2020 James Beard Best Chef: Midwest semifinalist — Linda Duerr at The Restaurant at 1900",
+      "recognitionYear": 2020,
+      "awardFamily": "beard",
+      "interviewCue": "1900 Shawnee Mission Parkway, Mission Woods, Kansas; upscale modern American restaurant in a midcentury office building.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "researchStatus": "documented_award_candidate",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "James Beard semifinalist while working at this named restaurant; user visit not confirmed."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-waldo-thai",
+      "area": "Kansas City Metro",
+      "name": "Waldo Thai",
+      "recognition": "2023 James Beard Best Chef: Midwest semifinalist — Pam Liberda at Waldo Thai",
+      "recognitionYear": 2023,
+      "awardFamily": "beard",
+      "interviewCue": "Waldo neighborhood; northern Thai food, vibrant dining room, spicy regional dishes.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2023-james-beard-awards-semifinalists",
+      "visitStatus": "unreviewed",
+      "researchStatus": "documented_award_candidate",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2023-james-beard-awards-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "James Beard semifinalist while working at this named restaurant; user visit not confirmed."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-fox-pearl",
+      "area": "Kansas City Metro",
+      "name": "Fox & Pearl",
+      "recognition": "Chef Vaughn Good was a 2020 James Beard Best Chef: Midwest semifinalist at Fox & Pearl.",
+      "recognitionYear": 2020,
+      "awardFamily": "beard",
+      "interviewCue": "Westside KC restaurant known for live-fire and smoked meats, in an intimate setting.",
+      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "award_screened",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "james_beard",
+        "reason": "James Beard recognition documented in Visit KC's honorees guide; original category/year should be rechecked if a visit is confirmed.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-room-39",
+      "area": "Kansas City Metro",
+      "name": "Room 39",
+      "recognition": "Chef Ted Habiger was a James Beard Best Chef: Midwest semifinalist in 2008, 2012 and 2014.",
+      "recognitionYear": 2014,
+      "awardFamily": "beard",
+      "interviewCue": "Farm-driven American restaurant around West 39th Street, with casual lunch and refined dinner.",
+      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "award_screened",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "james_beard",
+        "reason": "James Beard recognition documented in Visit KC's honorees guide; original category/year should be rechecked if a visit is confirmed.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-affare",
+      "area": "Kansas City Metro",
+      "name": "Affäre",
+      "recognition": "Affäre was a 2024 James Beard Outstanding Wine and Other Beverages Program semifinalist; chef Martin Heuser was nominated in 2013.",
+      "recognitionYear": 2024,
+      "awardFamily": "beard",
+      "interviewCue": "Crossroads restaurant with contemporary German cooking and an extensive wine program.",
+      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "award_screened",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "james_beard",
+        "reason": "James Beard recognition documented in Visit KC's honorees guide; original category/year should be rechecked if a visit is confirmed.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-chewology",
+      "area": "Kansas City Metro",
+      "name": "Chewology",
+      "recognition": "Chef Katie Liu-Sung was a 2024 and 2025 James Beard Best Chef: Midwest semifinalist.",
+      "recognitionYear": 2024,
+      "awardFamily": "beard",
+      "interviewCue": "Westport Taiwanese restaurant with handmade dumplings and noodles.",
+      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "award_screened",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "james_beard",
+        "reason": "James Beard recognition documented in Visit KC's honorees guide; original category/year should be rechecked if a visit is confirmed.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-yoli-tortilleria",
+      "area": "Kansas City Metro",
+      "name": "Yoli Tortilleria",
+      "recognition": "2023 James Beard Outstanding Bakery winner.",
+      "recognitionYear": 2023,
+      "awardFamily": "beard",
+      "interviewCue": "Kansas City tortilla bakery specializing in stone-ground heirloom corn tortillas.",
+      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "award_screened",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "james_beard",
+        "reason": "James Beard recognition documented in Visit KC's honorees guide; original category/year should be rechecked if a visit is confirmed.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-bar-manifesto-kansas-city",
+      "area": "Kansas City Metro",
+      "name": "Manifesto",
+      "recognition": "2018 James Beard Outstanding Bar Program semifinalist",
+      "recognitionYear": 2018,
+      "awardFamily": "beard",
+      "interviewCue": "1924 Main St., Kansas City. Hidden subterranean speakeasy below the Rieger restaurant. Candlelit, intimate craft-cocktail bar; closed circa 2020.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-semifinalists",
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "bar-manifesto-kansas-city",
+      "visitPeriod": "Kansas City visits, date uncertain",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex explicitly described this cocktail bar as an amazing past visit on October 25, 2026.",
+      "venueType": "cocktail_bar",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "The named Manifesto bar was a 2018 James Beard Outstanding Bar Program semifinalist."
+      }
+    },
+    {
+      "id": "candidate-bar-death-and-co-denver",
+      "area": "Denver Metro",
+      "name": "Death & Co Denver",
+      "recognition": "Distinctive cocktail bar in the Ramble Hotel; no James Beard award verified for this Denver outpost",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "RiNo, 1280 25th St, Denver. Plush sofas, arched mirrored bar, striking chandeliers and elaborate cocktails. Opened May 2018.",
+      "sourceUrl": "https://www.deathandcompany.com/location/death-and-company-denver/",
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "bar-death-and-co-denver",
+      "visitPeriod": "2018 or later; specific date unknown",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex explicitly described this cocktail bar as an amazing past visit on October 25, 2026.",
+      "venueType": "cocktail_bar",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "Explicit user's personal favorite; no Denver venue-specific Michelin/JBF distinction verified."
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-drastic-measures",
+      "area": "Kansas City Metro",
+      "name": "Drastic Measures",
+      "recognition": "2026 James Beard Outstanding Bar semifinalist",
+      "recognitionYear": 2026,
+      "awardFamily": "beard",
+      "interviewCue": "Shawnee, Kansas, just west of Kansas City; modern, low-lit cocktail bar with inventive drinks.",
+      "sourceUrl": "https://blog.resy.com/2026/01/2026-james-beard-nominees/",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://blog.resy.com/2026/01/2026-james-beard-nominees/",
+        "sourceTier": "secondary_or_primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Documented James Beard cocktail recognition; user visit has NOT been confirmed."
+      }
+    },
+    {
+      "id": "candidate-denver-metro-lady-jane",
+      "area": "Denver Metro",
+      "name": "Lady Jane",
+      "recognition": "2026 James Beard Outstanding Bar semifinalist",
+      "recognitionYear": 2026,
+      "awardFamily": "beard",
+      "interviewCue": "LoHi Denver cocktail bar with minimalist design, intimate atmosphere and inventive cocktails.",
+      "sourceUrl": "https://blog.resy.com/2026/01/2026-james-beard-nominees/",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://blog.resy.com/2026/01/2026-james-beard-nominees/",
+        "sourceTier": "secondary_or_primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Documented James Beard cocktail recognition; user visit has NOT been confirmed."
+      }
+    },
+    {
+      "id": "candidate-denver-metro-yacht-club",
+      "area": "Denver Metro",
+      "name": "Yacht Club",
+      "recognition": "2026 James Beard Outstanding Professional in Cocktail Service finalist — McLain Hedges and Mary Allison Wright",
+      "recognitionYear": 2026,
+      "awardFamily": "beard",
+      "interviewCue": "Cole neighborhood Denver; a neighborhood bar with natural wines, inventive cocktails and hot dogs.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/james-beard-awards-restaurant-and-chef-nominees-2026",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/james-beard-awards-restaurant-and-chef-nominees-2026",
+        "sourceTier": "secondary_or_primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Documented James Beard cocktail recognition; user visit has NOT been confirmed."
+      }
     }
   ],
   "source": {
@@ -1375,5 +3263,14 @@
     "confirmOnlyFrom": "explicit direct user answer",
     "interviewOrder": "Continue pending Baltimore candidates (Magdalena then La Cuchara), then newly discovered Baltimore leads, then DC and Denver",
     "sourceRequirement": "Each candidate has a cited real-world source URL and an era-specific memory cue."
+  },
+  "screeningMethodology": {
+    "defaultQueue": "award_qualified",
+    "awardQualified": "Named venue listed by Michelin in a year, or JBF recognized the venue itself or a chef at that venue in the relevant award year (semifinalist, nominee, finalist, winner). Recognition may come after the user's dining visit but must be labeled with historical award year.",
+    "excluded": "Unconnected chef or parent-company awards, unsubstantiated culinary accolades, and unsourced fame do not qualify.",
+    "retained": "Confirmed personal favorites and unresolved venue-identification clues are retained when eligible for inclusion; exclusions requested by the user are not shown in the public interview or collection.",
+    "sourcePriority": "Prefer official James Beard and Michelin listings; secondary published reporting may support a candidate awaiting further audit.",
+    "venueTypes": "Include qualifying bars and beverage programs in addition to restaurants. A bar can qualify for James Beard Outstanding Bar, Best New Bar, beverage-program and cocktail-service honors. Maintain precise location and recipient for awards.",
+    "personalExceptions": "Explicit user-selected dining and cocktail favorites remain visible even without a qualifying award; do not describe them as award-winning."
   }
 }

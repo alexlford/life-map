@@ -17,7 +17,7 @@
   };
   const yearForSorting=(r)=>r.visit?.year||r.visit?.possibleYears?.[0]||-1;
   const byDate=(a,b)=>yearForSorting(b)-yearForSorting(a)||(b.visit?.month||0)-(a.visit?.month||0)||a.title.localeCompare(b.title);
-  const titleFor={dining:"Restaurants",concert:"Concerts",opera:"Opera",theater:"Theater"};
+  const titleFor={dining:"Restaurants",bar:"Cocktail Bars",concert:"Concerts",opera:"Opera",theater:"Theater"};
   function empty(parent,title,description,url,label){
     parent.replaceChildren();
     const block=el("div","empty");
@@ -44,15 +44,16 @@
     const venues=new Map(db.venues.map(v=>[v.id,v]));
     const cities=new Set(records.map(r=>venues.get(r.venueId)?.city).filter(Boolean));
     const starred=records.filter(r=>r.type==="dining"&&r.guide?.distinction==="starred"&&r.guide.stars>0);
-    const st=[["total-records",records.length],["total-venues",new Set(records.map(r=>r.venueId)).size],["total-cities",cities.size],["total-starred",starred.length]];
+    const awardDining=records.filter(r=>["dining","bar"].includes(r.type)&&r.editorial?.awardQualified);
+    const st=[["total-records",awardDining.length],["total-venues",records.filter(r=>["dining","bar"].includes(r.type)).length],["total-cities",cities.size],["total-starred",starred.length]];
     st.forEach(([key,value])=>{const target=byId(key);if(target)target.textContent=value;});
-    for(const key of Object.keys(titleFor)){const target=byId(key+"-count");if(target)target.textContent=records.filter(r=>r.type===key).length+" recorded";}
+    for(const key of Object.keys(titleFor)){const target=byId(key+"-count");if(target)target.textContent=key==="dining"?records.filter(r=>r.type==="dining"&&(r.editorial?.awardQualified||r.editorial?.featuredException)).length+" included":key==="bar"?records.filter(r=>r.type==="bar").length+" bars":records.filter(r=>r.type===key).length+" recorded";}
   }
   function home(db){
     siteStats(db);
     const venues=new Map(db.venues.map(v=>[v.id,v]));
     const host=byId("featured-records");
-    const records=db.records.filter(r=>r.status==="confirmed").sort((a,b)=>Number(!!b.favorite)-Number(!!a.favorite)||byDate(a,b)).slice(0,5);
+    const records=db.records.filter(r=>r.status==="confirmed"&&(r.editorial?.awardQualified||r.editorial?.featuredException||r.type!=="dining"&&r.type!=="bar")).sort((a,b)=>Number(!!b.editorial?.featuredException)-Number(!!a.editorial?.featuredException)||Number(!!b.favorite)-Number(!!a.favorite)||byDate(a,b)).slice(0,6);
     host.replaceChildren();
     records.forEach(r=>{
       const v=venues.get(r.venueId);
@@ -63,12 +64,13 @@
     });
   }
   function explore(db){
-    const host=byId("explore-results"),city=byId("city-filter"),search=byId("search"),count=byId("result-count");
+    const host=byId("explore-results"),city=byId("city-filter"),search=byId("search"),count=byId("result-count"),includeMemories=byId("include-memories");
     const venues=new Map(db.venues.map(v=>[v.id,v]));
     const availableCities=[...new Set(db.records.map(r=>venues.get(r.venueId)?.city).filter(Boolean))].sort();
     availableCities.forEach(n=>{const option=el("option","",n);option.value=n;city.append(option);});
     const params=new URLSearchParams(window.location.search);
     let filter=Object.prototype.hasOwnProperty.call(titleFor,params.get("type"))?params.get("type"):"all";
+    includeMemories.checked=params.get("memories")==="1";
     const buttons=all(".tabstrip button[data-type]");
     function update(){
       buttons.forEach(b=>{const active=b.dataset.type===filter;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});
@@ -76,7 +78,7 @@
       const rows=db.records.filter(r=>{
         const v=venues.get(r.venueId);
         const content=[r.title,r.summary,v?.city,v?.region,v?.name].join(" ").toLocaleLowerCase();
-        return r.status==="confirmed"&&(filter==="all"||r.type===filter)&&(!city.value||city.value===v?.city)&&(!q||content.includes(q));
+        return r.status==="confirmed"&&(!["dining","bar"].includes(r.type)||r.editorial?.awardQualified||r.editorial?.featuredException||includeMemories.checked)&&(filter==="all"||r.type===filter)&&(!city.value||city.value===v?.city)&&(!q||content.includes(q));
       }).sort(byDate);
       count.textContent=rows.length+" confirmed experience"+(rows.length===1?"":"s");
       host.replaceChildren();
@@ -84,14 +86,14 @@
       rows.forEach(r=>host.append(card(r,venues.get(r.venueId))));
     }
     buttons.forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.type;const url=new URL(location.href);if(filter==="all")url.searchParams.delete("type");else url.searchParams.set("type",filter);history.replaceState(null,"",url);update();}));
-    city.addEventListener("change",update);search.addEventListener("input",update);update();
+    city.addEventListener("change",update);search.addEventListener("input",update);includeMemories.addEventListener("change",()=>{const url=new URL(location.href);if(includeMemories.checked)url.searchParams.set("memories","1");else url.searchParams.delete("memories");history.replaceState(null,"",url);update();});update();
   }
   function timeline(db){
-    const host=byId("timeline-results"),select=byId("timeline-type"),count=byId("timeline-count");
+    const host=byId("timeline-results"),select=byId("timeline-type"),count=byId("timeline-count"),includeMemories=byId("timeline-memories");
     const venues=new Map(db.venues.map(v=>[v.id,v]));
     function render(){
       const grouped=new Map();
-      const results=db.records.filter(r=>r.status==="confirmed"&&(select.value==="all"||r.type===select.value)).sort(byDate);
+      const results=db.records.filter(r=>r.status==="confirmed"&&(includeMemories.checked||!["dining","bar"].includes(r.type)||r.editorial?.awardQualified||r.editorial?.featuredException)&&(select.value==="all"||r.type===select.value)).sort(byDate);
       for(const r of results){const label=displayYear(r);if(!grouped.has(label))grouped.set(label,[]);grouped.get(label).push(r);}
       count.textContent=results.length+" recorded experience"+(results.length===1?"":"s");
       host.replaceChildren();
@@ -105,11 +107,11 @@
         section.append(year,stack);host.append(section);
       }
     }
-    select.addEventListener("change",render);render();
+    select.addEventListener("change",render);includeMemories.addEventListener("change",render);render();
   }
   function map(db){
     const host=byId("culture-map"),list=byId("city-list"),venues=new Map(db.venues.map(v=>[v.id,v])),groups=new Map();
-    for(const r of db.records.filter(x=>x.status==="confirmed")){
+    for(const r of db.records.filter(x=>x.status==="confirmed"&&(!["dining","bar"].includes(x.type)||x.editorial?.awardQualified||x.editorial?.featuredException))){
       const v=venues.get(r.venueId);if(!v||!v.location)continue;
       if(!groups.has(v.city))groups.set(v.city,{city:v.city,lat:v.location.lat,lng:v.location.lng,records:[]});
       groups.get(v.city).records.push(r);
@@ -145,7 +147,7 @@
     host.replaceChildren();
     host.append(el("p","eyebrow",r.type.toUpperCase()+" / "+(v.city||"")),
                 el("h1","",r.title),el("p","detail-lead",r.summary));
-    if(r.favorite){const favorite=el("p","eyebrow","✳ A PERSONAL FAVORITE");host.append(favorite);}
+    if(r.favorite){const favorite=el("p","eyebrow","✳ A PERSONAL FAVORITE");host.append(favorite);}if(["dining","bar"].includes(r.type)&&!r.editorial?.awardQualified){host.append(el("div","caveat",r.editorial?.featuredException?"Included as a personal favorite by your explicit choice. No Michelin or James Beard distinction is claimed for this venue.":"This remains a personal memory, not a Michelin / James Beard qualifying record. It is excluded from the default collection until venue-specific recognition is verified."));}
     const grid=el("div","detail-grid");
     for(const [label,value] of [["EXPERIENCE DATE",yearLabel(r)],["LOCATION",[v.city,v.region].filter(Boolean).join(", ")],["VENUE",v.name||r.title],["STATUS","Confirmed firsthand visit"]]){
       const block=el("div","detail-metric");block.append(el("small","",label),el("strong","",value));grid.append(block);
@@ -166,7 +168,7 @@
   const key="alexford:culture-interview:v1";
   function interview(db){
     const list=byId("interview-list"),progress=byId("interview-progress"),summary=byId("interview-summary"),output=byId("copy-status");
-    const areas=all("[data-area]");let active="Baltimore",answers={};
+    const areas=all("[data-area]");let active="Baltimore",screen="awards",answers={};
     try{const saved=JSON.parse(localStorage.getItem(key)||"{}");if(saved&&typeof saved==="object"&&!Array.isArray(saved))answers=saved;}catch(_){}
     const locked=(x)=>["confirmed","not_visited","maybe"].includes(x.visitStatus);
     const answer=(x)=>x.visitStatus==="confirmed"?"visited":x.visitStatus==="not_visited"?"not_visited":x.visitStatus==="maybe"?"maybe":answers[x.id];
@@ -177,18 +179,19 @@
       const grouped={visited:[],maybe:[],not_visited:[]};
       for(const x of db.candidates){const a=answer(x);if(statuses.includes(a))grouped[a].push(x.area+" — "+x.name+(locked(x)?" (confirmed interview answer)":" (local response)"));}
       const pending=db.candidates.filter(x=>x.userMemoryLead&&!x.userMemoryLead.identityConfirmed);
-      summary.value="CULTURE PASSPORT — RESTAURANT INTERVIEW\n\n"+statuses.map(s=>label[s]+" ("+grouped[s].length+"):\n"+(grouped[s].map(n=>"• "+n).join("\n")||"None yet")).join("\n\n")+"\n\nVENUE IDENTITY TO CONFIRM:\n"+(pending.map(x=>"• "+x.name+" — "+x.userMemoryLead.recalled).join("\n")||"None")+"\n\nUnverified answers do not appear in the public passport until explicitly reviewed.";
+      summary.value="CULTURE PASSPORT — RESTAURANT AND BAR INTERVIEW\n\n"+statuses.map(s=>label[s]+" ("+grouped[s].length+"):\n"+(grouped[s].map(n=>"• "+n).join("\n")||"None yet")).join("\n\n")+"\n\nVENUE IDENTITY TO CONFIRM:\n"+(pending.map(x=>"• "+x.name+" — "+x.userMemoryLead.recalled).join("\n")||"None")+"\n\nUnverified answers do not appear in the public passport until explicitly reviewed.";
       const completed=db.candidates.filter(x=>statuses.includes(answer(x))).length;
       progress.textContent=completed+" / "+db.candidates.length+" reviewed";persist();
     }
     function render(){
       list.replaceChildren();
       const period=byId("interview-period");if(period)period.textContent=(db.periods&&db.periods[active])?"HISTORICAL INTERVIEW WINDOW  /  "+db.periods[active]:"";
-      const candidates=db.candidates.filter(x=>x.area===active);
+      const candidates=db.candidates.filter(x=>x.area===active&&(screen==="all"||screen==="awards"&&x.screening?.status==="award_qualified"||screen==="leads"&&(x.userMemoryLead&&!x.userMemoryLead.identityConfirmed||x.screening?.status!=="award_qualified")));
+      const screeningCount=byId("screening-count");if(screeningCount)screeningCount.textContent=candidates.length+" shown in "+active+" · "+(screen==="awards"?"documented Michelin / James Beard connections":screen==="leads"?"unqualified or unresolved memories":"all historical candidates");
       if(!candidates.length){empty(list,"No candidates in this area yet.","New historically relevant restaurants can be added over time.");return;}
       candidates.forEach((x,i)=>{
         const card=el("article","interview-item");
-        card.append(el("span","tag","RESTAURANT "+String(i+1).padStart(2,"0")+" / "+x.area),el("h3","",x.name),el("p","",x.interviewCue),el("p","",x.recognition));
+        card.append(el("span","tag",(x.venueType==="cocktail_bar"?"COCKTAIL BAR ":"RESTAURANT ")+String(i+1).padStart(2,"0")+" / "+x.area),el("h3","",x.name),el("p","",x.interviewCue),el("p","",x.recognition));if(x.screening?.status==="award_qualified")card.append(el("p","qualifies","Award candidate · "+(x.screening.basis==="michelin"?"Michelin Guide":"James Beard")+" · "+(x.screening.sourceTier==="primary"?"primary source":"published reporting")));else card.append(el("p","qualifies neutral","Personal memory / recognition not yet verified"));
         if(x.userMemoryLead&&!x.userMemoryLead.identityConfirmed){card.append(el("p","tag","Identification lead: "+x.userMemoryLead.recalled));}
         if(locked(x)){
           const style=x.visitStatus==="maybe"?"locked maybe":x.visitStatus==="not_visited"?"locked no":"locked";
@@ -205,6 +208,7 @@
         list.append(card);
       });
     }
+    const screeningButtons=all("[data-screen]");screeningButtons.forEach(b=>b.addEventListener("click",()=>{screen=b.dataset.screen;screeningButtons.forEach(x=>{const on=x===b;x.classList.toggle("active",on);x.setAttribute("aria-pressed",String(on));});render();}));
     areas.forEach(b=>b.addEventListener("click",()=>{active=b.dataset.area;areas.forEach(x=>{const is=x===b;x.classList.toggle("active",is);x.setAttribute("aria-pressed",String(is));});render();}));
     const tabBox=$(".interview-actions .tabstrip");
     const allAreas=[...new Set(db.candidates.map(x=>x.area))];

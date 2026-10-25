@@ -84,10 +84,10 @@ def main():
     QUESTIONS = (ROOT / "dining-interview.html").read_text(encoding="utf-8")
     assert len(INTERVIEW["candidates"]) >= 40
     assert len(set(r["id"] for r in INTERVIEW["candidates"])) == len(INTERVIEW["candidates"])
-    assert set(r["area"] for r in INTERVIEW["candidates"]) == {"Baltimore", "Washington, DC", "Denver Metro", "Steamboat Springs"}
+    assert set(r["area"] for r in INTERVIEW["candidates"]) == {"Baltimore", "Washington, DC", "Denver Metro", "Steamboat Springs", "Kansas City Metro"}
     assert all(r["visitStatus"] in {"unreviewed", "confirmed", "not_visited", "maybe"} and r["sourceUrl"].startswith("https://") for r in INTERVIEW["candidates"])
     confirmed_interview = [r for r in INTERVIEW["candidates"] if r["visitStatus"] == "confirmed"]
-    assert len(confirmed_interview) == 3 and {r["confirmedVisitId"] for r in confirmed_interview} == {charleston["id"], woodberry["id"], "momofuku-ccdc-washington-dc"}
+    assert len(confirmed_interview) == 5 and {r["confirmedVisitId"] for r in confirmed_interview} == {charleston["id"], woodberry["id"], "momofuku-ccdc-washington-dc", "rec-pier-chop-house-baltimore", "majestic-kansas-city"}
     clavel = next(r for r in INTERVIEW["candidates"] if r["area"] == "Baltimore" and r["name"] == "Clavel")
     assert clavel["visitStatus"] == "not_visited"
     cinghiale = next(r for r in INTERVIEW["candidates"] if r["name"] == "Cinghiale" and r["area"] == "Baltimore")
@@ -114,7 +114,7 @@ def main():
     assert magdalena["visitStatus"] == "unreviewed"
     assert "2020" in magdalena["interviewCue"]
     assert "visitStatus===\"maybe\"" in (ROOT / "dining-interview.js").read_text(encoding="utf-8")
-    assert len([r for r in DATA["entries"] if r["status"] == "confirmed"]) == 9
+    assert len([r for r in DATA["entries"] if r["status"] == "confirmed"]) == 11
     for name in ("Sauvage", "Gunther & Co.", "Thames Street Oyster House"):
         found = next(r for r in DATA["entries"] if r["name"] == name)
         assert found["status"] == "confirmed" and found["guide"]["distinction"] == "not_covered"
@@ -127,9 +127,16 @@ def main():
     assert thames["visit"]["date"] is None and thames["visit"]["precision"] == "unknown"
     assert sauv["favorite"] is True and gunther["favorite"] is True
     pending = next(r for r in INTERVIEW["candidates"] if r["name"] == "Rec Pier Chop House")
-    assert pending["visitStatus"] == "unreviewed" and pending["userMemoryLead"]["identityConfirmed"] is False
-    assert not any(r["name"] == "Rec Pier Chop House" for r in DATA["entries"])
-    assert len(INTERVIEW["candidates"]) == 57
+    assert pending["visitStatus"] == "confirmed" and pending["userMemoryLead"]["identityConfirmed"] is True
+    assert pending["confirmedVisitId"] == "rec-pier-chop-house-baltimore"
+    assert not any(r["name"] == "Le Fou Frog" for r in DATA["entries"])
+    assert not any(r["name"] == "Le Fou Frog" for r in INTERVIEW["candidates"])
+    majestic = next(r for r in DATA["entries"] if r["id"] == "majestic-kansas-city")
+    rec_pier = next(r for r in DATA["entries"] if r["id"] == "rec-pier-chop-house-baltimore")
+    assert majestic["status"] == rec_pier["status"] == "confirmed"
+    assert majestic["visit"]["date"] is None and rec_pier["visit"]["date"] is None
+    assert any(r["name"] == "Rec Pier Chop House" for r in DATA["entries"])
+    assert len(INTERVIEW["candidates"]) == 58
     assert not any(r["name"] == "Petit Louis Bistro" for r in DATA["entries"])
     assert not any(r["name"] == "Cinghiale" for r in DATA["entries"])
     assert not any(r["name"] == "Clavel" for r in DATA["entries"])
