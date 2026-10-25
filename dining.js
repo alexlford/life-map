@@ -30,6 +30,14 @@
         const distinction=r.guide.distinction==="selected"?"Michelin Selected":r.guide.distinction==="starred"?(r.guide.stars+" Michelin Star"+(r.guide.stars===1?"":"s")):r.guide.distinction;
         add(card,"span","distinction",distinction+" · "+r.guide.edition+" Guide");
         add(card,"p","note",r.guide.distinction==="starred"&&r.visit.timingRelativeToAward==="unverified"?"Exact meal date unknown; whether the star was awarded by then remains unverified.":r.guide.historicalVisitDistinction==="starred"?"One Michelin star in each possible visit year; exact visit date remains unknown.":"Exact visit date and Michelin recognition at the time of the meal are not yet established.");
+        if(Array.isArray(r.recognitions)&&r.recognitions.length){
+          const recognitionArea=add(card,"div","recognition-area");
+          r.recognitions.forEach(rec=>{const row=add(recognitionArea,"div","recognition-item");
+            add(row,"strong","",rec.organization+" · "+rec.year+" "+rec.result);
+            add(row,"span","",rec.category+" — "+rec.recipient);
+            external(row,"Source ↗",rec.sourceUrl);
+          });
+        }
         const bottom=add(card,"div","record-footer");
         external(bottom,"View Michelin listing ↗",r.guide.sourceUrl);
       }else if(r.candidates){

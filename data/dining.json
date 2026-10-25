@@ -38,8 +38,14 @@
       {
         "title": "Michelin releases New York City 2017 starred restaurants",
         "url": "https://michelinmedia.com/michelin-guide-nyc-2017/"
+      },
+      {
+        "title": "James Beard Foundation — 2023 winners (République)",
+        "url": "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
       }
-    ]
+    ],
+    "jamesBeard": "James Beard recognitions record award category, result (winner/finalist/semifinalist), year, the honoree, and associated restaurant. Chef recognition does not mean the restaurant itself won an institutional award. Award years after a meal remain subsequent achievements.",
+    "interview": "Candidates in dining-interview.json are research leads, not confirmed visits. Browser interview answers are not published to the main passport until explicitly reviewed and confirmed."
   },
   "entries": [
     {
@@ -66,7 +72,18 @@
       },
       "summary": "A confirmed visit to a Michelin Guide-listed restaurant. It is Michelin Selected, not Michelin-starred in the 2026 Guide.",
       "evidenceStatus": "reported",
-      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Republique+624+S+La+Brea+Ave+Los+Angeles"
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Republique+624+S+La+Brea+Ave+Los+Angeles",
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2023,
+          "result": "winner",
+          "category": "Outstanding Pastry Chef or Baker",
+          "recipient": "Margarita Manzke",
+          "relationship": "chef at restaurant",
+          "sourceUrl": "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
+        }
+      ]
     },
     {
       "id": "minetta-tavern-nyc-2016-2017",
@@ -124,7 +141,8 @@
           "confidence": "recalled"
         }
       ],
-      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Minetta+Tavern+113+MacDougal+St+New+York"
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Minetta+Tavern+113+MacDougal+St+New+York",
+      "recognitions": []
     },
     {
       "id": "beckon-denver-2023",
@@ -155,7 +173,8 @@
       },
       "summary": "Confirmed visit to Beckon around the time it received one Michelin star in the inaugural Colorado Guide, announced September 12, 2023. The precise visit date is still unknown.",
       "evidenceStatus": "reported",
-      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Beckon+2843+Larimer+St+Denver"
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Beckon+2843+Larimer+St+Denver",
+      "recognitions": []
     }
   ],
   "excludedResearch": [
