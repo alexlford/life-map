@@ -132,3 +132,9 @@ python -m http.server 8000
 ```
 
 Then open `http://localhost:8000`.
+
+## Michelin Dining Passport
+
+`dining.html` is a standalone, responsive historical dining tracker within the Personal Atlas, linked from the Life Map (and hidden in professional embeds). `data/dining.json` is the canonical source. The site distinguishes directly reported visits, unresolved restaurant identities, Michelin Guide Selected listings, and historically confirmed Michelin stars. Do not treat restaurant *candidates* as separate visits or apply a current Michelin rating retroactively to an old visit.
+
+Current seed: République is a confirmed Guide-listed visit but not a confirmed starred visit; the 2016/17 NYC burger and September 2023 Denver visit each count as **one unresolved restaurant identity**. A late-1990s Wisconsin Dells Michelin star is historically impossible because Michelin did not publish a US guide until 2005.

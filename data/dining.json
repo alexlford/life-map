@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "updated": "2026-10-24",
+  "methodology": {
+    "confirmedDefinition": "Visit expressly reported by Alex. Starred count requires a named restaurant and a Michelin star in the guide edition applicable to the visit.",
+    "guideVsStar": "Michelin Selected, Bib Gourmand, Green Star and Michelin Stars are separate distinctions; Michelin Selected is not a Michelin star.",
+    "editionCaveat": "Guide-edition dates do not necessarily align with the calendar year of a meal. Confirm exact visit dates before assigning historical stars.",
+    "unreconciled": "Unknown restaurant or unverified date is not counted as a confirmed starred restaurant.",
+    "sources": [
+      {
+        "title": "Michelin — République",
+        "url": "https://guide.michelin.com/en/california/hollywood/restaurant/republique"
+      },
+      {
+        "title": "Michelin — 2016 NYC starred list",
+        "url": "https://michelinmedia.com/c0/michelinguidenyc2016/"
+      },
+      {
+        "title": "2017 NYC star list",
+        "url": "https://ny.eater.com/2016/11/15/13639376/nyc-2017-michelin-stars"
+      },
+      {
+        "title": "The Spotted Pig 2017 downgrade",
+        "url": "https://ny.eater.com/2016/11/11/13590260/nyc-michelin-bib-gourmands-2017"
+      },
+      {
+        "title": "Michelin — Colorado's inaugural 2023 stars",
+        "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars"
+      },
+      {
+        "title": "Michelin — US guide history",
+        "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-inaugural-american-south-selection"
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "republique-los-angeles",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "République",
+      "city": "Los Angeles",
+      "region": "California",
+      "country": "USA",
+      "neighborhood": "La Brea / Hollywood",
+      "visit": {
+        "date": null,
+        "dateText": "Date not yet recorded",
+        "precision": "unknown",
+        "source": "Alex's direct recollection"
+      },
+      "guide": {
+        "edition": 2026,
+        "distinction": "selected",
+        "stars": 0,
+        "sourceUrl": "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
+        "historicalVisitDistinction": "unverified"
+      },
+      "summary": "A confirmed visit to a Michelin Guide-listed restaurant. It is Michelin Selected, not Michelin-starred in the 2026 Guide.",
+      "evidenceStatus": "reported",
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Republique+624+S+La+Brea+Ave+Los+Angeles"
+    },
+    {
+      "id": "nyc-burger-2016-2017",
+      "kind": "reconstruction",
+      "status": "researching",
+      "name": "New York City · Michelin burger memory",
+      "city": "New York City",
+      "region": "New York",
+      "country": "USA",
+      "visit": {
+        "date": null,
+        "dateText": "2016 or 2017",
+        "precision": "range",
+        "source": "Alex's direct recollection"
+      },
+      "summary": "One remembered restaurant visit, exact venue unknown. Do not count all the possible venues as visits.",
+      "evidenceStatus": "restaurant_unresolved",
+      "candidates": [
+        {
+          "name": "Minetta Tavern",
+          "neighborhood": "Greenwich Village",
+          "reason": "Celebrated Black Label Burger; one star in the 2016 and 2017 Guides.",
+          "stars2016": 1,
+          "stars2017": 1,
+          "url": "https://guide.michelin.com/en/new-york-state/new-york/restaurant/minetta-tavern"
+        },
+        {
+          "name": "The Spotted Pig",
+          "neighborhood": "West Village",
+          "reason": "Known for the Roquefort burger; starred in the 2016 Guide, downgraded to Bib Gourmand for 2017.",
+          "stars2016": 1,
+          "stars2017": 0,
+          "url": "https://ny.eater.com/2016/11/11/13590260/nyc-michelin-bib-gourmands-2017"
+        },
+        {
+          "name": "The Breslin",
+          "neighborhood": "NoMad / Flatiron",
+          "reason": "April Bloomfield's celebrated lamb burger; starred in both editions.",
+          "stars2016": 1,
+          "stars2017": 1,
+          "url": "https://guide.michelin.com/hk/en/article/news-and-views/full-list-the-2018-michelin-guide-nyc-results-announced"
+        }
+      ]
+    },
+    {
+      "id": "denver-first-stars-2023",
+      "kind": "reconstruction",
+      "status": "researching",
+      "name": "Denver · first Michelin stars",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "visit": {
+        "date": null,
+        "dateText": "Around the September 2023 announcement",
+        "precision": "approximate",
+        "source": "Alex's direct recollection"
+      },
+      "summary": "The first Colorado stars were announced September 12, 2023. Exactly three restaurants in Denver were awarded one star in that first round.",
+      "evidenceStatus": "restaurant_unresolved",
+      "candidates": [
+        {
+          "name": "Beckon",
+          "neighborhood": "RiNo / Five Points",
+          "reason": "One Michelin star in the inaugural 2023 Colorado Guide.",
+          "stars2023": 1,
+          "url": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurants/1-star-michelin"
+        },
+        {
+          "name": "Brutø",
+          "neighborhood": "LoDo / Dairy Block",
+          "reason": "One Michelin star plus a Green Star in September 2023.",
+          "stars2023": 1,
+          "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars"
+        },
+        {
+          "name": "The Wolf's Tailor",
+          "neighborhood": "Sunnyside",
+          "reason": "One Michelin star plus a Green Star in September 2023; its later star level should not be applied retroactively.",
+          "stars2023": 1,
+          "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars"
+        }
+      ]
+    }
+  ],
+  "excludedResearch": [
+    {
+      "id": "wisconsin-dells-late-1990s",
+      "place": "Wisconsin Dells, Wisconsin",
+      "period": "Late 1990s",
+      "status": "not_michelin_starred",
+      "explanation": "Michelin did not publish any US restaurant guide until 2005. No Wisconsin Dells restaurant could hold a US Michelin star in the late 1990s.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-inaugural-american-south-selection"
+    }
+  ]
+}
