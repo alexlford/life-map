@@ -33,9 +33,14 @@ assert all(c["visitStatus"] in {"confirmed", "not_visited", "maybe", "unreviewed
 # NYC bar interview must retain explicit user responses and never count either as confirmed.
 pdt = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "PDT (Please Don't Tell)")
 rabbit = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "The Dead Rabbit")
+leyenda = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "Leyenda")
+dante = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "Dante")
 assert pdt["visitStatus"] == "maybe" and rabbit["visitStatus"] == "not_visited"
+assert leyenda["visitStatus"] == "not_visited" and leyenda["visitPeriod"].startswith("2018–2020")
+assert dante["visitStatus"] == "unreviewed"
 assert rabbit["recognitionYear"] == 2019 and "finalist" in rabbit["recognition"]
-assert not any(r["title"] in {"PDT (Please Don't Tell)", "The Dead Rabbit"} for r in records)
+assert leyenda["recognitionYear"] == 2019 and "semifinalist" in leyenda["recognition"]
+assert not any(r["title"] in {"PDT (Please Don't Tell)", "The Dead Rabbit", "Leyenda", "Dante"} for r in records)
 
 assert {"Baltimore", "Washington, DC", "Denver Metro", "Steamboat Springs", "Charleston, SC", "Kansas City Metro"}.issubset({c["area"] for c in candidates})
 assert interview_data["periods"]["Charleston, SC"].endswith("2017–2018")
