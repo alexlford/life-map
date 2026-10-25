@@ -37,3 +37,17 @@ Continue asking Alex about one plausible restaurant at a time: first Magdalena, 
 ## Validation
 
 Run python culture/scripts/validate.py and node --check culture/assets/app.js from the parent life-map repository. Enforce these in CI before merging.
+
+## Charleston, SC and Kansas City memory reconstruction (October 2026)
+
+- Charleston, SC (2017–2018): Alex spent about three months in Charleston across 2017–2018. The 16 new candidates include period-correct culinary landmarks. FIG's 2018 James Beard Outstanding Wine Program win and Rodney Scott's 2018 Best Chef: Southeast award are contemporaneous historical honors, but specific meals could predate them.
+- Kansas City metro (2010–present): Alex has spent considerable time in the region. The 17 new candidates cover both the Missouri and Kansas sides. High-priority identification lead: a remembered steakhouse with a basement jazz bar, which strongly matches The Majestic Restaurant at 931 Broadway. Not yet confirmed by Alex, so do not count it as a visit.
+- Historical restaurant candidates are researched leads, not evidence of visits. Never add them to the nine confirmed records without explicit user confirmation.
+- The map must load the Leaflet library before its application script. The validator enforces script ordering.
+
+Sources:
+- https://majestickc.com/jazz-club/
+- https://www.visitkc.com/articles/jazz-clubs-in-kansas-city/
+- https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners
+- https://carolinas.eater.com/2018/2/16/17017044/james-beard-awards-2018-charleston
+- https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/
