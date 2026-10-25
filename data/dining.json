@@ -94,6 +94,10 @@
       {
         "title": "Le Fou Frog official address and history",
         "url": "https://www.lefoufrog.com/directions"
+      },
+      {
+        "title": "James Beard Foundation 2026 winners: Penelope Wong, Yuan Wonton",
+        "url": "https://www.jamesbeard.org/stories/james-beard-award-winners-2026"
       }
     ],
     "jamesBeard": "James Beard recognitions record award category, result (winner/finalist/semifinalist), year, the honoree, and associated restaurant. Chef recognition does not mean the restaurant itself won an institutional award. Award years after a meal remain subsequent achievements. A restaurant recognized after a user's visit may be tagged as subsequently awarded, rather than suggesting it held the award on the dinner date.",
@@ -116,19 +120,25 @@
       "country": "USA",
       "neighborhood": "La Brea / Hollywood",
       "visit": {
-        "date": null,
-        "dateText": "Date not yet recorded",
-        "precision": "unknown",
-        "source": "Alex's direct recollection"
+        "date": "2026-10-24",
+        "dateText": "2026-10-24",
+        "precision": "day",
+        "source": "Alex explicitly confirmed dining at République the night before 2026-10-25.",
+        "approximateYear": 2026,
+        "timelineYear": 2026,
+        "possibleYears": [
+          2026
+        ],
+        "evidenceType": "direct_user_recollection"
       },
       "guide": {
         "edition": 2026,
         "distinction": "selected",
         "stars": 0,
         "sourceUrl": "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
-        "historicalVisitDistinction": "unverified"
+        "historicalVisitDistinction": "selected"
       },
-      "summary": "A confirmed visit to a Michelin Guide-listed restaurant. It is Michelin Selected, not Michelin-starred in the 2026 Guide.",
+      "summary": "Confirmed République dining visit on October 24, 2026. Michelin Selected in 2026 (not starred); its chef-owner Margarita Manzke won a James Beard Outstanding Pastry Chef or Baker award in 2023, before the visit.",
       "evidenceStatus": "reported",
       "locationUrl": "https://www.google.com/maps/search/?api=1&query=Republique+624+S+La+Brea+Ave+Los+Angeles",
       "recognitions": [
@@ -139,20 +149,21 @@
           "category": "Outstanding Pastry Chef or Baker",
           "recipient": "Margarita Manzke",
           "relationship": "chef at restaurant",
-          "sourceUrl": "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
+          "sourceUrl": "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners",
+          "timingRelativeToVisit": "before_visit"
         }
       ],
       "curation": {
         "status": "qualifies",
         "basis": "both",
-        "reason": "Michelin Selected in 2026; pastry chef Margarita Manzke won the 2023 James Beard Outstanding Pastry Chef or Baker award. Meal year not known.",
+        "reason": "Michelin Selected in 2026 and a 2023 James Beard Outstanding Pastry Chef or Baker win by Margarita Manzke, both before Alex's confirmed October 24, 2026 visit.",
         "evidenceUrls": [
           "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
           "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
         ],
         "reviewedOn": "2026-10-25",
         "confidence": "documented",
-        "awardAtVisit": "consult dated award records; meal date may be unknown"
+        "awardAtVisit": "Both listed Michelin Selected status in 2026 and the 2023 pastry award predate the meal."
       }
     },
     {
@@ -366,17 +377,19 @@
       "country": "USA",
       "neighborhood": "Woodberry",
       "visit": {
-        "date": null,
-        "dateText": "2018 (timeline placement; exact date unknown)",
+        "date": "2018-05-16",
+        "dateText": "2018-05-16",
         "possibleYears": [
           2018
         ],
-        "precision": "approximate_year",
-        "source": "Alex's explicit confirmation of having dined at Woodberry Kitchen on 2026-10-24; timeline year 2018 chosen directly by Alex on 2026-10-24",
+        "precision": "day",
+        "source": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue.",
         "timingRelativeToAward": "2015 chef award preceded visit",
         "approximateYear": 2018,
         "timelineYear": 2018,
-        "yearPlacementSource": "Alex selected 2018 as the timeline year on 2026-10-24"
+        "yearPlacementSource": "Alex selected 2018 as the timeline year on 2026-10-24",
+        "evidenceType": "completed_reservation_and_user_confirmed_venue",
+        "partySize": 2
       },
       "guide": {
         "distinction": "not_covered",
@@ -423,15 +436,22 @@
       "neighborhood": "CityCenterDC",
       "address": "1090 I St NW, Washington, DC 20001",
       "visit": {
-        "date": null,
-        "dateText": "Date uncertain (restaurant served 2015–March 2020)",
-        "precision": "unknown",
-        "source": "Alex expressly confirmed Momofuku CCDC in the Culinary Passport interview on 2026-10-25; no exact visit date stated",
+        "date": "2018-08-21",
+        "dateText": "2018-08-21",
+        "precision": "day",
+        "source": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue.",
         "restaurantOperatingWindow": {
           "opened": "2015-10-24",
           "lastService": "2020-03-13",
           "permanentlyClosed": "2020-05-13"
-        }
+        },
+        "approximateYear": 2018,
+        "timelineYear": 2018,
+        "possibleYears": [
+          2018
+        ],
+        "evidenceType": "completed_reservation_and_user_confirmed_venue",
+        "partySize": 4
       },
       "guide": {
         "edition": 2019,
@@ -635,16 +655,17 @@
       "neighborhood": "Fells Point",
       "address": "1715 Thames Street, Baltimore, MD 21231",
       "visit": {
-        "date": null,
-        "dateText": "Baltimore years, 2018–2021 (exact date unknown)",
-        "precision": "year_range",
-        "source": "Alex directly confirmed Rec Pier Chop House in the Culture Passport interview on October 25, 2026.",
+        "date": "2018-05-16",
+        "dateText": "2018-05-16",
+        "precision": "day",
+        "source": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue.",
         "possibleYears": [
-          2018,
-          2019,
-          2020,
-          2021
-        ]
+          2018
+        ],
+        "approximateYear": 2018,
+        "timelineYear": 2018,
+        "evidenceType": "completed_reservation_and_user_confirmed_venue",
+        "partySize": 2
       },
       "guide": {
         "distinction": "not_covered",
@@ -819,6 +840,57 @@
         "reviewedOn": "2026-10-25",
         "confidence": "documented"
       }
+    },
+    {
+      "id": "yuan-wonton-denver",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Yuan Wonton",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "neighborhood": "North Park Hill",
+      "address": "2878 Fairfax St, Denver, CO 80207",
+      "visit": {
+        "date": null,
+        "dateText": "Date not yet established",
+        "precision": "unknown",
+        "source": "User named Yuan Wonton as a restaurant visited in Denver during Culinary Passport interview on 2026-10-25; exact meal date not provided."
+      },
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "no_michelin_award_asserted",
+        "sourceUrl": null,
+        "note": "No Michelin Guide award is claimed for Yuan Wonton; qualification is through Penelope Wong's 2026 James Beard win."
+      },
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2026,
+          "result": "winner",
+          "category": "Best Chef: Mountain (CO, ID, MT, UT, WY)",
+          "recipient": "Penelope Wong",
+          "relationship": "chef-owner at Yuan Wonton",
+          "timingRelativeToVisit": "unknown_visit_date",
+          "sourceUrl": "https://www.jamesbeard.org/stories/james-beard-award-winners-2026"
+        }
+      ],
+      "summary": "Denver dumpling restaurant founded by chef-owner Penelope Wong. Wong won the 2026 James Beard Best Chef: Mountain award. This remembered dining visit has no verified date, so recognition timing relative to the meal remains unknown.",
+      "evidenceStatus": "reported",
+      "referenceUrl": "https://www.jamesbeard.org/stories/james-beard-award-winners-2026",
+      "curation": {
+        "status": "qualifies",
+        "basis": "james_beard",
+        "reason": "Chef-owner Penelope Wong won 2026 James Beard Best Chef: Mountain for Yuan Wonton in Denver. Specific visit date unknown.",
+        "evidenceUrls": [
+          "https://www.jamesbeard.org/stories/james-beard-award-winners-2026"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "unknown_visit_date"
+      },
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Yuan+Wonton+Denver"
     }
   ],
   "excludedResearch": [

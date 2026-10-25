@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "updated": "2026-10-25",
+  "explanation": "Confirmed memories reviewed but excluded from public Culture Passport because Michelin or James Beard venue-specific qualification could not be verified. These are not public collection records and should not be counted.",
+  "entries": [
+    {
+      "name": "Bistro Barbès",
+      "city": "Denver",
+      "region": "Colorado",
+      "address": "5021 E. 28th Ave, Denver, CO 80207",
+      "userMemory": "User named Bistro Barbès among Denver restaurants attended; exact visit date unknown.",
+      "qualifies": false,
+      "criterion": "No Michelin inclusion or James Beard semifinalist/finalist/winner linked to this venue or chef-owner was found.",
+      "chef": "Jon Robbins",
+      "operatingPeriod": "2014-04-30 through 2026-06-13",
+      "sourceUrl": "https://www.westword.com/food-drink/bistro-barbes-to-close-after-12-years-40888162/",
+      "screenedOn": "2026-10-25"
+    }
+  ]
+}

@@ -103,3 +103,13 @@ Source links:
 - **Award recipient integrity**: bartender-level semifinalist nominations for Best Intentions (Christopher Marty), Fern Bar (Diana Condori) and Wild Child (Jay Sanders) are attributed to the professional, not passed off as venue-level awards.
 - **Temporal screening**: entries awarded in 2025 or 2026 may only have been available on later visits. Do not present those bars as 2018–2020 NYC destinations or infer their existence on a user's earlier trip.
 - Official records: https://archive.jamesbeard.org/blog/the-2018-james-beard-award-semifinalists ; https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists ; https://www.jamesbeard.org/stories/james-beard-award-semifinalists-2026 .
+
+## Dated reservation evidence and République (2026-10-25)
+
+The user explicitly confirmed dining at République on **2026-10-24**, after Margarita Manzke's 2023 James Beard win. Preserve its 2026 Michelin Selected (not starred) category. Additional screenshots establish completed reservations for Woodberry Kitchen (May 16, 2018, two), Rec Pier Chop House (May 16, 2018, two), and Momofuku CCDC (August 21, 2018, four), each already a directly confirmed venue. These date changes are reservation-backed; a completed reservation does not independently establish physical attendance. The full source-derived reservations are collected in `culture/data/reservation-evidence.json` (40 entries / 38 distinct restaurants), with duplicate dates and the Blanco waitlist differentiated. **Le Fou Frog remains excluded by explicit user request.** Screening decisions are not automatic from completed reservations.
+
+## Yuan Wonton and Bistro Barbès screening (October 25, 2026)
+
+Yuan Wonton in Denver is a user-recalled confirmed visit (date unknown), and clearly qualifies for the curated collection through chef-owner Penelope Wong's **2026 James Beard Best Chef: Mountain** win. Source: https://www.jamesbeard.org/stories/james-beard-award-winners-2026. Do not assert the award predates the visit until a date is known. Bistro Barbès in Denver (closed June 2026, chef Jon Robbins) has no verified direct Michelin Guide or James Beard distinction. Preserve the user-supplied memory in `culture/data/excluded-dining-memories.json` rather than publishing it as a curated experience; this follows the user's preference for limiting displayed entries to qualified venues or explicitly selected favorites. Bistro Barbès is not currently a featured exception.
+
+October 25 merge: preserved the separately merged North Pond (Chicago) unreviewed memory lead and the original 20 typed reservation entries, then appended 39 supplemental review-only screenshot rows; Le Fou Frog was excluded entirely from the public ledger in accordance with user preference.
