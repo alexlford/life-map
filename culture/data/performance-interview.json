@@ -37,10 +37,91 @@
       "relatedExperienceId": null,
       "userMemory": "User recalled attending at least one other play or musical in Denver, title and year not yet established.",
       "sourceUrl": "https://www.denvercenter.org/"
+    },
+    {
+      "id": "denver-wicked-2024",
+      "name": "Wicked",
+      "category": "theater",
+      "city": "Denver",
+      "year": 2024,
+      "engagement": "Buell Theatre, July 24 – August 25, 2024",
+      "sourceUrl": "https://www.denvercenter.org/news-center/dcpa-broadways-2023-24-season-announcement/",
+      "detail": "The long-running musical telling the story of the witches of Oz.",
+      "confirmation": "unreviewed_candidate",
+      "relatedExperienceId": null,
+      "userMemory": "Period-appropriate Denver stage-show lead. No user attendance or specific memory attributed to this title."
+    },
+    {
+      "id": "denver-company-2024",
+      "name": "Company",
+      "category": "theater",
+      "city": "Denver",
+      "year": 2024,
+      "engagement": "Buell Theatre, May–June 2024",
+      "sourceUrl": "https://www.denvercenter.org/news-center/dcpa-broadways-2023-24-season-announcement/",
+      "detail": "Stephen Sondheim's musical about relationships and friendships.",
+      "confirmation": "unreviewed_candidate",
+      "relatedExperienceId": null,
+      "userMemory": "Period-appropriate Denver stage-show lead. No user attendance or specific memory attributed to this title."
+    },
+    {
+      "id": "denver-mj-2024",
+      "name": "MJ: The Musical",
+      "category": "theater",
+      "city": "Denver",
+      "year": 2024,
+      "engagement": "Buell Theatre, April 10–28, 2024",
+      "sourceUrl": "https://www.denvercenter.org/news-center/dcpa-broadways-2023-24-season-announcement/",
+      "detail": "The Michael Jackson musical staged as a rehearsal and memories.",
+      "confirmation": "unreviewed_candidate",
+      "relatedExperienceId": null,
+      "userMemory": "Period-appropriate Denver stage-show lead. No user attendance or specific memory attributed to this title."
+    },
+    {
+      "id": "denver-beetlejuice-2023",
+      "name": "Beetlejuice",
+      "category": "theater",
+      "city": "Denver",
+      "year": 2023,
+      "engagement": "Buell Theatre, September 5–17, 2023",
+      "sourceUrl": "https://www.denvercenter.org/news-center/dcpa-broadways-2023-24-season-announcement/",
+      "detail": "The macabre and comedic musical based on the film.",
+      "confirmation": "unreviewed_candidate",
+      "relatedExperienceId": null,
+      "userMemory": "Period-appropriate Denver stage-show lead. No user attendance or specific memory attributed to this title."
+    },
+    {
+      "id": "denver-hamlet-2024",
+      "name": "Hamlet",
+      "category": "theater",
+      "city": "Denver",
+      "year": 2024,
+      "engagement": "Wolf Theatre, September 13 – October 6, 2024",
+      "sourceUrl": "https://www.denvercenter.org/news-center/denver-center-theatre-company-announces-2024-25-season/",
+      "detail": "Shakespeare's tragedy performed by the Denver Center Theatre Company.",
+      "confirmation": "unreviewed_candidate",
+      "relatedExperienceId": null,
+      "userMemory": "Period-appropriate Denver stage-show lead. No user attendance or specific memory attributed to this title."
+    },
+    {
+      "id": "denver-little-shop-of-horrors-2025",
+      "name": "Little Shop of Horrors",
+      "category": "theater",
+      "city": "Denver",
+      "year": 2025,
+      "engagement": "Wolf Theatre, April 11 – May 18, 2025",
+      "sourceUrl": "https://www.denvercenter.org/news-center/denver-center-theatre-company-announces-2024-25-season/",
+      "detail": "An offbeat musical about a flower-shop assistant and a hungry plant.",
+      "confirmation": "unreviewed_candidate",
+      "relatedExperienceId": null,
+      "userMemory": "Period-appropriate Denver stage-show lead. No user attendance or specific memory attributed to this title."
     }
   ],
   "fullyIdentified": [
     "The Book of Mormon (Kansas City, December 2016)",
     "SIX (Denver, December 2023)"
-  ]
+  ],
+  "updated": "2026-10-25",
+  "intro": "Research the identity of remembered theater performances without confusing a touring production's dates with personal attendance.",
+  "userNotes": "User has seen SIX in Denver in December 2023, another theater outing around Christmas 2024 possibly A Christmas Carol, at least one unidentified additional Denver show, and The Second City in Chicago Christmas season 2017. The original four outings are already published. Theater leads remain unconfirmed."
 }
