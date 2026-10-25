@@ -19,7 +19,7 @@
     "maybe",
     "not_visited"
   ],
-  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House. Continued discovery batch 2026-10-25: 15 additional time-compatible Baltimore/DC restaurant candidates from dated historical sources. All remain unreviewed and excluded from public experience totals. Interview returns to Magdalena next; candidate discovery can continue periodically during future review sessions. Gunther & Co. appears as a confirmed dining record in the Culture Passport source archive. Its candidate status is locked as confirmed rather than inviting duplicate confirmation. Two new interview areas from direct user history: Charleston, South Carolina, three-month stay 2017–2018, and Kansas City metro frequent visits from 2010–present. The Majestic Restaurant is a strong identification lead for steakhouse + basement jazz, not confirmed by name. Distinguish James Beard chef awards from awards for the restaurant; consider post-visit award years. Confirmed by user: The Majestic Restaurant (Kansas City), Rec Pier Chop House (Baltimore). User dated Breckenridge Distillery dining to three separate years 2021/2022/2023; NYC speakeasy interview window 2018–2020; Chicago and Kansas City 2010–present; St Louis Hill Italian meal 2011–2014. None of these regional windows establish a visit to any unconfirmed candidate. Breckenridge has three year-specific Culture experience IDs attached to one venue. User uploaded OpenTable reservation screenshots on 2026-10-25. They establish Dominic's on the Hill (2012-12-28), Q House (2021-10-21), Wildflower (2022-03-21), Uchi Denver (2022-05-15), and other completed reservations. Le Fou Frog intentionally omitted from the published records and ledger per user's opt-out. Mister Oso reservation is WASH PARK, unlike the Bib Gourmand RiNo location. NYC PDT (Please Don't Tell) classified as a possibly visited bar during 2018–2020, not confirmed. The bar's 2012 James Beard Outstanding Bar Program victory is independently verified. Nine further JBF-recognized bar leads from 2018, 2025 and 2026: none counted as visited. Person-level JBF distinctions remain attributed to the person. User's direct 2026-10-25 interview response: The Dead Rabbit was NOT visited in NYC 2018–2020. PDT (Please Don't Tell) remains a possible visit only. Do not promote either to confirmed experiences or counts. North Pond Chicago is an unreviewed Michelin/James Beard candidate proposed in an independently merged update; this lead has not been confirmed by name.",
+  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House. Continued discovery batch 2026-10-25: 15 additional time-compatible Baltimore/DC restaurant candidates from dated historical sources. All remain unreviewed and excluded from public experience totals. Interview returns to Magdalena next; candidate discovery can continue periodically during future review sessions. Gunther & Co. appears as a confirmed dining record in the Culture Passport source archive. Its candidate status is locked as confirmed rather than inviting duplicate confirmation. Two new interview areas from direct user history: Charleston, South Carolina, three-month stay 2017–2018, and Kansas City metro frequent visits from 2010–present. The Majestic Restaurant is a strong identification lead for steakhouse + basement jazz, not confirmed by name. Distinguish James Beard chef awards from awards for the restaurant; consider post-visit award years. Confirmed by user: The Majestic Restaurant (Kansas City), Rec Pier Chop House (Baltimore). User dated Breckenridge Distillery dining to three separate years 2021/2022/2023; NYC speakeasy interview window 2018–2020; Chicago and Kansas City 2010–present; St Louis Hill Italian meal 2011–2014. None of these regional windows establish a visit to any unconfirmed candidate. Breckenridge has three year-specific Culture experience IDs attached to one venue. User uploaded OpenTable reservation screenshots on 2026-10-25. They establish Dominic's on the Hill (2012-12-28), Q House (2021-10-21), Wildflower (2022-03-21), Uchi Denver (2022-05-15), and other completed reservations. Le Fou Frog intentionally omitted from the published records and ledger per user's opt-out. Mister Oso reservation is WASH PARK, unlike the Bib Gourmand RiNo location. NYC PDT (Please Don't Tell) classified as a possibly visited bar during 2018–2020, not confirmed. The bar's 2012 James Beard Outstanding Bar Program victory is independently verified. Nine further JBF-recognized bar leads from 2018, 2025 and 2026: none counted as visited. Person-level JBF distinctions remain attributed to the person. User's direct 2026-10-25 interview response: The Dead Rabbit was NOT visited in NYC 2018–2020. PDT (Please Don't Tell) remains a possible visit only. Do not promote either to confirmed experiences or counts. North Pond Chicago is an unreviewed Michelin/James Beard candidate proposed in an independently merged update; this lead has not been confirmed by name. North Pond confirmed for the week following the October 10, 2021 Chicago Marathon; a one-star Michelin dinner with a story focused on its history in Lincoln Park. Nine Chicago award-qualified venues remain unreviewed. Alinea is next.",
   "candidates": [
     {
       "id": "altimore-charleston",
@@ -3963,18 +3963,19 @@
       "awardFamily": "both",
       "venueType": "restaurant",
       "interviewCue": "2610 N Cannon Drive, inside Lincoln Park near Lake Michigan. A historic low, wood-and-stone building beside a pond (not directly on Lake Michigan), formerly a 1912 ice-skating warming house. Warm wooden dining room, brick, large park-facing windows, white tablecloths and seasonal tasting menus. Take a short walk through the park to enter.",
-      "sourceUrl": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-chicago-2020-results",
+      "sourceUrl": "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
       "secondarySourceUrl": "https://archive.jamesbeard.org/blog/best-chef-great-lakes-bruce-sherman",
-      "visitStatus": "unreviewed",
+      "visitStatus": "confirmed",
       "addedOn": "2026-10-25",
       "priority": "very_high",
-      "researchStatus": "high_priority_identification",
+      "researchStatus": "confirmed_and_published",
       "userMemoryLead": {
-        "recalled": "Alex vaguely remembers dining at an upscale restaurant in Chicago located inside a park near Lake Michigan. Exact restaurant, meal date, and year are not confirmed.",
+        "recalled": "Alex definitively identified North Pond in Chicago and placed the meal in October 2021, the week after the Chicago Marathon.",
         "candidateConfidence": "very high",
-        "identityConfirmed": false,
+        "identityConfirmed": true,
         "source": "Alex's firsthand memory in the current Culture Passport interview, October 25, 2026",
-        "historicalWindow": "Chicago visits from 2010 to present; no specific year asserted for this dinner."
+        "historicalWindow": "Chicago visits from 2010 to present; no specific year asserted for this dinner.",
+        "confirmedOn": "2026-10-25"
       },
       "screening": {
         "status": "award_qualified",
@@ -3983,8 +3984,12 @@
         "secondaryEvidenceUrl": "https://archive.jamesbeard.org/blog/best-chef-great-lakes-bruce-sherman",
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
-        "note": "Michelin one star in Chicago 2016, 2018, 2019, 2020; Bruce Sherman won 2012 JBF Best Chef: Great Lakes at North Pond. These do not establish an actual visit. Exact award status at an unknown visit date is unknown."
-      }
+        "note": "Michelin one-star designation in 2021 verified during visit; 2012 James Beard award belongs to Bruce Sherman, who stepped down from daily chef leadership by end 2019."
+      },
+      "confirmedVisitId": "dining-north-pond-chicago-2021",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex directly confirmed visiting North Pond, Chicago in October 2021, the week after the October 10 Chicago Marathon (message Oct 25, 2026).",
+      "visitPeriod": "October 2021, the week after the Chicago Marathon; exact date unknown"
     },
     {
       "id": "candidate-denver-metro-smok-denver",
@@ -4014,6 +4019,204 @@
         "reason": "Direct Michelin Guide inclusion; user confirmed visit.",
         "screenedOn": "2026-10-25",
         "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-chicago-alinea",
+      "area": "Chicago",
+      "name": "Alinea",
+      "recognition": "2021 Michelin 3 stars; Grant Achatz 2008 James Beard Outstanding Chef",
+      "recognitionYear": 2021,
+      "awardFamily": "both",
+      "venueType": "restaurant",
+      "interviewCue": "Lincoln Park, 1723 N Halsted. Experimental multi-course tasting menus, edible art and immersive presentation.",
+      "sourceUrl": "https://www.alinearestaurant.com/",
+      "visitStatus": "unreviewed",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "both",
+        "evidenceUrl": "https://www.alinearestaurant.com/",
+        "sourceTier": "historical_guide_or_award",
+        "verifiedAt": "2026-10-25",
+        "note": "Historical recognition; no user attendance confirmed. Award year may not correspond to a future reported visit."
+      }
+    },
+    {
+      "id": "candidate-chicago-girl-the-goat",
+      "area": "Chicago",
+      "name": "Girl & the Goat",
+      "recognition": "Stephanie Izard won James Beard Best Chef: Great Lakes in 2013 while at this restaurant",
+      "recognitionYear": 2013,
+      "awardFamily": "beard",
+      "venueType": "restaurant",
+      "interviewCue": "West Loop / Randolph Street. Buzzing shared-plates restaurant, roasted pig face and distinctive wood-heavy industrial dining room.",
+      "sourceUrl": "https://archive.jamesbeard.org/blog/winner-recap-2",
+      "visitStatus": "unreviewed",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "beard",
+        "evidenceUrl": "https://archive.jamesbeard.org/blog/winner-recap-2",
+        "sourceTier": "historical_guide_or_award",
+        "verifiedAt": "2026-10-25",
+        "note": "Historical recognition; no user attendance confirmed. Award year may not correspond to a future reported visit."
+      }
+    },
+    {
+      "id": "candidate-chicago-monteverde-restaurant-pastificio",
+      "area": "Chicago",
+      "name": "Monteverde Restaurant & Pastificio",
+      "recognition": "Chef Sarah Grueneberg won James Beard Best Chef: Great Lakes in 2017 at Monteverde",
+      "recognitionYear": 2017,
+      "awardFamily": "beard",
+      "venueType": "restaurant",
+      "interviewCue": "West Loop, 1020 W Madison. Italian restaurant known for fresh pasta made behind the counter and lively communal setting.",
+      "sourceUrl": "https://monteverdechicago.com/about/",
+      "visitStatus": "unreviewed",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "beard",
+        "evidenceUrl": "https://monteverdechicago.com/about/",
+        "sourceTier": "historical_guide_or_award",
+        "verifiedAt": "2026-10-25",
+        "note": "Historical recognition; no user attendance confirmed. Award year may not correspond to a future reported visit."
+      }
+    },
+    {
+      "id": "candidate-chicago-boka",
+      "area": "Chicago",
+      "name": "Boka",
+      "recognition": "2021 Michelin 1 star",
+      "recognitionYear": 2021,
+      "awardFamily": "michelin",
+      "venueType": "restaurant",
+      "interviewCue": "Lincoln Park, 1729 N Halsted. Elegant contemporary American dining with an atmospheric brick-walled courtyard and intimate rooms.",
+      "sourceUrl": "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+      "visitStatus": "unreviewed",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+        "sourceTier": "historical_guide_or_award",
+        "verifiedAt": "2026-10-25",
+        "note": "Historical recognition; no user attendance confirmed. Award year may not correspond to a future reported visit."
+      }
+    },
+    {
+      "id": "candidate-chicago-sepia",
+      "area": "Chicago",
+      "name": "Sepia",
+      "recognition": "2021 Michelin 1 star",
+      "recognitionYear": 2021,
+      "awardFamily": "michelin",
+      "venueType": "restaurant",
+      "interviewCue": "West Loop, 123 N Jefferson. Refined American cuisine in a former printing-house storefront, antique light fixtures and warm interiors.",
+      "sourceUrl": "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+      "visitStatus": "unreviewed",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+        "sourceTier": "historical_guide_or_award",
+        "verifiedAt": "2026-10-25",
+        "note": "Historical recognition; no user attendance confirmed. Award year may not correspond to a future reported visit."
+      }
+    },
+    {
+      "id": "candidate-chicago-topolobampo",
+      "area": "Chicago",
+      "name": "Topolobampo",
+      "recognition": "2021 Michelin 1 star; Rick Bayless's ambitious Mexican dining room",
+      "recognitionYear": 2021,
+      "awardFamily": "michelin",
+      "venueType": "restaurant",
+      "interviewCue": "River North, 445 N Clark. Refined regional Mexican tasting menus, connected to Frontera Grill.",
+      "sourceUrl": "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+      "visitStatus": "unreviewed",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+        "sourceTier": "historical_guide_or_award",
+        "verifiedAt": "2026-10-25",
+        "note": "Historical recognition; no user attendance confirmed. Award year may not correspond to a future reported visit."
+      }
+    },
+    {
+      "id": "candidate-chicago-smyth",
+      "area": "Chicago",
+      "name": "Smyth",
+      "recognition": "2021 Michelin 2 stars",
+      "recognitionYear": 2021,
+      "awardFamily": "michelin",
+      "venueType": "restaurant",
+      "interviewCue": "West Loop, 177 N Ada. Intimate tasting-menu destination from John and Karen Shields, with open kitchen and farmhouse aesthetic.",
+      "sourceUrl": "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+      "visitStatus": "unreviewed",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+        "sourceTier": "historical_guide_or_award",
+        "verifiedAt": "2026-10-25",
+        "note": "Historical recognition; no user attendance confirmed. Award year may not correspond to a future reported visit."
+      }
+    },
+    {
+      "id": "candidate-chicago-oriole",
+      "area": "Chicago",
+      "name": "Oriole",
+      "recognition": "2021 Michelin 2 stars",
+      "recognitionYear": 2021,
+      "awardFamily": "michelin",
+      "venueType": "restaurant",
+      "interviewCue": "West Loop, 661 W Walnut. Small, ambitious contemporary tasting-menu restaurant associated with Noah Sandoval.",
+      "sourceUrl": "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+      "visitStatus": "unreviewed",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+        "sourceTier": "historical_guide_or_award",
+        "verifiedAt": "2026-10-25",
+        "note": "Historical recognition; no user attendance confirmed. Award year may not correspond to a future reported visit."
+      }
+    },
+    {
+      "id": "candidate-chicago-avec-west-loop",
+      "area": "Chicago",
+      "name": "Avec (West Loop)",
+      "recognition": "Chef Koren Grieveson won 2010 James Beard Best Chef: Great Lakes while at Avec",
+      "recognitionYear": 2010,
+      "awardFamily": "beard",
+      "venueType": "restaurant",
+      "interviewCue": "West Loop, 615 W Randolph. Long wood-lined dining room, Mediterranean-inspired small plates and famous dates.",
+      "sourceUrl": "https://www.choosechicago.com/articles/festivals-special-events/chicagos-james-beard-award-winners/",
+      "visitStatus": "unreviewed",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "beard",
+        "evidenceUrl": "https://www.choosechicago.com/articles/festivals-special-events/chicagos-james-beard-award-winners/",
+        "sourceTier": "historical_guide_or_award",
+        "verifiedAt": "2026-10-25",
+        "note": "Historical recognition; no user attendance confirmed. Award year may not correspond to a future reported visit."
       }
     }
   ],
