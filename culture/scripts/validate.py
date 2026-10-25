@@ -41,6 +41,8 @@ for page in ("index", "explore", "timeline", "map", "record", "interview"):
     source = (ROOT / (page + ".html")).read_text(encoding="utf-8")
     assert "Culture Passport" in source and "./assets/site.css" in source
     assert "./assets/app.js" in source
+map_page = (ROOT / "map.html").read_text(encoding="utf-8")
+assert map_page.index("leaflet.js") < map_page.index('src="./assets/app.js'), "Map needs Leaflet to load before Culture application"
 assert (ROOT / "assets/app.js").exists()
 assert (ROOT / "assets/site.css").exists()
 assert "culture.alexlford.com" in (ROOT / "README.md").read_text(encoding="utf-8")
