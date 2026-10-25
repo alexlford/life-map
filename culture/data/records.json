@@ -44,7 +44,8 @@
     "reservationEvidence": "Date and party size from completed reservation screenshots are documentary evidence, not independent proof of check-in or dining. Only directly restaurant-level Michelin/JBF recognition enters the curated collection automatically. The user explicitly excluded Le Fou Frog: it must not enter any deployed venue/experience ledger, even though its date appears in private conversation uploads.",
     "storyFirst": "Each published entry leads with a grounded personal memory, atmosphere, or occasion. Dates are retained in provenance but the public timeline emphasizes approximate years, seasons, and meaningful events. Never fabricate meals, companion details, specific actions, or feelings not supplied by the user.",
     "dateDisplay": "Date/party details are backend evidence, available in a collapsed archive-notes section on experience pages, not default cards or timeline. Exact date may be shown only if necessary to a user-given occasion (Valentine's Day, etc.).",
-    "familyStory": "A venue may carry a narrative across sister restaurants or expansions. Guide badges identify the recognized original without treating each branch as a separate unverified award."
+    "familyStory": "A venue may carry a narrative across sister restaurants or expansions. Guide badges identify the recognized original without treating each branch as a separate unverified award.",
+    "criterionAudit": "Keep separate: verified Michelin Guide inclusion (stars, Bib, Selected/historical Plate), James Beard semifinalist/finalist/winner at the specific venue or chef while working there, explicitly featured personal memories, user-confirmed history without award, uncertain leads, and reservation-only evidence. Never count unverified founders' awards from unrelated restaurants or award years as the historical dining year."
   },
   "venues": [
     {
@@ -345,6 +346,66 @@
         "precision": "city-centroid"
       },
       "sourceId": "mister-oso-denver"
+    },
+    {
+      "id": "venue-annette-aurora",
+      "name": "Annette",
+      "city": "Aurora",
+      "region": "Colorado",
+      "country": "USA",
+      "neighborhood": "Stanley Marketplace",
+      "address": "2501 Dallas St, Aurora, CO 80010",
+      "location": {
+        "lat": 39.7294,
+        "lng": -104.8319,
+        "precision": "city-centroid"
+      },
+      "sourceId": "annette-aurora"
+    },
+    {
+      "id": "venue-mercantile-denver",
+      "name": "Mercantile Dining & Provision",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "neighborhood": "Union Station",
+      "address": "1701 Wynkoop St, Denver, CO 80202",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903,
+        "precision": "city-centroid"
+      },
+      "sourceId": "mercantile-denver"
+    },
+    {
+      "id": "venue-barolo-grill-denver",
+      "name": "Barolo Grill",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "neighborhood": "Cherry Creek",
+      "address": "3030 E. 6th Ave., Denver, CO 80206",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903,
+        "precision": "city-centroid"
+      },
+      "sourceId": "barolo-grill-denver"
+    },
+    {
+      "id": "venue-north-pond-chicago",
+      "name": "North Pond",
+      "city": "Chicago",
+      "region": "Illinois",
+      "country": "USA",
+      "neighborhood": "Lincoln Park",
+      "address": "2610 N Cannon Drive, Chicago, IL 60614",
+      "location": {
+        "lat": 41.8781,
+        "lng": -87.6298,
+        "precision": "city-centroid"
+      },
+      "sourceId": "north-pond-chicago-2021"
     }
   ],
   "records": [
@@ -1657,6 +1718,314 @@
         ],
         "reviewedOn": "2026-10-25",
         "confidence": "verified_recognition_to_original_location_and_direct_user_visit_to_brand"
+      }
+    },
+    {
+      "id": "dining-annette-aurora",
+      "type": "dining",
+      "title": "Annette",
+      "venueId": "venue-annette-aurora",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Date not specified",
+        "precision": "unknown",
+        "source": "Alex marked this restaurant visited in the October 25, 2026 Culture Passport interview; no exact date claimed.",
+        "evidenceType": "direct_user_confirmation"
+      },
+      "summary": "Chef Caroline Glover's intimate, ingredient-driven restaurant in a repurposed aviation building.",
+      "memory": {
+        "headline": "Annette at the Stanley Marketplace",
+        "teaser": "Chef Caroline Glover's intimate, ingredient-driven restaurant in a repurposed aviation building.",
+        "story": "You confirmed dining at Annette, the intimate restaurant tucked inside Aurora's Stanley Marketplace. Chef Caroline Glover helped establish it as one of the region's significant dining destinations, earning a James Beard Best Chef: Mountain award in 2022; it joined Michelin's Bib Gourmand selection in 2026. The story of the night itself can be added when it comes back to you.",
+        "period": "Denver years",
+        "source": "User-confirmed visit; Michelin/James Beard historical context sourced separately"
+      },
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2022,
+          "result": "winner",
+          "category": "Best Chef: Mountain",
+          "recipient": "Caroline Glover",
+          "relationship": "chef at Annette",
+          "timingRelativeToVisit": "unknown_visit_date",
+          "sourceUrl": "https://www.jamesbeard.org/stories/the-2022-james-beard-award-winners"
+        }
+      ],
+      "guide": {
+        "edition": 2026,
+        "distinction": "bib",
+        "stars": 0,
+        "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurants/bib-gourmand",
+        "historicalVisitDistinction": "unknown_visit_date",
+        "note": "Aurora venue won Michelin Bib Gourmand for 2026; visit year is not known."
+      },
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2022-james-beard-award-winners",
+      "editorial": {
+        "awardQualified": true,
+        "featuredException": false,
+        "collection": "recognized_dining",
+        "basis": "both",
+        "note": "Michelin/James Beard qualification is about the restaurant, not proof an award had already been received at an undated meal."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "both",
+        "reason": "Documented qualifying recognition directly associated with this restaurant.",
+        "evidenceUrls": [
+          "https://www.jamesbeard.org/stories/the-2022-james-beard-award-winners",
+          "https://www.jamesbeard.org/stories/the-2022-james-beard-award-winners"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "Visit date unspecified; no claim recognition was held during the meal."
+      }
+    },
+    {
+      "id": "dining-mercantile-denver",
+      "type": "dining",
+      "title": "Mercantile Dining & Provision",
+      "venueId": "venue-mercantile-denver",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Date not specified",
+        "precision": "unknown",
+        "source": "Alex marked this restaurant visited in the October 25, 2026 Culture Passport interview; no exact date claimed.",
+        "evidenceType": "direct_user_confirmation"
+      },
+      "summary": "An acclaimed kitchen inside Denver Union Station, led by James Beard-winning chef Alex Seidel.",
+      "memory": {
+        "headline": "A table at Union Station",
+        "teaser": "An acclaimed kitchen inside Denver Union Station, led by James Beard-winning chef Alex Seidel.",
+        "story": "You confirmed visiting Mercantile Dining & Provision, a place rooted in the transformation of Denver Union Station into a lively destination. Chef Alex Seidel's cooking at Mercantile earned the James Beard Best Chef: Southwest award in 2018. Your particular evening can stay undated until you remember what made it yours.",
+        "period": "Denver years",
+        "source": "User-confirmed visit; Michelin/James Beard historical context sourced separately"
+      },
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2018,
+          "result": "winner",
+          "category": "Best Chef: Southwest",
+          "recipient": "Alex Seidel",
+          "relationship": "chef of Mercantile Dining & Provision",
+          "timingRelativeToVisit": "unknown_visit_date",
+          "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners"
+        }
+      ],
+      "guide": {
+        "edition": 2026,
+        "distinction": "selected",
+        "stars": 0,
+        "sourceUrl": "https://guide.michelin.com/en/colorado/denver_1261491/restaurants",
+        "historicalVisitDistinction": "unknown_visit_date",
+        "note": "Michelin Guide recommended/selected; Michelin status at an undated visit is unknown."
+      },
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
+      "editorial": {
+        "awardQualified": true,
+        "featuredException": false,
+        "collection": "recognized_dining",
+        "basis": "both",
+        "note": "Michelin/James Beard qualification is about the restaurant, not proof an award had already been received at an undated meal."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "both",
+        "reason": "Documented qualifying recognition directly associated with this restaurant.",
+        "evidenceUrls": [
+          "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
+          "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "Visit date unspecified; no claim recognition was held during the meal."
+      }
+    },
+    {
+      "id": "dining-barolo-grill-denver",
+      "type": "dining",
+      "title": "Barolo Grill",
+      "venueId": "venue-barolo-grill-denver",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Date not specified",
+        "precision": "unknown",
+        "source": "Alex marked this restaurant visited in the October 25, 2026 Culture Passport interview; no exact date claimed.",
+        "evidenceType": "direct_user_confirmation"
+      },
+      "summary": "An enduring Northern Italian dining room known for hospitality and an exceptional wine list.",
+      "memory": {
+        "headline": "An Italian institution in Denver",
+        "teaser": "An enduring Northern Italian dining room known for hospitality and an exceptional wine list.",
+        "story": "You identified Barolo Grill as a place you've visited in Denver. Known for its Northern Italian kitchen, wine collection, and unusually dedicated approach to hospitality, it is included in the Michelin Guide's Colorado selection. We can add the particular occasion to the story whenever you remember it.",
+        "period": "Denver years",
+        "source": "User-confirmed visit; Michelin/James Beard historical context sourced separately"
+      },
+      "recognitions": [],
+      "guide": {
+        "edition": 2026,
+        "distinction": "selected",
+        "stars": 0,
+        "sourceUrl": "https://guide.michelin.com/en/colorado/denver_1261491/restaurant/barolo-grill",
+        "historicalVisitDistinction": "unknown_visit_date",
+        "note": "Michelin Selected; not a star."
+      },
+      "sourceUrl": "https://guide.michelin.com/en/colorado/denver_1261491/restaurant/barolo-grill",
+      "editorial": {
+        "awardQualified": true,
+        "featuredException": false,
+        "collection": "recognized_dining",
+        "basis": "michelin",
+        "note": "Michelin/James Beard qualification is about the restaurant, not proof an award had already been received at an undated meal."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "Documented qualifying recognition directly associated with this restaurant.",
+        "evidenceUrls": [
+          "https://guide.michelin.com/en/colorado/denver_1261491/restaurant/barolo-grill"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "Visit date unspecified; no claim recognition was held during the meal."
+      }
+    },
+    {
+      "id": "dining-north-pond-chicago-2021",
+      "type": "dining",
+      "title": "North Pond",
+      "venueId": "venue-north-pond-chicago",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": 2021,
+        "month": 10,
+        "possibleYears": [
+          2021
+        ],
+        "label": "Fall 2021 · after the Chicago Marathon",
+        "precision": "approximate_month",
+        "timeWindow": "The week following October 10, 2021; exact dinner date unknown",
+        "source": "Alex directly confirmed visiting North Pond, Chicago in October 2021, the week after the October 10 Chicago Marathon (message Oct 25, 2026)."
+      },
+      "summary": "An autumn dinner at North Pond, hidden inside Chicago's Lincoln Park, in the week following the 2021 Chicago Marathon. The restaurant occupies a century-old ice-skating warming house on the edge of a pond and held one Michelin star during the visit. A peaceful, seasonal counterpoint to the energy of marathon week.",
+      "story": {
+        "headline": "A quiet table in Lincoln Park, after marathon week",
+        "paragraphs": [
+          "The memorable part begins before reaching the table. North Pond sits not on a busy downtown restaurant row, but tucked into the trees beside a pond in Lincoln Park. Its low Arts and Crafts-style building was constructed in 1912 as a warming shelter for ice skaters; decades later, that same refuge became a place for thoughtful, seasonal American cooking.",
+          "The restaurant's reputation was built in no small part by chef Bruce Sherman, whose focus on Midwestern ingredients earned him the James Beard Foundation's Best Chef: Great Lakes award in 2012. Sherman stepped away from daily kitchen leadership at the end of 2019, but the restaurant's identity endured.",
+          "In October 2021, during the week after the Chicago Marathon, this was one of the restaurants worth seeking out. That year's Michelin Guide had awarded North Pond one star months before the meal. The precise evening and dishes are not recorded; what survives is the setting, the post-race trip to Chicago, and a restaurant whose story reaches back more than a century."
+        ],
+        "chapters": [
+          {
+            "year": "1912",
+            "title": "A shelter by the water",
+            "detail": "Built to warm ice skaters in Lincoln Park."
+          },
+          {
+            "year": "2012",
+            "title": "A James Beard-winning kitchen",
+            "detail": "Bruce Sherman wins Best Chef: Great Lakes, representing North Pond."
+          },
+          {
+            "year": "2019",
+            "title": "A changing of the guard",
+            "detail": "Sherman steps away from daily kitchen leadership after two decades."
+          },
+          {
+            "year": "2021",
+            "title": "A Michelin-starred post-marathon dinner",
+            "detail": "One Michelin star in the 2021 Guide, with the remembered visit the week after the Chicago Marathon."
+          }
+        ],
+        "sourceUrls": [
+          {
+            "label": "Michelin 2021 Chicago stars",
+            "url": "https://www.opentable.com/blog/chicago-michelin-stars-2021/"
+          },
+          {
+            "label": "James Beard: Bruce Sherman",
+            "url": "https://archive.jamesbeard.org/blog/best-chef-great-lakes-bruce-sherman"
+          },
+          {
+            "label": "Sherman's departure, Chicago magazine",
+            "url": "https://www.chicagomag.com/dining-drinking/november-2019/bruce-sherman-is-leaving-north-pond/"
+          },
+          {
+            "label": "Michelin venue and heritage",
+            "url": "https://guide.michelin.com/us/en/illinois/chicago/restaurant/north-pond"
+          }
+        ]
+      },
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2012,
+          "result": "winner",
+          "category": "Best Chef: Great Lakes",
+          "recipient": "Bruce Sherman",
+          "relationship": "North Pond chef-partner when awarded; departed from daily kitchen leadership in 2019, before the remembered 2021 dinner.",
+          "timingRelativeToVisit": "before_visit",
+          "sourceUrl": "https://archive.jamesbeard.org/blog/best-chef-great-lakes-bruce-sherman"
+        }
+      ],
+      "guide": {
+        "edition": 2021,
+        "distinction": "starred",
+        "stars": 1,
+        "sourceUrl": "https://chicago.eater.com/2021/4/29/22399621/michelin-restaurants-chicago-stars-2021",
+        "sourceUrls": [
+          "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+          "https://guide.michelin.com/us/en/illinois/chicago/restaurant/north-pond"
+        ],
+        "verifiedEditions": [
+          2021
+        ],
+        "starAwardDate": "2021-04-29",
+        "historicalVisitDistinction": "starred",
+        "starsAtVisit": 1,
+        "note": "2021 Michelin one-star selection announced April 29, ahead of user's post-marathon October visit. This documents the restaurant's star at the time, not its current award status."
+      },
+      "sourceUrl": "https://chicago.eater.com/2021/4/29/22399621/michelin-restaurants-chicago-stars-2021",
+      "editorial": {
+        "awardQualified": true,
+        "featuredException": false,
+        "collection": "recognized_dining",
+        "basis": "michelin_and_beard",
+        "note": "One Michelin star in the 2021 Guide at visit; Bruce Sherman won the 2012 JBF Best Chef: Great Lakes award at North Pond, but had departed daily leadership by 2021."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "both",
+        "reason": "2021 Michelin one-star selection before the October visit; Bruce Sherman won JBF Best Chef: Great Lakes in 2012 while chef-partner at North Pond.",
+        "evidenceUrls": [
+          "https://chicago.eater.com/2021/4/29/22399621/michelin-restaurants-chicago-stars-2021",
+          "https://archive.jamesbeard.org/blog/best-chef-great-lakes-bruce-sherman",
+          "https://www.chicagomag.com/dining-drinking/november-2019/bruce-sherman-is-leaving-north-pond/"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "2021 Michelin one star confirmed; 2012 James Beard win predated dinner."
+      },
+      "memory": {
+        "headline": "A quiet table in Lincoln Park, after marathon week",
+        "teaser": "A quiet Lincoln Park dinner in a former skating shelter, following the 2021 Chicago Marathon.",
+        "story": "The memorable part begins before reaching the table. North Pond sits not on a busy downtown restaurant row, but tucked into the trees beside a pond in Lincoln Park. Its low Arts and Crafts-style building was constructed in 1912 as a warming shelter for ice skaters; decades later, that same refuge became a place for thoughtful, seasonal American cooking.\n\nThe restaurant's reputation was built in no small part by chef Bruce Sherman, whose focus on Midwestern ingredients earned him the James Beard Foundation's Best Chef: Great Lakes award in 2012. Sherman stepped away from daily kitchen leadership at the end of 2019, but the restaurant's identity endured.\n\nIn October 2021, during the week after the Chicago Marathon, this was one of the restaurants worth seeking out. That year's Michelin Guide had awarded North Pond one star months before the meal. The precise evening and dishes are not recorded; what survives is the setting, the post-race trip to Chicago, and a restaurant whose story reaches back more than a century.",
+        "period": "Autumn 2021",
+        "source": "User-confirmed North Pond visit from earlier interview, with Michelin's 2021 star and historic chef award verified separately."
       }
     }
   ],

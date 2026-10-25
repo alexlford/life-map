@@ -8,7 +8,7 @@ interview_data = json.loads((ROOT / "data/interview.json").read_text(encoding="u
 records, venues = records_data["records"], records_data["venues"]
 candidates = interview_data["candidates"]
 assert records_data["project"] == "Culture Passport" and records_data["version"] == 1
-assert len(records) == 22 and len(venues) == 20
+assert len(records) == 26 and len(venues) == 24
 assert len({r["id"] for r in records}) == len(records)
 assert len({v["id"] for v in venues}) == len(venues)
 types = {"dining", "bar", "concert", "opera", "theater"}
@@ -25,7 +25,7 @@ assert all(r["guide"]["stars"] == 0 for r in records if r.get("guide") and r["gu
 assert {"Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen",
         "Momofuku CCDC", "République", "Sauvage", "Gunther & Co.",
         "Thames Street Oyster House"}.issubset({r["title"] for r in records})
-assert len(candidates) >= 177
+assert len(candidates) >= 178
 assert len({c["id"] for c in candidates}) == len(candidates)
 assert len({(c["area"].casefold(), c["name"].casefold()) for c in candidates}) == len(candidates)
 assert all(c["sourceUrl"].startswith("https://") for c in candidates)
@@ -67,18 +67,18 @@ assert rec_pier["visitStatus"] == "confirmed" and rec_pier["confirmedVisitId"] =
 assert not any(r["title"] == "Le Fou Frog" for r in records)
 assert not any(c["name"] == "Le Fou Frog" for c in candidates)
 north_pond = next(c for c in candidates if c["name"] == "North Pond" and c["area"] == "Chicago")
-assert north_pond["visitStatus"] == "unreviewed"
-assert north_pond["userMemoryLead"]["identityConfirmed"] is False
+assert north_pond["visitStatus"] == "confirmed" and north_pond["confirmedVisitId"] == "dining-north-pond-chicago-2021"
+assert north_pond["userMemoryLead"]["identityConfirmed"] is True
 assert north_pond["screening"]["basis"] == "both"
-assert not any(r["title"] == "North Pond" for r in records)
-assert len([r for r in records if r["type"] == "dining" and r["status"] == "confirmed"]) == 20
+assert any(r["title"] == "North Pond" and r["guide"]["stars"] == 1 for r in records)
+assert len([r for r in records if r["type"] == "dining" and r["status"] == "confirmed"]) == 24
 assert len([r for r in records if r["type"] == "bar" and r["status"] == "confirmed"]) == 2
 breck = [r for r in records if r["venueId"] == "venue-breckenridge-distillery"]
 assert len(breck) == 3
 assert sorted(r["visit"]["year"] for r in breck) == [2021, 2022, 2023]
 assert all(r["visit"]["date"] is None and r["visit"]["precision"] == "approximate_year" for r in breck)
 assert all(r["editorial"]["awardQualified"] is False and r["editorial"]["featuredException"] is False for r in breck)
-assert len({r["venueId"] for r in records}) == 20
+assert len({r["venueId"] for r in records}) == 24
 qbreck = next(c for c in candidates if c["name"] == "Breckenridge Distillery Restaurant")
 assert qbreck["visitStatus"] == "confirmed" and set(qbreck["linkedVisitIds"]) == {r["id"] for r in breck}
 assert qbreck["screening"]["status"] == "memory_only"
@@ -102,7 +102,7 @@ assert death_and_co["editorial"]["awardQualified"] is False and death_and_co["ed
 for name in ("Sauvage", "Gunther & Co.", "The Majestic Restaurant"):
     rec = next(r for r in records if r["title"] == name)
     assert rec["editorial"]["awardQualified"] is False and rec["editorial"]["featuredException"] is True
-assert {r["title"] for r in records if r["editorial"].get("awardQualified")} == {"République", "Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen", "Momofuku CCDC", "Manifesto", "Q House", "Wildflower", "Yuan Wonton", "Safta", "Smok", "Mister Oso"}
+assert {r["title"] for r in records if r["editorial"].get("awardQualified")} == {"République", "Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen", "Momofuku CCDC", "Manifesto", "Q House", "Wildflower", "Yuan Wonton", "Safta", "Smok", "Mister Oso", "North Pond", "Annette", "Mercantile Dining & Provision", "Barolo Grill"}
 assert all(not r["editorial"].get("awardQualified") or not r["editorial"].get("featuredException") for r in records)
 assert any(c["name"] == "Manifesto" and c["visitStatus"] == "confirmed" for c in candidates)
 assert any(c["name"] == "Death & Co Denver" and c["visitStatus"] == "confirmed" for c in candidates)
@@ -232,3 +232,37 @@ assert manifesto["reservations"][0]["date"] == "2019-10-25"
 assert len([r for r in evidence["rows"] if r["name"] == "Sauvage"]) == 2
 assert len([r for r in evidence["rows"] if r["name"] == "Michelob Ultra Mountain House"]) == 3
 assert not any(r["title"] in {"Michelob Ultra Mountain House", "The Butcher's Daughter - West Hollywood", "Willow Creek Restaurant", "Q39 South"} for r in records)
+
+
+# Venue-level audit: do not inflate stats with repeat visits or unverified awards.
+aud = json.loads((ROOT / "data/dining-awards-audit.json").read_text(encoding="utf-8"))
+assert aud["summary"] == {
+    "canonExperienceRecords": 26,
+    "distinctPublishedVenues": 24,
+    "recognized": 17,
+    "featuredPersonal": 4,
+    "unfeaturedOther": 3,
+    "additionalConfirmedArchiveOnly": 6,
+    "possibleVisitLeads": 3,
+    "reviewedButNotConfirmedReservations": 2,
+}
+assert {x["venueId"] for x in aud["publishedVenues"]} == {r["venueId"] for r in records}
+assert {x["name"] for x in aud["confirmedArchiveOnly"]} == {
+    "Joe's Kansas City Bar-B-Que", "Q39", "Arthur Bryant's Barbeque",
+    "Jack Stack Barbecue", "Uchi Denver", "Dominic's on the Hill"
+}
+assert {x["name"] for x in aud["possiblyVisited"]} == {
+    "Alma Cocina Latina", "Lucina Eatery & Bar", "PDT (Please Don't Tell)"
+}
+assert next(x for x in aud["publishedVenues"] if x["name"] == "North Pond")["recognitionStatus"] == "qualifies"
+for name in ("Annette", "Mercantile Dining & Provision", "Barolo Grill"):
+    row = next(r for r in records if r["title"] == name)
+    assert row["status"] == "confirmed" and row["editorial"]["awardQualified"] is True
+    assert row["visit"]["date"] is None and row["memory"]["headline"]
+for name in ("Q39", "Joe's Kansas City Bar-B-Que", "Arthur Bryant's Barbeque", "Jack Stack Barbecue (Freight House)"):
+    candidate = next(q for q in candidates if q["name"] == name)
+    assert candidate["visitStatus"] == "confirmed" and candidate["screening"]["status"] == "memory_only"
+    assert not any(r["title"] == name for r in records)
+assert next(q for q in candidates if q["name"] == "Lucina Eatery & Bar")["visitStatus"] == "maybe"
+assert len([r for r in records if r["guide"]["distinction"] == "starred"]) == 3
+assert len([r for r in records if r["editorial"].get("awardQualified")]) == 17
