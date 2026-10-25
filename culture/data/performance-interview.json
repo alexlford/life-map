@@ -1,7 +1,7 @@
 {
   "version": 1,
   "created": "2026-10-25",
-  "scope": "Potential cultural performance identities and other memories. These are interview leads, not confirmed show attendance.",
+  "scope": "Potential cultural performance identities and other memories. These are interview leads, not confirmed show attendance. Preserve the confirmed December 2024 Denver theater outing separately from the tentative identity A Christmas Carol.",
   "candidates": [
     {
       "id": "theater-christmas-carol-denver-2024",
@@ -37,6 +37,17 @@
       "relatedExperienceId": null,
       "userMemory": "User recalled attending at least one other play or musical in Denver, title and year not yet established.",
       "sourceUrl": "https://www.denvercenter.org/"
+    },
+    {
+      "id": "lyric-ring-performances",
+      "category": "opera",
+      "name": "Which Wagner Ring Cycle operas were attended",
+      "city": "Chicago",
+      "year": null,
+      "confirmation": "series_confirmed_individual_performances_unverified",
+      "relatedExperienceId": "opera-wagner-s-ring-cycle-lyric-opera-of-chicago",
+      "userMemory": "October 2016 Lyric Opera photo and November 2018 group photo: the series visit is recalled, but the specific opera(s) and nights have not been established.",
+      "sourceUrl": "https://www.lyricopera.org/"
     }
   ],
   "fullyIdentified": [

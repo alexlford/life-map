@@ -8,7 +8,7 @@ interview_data = json.loads((ROOT / "data/interview.json").read_text(encoding="u
 records, venues = records_data["records"], records_data["venues"]
 candidates = interview_data["candidates"]
 assert records_data["project"] == "Culture Passport" and records_data["version"] == 1
-assert len(records) == 30 and len(venues) == 28
+assert len(records) == 55 and len(venues) == 53
 assert len({r["id"] for r in records}) == len(records)
 assert len({v["id"] for v in venues}) == len(venues)
 types = {"dining", "bar", "concert", "opera", "theater"}
@@ -47,7 +47,8 @@ assert "did not visit" in bar_goto["reviewSource"].lower()
 assert bar_goto["recognitionYear"] == 2018 and bar_goto["screening"]["status"] == "award_qualified"
 assert not any(r["title"] in {"Bar Goto", "The Dead Rabbit", "Dante", "Leyenda", "PDT (Please Don't Tell)"} for r in records)
 existing_conditions = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "Existing Conditions")
-assert existing_conditions["visitStatus"] == "unreviewed"
+assert existing_conditions["visitStatus"] == "not_visited"
+assert not any(r["title"] == "Existing Conditions" for r in records)
 assert pdt["visitStatus"] == "maybe" and rabbit["visitStatus"] == "not_visited"
 assert leyenda["visitStatus"] == "not_visited"
 assert not any(r["title"] in {"Leyenda", "Dante"} for r in records)
@@ -269,9 +270,9 @@ assert len([r for r in records if r.get("editorial", {}).get("awardQualified")])
 
 # Theater memories: preserve uncertainty in titles, not in the fact an outing occurred.
 stage=[r for r in records if r["type"] == "theater"]
-assert len(stage) == 4
-assert all(r["visit"]["date"] is None and r["visit"]["year"] in {2016,2017,2023,2024} for r in stage)
-assert {r["title"] for r in stage} == {"The Book of Mormon", "SIX", "The Second City — Chicago holiday outing", "Denver holiday theater outing"}
+assert len(stage) == 8
+assert all(r["visit"]["date"] is None and r["visit"]["year"] in {2016,2017,2023,2024} for r in stage if r["id"].startswith("theater-") and r["id"] in {"theater-book-of-mormon-kansas-city-2016","theater-second-city-chicago-2017","theater-six-denver-2023","theater-denver-holiday-theater-2024"})
+assert {r["title"] for r in stage} == {"The Book of Mormon", "SIX", "The Second City — Chicago holiday outing", "Denver holiday theater outing", "Saturday Night Live — Sigourney Weaver / The Ting Tings", "Blue Man Group — New York", "Penn & Teller — Las Vegas", "Cats — Baltimore"}
 assert next(r for r in stage if r["title"] == "The Book of Mormon")["production"]["engagementWindow"] == "December 6–11, 2016"
 assert next(r for r in stage if r["title"] == "SIX")["production"]["engagementWindow"] == "December 5–24, 2023"
 assert next(r for r in stage if r["title"] == "Denver holiday theater outing")["production"]["titleConfirmed"] is False
@@ -279,3 +280,25 @@ assert next(r for r in stage if r["title"] == "The Second City — Chicago holid
 stage_research=json.loads((ROOT / "data/performance-interview.json").read_text(encoding="utf-8"))
 assert len(stage_research["candidates"]) >= 3
 assert any(c["id"] == "denver-unknown-play" for c in stage_research["candidates"])
+
+# Dated source archive supplements the story-first Culture timeline with precision.
+arts=[r for r in records if r["type"] in {"concert","opera","theater"}]
+assert len(arts) == 29
+assert len([r for r in arts if r["type"]=="concert"]) == 20
+assert len([r for r in arts if r["type"]=="opera"]) == 1
+assert all(r["dateProvenance"]["dateKind"] in {"archive_event_date","user_recalled_period"} for r in arts if r.get("dateProvenance"))
+assert all(r["visit"]["date"] is None or r["visit"]["precision"]=="day" for r in arts)
+for title,date in (("Red Hot Chili Peppers","2007-03-03"),("The Killers","2007-05-10"),("Billy Joel — Kansas City","2018-09-21"),("Tedeschi Trucks Band","2026-08-01")):
+    row=next(r for r in records if r["title"]==title)
+    assert row["visit"]["date"]==date
+assert not any(r["title"] in {"The Book of Mormon — Kansas City","The Second City — holiday show","SIX — The Musical"} for r in records)
+assert sum(r["title"] == "SIX" for r in records) == 1
+assert sum(r["title"] == "The Book of Mormon" for r in records) == 1
+assert sum(r["title"] == "Denver holiday theater outing" for r in records) == 1
+assert next(c for c in candidates if c["name"]=="Existing Conditions")["visitStatus"]=="not_visited"
+assert next(c for c in candidates if c["name"]=="PDT (Please Don't Tell)")["visitStatus"]=="maybe"
+assert next(c for c in candidates if c["name"]=="The Dead Rabbit")["visitStatus"]=="not_visited"
+assert any(c["id"]=="lyric-ring-performances" for c in stage_research["candidates"])
+app=(ROOT/"assets/app.js").read_text(encoding="utf-8")
+assert "reservation on file" in app and "Production's engagement dates:" in app
+assert "Date.UTC(year,month-1,day)" in app
