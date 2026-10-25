@@ -282,6 +282,21 @@
         "precision": "city-centroid"
       },
       "sourceId": "wildflower-denver-2022-03-21"
+    },
+    {
+      "id": "venue-yuan-wonton-denver",
+      "name": "Yuan Wonton",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "neighborhood": "North Park Hill",
+      "address": "2878 Fairfax St, Denver, CO 80207",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903,
+        "precision": "city-centroid"
+      },
+      "sourceId": "yuan-wonton-denver"
     }
   ],
   "records": [
@@ -1212,6 +1227,61 @@
         ],
         "reviewedOn": "2026-10-25",
         "confidence": "documented_recognition; reservation_documented_meal"
+      }
+    },
+    {
+      "id": "dining-yuan-wonton-denver",
+      "type": "dining",
+      "title": "Yuan Wonton",
+      "venueId": "venue-yuan-wonton-denver",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Date not established",
+        "precision": "unknown",
+        "source": "User named Yuan Wonton as a restaurant visited in Denver during Culinary Passport interview on 2026-10-25; exact meal date not provided.",
+        "evidenceType": "direct_user_recollection",
+        "attendanceCertainty": "reported"
+      },
+      "summary": "Denver dumpling restaurant founded by chef-owner Penelope Wong. Wong won the 2026 James Beard Best Chef: Mountain award. This remembered dining visit has no verified date, so recognition timing relative to the meal remains unknown.",
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2026,
+          "result": "winner",
+          "category": "Best Chef: Mountain (CO, ID, MT, UT, WY)",
+          "recipient": "Penelope Wong",
+          "relationship": "chef-owner at Yuan Wonton",
+          "timingRelativeToVisit": "unknown_visit_date",
+          "sourceUrl": "https://www.jamesbeard.org/stories/james-beard-award-winners-2026"
+        }
+      ],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "no_michelin_award_asserted",
+        "sourceUrl": null,
+        "note": "No Michelin Guide award is claimed for Yuan Wonton; qualification is through Penelope Wong's 2026 James Beard win."
+      },
+      "sourceUrl": "https://www.jamesbeard.org/stories/james-beard-award-winners-2026",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "james_beard",
+        "note": "Penelope Wong won 2026 James Beard Best Chef: Mountain. Visit date not established."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "james_beard",
+        "reason": "Chef-owner Penelope Wong won 2026 James Beard Best Chef: Mountain for Yuan Wonton in Denver. Specific visit date unknown.",
+        "evidenceUrls": [
+          "https://www.jamesbeard.org/stories/james-beard-award-winners-2026"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "unknown_visit_date"
       }
     }
   ],

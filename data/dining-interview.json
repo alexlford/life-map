@@ -461,12 +461,16 @@
       "id": "enveretro-yuan-wonton",
       "area": "Denver Metro",
       "name": "Yuan Wonton",
-      "recognition": "James Beard Best Chef Mountain winner (Penelope Wong, 2026)",
+      "recognition": "2026 James Beard Best Chef: Mountain winner — chef-owner Penelope Wong at Yuan Wonton, Denver.",
       "recognitionYear": 2026,
       "awardFamily": "beard",
       "interviewCue": "Park Hill; wontons, dumplings, noodles; started as food truck.",
-      "sourceUrl": "https://web.jamesbeard.org/stories/james-beard-award-winners-2026",
-      "visitStatus": "unreviewed"
+      "sourceUrl": "https://www.jamesbeard.org/stories/james-beard-award-winners-2026",
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "yuan-wonton-denver",
+      "visitPeriod": "Visit confirmed; exact date unknown",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "User named Yuan Wonton as a restaurant visited in Denver during Culinary Passport interview on 2026-10-25; exact meal date not provided."
     },
     {
       "id": "enveretro-tavernetta",

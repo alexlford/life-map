@@ -87,7 +87,7 @@ def main():
     assert set(r["area"] for r in INTERVIEW["candidates"]) == {"Baltimore", "Washington, DC", "Denver Metro", "Steamboat Springs", "Kansas City Metro"}
     assert all(r["visitStatus"] in {"unreviewed", "confirmed", "not_visited", "maybe"} and r["sourceUrl"].startswith("https://") for r in INTERVIEW["candidates"])
     confirmed_interview = [r for r in INTERVIEW["candidates"] if r["visitStatus"] == "confirmed"]
-    assert len(confirmed_interview) == 5 and {r["confirmedVisitId"] for r in confirmed_interview} == {charleston["id"], woodberry["id"], "momofuku-ccdc-washington-dc", "rec-pier-chop-house-baltimore", "majestic-kansas-city"}
+    assert len(confirmed_interview) == 6 and {r["confirmedVisitId"] for r in confirmed_interview} == {charleston["id"], woodberry["id"], "momofuku-ccdc-washington-dc", "rec-pier-chop-house-baltimore", "majestic-kansas-city", "yuan-wonton-denver"}
     clavel = next(r for r in INTERVIEW["candidates"] if r["area"] == "Baltimore" and r["name"] == "Clavel")
     assert clavel["visitStatus"] == "not_visited"
     cinghiale = next(r for r in INTERVIEW["candidates"] if r["name"] == "Cinghiale" and r["area"] == "Baltimore")
@@ -114,7 +114,7 @@ def main():
     assert magdalena["visitStatus"] == "unreviewed"
     assert "2020" in magdalena["interviewCue"]
     assert "visitStatus===\"maybe\"" in (ROOT / "dining-interview.js").read_text(encoding="utf-8")
-    assert len([r for r in DATA["entries"] if r["status"] == "confirmed"]) == 14
+    assert len([r for r in DATA["entries"] if r["status"] == "confirmed"]) == 15
     breck = next(r for r in DATA["entries"] if r["name"] == "Breckenridge Distillery Restaurant")
     assert breck["visit"]["visitYears"] == [2021, 2022, 2023]
     assert breck["visit"]["date"] is None

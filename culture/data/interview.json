@@ -1006,27 +1006,31 @@
       "id": "enveretro-yuan-wonton",
       "area": "Denver Metro",
       "name": "Yuan Wonton",
-      "recognition": "James Beard Best Chef Mountain winner (Penelope Wong, 2026)",
+      "recognition": "2026 James Beard Best Chef: Mountain winner — chef-owner Penelope Wong at Yuan Wonton, Denver.",
       "recognitionYear": 2026,
       "awardFamily": "beard",
       "interviewCue": "Park Hill; wontons, dumplings, noodles; started as food truck.",
-      "sourceUrl": "https://web.jamesbeard.org/stories/james-beard-award-winners-2026",
-      "visitStatus": "unreviewed",
+      "sourceUrl": "https://www.jamesbeard.org/stories/james-beard-award-winners-2026",
+      "visitStatus": "confirmed",
       "screening": {
         "status": "award_qualified",
         "basis": "james_beard",
-        "evidenceUrl": "https://web.jamesbeard.org/stories/james-beard-award-winners-2026",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/james-beard-award-winners-2026",
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
-        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+        "note": "Penelope Wong won Best Chef: Mountain 2026 (James Beard Foundation official winner list). The date of this visit is unknown."
       },
       "eligibility": {
         "status": "eligible_candidate",
-        "basis": "beard",
-        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "basis": "james_beard",
+        "reason": "Documented 2026 chef award at this restaurant.",
         "screenedOn": "2026-10-25",
-        "verifiedForPublication": false
-      }
+        "verifiedForPublication": true
+      },
+      "confirmedVisitId": "dining-yuan-wonton-denver",
+      "visitPeriod": "Visit confirmed; exact date unknown",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "User named Yuan Wonton as a restaurant visited in Denver during Culinary Passport interview on 2026-10-25; exact meal date not provided."
     },
     {
       "id": "enveretro-tavernetta",
