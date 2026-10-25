@@ -31,7 +31,8 @@
     "map": "Map groups experiences at approximate city centers, not exact venue entrances.",
     "favorites": "Favorites come only from explicit user preference statements, independent of restaurant awards.",
     "musicAndDining": "Attending a restaurant with live jazz does not automatically count as a distinct concert. Require a separately confirmed performance before adding a concert record.",
-    "awardFocusedCollection": "Default Culture Passport Dining chapter shows only venues with verified historical Michelin inclusion or James Beard recognition of restaurant itself or chef at that restaurant. Memory-only confirmed visits are preserved but hidden by default, discoverable with a separate toggle. Recognition year may differ from dinner year."
+    "awardFocusedCollection": "Default Culture Passport Dining chapter shows only venues with verified historical Michelin inclusion or James Beard recognition of restaurant itself or chef at that restaurant. Memory-only confirmed visits are preserved but hidden by default, discoverable with a separate toggle. Recognition year may differ from dinner year.",
+    "curated": "Default Culture Passport dining views show confirmed restaurants with documented Michelin Guide recognition (star, Bib, Selected, historic Plate) or directly associated James Beard awards, finalists or semifinalists. Those awards retain their recipient and year. Chef awards at unrelated restaurants or historical awards dated after a dinner may be context, not proof of qualification at the meal date. Unverified and outside-scope visits stay in archive but are hidden from curated browsing by default."
   },
   "venues": [
     {
@@ -240,6 +241,18 @@
         "collection": "recognized_dining",
         "basis": "michelin_and_beard",
         "note": "Michelin Selected 2026; Margarita Manzke 2023 JBF pastry winner at this restaurant."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "both",
+        "reason": "Michelin Selected in 2026; pastry chef Margarita Manzke won the 2023 James Beard Outstanding Pastry Chef or Baker award. Meal year not known.",
+        "evidenceUrls": [
+          "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
+          "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
       }
     },
     {
@@ -283,6 +296,17 @@
         "collection": "recognized_dining",
         "basis": "michelin",
         "note": "Michelin 1 star in both possible visit years, 2016 and 2017."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "One Michelin star in both plausible 2016 and 2017 Guide editions.",
+        "evidenceUrls": [
+          "https://michelinmedia.com/michelin-guide-nyc-2017/"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
       }
     },
     {
@@ -318,6 +342,17 @@
         "collection": "recognized_dining",
         "basis": "michelin",
         "note": "Michelin 1 star in inaugural Colorado 2023 selection; meal date relative to award uncertain."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "Awarded one Michelin star in Colorado's inaugural 2023 Guide; meal date relative to award announcement remains unknown.",
+        "evidenceUrls": [
+          "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
       }
     },
     {
@@ -392,6 +427,18 @@
         "collection": "recognized_dining",
         "basis": "james_beard",
         "note": "Cindy Wolf Best Chef: Mid-Atlantic recognition during Baltimore period; restaurant-level wine program award in 2025, after meal."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "james_beard",
+        "reason": "Chef Cindy Wolf received James Beard Best Chef: Mid-Atlantic finalist recognition; restaurant won the 2025 Outstanding Wine and Other Beverages Program award, after the 2020 meal.",
+        "evidenceUrls": [
+          "https://archive.jamesbeard.org/chef/cindy-wolf",
+          "https://web.jamesbeard.org/stories/the-2025-james-beard-award-winners"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
       }
     },
     {
@@ -436,6 +483,17 @@
         "collection": "recognized_dining",
         "basis": "james_beard",
         "note": "Spike Gjerde won 2015 JBF Best Chef: Mid-Atlantic while associated with Woodberry Kitchen."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "james_beard",
+        "reason": "Chef Spike Gjerde won James Beard Best Chef: Mid-Atlantic in 2015 at Woodberry Kitchen, before the approximate 2018 meal.",
+        "evidenceUrls": [
+          "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
       }
     },
     {
@@ -480,6 +538,17 @@
         "collection": "recognized_dining",
         "basis": "michelin",
         "note": "2019 Michelin Plate selection, a recommendation but NOT a Michelin star; 2013 David Chang JBF honor at NYC Momofuku Noodle Bar is excluded from basis."
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "Listed with Michelin's historical Plate recommendation in the 2019 Washington, DC Guide, not a Michelin star. The visit date is unknown; David Chang's 2013 James Beard win belongs to a different NYC restaurant.",
+        "evidenceUrls": [
+          "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "consult dated award records; meal date may be unknown"
       }
     },
     {
@@ -515,6 +584,14 @@
         "collection": "personal_memories",
         "basis": null,
         "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+      },
+      "curation": {
+        "status": "outside_scope",
+        "basis": "none_verified",
+        "reason": "A valued personal favorite; no verified Michelin Guide or James Beard award/nomination established for this restaurant.",
+        "evidenceUrls": [],
+        "reviewedOn": "2026-10-25",
+        "confidence": "no_qualifying_evidence_found"
       }
     },
     {
@@ -550,6 +627,14 @@
         "collection": "personal_memories",
         "basis": null,
         "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+      },
+      "curation": {
+        "status": "outside_scope",
+        "basis": "none_verified",
+        "reason": "A valued personal favorite; no verified Michelin Guide or James Beard award/nomination established for this restaurant.",
+        "evidenceUrls": [],
+        "reviewedOn": "2026-10-25",
+        "confidence": "no_qualifying_evidence_found"
       }
     },
     {
@@ -583,6 +668,14 @@
         "collection": "personal_memories",
         "basis": null,
         "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+      },
+      "curation": {
+        "status": "outside_scope",
+        "basis": "none_verified",
+        "reason": "Confirmed dining memory; no verified Michelin Guide or James Beard recognition established for this restaurant.",
+        "evidenceUrls": [],
+        "reviewedOn": "2026-10-25",
+        "confidence": "no_qualifying_evidence_found"
       }
     },
     {
@@ -614,6 +707,14 @@
         "collection": "personal_memories",
         "basis": null,
         "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+      },
+      "curation": {
+        "status": "outside_scope",
+        "basis": "none_verified",
+        "reason": "Confirmed jazz-steakhouse memory; no verified Michelin Guide or James Beard honor for the restaurant established.",
+        "evidenceUrls": [],
+        "reviewedOn": "2026-10-25",
+        "confidence": "no_qualifying_evidence_found"
       }
     },
     {
@@ -650,6 +751,17 @@
         "collection": "personal_memories",
         "basis": null,
         "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+      },
+      "curation": {
+        "status": "needs_verification",
+        "basis": "associated_chef",
+        "reason": "Chef Andrew Carmellini had James Beard awards from earlier career and was associated with this restaurant, but no direct James Beard award for Rec Pier Chop House has been established. Founder association alone is insufficient.",
+        "evidenceUrls": [
+          "https://www.ciachef.edu/cia-bios/andrew-carmellini/",
+          "https://www.eater.com/2017/9/20/16301624/andrew-carmellini-rye-street-tavern-baltimore-opening"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "indirect_only"
       }
     }
   ],

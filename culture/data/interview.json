@@ -39,6 +39,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Chef Cindy Wolf received James Beard Best Chef: Mid-Atlantic finalist recognition; restaurant won the 2025 Outstanding Wine and Other Beverages Program award, after the 2020 meal.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -63,6 +70,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Chef Spike Gjerde won James Beard Best Chef: Mid-Atlantic in 2015 at Woodberry Kitchen, before the approximate 2018 meal.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -85,6 +99,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -107,6 +128,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -129,6 +157,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -151,6 +186,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -173,6 +215,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -196,6 +245,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -215,6 +271,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -234,6 +297,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -265,6 +335,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Listed with Michelin's historical Plate recommendation in the 2019 Washington, DC Guide, not a Michelin star. The visit date is unknown; David Chang's 2013 James Beard win belongs to a different NYC restaurant.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -284,6 +361,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "both",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -303,6 +387,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -322,6 +413,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -341,6 +439,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -360,6 +465,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -379,6 +491,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -398,6 +517,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -417,6 +543,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -436,6 +569,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -455,6 +595,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -474,6 +621,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -493,6 +647,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -512,6 +673,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -531,6 +699,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -550,6 +725,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -569,6 +751,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -588,6 +777,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -607,6 +803,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -626,6 +829,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -645,6 +855,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -664,6 +881,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -683,6 +907,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "both",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -702,6 +933,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "both",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -721,6 +959,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -740,6 +985,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -759,6 +1011,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -778,6 +1037,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -797,6 +1063,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -816,6 +1089,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -835,6 +1115,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -854,6 +1141,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -873,6 +1167,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -892,6 +1193,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -911,6 +1219,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -930,6 +1245,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -949,6 +1271,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -968,6 +1297,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -987,6 +1323,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1017,6 +1360,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Chef Andrew Carmellini had James Beard awards from earlier career and was associated with this restaurant, but no direct James Beard award for Rec Pier Chop House has been established. Founder association alone is insufficient.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1036,6 +1386,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1055,6 +1412,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1074,6 +1438,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1093,6 +1464,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1112,6 +1490,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1131,6 +1516,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1150,6 +1542,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1174,6 +1573,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "A valued personal favorite; no verified Michelin Guide or James Beard award/nomination established for this restaurant.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1195,6 +1601,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1216,6 +1629,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1237,6 +1657,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1258,6 +1685,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1279,6 +1713,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1300,6 +1741,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1321,6 +1769,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1342,6 +1797,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1363,6 +1825,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1384,6 +1853,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1405,6 +1881,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1426,6 +1909,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1447,6 +1937,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1468,6 +1965,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1490,6 +1994,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1512,6 +2023,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "James Beard recognition to the restaurateur/group needs venue-level review; no automatic qualification."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Related chef, restaurant, or name has no direct qualifying award independently verified yet.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1534,6 +2052,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Related chef, restaurant, or name has no direct qualifying award independently verified yet.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1556,6 +2081,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1578,6 +2110,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1600,6 +2139,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1622,6 +2168,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1644,6 +2197,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1666,6 +2226,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1688,6 +2255,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1710,6 +2284,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1732,6 +2313,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1754,6 +2342,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1776,6 +2371,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1798,6 +2400,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1820,6 +2429,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1854,6 +2470,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "related_chef_or_unproven",
+        "reason": "Confirmed jazz-steakhouse memory; no verified Michelin Guide or James Beard honor for the restaurant established.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1876,6 +2499,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1898,17 +2528,24 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
       "id": "candidate-kansas-city-metro-corvino-supper-club-tasting-room",
       "area": "Kansas City Metro",
       "name": "Corvino Supper Club & Tasting Room",
-      "recognition": "Historical dining candidate, no Michelin star or restaurant-level James Beard honor asserted",
-      "recognitionYear": null,
-      "awardFamily": "context",
+      "recognition": "Michael Corvino, Corvino Supper Club & Tasting Room, was a 2019 and 2023 James Beard Best Chef: Midwest semifinalist.",
+      "recognitionYear": 2019,
+      "awardFamily": "beard",
       "interviewCue": "Crossroads destination with an expansive dining room, stage and live music; also offers an intimate tasting room. Another music-and-dinner memory candidate.",
-      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2023-james-beard-awards-semifinalists",
       "visitStatus": "unreviewed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
@@ -1920,6 +2557,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "james_beard",
+        "reason": "2023 James Beard Foundation Best Chef: Midwest semifinalist at this restaurant (verified official source).",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
       }
     },
     {
@@ -1942,6 +2586,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1964,6 +2615,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -1986,6 +2644,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2008,6 +2673,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Related chef, restaurant, or name has no direct qualifying award independently verified yet.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2030,6 +2702,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2052,6 +2731,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2074,6 +2760,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2096,6 +2789,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2118,6 +2818,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2140,6 +2847,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Related chef, restaurant, or name has no direct qualifying award independently verified yet.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2162,6 +2876,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Related chef, restaurant, or name has no direct qualifying award independently verified yet.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2184,6 +2905,13 @@
         "sourceTier": "secondary",
         "verifiedAt": "2026-10-25",
         "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2206,6 +2934,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "outside_scope",
+        "basis": "context",
+        "reason": "No Michelin Guide or James Beard honor established for the named venue.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2234,6 +2969,13 @@
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
         "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+      },
+      "eligibility": {
+        "status": "needs_verification",
+        "basis": "related_chef_or_unproven",
+        "reason": "Related chef, restaurant, or name has no direct qualifying award independently verified yet.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2255,6 +2997,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "James Beard semifinalist while working at this named restaurant; user visit not confirmed."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2276,6 +3025,13 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "James Beard semifinalist while working at this named restaurant; user visit not confirmed."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     },
     {
@@ -2297,6 +3053,118 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "James Beard semifinalist while working at this named restaurant; user visit not confirmed."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "beard",
+        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-fox-pearl",
+      "area": "Kansas City Metro",
+      "name": "Fox & Pearl",
+      "recognition": "Chef Vaughn Good was a 2020 James Beard Best Chef: Midwest semifinalist at Fox & Pearl.",
+      "recognitionYear": 2020,
+      "awardFamily": "beard",
+      "interviewCue": "Westside KC restaurant known for live-fire and smoked meats, in an intimate setting.",
+      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "award_screened",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "james_beard",
+        "reason": "James Beard recognition documented in Visit KC's honorees guide; original category/year should be rechecked if a visit is confirmed.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-room-39",
+      "area": "Kansas City Metro",
+      "name": "Room 39",
+      "recognition": "Chef Ted Habiger was a James Beard Best Chef: Midwest semifinalist in 2008, 2012 and 2014.",
+      "recognitionYear": 2014,
+      "awardFamily": "beard",
+      "interviewCue": "Farm-driven American restaurant around West 39th Street, with casual lunch and refined dinner.",
+      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "award_screened",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "james_beard",
+        "reason": "James Beard recognition documented in Visit KC's honorees guide; original category/year should be rechecked if a visit is confirmed.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-affare",
+      "area": "Kansas City Metro",
+      "name": "Affäre",
+      "recognition": "Affäre was a 2024 James Beard Outstanding Wine and Other Beverages Program semifinalist; chef Martin Heuser was nominated in 2013.",
+      "recognitionYear": 2024,
+      "awardFamily": "beard",
+      "interviewCue": "Crossroads restaurant with contemporary German cooking and an extensive wine program.",
+      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "award_screened",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "james_beard",
+        "reason": "James Beard recognition documented in Visit KC's honorees guide; original category/year should be rechecked if a visit is confirmed.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-chewology",
+      "area": "Kansas City Metro",
+      "name": "Chewology",
+      "recognition": "Chef Katie Liu-Sung was a 2024 and 2025 James Beard Best Chef: Midwest semifinalist.",
+      "recognitionYear": 2024,
+      "awardFamily": "beard",
+      "interviewCue": "Westport Taiwanese restaurant with handmade dumplings and noodles.",
+      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "award_screened",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "james_beard",
+        "reason": "James Beard recognition documented in Visit KC's honorees guide; original category/year should be rechecked if a visit is confirmed.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-yoli-tortilleria",
+      "area": "Kansas City Metro",
+      "name": "Yoli Tortilleria",
+      "recognition": "2023 James Beard Outstanding Bakery winner.",
+      "recognitionYear": 2023,
+      "awardFamily": "beard",
+      "interviewCue": "Kansas City tortilla bakery specializing in stone-ground heirloom corn tortillas.",
+      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
+      "visitStatus": "unreviewed",
+      "researchStatus": "award_screened",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "james_beard",
+        "reason": "James Beard recognition documented in Visit KC's honorees guide; original category/year should be rechecked if a visit is confirmed.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": false
       }
     }
   ],
