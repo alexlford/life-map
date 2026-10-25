@@ -61,7 +61,7 @@ assert len(breck) == 3
 assert sorted(r["visit"]["year"] for r in breck) == [2021, 2022, 2023]
 assert all(r["visit"]["date"] is None and r["visit"]["precision"] == "approximate_year" for r in breck)
 assert all(r["editorial"]["awardQualified"] is False and r["editorial"]["featuredException"] is False for r in breck)
-assert len({r["venueId"] for r in records}) == 19
+assert len({r["venueId"] for r in records}) == 20
 qbreck = next(c for c in candidates if c["name"] == "Breckenridge Distillery Restaurant")
 assert qbreck["visitStatus"] == "confirmed" and set(qbreck["linkedVisitIds"]) == {r["id"] for r in breck}
 assert qbreck["screening"]["status"] == "memory_only"
@@ -85,7 +85,7 @@ assert death_and_co["editorial"]["awardQualified"] is False and death_and_co["ed
 for name in ("Sauvage", "Gunther & Co.", "The Majestic Restaurant"):
     rec = next(r for r in records if r["title"] == name)
     assert rec["editorial"]["awardQualified"] is False and rec["editorial"]["featuredException"] is True
-assert {r["title"] for r in records if r["editorial"].get("awardQualified")} == {"République", "Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen", "Momofuku CCDC", "Manifesto", "Q House", "Wildflower", "Yuan Wonton", "Safta", "Smok"}
+assert {r["title"] for r in records if r["editorial"].get("awardQualified")} == {"République", "Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen", "Momofuku CCDC", "Manifesto", "Q House", "Wildflower", "Yuan Wonton", "Safta", "Smok", "Mister Oso"}
 assert all(not r["editorial"].get("awardQualified") or not r["editorial"].get("featuredException") for r in records)
 assert any(c["name"] == "Manifesto" and c["visitStatus"] == "confirmed" for c in candidates)
 assert any(c["name"] == "Death & Co Denver" and c["visitStatus"] == "confirmed" for c in candidates)
