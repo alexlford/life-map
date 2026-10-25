@@ -47,7 +47,8 @@ assert "did not visit" in bar_goto["reviewSource"].lower()
 assert bar_goto["recognitionYear"] == 2018 and bar_goto["screening"]["status"] == "award_qualified"
 assert not any(r["title"] in {"Bar Goto", "The Dead Rabbit", "Dante", "Leyenda", "PDT (Please Don't Tell)"} for r in records)
 existing_conditions = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "Existing Conditions")
-assert existing_conditions["visitStatus"] == "unreviewed"
+assert existing_conditions["visitStatus"] == "not_visited"
+assert not any(r["title"] == "Existing Conditions" for r in records)
 assert pdt["visitStatus"] == "maybe" and rabbit["visitStatus"] == "not_visited"
 assert leyenda["visitStatus"] == "not_visited"
 assert not any(r["title"] in {"Leyenda", "Dante"} for r in records)
@@ -289,3 +290,15 @@ assert any(r["type"] == "opera" and "Ring" in r["title"] for r in stage)
 assert all(r["memory"]["story"] for r in stage)
 theater_leads = json.loads((ROOT / "data/performance-leads.json").read_text(encoding="utf-8"))
 assert any(x["id"] == "another-denver-show" for x in theater_leads["leads"])
+
+# Precision and provenance in date presentation.
+assert next(c for c in candidates if c["name"] == "PDT (Please Don't Tell)")["visitStatus"] == "maybe"
+assert next(c for c in candidates if c["name"] == "The Dead Rabbit")["visitStatus"] == "not_visited"
+assert next(c for c in candidates if c["name"] == "Existing Conditions")["visitStatus"] == "not_visited"
+assert any(c["id"] == "lyric-ring-performances" for c in stage_research["candidates"])
+date_app=(ROOT / "assets/app.js").read_text(encoding="utf-8")
+assert "const readableDate=(d)=>" in date_app
+assert "reservation on file" in date_app
+assert "Reservation evidence:" in date_app
+assert "Production's engagement dates:" in date_app
+assert "const dateMonth=" in date_app

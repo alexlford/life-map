@@ -3564,7 +3564,7 @@
       "awardFamily": "beard",
       "interviewCue": "Greenwich Village cocktail bar associated with inventive, science-driven drinks, operated 2018–2020.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists",
-      "visitStatus": "unreviewed",
+      "visitStatus": "not_visited",
       "venueType": "cocktail_bar",
       "priority": "high",
       "addedOn": "2026-10-25",
@@ -3575,7 +3575,11 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Verified named restaurant or bar's James Beard recognition; does not establish user visit or visit date."
-      }
+      },
+      "reviewSource": "User explicitly reported not visiting Existing Conditions in New York during 2018–2020 in the October 25, 2026 Culture Passport interview.",
+      "reviewedOn": "2026-10-25",
+      "visitPeriod": "New York City, 2018–2020: did not visit",
+      "interviewNote": "An award-eligible bar but NOT a confirmed visited venue. Preserve the bar's 2020 James Beard semifinalist recognition separately."
     },
     {
       "id": "candidate-chicago-the-aviary",

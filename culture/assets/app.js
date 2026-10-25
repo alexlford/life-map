@@ -8,13 +8,21 @@
   const byId=(id)=>document.getElementById(id);
   const href=(r)=>"./record.html?id="+encodeURIComponent(r.id);
   // The archive keeps precision; the public UI favors memories and meaningful periods.
+  const readableDate=(d)=>{
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(d||""))return d||"";
+    const [year,month,day]=d.split("-").map(Number);
+    return new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"}).format(new Date(Date.UTC(year,month-1,day)));
+  };
+  const reservationDerived=(r)=>r.visit?.evidenceType==="completed_reservation"||r.visit?.evidenceType==="completed_reservation_and_user_confirmed_venue";
   const storyPeriod=(r)=>{
+    if(r.visit?.date&&r.visit?.precision==="day")return readableDate(r.visit.date)+(reservationDerived(r)?" · reservation on file":"");
+    if(r.visit?.label&&/^(January|February|March|April|May|June|July|August|September|October|November|December|Christmas|Fall|Autumn|Winter|Spring|Summer)/.test(r.visit.label))return r.visit.label;
     if(r.memory?.period)return r.memory.period;
     if(r.visit?.year)return String(r.visit.year);
     const yrs=r.visit?.possibleYears||[];
     if(yrs.length===1)return String(yrs[0]);
     if(yrs.length>1)return String(yrs[0])+"–"+String(yrs[yrs.length-1]).slice(-2);
-    return "A time worth remembering";
+    return r.visit?.label||"A time worth remembering";
   };
   const storyTeaser=(r)=>r.memory?.teaser||(r.visit?.evidenceType==="completed_reservation"?"A restaurant that surfaced in the reservation archive. Its personal story is still to be told.":r.summary);
   const timelineChapter=(r)=>{
@@ -30,7 +38,9 @@
     return "Date unknown";
   };
   const yearForSorting=(r)=>r.visit?.year||r.visit?.possibleYears?.[0]||-1;
-  const byDate=(a,b)=>yearForSorting(b)-yearForSorting(a)||(b.visit?.month||0)-(a.visit?.month||0)||a.title.localeCompare(b.title);
+  const dateMonth=(r)=>r.visit?.month||Number(r.visit?.date?.slice(5,7))||0;
+  const dateDay=(r)=>Number(r.visit?.date?.slice(8,10))||0;
+  const byDate=(a,b)=>yearForSorting(b)-yearForSorting(a)||dateMonth(b)-dateMonth(a)||dateDay(b)-dateDay(a)||a.title.localeCompare(b.title);
   const titleFor={dining:"Restaurants",bar:"Cocktail Bars",concert:"Concerts",opera:"Opera",theater:"Theater"};
   function empty(parent,title,description,url,label){
     parent.replaceChildren();
@@ -199,8 +209,15 @@
     details.append(heading);
     const note=(label,value)=>{if(!value)return;const row=el("p");row.append(el("strong","",label+" "));row.append(document.createTextNode(String(value)));body.append(row);};
     note("Place:",[v.name||r.title,v.city,v.region].filter(Boolean).join(" · "));
-    note("Date on file:",r.visit?.date||r.visit?.label||"Not established");
+    note(reservationDerived(r)?"Reservation date on file:":"Visit/event date or period:",r.visit?.date?readableDate(r.visit.date):r.visit?.label||"Not established");
     if(r.visit?.partySize)note("Reservation party:",r.visit.partySize);
+    if(r.visit?.timeWindow)note("Possible visit window:",r.visit.timeWindow);
+    if(r.production?.engagementWindow)note("Production's engagement dates:",r.production.engagementWindow+" (individual show date not established)");
+    if(Array.isArray(r.reservations)){
+      for(const booking of r.reservations){
+        note("Reservation evidence:",readableDate(booking.date)+(booking.occasion?" · "+booking.occasion:"")+(booking.partySize?" · party of "+booking.partySize:"")+" · booking on file, not independently proven attendance");
+      }
+    }
     note("Evidence:",r.visit?.source);
     if(r.visit?.evidenceType==="completed_reservation"||r.visit?.attendanceCertainty==="not_independently_verified")note("Reservation status:","A completed reservation does not independently prove the meal occurred.");
     note("Award context:",r.editorial?.note);
