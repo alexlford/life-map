@@ -340,7 +340,7 @@ assert {"The Book of Mormon", "SIX", "The Second City — Chicago holiday outing
 
 
 # Provenance and geography integrity for the new Boston / Cape Cod memory lead.
-assert {"Boston", "Cape Cod"}.issubset(interview_data["periods"])
+assert {"Boston", "Cape Cod", "Cambridge, UK"}.issubset(interview_data["periods"])
 assert any(lead["id"] == "boston-cape-cod-seafood-unknown"
            and lead["venueIdentityConfirmed"] is False
            and lead["publishAsExperience"] is False
@@ -351,3 +351,9 @@ assert not any(r["title"].startswith("Unidentified excellent fish restaurant") f
 assert all(r["visit"]["date"] is None for r in records if r["visit"].get("evidenceType") == "completed_reservation_only")
 assert not any(r["status"] == "confirmed" and r["visit"]["attendanceCertainty"] == "not_independently_verified"
                for r in records if "attendanceCertainty" in r["visit"])
+
+# Culture Passport prioritizes memory and approximate periods over exact booking days.
+assert 'const isDining=["dining","bar"].includes(r.type);' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
+assert 'const allAreas=[...new Set([...included.map(x=>x.area),...Object.keys(db.periods||{})])];' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
+assert any(x["id"] == "cambridge-uk-restaurants-unknown" and x["publishAsExperience"] is False
+           for x in interview_data["memoryLeads"])

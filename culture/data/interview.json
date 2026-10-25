@@ -17,7 +17,8 @@
     "Vail / Beaver Creek": "Historical restaurant interview; visits not yet established",
     "Telluride": "Historical restaurant interview; visits not yet established",
     "Boston": "Period not yet established; user remembers visits in Boston, Massachusetts.",
-    "Cape Cod": "Period not yet established; user remembers a great fish/seafood restaurant in Boston or on Cape Cod."
+    "Cape Cod": "Period not yet established; user remembers a great fish/seafood restaurant in Boston or on Cape Cod.",
+    "Cambridge, UK": "Cambridge, England — visits mentioned; years and restaurants to be reconstructed."
   },
   "statuses": [
     "unreviewed",
@@ -4967,6 +4968,21 @@
       "cuisine": "fish/seafood",
       "source": "Alex's recollection on October 25, 2026",
       "note": "User remembers a great fish restaurant from time in Boston or Cape Cod. Do not assume a specific city, restaurant, date, Michelin status, or James Beard connection. Interview research pending.",
+      "publishAsExperience": false
+    },
+    {
+      "id": "cambridge-uk-restaurants-unknown",
+      "category": "dining",
+      "name": "Cambridge, UK — potential restaurant visits",
+      "status": "identification_research",
+      "venueIdentityConfirmed": false,
+      "visitDate": null,
+      "visitPeriod": null,
+      "possibleRegions": [
+        "Cambridge, England"
+      ],
+      "source": "Alex's instruction on October 25, 2026 to include Cambridge in restaurant discovery",
+      "note": "Research recognized Cambridge, UK restaurants later; do not infer a visit to any particular restaurant, year, chef, or award.",
       "publishAsExperience": false
     }
   ]

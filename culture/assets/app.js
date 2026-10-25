@@ -15,11 +15,18 @@
   };
   const reservationDerived=(r)=>r.visit?.evidenceType==="completed_reservation"||r.visit?.evidenceType==="completed_reservation_and_user_confirmed_venue";
   const storyPeriod=(r)=>{
-    if(r.visit?.date&&r.visit?.precision==="day")return readableDate(r.visit.date)+(reservationDerived(r)?" · reservation on file":"");
-    if(r.visit?.label&&/^(January|February|March|April|May|June|July|August|September|October|November|December|Christmas|Fall|Autumn|Winter|Spring|Summer)/.test(r.visit.label))return r.visit.label;
+    // Culture Passport is a memory archive: restaurant/cocktail stories show a year or
+    // memorable occasion first. Dates in bookings are supporting provenance only.
+    const isDining=["dining","bar"].includes(r.type);
+    if(isDining&&r.memory?.period)return r.memory.period;
+    if(isDining&&r.visit?.label&&/^(January|February|March|April|May|June|July|August|September|October|November|December|Christmas|Valentine|Fall|Autumn|Winter|Spring|Summer)/.test(r.visit.label))return r.visit.label;
+    if(isDining&&r.visit?.year)return String(r.visit.year);
+    const yrs=r.visit?.possibleYears||[];
+    if(isDining&&yrs.length===1)return String(yrs[0]);
+    if(isDining&&yrs.length>1)return String(yrs[0])+"–"+String(yrs[yrs.length-1]).slice(-2);
+    if(r.visit?.date&&r.visit?.precision==="day")return readableDate(r.visit.date);
     if(r.memory?.period)return r.memory.period;
     if(r.visit?.year)return String(r.visit.year);
-    const yrs=r.visit?.possibleYears||[];
     if(yrs.length===1)return String(yrs[0]);
     if(yrs.length>1)return String(yrs[0])+"–"+String(yrs[yrs.length-1]).slice(-2);
     return r.visit?.label||"A time worth remembering";
@@ -205,7 +212,7 @@
     }
     if(badges.childElementCount)host.append(el("h2","","Why it stands out"),badges);
     // Retain dates and party size for provenance without making them the story.
-    const details=el("details","archive-details"),heading=el("summary","","Archive details & sources"),body=el("div","archive-details-body");
+    const details=el("details","archive-details"),heading=el("summary","","Historical notes & sources"),body=el("div","archive-details-body");
     details.append(heading);
     const note=(label,value)=>{if(!value)return;const row=el("p");row.append(el("strong","",label+" "));row.append(document.createTextNode(String(value)));body.append(row);};
     note("Place:",[v.name||r.title,v.city,v.region].filter(Boolean).join(" · "));
@@ -219,7 +226,7 @@
       }
     }
     note("Evidence:",r.visit?.source);
-    if(r.visit?.evidenceType==="completed_reservation"||r.visit?.attendanceCertainty==="not_independently_verified")note("Reservation status:","A completed reservation does not independently prove the meal occurred.");
+    if(r.visit?.evidenceType==="completed_reservation"||r.visit?.attendanceCertainty==="not_independently_verified")note("Booking note:","Reservation dates are archival context; the memory is organized by approximate year and occasion.");
     note("Award context:",r.editorial?.note);
     details.append(body);host.append(details);
   }
@@ -253,7 +260,7 @@
     const candidateFilter=(x)=>x.area===active&&(screen==="all"||screen==="awards"&&x.screening?.status==="award_qualified"||screen==="leads"&&(x.userMemoryLead&&!x.userMemoryLead.identityConfirmed||x.screening?.status!=="award_qualified"));
     const relevant=()=>included.filter(candidateFilter);
     const tabBox=$(".interview-actions .tabstrip");
-    const allAreas=[...new Set(included.map(x=>x.area))];
+    const allAreas=[...new Set([...included.map(x=>x.area),...Object.keys(db.periods||{})])];
     allAreas.filter(a=>!all("[data-area]").some(b=>b.dataset.area===a)).forEach(a=>{
       const b=el("button","",a);b.dataset.area=a;b.type="button";b.setAttribute("aria-pressed","false");tabBox.append(b);
     });
