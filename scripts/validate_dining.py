@@ -94,6 +94,12 @@ def main():
     assert cinghiale["visitStatus"] == "not_visited"
     petit_louis = next(r for r in INTERVIEW["candidates"] if r["name"] == "Petit Louis Bistro" and r["area"] == "Baltimore")
     assert petit_louis["visitStatus"] == "not_visited"
+    foraged = next(r for r in INTERVIEW["candidates"] if r["name"] == "Foraged" and r["area"] == "Baltimore")
+    assert foraged["visitStatus"] == "not_visited"
+    dc_momo = next(r for r in INTERVIEW["candidates"] if r["name"] == "Momofuku CCDC" and r["area"] == "Washington, DC")
+    assert dc_momo["visitStatus"] == "unreviewed" and dc_momo["userMemoryLead"]["identityConfirmed"] is False
+    assert not any(r["name"] in {"Foraged", "Momofuku CCDC"} for r in DATA["entries"])
+    assert len(INTERVIEW["candidates"]) == 49
     assert not any(r["name"] == "Petit Louis Bistro" for r in DATA["entries"])
     assert not any(r["name"] == "Cinghiale" for r in DATA["entries"])
     assert not any(r["name"] == "Clavel" for r in DATA["entries"])
