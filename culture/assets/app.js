@@ -45,7 +45,7 @@
     const cities=new Set(records.map(r=>venues.get(r.venueId)?.city).filter(Boolean));
     const starred=records.filter(r=>r.type==="dining"&&r.guide?.distinction==="starred"&&r.guide.stars>0);
     const awardDining=records.filter(r=>["dining","bar"].includes(r.type)&&r.editorial?.awardQualified);
-    const st=[["total-records",awardDining.length],["total-venues",records.filter(r=>["dining","bar"].includes(r.type)).length],["total-cities",cities.size],["total-starred",starred.length]];
+    const st=[["total-records",awardDining.length],["total-venues",new Set(records.filter(r=>["dining","bar"].includes(r.type)).map(r=>r.venueId)).size],["total-cities",cities.size],["total-starred",starred.length]];
     st.forEach(([key,value])=>{const target=byId(key);if(target)target.textContent=value;});
     for(const key of Object.keys(titleFor)){const target=byId(key+"-count");if(target)target.textContent=key==="dining"?records.filter(r=>r.type==="dining"&&(r.editorial?.awardQualified||r.editorial?.featuredException)).length+" included":key==="bar"?records.filter(r=>r.type==="bar").length+" bars":records.filter(r=>r.type===key).length+" recorded";}
   }
