@@ -133,42 +133,20 @@ python -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Michelin Dining Passport
+## Project boundaries: Life Map vs. Culture Passport
 
-`dining.html` is a standalone, responsive historical dining tracker within the Personal Atlas, linked from the Life Map (and hidden in professional embeds). `data/dining.json` is the canonical source. The site distinguishes directly reported visits, unresolved restaurant identities, Michelin Guide Selected listings, and historically confirmed Michelin stars. Do not treat restaurant *candidates* as separate visits or apply a current Michelin rating retroactively to an old visit.
+**This repository is the canonical interactive personal and professional geography map.**
 
-Current seed: République is a confirmed Guide-listed visit but not a confirmed starred visit; Minetta Tavern (NYC, 2016 or 2017) is a **confirmed visit** to a one-star restaurant in both applicable Michelin Guides. Beckon (Denver) is also a confirmed visit to a restaurant awarded **one star in the inaugural 2023 Colorado Guide**. The precise Beckon meal date relative to the September 12 award remains unknown. A late-1990s Wisconsin Dells Michelin star is historically impossible because Michelin did not publish a US guide until 2005.
+- **Life:** homes, formative places, education, and places central to the user's personal history.
+- **Work:** career chapters, campuses, engineering and mission sites, work travel, and conferences.
+- **Combined:** both layers of geography together.
+- The `index.html` production map and `atlas.html` landing page present these three geographic perspectives. `?mode=work` and `?embed=1&mode=work` are explicitly preserved for professional embeds.
+- Sports, Adventures, and Culture Passport each have separate repositories and separate experience archives.
 
-## Independent Personal Atlas site
+**Culture Passport's canonical source is now [`alexlford/culture-passport`](https://github.com/alexlford/culture-passport).** New restaurants, cocktail bars, theater, opera, and concert records should be maintained there only, not in Life Map. This repository's old `/culture/` preview and old `dining.html` / `dining-interview.html` files are temporarily retained as **legacy compatibility/fallback routes** while the independent site remains private and GitHub Pages is not enabled. They are not linked by the Life Map UI or validated as live Life Map features. Remove these legacy files (plus their stale data/scripts/styles) only after the separate Culture site is publicly deployed and legacy redirects can point to a working address.
 
-Personal Atlas is an independent property, separate from the `sports-passport` and `adventure-map` repositories, datasets, builds, and deployments. It now has a dedicated editorial landing page at `atlas.html` plus the Life Map at `index.html` and Michelin Dining Passport at `dining.html`.
+The destination repository's independent CI is active and passing. GitHub Pages deployment and `culture.alexlford.com` DNS still require user settings. No custom Culture `CNAME` belongs in this repository.
 
-The Atlas landing page is currently served from `https://alexlford.github.io/life-map/atlas.html`. `atlas.alexlford.com` is the proposed independent custom subdomain, **not yet configured**: DNS plus GitHub Pages ownership and domain configuration are required before activating a CNAME. Until then, retain the root map page, historical map links, and existing professional embed (`?embed=1&mode=work`). Nothing is hosted inside the Sports or Adventures websites.
+## Content hygiene
 
-## Culinary Passport: James Beard and interview expansion
-
-In addition to the Michelin Guide, `data/dining.json` can associate a named chef's James Beard recognition with a confirmed venue, preserving recipient, distinction, outcome and year (for example, République chef Margarita Manzke's 2023 pastry award). These honors never imply a Michelin star, and they cannot retroactively be described as held during an earlier meal.
-
-`data/dining-interview.json` stores **unverified restaurant research candidates**, split across Baltimore (2018–2021), Washington, DC (2018–2021) and Denver metro (2021–present). `dining-interview.html` provides a visit/maybe/not-visited questionnaire that stores browser-local selections and can copy a summary. No answer is published to the main passport automatically. Charleston is a **confirmed visit** during 2018–2021 (exact year unknown). Cindy Wolf's James Beard chef nominations are historical; Charleston's 2025 restaurant-level wine-program win was **after** the visit. Its interview entry is marked confirmed and cannot be overridden by locally saved questionnaire choices. Some award recognitions occurred **after** the user's potential visit.
-
-Woodberry Kitchen is also confirmed as visited in Baltimore during 2018–2021 (precise year unknown), with Spike Gjerde's James Beard 2015 Best Chef: Mid-Atlantic win represented as an award to the chef **before** the remembered dining visit. Both Charleston and Woodberry Kitchen are now locked as canonical confirmed visits in the interview rather than asking Alex to reconfirm them.
-
-For the Culinary Passport timeline, Alex selected **2018** as the approximate year for Woodberry Kitchen and **2020** for Charleston (exact dining dates remain unknown). Timeline entries sort chronologically by the chosen year. Alex explicitly confirmed **not visiting Clavel** during 2018–2021; this answer is locked in the interview and excluded from confirmed visit totals.
-
-## Baltimore and DC dining interview (October 24, 2026)
-
-- **Foraged:** Explicitly not visited during 2018–2021. Kept as a locked negative interview answer, excluded from confirmed visits.
-- **David Chang DC restaurant:** Alex recalls definitely visiting a restaurant operated by David Chang in Washington, DC. **Momofuku CCDC** (CityCenterDC, October 2015–March 2020 service, permanently closed May 2020) was explicitly confirmed by name on October 25, 2026. It is a confirmed named restaurant visit with no exact dining date. Michelin designated this restaurant **The Plate** in its 2019 coverage, which is not a Michelin star.
-- The 2013 James Beard Outstanding Chef honor belongs to David Chang at New York City's Momofuku Noodle Bar, **not** to Momofuku CCDC. The 49-candidate interview now premarks Momofuku CCDC as confirmed and Ekiben and Foraged as not visited. The Culinary Passport has six confirmed restaurant visits, including two Michelin-starred venues.
-
-On October 25, 2026, Alex marked **Alma Cocina Latina** in Baltimore (2018–2021) as **possibly visited**. This is a canonical but uncertain interview answer, locked as `maybe` and excluded from confirmed restaurant totals pending identification of a specific visit. The next Baltimore question is **Magdalena**, inside The Ivy Hotel; its fine-dining experience changed to a Maryland bistro in October 2020, a useful period-specific clue.
-
-## Culture Passport preview (October 2026)
-
-Culture Passport is intended to become an independent fourth property at `culture.alexlford.com`, alongside Sports, Adventures and Personal Atlas. The currently deployable **isolated preview** is served from `/culture/` while its own repository, GitHub Pages configuration and custom domain are arranged. The preview has no runtime imports from the Life Map application. Its complete source is under `culture/`.
-
-The seeded archive includes all six previously confirmed Michelin/James Beard-related restaurant visits plus three newly confirmed dining visits: **Sauvage**, January 2021 (Steamboat Springs; favorite); **Gunther & Co.**, Valentine's Day, February 14, 2020 (Baltimore; favorite); and **Thames Street Oyster House**, Baltimore (date unknown). Exact dates and award histories are never inferred. The hotel restaurant visited at the Sagamore Pendry Baltimore is a confirmed *experience*, but its specific restaurant identity remains an interview lead: **Rec Pier Chop House** is plausible, not yet confirmed.
-
-The interview queue contains 57 period-specific restaurant candidates, including new Baltimore and Steamboat entries. Excluded and tentative visits remain separate from the published experiences. All pages are static, accessible and mobile-responsive: home, explore, timeline, map, record and interview. No concert, opera or theater attendance is invented. Run `python culture/scripts/validate.py` plus `node --check culture/assets/app.js` before publishing.
-
-Do not add a `CNAME` in this repository for `culture.alexlford.com`, as that would hijack the existing Life Map GitHub Pages configuration. Once the destination repository is provisioned, copy the `culture/` tree to its root, configure Pages and DNS independently, and create redirect links from the legacy Culinary Passport.
+Use approximate periods and years for personal history; do not invent precision. Keep geography in the location datasets. For restaurant, chef, award, and performance histories, edit the separate Culture Passport repository instead. 

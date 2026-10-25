@@ -17,6 +17,14 @@ def main() -> None:
     assert 'src="http' not in INDEX, "Production index should not load third-party scripts"
     assert 'rel="stylesheet" href="http' not in INDEX, "Production index should not load third-party stylesheets"
     assert './fast-app.js' in INDEX and './fast-app.css' in INDEX
+    # The live Life Map frontend contains no dining or cultural navigation.
+    ATLAS = (ROOT / "atlas.html").read_text(encoding="utf-8")
+    assert 'href="./dining.html"' not in INDEX
+    assert 'href="./dining.html"' not in ATLAS
+    assert "Culinary Passport" not in INDEX and "Culinary Passport" not in ATLAS
+    assert './index.html?mode=life' in ATLAS and './index.html?mode=work' in ATLAS
+    assert '<button type="button" data-mode="life"' in INDEX
+    assert '<button type="button" data-mode="work"' in INDEX
     assert './polish.js' in INDEX and './polish.css' in INDEX
     assert 'maplibre' not in INDEX.lower()
 
