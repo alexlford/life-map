@@ -156,3 +156,9 @@ User shared concert archive screenshots, two timestamped photos at Lyric Opera o
 Production sources: https://kcconvention.com/wp-content/uploads/2016/10/Convention-Update-Fall-Winter-2016-Edition.pdf ; https://www.denvercenter.org/news-center/dcpa-broadways-2023-24-season-announcement/ ; https://www.artsandvenuesdenver.com/events/detail/a-christmas-carol-3 ; https://diplosrunclub.com/denver .
 
 Existing Book of Mormon (Kansas City December 2016), SIX (Denver December 2023), Second City 2017 and tentative Denver Christmas Carol 2024 entries were published separately and preserved without duplication. 25 other performance entries were integrated.
+
+## Theater & performances interview UI (October 25, 2026)
+
+The user requested that theater recollections actually be updated on the Culture Passport site. The main archive already includes four stage memories: `SIX` (Buell Theatre Denver, Dec 2023), `The Book of Mormon` (Kansas City Dec 2016), the Second City Chicago Christmas 2017 outing (exact revue unknown), and an unidentified Denver Christmas 2024 outing (plausibly `A Christmas Carol`, official DCPA dates Nov 22–Dec 29 2024). Keep exact attendance nights unknown. The new `performance-interview.html` lets the user recognize production titles, including the remaining unidentified Denver theater outing, without making candidate productions into confirmed show visits.
+
+The page loads `data/performance-interview.json`, presents DCPA historical candidates with sources, saves editable Yes/Maybe/No responses and freeform clues in localStorage, and keeps answers visible as they are selected. It can copy those notes back to ChatGPT; it must not silently publish them. The restaurant interview and site home link directly to the new theater interview. Future opera and concert leads can extend the same independent interview workflow. Production engagements are historical availability context, not proof of attendance.
