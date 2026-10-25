@@ -3166,6 +3166,120 @@
         "screenedOn": "2026-10-25",
         "verifiedForPublication": false
       }
+    },
+    {
+      "id": "candidate-bar-manifesto-kansas-city",
+      "area": "Kansas City Metro",
+      "name": "Manifesto",
+      "recognition": "2018 James Beard Outstanding Bar Program semifinalist",
+      "recognitionYear": 2018,
+      "awardFamily": "beard",
+      "interviewCue": "1924 Main St., Kansas City. Hidden subterranean speakeasy below the Rieger restaurant. Candlelit, intimate craft-cocktail bar; closed circa 2020.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-semifinalists",
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "bar-manifesto-kansas-city",
+      "visitPeriod": "Kansas City visits, date uncertain",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex explicitly described this cocktail bar as an amazing past visit on October 25, 2026.",
+      "venueType": "cocktail_bar",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "The named Manifesto bar was a 2018 James Beard Outstanding Bar Program semifinalist."
+      }
+    },
+    {
+      "id": "candidate-bar-death-and-co-denver",
+      "area": "Denver Metro",
+      "name": "Death & Co Denver",
+      "recognition": "Distinctive cocktail bar in the Ramble Hotel; no James Beard award verified for this Denver outpost",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "RiNo, 1280 25th St, Denver. Plush sofas, arched mirrored bar, striking chandeliers and elaborate cocktails. Opened May 2018.",
+      "sourceUrl": "https://www.deathandcompany.com/location/death-and-company-denver/",
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "bar-death-and-co-denver",
+      "visitPeriod": "2018 or later; specific date unknown",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex explicitly described this cocktail bar as an amazing past visit on October 25, 2026.",
+      "venueType": "cocktail_bar",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "Explicit user's personal favorite; no Denver venue-specific Michelin/JBF distinction verified."
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-drastic-measures",
+      "area": "Kansas City Metro",
+      "name": "Drastic Measures",
+      "recognition": "2026 James Beard Outstanding Bar semifinalist",
+      "recognitionYear": 2026,
+      "awardFamily": "beard",
+      "interviewCue": "Shawnee, Kansas, just west of Kansas City; modern, low-lit cocktail bar with inventive drinks.",
+      "sourceUrl": "https://blog.resy.com/2026/01/2026-james-beard-nominees/",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://blog.resy.com/2026/01/2026-james-beard-nominees/",
+        "sourceTier": "secondary_or_primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Documented James Beard cocktail recognition; user visit has NOT been confirmed."
+      }
+    },
+    {
+      "id": "candidate-denver-metro-lady-jane",
+      "area": "Denver Metro",
+      "name": "Lady Jane",
+      "recognition": "2026 James Beard Outstanding Bar semifinalist",
+      "recognitionYear": 2026,
+      "awardFamily": "beard",
+      "interviewCue": "LoHi Denver cocktail bar with minimalist design, intimate atmosphere and inventive cocktails.",
+      "sourceUrl": "https://blog.resy.com/2026/01/2026-james-beard-nominees/",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://blog.resy.com/2026/01/2026-james-beard-nominees/",
+        "sourceTier": "secondary_or_primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Documented James Beard cocktail recognition; user visit has NOT been confirmed."
+      }
+    },
+    {
+      "id": "candidate-denver-metro-yacht-club",
+      "area": "Denver Metro",
+      "name": "Yacht Club",
+      "recognition": "2026 James Beard Outstanding Professional in Cocktail Service finalist — McLain Hedges and Mary Allison Wright",
+      "recognitionYear": 2026,
+      "awardFamily": "beard",
+      "interviewCue": "Cole neighborhood Denver; a neighborhood bar with natural wines, inventive cocktails and hot dogs.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/james-beard-awards-restaurant-and-chef-nominees-2026",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/james-beard-awards-restaurant-and-chef-nominees-2026",
+        "sourceTier": "secondary_or_primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Documented James Beard cocktail recognition; user visit has NOT been confirmed."
+      }
     }
   ],
   "source": {
@@ -3190,6 +3304,8 @@
     "awardQualified": "Named venue listed by Michelin in a year, or JBF recognized the venue itself or a chef at that venue in the relevant award year (semifinalist, nominee, finalist, winner). Recognition may come after the user's dining visit but must be labeled with historical award year.",
     "excluded": "Unconnected chef or parent-company awards, unsubstantiated culinary accolades, and unsourced fame do not qualify.",
     "retained": "Personal dining memories and venue-identification clues remain retrievable separately, including Le Fou Frog, The Majestic and Rec Pier Chop House.",
-    "sourcePriority": "Prefer official James Beard and Michelin listings; secondary published reporting may support a candidate awaiting further audit."
+    "sourcePriority": "Prefer official James Beard and Michelin listings; secondary published reporting may support a candidate awaiting further audit.",
+    "venueTypes": "Include qualifying bars and beverage programs in addition to restaurants. A bar can qualify for James Beard Outstanding Bar, Best New Bar, beverage-program and cocktail-service honors. Maintain precise location and recipient for awards.",
+    "personalExceptions": "Explicit user-selected dining and cocktail favorites remain visible even without a qualifying award; do not describe them as award-winning."
   }
 }

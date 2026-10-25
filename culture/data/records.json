@@ -9,6 +9,11 @@
       "description": "Restaurants and remarkable tables"
     },
     {
+      "id": "bar",
+      "label": "Cocktail Bars",
+      "description": "Cocktail bars, speakeasies and beverage experiences"
+    },
+    {
       "id": "concert",
       "label": "Concerts",
       "description": "Live music worth remembering"
@@ -32,7 +37,9 @@
     "favorites": "Favorites come only from explicit user preference statements, independent of restaurant awards.",
     "musicAndDining": "Attending a restaurant with live jazz does not automatically count as a distinct concert. Require a separately confirmed performance before adding a concert record.",
     "awardFocusedCollection": "Default Culture Passport Dining chapter shows only venues with verified historical Michelin inclusion or James Beard recognition of restaurant itself or chef at that restaurant. Memory-only confirmed visits are preserved but hidden by default, discoverable with a separate toggle. Recognition year may differ from dinner year.",
-    "curated": "Default Culture Passport dining views show confirmed restaurants with documented Michelin Guide recognition (star, Bib, Selected, historic Plate) or directly associated James Beard awards, finalists or semifinalists. Those awards retain their recipient and year. Chef awards at unrelated restaurants or historical awards dated after a dinner may be context, not proof of qualification at the meal date. Unverified and outside-scope visits stay in archive but are hidden from curated browsing by default."
+    "curated": "Default Culture Passport dining views show confirmed restaurants with documented Michelin Guide recognition (star, Bib, Selected, historic Plate) or directly associated James Beard awards, finalists or semifinalists. Those awards retain their recipient and year. Chef awards at unrelated restaurants or historical awards dated after a dinner may be context, not proof of qualification at the meal date. Unverified and outside-scope visits stay in archive but are hidden from curated browsing by default.",
+    "featuredExceptions": "Venue-specific Michelin/JBF honors are the default inclusion criteria, but the user's express favorites Sauvage, Gunther & Co., Death & Co Denver and provisional favorite The Majestic are displayed in the primary collection despite no established qualifying award.",
+    "beverages": "Stand-alone cocktail bars are type=bar, never counted as restaurants. James Beard Outstanding Bar Program includes bar semifinalists. Never borrow recognition from another location within a chain."
   },
   "venues": [
     {
@@ -199,6 +206,36 @@
         "precision": "city-centroid"
       },
       "sourceId": "rec-pier-chop-house-baltimore"
+    },
+    {
+      "id": "venue-manifesto-kansas-city",
+      "name": "Manifesto",
+      "city": "Kansas City",
+      "region": "Missouri",
+      "country": "USA",
+      "neighborhood": "Crossroads",
+      "address": "1924 Main Street, Kansas City, MO 64108",
+      "location": {
+        "lat": 39.0997,
+        "lng": -94.5786,
+        "precision": "city-centroid"
+      },
+      "sourceId": "manifesto-kansas-city"
+    },
+    {
+      "id": "venue-death-and-co-denver",
+      "name": "Death & Co Denver",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "neighborhood": "RiNo",
+      "address": "1280 25th Street, Denver, CO 80205",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903,
+        "precision": "city-centroid"
+      },
+      "sourceId": "death-and-co-denver"
     }
   ],
   "records": [
@@ -581,9 +618,11 @@
       "sourceUrl": "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf",
       "editorial": {
         "awardQualified": false,
-        "collection": "personal_memories",
+        "collection": "featured_personal_dining",
         "basis": null,
-        "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+        "note": "Personally selected: one of the user's favorite dining experiences, January 2021, Steamboat Springs. No award claim.",
+        "featuredException": true,
+        "exceptionPriority": "permanent"
       },
       "curation": {
         "status": "outside_scope",
@@ -624,9 +663,11 @@
       "sourceUrl": "https://eatatgunther.com/contact",
       "editorial": {
         "awardQualified": false,
-        "collection": "personal_memories",
+        "collection": "featured_personal_dining",
         "basis": null,
-        "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+        "note": "Personally selected: Valentine's Day 2020 dinner in Baltimore. No award claim.",
+        "featuredException": true,
+        "exceptionPriority": "permanent"
       },
       "curation": {
         "status": "outside_scope",
@@ -704,9 +745,11 @@
       "sourceUrl": "https://majestickc.com/jazz-club/",
       "editorial": {
         "awardQualified": false,
-        "collection": "personal_memories",
+        "collection": "featured_personal_dining",
         "basis": null,
-        "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+        "note": "User wants The Majestic kept in the visible collection, provisionally, because of the memorable steakhouse and basement jazz experience. No award claim.",
+        "featuredException": true,
+        "exceptionPriority": "provisional"
       },
       "curation": {
         "status": "outside_scope",
@@ -762,6 +805,80 @@
         ],
         "reviewedOn": "2026-10-25",
         "confidence": "indirect_only"
+      }
+    },
+    {
+      "id": "bar-manifesto-kansas-city",
+      "type": "bar",
+      "title": "Manifesto",
+      "venueId": "venue-manifesto-kansas-city",
+      "status": "confirmed",
+      "favorite": true,
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Visited during Kansas City years, precise date unknown",
+        "precision": "unknown",
+        "source": "Alex directly recalled Manifesto as an amazing Kansas City cocktail bar on October 25, 2026."
+      },
+      "summary": "A memorable visit to Manifesto, the intimate basement speakeasy in Kansas City's historic Rieger Hotel building. The original bar closed around 2020. Exact visit date is unknown.",
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2018,
+          "result": "semifinalist",
+          "category": "Outstanding Bar Program",
+          "recipient": "Manifesto, Kansas City",
+          "relationship": "bar itself",
+          "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-semifinalists"
+        }
+      ],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "note": "Kansas City was not covered by Michelin during its operating years."
+      },
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-semifinalists",
+      "editorial": {
+        "awardQualified": true,
+        "featuredException": false,
+        "exceptionPriority": null,
+        "collection": "recognized_cocktail_bar",
+        "basis": "james_beard",
+        "note": "The user explicitly described Manifesto as an amazing cocktail-bar experience; the venue was a named 2018 James Beard semifinalist."
+      }
+    },
+    {
+      "id": "bar-death-and-co-denver",
+      "type": "bar",
+      "title": "Death & Co Denver",
+      "venueId": "venue-death-and-co-denver",
+      "status": "confirmed",
+      "favorite": true,
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Date unknown (Denver outpost opened May 2018)",
+        "precision": "unknown",
+        "source": "Alex directly recalled enjoying Death & Co in Denver on October 25, 2026."
+      },
+      "summary": "A personally memorable cocktail-bar experience at Death & Co inside Denver's Ramble Hotel in RiNo. This Denver outpost opened in May 2018; the date of the visit remains unknown.",
+      "recognitions": [],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "note": "No Michelin or venue-specific James Beard recognition has been verified for the Denver location."
+      },
+      "sourceUrl": "https://www.deathandcompany.com/location/death-and-company-denver/",
+      "editorial": {
+        "awardQualified": false,
+        "featuredException": true,
+        "exceptionPriority": "permanent",
+        "collection": "featured_cocktail_memory",
+        "basis": null,
+        "note": "The user expressly described Death & Co Denver as amazing and asked to include memorable cocktail bars. Awards earned by the New York location or at other competitions must not be attributed to the Denver site."
       }
     }
   ],
