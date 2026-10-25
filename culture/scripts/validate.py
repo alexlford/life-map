@@ -58,7 +58,8 @@ assert interview_data["periods"]["New York City"].startswith("2018–2020")
 assert "2010" in interview_data["periods"]["Chicago"]
 assert interview_data["periods"]["St. Louis"].startswith("2011–2014")
 assert interview_data["periods"]["Breckenridge"] == "2021, 2022 and 2023"
-assert all(next(c for c in candidates if c["name"] == name)["visitStatus"] == "unreviewed" for name in ["PDT (Please Don't Tell)", "The Aviary", "The Violet Hour", "Dominic's on the Hill"])
+assert all(next(c for c in candidates if c["name"] == name)["visitStatus"] == "unreviewed" for name in ["The Aviary", "The Violet Hour", "Dominic's on the Hill"])
+# PDT was reviewed in the next interview; the new assertion below guards its "maybe" answer.
 assert next(c for c in candidates if c["name"] == "The Aviary")["screening"]["status"] == "award_qualified"
 assert not any(r["title"] in {"PDT (Please Don't Tell)", "The Aviary", "Dominic's on the Hill"} for r in records)
 manifesto = next(r for r in records if r["title"] == "Manifesto" and r["type"] == "bar")
