@@ -90,6 +90,9 @@ def main():
     assert len(confirmed_interview) == 2 and {r["confirmedVisitId"] for r in confirmed_interview} == {charleston["id"], woodberry["id"]}
     clavel = next(r for r in INTERVIEW["candidates"] if r["area"] == "Baltimore" and r["name"] == "Clavel")
     assert clavel["visitStatus"] == "not_visited"
+    cinghiale = next(r for r in INTERVIEW["candidates"] if r["name"] == "Cinghiale" and r["area"] == "Baltimore")
+    assert cinghiale["visitStatus"] == "not_visited"
+    assert not any(r["name"] == "Cinghiale" for r in DATA["entries"])
     assert not any(r["name"] == "Clavel" for r in DATA["entries"])
     assert "visitStatus===\"not_visited\"" in (ROOT / "dining-interview.js").read_text(encoding="utf-8")
     assert "getAnswer(r)" in (ROOT / "dining-interview.js").read_text(encoding="utf-8")
