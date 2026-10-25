@@ -15,7 +15,9 @@
     "Boulder": "Historical restaurant interview; visits not yet established",
     "Aspen": "Historical restaurant interview; visits not yet established",
     "Vail / Beaver Creek": "Historical restaurant interview; visits not yet established",
-    "Telluride": "Historical restaurant interview; visits not yet established"
+    "Telluride": "Historical restaurant interview; visits not yet established",
+    "Boston": "Period not yet established; user remembers visits in Boston, Massachusetts.",
+    "Cape Cod": "Period not yet established; user remembers a great fish/seafood restaurant in Boston or on Cape Cod."
   },
   "statuses": [
     "unreviewed",
@@ -3744,7 +3746,7 @@
       "awardFamily": "both",
       "interviewCue": "Upscale modern Chinese on East Colfax; closed in October 2025.",
       "sourceUrl": "https://www.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists",
-      "visitStatus": "confirmed",
+      "visitStatus": "unreviewed",
       "visitPeriod": "2021-10-21",
       "reviewedOn": "2026-10-25",
       "reviewSource": "User-provided screenshot of a completed reservation for 2021-10-21; actual seating is not independently verified.",
@@ -3754,9 +3756,16 @@
         "evidenceUrl": "https://www.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists",
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
-        "note": "2019 James Beard Best New Restaurant semifinalist; 2023 Michelin Selected (after meal)"
+        "note": "2019 James Beard Best New Restaurant semifinalist; 2023 Michelin Selected (after meal) Completed reservation on file; meal attendance has not been confirmed."
       },
-      "confirmedVisitId": "dining-q-house-denver-2021-10-21"
+      "bookingEvidence": {
+        "reservationDate": "2021-10-21",
+        "partySize": 2,
+        "attendance": "unconfirmed",
+        "source": "completed_reservation_screenshot"
+      },
+      "researchOnly": true,
+      "bookingLeadRecordId": "dining-q-house-denver-2021-10-21"
     },
     {
       "id": "candidate-denver-metro-wildflower",
@@ -3767,7 +3776,7 @@
       "awardFamily": "michelin",
       "interviewCue": "LoHi contemporary seasonal tasting and à la carte menus.",
       "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/wildflower",
-      "visitStatus": "confirmed",
+      "visitStatus": "unreviewed",
       "visitPeriod": "2022-03-21",
       "reviewedOn": "2026-10-25",
       "reviewSource": "User-provided screenshot of a completed reservation for 2022-03-21; actual seating is not independently verified.",
@@ -3777,9 +3786,16 @@
         "evidenceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/wildflower",
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
-        "note": "MICHELIN Guide Selected in 2026; 2025 Young Chef Award for Aiden Tibbetts (both after 2022 meal)"
+        "note": "MICHELIN Guide Selected in 2026; 2025 Young Chef Award for Aiden Tibbetts (both after 2022 meal) Completed reservation on file; meal attendance has not been confirmed."
       },
-      "confirmedVisitId": "dining-wildflower-denver-2022-03-21"
+      "bookingEvidence": {
+        "reservationDate": "2022-03-21",
+        "partySize": 7,
+        "attendance": "unconfirmed",
+        "source": "completed_reservation_screenshot"
+      },
+      "researchOnly": true,
+      "bookingLeadRecordId": "dining-wildflower-denver-2022-03-21"
     },
     {
       "id": "candidate-denver-metro-uchi-denver",
@@ -4934,5 +4950,24 @@
     "venueTypes": "Include qualifying bars and beverage programs in addition to restaurants. A bar can qualify for James Beard Outstanding Bar, Best New Bar, beverage-program and cocktail-service honors. Maintain precise location and recipient for awards.",
     "personalExceptions": "Explicit user-selected dining and cocktail favorites remain visible even without a qualifying award; do not describe them as award-winning.",
     "dateAndRecognition": "Do not presume a bar was open during early visits merely because it won an award later. Newer 2025–2026 candidates must be checked against actual trip and opening dates."
-  }
+  },
+  "memoryLeads": [
+    {
+      "id": "boston-cape-cod-seafood-unknown",
+      "category": "dining",
+      "name": "Unidentified excellent fish restaurant — Boston or Cape Cod",
+      "status": "unidentified",
+      "venueIdentityConfirmed": false,
+      "visitDate": null,
+      "visitPeriod": null,
+      "possibleRegions": [
+        "Boston, Massachusetts",
+        "Cape Cod, Massachusetts"
+      ],
+      "cuisine": "fish/seafood",
+      "source": "Alex's recollection on October 25, 2026",
+      "note": "User remembers a great fish restaurant from time in Boston or Cape Cod. Do not assume a specific city, restaurant, date, Michelin status, or James Beard connection. Interview research pending.",
+      "publishAsExperience": false
+    }
+  ]
 }

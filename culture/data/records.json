@@ -47,7 +47,8 @@
     "familyStory": "A venue may carry a narrative across sister restaurants or expansions. Guide badges identify the recognized original without treating each branch as a separate unverified award.",
     "criterionAudit": "Keep separate: verified Michelin Guide inclusion (stars, Bib, Selected/historical Plate), James Beard semifinalist/finalist/winner at the specific venue or chef while working there, explicitly featured personal memories, user-confirmed history without award, uncertain leads, and reservation-only evidence. Never count unverified founders' awards from unrelated restaurants or award years as the historical dining year.",
     "stageMemories": "Confirmed live outings can be recorded with a provisional production title. Verify the tour period and venue independently but do not infer exact performance dates; labels are about the memory.",
-    "culturalExperiences": "Concert, festival, theatrical, live television, magic and opera entries can be supported by user recollections or personal event archive screenshots without Michelin/James Beard recognition. Show exact performance dates only when supported; a run's date window never proves a particular night."
+    "culturalExperiences": "Concert, festival, theatrical, live television, magic and opera entries can be supported by user recollections or personal event archive screenshots without Michelin/James Beard recognition. Show exact performance dates only when supported; a run's date window never proves a particular night.",
+    "reservationDisambiguation": "Confirmed venue attendance never makes a completed reservation date a confirmed meal date. A booking without direct visit confirmation is reservation_only and excluded from published experiences. Store booking date, party size, and provenance under reservations, not visit.date."
   },
   "venues": [
     {
@@ -1084,17 +1085,16 @@
       "venueId": "venue-woodberry-kitchen-baltimore-2018-2021",
       "status": "confirmed",
       "visit": {
-        "date": "2018-05-16",
+        "date": null,
         "year": 2018,
         "possibleYears": [
           2018
         ],
-        "label": "2018-05-16",
-        "precision": "day",
-        "source": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue.",
-        "evidenceType": "completed_reservation_and_user_confirmed_venue",
-        "attendanceCertainty": "user_confirmed_venue_with_completed_reservation",
-        "partySize": 2
+        "label": "2018 (exact dining date not established)",
+        "precision": "approximate_year",
+        "source": "Alex expressly confirmed dining at Woodberry Kitchen and placed it in 2018. A completed 2018-05-16 reservation is on file but is not independently proven as the dining date.",
+        "evidenceType": "direct_confirmation_of_venue_plus_reservation",
+        "attendanceCertainty": "user_confirmed_venue_exact_meal_date_unverified"
       },
       "summary": "Confirmed Woodberry Kitchen visit, placed on the 2018 timeline (exact date unknown). Chef Spike Gjerde won the James Beard Best Chef: Mid-Atlantic award in 2015, before this visit.",
       "recognitions": [
@@ -1140,7 +1140,17 @@
         "story": "You recognized Woodberry Kitchen from your time in Baltimore. We can preserve it here without asking you to reconstruct a detailed reservation.",
         "period": "2018",
         "source": "User’s directly shared recollection, with verified contextual description where applicable"
-      }
+      },
+      "reservations": [
+        {
+          "date": "2018-05-16",
+          "partySize": 2,
+          "reservationStatus": "completed",
+          "attendanceInference": "not_independently_verified",
+          "source": "user_provided_reservation_screenshot",
+          "sourceNote": "Historical booking evidence; exact dining date unverified"
+        }
+      ]
     },
     {
       "id": "dining-momofuku-ccdc-washington-dc",
@@ -1149,17 +1159,18 @@
       "venueId": "venue-momofuku-ccdc-washington-dc",
       "status": "confirmed",
       "visit": {
-        "date": "2018-08-21",
-        "year": 2018,
+        "date": null,
+        "year": null,
         "possibleYears": [
-          2018
+          2018,
+          2019,
+          2020
         ],
-        "label": "2018-08-21",
-        "precision": "day",
-        "source": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue.",
-        "evidenceType": "completed_reservation_and_user_confirmed_venue",
-        "attendanceCertainty": "user_confirmed_venue_with_completed_reservation",
-        "partySize": 4
+        "label": "Washington, DC years (2018–2020; exact dining date unknown)",
+        "precision": "year_range",
+        "source": "Alex expressly confirmed dining at Momofuku CCDC. A completed 2018-08-21 reservation is on file but is not independently proven as the dining date.",
+        "evidenceType": "direct_confirmation_of_venue_plus_reservation",
+        "attendanceCertainty": "user_confirmed_venue_exact_meal_date_unverified"
       },
       "summary": "Confirmed visit to David Chang's Momofuku CCDC in Washington, DC. Exact meal date uncertain; restaurant operated 2015 to March 2020. Michelin listed it with The Plate designation in 2019 (not a star). Chang's 2013 James Beard Outstanding Chef award was for Momofuku Noodle Bar in New York, not this restaurant.",
       "recognitions": [
@@ -1207,7 +1218,17 @@
         "story": "You recalled visiting one of David Chang's restaurants in Washington and then confirmed it was Momofuku CCDC. That identification is the story worth preserving.",
         "period": "2018",
         "source": "User’s directly shared recollection, with verified contextual description where applicable"
-      }
+      },
+      "reservations": [
+        {
+          "date": "2018-08-21",
+          "partySize": 4,
+          "reservationStatus": "completed",
+          "attendanceInference": "not_independently_verified",
+          "source": "user_provided_reservation_screenshot",
+          "sourceNote": "Historical booking evidence; exact dining date unverified"
+        }
+      ]
     },
     {
       "id": "dining-sauvage-steamboat-2021-01",
@@ -1432,17 +1453,19 @@
       "venueId": "venue-rec-pier-chop-house-baltimore",
       "status": "confirmed",
       "visit": {
-        "date": "2018-05-16",
-        "year": 2018,
+        "date": null,
+        "year": null,
         "possibleYears": [
-          2018
+          2018,
+          2019,
+          2020,
+          2021
         ],
-        "label": "2018-05-16",
-        "precision": "day",
-        "source": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue.",
-        "evidenceType": "completed_reservation_and_user_confirmed_venue",
-        "attendanceCertainty": "user_confirmed_venue_with_completed_reservation",
-        "partySize": 2
+        "label": "Baltimore years (2018–2021; exact dining date unknown)",
+        "precision": "year_range",
+        "source": "Alex expressly confirmed dining at Rec Pier Chop House. A completed 2018-05-16 reservation is on file but is not independently proven as the dining date.",
+        "evidenceType": "direct_confirmation_of_venue_plus_reservation",
+        "attendanceCertainty": "user_confirmed_venue_exact_meal_date_unverified"
       },
       "summary": "Confirmed visit to Rec Pier Chop House, the Italian chophouse inside Sagamore Pendry Baltimore in Fells Point. Exact meal date remains unknown.",
       "recognitions": [],
@@ -1477,7 +1500,17 @@
         "story": "You recalled dining at the Sagamore Pendry Baltimore and identified its restaurant as Rec Pier Chop House. It connects another place and occasion to your Baltimore years.",
         "period": "Baltimore years",
         "source": "User’s directly shared recollection, with verified contextual description where applicable"
-      }
+      },
+      "reservations": [
+        {
+          "date": "2018-05-16",
+          "partySize": 2,
+          "reservationStatus": "completed",
+          "attendanceInference": "not_independently_verified",
+          "source": "user_provided_reservation_screenshot",
+          "sourceNote": "Historical booking evidence; exact dining date unverified"
+        }
+      ]
     },
     {
       "id": "bar-manifesto-kansas-city",
@@ -1774,21 +1807,18 @@
       "type": "dining",
       "title": "Q House",
       "venueId": "venue-q-house-denver-2021-10-21",
-      "status": "confirmed",
+      "status": "reservation_only",
       "visit": {
-        "date": "2021-10-21",
-        "year": 2021,
-        "possibleYears": [
-          2021
-        ],
-        "label": "2021-10-21",
-        "precision": "day",
-        "source": "Completed reservation screenshot shared by Alex on 2026-10-25; attendance plausible but not independently verified.",
-        "evidenceType": "completed_reservation",
-        "attendanceCertainty": "not_independently_verified",
-        "partySize": 2
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Reservation on file; attendance not confirmed",
+        "precision": "unknown",
+        "source": "Completed reservation screenshot supplied 2026-10-25; booking date does not independently prove dining on that date.",
+        "evidenceType": "completed_reservation_only",
+        "attendanceCertainty": "not_independently_verified"
       },
-      "summary": "A completed reservation for two at Q House on October 21, 2021. Q House was a 2019 James Beard Best New Restaurant semifinalist and later became a Michelin Selected restaurant in Colorado's inaugural 2023 guide. The restaurant closed in 2025.",
+      "summary": "A completed reservation is documented for Q House on 2021-10-21. Attendance at this restaurant was not directly confirmed. Michelin and James Beard recognition belongs to the restaurant, not to a verified personal visit.",
       "recognitions": [
         {
           "organization": "James Beard Foundation",
@@ -1797,7 +1827,7 @@
           "category": "Best New Restaurant",
           "recipient": "Q House, Denver",
           "relationship": "restaurant itself",
-          "timingRelativeToVisit": "before_visit",
+          "timingRelativeToVisit": "unknown_visit_date",
           "sourceUrl": "https://www.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists"
         }
       ],
@@ -1814,40 +1844,48 @@
         "awardQualified": true,
         "collection": "recognized_dining",
         "basis": "james_beard_and_michelin",
-        "note": "2019 James Beard semifinalist predates the meal; Michelin 2023 selection postdates it."
+        "note": "2019 James Beard semifinalist predates the meal; Michelin 2023 selection postdates it. Booking only; this is an interview lead, not a confirmed experience."
       },
       "curation": {
         "status": "qualifies",
         "basis": "james_beard_and_michelin",
-        "reason": "2019 James Beard semifinalist predates the meal; Michelin 2023 selection postdates it.",
+        "reason": "James Beard 2019 Best New Restaurant semifinalist predates the 2021 reservation. Michelin Selected in 2023 postdates the reservation. User attendance is unconfirmed.",
         "evidenceUrls": [
           "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
           "https://www.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists"
         ],
         "reviewedOn": "2026-10-25",
-        "confidence": "documented_recognition; reservation_documented_meal"
-      }
+        "confidence": "documented_recognition; reservation_documented_meal",
+        "awardAtVisit": "Recognition is venue-level only; personal dining attendance remains unverified."
+      },
+      "reservations": [
+        {
+          "date": "2021-10-21",
+          "partySize": 2,
+          "reservationStatus": "completed",
+          "attendanceInference": "not_independently_verified",
+          "source": "user_provided_reservation_screenshot",
+          "sourceNote": "Historical booking evidence; exact dining date unverified"
+        }
+      ]
     },
     {
       "id": "dining-wildflower-denver-2022-03-21",
       "type": "dining",
       "title": "Wildflower",
       "venueId": "venue-wildflower-denver-2022-03-21",
-      "status": "confirmed",
+      "status": "reservation_only",
       "visit": {
-        "date": "2022-03-21",
-        "year": 2022,
-        "possibleYears": [
-          2022
-        ],
-        "label": "2022-03-21",
-        "precision": "day",
-        "source": "Completed reservation screenshot shared by Alex on 2026-10-25; attendance plausible but not independently verified.",
-        "evidenceType": "completed_reservation",
-        "attendanceCertainty": "not_independently_verified",
-        "partySize": 7
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Reservation on file; attendance not confirmed",
+        "precision": "unknown",
+        "source": "Completed reservation screenshot supplied 2026-10-25; booking date does not independently prove dining on that date.",
+        "evidenceType": "completed_reservation_only",
+        "attendanceCertainty": "not_independently_verified"
       },
-      "summary": "Completed reservation for seven at Wildflower, March 21, 2022. Wildflower subsequently appeared as Michelin Selected in the Colorado Guide, and its chef Aiden Tibbetts received Michelin's 2025 Young Chef Award; neither recognition is presumed to have existed at the time of the meal.",
+      "summary": "A completed reservation is documented for Wildflower on 2022-03-21. Attendance at this restaurant was not directly confirmed. Michelin and James Beard recognition belongs to the restaurant, not to a verified personal visit.",
       "recognitions": [
         {
           "organization": "MICHELIN Guide",
@@ -1856,7 +1894,7 @@
           "category": "Young Chef Award",
           "recipient": "Aiden Tibbetts",
           "relationship": "chef at Wildflower",
-          "timingRelativeToVisit": "after_visit",
+          "timingRelativeToVisit": "unknown_visit_date",
           "sourceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/aiden-tibbetts-wildflower-young-chef-award-winner-michelin-star-guide-ceremony-colorado"
         }
       ],
@@ -1873,19 +1911,30 @@
         "awardQualified": true,
         "collection": "recognized_dining",
         "basis": "michelin",
-        "note": "Michelin recognition documented after this reservation, not a Michelin star."
+        "note": "Michelin recognition documented after this reservation, not a Michelin star. Booking only; this is an interview lead, not a confirmed experience."
       },
       "curation": {
         "status": "qualifies",
         "basis": "michelin",
-        "reason": "Michelin recognition documented after this reservation, not a Michelin star.",
+        "reason": "Michelin Guide recognition in 2026 postdates the 2022 reservation; attendance remains unconfirmed.",
         "evidenceUrls": [
           "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/wildflower",
           "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/aiden-tibbetts-wildflower-young-chef-award-winner-michelin-star-guide-ceremony-colorado"
         ],
         "reviewedOn": "2026-10-25",
-        "confidence": "documented_recognition; reservation_documented_meal"
-      }
+        "confidence": "documented_recognition; reservation_documented_meal",
+        "awardAtVisit": "Recognition is venue-level only; personal dining attendance remains unverified."
+      },
+      "reservations": [
+        {
+          "date": "2022-03-21",
+          "partySize": 7,
+          "reservationStatus": "completed",
+          "attendanceInference": "not_independently_verified",
+          "source": "user_provided_reservation_screenshot",
+          "sourceNote": "Historical booking evidence; exact dining date unverified"
+        }
+      ]
     },
     {
       "id": "dining-yuan-wonton-denver",
