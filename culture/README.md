@@ -95,3 +95,11 @@ Source links:
 - https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/wildflower
 - https://guide.michelin.com/us/en/article/michelin-guide-ceremony/aiden-tibbetts-wildflower-young-chef-award-winner-michelin-star-guide-ceremony-colorado
 - https://uchi.uchirestaurants.com/our-story/
+
+## PDT possible visit and further cocktail-bar screening (October 25, 2026)
+
+- **PDT (Please Don't Tell), New York City**: explicitly marked `maybe` by user for 2018–2020. No confirmed experience created. JBF officially lists PDT as the **2012 Outstanding Bar Program winner** (award year is not a visit year): https://archive.jamesbeard.org/blog/outstanding-bar-program-pdt .
+- Nine further award-recognized candidate bars were researched using **primary James Beard semifinalist rosters**: Clover Club (NYC), Columbia Room (DC), Best Intentions, Bisous, Hopleaf Bar, Truce (Chicago), Fern Bar and Wild Child (Kansas City metro), Traveling Mercies (Aurora/Denver metro). These are **all unreviewed and excluded from confirmed totals**.
+- **Award recipient integrity**: bartender-level semifinalist nominations for Best Intentions (Christopher Marty), Fern Bar (Diana Condori) and Wild Child (Jay Sanders) are attributed to the professional, not passed off as venue-level awards.
+- **Temporal screening**: entries awarded in 2025 or 2026 may only have been available on later visits. Do not present those bars as 2018–2020 NYC destinations or infer their existence on a user's earlier trip.
+- Official records: https://archive.jamesbeard.org/blog/the-2018-james-beard-award-semifinalists ; https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists ; https://www.jamesbeard.org/stories/james-beard-award-semifinalists-2026 .
