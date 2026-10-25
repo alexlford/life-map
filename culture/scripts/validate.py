@@ -42,6 +42,9 @@ rec_pier = next(c for c in candidates if c["name"] == "Rec Pier Chop House" and 
 assert rec_pier["visitStatus"] == "confirmed" and rec_pier["confirmedVisitId"] == "dining-rec-pier-chop-house-baltimore"
 assert not any(r["title"] == "Le Fou Frog" for r in records)
 assert not any(c["name"] == "Le Fou Frog" for c in candidates)
+assert {r["visit"]["year"] for r in records if r["venueId"] == "venue-breckenridge-distillery"} == {2021, 2022, 2023}
+assert next(c for c in candidates if c["name"] == "PDT (Please Don\u0027t Tell)")["visitStatus"] == "maybe"
+assert next(c for c in candidates if c["name"] == "The Dead Rabbit")["visitStatus"] == "not_visited"
 assert len([r for r in records if r["type"] == "dining" and r["status"] == "confirmed"]) == 14
 assert len([r for r in records if r["type"] == "bar" and r["status"] == "confirmed"]) == 2
 breck = [r for r in records if r["venueId"] == "venue-breckenridge-distillery"]
