@@ -34,6 +34,11 @@ assert all(c["visitStatus"] in {"confirmed", "not_visited", "maybe", "unreviewed
 pdt = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "PDT (Please Don't Tell)")
 rabbit = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "The Dead Rabbit")
 assert pdt["visitStatus"] == "maybe" and rabbit["visitStatus"] == "not_visited"
+leyenda = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "Leyenda")
+dante = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "Dante")
+assert leyenda["visitStatus"] == "not_visited" and leyenda["visitPeriod"].startswith("2018–2020")
+assert dante["visitStatus"] == "unreviewed"
+assert not any(r["title"] in {"Leyenda", "Dante"} for r in records)
 assert rabbit["recognitionYear"] == 2019 and "finalist" in rabbit["recognition"]
 assert not any(r["title"] in {"PDT (Please Don't Tell)", "The Dead Rabbit"} for r in records)
 
