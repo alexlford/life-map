@@ -49,6 +49,16 @@ rec_pier = next(c for c in candidates if c["name"] == "Rec Pier Chop House" and 
 assert rec_pier["visitStatus"] == "confirmed" and rec_pier["confirmedVisitId"] == "dining-rec-pier-chop-house-baltimore"
 assert not any(r["title"] == "Le Fou Frog" for r in records)
 assert not any(c["name"] == "Le Fou Frog" for c in candidates)
+north_pond = next(c for c in candidates if c["name"] == "North Pond" and c["area"] == "Chicago")
+assert north_pond["visitStatus"] == "unreviewed"
+assert north_pond["userMemoryLead"]["identityConfirmed"] is False
+assert north_pond["screening"]["basis"] == "both"
+assert not any(r["title"] == "North Pond" for r in records)
+pdt = next(c for c in candidates if c["name"] == "PDT (Please Don't Tell)" and c["area"] == "New York City")
+assert pdt["visitStatus"] == "maybe"
+dead_rabbit = next(c for c in candidates if c["name"] == "The Dead Rabbit" and c["area"] == "New York City")
+assert dead_rabbit["visitStatus"] == "not_visited"
+
 assert len([r for r in records if r["type"] == "dining" and r["status"] == "confirmed"]) == 16
 assert len([r for r in records if r["type"] == "bar" and r["status"] == "confirmed"]) == 2
 breck = [r for r in records if r["venueId"] == "venue-breckenridge-distillery"]
