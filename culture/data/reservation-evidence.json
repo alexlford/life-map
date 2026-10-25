@@ -144,9 +144,9 @@
       "reservationStatus": "completed",
       "source": "user_provided_reservation_screenshot",
       "screenshot": "IMG_3559.jpeg",
-      "attendanceInference": "probable_not_independently_verified",
-      "publicCuration": "award_qualified",
-      "publishedRecordId": "dining-wildflower-denver-2022-03-21"
+      "attendanceInference": "not_confirmed",
+      "publicCuration": "research_only",
+      "archivedRecordId": "dining-wildflower-denver-2022-03-21"
     },
     {
       "id": "atelier-by-radex-2021-11-07",
@@ -167,9 +167,9 @@
       "reservationStatus": "completed",
       "source": "user_provided_reservation_screenshot",
       "screenshot": "IMG_3558.jpeg",
-      "attendanceInference": "probable_not_independently_verified",
-      "publicCuration": "award_qualified",
-      "publishedRecordId": "dining-q-house-denver-2021-10-21"
+      "attendanceInference": "not_confirmed",
+      "publicCuration": "research_only",
+      "archivedRecordId": "dining-q-house-denver-2021-10-21"
     },
     {
       "id": "shells-and-sauce-2021-10-05",

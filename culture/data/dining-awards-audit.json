@@ -1,7 +1,7 @@
 {
   "version": 1,
   "auditedOn": "2026-10-25",
-  "scope": "The confirmed Culture Passport dining/bar records, plus new restaurant and Kansas City BBQ memories and high-value uncertain booking leads. The separate 178-candidate interview is an ongoing research queue, not 178 fully reverified places.",
+  "scope": "The confirmed Culture Passport dining/bar records, plus new restaurant and Kansas City BBQ memories and high-value uncertain booking leads. The separate 178-candidate interview is an ongoing research queue, not 178 fully reverified places. 2026-10-25 integrity pass: Q House and Wildflower have award-qualified venue identities but reservation-only personal evidence, so their experience entries are archived with nonconfirmed status, excluded from public totals.",
   "criteria": {
     "qualifies": "Documented Michelin Guide star, Bib Gourmand, Selected/recommended/historical Plate, or a James Beard winner/finalist/semifinalist for the restaurant or chef during their tenure there.",
     "personal": "User explicitly chose to preserve a personally meaningful venue regardless of award.",
@@ -10,14 +10,14 @@
     "visit": "User confirmations and completed reservation records remain distinct. A reservation alone does not establish arrival."
   },
   "summary": {
-    "canonExperienceRecords": 26,
-    "distinctPublishedVenues": 24,
-    "recognized": 17,
+    "canonExperienceRecords": 24,
+    "distinctPublishedVenues": 22,
+    "recognized": 15,
     "featuredPersonal": 4,
     "unfeaturedOther": 3,
     "additionalConfirmedArchiveOnly": 6,
     "possibleVisitLeads": 3,
-    "reviewedButNotConfirmedReservations": 2
+    "reviewedButNotConfirmedReservations": 4
   },
   "publishedVenues": [
     {
@@ -314,52 +314,6 @@
       "visitConfidence": "user_confirmed_or_recorded_reservation"
     },
     {
-      "venueId": "venue-q-house-denver-2021-10-21",
-      "name": "Q House",
-      "city": "Denver",
-      "region": "Colorado",
-      "experienceIds": [
-        "dining-q-house-denver-2021-10-21"
-      ],
-      "rememberedPeriods": [
-        "2021-10-21"
-      ],
-      "recognitionStatus": "qualifies",
-      "sourceUrls": [
-        "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
-        "https://www.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists"
-      ],
-      "recognitionSummary": [
-        "Michelin Selected (2023)",
-        "James Beard semifinalist 2019: Q House, Denver, Best New Restaurant"
-      ],
-      "editorialNote": "2019 James Beard semifinalist predates the meal; Michelin 2023 selection postdates it.",
-      "visitConfidence": "user_confirmed_or_recorded_reservation"
-    },
-    {
-      "venueId": "venue-wildflower-denver-2022-03-21",
-      "name": "Wildflower",
-      "city": "Denver",
-      "region": "Colorado",
-      "experienceIds": [
-        "dining-wildflower-denver-2022-03-21"
-      ],
-      "rememberedPeriods": [
-        "2022-03-21"
-      ],
-      "recognitionStatus": "qualifies",
-      "sourceUrls": [
-        "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/wildflower",
-        "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/aiden-tibbetts-wildflower-young-chef-award-winner-michelin-star-guide-ceremony-colorado"
-      ],
-      "recognitionSummary": [
-        "Michelin Selected (2026)",
-        "James Beard winner 2025: Aiden Tibbetts, Young Chef Award"
-      ],
-      "editorialNote": "Michelin recognition documented after this reservation, not a Michelin star.",
-      "visitConfidence": "user_confirmed_or_recorded_reservation"
-    },
-    {
       "venueId": "venue-yuan-wonton-denver",
       "name": "Yuan Wonton",
       "city": "Denver",
@@ -616,6 +570,22 @@
       "recognition": "Chef Martin Heuser 2013 JBF semifinalist; restaurant wine program semifinalist 2024",
       "status": "completed_reservation_needs_attendance_confirmation",
       "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/"
+    },
+    {
+      "name": "Q House",
+      "period": "2021-10-21 reservation on file",
+      "recognition": "2019 James Beard Best New Restaurant semifinalist; 2023 Michelin Selected",
+      "status": "completed_reservation_needs_attendance_confirmation",
+      "archivedRecordId": "dining-q-house-denver-2021-10-21",
+      "sourceUrl": "https://www.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists"
+    },
+    {
+      "name": "Wildflower",
+      "period": "2022-03-21 reservation on file",
+      "recognition": "2026 Michelin Selected; subsequent chef recognition",
+      "status": "completed_reservation_needs_attendance_confirmation",
+      "archivedRecordId": "dining-wildflower-denver-2022-03-21",
+      "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/wildflower"
     }
   ],
   "interviewCandidateCount": 178,
@@ -623,5 +593,55 @@
     "concerts": "Collect artist, venue, tour/event, city, approximate year and the memory rather than set times.",
     "opera": "Collect production, opera house, approximate year and occasion.",
     "theater": "Collect play, musical or theatrical production, venue, year and companion/occasion only if remembered."
-  }
+  },
+  "reservationOnlyVenues": [
+    {
+      "venueId": "venue-q-house-denver-2021-10-21",
+      "name": "Q House",
+      "city": "Denver",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-q-house-denver-2021-10-21"
+      ],
+      "rememberedPeriods": [
+        "2021-10-21"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
+        "https://www.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists"
+      ],
+      "recognitionSummary": [
+        "Michelin Selected (2023)",
+        "James Beard semifinalist 2019: Q House, Denver, Best New Restaurant"
+      ],
+      "editorialNote": "2019 James Beard semifinalist predates the meal; Michelin 2023 selection postdates it.",
+      "visitConfidence": "reservation_only_not_a_confirmed_dining_experience",
+      "publicationStatus": "research_only"
+    },
+    {
+      "venueId": "venue-wildflower-denver-2022-03-21",
+      "name": "Wildflower",
+      "city": "Denver",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-wildflower-denver-2022-03-21"
+      ],
+      "rememberedPeriods": [
+        "2022-03-21"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/wildflower",
+        "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/aiden-tibbetts-wildflower-young-chef-award-winner-michelin-star-guide-ceremony-colorado"
+      ],
+      "recognitionSummary": [
+        "Michelin Selected (2026)",
+        "James Beard winner 2025: Aiden Tibbetts, Young Chef Award"
+      ],
+      "editorialNote": "Michelin recognition documented after this reservation, not a Michelin star.",
+      "visitConfidence": "reservation_only_not_a_confirmed_dining_experience",
+      "publicationStatus": "research_only"
+    }
+  ]
 }
