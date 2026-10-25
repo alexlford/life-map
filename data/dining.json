@@ -891,6 +891,88 @@
         "awardAtVisit": "unknown_visit_date"
       },
       "locationUrl": "https://www.google.com/maps/search/?api=1&query=Yuan+Wonton+Denver"
+    },
+    {
+      "id": "safta-denver",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Safta",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "neighborhood": "RiNo / The Source Hotel",
+      "address": "3330 Brighton Blvd., Suite 201, Denver, CO 80216",
+      "visit": {
+        "date": null,
+        "dateText": "Date not established",
+        "precision": "unknown",
+        "source": "Alex directly confirmed visiting Safta in Denver in the 2026-10-25 Culture Passport conversation; year and occasion not provided."
+      },
+      "guide": {
+        "edition": 2026,
+        "distinction": "selected",
+        "stars": 0,
+        "historicalVisitDistinction": "visit_date_unknown",
+        "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/safta",
+        "note": "Michelin Guide Selected/Recommended from inaugural Colorado selection 2023 onward, including 2026. Not starred and not Bib Gourmand. Alon Shaya's 2015 James Beard Best Chef: South award was earned at Domenica in New Orleans and is not attributed to Safta."
+      },
+      "recognitions": [],
+      "summary": "A confirmed visit to Safta, the airy Israeli restaurant at The Source Hotel in Denver. The setting and distinctive kitchen give this memory a place in the collection; the particular occasion is still to be recalled.",
+      "evidenceStatus": "reported",
+      "referenceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/safta",
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=3330%20Brighton%20Blvd.%2C%20Suite%20201%2C%20Denver%2C%20CO%2080216",
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "The restaurant itself appears as a Michelin Guide Recommended/Selected restaurant, independently of other locations or chef awards.",
+        "evidenceUrls": [
+          "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/safta",
+          "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented_recognition; firsthand user-confirmed visit; time unknown"
+      }
+    },
+    {
+      "id": "smok-denver",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Smok",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "neighborhood": "RiNo / The Source Hotel",
+      "address": "3330 Brighton Blvd., Suite 202, Denver, CO 80216",
+      "visit": {
+        "date": null,
+        "dateText": "Date not established",
+        "precision": "unknown",
+        "source": "Alex directly confirmed visiting Smok in Denver in the 2026-10-25 Culture Passport conversation; year and occasion not provided."
+      },
+      "guide": {
+        "edition": 2026,
+        "distinction": "selected",
+        "stars": 0,
+        "historicalVisitDistinction": "visit_date_unknown",
+        "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/smok",
+        "note": "Michelin Guide Selected/Recommended from Colorado's inaugural 2023 selection through the 2026 edition. Not starred and not Bib Gourmand."
+      },
+      "recognitions": [],
+      "summary": "A confirmed visit to Smok, Chef Bill Espiricueta's barbecue restaurant at The Source Hotel in Denver. The specific meal remains open for you to describe in your own words.",
+      "evidenceStatus": "reported",
+      "referenceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/smok",
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=3330%20Brighton%20Blvd.%2C%20Suite%20202%2C%20Denver%2C%20CO%2080216",
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "The restaurant itself appears as a Michelin Guide Recommended/Selected restaurant, independently of other locations or chef awards.",
+        "evidenceUrls": [
+          "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/smok",
+          "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented_recognition; firsthand user-confirmed visit; time unknown"
+      }
     }
   ],
   "excludedResearch": [

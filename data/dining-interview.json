@@ -542,12 +542,16 @@
       "id": "enveretro-safta",
       "area": "Denver Metro",
       "name": "Safta",
-      "recognition": "Michelin Selected (2023 Guide)",
+      "recognition": "Michelin Guide Selected (2023–2026), not Michelin-starred",
       "recognitionYear": 2023,
       "awardFamily": "michelin",
       "interviewCue": "The Source hotel; Israeli-style hummus and pita.",
-      "sourceUrl": "https://visitdenver.com/articles/post/denver-michelin-guide/",
-      "visitStatus": "unreviewed"
+      "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/safta",
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "safta-denver",
+      "visitPeriod": "Denver years; date not recalled",
+      "reviewSource": "Alex's direct confirmation on 2026-10-25",
+      "reviewedOn": "2026-10-25"
     },
     {
       "id": "enveretro-temaki-den",
@@ -719,6 +723,21 @@
       "visitPeriod": "Kansas City trips since 2010, date unknown",
       "reviewedOn": "2026-10-25",
       "reviewSource": "Direct user confirmation October 25, 2026"
+    },
+    {
+      "id": "candidate-denver-metro-smok-denver",
+      "area": "Denver Metro",
+      "name": "Smok",
+      "recognition": "Michelin Guide Selected (2023–2026), not Michelin-starred",
+      "recognitionYear": 2023,
+      "awardFamily": "michelin",
+      "interviewCue": "Chef-driven barbecue restaurant in the Source Hotel, with a relaxed counter-service setting.",
+      "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/smok",
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "smok-denver",
+      "visitPeriod": "Denver years; date not recalled",
+      "reviewSource": "Alex's direct confirmation on 2026-10-25",
+      "reviewedOn": "2026-10-25"
     }
   ]
 }
