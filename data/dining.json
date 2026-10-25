@@ -1098,7 +1098,10 @@
         "approximateYear": 2021,
         "dateText": "Fall 2021 · after the Chicago Marathon",
         "precision": "approximate_month",
-        "source": "Alex directly confirmed visiting North Pond, Chicago in October 2021, the week after the October 10 Chicago Marathon (message Oct 25, 2026)."
+        "source": "Alex directly confirmed visiting North Pond, Chicago in October 2021, the week after the October 10 Chicago Marathon (message Oct 25, 2026).",
+        "possibleYears": [
+          2021
+        ]
       },
       "guide": {
         "edition": 2021,
