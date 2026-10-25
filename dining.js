@@ -27,9 +27,9 @@
       add(card,"p","record-date",r.visit.dateText);
       add(card,"p","record-summary",r.summary);
       if(r.kind==="restaurant"){
-        const distinction=(r.guide.distinction==="selected"?"Michelin Selected":r.guide.distinction);
+        const distinction=r.guide.distinction==="selected"?"Michelin Selected":r.guide.distinction==="starred"?(r.guide.stars+" Michelin Star"+(r.guide.stars===1?"":"s")):r.guide.distinction;
         add(card,"span","distinction",distinction+" · "+r.guide.edition+" Guide");
-        add(card,"p","note","Date and recognition at the time of the meal are not yet established.");
+        add(card,"p","note",r.guide.distinction==="starred"&&r.visit.timingRelativeToAward==="unverified"?"Exact meal date still unknown; whether the star had already been awarded at the time is unverified.":"Exact visit date and Michelin recognition at the time of the meal are not yet established.");
         const bottom=add(card,"div","record-footer");
         external(bottom,"View Michelin listing ↗",r.guide.sourceUrl);
       }else if(r.candidates){
@@ -47,8 +47,9 @@
     });
   }
   function updateStats(){
-    // Only unambiguous named visits with a star in the relevant guide edition count.
-    const counted=entries.filter(x=>x.status==="confirmed"&&x.kind==="restaurant"&&x.guide&&x.guide.historicalVisitDistinction==="starred"&&x.guide.starsAtVisit>0);
+    // Count named visited venues that earned stars in the guide edition matching the remembered visit year.
+    // The exact date relative to the star award is recorded separately and must never be inferred.
+    const counted=entries.filter(x=>x.status==="confirmed"&&x.kind==="restaurant"&&x.guide?.distinction==="starred"&&x.guide.stars>0&&x.visit?.approximateYear===x.guide.edition);
     const visits=entries.filter(x=>x.status==="confirmed");
     const leads=entries.filter(x=>x.status==="researching");
     document.getElementById("stat-stars").textContent=String(counted.length);
