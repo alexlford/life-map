@@ -316,7 +316,7 @@ assert next(c for c in candidates if c["name"] == "Existing Conditions")["visitS
 assert any(c["id"] == "lyric-ring-performances" for c in stage_research["candidates"])
 date_app=(ROOT / "assets/app.js").read_text(encoding="utf-8")
 assert "const readableDate=(d)=>" in date_app
-assert "reservation on file" in date_app
+assert "Historical notes & sources" in date_app
 assert "Reservation evidence:" in date_app
 assert "Production's engagement dates:" in date_app
 assert "const dateMonth=" in date_app
