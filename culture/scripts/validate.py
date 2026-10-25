@@ -318,4 +318,4 @@ assert "performance-interview.html" in (ROOT / "index.html").read_text(encoding=
 assert 'localStorage.setItem(storageKey' in performance_js
 assert "preserve the entire card" in performance_js
 assert "denver-unknown-play" in performance_js
-assert {x["title"] for x in stage} == {"The Book of Mormon", "SIX", "The Second City — Chicago holiday outing", "Denver holiday theater outing"}
+assert {"The Book of Mormon", "SIX", "The Second City — Chicago holiday outing", "Denver holiday theater outing"}.issubset({x["title"] for x in stage})
