@@ -3268,7 +3268,7 @@
     "defaultQueue": "award_qualified",
     "awardQualified": "Named venue listed by Michelin in a year, or JBF recognized the venue itself or a chef at that venue in the relevant award year (semifinalist, nominee, finalist, winner). Recognition may come after the user's dining visit but must be labeled with historical award year.",
     "excluded": "Unconnected chef or parent-company awards, unsubstantiated culinary accolades, and unsourced fame do not qualify.",
-    "retained": "Personal dining memories and venue-identification clues remain retrievable separately, including Le Fou Frog, The Majestic and Rec Pier Chop House.",
+    "retained": "Confirmed personal favorites and unresolved venue-identification clues are retained when eligible for inclusion; exclusions requested by the user are not shown in the public interview or collection.",
     "sourcePriority": "Prefer official James Beard and Michelin listings; secondary published reporting may support a candidate awaiting further audit.",
     "venueTypes": "Include qualifying bars and beverage programs in addition to restaurants. A bar can qualify for James Beard Outstanding Bar, Best New Bar, beverage-program and cocktail-service honors. Maintain precise location and recipient for awards.",
     "personalExceptions": "Explicit user-selected dining and cocktail favorites remain visible even without a qualifying award; do not describe them as award-winning."
