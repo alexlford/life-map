@@ -102,8 +102,8 @@ assert death_and_co["editorial"]["awardQualified"] is False and death_and_co["ed
 for name in ("Sauvage", "Gunther & Co.", "The Majestic Restaurant"):
     rec = next(r for r in records if r["title"] == name)
     assert rec["editorial"]["awardQualified"] is False and rec["editorial"]["featuredException"] is True
-assert {r["title"] for r in records if r["editorial"].get("awardQualified")} == {"République", "Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen", "Momofuku CCDC", "Manifesto", "Q House", "Wildflower", "Yuan Wonton", "Safta", "Smok", "Mister Oso", "North Pond", "Annette", "Mercantile Dining & Provision", "Barolo Grill"}
-assert all(not r["editorial"].get("awardQualified") or not r["editorial"].get("featuredException") for r in records)
+assert {r["title"] for r in records if r.get("editorial", {}).get("awardQualified")} == {"République", "Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen", "Momofuku CCDC", "Manifesto", "Q House", "Wildflower", "Yuan Wonton", "Safta", "Smok", "Mister Oso", "North Pond", "Annette", "Mercantile Dining & Provision", "Barolo Grill"}
+assert all(not r.get("editorial", {}).get("awardQualified") or not r.get("editorial", {}).get("featuredException") for r in records)
 assert any(c["name"] == "Manifesto" and c["visitStatus"] == "confirmed" for c in candidates)
 assert any(c["name"] == "Death & Co Denver" and c["visitStatus"] == "confirmed" for c in candidates)
 assert 'data-type="bar"' in (ROOT / "explore.html").read_text(encoding="utf-8")
@@ -265,7 +265,7 @@ for name in ("Q39", "Joe's Kansas City Bar-B-Que", "Arthur Bryant's Barbeque", "
     assert not any(r["title"] == name for r in records)
 assert next(q for q in candidates if q["name"] == "Lucina Eatery & Bar")["visitStatus"] == "maybe"
 assert len([r for r in records if r["guide"]["distinction"] == "starred"]) == 3
-assert len([r for r in records if r["editorial"].get("awardQualified")]) == 17
+assert len([r for r in records if r.get("editorial", {}).get("awardQualified")]) == 17
 
 # Theater memories: preserve uncertainty in titles, not in the fact an outing occurred.
 stage=[r for r in records if r["type"] == "theater"]
