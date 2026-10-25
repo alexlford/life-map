@@ -67,3 +67,17 @@ The default collection shows either verified Michelin/James Beard-eligible recor
 ## Selective curation
 
 Historical interview candidates without verified qualifying Michelin or James Beard recognition are subject to exclusion from the public collection and the website interview at the user's direction. The award-selection rule never overrides explicitly retained favorites, which are labeled as personal exceptions rather than award-winning venues.
+
+## Breckenridge Distillery & US city reconstruction windows (October 25, 2026)
+
+The user explicitly confirmed **Breckenridge Distillery Restaurant in 2021, 2022 and 2023**. Each year is recorded as an independent, undated confirmed experience linked to one shared venue. Three visits are a minimum of one per year, not three exact meal dates. Its link with James Beard-honored chef David Burke is only an association, **not a qualifying award for the restaurant**, so this restaurant remains in the complete personal archive, not the default Michelin/JBF collection. Breckenridge Distillery is kept as 1 legacy restaurant with three visit years.
+
+The user gave additional reconstruction windows: NYC (2018–2020, for the unidentified speakeasy), Chicago (2010–present), Kansas City (2010–present), and St. Louis/The Hill (2011–2014). The NYC speakeasy is **not assumed to be PDT**, even though PDT won a 2012 James Beard Outstanding Bar Program award. Other verified candidates include The Aviary (2013 award), The Violet Hour (2015 award), Kumiko (2025 award), Lost Lake (2018–2020 semifinalist), Dead Rabbit (2019 semifinalist), the Monarch Bar (2019 semifinalist), and Williams & Graham Denver (2020 semifinalist). Exact recognition years remain separate from possible visit years. Source examples:
+- https://archive.jamesbeard.org/blog/outstanding-bar-program-pdt
+- https://archive.jamesbeard.org/chicago
+- https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners
+- https://www.jamesbeard.org/stories/the-2019-james-beard-award-semifinalists
+- https://www.jamesbeard.org/stories/the-2020-james-beard-award-semifinalists
+- https://www.jamesbeard.org/stories/2017-americas-classic-gioias-deli
+
+The user's recalled upscale Italian restaurant on St. Louis's Hill is **not yet identified**. Dominic's, Charlie Gitto's, and Gian-Tony's are research leads, and no visited status has been assumed.

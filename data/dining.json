@@ -102,7 +102,8 @@
     "plate": "The historical Michelin Plate is a recommended-restaurant designation, not a Michelin star. A Plate in a known guide edition does not imply it existed on an unknown meal date.",
     "founderRecognition": "If a founder won a James Beard award for a different restaurant, preserve the credited venue and never attribute the award to the visited branch.",
     "favorites": "Favorite dining experiences are user-designated and do not imply external culinary awards.",
-    "curated": "Default Culture Passport dining views show confirmed restaurants with documented Michelin Guide recognition (star, Bib, Selected, historic Plate) or directly associated James Beard awards, finalists or semifinalists. Those awards retain their recipient and year. Chef awards at unrelated restaurants or historical awards dated after a dinner may be context, not proof of qualification at the meal date. Unverified and outside-scope visits stay in archive but are hidden from curated browsing by default."
+    "curated": "Default Culture Passport dining views show confirmed restaurants with documented Michelin Guide recognition (star, Bib, Selected, historic Plate) or directly associated James Beard awards, finalists or semifinalists. Those awards retain their recipient and year. Chef awards at unrelated restaurants or historical awards dated after a dinner may be context, not proof of qualification at the meal date. Unverified and outside-scope visits stay in archive but are hidden from curated browsing by default.",
+    "repeatVisits": "A legacy venue record can list multiple confirmed visitYears; Culture Passport canonical stores each year as its own visit, linked to one venue."
   },
   "entries": [
     {
@@ -663,6 +664,55 @@
         "evidenceUrls": [
           "https://www.ciachef.edu/cia-bios/andrew-carmellini/",
           "https://www.eater.com/2017/9/20/16301624/andrew-carmellini-rye-street-tavern-baltimore-opening"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "indirect_only"
+      }
+    },
+    {
+      "id": "breckenridge-distillery-2021-2023",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Breckenridge Distillery Restaurant",
+      "city": "Breckenridge",
+      "region": "Colorado",
+      "country": "USA",
+      "address": "1925 Airport Road, Breckenridge, CO 80424",
+      "visit": {
+        "date": null,
+        "dateText": "Visited in 2021, 2022, and 2023; specific dates unknown",
+        "visitYears": [
+          2021,
+          2022,
+          2023
+        ],
+        "precision": "multiple_years",
+        "source": "User explicitly confirmed dining at Breckenridge Distillery once each in 2021, 2022, and 2023. Exact dates and number of meals beyond the annual minimum are unknown (October 25, 2026)."
+      },
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No confirmed Michelin-star or selected-restaurant recognition"
+      },
+      "recognitions": [],
+      "recognitionLeads": [
+        {
+          "recipient": "David Burke",
+          "relationship": "culinary ambassador (not a restaurant award)",
+          "sourceUrl": "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/"
+        }
+      ],
+      "summary": "Confirmed one or more meals at Breckenridge Distillery Restaurant in each of 2021, 2022 and 2023. The restaurant opened in 2016. James Beard-winning chef David Burke served as culinary ambassador, but this is not a venue-specific James Beard award; his involvement in any particular 2021–2023 meal is not verified.",
+      "evidenceStatus": "reported",
+      "referenceUrl": "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/",
+      "curation": {
+        "status": "needs_verification",
+        "basis": "chef_association",
+        "reason": "Only association with James Beard-recognized chef, not an established restaurant award.",
+        "evidenceUrls": [
+          "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/"
         ],
         "reviewedOn": "2026-10-25",
         "confidence": "indirect_only"
