@@ -13,7 +13,7 @@
     "maybe",
     "not_visited"
   ],
-  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021.",
+  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue.",
   "candidates": [
     {
       "id": "altimore-charleston",
@@ -98,7 +98,10 @@
       "awardFamily": "beard",
       "interviewCue": "Chris Amendola's hyper-seasonal restaurant with mushrooms and foraged ingredients. Small dining room on Chestnut Avenue in Hampden during 2018–November 2021; moved to Station North in late 2021.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2023-james-beard-awards-semifinalists",
-      "visitStatus": "unreviewed"
+      "visitStatus": "not_visited",
+      "reviewedOn": "2026-10-24",
+      "reviewSource": "Alex explicitly responded 'did not visit' for Foraged in the 2018–2021 Baltimore Culinary Passport interview.",
+      "visitPeriod": "2018–2021: did not visit"
     },
     {
       "id": "altimore-ekiben",
@@ -143,6 +146,25 @@
       "interviewCue": "Woodberry; Basque-inspired pintxos and wood-fired cuisine.",
       "sourceUrl": "https://www.thebanner.com/culture/food-drink/james-beard-award-finals-baltimore-maryland-TXFG4OX6UZDITGNA6PNRHIIOXI/",
       "visitStatus": "unreviewed"
+    },
+    {
+      "id": "washingtondc-momofuku-ccdc",
+      "area": "Washington, DC",
+      "name": "Momofuku CCDC",
+      "recognition": "Founder David Chang won the 2013 James Beard Outstanding Chef award for NYC's Momofuku Noodle Bar; this was a chef recognition, not a Michelin star or an award for the DC restaurant.",
+      "recognitionYear": 2013,
+      "awardFamily": "beard",
+      "interviewCue": "CityCenterDC, 1090 I Street NW. Sleek, modern dining room; buns, noodles, ramen and inventive Asian-inspired dishes. Opened October 2015; ceased dining March 14, 2020 and was confirmed permanently closed May 2020.",
+      "sourceUrl": "https://dc.eater.com/2020/5/13/21257706/momofuku-ccdc-closing-permanently-citycenter-dc-coronavirus",
+      "awardSourceUrl": "https://archive.jamesbeard.org/awards/search?categories%5BRestaurant+%26+Chef%5D=1&ranks%5BWinner%5D=1&year=2013",
+      "visitStatus": "unreviewed",
+      "userMemoryLead": {
+        "recalled": "Alex definitely dined at a David Chang restaurant in Washington DC; restaurant name and date have not yet been directly confirmed.",
+        "candidateConfidence": "high",
+        "identityConfirmed": false,
+        "source": "Alex's spontaneous recollection on 2026-10-24",
+        "dateRange": "Unknown; compare Momofuku CCDC's 2015–March 2020 operating dates with the remembered visit."
+      }
     },
     {
       "id": "ashington-the-dabney",
