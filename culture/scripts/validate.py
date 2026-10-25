@@ -49,6 +49,8 @@ for page in ("index", "explore", "timeline", "map", "record", "interview"):
     assert "./assets/app.js" in source
 map_html = (ROOT / "map.html").read_text(encoding="utf-8")
 assert map_html.index("leaflet.js") < map_html.index('src="./assets/app.js'), "Load Leaflet before Culture map app"
+assert 'id="interview-period"' in (ROOT / "interview.html").read_text(encoding="utf-8")
+assert 'byId("interview-period")' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
 assert (ROOT / "assets/app.js").exists()
 assert (ROOT / "assets/site.css").exists()
 assert "culture.alexlford.com" in (ROOT / "README.md").read_text(encoding="utf-8")
