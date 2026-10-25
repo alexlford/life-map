@@ -154,6 +154,16 @@
     }
     host.append(grid);
     if(v.address)host.append(el("p","detail-note","Venue address: "+v.address+". The geographic map currently uses city-level approximate markers."));
+    if(r.story?.paragraphs?.length){
+      const chapter=el("section","experience-story");
+      chapter.append(el("p","eyebrow","THE STORY BEHIND THE PLACE"),el("h2","",r.story.headline||"A place worth remembering"));
+      r.story.paragraphs.forEach(p=>chapter.append(el("p","story-paragraph",p)));
+      if(r.story.chapters?.length){chapter.append(el("h3","story-subheading","A few chapters in its history"));const dates=el("div","story-chapters");
+        r.story.chapters.forEach(c=>{const item=el("div","story-chapter");item.append(el("strong","story-year",c.year),el("strong","",c.title),el("p","",c.detail));dates.append(item);});chapter.append(dates);}
+      if(r.story.sourceUrls?.length){const refs=el("div","story-sources");refs.append(el("strong","","Historical references: "));
+        r.story.sourceUrls.forEach(source=>{const a=link(source.label+" ↗",source.url);a.target="_blank";a.rel="noopener noreferrer";refs.append(a);});chapter.append(refs);}
+      host.append(chapter);
+    }
     const note=el("div","caveat","Historical accuracy: the date of the visit and the date of external restaurant awards are separate facts. No unknown day is invented.");
     host.append(note);
     const badges=el("div","award-list");
