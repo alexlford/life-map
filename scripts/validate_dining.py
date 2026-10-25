@@ -84,7 +84,7 @@ def main():
     QUESTIONS = (ROOT / "dining-interview.html").read_text(encoding="utf-8")
     assert len(INTERVIEW["candidates"]) >= 40
     assert len(set(r["id"] for r in INTERVIEW["candidates"])) == len(INTERVIEW["candidates"])
-    assert set(r["area"] for r in INTERVIEW["candidates"]) == {"Baltimore", "Washington, DC", "Denver Metro"}
+    assert set(r["area"] for r in INTERVIEW["candidates"]) == {"Baltimore", "Washington, DC", "Denver Metro", "Steamboat Springs"}
     assert all(r["visitStatus"] in {"unreviewed", "confirmed", "not_visited", "maybe"} and r["sourceUrl"].startswith("https://") for r in INTERVIEW["candidates"])
     confirmed_interview = [r for r in INTERVIEW["candidates"] if r["visitStatus"] == "confirmed"]
     assert len(confirmed_interview) == 3 and {r["confirmedVisitId"] for r in confirmed_interview} == {charleston["id"], woodberry["id"], "momofuku-ccdc-washington-dc"}
@@ -114,8 +114,22 @@ def main():
     assert magdalena["visitStatus"] == "unreviewed"
     assert "2020" in magdalena["interviewCue"]
     assert "visitStatus===\"maybe\"" in (ROOT / "dining-interview.js").read_text(encoding="utf-8")
-    assert len([r for r in DATA["entries"] if r["status"] == "confirmed"]) == 6
-    assert len(INTERVIEW["candidates"]) == 49
+    assert len([r for r in DATA["entries"] if r["status"] == "confirmed"]) == 9
+    for name in ("Sauvage", "Gunther & Co.", "Thames Street Oyster House"):
+        found = next(r for r in DATA["entries"] if r["name"] == name)
+        assert found["status"] == "confirmed" and found["guide"]["distinction"] == "not_covered"
+        assert found["guide"]["stars"] == 0
+    sauv = next(r for r in DATA["entries"] if r["name"] == "Sauvage")
+    gunther = next(r for r in DATA["entries"] if r["name"] == "Gunther & Co.")
+    thames = next(r for r in DATA["entries"] if r["name"] == "Thames Street Oyster House")
+    assert sauv["visit"]["precision"] == "month" and sauv["visit"]["approximateYear"] == 2021 and sauv["visit"]["month"] == 1
+    assert gunther["visit"]["date"] == "2020-02-14"
+    assert thames["visit"]["date"] is None and thames["visit"]["precision"] == "unknown"
+    assert sauv["favorite"] is True and gunther["favorite"] is True
+    pending = next(r for r in INTERVIEW["candidates"] if r["name"] == "Rec Pier Chop House")
+    assert pending["visitStatus"] == "unreviewed" and pending["userMemoryLead"]["identityConfirmed"] is False
+    assert not any(r["name"] == "Rec Pier Chop House" for r in DATA["entries"])
+    assert len(INTERVIEW["candidates"]) == 57
     assert not any(r["name"] == "Petit Louis Bistro" for r in DATA["entries"])
     assert not any(r["name"] == "Cinghiale" for r in DATA["entries"])
     assert not any(r["name"] == "Clavel" for r in DATA["entries"])
