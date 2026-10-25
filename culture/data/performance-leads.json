@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "updated": "2026-10-25",
+  "methodology": "Unresolved shows or productions are not counted as confirmed until identified. Venue or performance-season matches provide context, not proof of a particular evening.",
+  "leads": [
+    {
+      "id": "another-denver-show",
+      "name": "Another Denver musical or play",
+      "venue": "Denver, to identify",
+      "year": null,
+      "status": "unknown_identity",
+      "recollection": "User remembers at least one additional live theater experience in Denver.",
+      "sourceUrl": null
+    },
+    {
+      "id": "second-city-revue-2017",
+      "name": "The exact Second City revue",
+      "venue": "Second City Chicago",
+      "year": 2017,
+      "season": "Christmas",
+      "status": "confirmed_visit_unidentified_production",
+      "recollection": "Second City visit confirmed; revue title and performance date unknown.",
+      "sourceUrl": null,
+      "note": "Venue attendance already confirmed as separate public record; specific revue unknown"
+    },
+    {
+      "id": "lyric-ring-performances",
+      "name": "Which Ring operas were attended",
+      "venue": "Lyric Opera of Chicago",
+      "year": null,
+      "status": "series_confirmed_individual_performances_unverified",
+      "recollection": "October 2016 venue image and November 2018 group photo; the Ring Cycle memory is confirmed, but precise opera performances not established.",
+      "sourceUrl": null
+    }
+  ]
+}
