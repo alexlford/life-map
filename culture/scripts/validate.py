@@ -144,3 +144,12 @@ assert not any(r["title"] in {"Uchi Denver", "Mister Oso Wash Park"} for r in re
 assert "culture.alexlford.com" in (ROOT / "README.md").read_text(encoding="utf-8")
 print("Culture Passport OK: %d experiences, %d venues, %d interview prospects" %
       (len(records), len(venues), len(candidates)))
+
+# Reservation provenance must be distinct from user-confirmed visits.
+evidence = json.loads((ROOT / "data/reservation-evidence.json").read_text(encoding="utf-8"))
+assert len(evidence["rows"]) == 40 and len({r["name"] for r in evidence["rows"]}) == 38
+assert next(r for r in evidence["rows"] if r["name"] == "Le Fou Frog")["publicationEligibility"] == "explicitly_excluded"
+assert not any(r["title"] == "Le Fou Frog" for r in records)
+for title, date in [("République","2026-10-24"),("Woodberry Kitchen","2018-05-16"),("Momofuku CCDC","2018-08-21"),("Rec Pier Chop House","2018-05-16")]:
+    row = next(r for r in records if r["title"] == title)
+    assert row["visit"]["date"] == date and row["visit"]["precision"] == "day"

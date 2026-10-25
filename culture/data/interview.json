@@ -63,7 +63,7 @@
       "sourceUrl": "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners",
       "visitStatus": "confirmed",
       "confirmedVisitId": "dining-woodberry-kitchen-baltimore-2018-2021",
-      "visitPeriod": "2018 (approximate timeline year; exact date unknown)",
+      "visitPeriod": "2018-05-16 · reservation for 2",
       "visitSource": "Alex explicitly confirmed visiting Woodberry Kitchen in current Culinary Passport interview on 2026-10-24",
       "timelineYear": 2018,
       "yearPlacementSource": "Alex's timeline placement on 2026-10-24",
@@ -81,7 +81,9 @@
         "reason": "Chef Spike Gjerde won James Beard Best Chef: Mid-Atlantic in 2015 at Woodberry Kitchen, before the approximate 2018 meal.",
         "screenedOn": "2026-10-25",
         "verifiedForPublication": false
-      }
+      },
+      "visitDate": "2018-05-16",
+      "visitDateEvidence": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue."
     },
     {
       "id": "altimore-clavel",
@@ -330,7 +332,7 @@
         "confirmedOn": "2026-10-25"
       },
       "confirmedVisitId": "dining-momofuku-ccdc-washington-dc",
-      "visitPeriod": "Date uncertain, historically operating 2015-10-24–2020-03-13; user was discussing 2018–2021 DC experiences",
+      "visitPeriod": "2018-08-21 · reservation for 4",
       "visitSource": "Alex directly identified Momofuku CCDC on 2026-10-25 as the David Chang DC restaurant previously remembered",
       "screening": {
         "status": "award_qualified",
@@ -346,7 +348,9 @@
         "reason": "Listed with Michelin's historical Plate recommendation in the 2019 Washington, DC Guide, not a Michelin star. The visit date is unknown; David Chang's 2013 James Beard win belongs to a different NYC restaurant.",
         "screenedOn": "2026-10-25",
         "verifiedForPublication": false
-      }
+      },
+      "visitDate": "2018-08-21",
+      "visitDateEvidence": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue."
     },
     {
       "id": "ashington-the-dabney",
@@ -1355,7 +1359,7 @@
         "confirmedOn": "2026-10-25"
       },
       "confirmedVisitId": "dining-rec-pier-chop-house-baltimore",
-      "visitPeriod": "2018–2021; exact date unknown",
+      "visitPeriod": "2018-05-16 · reservation for 2",
       "reviewedOn": "2026-10-25",
       "reviewSource": "Direct user confirmation on 2026-10-25",
       "screening": {
@@ -1372,7 +1376,9 @@
         "reason": "Chef Andrew Carmellini had James Beard awards from earlier career and was associated with this restaurant, but no direct James Beard award for Rec Pier Chop House has been established. Founder association alone is insufficient.",
         "screenedOn": "2026-10-25",
         "verifiedForPublication": false
-      }
+      },
+      "visitDate": "2018-05-16",
+      "visitDateEvidence": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue."
     },
     {
       "id": "candidate-baltimore-le-comptoir-du-vin",

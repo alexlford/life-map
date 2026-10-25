@@ -43,10 +43,12 @@
       "sourceUrl": "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners",
       "visitStatus": "confirmed",
       "confirmedVisitId": "woodberry-kitchen-baltimore-2018-2021",
-      "visitPeriod": "2018 (approximate timeline year; exact date unknown)",
+      "visitPeriod": "2018-05-16 · reservation for 2",
       "visitSource": "Alex explicitly confirmed visiting Woodberry Kitchen in current Culinary Passport interview on 2026-10-24",
       "timelineYear": 2018,
-      "yearPlacementSource": "Alex's timeline placement on 2026-10-24"
+      "yearPlacementSource": "Alex's timeline placement on 2026-10-24",
+      "visitDate": "2018-05-16",
+      "visitDateEvidence": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue."
     },
     {
       "id": "altimore-clavel",
@@ -175,8 +177,10 @@
         "confirmedOn": "2026-10-25"
       },
       "confirmedVisitId": "momofuku-ccdc-washington-dc",
-      "visitPeriod": "Date uncertain, historically operating 2015-10-24–2020-03-13; user was discussing 2018–2021 DC experiences",
-      "visitSource": "Alex directly identified Momofuku CCDC on 2026-10-25 as the David Chang DC restaurant previously remembered"
+      "visitPeriod": "2018-08-21 · reservation for 4",
+      "visitSource": "Alex directly identified Momofuku CCDC on 2026-10-25 as the David Chang DC restaurant previously remembered",
+      "visitDate": "2018-08-21",
+      "visitDateEvidence": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue."
     },
     {
       "id": "ashington-the-dabney",
@@ -614,9 +618,11 @@
         "confirmedOn": "2026-10-25"
       },
       "confirmedVisitId": "rec-pier-chop-house-baltimore",
-      "visitPeriod": "2018–2021; exact date unknown",
+      "visitPeriod": "2018-05-16 · reservation for 2",
       "reviewedOn": "2026-10-25",
-      "reviewSource": "Direct user confirmation on 2026-10-25"
+      "reviewSource": "Direct user confirmation on 2026-10-25",
+      "visitDate": "2018-05-16",
+      "visitDateEvidence": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue."
     },
     {
       "id": "candidate-baltimore-le-comptoir-du-vin",

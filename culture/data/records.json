@@ -292,14 +292,18 @@
       "venueId": "venue-republique-los-angeles",
       "status": "confirmed",
       "visit": {
-        "date": null,
-        "year": null,
-        "possibleYears": [],
-        "label": "Date not established",
-        "precision": "unknown",
-        "source": "Alex's direct recollection"
+        "date": "2026-10-24",
+        "year": 2026,
+        "possibleYears": [
+          2026
+        ],
+        "label": "2026-10-24",
+        "precision": "day",
+        "source": "Alex explicitly confirmed dining at République the night before 2026-10-25.",
+        "evidenceType": "direct_user_recollection",
+        "attendanceCertainty": "directly_confirmed"
       },
-      "summary": "A confirmed visit to a Michelin Guide-listed restaurant. It is Michelin Selected, not Michelin-starred in the 2026 Guide.",
+      "summary": "Confirmed République dining visit on October 24, 2026. Michelin Selected in 2026 (not starred); its chef-owner Margarita Manzke won a James Beard Outstanding Pastry Chef or Baker award in 2023, before the visit.",
       "recognitions": [
         {
           "organization": "James Beard Foundation",
@@ -308,7 +312,8 @@
           "category": "Outstanding Pastry Chef or Baker",
           "recipient": "Margarita Manzke",
           "relationship": "chef at restaurant",
-          "sourceUrl": "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
+          "sourceUrl": "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners",
+          "timingRelativeToVisit": "before_visit"
         }
       ],
       "guide": {
@@ -316,7 +321,7 @@
         "distinction": "selected",
         "stars": 0,
         "sourceUrl": "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
-        "historicalVisitDistinction": "unverified"
+        "historicalVisitDistinction": "selected"
       },
       "sourceUrl": "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
       "editorial": {
@@ -328,14 +333,14 @@
       "curation": {
         "status": "qualifies",
         "basis": "both",
-        "reason": "Michelin Selected in 2026; pastry chef Margarita Manzke won the 2023 James Beard Outstanding Pastry Chef or Baker award. Meal year not known.",
+        "reason": "Michelin Selected in 2026 and a 2023 James Beard Outstanding Pastry Chef or Baker win by Margarita Manzke, both before Alex's confirmed October 24, 2026 visit.",
         "evidenceUrls": [
           "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
           "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
         ],
         "reviewedOn": "2026-10-25",
         "confidence": "documented",
-        "awardAtVisit": "consult dated award records; meal date may be unknown"
+        "awardAtVisit": "Both listed Michelin Selected status in 2026 and the 2023 pastry award predate the meal."
       }
     },
     {
@@ -531,14 +536,17 @@
       "venueId": "venue-woodberry-kitchen-baltimore-2018-2021",
       "status": "confirmed",
       "visit": {
-        "date": null,
+        "date": "2018-05-16",
         "year": 2018,
         "possibleYears": [
           2018
         ],
-        "label": "2018",
-        "precision": "approximate_year",
-        "source": "Alex's explicit confirmation of having dined at Woodberry Kitchen on 2026-10-24; timeline year 2018 chosen directly by Alex on 2026-10-24"
+        "label": "2018-05-16",
+        "precision": "day",
+        "source": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue.",
+        "evidenceType": "completed_reservation_and_user_confirmed_venue",
+        "attendanceCertainty": "user_confirmed_venue_with_completed_reservation",
+        "partySize": 2
       },
       "summary": "Confirmed Woodberry Kitchen visit, placed on the 2018 timeline (exact date unknown). Chef Spike Gjerde won the James Beard Best Chef: Mid-Atlantic award in 2015, before this visit.",
       "recognitions": [
@@ -586,12 +594,17 @@
       "venueId": "venue-momofuku-ccdc-washington-dc",
       "status": "confirmed",
       "visit": {
-        "date": null,
-        "year": null,
-        "possibleYears": [],
-        "label": "Date not established",
-        "precision": "unknown",
-        "source": "Alex expressly confirmed Momofuku CCDC in the Culinary Passport interview on 2026-10-25; no exact visit date stated"
+        "date": "2018-08-21",
+        "year": 2018,
+        "possibleYears": [
+          2018
+        ],
+        "label": "2018-08-21",
+        "precision": "day",
+        "source": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue.",
+        "evidenceType": "completed_reservation_and_user_confirmed_venue",
+        "attendanceCertainty": "user_confirmed_venue_with_completed_reservation",
+        "partySize": 4
       },
       "summary": "Confirmed visit to David Chang's Momofuku CCDC in Washington, DC. Exact meal date uncertain; restaurant operated 2015 to March 2020. Michelin listed it with The Plate designation in 2019 (not a star). Chang's 2013 James Beard Outstanding Chef award was for Momofuku Noodle Bar in New York, not this restaurant.",
       "recognitions": [
@@ -813,17 +826,17 @@
       "venueId": "venue-rec-pier-chop-house-baltimore",
       "status": "confirmed",
       "visit": {
-        "date": null,
-        "year": null,
+        "date": "2018-05-16",
+        "year": 2018,
         "possibleYears": [
-          2018,
-          2019,
-          2020,
-          2021
+          2018
         ],
-        "label": "Baltimore years, 2018–2021 (exact date unknown)",
-        "precision": "year_range",
-        "source": "Alex directly confirmed Rec Pier Chop House in the Culture Passport interview on October 25, 2026."
+        "label": "2018-05-16",
+        "precision": "day",
+        "source": "Completed reservation screenshot shared by Alex on 2026-10-25, plus prior direct confirmation of dining at this venue.",
+        "evidenceType": "completed_reservation_and_user_confirmed_venue",
+        "attendanceCertainty": "user_confirmed_venue_with_completed_reservation",
+        "partySize": 2
       },
       "summary": "Confirmed visit to Rec Pier Chop House, the Italian chophouse inside Sagamore Pendry Baltimore in Fells Point. Exact meal date remains unknown.",
       "recognitions": [],

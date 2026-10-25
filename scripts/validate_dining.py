@@ -50,7 +50,7 @@ def main():
     republique = next(r for r in DATA["entries"] if r["id"] == "republique-los-angeles")
     assert republique["guide"]["distinction"] == "selected"
     assert republique["guide"]["stars"] == 0
-    assert republique["guide"]["historicalVisitDistinction"] == "unverified"
+    assert republique["guide"]["historicalVisitDistinction"] == "selected" and republique["visit"]["date"] == "2026-10-24"
 
     leads = [r for r in DATA["entries"] if r["status"] == "researching"]
     assert not leads, "No restaurant identities should remain unresolved"
@@ -74,7 +74,7 @@ def main():
     assert charleston["guide"]["stars"] == 0
     assert any(r["year"] == 2025 and r["result"] == "winner" and r["timingRelativeToVisit"] == "after_visit" for r in charleston["recognitions"])
     woodberry = next(r for r in DATA["entries"] if r["id"] == "woodberry-kitchen-baltimore-2018-2021")
-    assert woodberry["status"] == "confirmed" and woodberry["visit"]["date"] is None
+    assert woodberry["status"] == "confirmed" and woodberry["visit"]["date"] == "2018-05-16"
     assert woodberry["visit"]["possibleYears"] == [2018] and woodberry["visit"]["timelineYear"] == 2018
     assert woodberry["guide"]["distinction"] == "not_covered"
     assert woodberry["guide"]["stars"] == 0
@@ -100,7 +100,7 @@ def main():
     assert dc_momo["visitStatus"] == "confirmed" and dc_momo["userMemoryLead"]["identityConfirmed"] is True
     assert dc_momo["confirmedVisitId"] == "momofuku-ccdc-washington-dc"
     momofuku = next(r for r in DATA["entries"] if r["id"] == "momofuku-ccdc-washington-dc")
-    assert momofuku["status"] == "confirmed" and momofuku["visit"]["date"] is None
+    assert momofuku["status"] == "confirmed" and momofuku["visit"]["date"] == "2018-08-21"
     assert momofuku["guide"]["distinction"] == "plate" and momofuku["guide"]["stars"] == 0
     assert momofuku["recognitions"][0]["recognitionAtDifferentVenue"] is True
     assert not any(r["name"] in {"Foraged", "Ekiben"} for r in DATA["entries"])
@@ -142,7 +142,7 @@ def main():
     majestic = next(r for r in DATA["entries"] if r["id"] == "majestic-kansas-city")
     rec_pier = next(r for r in DATA["entries"] if r["id"] == "rec-pier-chop-house-baltimore")
     assert majestic["status"] == rec_pier["status"] == "confirmed"
-    assert majestic["visit"]["date"] is None and rec_pier["visit"]["date"] is None
+    assert majestic["visit"]["date"] is None and rec_pier["visit"]["date"] == "2018-05-16"
     assert any(r["name"] == "Rec Pier Chop House" for r in DATA["entries"])
     assert len(INTERVIEW["candidates"]) == 58
     assert not any(r["name"] == "Petit Louis Bistro" for r in DATA["entries"])
