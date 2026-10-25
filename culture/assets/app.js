@@ -1,51 +1,238 @@
-(()=>{
-"use strict";
-const page=document.body.dataset.page,$=id=>document.getElementById(id);
-const elt=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e};
-const add=(p,tag,text,cls)=>{const e=elt(tag,text,cls);p.appendChild(e);return e};
-const link=(url,text,cls)=>{const a=elt("a",text,cls);a.href=url;return a};
-const path=r=>"record.html?id="+encodeURIComponent(r.id);
-const place=(d,r)=>d.venues.find(v=>v.id===r.venueId);
-const yr=r=>r.visit?.year??r.visit?.possibleYears?.[0]??null;
-const label=r=>r.visit?.label||"Undated";
-const confirmed=d=>d.records.filter(r=>r.status==="confirmed");
-const sort=r=>[...r].sort((a,b)=>(yr(b)??-1)-(yr(a)??-1)||a.title.localeCompare(b.title));
-const types={dining:"Restaurant",concert:"Concert",opera:"Opera",theater:"Theater"};
-function empty(h,t,d){h.replaceChildren();const c=add(h,"div",null,"empty");add(c,"h3",t);add(c,"p",d)}
-function card(r,d){const v=place(d,r),a=link(path(r),null,"record-card");add(a,"p",(types[r.type]||"Experience").toUpperCase()+" / "+(yr(r)||"DATE UNCONFIRMED"),"eyebrow");add(a,"h3",r.title);add(a,"p",r.summary);const f=add(a,"div",null,"record-footer");add(f,"span",(v?.city||"")+" · "+label(r));add(f,"span","View ↗");return a}
-function home(d){const r=confirmed(d);$("total-records").textContent=r.length;$("total-venues").textContent=new Set(r.map(x=>x.venueId)).size;$("total-cities").textContent=new Set(r.map(x=>place(d,x)?.city)).size;$("total-starred").textContent=r.filter(x=>x.guide?.distinction==="starred").length;
-for(const t of Object.keys(types)){const n=r.filter(x=>x.type===t).length;$(t+"-count").textContent=n?n+" recorded":"Building the archive"}
-const h=$("featured-records");h.replaceChildren();for(const x of sort(r).slice(0,5)){const v=place(d,x),a=link(path(x),null,"feature-row");add(a,"span",yr(x)||"—","feature-year");const b=add(a,"div");add(b,"strong",x.title);add(b,"small",(v?.city||"")+(x.visit?.year?" · Approximate year":" · Date unknown"));add(a,"span","↗","feature-arrow");h.appendChild(a)}}
-function explore(d){const params=new URLSearchParams(location.search);let type=params.get("type")||"all";if(type!=="all"&&!types[type])type="all";
-const h=$("explore-results"),search=$("search"),city=$("city-filter"),bs=[...document.querySelectorAll("[data-type]")];for(const name of [...new Set(d.venues.map(x=>x.city))].sort()){const o=add(city,"option",name);o.value=name}
-function draw(){for(const b of bs){const on=b.dataset.type===type;b.classList.toggle("active",on);b.setAttribute("aria-pressed",String(on))}
-const q=search.value.toLowerCase().trim();const rows=sort(confirmed(d).filter(r=>{const v=place(d,r);return(type==="all"||type===r.type)&&(!city.value||v?.city===city.value)&&(!q||[r.title,r.summary,v?.city,label(r)].join(" ").toLowerCase().includes(q))}));$("result-count").textContent=rows.length+" confirmed experience(s)";h.replaceChildren();if(!rows.length)return empty(h,"Chapter in progress","No matching confirmed experience yet. New attendance is added only after confirmation.");rows.forEach(r=>h.appendChild(card(r,d)))}
-bs.forEach(b=>b.addEventListener("click",()=>{type=b.dataset.type;const u=new URL(location.href);if(type==="all")u.searchParams.delete("type");else u.searchParams.set("type",type);history.replaceState(null,"",u);draw()}));search.addEventListener("input",draw);city.addEventListener("change",draw);draw()}
-function timeline(d){const h=$("timeline-results"),s=$("timeline-type");function draw(){const rows=sort(confirmed(d).filter(x=>s.value==="all"||s.value===x.type));$("timeline-count").textContent=rows.length+" records";h.replaceChildren();if(!rows.length)return empty(h,"No records in this category yet","This chapter will grow from confirmed memories.");const groups=new Map();for(const r of rows){const y=yr(r)||"Undated";if(!groups.has(y))groups.set(y,[]);groups.get(y).push(r)}for(const [y,rs] of groups){const b=add(h,"section",null,"timeline-group");add(b,"div",String(y),"timeline-year");const lst=add(b,"div",null,"timeline-stack");for(const r of rs){const a=link(path(r),null,"timeline-entry"),v=place(d,r),body=add(a,"div");add(body,"small",(types[r.type]||r.type)+" · "+v?.city+" · "+label(r));add(body,"h3",r.title);add(a,"span","↗");lst.appendChild(a)}}}s.addEventListener("change",draw);draw()}
-function mapView(d){const cities=new Map();for(const r of confirmed(d)){const v=place(d,r);if(!v?.location)continue;if(!cities.has(v.city))cities.set(v.city,{city:v.city,loc:v.location,rs:[]});cities.get(v.city).rs.push(r)}let map,markers={};const h=$("city-list");h.replaceChildren();const entries=[...cities.values()].sort((a,b)=>a.city.localeCompare(b.city));for(const c of entries){const b=add(h,"button",null,"city-item");b.type="button";add(b,"strong",c.city);add(b,"span",c.rs.length+" recorded visit(s)");b.addEventListener("click",()=>{if(map){map.flyTo([c.loc.lat,c.loc.lng],8);markers[c.city].openPopup()}})}
-const setup=()=>{const m=$("culture-map");if(!window.L)return empty(m,"Map temporarily unavailable","The city index remains available.");m.replaceChildren();map=L.map(m,{scrollWheelZoom:false}).setView([39,-96],4);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:"© OpenStreetMap contributors"}).addTo(map);
-for(const c of entries){const icon=L.divIcon({html:'<div class="culture-marker">'+c.rs.length+"</div>",className:"",iconSize:[28,28],iconAnchor:[14,14]});const marker=L.marker([c.loc.lat,c.loc.lng],{icon}).addTo(map),popup=elt("div");add(popup,"strong",c.city+" · Approximate city placement");add(popup,"p","Not exact venue coordinates.");for(const r of c.rs){const p=add(popup,"p");p.appendChild(link(path(r),r.title+" ↗"))}marker.bindPopup(popup);markers[c.city]=marker}};
-if(document.readyState==="complete")setup();else window.addEventListener("load",setup,{once:true})}
-function record(d){const r=d.records.find(x=>x.id===new URLSearchParams(location.search).get("id")),h=$("record-detail");if(!r)return empty(h,"Experience not found","This record is not in the confirmed collection.");
-const v=place(d,r);document.title=r.title+" | Culture Passport";h.replaceChildren();add(h,"p",(types[r.type]||r.type)+" / ARCHIVE RECORD","eyebrow");add(h,"h1",r.title);add(h,"p",r.summary,"detail-lead");const g=add(h,"div",null,"detail-grid");
-for(const [k,val] of [["DATE",label(r)+" · exact day unknown"],["CITY",v?.city||"Unknown"],["VENUE",v?.name||"Unknown"],["EVIDENCE","Directly confirmed visit"]]){const b=add(g,"div",null,"detail-metric");add(b,"small",k);add(b,"strong",val)}
-add(h,"h2","Recognition & history");const awards=add(h,"div",null,"award-list");const guide=r.guide;
-if(guide){const a=add(awards,"div",null,"award-card"),desc=guide.distinction==="starred"?guide.stars+" Michelin star(s)":guide.distinction==="selected"?"Michelin Selected":guide.distinction==="plate"?"Michelin Plate (not a star)":"Outside Michelin coverage";add(a,"strong",desc+(guide.edition?" · "+guide.edition:""));if(guide.note)add(a,"p",guide.note);if(guide.sourceUrl){const p=add(a,"p");p.appendChild(link(guide.sourceUrl,"Michelin evidence ↗"))}}
-for(const x of r.recognitions||[]){const a=add(awards,"div",null,"award-card");add(a,"strong",x.organization+" · "+x.year+" "+x.result+" · "+x.category);add(a,"p",x.recipient+(x.relationship?" — "+x.relationship:""));if(x.recognitionAtDifferentVenue)add(a,"p","This award was credited to another restaurant.");if(x.timingRelativeToVisit==="after_visit")add(a,"p","Award occurred after the visit.");if(x.sourceUrl){const p=add(a,"p");p.appendChild(link(x.sourceUrl,"Historical source ↗"))}}
-add(h,"p","Recognition dates are independent of visit dates. No later award is claimed as held at the time of a meal.","caveat");add(h,"h2","Evidence");add(h,"p",r.visit?.source||"Direct recollection","detail-note");h.appendChild(link("./explore.html","← Return to collection","text-link"));h.querySelectorAll(".award-card a").forEach(a=>{a.target="_blank";a.rel="noopener noreferrer"})}
-function interview(d){const h=$("interview-list"),sum=$("interview-summary"),tabs=[...document.querySelectorAll("[data-area]")],statuses=["visited","maybe","not_visited"],labels={visited:"Visited",maybe:"Maybe",not_visited:"Didn't visit"};let area="Baltimore",answers={};const key="culture-passport:interview:v1";try{answers=JSON.parse(localStorage.getItem(key)||"{}")||{}}catch(_){}
-const canonical=r=>r.visitStatus==="confirmed"?"visited":r.visitStatus==="not_visited"?"not_visited":r.visitStatus==="maybe"?"maybe":null;const answer=r=>canonical(r)||answers[r.id];
-function report(){const reviewed=d.candidates.filter(r=>statuses.includes(answer(r)));$("interview-progress").textContent=reviewed.length+" / "+d.candidates.length+" reviewed";const lines=["CULTURE PASSPORT · RESTAURANT INTERVIEW"];for(const s of statuses){const rs=reviewed.filter(r=>answer(r)===s);lines.push("",labels[s]+" ("+rs.length+"):",...(rs.length?rs.map(r=>"• "+r.area+" — "+r.name+(canonical(r)?" [historical interview]":" [new answer]")):["None"]))}lines.push("","Unconfirmed candidates are excluded from published experience totals.");sum.value=lines.join("\n")}
-function save(){try{localStorage.setItem(key,JSON.stringify(answers))}catch(_){}}
-function paint(){for(const t of tabs){const a=t.dataset.area===area;t.classList.toggle("active",a);t.setAttribute("aria-pressed",String(a))}h.replaceChildren();for(const [i,r] of d.candidates.filter(r=>r.area===area).entries()){const c=add(h,"article",null,"interview-item");add(c,"span",(i+1)+" / "+area,"tag");add(c,"h3",r.name);add(c,"p",r.interviewCue);add(c,"p",r.recognition);const state=canonical(r);
-if(state){add(c,"div",state==="visited"?"✓ Confirmed visit"+(r.visitPeriod?" · "+r.visitPeriod:""):state==="maybe"?"? Possibly visited · not yet confirmed":"✕ Not visited","locked"+(state==="maybe"?" maybe":state==="not_visited"?" no":""))}else{const cs=add(c,"div",null,"choices");cs.setAttribute("role","group");cs.setAttribute("aria-label","Did you visit "+r.name+"?");for(const s of statuses){const b=add(cs,"button",labels[s],answer(r)===s?"active":"");b.type="button";b.setAttribute("aria-pressed",String(answer(r)===s));b.addEventListener("click",()=>{if(answers[r.id]===s)delete answers[r.id];else answers[r.id]=s;save();paint();report()})}}if(r.sourceUrl){const a=link(r.sourceUrl,"Source ↗","source-link");a.target="_blank";a.rel="noopener noreferrer";c.appendChild(a)}}}
-tabs.forEach(t=>t.addEventListener("click",()=>{area=t.dataset.area;paint()}));
-$("copy-interview").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(sum.value);$("copy-status").textContent="Copied."}catch(_){sum.focus();sum.select();$("copy-status").textContent="Select and copy highlighted text."}});
-$("reset-interview").addEventListener("click",()=>{answers={};save();paint();report();$("copy-status").textContent="Local answers cleared."});paint();report()}
-document.querySelectorAll("[data-nav]").forEach(a=>{if(a.dataset.nav===(page==="record"?"explore":page)){a.classList.add("active");a.setAttribute("aria-current","page")}});
-fetch("./data/records.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("Missing archive data");return r.json()}).then(d=>{
-if(!Array.isArray(d.records)||!Array.isArray(d.venues))throw Error("Invalid archive data");
-if(page==="home")home(d);else if(page==="explore")explore(d);else if(page==="timeline")timeline(d);else if(page==="map")mapView(d);else if(page==="record")record(d);
-else if(page==="interview")return fetch("./data/interview.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("Interview data missing");return r.json()}).then(interview)
-}).catch(e=>{const ids={home:"featured-records",explore:"explore-results",timeline:"timeline-results",map:"city-list",record:"record-detail",interview:"interview-list"};if($(ids[page]))empty($(ids[page]),"Unable to load",e.message)});
+(function(){
+  "use strict";
+  const page=document.body.dataset.page||"home";
+  const $=(selector,root=document)=>root.querySelector(selector);
+  const all=(selector,root=document)=>Array.from(root.querySelectorAll(selector));
+  const el=(tag,cls,text)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined&&text!==null)x.textContent=String(text);return x;};
+  const link=(label,url,cls)=>{const a=el("a",cls,label);a.href=url;return a;};
+  const byId=(id)=>document.getElementById(id);
+  const href=(r)=>"./record.html?id="+encodeURIComponent(r.id);
+  const yearLabel=(r)=>r.visit?.label||"Date uncertain";
+  const displayYear=(r)=>{
+    if(r.visit?.year)return String(r.visit.year);
+    const yrs=r.visit?.possibleYears||[];
+    if(yrs.length===1)return String(yrs[0]);
+    if(yrs.length>1)return yrs[0]+"–"+yrs[yrs.length-1];
+    return "Date unknown";
+  };
+  const yearForSorting=(r)=>r.visit?.year||r.visit?.possibleYears?.[0]||-1;
+  const byDate=(a,b)=>yearForSorting(b)-yearForSorting(a)||(b.visit?.month||0)-(a.visit?.month||0)||a.title.localeCompare(b.title);
+  const titleFor={dining:"Restaurants",concert:"Concerts",opera:"Opera",theater:"Theater"};
+  function empty(parent,title,description,url,label){
+    parent.replaceChildren();
+    const block=el("div","empty");
+    block.append(el("h3","",title),el("p","",description));
+    if(url)block.append(link(label||"Explore →",url));
+    parent.append(block);
+  }
+  function setActiveNav(){
+    const target=page==="record"?"explore":page;
+    all(".nav a").forEach(a=>{const current=a.dataset.nav===target;a.classList.toggle("active",current);if(current)a.setAttribute("aria-current","page");});
+  }
+  function card(r,v){
+    const a=link(" ",href(r),"record-card");
+    a.textContent="";
+    const top=el("p","eyebrow",r.type.toUpperCase()+" / "+(v?.city||"LOCATION UNKNOWN"));
+    const h=el("h3","",r.title),description=el("p","",r.summary);
+    const bottom=el("div","record-footer");
+    bottom.append(el("span","",yearLabel(r)+(r.favorite?" · A favorite":"")),el("span","","Open record ↗"));
+    a.append(top,h,description,bottom);
+    return a;
+  }
+  function siteStats(db){
+    const records=db.records.filter(r=>r.status==="confirmed");
+    const venues=new Map(db.venues.map(v=>[v.id,v]));
+    const cities=new Set(records.map(r=>venues.get(r.venueId)?.city).filter(Boolean));
+    const starred=records.filter(r=>r.type==="dining"&&r.guide?.distinction==="starred"&&r.guide.stars>0);
+    const st=[["total-records",records.length],["total-venues",new Set(records.map(r=>r.venueId)).size],["total-cities",cities.size],["total-starred",starred.length]];
+    st.forEach(([key,value])=>{const target=byId(key);if(target)target.textContent=value;});
+    for(const key of Object.keys(titleFor)){const target=byId(key+"-count");if(target)target.textContent=records.filter(r=>r.type===key).length+" recorded";}
+  }
+  function home(db){
+    siteStats(db);
+    const venues=new Map(db.venues.map(v=>[v.id,v]));
+    const host=byId("featured-records");
+    const records=db.records.filter(r=>r.status==="confirmed").sort((a,b)=>Number(!!b.favorite)-Number(!!a.favorite)||byDate(a,b)).slice(0,5);
+    host.replaceChildren();
+    records.forEach(r=>{
+      const v=venues.get(r.venueId);
+      const a=link("",href(r),"feature-row");
+      a.append(el("span","feature-year",displayYear(r)));
+      const mid=el("div");mid.append(el("strong","",r.title),el("small","",v.city+" · "+(r.favorite?"Personal favorite":"Confirmed visit")));
+      a.append(mid,el("span","feature-arrow","↗"));host.append(a);
+    });
+  }
+  function explore(db){
+    const host=byId("explore-results"),city=byId("city-filter"),search=byId("search"),count=byId("result-count");
+    const venues=new Map(db.venues.map(v=>[v.id,v]));
+    const availableCities=[...new Set(db.records.map(r=>venues.get(r.venueId)?.city).filter(Boolean))].sort();
+    availableCities.forEach(n=>{const option=el("option","",n);option.value=n;city.append(option);});
+    const params=new URLSearchParams(window.location.search);
+    let filter=Object.prototype.hasOwnProperty.call(titleFor,params.get("type"))?params.get("type"):"all";
+    const buttons=all(".tabstrip button[data-type]");
+    function update(){
+      buttons.forEach(b=>{const active=b.dataset.type===filter;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});
+      const q=search.value.trim().toLocaleLowerCase();
+      const rows=db.records.filter(r=>{
+        const v=venues.get(r.venueId);
+        const content=[r.title,r.summary,v?.city,v?.region,v?.name].join(" ").toLocaleLowerCase();
+        return r.status==="confirmed"&&(filter==="all"||r.type===filter)&&(!city.value||city.value===v?.city)&&(!q||content.includes(q));
+      }).sort(byDate);
+      count.textContent=rows.length+" confirmed experience"+(rows.length===1?"":"s");
+      host.replaceChildren();
+      if(rows.length===0){empty(host,filter!=="all"?"This chapter is awaiting its first entry.":"No matching experiences yet.",filter!=="all"?"No "+titleFor[filter].toLowerCase()+" have been confirmed in this archive. Names and dates will be added as you recall them.":"Try changing the category, city, or search terms.",filter==="dining"?"./interview.html":null,"Continue the interview →");return;}
+      rows.forEach(r=>host.append(card(r,venues.get(r.venueId))));
+    }
+    buttons.forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.type;const url=new URL(location.href);if(filter==="all")url.searchParams.delete("type");else url.searchParams.set("type",filter);history.replaceState(null,"",url);update();}));
+    city.addEventListener("change",update);search.addEventListener("input",update);update();
+  }
+  function timeline(db){
+    const host=byId("timeline-results"),select=byId("timeline-type"),count=byId("timeline-count");
+    const venues=new Map(db.venues.map(v=>[v.id,v]));
+    function render(){
+      const grouped=new Map();
+      const results=db.records.filter(r=>r.status==="confirmed"&&(select.value==="all"||r.type===select.value)).sort(byDate);
+      for(const r of results){const label=displayYear(r);if(!grouped.has(label))grouped.set(label,[]);grouped.get(label).push(r);}
+      count.textContent=results.length+" recorded experience"+(results.length===1?"":"s");
+      host.replaceChildren();
+      if(!results.length){empty(host,"Nothing confirmed in this chapter yet.","The timeline is ready for your first verified memory.");return;}
+      for(const [label,rows] of grouped){
+        const section=el("section","timeline-group"),year=el("div","timeline-year",label),stack=el("div","timeline-stack");
+        rows.forEach(r=>{const v=venues.get(r.venueId);const a=link("",href(r),"timeline-entry"),mid=el("div");
+          mid.append(el("small","",r.type.toUpperCase()+" · "+v.city+" · "+yearLabel(r)),el("h3","",r.title));
+          a.append(mid,el("span","","↗"));stack.append(a);
+        });
+        section.append(year,stack);host.append(section);
+      }
+    }
+    select.addEventListener("change",render);render();
+  }
+  function map(db){
+    const host=byId("culture-map"),list=byId("city-list"),venues=new Map(db.venues.map(v=>[v.id,v])),groups=new Map();
+    for(const r of db.records.filter(x=>x.status==="confirmed")){
+      const v=venues.get(r.venueId);if(!v||!v.location)continue;
+      if(!groups.has(v.city))groups.set(v.city,{city:v.city,lat:v.location.lat,lng:v.location.lng,records:[]});
+      groups.get(v.city).records.push(r);
+    }
+    list.replaceChildren();
+    if(!groups.size){host.textContent="No mapped experiences yet.";list.textContent="No cities yet.";return;}
+    if(typeof window.L==="undefined"){host.textContent="Map library unavailable. Use the city list to browse each destination."; }
+    let leafletMap=null;
+    if(typeof window.L!=="undefined"){
+      host.replaceChildren();
+      leafletMap=L.map(host,{scrollWheelZoom:false,zoomControl:true});
+      L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",{attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:18}).addTo(leafletMap);
+    }
+    const bounds=[];
+    [...groups.values()].sort((a,b)=>a.city.localeCompare(b.city)).forEach(g=>{
+      if(leafletMap){
+        const marker=L.marker([g.lat,g.lng],{icon:L.divIcon({className:"",html:'<div class="culture-marker">'+g.records.length+'</div>',iconSize:[28,28],iconAnchor:[14,14]})}).addTo(leafletMap);
+        const popup=el("div");popup.append(el("strong","",g.city),el("p","",g.records.length+" recorded visits · approximate city location"));
+        const ul=el("ul");g.records.forEach(r=>{const li=el("li");li.append(link(r.title,href(r)));ul.append(li);});popup.append(ul);marker.bindPopup(popup);
+        bounds.push([g.lat,g.lng]);
+      }
+      const b=el("button","city-item");b.type="button";b.append(el("strong","",g.city),el("span","",g.records.length+" experience"+(g.records.length===1?"":"s")));
+      b.addEventListener("click",()=>{if(leafletMap)leafletMap.setView([g.lat,g.lng],11,{animate:true});else window.location.href="./explore.html";});list.append(b);
+    });
+    if(leafletMap){if(bounds.length===1)leafletMap.setView(bounds[0],10);else leafletMap.fitBounds(bounds,{padding:[45,45],maxZoom:10});}
+  }
+  function detail(db){
+    const host=byId("record-detail"),params=new URLSearchParams(window.location.search),id=params.get("id");
+    const r=db.records.find(x=>x.id===id&&x.status==="confirmed");
+    if(!r){empty(host,"Experience not found.","This record may have moved or has not been confirmed.", "./explore.html","Back to the archive →");return;}
+    document.title=r.title+" | Culture Passport";
+    const v=db.venues.find(x=>x.id===r.venueId)||{};
+    host.replaceChildren();
+    host.append(el("p","eyebrow",r.type.toUpperCase()+" / "+(v.city||"")),
+                el("h1","",r.title),el("p","detail-lead",r.summary));
+    if(r.favorite){const favorite=el("p","eyebrow","✳ A PERSONAL FAVORITE");host.append(favorite);}
+    const grid=el("div","detail-grid");
+    for(const [label,value] of [["EXPERIENCE DATE",yearLabel(r)],["LOCATION",[v.city,v.region].filter(Boolean).join(", ")],["VENUE",v.name||r.title],["STATUS","Confirmed firsthand visit"]]){
+      const block=el("div","detail-metric");block.append(el("small","",label),el("strong","",value));grid.append(block);
+    }
+    host.append(grid);
+    if(v.address)host.append(el("p","detail-note","Venue address: "+v.address+". The geographic map currently uses city-level approximate markers."));
+    const note=el("div","caveat","Historical accuracy: the date of the visit and the date of external restaurant awards are separate facts. No unknown day is invented.");
+    host.append(note);
+    const badges=el("div","award-list");
+    const g=r.guide;
+    if(g&&g.distinction==="starred"){const card=el("div","award-card");card.append(el("strong","","Michelin · "+g.stars+" star"+(g.stars===1?"":"s")+(g.edition?" · "+g.edition+" guide":"")),el("p","","The precise meal date relative to the annual award may be unverified."));if(g.sourceUrl)card.append(link("Michelin source ↗",g.sourceUrl));badges.append(card);}
+    else if(g&&g.distinction==="plate"){const card=el("div","award-card");card.append(el("strong","","Michelin · The Plate · "+g.edition),el("p","","The Plate is a historical recommendation, not a Michelin star. Recognition at the exact visit date is unknown."));if(g.sourceUrl)card.append(link("Guide source ↗",g.sourceUrl));badges.append(card);}
+    else if(g&&g.distinction==="selected"){const card=el("div","award-card");card.append(el("strong","","Michelin Selected · "+g.edition),el("p","","Guide listing is distinct from Michelin star recognition, and may postdate the visit."));if(g.sourceUrl)card.append(link("Guide source ↗",g.sourceUrl));badges.append(card);}
+    for(const award of r.recognitions||[]){const block=el("div","award-card");block.append(el("strong","",award.organization+" · "+award.year+" · "+award.result),el("p","",award.category+" — "+award.recipient));if(award.relationship)block.append(el("p","",award.relationship));if(award.timingRelativeToVisit==="after_visit")block.append(el("p","","Awarded after the remembered visit."));if(award.sourceUrl)block.append(link("Award source ↗",award.sourceUrl));badges.append(block);}
+    if(badges.childElementCount){host.append(el("h2","","Recognition & context"),badges);}
+    else host.append(el("h2","","Recognition & context"),el("p","detail-note","No Michelin star or James Beard honor is claimed for this visit. Its place in the collection comes from the memory itself."));
+  }
+  const key="alexford:culture-interview:v1";
+  function interview(db){
+    const list=byId("interview-list"),progress=byId("interview-progress"),summary=byId("interview-summary"),output=byId("copy-status");
+    const areas=all("[data-area]");let active="Baltimore",answers={};
+    try{const saved=JSON.parse(localStorage.getItem(key)||"{}");if(saved&&typeof saved==="object"&&!Array.isArray(saved))answers=saved;}catch(_){}
+    const locked=(x)=>["confirmed","not_visited","maybe"].includes(x.visitStatus);
+    const answer=(x)=>x.visitStatus==="confirmed"?"visited":x.visitStatus==="not_visited"?"not_visited":x.visitStatus==="maybe"?"maybe":answers[x.id];
+    const label={visited:"Visited",maybe:"Possibly visited",not_visited:"Did not visit"};
+    const statuses=["visited","maybe","not_visited"];
+    function persist(){try{localStorage.setItem(key,JSON.stringify(answers));}catch(_){}}
+    function updateSummary(){
+      const grouped={visited:[],maybe:[],not_visited:[]};
+      for(const x of db.candidates){const a=answer(x);if(statuses.includes(a))grouped[a].push(x.area+" — "+x.name+(locked(x)?" (confirmed interview answer)":" (local response)"));}
+      const pending=db.candidates.filter(x=>x.userMemoryLead&&!x.userMemoryLead.identityConfirmed);
+      summary.value="CULTURE PASSPORT — RESTAURANT INTERVIEW\n\n"+statuses.map(s=>label[s]+" ("+grouped[s].length+"):\n"+(grouped[s].map(n=>"• "+n).join("\n")||"None yet")).join("\n\n")+"\n\nVENUE IDENTITY TO CONFIRM:\n"+(pending.map(x=>"• "+x.name+" — "+x.userMemoryLead.recalled).join("\n")||"None")+"\n\nUnverified answers do not appear in the public passport until explicitly reviewed.";
+      const completed=db.candidates.filter(x=>statuses.includes(answer(x))).length;
+      progress.textContent=completed+" / "+db.candidates.length+" reviewed";persist();
+    }
+    function render(){
+      list.replaceChildren();
+      const candidates=db.candidates.filter(x=>x.area===active);
+      if(!candidates.length){empty(list,"No candidates in this area yet.","New historically relevant restaurants can be added over time.");return;}
+      candidates.forEach((x,i)=>{
+        const card=el("article","interview-item");
+        card.append(el("span","tag","RESTAURANT "+String(i+1).padStart(2,"0")+" / "+x.area),el("h3","",x.name),el("p","",x.interviewCue),el("p","",x.recognition));
+        if(x.userMemoryLead&&!x.userMemoryLead.identityConfirmed){card.append(el("p","tag","Identification lead: "+x.userMemoryLead.recalled));}
+        if(locked(x)){
+          const style=x.visitStatus==="maybe"?"locked maybe":x.visitStatus==="not_visited"?"locked no":"locked";
+          card.append(el("div",style,x.visitStatus==="confirmed"?"✓ Confirmed visit"+(x.visitPeriod?" · "+x.visitPeriod:""):x.visitStatus==="not_visited"?"✕ Confirmed not visited":"? Possibly visited, pending confirmation"));
+        }else{
+          const choices=el("div","choices");choices.setAttribute("role","group");choices.setAttribute("aria-label","Have you visited "+x.name+"?");
+          statuses.forEach(status=>{
+            const b=el("button",answers[x.id]===status?"active":"",label[status]);b.type="button";b.setAttribute("aria-pressed",String(answers[x.id]===status));
+            b.addEventListener("click",()=>{if(answers[x.id]===status)delete answers[x.id];else answers[x.id]=status;output.textContent="";updateSummary();render();});
+            choices.append(b);
+          });card.append(choices);
+        }
+        if(x.sourceUrl){const a=link("View restaurant or recognition source ↗",x.sourceUrl,"source-link");a.target="_blank";a.rel="noopener noreferrer";card.append(a);}
+        list.append(card);
+      });
+    }
+    areas.forEach(b=>b.addEventListener("click",()=>{active=b.dataset.area;areas.forEach(x=>{const is=x===b;x.classList.toggle("active",is);x.setAttribute("aria-pressed",String(is));});render();}));
+    const tabBox=$(".interview-actions .tabstrip");
+    const allAreas=[...new Set(db.candidates.map(x=>x.area))];
+    allAreas.filter(a=>!areas.some(b=>b.dataset.area===a)).forEach(a=>{const b=el("button","",a);b.dataset.area=a;b.type="button";b.setAttribute("aria-pressed","false");b.addEventListener("click",()=>{active=a;all("[data-area]").forEach(x=>{const is=x===b;x.classList.toggle("active",is);x.setAttribute("aria-pressed",String(is));});render();});tabBox.append(b);});
+    byId("reset-interview").addEventListener("click",()=>{answers={};output.textContent="Local edits cleared; historical confirmed answers are unchanged.";updateSummary();render();});
+    byId("copy-interview").addEventListener("click",async()=>{try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(summary.value);output.textContent="Answers copied. Paste them into ChatGPT for review.";}else{summary.focus();summary.select();output.textContent="Select and copy the highlighted answers.";}}catch(_){summary.focus();summary.select();output.textContent="Select and copy the highlighted answers."; }});
+    updateSummary();render();
+  }
+  setActiveNav();
+  async function boot(){
+    try{
+      const r=await fetch("./data/records.json",{cache:"no-cache"});if(!r.ok)throw Error("Records HTTP "+r.status);
+      const db=await r.json();
+      if(!Array.isArray(db.records)||!Array.isArray(db.venues))throw Error("Invalid culture data");
+      if(page==="home")home(db);
+      if(page==="explore")explore(db);
+      if(page==="timeline")timeline(db);
+      if(page==="map")map(db);
+      if(page==="record")detail(db);
+      if(page==="interview"){
+        const q=await fetch("./data/interview.json",{cache:"no-cache"});if(!q.ok)throw Error("Interview HTTP "+q.status);
+        const payload=await q.json();if(!Array.isArray(payload.candidates))throw Error("Invalid interview data");
+        interview(payload);
+      }
+    }catch(err){
+      const host=byId(page==="home"?"featured-records":page==="explore"?"explore-results":page==="timeline"?"timeline-results":page==="map"?"culture-map":page==="record"?"record-detail":"interview-list");
+      if(host)empty(host,"Unable to load the archive.","The records could not be loaded. Try refreshing the page or check the deployment.");
+      if(window.console&&console.error)console.error("Culture Passport load error:",err);
+    }
+  }
+  boot();
 })();
