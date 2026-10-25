@@ -25,7 +25,7 @@ assert all(r["guide"]["stars"] == 0 for r in records if r.get("guide") and r["gu
 assert {"Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen",
         "Momofuku CCDC", "République", "Sauvage", "Gunther & Co.",
         "Thames Street Oyster House"}.issubset({r["title"] for r in records})
-assert len(candidates) >= 139
+assert len(candidates) >= 148
 assert len({c["id"] for c in candidates}) == len(candidates)
 assert len({(c["area"].casefold(), c["name"].casefold()) for c in candidates}) == len(candidates)
 assert all(c["sourceUrl"].startswith("https://") for c in candidates)
@@ -58,7 +58,7 @@ assert interview_data["periods"]["New York City"].startswith("2018–2020")
 assert "2010" in interview_data["periods"]["Chicago"]
 assert interview_data["periods"]["St. Louis"].startswith("2011–2014")
 assert interview_data["periods"]["Breckenridge"] == "2021, 2022 and 2023"
-assert all(next(c for c in candidates if c["name"] == name)["visitStatus"] == "unreviewed" for name in ["PDT (Please Don't Tell)", "The Aviary", "The Violet Hour"])
+assert all(next(c for c in candidates if c["name"] == name)["visitStatus"] == "unreviewed" for name in ["The Aviary", "The Violet Hour"])
 dominics = next(c for c in candidates if c["name"] == "Dominic's on the Hill")
 assert dominics["visitStatus"] == "confirmed" and dominics["visitPeriod"] == "December 28, 2012"
 assert dominics["researchOnly"] is True
@@ -83,6 +83,19 @@ assert 'x.editorial?.featuredException' in (ROOT / "assets/app.js").read_text(en
 assert all(c.get("confirmedVisitId") in {r["id"] for r in records}
            for c in candidates if c["visitStatus"] == "confirmed" and c.get("confirmedVisitId"))
 assert any(c["name"] == "Alma Cocina Latina" and c["visitStatus"] == "maybe" for c in candidates)
+pdt = next(c for c in candidates if c["name"] == "PDT (Please Don't Tell)" and c["area"] == "New York City")
+assert pdt["visitStatus"] == "maybe" and "2018–2020" in pdt["visitPeriod"]
+assert pdt["recognitionYear"] == 2012 and pdt["screening"]["status"] == "award_qualified"
+assert pdt["sourceUrl"].startswith("https://archive.jamesbeard.org")
+assert not any(r["title"] == "PDT (Please Don't Tell)" for r in records)
+for name, area in [("Clover Club", "New York City"), ("Columbia Room", "Washington, DC"),
+                   ("Best Intentions", "Chicago"), ("Hopleaf Bar", "Chicago"),
+                   ("Fern Bar", "Kansas City Metro"), ("Wild Child", "Kansas City Metro"),
+                   ("Traveling Mercies", "Denver Metro")]:
+    candidate = next(c for c in candidates if c["name"] == name and c["area"] == area)
+    assert candidate["visitStatus"] == "unreviewed"
+    assert candidate["screening"]["status"] == "award_qualified"
+    assert candidate["sourceUrl"].startswith("https://")
 assert any(c["name"] == "Gunther & Co." and c["visitStatus"] == "confirmed" for c in candidates)
 assert all(len(c.get("linkedVisitIds", [])) == 3 for c in candidates if c["name"] == "Breckenridge Distillery Restaurant")
 assert all(c["name"] not in {r["title"] for r in records}
