@@ -13,7 +13,7 @@
     "maybe",
     "not_visited"
   ],
-  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit.",
+  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit.",
   "candidates": [
     {
       "id": "altimore-charleston",
@@ -70,7 +70,10 @@
       "awardFamily": "context",
       "interviewCue": "Harbor East; Northern Italian food, hand-made pasta and wine.",
       "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf",
-      "visitStatus": "unreviewed"
+      "visitStatus": "not_visited",
+      "reviewedOn": "2026-10-24",
+      "reviewSource": "Alex's direct answer in the 2026-10-24 Culinary Passport interview",
+      "visitPeriod": "2018–2021: did not visit"
     },
     {
       "id": "altimore-petit-louis-bistro",
