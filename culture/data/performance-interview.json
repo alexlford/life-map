@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "created": "2026-10-25",
+  "scope": "Potential cultural performance identities and other memories. These are interview leads, not confirmed show attendance.",
+  "candidates": [
+    {
+      "id": "theater-christmas-carol-denver-2024",
+      "category": "theater",
+      "name": "A Christmas Carol",
+      "city": "Denver",
+      "year": 2024,
+      "confirmation": "probable",
+      "relatedExperienceId": "theater-denver-holiday-theater-2024",
+      "userMemory": "Attended Denver theater around Christmas 2024; likely A Christmas Carol, unconfirmed identity.",
+      "engagement": "Wolf Theatre, November 22–December 29, 2024",
+      "sourceUrl": "https://www.denvercenter.org/news-center/denver-center-theatre-company-announces-2024-25-season/"
+    },
+    {
+      "id": "second-city-holidazed-chicago-2017",
+      "category": "theater",
+      "name": "Holidazed and Confused",
+      "city": "Chicago",
+      "year": 2017,
+      "confirmation": "possible",
+      "relatedExperienceId": "theater-second-city-chicago-2017",
+      "userMemory": "A Second City performance during Christmas season; no particular revue title confirmed.",
+      "engagement": "Second City holiday run at 1616 N Wells in 2017",
+      "sourceUrl": "https://chicago.suntimes.com/2017/11/22/18368555/holiday-show-guide-scrooges-nutcrackers-taylor-swift-and-more"
+    },
+    {
+      "id": "denver-unknown-play",
+      "category": "theater",
+      "name": "Another Denver play or musical",
+      "city": "Denver",
+      "year": null,
+      "confirmation": "unidentified_outing",
+      "relatedExperienceId": null,
+      "userMemory": "User recalled attending at least one other play or musical in Denver, title and year not yet established.",
+      "sourceUrl": "https://www.denvercenter.org/"
+    }
+  ],
+  "fullyIdentified": [
+    "The Book of Mormon (Kansas City, December 2016)",
+    "SIX (Denver, December 2023)"
+  ]
+}
