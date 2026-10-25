@@ -44,7 +44,8 @@
     "reservationEvidence": "Date and party size from completed reservation screenshots are documentary evidence, not independent proof of check-in or dining. Only directly restaurant-level Michelin/JBF recognition enters the curated collection automatically. The user explicitly excluded Le Fou Frog: it must not enter any deployed venue/experience ledger, even though its date appears in private conversation uploads.",
     "storyFirst": "Each published entry leads with a grounded personal memory, atmosphere, or occasion. Dates are retained in provenance but the public timeline emphasizes approximate years, seasons, and meaningful events. Never fabricate meals, companion details, specific actions, or feelings not supplied by the user.",
     "dateDisplay": "Date/party details are backend evidence, available in a collapsed archive-notes section on experience pages, not default cards or timeline. Exact date may be shown only if necessary to a user-given occasion (Valentine's Day, etc.).",
-    "familyStory": "A venue may carry a narrative across sister restaurants or expansions. Guide badges identify the recognized original without treating each branch as a separate unverified award."
+    "familyStory": "A venue may carry a narrative across sister restaurants or expansions. Guide badges identify the recognized original without treating each branch as a separate unverified award.",
+    "culturalExperiences": "Concert, festival, theatrical, live television, magic and opera entries can be supported by user recollections or personal event archive screenshots without Michelin/James Beard recognition. Show exact performance dates only when supported; a run's date window never proves a particular night."
   },
   "venues": [
     {
@@ -345,6 +346,370 @@
         "precision": "city-centroid"
       },
       "sourceId": "mister-oso-denver"
+    },
+    {
+      "id": "venue-red-hot-chili-peppers",
+      "name": "State Farm Center",
+      "city": "Champaign",
+      "region": "Illinois",
+      "country": "USA",
+      "location": {
+        "lat": 40.1164,
+        "lng": -88.2434,
+        "precision": "city-centroid"
+      },
+      "sourceId": "red-hot-chili-peppers"
+    },
+    {
+      "id": "venue-the-killers",
+      "name": "Sears Centre Arena",
+      "city": "Hoffman Estates",
+      "region": "Illinois",
+      "country": "USA",
+      "location": {
+        "lat": 42.0428,
+        "lng": -88.0798,
+        "precision": "city-centroid"
+      },
+      "sourceId": "the-killers"
+    },
+    {
+      "id": "venue-lollapalooza-all-three-days",
+      "name": "Grant Park",
+      "city": "Chicago",
+      "region": "Illinois",
+      "country": "USA",
+      "location": {
+        "lat": 41.8781,
+        "lng": -87.6298,
+        "precision": "city-centroid"
+      },
+      "sourceId": "lollapalooza-all-three-days"
+    },
+    {
+      "id": "venue-saturday-night-live-sigourney-weaver-the-ting-tings",
+      "name": "NBC Studio 8H, Rockefeller Center",
+      "city": "New York City",
+      "region": "New York",
+      "country": "USA",
+      "location": {
+        "lat": 40.7128,
+        "lng": -74.006,
+        "precision": "city-centroid"
+      },
+      "sourceId": "saturday-night-live-sigourney-weaver-the-ting-tings"
+    },
+    {
+      "id": "venue-murray-state-choruses-at-carnegie-hall",
+      "name": "Carnegie Hall",
+      "city": "New York City",
+      "region": "New York",
+      "country": "USA",
+      "location": {
+        "lat": 40.7128,
+        "lng": -74.006,
+        "precision": "city-centroid"
+      },
+      "sourceId": "murray-state-choruses-at-carnegie-hall"
+    },
+    {
+      "id": "venue-blue-man-group-new-york",
+      "name": "Astor Place Theatre",
+      "city": "New York City",
+      "region": "New York",
+      "country": "USA",
+      "location": {
+        "lat": 40.7128,
+        "lng": -74.006,
+        "precision": "city-centroid"
+      },
+      "sourceId": "blue-man-group-new-york"
+    },
+    {
+      "id": "venue-penn-teller-las-vegas",
+      "name": "Rio All-Suite Hotel and Casino",
+      "city": "Las Vegas",
+      "region": "Nevada",
+      "country": "USA",
+      "location": {
+        "lat": 36.1699,
+        "lng": -115.1398,
+        "precision": "city-centroid"
+      },
+      "sourceId": "penn-teller-las-vegas"
+    },
+    {
+      "id": "venue-hozier",
+      "name": "Liberty Hall",
+      "city": "Lawrence",
+      "region": "Kansas",
+      "country": "USA",
+      "location": {
+        "lat": 38.9717,
+        "lng": -95.2353,
+        "precision": "city-centroid"
+      },
+      "sourceId": "hozier"
+    },
+    {
+      "id": "venue-ellie-goulding",
+      "name": "Providence Medical Center Amphitheater",
+      "city": "Bonner Springs",
+      "region": "Kansas",
+      "country": "USA",
+      "location": {
+        "lat": 39.0597,
+        "lng": -94.8836,
+        "precision": "city-centroid"
+      },
+      "sourceId": "ellie-goulding"
+    },
+    {
+      "id": "venue-the-book-of-mormon-kansas-city",
+      "name": "Music Hall, Municipal Auditorium",
+      "city": "Kansas City",
+      "region": "Missouri",
+      "country": "USA",
+      "location": {
+        "lat": 39.0997,
+        "lng": -94.5786,
+        "precision": "city-centroid"
+      },
+      "sourceId": "the-book-of-mormon-kansas-city"
+    },
+    {
+      "id": "venue-wagner-s-ring-cycle-lyric-opera-of-chicago",
+      "name": "Civic Opera House / Lyric Opera of Chicago",
+      "city": "Chicago",
+      "region": "Illinois",
+      "country": "USA",
+      "location": {
+        "lat": 41.8781,
+        "lng": -87.6298,
+        "precision": "city-centroid"
+      },
+      "sourceId": "wagner-s-ring-cycle-lyric-opera-of-chicago"
+    },
+    {
+      "id": "venue-the-second-city-holiday-show",
+      "name": "The Second City",
+      "city": "Chicago",
+      "region": "Illinois",
+      "country": "USA",
+      "location": {
+        "lat": 41.8781,
+        "lng": -87.6298,
+        "precision": "city-centroid"
+      },
+      "sourceId": "the-second-city-holiday-show"
+    },
+    {
+      "id": "venue-billy-joel-kansas-city",
+      "name": "Kauffman Stadium",
+      "city": "Kansas City",
+      "region": "Missouri",
+      "country": "USA",
+      "location": {
+        "lat": 39.0997,
+        "lng": -94.5786,
+        "precision": "city-centroid"
+      },
+      "sourceId": "billy-joel-kansas-city"
+    },
+    {
+      "id": "venue-cats-baltimore",
+      "name": "Hippodrome Theatre",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "USA",
+      "location": {
+        "lat": 39.2904,
+        "lng": -76.6122,
+        "precision": "city-centroid"
+      },
+      "sourceId": "cats-baltimore"
+    },
+    {
+      "id": "venue-super-bowl-liv-halftime-shakira-jennifer-lopez",
+      "name": "Hard Rock Stadium",
+      "city": "Miami Gardens",
+      "region": "Florida",
+      "country": "USA",
+      "location": {
+        "lat": 25.942,
+        "lng": -80.2456,
+        "precision": "city-centroid"
+      },
+      "sourceId": "super-bowl-liv-halftime-shakira-jennifer-lopez"
+    },
+    {
+      "id": "venue-jason-isbell-and-the-400-unit",
+      "name": "Red Rocks Amphitheatre",
+      "city": "Morrison",
+      "region": "Colorado",
+      "country": "USA",
+      "location": {
+        "lat": 39.6536,
+        "lng": -105.1911,
+        "precision": "city-centroid"
+      },
+      "sourceId": "jason-isbell-and-the-400-unit"
+    },
+    {
+      "id": "venue-trampled-by-turtles",
+      "name": "Red Rocks Amphitheatre",
+      "city": "Morrison",
+      "region": "Colorado",
+      "country": "USA",
+      "location": {
+        "lat": 39.6536,
+        "lng": -105.1911,
+        "precision": "city-centroid"
+      },
+      "sourceId": "trampled-by-turtles"
+    },
+    {
+      "id": "venue-said-the-sky",
+      "name": "Red Rocks Amphitheatre",
+      "city": "Morrison",
+      "region": "Colorado",
+      "country": "USA",
+      "location": {
+        "lat": 39.6536,
+        "lng": -105.1911,
+        "precision": "city-centroid"
+      },
+      "sourceId": "said-the-sky"
+    },
+    {
+      "id": "venue-lauv",
+      "name": "The Mission Ballroom",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903,
+        "precision": "city-centroid"
+      },
+      "sourceId": "lauv"
+    },
+    {
+      "id": "venue-six-the-musical",
+      "name": "Buell Theatre",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903,
+        "precision": "city-centroid"
+      },
+      "sourceId": "six-the-musical"
+    },
+    {
+      "id": "venue-billy-strings",
+      "name": "Fiddler's Green Amphitheatre",
+      "city": "Greenwood Village",
+      "region": "Colorado",
+      "country": "USA",
+      "location": {
+        "lat": 39.6172,
+        "lng": -104.9508,
+        "precision": "city-centroid"
+      },
+      "sourceId": "billy-strings"
+    },
+    {
+      "id": "venue-mt-joy",
+      "name": "Dillon Amphitheater",
+      "city": "Dillon",
+      "region": "Colorado",
+      "country": "USA",
+      "location": {
+        "lat": 39.6303,
+        "lng": -106.0434,
+        "precision": "city-centroid"
+      },
+      "sourceId": "mt-joy"
+    },
+    {
+      "id": "venue-outside-festival-day-two",
+      "name": "Civic Center Park",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903,
+        "precision": "city-centroid"
+      },
+      "sourceId": "outside-festival-day-two"
+    },
+    {
+      "id": "venue-the-chainsmokers",
+      "name": "Lucas Oil Stadium",
+      "city": "Indianapolis",
+      "region": "Indiana",
+      "country": "USA",
+      "location": {
+        "lat": 39.7684,
+        "lng": -86.1581,
+        "precision": "city-centroid"
+      },
+      "sourceId": "the-chainsmokers"
+    },
+    {
+      "id": "venue-diplo-s-run-club-denver",
+      "name": "Cheesman Park",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903,
+        "precision": "city-centroid"
+      },
+      "sourceId": "diplo-s-run-club-denver"
+    },
+    {
+      "id": "venue-tedeschi-trucks-band",
+      "name": "Red Rocks Amphitheatre",
+      "city": "Morrison",
+      "region": "Colorado",
+      "country": "USA",
+      "location": {
+        "lat": 39.6536,
+        "lng": -105.1911,
+        "precision": "city-centroid"
+      },
+      "sourceId": "tedeschi-trucks-band"
+    },
+    {
+      "id": "venue-muse",
+      "name": "Fiddler's Green Amphitheatre",
+      "city": "Greenwood Village",
+      "region": "Colorado",
+      "country": "USA",
+      "location": {
+        "lat": 39.6172,
+        "lng": -104.9508,
+        "precision": "city-centroid"
+      },
+      "sourceId": "muse"
+    },
+    {
+      "id": "venue-santana",
+      "name": "Red Rocks Amphitheatre",
+      "city": "Morrison",
+      "region": "Colorado",
+      "country": "USA",
+      "location": {
+        "lat": 39.6536,
+        "lng": -105.1911,
+        "precision": "city-centroid"
+      },
+      "sourceId": "santana"
     }
   ],
   "records": [
@@ -1657,6 +2022,958 @@
         ],
         "reviewedOn": "2026-10-25",
         "confidence": "verified_recognition_to_original_location_and_direct_user_visit_to_brand"
+      }
+    },
+    {
+      "id": "concert-red-hot-chili-peppers",
+      "type": "concert",
+      "title": "Red Hot Chili Peppers",
+      "venueId": "venue-red-hot-chili-peppers",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2007,
+        "date": "2007-03-03",
+        "possibleYears": [
+          2007
+        ],
+        "label": "March 2007",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "A Chili Peppers show in Champaign, one of your earliest archived concerts.",
+      "memory": {
+        "headline": "Red Hot Chili Peppers",
+        "teaser": "A Chili Peppers show in Champaign, one of your earliest archived concerts.",
+        "story": "An early Illinois concert from 2007, before that summer's extraordinary Lollapalooza weekend.",
+        "period": "March 2007",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-the-killers",
+      "type": "concert",
+      "title": "The Killers",
+      "venueId": "venue-the-killers",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2007,
+        "date": "2007-05-10",
+        "possibleYears": [
+          2007
+        ],
+        "label": "May 2007",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "The Killers in the Sam's Town era outside Chicago.",
+      "memory": {
+        "headline": "The Killers",
+        "teaser": "The Killers in the Sam's Town era outside Chicago.",
+        "story": "A spring 2007 concert at Sears Centre Arena in Hoffman Estates.",
+        "period": "May 2007",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-lollapalooza-all-three-days",
+      "type": "concert",
+      "title": "Lollapalooza — all three days",
+      "venueId": "venue-lollapalooza-all-three-days",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2007,
+        "date": null,
+        "possibleYears": [
+          2007
+        ],
+        "label": "August 2007",
+        "precision": "approximate",
+        "source": "Direct user recollection + personal event archive and published season history",
+        "evidenceType": "user_recollection"
+      },
+      "summary": "Three full days in Grant Park at Lollapalooza 2007.",
+      "memory": {
+        "headline": "Lollapalooza — all three days",
+        "teaser": "Three full days in Grant Park at Lollapalooza 2007.",
+        "story": "You attended the entire 2007 Lollapalooza weekend. Daft Punk and Pearl Jam were among its headliners, and the event archive captures their sets. Treat the weekend as one festival memory, without inventing attendance at every stage.",
+        "period": "August 2007",
+        "source": "Direct user recollection matched to the published production window; exact performance date unknown."
+      },
+      "sourceUrl": "https://news.pollstar.com/2007/04/12/lolla-07/",
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "theater-saturday-night-live-sigourney-weaver-the-ting-tings",
+      "type": "theater",
+      "title": "Saturday Night Live — Sigourney Weaver / The Ting Tings",
+      "venueId": "venue-saturday-night-live-sigourney-weaver-the-ting-tings",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2010,
+        "date": "2010-01-16",
+        "possibleYears": [
+          2010
+        ],
+        "label": "January 2010",
+        "precision": "day",
+        "source": "Direct user recollection + personal event archive and published season history",
+        "evidenceType": "user_recollection"
+      },
+      "summary": "Inside the Saturday Night Live studio during a New York trip.",
+      "memory": {
+        "headline": "Saturday Night Live — Sigourney Weaver / The Ting Tings",
+        "teaser": "Inside the Saturday Night Live studio during a New York trip.",
+        "story": "The January 16, 2010 broadcast was hosted by Sigourney Weaver and featured The Ting Tings, tying television comedy and a live musical performance to a memorable trip.",
+        "period": "January 2010",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": "https://www.nbc.com/saturday-night-live",
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-murray-state-choruses-at-carnegie-hall",
+      "type": "concert",
+      "title": "Murray State choruses at Carnegie Hall",
+      "venueId": "venue-murray-state-choruses-at-carnegie-hall",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2010,
+        "date": "2010-01-18",
+        "possibleYears": [
+          2010
+        ],
+        "label": "January 2010",
+        "precision": "day",
+        "source": "Direct user recollection + personal event archive and published season history",
+        "evidenceType": "user_recollection"
+      },
+      "summary": "Seeing your sister perform at Carnegie Hall.",
+      "memory": {
+        "headline": "Murray State choruses at Carnegie Hall",
+        "teaser": "Seeing your sister perform at Carnegie Hall.",
+        "story": "You remember a trip to New York for a performance by your sister while she studied at Murray State. University reporting places its Concert Choir and University Chorale at Carnegie Hall on January 18, 2010. Her connection is the centerpiece of this story.",
+        "period": "January 2010",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "theater-blue-man-group-new-york",
+      "type": "theater",
+      "title": "Blue Man Group — New York",
+      "venueId": "venue-blue-man-group-new-york",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2010,
+        "date": null,
+        "possibleYears": [
+          2010
+        ],
+        "label": "January 2010",
+        "precision": "approximate",
+        "source": "Direct user recollection + personal event archive and published season history",
+        "evidenceType": "user_recollection"
+      },
+      "summary": "The visually inventive Blue Man Group stage show in New York.",
+      "memory": {
+        "headline": "Blue Man Group — New York",
+        "teaser": "The visually inventive Blue Man Group stage show in New York.",
+        "story": "The January 2010 New York visit included Blue Man Group: drumming, comedy and visual spectacle in an intimate off-Broadway setting.",
+        "period": "January 2010",
+        "source": "Direct user recollection matched to the published production window; exact performance date unknown."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "theater-penn-teller-las-vegas",
+      "type": "theater",
+      "title": "Penn & Teller — Las Vegas",
+      "venueId": "venue-penn-teller-las-vegas",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2010,
+        "date": null,
+        "possibleYears": [
+          2010
+        ],
+        "label": "March 2010",
+        "precision": "approximate",
+        "source": "Direct user recollection + personal event archive and published season history",
+        "evidenceType": "user_recollection"
+      },
+      "summary": "A trip to Las Vegas and Penn & Teller's stage magic.",
+      "memory": {
+        "headline": "Penn & Teller — Las Vegas",
+        "teaser": "A trip to Las Vegas and Penn & Teller's stage magic.",
+        "story": "You remember seeing Penn & Teller in Las Vegas in March 2010. The show's magic, humor and skepticism make it a natural part of the Culture Passport.",
+        "period": "March 2010",
+        "source": "Direct user recollection matched to the published production window; exact performance date unknown."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-hozier",
+      "type": "concert",
+      "title": "Hozier",
+      "venueId": "venue-hozier",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2015,
+        "date": "2015-02-23",
+        "possibleYears": [
+          2015
+        ],
+        "label": "February 2015",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "Hozier at Liberty Hall in Lawrence.",
+      "memory": {
+        "headline": "Hozier",
+        "teaser": "Hozier at Liberty Hall in Lawrence.",
+        "story": "A concert archive entry from Hozier's international breakthrough years, in a much more intimate venue than today's arenas.",
+        "period": "February 2015",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-ellie-goulding",
+      "type": "concert",
+      "title": "Ellie Goulding",
+      "venueId": "venue-ellie-goulding",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2016,
+        "date": "2016-05-17",
+        "possibleYears": [
+          2016
+        ],
+        "label": "May 2016",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "Ellie Goulding outside Kansas City, with Years & Years.",
+      "memory": {
+        "headline": "Ellie Goulding",
+        "teaser": "Ellie Goulding outside Kansas City, with Years & Years.",
+        "story": "An outdoor amphitheater concert from the mid-2010s, preserved in your event archive.",
+        "period": "May 2016",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "theater-the-book-of-mormon-kansas-city",
+      "type": "theater",
+      "title": "The Book of Mormon — Kansas City",
+      "venueId": "venue-the-book-of-mormon-kansas-city",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2016,
+        "date": null,
+        "possibleYears": [
+          2016
+        ],
+        "label": "December 2016",
+        "precision": "approximate",
+        "source": "Direct user recollection + personal event archive and published season history",
+        "evidenceType": "user_recollection"
+      },
+      "summary": "The irreverent Broadway musical at Kansas City's Music Hall.",
+      "memory": {
+        "headline": "The Book of Mormon — Kansas City",
+        "teaser": "The irreverent Broadway musical at Kansas City's Music Hall.",
+        "story": "You remember seeing The Book of Mormon in Kansas City around December 2016. The national tour played Music Hall from December 6–11, 2016, matching your recollection. The precise night you attended is unknown.",
+        "period": "December 2016",
+        "source": "Direct user recollection matched to the published production window; exact performance date unknown."
+      },
+      "sourceUrl": "https://www.ibdb.com/touring-theatre/municipal-auditorium-music-hall-415",
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "opera-wagner-s-ring-cycle-lyric-opera-of-chicago",
+      "type": "opera",
+      "title": "Wagner's Ring Cycle — Lyric Opera of Chicago",
+      "venueId": "venue-wagner-s-ring-cycle-lyric-opera-of-chicago",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2016,
+        "date": null,
+        "possibleYears": [
+          2016
+        ],
+        "label": "2016–2018",
+        "precision": "approximate",
+        "source": "Direct user recollection + personal event archive and published season history",
+        "evidenceType": "user_recollection"
+      },
+      "summary": "A multi-year journey through Wagner's Ring at the Lyric.",
+      "memory": {
+        "headline": "Wagner's Ring Cycle — Lyric Opera of Chicago",
+        "teaser": "A multi-year journey through Wagner's Ring at the Lyric.",
+        "story": "Your photo of the Civic Opera House in October 2016 displays Das Rheingold banners; another photo from November 2018 shows your group at the Lyric during the Siegfried season. Those are anchors for your Ring Cycle memories, not assertions that the photos prove attendance at any particular performance.",
+        "period": "2016–2018",
+        "source": "Direct user recollection matched to the published production window; exact performance date unknown."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "theater-the-second-city-holiday-show",
+      "type": "theater",
+      "title": "The Second City — holiday show",
+      "venueId": "venue-the-second-city-holiday-show",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2017,
+        "date": null,
+        "possibleYears": [
+          2017
+        ],
+        "label": "Christmas season 2017",
+        "precision": "approximate",
+        "source": "Direct user recollection + personal event archive and published season history",
+        "evidenceType": "user_recollection"
+      },
+      "summary": "An evening of Chicago improvisational comedy around Christmas.",
+      "memory": {
+        "headline": "The Second City — holiday show",
+        "teaser": "An evening of Chicago improvisational comedy around Christmas.",
+        "story": "You attended a Second City performance in Chicago around the 2017 holidays. The exact revue is unconfirmed, but the comedy-theater experience belongs in the passport.",
+        "period": "Christmas season 2017",
+        "source": "Direct user recollection matched to the published production window; exact performance date unknown."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-billy-joel-kansas-city",
+      "type": "concert",
+      "title": "Billy Joel — Kansas City",
+      "venueId": "venue-billy-joel-kansas-city",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2018,
+        "date": "2018-09-21",
+        "possibleYears": [
+          2018
+        ],
+        "label": "September 2018",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "Billy Joel brings a concert to Kansas City's baseball stadium.",
+      "memory": {
+        "headline": "Billy Joel — Kansas City",
+        "teaser": "Billy Joel brings a concert to Kansas City's baseball stadium.",
+        "story": "Your event archive remembers Billy Joel at Kauffman Stadium in September 2018.",
+        "period": "September 2018",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "theater-cats-baltimore",
+      "type": "theater",
+      "title": "Cats — Baltimore",
+      "venueId": "venue-cats-baltimore",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2020,
+        "date": null,
+        "possibleYears": [
+          2020
+        ],
+        "label": "January 2020",
+        "precision": "approximate",
+        "source": "Direct user recollection + personal event archive and published season history",
+        "evidenceType": "user_recollection"
+      },
+      "summary": "Cats at the Hippodrome, just before the pandemic.",
+      "memory": {
+        "headline": "Cats — Baltimore",
+        "teaser": "Cats at the Hippodrome, just before the pandemic.",
+        "story": "You remember seeing Cats at Baltimore's Hippodrome right before COVID. The tour played January 21–26, 2020, which fits your memory. Keep the exact evening unspecified.",
+        "period": "January 2020",
+        "source": "Direct user recollection matched to the published production window; exact performance date unknown."
+      },
+      "sourceUrl": "https://www.broadwayworld.com/baltimore/article/Hippodrome-Theatre-Presents-CATS-20200121",
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-super-bowl-liv-halftime-shakira-jennifer-lopez",
+      "type": "concert",
+      "title": "Super Bowl LIV halftime — Shakira / Jennifer Lopez",
+      "venueId": "venue-super-bowl-liv-halftime-shakira-jennifer-lopez",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2020,
+        "date": "2020-02-02",
+        "possibleYears": [
+          2020
+        ],
+        "label": "February 2020",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "The Super Bowl halftime show in Miami.",
+      "memory": {
+        "headline": "Super Bowl LIV halftime — Shakira / Jennifer Lopez",
+        "teaser": "The Super Bowl halftime show in Miami.",
+        "story": "Your live-music event archive records Shakira's Super Bowl LIV halftime appearance, featuring Jennifer Lopez, as a cultural experience within the larger football event. It should link to the sporting memory rather than double-count the trip.",
+        "period": "February 2020",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-jason-isbell-and-the-400-unit",
+      "type": "concert",
+      "title": "Jason Isbell and the 400 Unit",
+      "venueId": "venue-jason-isbell-and-the-400-unit",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2022,
+        "date": "2022-05-03",
+        "possibleYears": [
+          2022
+        ],
+        "label": "May 2022",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "Jason Isbell at Red Rocks, with Waxahatchee.",
+      "memory": {
+        "headline": "Jason Isbell and the 400 Unit",
+        "teaser": "Jason Isbell at Red Rocks, with Waxahatchee.",
+        "story": "The 2022 archive lists Jason Isbell and the 400 Unit at Red Rocks with Waxahatchee.",
+        "period": "May 2022",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-trampled-by-turtles",
+      "type": "concert",
+      "title": "Trampled by Turtles",
+      "venueId": "venue-trampled-by-turtles",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2022,
+        "date": "2022-07-14",
+        "possibleYears": [
+          2022
+        ],
+        "label": "July 2022",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "Trampled by Turtles, with Ruston Kelly, at Red Rocks.",
+      "memory": {
+        "headline": "Trampled by Turtles",
+        "teaser": "Trampled by Turtles, with Ruston Kelly, at Red Rocks.",
+        "story": "Another summer night of music in the foothills, preserved in your archive.",
+        "period": "July 2022",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-said-the-sky",
+      "type": "concert",
+      "title": "Said the Sky",
+      "venueId": "venue-said-the-sky",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2022,
+        "date": "2022-08-14",
+        "possibleYears": [
+          2022
+        ],
+        "label": "August 2022",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "Said the Sky at Red Rocks, with Nurko and Autograf.",
+      "memory": {
+        "headline": "Said the Sky",
+        "teaser": "Said the Sky at Red Rocks, with Nurko and Autograf.",
+        "story": "Electronic music at Red Rocks with the foothills as the setting.",
+        "period": "August 2022",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-lauv",
+      "type": "concert",
+      "title": "Lauv",
+      "venueId": "venue-lauv",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2022,
+        "date": "2022-09-06",
+        "possibleYears": [
+          2022
+        ],
+        "label": "September 2022",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "Lauv at Mission Ballroom with Hayley Kiyoko.",
+      "memory": {
+        "headline": "Lauv",
+        "teaser": "Lauv at Mission Ballroom with Hayley Kiyoko.",
+        "story": "Your concert archive places Lauv in Denver during his 2022 tour.",
+        "period": "September 2022",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "theater-six-the-musical",
+      "type": "theater",
+      "title": "SIX — The Musical",
+      "venueId": "venue-six-the-musical",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2023,
+        "date": null,
+        "possibleYears": [
+          2023
+        ],
+        "label": "December 2023",
+        "precision": "approximate",
+        "source": "Direct user recollection + personal event archive and published season history",
+        "evidenceType": "user_recollection"
+      },
+      "summary": "The six wives of Henry VIII take the stage as pop stars.",
+      "memory": {
+        "headline": "SIX — The Musical",
+        "teaser": "The six wives of Henry VIII take the stage as pop stars.",
+        "story": "You remember a Denver musical about Henry VIII's wives and place it in 2023. SIX played the Buell Theatre December 5–24, 2023, matching that recollection. The precise night need not be pinned down.",
+        "period": "December 2023",
+        "source": "Direct user recollection matched to the published production window; exact performance date unknown."
+      },
+      "sourceUrl": "https://www.denvercenter.org/news-center/dcpa-broadways-2023-24-season-announcement/",
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-billy-strings",
+      "type": "concert",
+      "title": "Billy Strings",
+      "venueId": "venue-billy-strings",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2024,
+        "date": "2024-05-17",
+        "possibleYears": [
+          2024
+        ],
+        "label": "May 2024",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "Billy Strings at Fiddler's Green.",
+      "memory": {
+        "headline": "Billy Strings",
+        "teaser": "Billy Strings at Fiddler's Green.",
+        "story": "A high-energy bluegrass night in the 2024 concert archive.",
+        "period": "May 2024",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-mt-joy",
+      "type": "concert",
+      "title": "Mt. Joy",
+      "venueId": "venue-mt-joy",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2024,
+        "date": "2024-08-10",
+        "possibleYears": [
+          2024
+        ],
+        "label": "August 2024",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "Mt. Joy beside Lake Dillon and the Colorado mountains.",
+      "memory": {
+        "headline": "Mt. Joy",
+        "teaser": "Mt. Joy beside Lake Dillon and the Colorado mountains.",
+        "story": "The archive places Mt. Joy at the Dillon Amphitheater in August 2024.",
+        "period": "August 2024",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-outside-festival-day-two",
+      "type": "concert",
+      "title": "Outside Festival — day two",
+      "venueId": "venue-outside-festival-day-two",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2025,
+        "date": "2025-06-01",
+        "possibleYears": [
+          2025
+        ],
+        "label": "June 2025",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "A music-and-outdoors festival in central Denver.",
+      "memory": {
+        "headline": "Outside Festival — day two",
+        "teaser": "A music-and-outdoors festival in central Denver.",
+        "story": "Your 2025 event archive shows you at day two of the Outside Festival in Civic Center Park. Preserve it as a festival experience without guessing which sets you watched.",
+        "period": "June 2025",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-the-chainsmokers",
+      "type": "concert",
+      "title": "The Chainsmokers",
+      "venueId": "venue-the-chainsmokers",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2026,
+        "date": "2026-04-04",
+        "possibleYears": [
+          2026
+        ],
+        "label": "April 2026",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "The Chainsmokers at Lucas Oil Stadium.",
+      "memory": {
+        "headline": "The Chainsmokers",
+        "teaser": "The Chainsmokers at Lucas Oil Stadium.",
+        "story": "An Indianapolis music memory from your 2026 concert archive.",
+        "period": "April 2026",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-diplo-s-run-club-denver",
+      "type": "concert",
+      "title": "Diplo's Run Club — Denver",
+      "venueId": "venue-diplo-s-run-club-denver",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2026,
+        "date": "2026-07-12",
+        "possibleYears": [
+          2026
+        ],
+        "label": "July 2026",
+        "precision": "day",
+        "source": "Direct user recollection + personal event archive and published season history",
+        "evidenceType": "user_recollection"
+      },
+      "summary": "Running meets live electronic music at Cheesman Park.",
+      "memory": {
+        "headline": "Diplo's Run Club — Denver",
+        "teaser": "Running meets live electronic music at Cheesman Park.",
+        "story": "Diplo's Run Club combined a Denver 5K with a post-run DJ concert in Cheesman Park. It belongs in the Cultural Passport as a crossover with the Adventures and running archive, not a separate race invented from the concert.",
+        "period": "July 2026",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": "https://diplosrunclub.com/denver",
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-tedeschi-trucks-band",
+      "type": "concert",
+      "title": "Tedeschi Trucks Band",
+      "venueId": "venue-tedeschi-trucks-band",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2026,
+        "date": "2026-08-01",
+        "possibleYears": [
+          2026
+        ],
+        "label": "August 2026",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "Tedeschi Trucks Band with Lukas Nelson at Red Rocks.",
+      "memory": {
+        "headline": "Tedeschi Trucks Band",
+        "teaser": "Tedeschi Trucks Band with Lukas Nelson at Red Rocks.",
+        "story": "Your concert archive records this Red Rocks show in early August 2026.",
+        "period": "August 2026",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-muse",
+      "type": "concert",
+      "title": "Muse",
+      "venueId": "venue-muse",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2026,
+        "date": "2026-08-18",
+        "possibleYears": [
+          2026
+        ],
+        "label": "August 2026",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "Muse, Portugal. The Man and The Temper Trap at Fiddler's Green.",
+      "memory": {
+        "headline": "Muse",
+        "teaser": "Muse, Portugal. The Man and The Temper Trap at Fiddler's Green.",
+        "story": "A major summer 2026 rock show in Greenwood Village, preserved in your event archive.",
+        "period": "August 2026",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
+      }
+    },
+    {
+      "id": "concert-santana",
+      "type": "concert",
+      "title": "Santana",
+      "venueId": "venue-santana",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "year": 2026,
+        "date": "2026-08-24",
+        "possibleYears": [
+          2026
+        ],
+        "label": "August 2026",
+        "precision": "day",
+        "source": "User's personal event archive screenshot",
+        "evidenceType": "personal_event_archive"
+      },
+      "summary": "Santana at Red Rocks.",
+      "memory": {
+        "headline": "Santana",
+        "teaser": "Santana at Red Rocks.",
+        "story": "A late-summer 2026 Santana show in the Colorado foothills, confirmed in the concert archive.",
+        "period": "August 2026",
+        "source": "Event date appears in the user's prior concert archive screenshot or historical event record; it does not establish event time."
+      },
+      "sourceUrl": null,
+      "editorial": {
+        "collection": "cultural_performances",
+        "awardQualified": false,
+        "featuredException": false,
+        "note": "User-attested cultural experience; no Michelin/James Beard requirement applies to non-dining records."
       }
     }
   ],
