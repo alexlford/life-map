@@ -208,54 +208,121 @@
   }
   const key="alexford:culture-interview:v1";
   function interview(db){
-    const list=byId("interview-list"),progress=byId("interview-progress"),summary=byId("interview-summary"),output=byId("copy-status");
-    const areas=all("[data-area]");let active="Baltimore",screen="awards",answers={};
-    try{const saved=JSON.parse(localStorage.getItem(key)||"{}");if(saved&&typeof saved==="object"&&!Array.isArray(saved))answers=saved;}catch(_){}
+    const list=byId("interview-list"),progress=byId("interview-progress"),summary=byId("interview-summary"),output=byId("copy-status"),savedStatus=byId("interview-save-status");
+    const pageInfo=byId("interview-page-state"),previous=byId("interview-previous"),next=byId("interview-next");
+    const batchSize=12,uiKey=key+":navigation";
+    let active="Denver Metro",screen="awards",page=0,answers={},storageAvailable=true;
+    const labels={visited:"Visited",maybe:"Possibly visited",not_visited:"Did not visit"};
+    const statuses=["visited","maybe","not_visited"];
     const locked=(x)=>["confirmed","not_visited","maybe"].includes(x.visitStatus);
     const answer=(x)=>x.visitStatus==="confirmed"?"visited":x.visitStatus==="not_visited"?"not_visited":x.visitStatus==="maybe"?"maybe":answers[x.id];
-    const label={visited:"Visited",maybe:"Possibly visited",not_visited:"Did not visit"};
-    const statuses=["visited","maybe","not_visited"];
-    function persist(){try{localStorage.setItem(key,JSON.stringify(answers));}catch(_){}}
-    function updateSummary(){
+    const included=db.candidates.filter(x=>!x.excludedFromPublication);
+    try{
+      const saved=JSON.parse(localStorage.getItem(key)||"{}");
+      if(saved&&typeof saved==="object"&&!Array.isArray(saved))answers=saved;
+      const nav=JSON.parse(localStorage.getItem(uiKey)||"{}");
+      if(included.some(x=>x.area===nav.area))active=nav.area;
+      if(["awards","leads","all"].includes(nav.screen))screen=nav.screen;
+      if(Number.isInteger(nav.page)&&nav.page>=0)page=nav.page;
+    }catch(_){storageAvailable=false;}
+    const persist=()=>{
+      try{
+        localStorage.setItem(key,JSON.stringify(answers));
+        localStorage.setItem(uiKey,JSON.stringify({area:active,screen,page}));
+        storageAvailable=true;
+      }catch(_){storageAvailable=false;}
+      if(savedStatus)savedStatus.textContent=storageAvailable?"Your responses are saved in this browser.":"Browser storage is unavailable; copy your answers below to preserve them.";
+    };
+    const candidateFilter=(x)=>x.area===active&&(screen==="all"||screen==="awards"&&x.screening?.status==="award_qualified"||screen==="leads"&&(x.userMemoryLead&&!x.userMemoryLead.identityConfirmed||x.screening?.status!=="award_qualified"));
+    const relevant=()=>included.filter(candidateFilter);
+    const tabBox=$(".interview-actions .tabstrip");
+    const allAreas=[...new Set(included.map(x=>x.area))];
+    allAreas.filter(a=>!all("[data-area]").some(b=>b.dataset.area===a)).forEach(a=>{
+      const b=el("button","",a);b.dataset.area=a;b.type="button";b.setAttribute("aria-pressed","false");tabBox.append(b);
+    });
+    const areaButtons=all("[data-area]"),screeningButtons=all("[data-screen]");
+    const syncTabs=()=>{
+      areaButtons.forEach(b=>{const on=b.dataset.area===active;b.classList.toggle("active",on);b.setAttribute("aria-pressed",String(on));});
+      screeningButtons.forEach(b=>{const on=b.dataset.screen===screen;b.classList.toggle("active",on);b.setAttribute("aria-pressed",String(on));});
+    };
+    const updateSummary=()=>{
       const grouped={visited:[],maybe:[],not_visited:[]};
-      for(const x of db.candidates){const a=answer(x);if(statuses.includes(a))grouped[a].push(x.area+" — "+x.name+(locked(x)?" (confirmed interview answer)":" (local response)"));}
-      const pending=db.candidates.filter(x=>x.userMemoryLead&&!x.userMemoryLead.identityConfirmed);
-      summary.value="CULTURE PASSPORT — RESTAURANT AND BAR INTERVIEW\n\n"+statuses.map(s=>label[s]+" ("+grouped[s].length+"):\n"+(grouped[s].map(n=>"• "+n).join("\n")||"None yet")).join("\n\n")+"\n\nVENUE IDENTITY TO CONFIRM:\n"+(pending.map(x=>"• "+x.name+" — "+x.userMemoryLead.recalled).join("\n")||"None")+"\n\nUnverified answers do not appear in the public passport until explicitly reviewed.";
-      const completed=db.candidates.filter(x=>statuses.includes(answer(x))).length;
-      progress.textContent=completed+" / "+db.candidates.length+" reviewed";persist();
-    }
+      for(const x of included){const a=answer(x);if(statuses.includes(a))grouped[a].push(x.area+" — "+x.name+(locked(x)?" (confirmed interview answer)":" (saved response)"));}
+      const pending=included.filter(x=>x.userMemoryLead&&!x.userMemoryLead.identityConfirmed);
+      summary.value="CULTURE PASSPORT — RESTAURANT AND BAR INTERVIEW\n\n"+statuses.map(s=>labels[s]+" ("+grouped[s].length+"):\n"+(grouped[s].map(n=>"• "+n).join("\n")||"None yet")).join("\n\n")+"\n\nVENUE IDENTITY TO CONFIRM:\n"+(pending.map(x=>"• "+x.name+" — "+x.userMemoryLead.recalled).join("\n")||"None")+"\n\nYour editable responses are saved locally and do not publish to the public passport automatically.";
+      const completed=included.filter(x=>statuses.includes(answer(x))).length;
+      const local=Object.keys(answers).filter(id=>included.some(c=>c.id===id)).length;
+      progress.textContent=completed+" / "+included.length+" reviewed · "+local+" local answers";
+    };
+    const updatePagination=(count)=>{
+      const pages=Math.max(1,Math.ceil(count/batchSize));
+      if(page>=pages)page=pages-1;
+      if(previous)previous.disabled=page===0;
+      if(next)next.disabled=page>=pages-1;
+      if(pageInfo)pageInfo.textContent=count?"Batch "+(page+1)+" of "+pages+" · "+(page*batchSize+1)+"–"+Math.min(count,(page+1)*batchSize)+" of "+count+" places":"No places in this selection";
+    };
     function render(){
+      const candidates=relevant();
+      updatePagination(candidates.length);
+      syncTabs();
       list.replaceChildren();
-      const period=byId("interview-period");if(period)period.textContent=(db.periods&&db.periods[active])?"HISTORICAL INTERVIEW WINDOW  /  "+db.periods[active]:"";
-      const candidates=db.candidates.filter(x=>x.area===active&&(screen==="all"||screen==="awards"&&x.screening?.status==="award_qualified"||screen==="leads"&&(x.userMemoryLead&&!x.userMemoryLead.identityConfirmed||x.screening?.status!=="award_qualified")));
-      const screeningCount=byId("screening-count");if(screeningCount)screeningCount.textContent=candidates.length+" shown in "+active+" · "+(screen==="awards"?"documented Michelin / James Beard connections":screen==="leads"?"unqualified or unresolved memories":"all historical candidates");
-      if(!candidates.length){empty(list,"No candidates in this area yet.","New historically relevant restaurants can be added over time.");return;}
-      candidates.forEach((x,i)=>{
+      const period=byId("interview-period");
+      if(period)period.textContent=db.periods?.[active]?"HISTORICAL INTERVIEW WINDOW / "+db.periods[active]:"";
+      const sc=byId("screening-count");
+      if(sc)sc.textContent=candidates.length+" in "+active+" · "+(screen==="awards"?"Michelin / James Beard candidates":screen==="leads"?"memory leads":"all historical candidates");
+      if(!candidates.length){
+        empty(list,"No candidates in this selection.","Switch between Michelin / James Beard, Memory leads, and All candidates.");
+        persist();return;
+      }
+      const slice=candidates.slice(page*batchSize,(page+1)*batchSize);
+      slice.forEach((x,i)=>{
         const card=el("article","interview-item");
-        card.append(el("span","tag",(x.venueType==="cocktail_bar"?"COCKTAIL BAR ":"RESTAURANT ")+String(i+1).padStart(2,"0")+" / "+x.area),el("h3","",x.name),el("p","",x.interviewCue),el("p","",x.recognition));if(x.screening?.status==="award_qualified")card.append(el("p","qualifies","Award candidate · "+(x.screening.basis==="michelin"?"Michelin Guide":"James Beard")+" · "+(x.screening.sourceTier==="primary"?"primary source":"published reporting")));else card.append(el("p","qualifies neutral","Personal memory / recognition not yet verified"));
-        if(x.userMemoryLead&&!x.userMemoryLead.identityConfirmed){card.append(el("p","tag","Identification lead: "+x.userMemoryLead.recalled));}
+        card.append(el("span","tag",(x.venueType==="cocktail_bar"?"COCKTAIL BAR ":"RESTAURANT ")+String(page*batchSize+i+1).padStart(2,"0")+" / "+x.area),
+          el("h3","",x.name),el("p","",x.interviewCue),el("p","",x.recognition));
+        if(x.screening?.status==="award_qualified")card.append(el("p","qualifies","Award candidate · "+(x.screening.basis==="michelin"?"Michelin Guide":"James Beard")));
+        else card.append(el("p","qualifies neutral","Personal memory / recognition not yet verified"));
+        if(x.userMemoryLead&&!x.userMemoryLead.identityConfirmed)card.append(el("p","tag","Identification lead: "+x.userMemoryLead.recalled));
         if(locked(x)){
           const style=x.visitStatus==="maybe"?"locked maybe":x.visitStatus==="not_visited"?"locked no":"locked";
           card.append(el("div",style,x.visitStatus==="confirmed"?"✓ Confirmed visit"+(x.visitPeriod?" · "+x.visitPeriod:""):x.visitStatus==="not_visited"?"✕ Confirmed not visited":"? Possibly visited, pending confirmation"));
         }else{
-          const choices=el("div","choices");choices.setAttribute("role","group");choices.setAttribute("aria-label","Have you visited "+x.name+"?");
-          statuses.forEach(status=>{
-            const b=el("button",answers[x.id]===status?"active":"",label[status]);b.type="button";b.setAttribute("aria-pressed",String(answers[x.id]===status));
-            b.addEventListener("click",()=>{if(answers[x.id]===status)delete answers[x.id];else answers[x.id]=status;output.textContent="";updateSummary();render();});
+          const choices=el("div","choices");
+          choices.setAttribute("role","group");choices.setAttribute("aria-label","Have you visited "+x.name+"?");
+          const buttons={};
+          for(const status of statuses){
+            const b=el("button",answers[x.id]===status?"active":"",labels[status]);
+            b.type="button";b.setAttribute("aria-pressed",String(answers[x.id]===status));
+            buttons[status]=b;
+            b.addEventListener("click",()=>{
+              if(answers[x.id]===status)delete answers[x.id];else answers[x.id]=status;
+              for(const s of statuses){const selected=answers[x.id]===s;buttons[s].classList.toggle("active",selected);buttons[s].setAttribute("aria-pressed",String(selected));}
+              // Crucially, do not rebuild the card or page after answering: this preserves focus and scroll.
+              output.textContent="";
+              updateSummary();persist();
+            });
             choices.append(b);
-          });card.append(choices);
+          }
+          card.append(choices);
         }
-        if(x.sourceUrl){const a=link("View restaurant or recognition source ↗",x.sourceUrl,"source-link");a.target="_blank";a.rel="noopener noreferrer";card.append(a);}
+        if(x.sourceUrl){const a=link("Source / restaurant ↗",x.sourceUrl,"source-link");a.target="_blank";a.rel="noopener noreferrer";card.append(a);}
         list.append(card);
       });
+      persist();
     }
-    const screeningButtons=all("[data-screen]");screeningButtons.forEach(b=>b.addEventListener("click",()=>{screen=b.dataset.screen;screeningButtons.forEach(x=>{const on=x===b;x.classList.toggle("active",on);x.setAttribute("aria-pressed",String(on));});render();}));
-    areas.forEach(b=>b.addEventListener("click",()=>{active=b.dataset.area;areas.forEach(x=>{const is=x===b;x.classList.toggle("active",is);x.setAttribute("aria-pressed",String(is));});render();}));
-    const tabBox=$(".interview-actions .tabstrip");
-    const allAreas=[...new Set(db.candidates.map(x=>x.area))];
-    allAreas.filter(a=>!areas.some(b=>b.dataset.area===a)).forEach(a=>{const b=el("button","",a);b.dataset.area=a;b.type="button";b.setAttribute("aria-pressed","false");b.addEventListener("click",()=>{active=a;all("[data-area]").forEach(x=>{const is=x===b;x.classList.toggle("active",is);x.setAttribute("aria-pressed",String(is));});render();});tabBox.append(b);});
-    byId("reset-interview").addEventListener("click",()=>{answers={};output.textContent="Local edits cleared; historical confirmed answers are unchanged.";updateSummary();render();});
-    byId("copy-interview").addEventListener("click",async()=>{try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(summary.value);output.textContent="Answers copied. Paste them into ChatGPT for review.";}else{summary.focus();summary.select();output.textContent="Select and copy the highlighted answers.";}}catch(_){summary.focus();summary.select();output.textContent="Select and copy the highlighted answers."; }});
+    for(const b of areaButtons)b.addEventListener("click",()=>{active=b.dataset.area;page=0;render();});
+    for(const b of screeningButtons)b.addEventListener("click",()=>{screen=b.dataset.screen;page=0;render();});
+    if(previous)previous.addEventListener("click",()=>{if(page>0){page--;render();}});
+    if(next)next.addEventListener("click",()=>{if((page+1)*batchSize<relevant().length){page++;render();}});
+    byId("reset-interview").addEventListener("click",()=>{
+      if(!window.confirm("Clear your locally saved interview answers? Historical confirmed responses will remain."))return;
+      answers={};output.textContent="Local edits cleared; historical answers are unchanged.";updateSummary();render();
+    });
+    byId("copy-interview").addEventListener("click",async()=>{
+      try{
+        if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(summary.value);output.textContent="Answers copied. Paste them into ChatGPT for review.";}
+        else {summary.focus();summary.select();output.textContent="Select and copy the highlighted answers.";}
+      }catch(_){summary.focus();summary.select();output.textContent="Select and copy the highlighted answers.";}
+    });
     updateSummary();render();
   }
   setActiveNav();

@@ -615,10 +615,19 @@
       "memory": {
         "headline": "A favorite chapter of Baltimore dining",
         "teaser": "Charleston belongs to the Baltimore years you want to remember.",
-        "story": "You confirmed this restaurant from your Baltimore period and placed it on your 2020 timeline. The finer details of the evening can be added when you remember them.",
+        "story": "You confirmed this restaurant from your Baltimore period and placed it on your 2020 timeline. The finer details of the evening can be added when you remember them. A late-October 2020 outdoor dinner reservation offers one small anchor for that Baltimore chapter.",
         "period": "2020",
         "source": "User’s directly shared recollection, with verified contextual description where applicable"
-      }
+      },
+      "reservations": [
+        {
+          "date": "2020-10-26",
+          "platform": "Resy",
+          "occasion": "Outdoor seating",
+          "partySize": 2,
+          "verification": "historical_reservation_only"
+        }
+      ]
     },
     {
       "id": "dining-woodberry-kitchen-baltimore-2018-2021",
@@ -799,10 +808,26 @@
       "memory": {
         "headline": "A favorite winter dinner in Steamboat",
         "teaser": "A French-inspired tasting-menu evening remembered as one of your favorite meals.",
-        "story": "You remembered Sauvage in Steamboat Springs as one of your favorite dining experiences during a winter trip. That feeling is why it remains in the collection, irrespective of award criteria.",
+        "story": "You remembered Sauvage in Steamboat Springs as one of your favorite dining experiences during a winter trip. That feeling is why it remains in the collection, irrespective of award criteria. The reservation archive captures the original winter visit and a Valentine's Day booking the following February, another thread in the Steamboat story.",
         "period": "Winter 2021",
         "source": "User’s directly shared recollection, with verified contextual description where applicable"
-      }
+      },
+      "reservations": [
+        {
+          "date": "2022-02-14",
+          "platform": "Resy",
+          "occasion": "Valentine's Day",
+          "partySize": 6,
+          "verification": "historical_reservation_only"
+        },
+        {
+          "date": "2021-01-17",
+          "platform": "Resy",
+          "occasion": "Dining room",
+          "partySize": 4,
+          "verification": "historical_reservation_only"
+        }
+      ]
     },
     {
       "id": "dining-gunther-and-co-baltimore-2020-02-14",
@@ -1050,10 +1075,19 @@
       "memory": {
         "headline": "A hidden Kansas City cocktail bar",
         "teaser": "An amazing speakeasy tucked beneath a historic Kansas City building.",
-        "story": "You remembered Manifesto as an amazing cocktail-bar experience. The subterranean speakeasy atmosphere is the main memory; its James Beard semifinalist recognition adds context.",
+        "story": "You remembered Manifesto as an amazing cocktail-bar experience. The subterranean speakeasy atmosphere is the main memory; its James Beard semifinalist recognition adds context. A 2019 booking at The Rieger specifically says ‘Drinks at Manifesto,’ placing a real night of cocktails in the history of that hidden bar.",
         "period": "Kansas City years",
         "source": "User’s directly shared recollection, with verified contextual description where applicable"
-      }
+      },
+      "reservations": [
+        {
+          "date": "2019-10-25",
+          "platform": "Tock",
+          "occasion": "Drinks at Manifesto",
+          "partySize": 6,
+          "verification": "historical_reservation_only"
+        }
+      ]
     },
     {
       "id": "bar-death-and-co-denver",
@@ -1269,7 +1303,23 @@
         "story": "You described Breckenridge Distillery as a fun, nice meal and recalled visits in several different years. The story here is the place you returned to, not an exact ledger of each reservation.",
         "period": "2023",
         "source": "User’s directly shared recollection, with verified contextual description where applicable"
-      }
+      },
+      "reservations": [
+        {
+          "date": "2023-01-11",
+          "platform": "Tock",
+          "occasion": "Table reservation",
+          "partySize": 4,
+          "verification": "historical_reservation_only"
+        },
+        {
+          "date": "2023-01-05",
+          "platform": "Tock",
+          "occasion": "Chef counter reservation",
+          "partySize": 2,
+          "verification": "historical_reservation_only"
+        }
+      ]
     },
     {
       "id": "dining-q-house-denver-2021-10-21",
@@ -1463,7 +1513,7 @@
       "memory": {
         "headline": "A meal at Safta in Denver",
         "teaser": "Israeli cooking at The Source Hotel: a lively Denver dining room remembered from your RiNo years.",
-        "story": "You confirmed Safta as a restaurant you've visited in Denver. We can add the moment that made this visit memorable whenever you recall it.",
+        "story": "You confirmed Safta as a restaurant you've visited in Denver. We can add the moment that made this visit memorable whenever you recall it. A summer 2022 reservation anchors the restaurant in your Denver years, while the details that made the evening special can be added when they return to mind.",
         "period": "Denver years",
         "source": "Direct user confirmation; no date or specific meal recollection supplied."
       },
@@ -1494,7 +1544,16 @@
         ],
         "reviewedOn": "2026-10-25",
         "confidence": "documented_recognition; firsthand user-confirmed visit; time unknown"
-      }
+      },
+      "reservations": [
+        {
+          "date": "2022-07-12",
+          "platform": "Resy",
+          "occasion": "Dining",
+          "partySize": 3,
+          "verification": "historical_reservation_only"
+        }
+      ]
     },
     {
       "id": "dining-smok-denver",

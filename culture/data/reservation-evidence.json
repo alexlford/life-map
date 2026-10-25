@@ -227,7 +227,7 @@
       "publicCuration": "research_only"
     }
   ],
-  "semantics": "Existing 20 screenshot-corroborated entries are retained exactly; supplemental 39 screenshot-derived rows expand review. A completed reservation does not prove attendance. Explicitly excluded venues are omitted.",
+  "semantics": "Existing 20 screenshot-corroborated entries are retained exactly; supplemental 39 screenshot-derived rows expand review. A completed reservation does not prove attendance. Explicitly excluded venues are omitted. Resy/Tock screenshots added October 25, 2026 are separate historical booking evidence. They do not establish that every reservation was attended; do not invent a dinner from a booking or copy guest counts into public narratives. Multiple dates for one venue are not duplicates.",
   "rows": [
     {
       "name": "Westward Social",
@@ -540,6 +540,162 @@
       "status": "reservation_completed",
       "sourceType": "user_provided_screenshot",
       "publicationEligibility": "requires_independent_michelin_james_beard_review"
+    },
+    {
+      "name": "The Butcher's Daughter - West Hollywood",
+      "date": "2023-07-29",
+      "partySize": 3,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Resy",
+      "occasion": "Dining",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
+    },
+    {
+      "name": "Safta",
+      "date": "2022-07-12",
+      "partySize": 3,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Resy",
+      "occasion": "Dining",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
+    },
+    {
+      "name": "Sauvage",
+      "date": "2022-02-14",
+      "partySize": 6,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Resy",
+      "occasion": "Valentine's Day",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
+    },
+    {
+      "name": "Sauvage",
+      "date": "2021-01-17",
+      "partySize": 4,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Resy",
+      "occasion": "Dining room",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
+    },
+    {
+      "name": "Charleston",
+      "date": "2020-10-26",
+      "partySize": 2,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Resy",
+      "occasion": "Outdoor seating",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
+    },
+    {
+      "name": "Willow Creek Restaurant",
+      "date": "2026-08-23",
+      "partySize": 4,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Tock",
+      "occasion": "Standard reservation",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
+    },
+    {
+      "name": "Q39 South",
+      "date": "2025-05-24",
+      "partySize": 4,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Tock",
+      "occasion": "Reservation",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
+    },
+    {
+      "name": "Breckenridge Distillery Restaurant",
+      "date": "2023-01-11",
+      "partySize": 4,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Tock",
+      "occasion": "Table reservation",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
+    },
+    {
+      "name": "Breckenridge Distillery Restaurant",
+      "date": "2023-01-05",
+      "partySize": 2,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Tock",
+      "occasion": "Chef counter reservation",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
+    },
+    {
+      "name": "Michelob Ultra Mountain House",
+      "date": "2025-11-20",
+      "partySize": 2,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Resy",
+      "occasion": "MUMH event day",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
+    },
+    {
+      "name": "Michelob Ultra Mountain House",
+      "date": "2025-01-03",
+      "partySize": 4,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Resy",
+      "occasion": "BBMH event day",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
+    },
+    {
+      "name": "Michelob Ultra Mountain House",
+      "date": "2024-04-22",
+      "partySize": 4,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Resy",
+      "occasion": "BBMH event day",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
+    },
+    {
+      "name": "The Rieger / Drinks at Manifesto",
+      "date": "2019-10-25",
+      "partySize": 6,
+      "status": "historical_reservation",
+      "sourceType": "user_provided_screenshot",
+      "platform": "Tock",
+      "occasion": "Drinks at Manifesto",
+      "publicationEligibility": "requires_independent_michelin_james_beard_review",
+      "attendanceInference": "not_proven_by_reservation",
+      "sourceBatch": "Resy and Tock screenshots added Oct 25, 2026"
     }
   ]
 }
