@@ -39,7 +39,8 @@
     "awardFocusedCollection": "Default Culture Passport Dining chapter shows only venues with verified historical Michelin inclusion or James Beard recognition of restaurant itself or chef at that restaurant. Memory-only confirmed visits are preserved but hidden by default, discoverable with a separate toggle. Recognition year may differ from dinner year.",
     "curated": "Default Culture Passport dining views show confirmed restaurants with documented Michelin Guide recognition (star, Bib, Selected, historic Plate) or directly associated James Beard awards, finalists or semifinalists. Those awards retain their recipient and year. Chef awards at unrelated restaurants or historical awards dated after a dinner may be context, not proof of qualification at the meal date. Unverified and outside-scope visits stay in archive but are hidden from curated browsing by default.",
     "featuredExceptions": "Venue-specific Michelin/JBF honors are the default inclusion criteria, but the user's express favorites Sauvage, Gunther & Co., Death & Co Denver and provisional favorite The Majestic are displayed in the primary collection despite no established qualifying award.",
-    "beverages": "Stand-alone cocktail bars are type=bar, never counted as restaurants. James Beard Outstanding Bar Program includes bar semifinalists. Never borrow recognition from another location within a chain."
+    "beverages": "Stand-alone cocktail bars are type=bar, never counted as restaurants. James Beard Outstanding Bar Program includes bar semifinalists. Never borrow recognition from another location within a chain.",
+    "repeatVisits": "A venue may be visited in multiple years. Each confirmed year is represented as a separate experience record with a stable unique ID, sharing one venue ID; do not manufacture precise calendar dates or collapse years into one event."
   },
   "venues": [
     {
@@ -236,6 +237,20 @@
         "precision": "city-centroid"
       },
       "sourceId": "death-and-co-denver"
+    },
+    {
+      "id": "venue-breckenridge-distillery",
+      "name": "Breckenridge Distillery Restaurant",
+      "city": "Breckenridge",
+      "region": "Colorado",
+      "country": "USA",
+      "address": "1925 Airport Road, Breckenridge, CO 80424",
+      "location": {
+        "lat": 39.4817,
+        "lng": -106.0384,
+        "precision": "city-centroid"
+      },
+      "sourceId": "breckenridge-distillery"
     }
   ],
   "records": [
@@ -879,6 +894,162 @@
         "collection": "featured_cocktail_memory",
         "basis": null,
         "note": "The user expressly described Death & Co Denver as amazing and asked to include memorable cocktail bars. Awards earned by the New York location or at other competitions must not be attributed to the Denver site."
+      }
+    },
+    {
+      "id": "dining-breckenridge-distillery-2021",
+      "type": "dining",
+      "title": "Breckenridge Distillery Restaurant",
+      "venueId": "venue-breckenridge-distillery",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": 2021,
+        "possibleYears": [
+          2021
+        ],
+        "label": "2021 (exact date unknown)",
+        "precision": "approximate_year",
+        "source": "User explicitly confirmed dining at Breckenridge Distillery once each in 2021, 2022, and 2023. Exact dates and number of meals beyond the annual minimum are unknown (October 25, 2026)."
+      },
+      "summary": "Confirmed visit to Breckenridge Distillery Restaurant in 2021, one of three years Alex remembered dining there. The restaurant opened in 2016. James Beard-winning chef David Burke served as culinary ambassador, but this is not a venue-specific James Beard award; his involvement in any particular 2021–2023 meal is not verified.",
+      "recognitions": [],
+      "recognitionLeads": [
+        {
+          "recipient": "David Burke",
+          "relationship": "culinary ambassador",
+          "honor": "Prior James Beard-recognized chef, not a confirmed award for this restaurant",
+          "sourceUrl": "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/"
+        }
+      ],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No Michelin distinction established; Colorado's first Guide began in 2023."
+      },
+      "sourceUrl": "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/",
+      "editorial": {
+        "awardQualified": false,
+        "featuredException": false,
+        "collection": "archived_personal_memory",
+        "basis": null,
+        "note": "The restaurant opened in 2016. James Beard-winning chef David Burke served as culinary ambassador, but this is not a venue-specific James Beard award; his involvement in any particular 2021–2023 meal is not verified."
+      },
+      "curation": {
+        "status": "needs_verification",
+        "basis": "associated_chef",
+        "reason": "Chef David Burke's prior honors are not attributed to this venue, and the culinary-ambassador relationship is not sufficient to establish a Michelin/JBF qualifying restaurant.",
+        "evidenceUrls": [
+          "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "indirect_only"
+      }
+    },
+    {
+      "id": "dining-breckenridge-distillery-2022",
+      "type": "dining",
+      "title": "Breckenridge Distillery Restaurant",
+      "venueId": "venue-breckenridge-distillery",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": 2022,
+        "possibleYears": [
+          2022
+        ],
+        "label": "2022 (exact date unknown)",
+        "precision": "approximate_year",
+        "source": "User explicitly confirmed dining at Breckenridge Distillery once each in 2021, 2022, and 2023. Exact dates and number of meals beyond the annual minimum are unknown (October 25, 2026)."
+      },
+      "summary": "Confirmed visit to Breckenridge Distillery Restaurant in 2022, one of three years Alex remembered dining there. The restaurant opened in 2016. James Beard-winning chef David Burke served as culinary ambassador, but this is not a venue-specific James Beard award; his involvement in any particular 2021–2023 meal is not verified.",
+      "recognitions": [],
+      "recognitionLeads": [
+        {
+          "recipient": "David Burke",
+          "relationship": "culinary ambassador",
+          "honor": "Prior James Beard-recognized chef, not a confirmed award for this restaurant",
+          "sourceUrl": "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/"
+        }
+      ],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No Michelin distinction established; Colorado's first Guide began in 2023."
+      },
+      "sourceUrl": "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/",
+      "editorial": {
+        "awardQualified": false,
+        "featuredException": false,
+        "collection": "archived_personal_memory",
+        "basis": null,
+        "note": "The restaurant opened in 2016. James Beard-winning chef David Burke served as culinary ambassador, but this is not a venue-specific James Beard award; his involvement in any particular 2021–2023 meal is not verified."
+      },
+      "curation": {
+        "status": "needs_verification",
+        "basis": "associated_chef",
+        "reason": "Chef David Burke's prior honors are not attributed to this venue, and the culinary-ambassador relationship is not sufficient to establish a Michelin/JBF qualifying restaurant.",
+        "evidenceUrls": [
+          "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "indirect_only"
+      }
+    },
+    {
+      "id": "dining-breckenridge-distillery-2023",
+      "type": "dining",
+      "title": "Breckenridge Distillery Restaurant",
+      "venueId": "venue-breckenridge-distillery",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": 2023,
+        "possibleYears": [
+          2023
+        ],
+        "label": "2023 (exact date unknown)",
+        "precision": "approximate_year",
+        "source": "User explicitly confirmed dining at Breckenridge Distillery once each in 2021, 2022, and 2023. Exact dates and number of meals beyond the annual minimum are unknown (October 25, 2026)."
+      },
+      "summary": "Confirmed visit to Breckenridge Distillery Restaurant in 2023, one of three years Alex remembered dining there. The restaurant opened in 2016. James Beard-winning chef David Burke served as culinary ambassador, but this is not a venue-specific James Beard award; his involvement in any particular 2021–2023 meal is not verified.",
+      "recognitions": [],
+      "recognitionLeads": [
+        {
+          "recipient": "David Burke",
+          "relationship": "culinary ambassador",
+          "honor": "Prior James Beard-recognized chef, not a confirmed award for this restaurant",
+          "sourceUrl": "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/"
+        }
+      ],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No Michelin distinction established; Colorado's first Guide began in 2023."
+      },
+      "sourceUrl": "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/",
+      "editorial": {
+        "awardQualified": false,
+        "featuredException": false,
+        "collection": "archived_personal_memory",
+        "basis": null,
+        "note": "The restaurant opened in 2016. James Beard-winning chef David Burke served as culinary ambassador, but this is not a venue-specific James Beard award; his involvement in any particular 2021–2023 meal is not verified."
+      },
+      "curation": {
+        "status": "needs_verification",
+        "basis": "associated_chef",
+        "reason": "Chef David Burke's prior honors are not attributed to this venue, and the culinary-ambassador relationship is not sufficient to establish a Michelin/JBF qualifying restaurant.",
+        "evidenceUrls": [
+          "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "indirect_only"
       }
     }
   ],
