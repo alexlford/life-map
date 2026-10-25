@@ -15,7 +15,14 @@
   }
   function render(){
     host.replaceChildren();
-    const visible=entries.filter(x=>activeFilter==="all"||x.status===activeFilter);
+    const yearOf=x=>x.visit?.timelineYear??x.visit?.approximateYear??(x.visit?.possibleYears?.length?x.visit.possibleYears[0]:null);
+    const visible=entries.filter(x=>activeFilter==="all"||x.status===activeFilter).sort((a,b)=>{
+      const ya=yearOf(a),yb=yearOf(b);
+      if(ya===null&&yb===null)return a.name.localeCompare(b.name);
+      if(ya===null)return 1;
+      if(yb===null)return -1;
+      return ya-yb||a.name.localeCompare(b.name);
+    });
     if(!visible.length){add(host,"p","empty","No entries in this category yet.");return;}
     visible.forEach((r,i)=>{
       const card=add(host,"article","record "+r.status);
