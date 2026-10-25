@@ -66,7 +66,15 @@ def main():
     ATLAS = (ROOT / "atlas.html").read_text(encoding="utf-8")
     assert "Personal Atlas" in ATLAS and "./index.html" in ATLAS and "./dining.html" in ATLAS
     assert "./atlas.html" in INDEX and "./atlas.html" in HTML
-    assert "Michelin Dining Passport" in HTML
+    assert "Culinary Passport" in HTML
+    INTERVIEW = json.loads((ROOT / "data/dining-interview.json").read_text(encoding="utf-8"))
+    QUESTIONS = (ROOT / "dining-interview.html").read_text(encoding="utf-8")
+    assert len(INTERVIEW["candidates"]) >= 40
+    assert len(set(r["id"] for r in INTERVIEW["candidates"])) == len(INTERVIEW["candidates"])
+    assert set(r["area"] for r in INTERVIEW["candidates"]) == {"Baltimore", "Washington, DC", "Denver Metro"}
+    assert all(r["visitStatus"] == "unreviewed" and r["sourceUrl"].startswith("https://") for r in INTERVIEW["candidates"])
+    assert "Charleston" in [r["name"] for r in INTERVIEW["candidates"]]
+    assert "Interview" in QUESTIONS
     assert "./data/dining.json" in JS
     assert "./dining.html" in INDEX
     assert "body.is-embedded .dining-promo" in CSS

@@ -144,3 +144,9 @@ Current seed: République is a confirmed Guide-listed visit but not a confirmed 
 Personal Atlas is an independent property, separate from the `sports-passport` and `adventure-map` repositories, datasets, builds, and deployments. It now has a dedicated editorial landing page at `atlas.html` plus the Life Map at `index.html` and Michelin Dining Passport at `dining.html`.
 
 The Atlas landing page is currently served from `https://alexlford.github.io/life-map/atlas.html`. `atlas.alexlford.com` is the proposed independent custom subdomain, **not yet configured**: DNS plus GitHub Pages ownership and domain configuration are required before activating a CNAME. Until then, retain the root map page, historical map links, and existing professional embed (`?embed=1&mode=work`). Nothing is hosted inside the Sports or Adventures websites.
+
+## Culinary Passport: James Beard and interview expansion
+
+In addition to the Michelin Guide, `data/dining.json` can associate a named chef's James Beard recognition with a confirmed venue, preserving recipient, distinction, outcome and year (for example, République chef Margarita Manzke's 2023 pastry award). These honors never imply a Michelin star, and they cannot retroactively be described as held during an earlier meal.
+
+`data/dining-interview.json` stores **unverified restaurant research candidates**, split across Baltimore (2018–2021), Washington, DC (2018–2021) and Denver metro (2021–present). `dining-interview.html` provides a visit/maybe/not-visited questionnaire that stores browser-local selections and can copy a summary. No answer is published to the main passport automatically. Charleston is currently just an interview lead until the dining visit is confirmed. Some award recognitions occurred **after** the user's potential visit.
