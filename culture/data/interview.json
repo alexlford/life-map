@@ -1193,27 +1193,31 @@
       "id": "enveretro-safta",
       "area": "Denver Metro",
       "name": "Safta",
-      "recognition": "Michelin Selected (2023 Guide)",
+      "recognition": "Michelin Guide Selected (2023–2026), not Michelin-starred",
       "recognitionYear": 2023,
       "awardFamily": "michelin",
       "interviewCue": "The Source hotel; Israeli-style hummus and pita.",
-      "sourceUrl": "https://visitdenver.com/articles/post/denver-michelin-guide/",
-      "visitStatus": "unreviewed",
+      "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/safta",
+      "visitStatus": "confirmed",
       "screening": {
         "status": "award_qualified",
         "basis": "michelin",
-        "evidenceUrl": "https://visitdenver.com/articles/post/denver-michelin-guide/",
-        "sourceTier": "secondary",
+        "evidenceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/safta",
+        "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
-        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+        "note": "Verified venue-specific Michelin Selected, not Bib or Michelin star."
       },
       "eligibility": {
         "status": "eligible_candidate",
         "basis": "michelin",
-        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "reason": "Direct Michelin Guide inclusion; user confirmed visit.",
         "screenedOn": "2026-10-25",
-        "verifiedForPublication": false
-      }
+        "verifiedForPublication": true
+      },
+      "confirmedVisitId": "dining-safta-denver",
+      "visitPeriod": "Denver years; date not recalled",
+      "reviewSource": "Alex's direct confirmation on 2026-10-25",
+      "reviewedOn": "2026-10-25"
     },
     {
       "id": "enveretro-temaki-den",
@@ -3980,6 +3984,36 @@
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Michelin one star in Chicago 2016, 2018, 2019, 2020; Bruce Sherman won 2012 JBF Best Chef: Great Lakes at North Pond. These do not establish an actual visit. Exact award status at an unknown visit date is unknown."
+      }
+    },
+    {
+      "id": "candidate-denver-metro-smok-denver",
+      "area": "Denver Metro",
+      "name": "Smok",
+      "recognition": "Michelin Guide Selected (2023–2026), not Michelin-starred",
+      "recognitionYear": 2023,
+      "awardFamily": "michelin",
+      "interviewCue": "Chef-driven barbecue restaurant in the Source Hotel, with a relaxed counter-service setting.",
+      "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/smok",
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "dining-smok-denver",
+      "visitPeriod": "Denver years; date not recalled",
+      "reviewSource": "Alex's direct confirmation on 2026-10-25",
+      "reviewedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/smok",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Verified venue-specific Michelin Selected, not Bib or Michelin star."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Direct Michelin Guide inclusion; user confirmed visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
       }
     }
   ],
