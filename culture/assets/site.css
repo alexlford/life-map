@@ -14,3 +14,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chapter{transition:none}}
 
 .interview-period{margin:0 0 24px;padding:11px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:11px;letter-spacing:.06em;font-weight:700}
+
+.memory-option{display:inline-flex;align-items:center;gap:9px;color:var(--muted);font-size:12px;margin:15px 0}.memory-option input{accent-color:var(--wine);width:17px;height:17px}.interview-screen{padding:12px 0 20px}.interview-screen .eyebrow{margin-bottom:12px}.qualifies{font-size:10px!important;letter-spacing:.08em;color:var(--wine)!important;font-weight:800;text-transform:uppercase}.qualifies.neutral{color:var(--muted)!important}.interview-screen .tabstrip{margin-bottom:10px}
