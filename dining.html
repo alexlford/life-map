@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#04131f">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Alex Ford's Michelin Dining Passport — documented Michelin Guide restaurant visits and historical dining leads.">
+  <title>Michelin Dining Passport | Alex Ford</title>
+  <link rel="stylesheet" href="./dining.css?v=20261024">
+  <script defer src="./dining.js?v=20261024"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <a class="brand" href="https://alexlford.com">Alex Ford <span> / Personal Atlas</span></a>
+      <a class="nav-back" href="./index.html">← Life Map</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="title">
+        <div class="eyebrow"><span class="eyebrow-mark">✳</span> PLACES & EXPERIENCES <span class="eyebrow-rule"></span> DINING</div>
+        <p class="hero-kicker">A record of remarkable tables</p>
+        <h1 id="title">Michelin<br><em>Dining Passport.</em></h1>
+        <p class="hero-copy">The restaurants, cities, and meals worth remembering. Every entry keeps the visit evidence separate from a restaurant’s actual Michelin recognition, including historical awards.</p>
+        <div class="hero-accent" aria-hidden="true">✳</div>
+      </section>
+
+      <section class="stats" aria-label="Dining passport statistics">
+        <div><strong id="stat-stars">—</strong><span>Confirmed starred restaurants</span></div>
+        <div><strong id="stat-guide">—</strong><span>Recorded Guide visits</span></div>
+        <div><strong id="stat-leads">—</strong><span>Restaurant identities to confirm</span></div>
+      </section>
+
+      <section class="content" aria-labelledby="records-title">
+        <div class="section-heading">
+          <div><p class="overline">THE COLLECTION</p><h2 id="records-title">Visits &amp; leads</h2></div>
+          <div class="filterbar" role="group" aria-label="Filter dining records">
+            <button type="button" class="filter active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter" data-filter="confirmed" aria-pressed="false">Recorded</button>
+            <button type="button" class="filter" data-filter="researching" aria-pressed="false">Researching</button>
+          </div>
+        </div>
+        <div id="records" class="record-grid" aria-live="polite">
+          <p class="empty">Loading restaurant records…</p>
+        </div>
+      </section>
+
+      <section class="method" aria-labelledby="method-title">
+        <div><p class="overline">ARCHIVE INTEGRITY</p><h2 id="method-title">What counts?</h2></div>
+        <div class="method-content">
+          <p><strong>A star is not the same as being in the Guide.</strong> Michelin Selected, Bib Gourmand, Green Stars, and one-to-three Michelin Stars are distinct recognitions. This passport captures them all, but the starred total only includes named, confirmed visits with historically supported star status.</p>
+          <p>Restaurant candidates are research leads, not extra restaurant visits. Michelin guide editions can take effect before their nominal year, so historical dates are cross-checked before crediting a star.</p>
+          <p class="footnote">Historical note: a remembered Wisconsin Dells restaurant in the late 1990s cannot have held a Michelin star at that time; Michelin began publishing US restaurant guides in 2005. <a href="https://www.michelin.com/en/publications/products-and-services/michelin-guide-inaugural-american-south-selection" target="_blank" rel="noopener noreferrer">Guide history ↗</a></p>
+        </div>
+      </section>
+    </main>
+    <footer>© <span id="copyright-year">2026</span> Alex Ford <span>·</span> Personal Atlas <span>·</span> Every visit has a story.</footer>
+  </div>
+</body>
+</html>
