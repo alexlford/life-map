@@ -81,3 +81,17 @@ The user gave additional reconstruction windows: NYC (2018–2020, for the unide
 - https://www.jamesbeard.org/stories/2017-americas-classic-gioias-deli
 
 The user's recalled upscale Italian restaurant on St. Louis's Hill is **not yet identified**. Dominic's, Charlie Gitto's, and Gian-Tony's are research leads, and no visited status has been assumed.
+
+## Screenshot-sourced reservation history (October 25, 2026)
+
+Ten uploaded OpenTable screenshots contain **20 unique dated reservation or waitlist entries suitable for research**, after omitting Le Fou Frog from published data per the user's explicit request. A repeated venue with two distinct dates (Ritual Social House on September 26 and 30, 2021) is retained as two reservation events, not two venues. Blanco Cocina on May 5, 2022 is a completed **waitlist**, not proof of seated dining. The cropped Gunther & Co. reservation is already represented by a directly confirmed February 14, 2020 meal; no duplicate entry was introduced.
+
+The photographs resolve the user's 2011–2014 mystery Italian restaurant as **Dominic's on the Hill** (completed reservation for two on December 28, 2012). It remains outside the award-focused public experience collection because no qualifying Michelin or James Beard distinction is yet verified. An excluded restaurant, Le Fou Frog, had a January 2016 reservation but is purposefully absent from the deployed JSON files.
+
+The 2019 James Beard **Best New Restaurant semifinalist** Q House was reserved on October 21, 2021; it became Michelin Selected in 2023, after that visit. **Wildflower** had a March 21, 2022 reservation and later appeared in the Michelin Guide as Selected and won the 2025 Young Chef Award for Aiden Tibbetts, all after the meal. Both are shown as qualifying venues with explicit reservation-based evidence and historical award dates. **Uchi Denver** had a May 15, 2022 reservation, but founder Tyson Cole's 2011 James Beard honor belongs to the original **Austin** Uchi; keep that affiliation research-only rather than misattribute an award to Denver. The screenshot for **Mister Oso Wash Park** does not prove visiting the Michelin-listed **RiNo** branch; do not automatically attribute that Bib Gourmand to Wash Park.
+
+Source links:
+- https://www.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists
+- https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/wildflower
+- https://guide.michelin.com/us/en/article/michelin-guide-ceremony/aiden-tibbetts-wildflower-young-chef-award-winner-michelin-star-guide-ceremony-colorado
+- https://uchi.uchirestaurants.com/our-story/

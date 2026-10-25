@@ -114,11 +114,15 @@ def main():
     assert magdalena["visitStatus"] == "unreviewed"
     assert "2020" in magdalena["interviewCue"]
     assert "visitStatus===\"maybe\"" in (ROOT / "dining-interview.js").read_text(encoding="utf-8")
-    assert len([r for r in DATA["entries"] if r["status"] == "confirmed"]) == 12
+    assert len([r for r in DATA["entries"] if r["status"] == "confirmed"]) == 14
     breck = next(r for r in DATA["entries"] if r["name"] == "Breckenridge Distillery Restaurant")
     assert breck["visit"]["visitYears"] == [2021, 2022, 2023]
     assert breck["visit"]["date"] is None
     assert breck["curation"]["status"] == "needs_verification"
+    for name,date in [("Q House", "2021-10-21"), ("Wildflower", "2022-03-21")]:
+        entry = next(r for r in DATA["entries"] if r["name"] == name)
+        assert entry["visit"]["date"] == date and entry["evidenceStatus"] == "reservation_completed"
+        assert entry["guide"]["stars"] == 0 and entry["curation"]["status"] == "qualifies"
     for name in ("Sauvage", "Gunther & Co.", "Thames Street Oyster House"):
         found = next(r for r in DATA["entries"] if r["name"] == name)
         assert found["status"] == "confirmed" and found["guide"]["distinction"] == "not_covered"

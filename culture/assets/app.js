@@ -149,7 +149,7 @@
                 el("h1","",r.title),el("p","detail-lead",r.summary));
     if(r.favorite){const favorite=el("p","eyebrow","✳ A PERSONAL FAVORITE");host.append(favorite);}if(["dining","bar"].includes(r.type)&&!r.editorial?.awardQualified){host.append(el("div","caveat",r.editorial?.featuredException?"Included as a personal favorite by your explicit choice. No Michelin or James Beard distinction is claimed for this venue.":"This remains a personal memory, not a Michelin / James Beard qualifying record. It is excluded from the default collection until venue-specific recognition is verified."));}
     const grid=el("div","detail-grid");
-    for(const [label,value] of [["EXPERIENCE DATE",yearLabel(r)],["LOCATION",[v.city,v.region].filter(Boolean).join(", ")],["VENUE",v.name||r.title],["STATUS","Confirmed firsthand visit"]]){
+    for(const [label,value] of [["EXPERIENCE DATE",yearLabel(r)],["LOCATION",[v.city,v.region].filter(Boolean).join(", ")],["VENUE",v.name||r.title],["STATUS",r.visit?.evidenceType==="completed_reservation"?"Completed reservation documented; actual dining unverified":"Confirmed firsthand visit"]]){
       const block=el("div","detail-metric");block.append(el("small","",label),el("strong","",value));grid.append(block);
     }
     host.append(grid);
