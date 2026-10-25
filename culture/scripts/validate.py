@@ -8,7 +8,7 @@ interview_data = json.loads((ROOT / "data/interview.json").read_text(encoding="u
 records, venues = records_data["records"], records_data["venues"]
 candidates = interview_data["candidates"]
 assert records_data["project"] == "Culture Passport" and records_data["version"] == 1
-assert len(records) == 22 and len(venues) == 20
+assert len(records) == 50 and len(venues) == 48
 assert len({r["id"] for r in records}) == len(records)
 assert len({v["id"] for v in venues}) == len(venues)
 types = {"dining", "bar", "concert", "opera", "theater"}
@@ -78,7 +78,7 @@ assert len(breck) == 3
 assert sorted(r["visit"]["year"] for r in breck) == [2021, 2022, 2023]
 assert all(r["visit"]["date"] is None and r["visit"]["precision"] == "approximate_year" for r in breck)
 assert all(r["editorial"]["awardQualified"] is False and r["editorial"]["featuredException"] is False for r in breck)
-assert len({r["venueId"] for r in records}) == 20
+assert len({r["venueId"] for r in records}) == 48
 qbreck = next(c for c in candidates if c["name"] == "Breckenridge Distillery Restaurant")
 assert qbreck["visitStatus"] == "confirmed" and set(qbreck["linkedVisitIds"]) == {r["id"] for r in breck}
 assert qbreck["screening"]["status"] == "memory_only"
@@ -232,3 +232,18 @@ assert manifesto["reservations"][0]["date"] == "2019-10-25"
 assert len([r for r in evidence["rows"] if r["name"] == "Sauvage"]) == 2
 assert len([r for r in evidence["rows"] if r["name"] == "Michelob Ultra Mountain House"]) == 3
 assert not any(r["title"] in {"Michelob Ultra Mountain House", "The Butcher's Daughter - West Hollywood", "Willow Creek Restaurant", "Q39 South"} for r in records)
+
+# Stage entries should be historically grounded and preserve individual date uncertainty.
+arts = [r for r in records if r["type"] in {"opera","concert","theater"}]
+assert len(arts) == 28
+assert all(r["memory"]["story"] and r["memory"]["period"] for r in arts)
+assert len([r for r in arts if r["title"].startswith("Lollapalooza")]) == 1
+book = next(r for r in arts if r["title"] == "The Book of Mormon — Kansas City")
+assert book["visit"]["year"] == 2016 and book["visit"]["date"] is None
+assert "December 6–11, 2016" in book["memory"]["story"]
+six = next(r for r in arts if r["title"] == "SIX — The Musical")
+assert six["visit"]["year"] == 2023 and six["visit"]["date"] is None and six["memory"]["period"] == "December 2023"
+assert any(r["type"] == "opera" and "Ring" in r["title"] for r in arts)
+leads = json.loads((ROOT / "data/performance-leads.json").read_text(encoding="utf-8"))
+assert any(r["name"] == "A Christmas Carol" and r["status"] == "likely_identity" for r in leads["leads"])
+assert any(r["name"] == "Another Denver musical or play" for r in leads["leads"])
