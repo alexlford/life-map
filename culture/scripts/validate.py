@@ -25,7 +25,7 @@ assert all(r["guide"]["stars"] == 0 for r in records if r.get("guide") and r["gu
 assert {"Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen",
         "Momofuku CCDC", "République", "Sauvage", "Gunther & Co.",
         "Thames Street Oyster House"}.issubset({r["title"] for r in records})
-assert len(candidates) >= 148
+assert len(candidates) >= 177
 assert len({c["id"] for c in candidates}) == len(candidates)
 assert len({(c["area"].casefold(), c["name"].casefold()) for c in candidates}) == len(candidates)
 assert all(c["sourceUrl"].startswith("https://") for c in candidates)
@@ -190,3 +190,11 @@ assert sum(bool(r.get("memory")) for r in records) >= 19
 assert 'Archive details & sources' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
 assert 'const storyPeriod=(r)' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
 assert 'function timelineChapter' not in (ROOT / "assets/app.js").read_text(encoding="utf-8") or 'Other memories' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
+
+# Historical Colorado interview expansion: candidates, not automatically confirmed visits.
+for area in ("Boulder", "Aspen", "Vail / Beaver Creek", "Telluride", "Breckenridge"):
+    assert sum(c["area"] == area for c in candidates) >= (11 if area == "Boulder" else 3 if area != "Telluride" else 1)
+for name,area in (("Basta","Boulder"),("Bosq","Aspen"),("Radicato","Breckenridge"),("Sweet Basil","Vail / Beaver Creek"),("The National","Telluride")):
+    c = next(c for c in candidates if c["name"] == name and c["area"] == area)
+    assert c["visitStatus"] == "unreviewed" and c["screening"]["status"] == "award_qualified"
+assert next(c for c in candidates if c["name"] == "Frasca Food and Wine")["area"] == "Boulder"
