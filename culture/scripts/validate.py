@@ -8,10 +8,10 @@ interview_data = json.loads((ROOT / "data/interview.json").read_text(encoding="u
 records, venues = records_data["records"], records_data["venues"]
 candidates = interview_data["candidates"]
 assert records_data["project"] == "Culture Passport" and records_data["version"] == 1
-assert len(records) >= 11 and len(venues) >= 11
+assert len(records) >= 13 and len(venues) >= 13
 assert len({r["id"] for r in records}) == len(records)
 assert len({v["id"] for v in venues}) == len(venues)
-types = {"dining", "concert", "opera", "theater"}
+types = {"dining", "bar", "concert", "opera", "theater"}
 assert {c["id"] for c in records_data["categories"]} == types
 venue_ids = {v["id"] for v in venues}
 assert all(r["status"] == "confirmed" and r["type"] in types for r in records)
@@ -25,7 +25,7 @@ assert all(r["guide"]["stars"] == 0 for r in records if r.get("guide") and r["gu
 assert {"Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen",
         "Momofuku CCDC", "République", "Sauvage", "Gunther & Co.",
         "Thames Street Oyster House"}.issubset({r["title"] for r in records})
-assert len(candidates) >= 106
+assert len(candidates) >= 119
 assert len({c["id"] for c in candidates}) == len(candidates)
 assert len({(c["area"].casefold(), c["name"].casefold()) for c in candidates}) == len(candidates)
 assert all(c["sourceUrl"].startswith("https://") for c in candidates)
@@ -44,6 +44,22 @@ frog = next(c for c in candidates if c["name"] == "Le Fou Frog" and c["area"] ==
 assert frog["visitStatus"] == "unreviewed" and frog["userMemoryLead"]["identityConfirmed"] is False
 assert not any(r["title"] == "Le Fou Frog" for r in records)
 assert len([r for r in records if r["type"] == "dining" and r["status"] == "confirmed"]) == 11
+assert len([r for r in records if r["type"] == "bar" and r["status"] == "confirmed"]) == 2
+manifesto = next(r for r in records if r["title"] == "Manifesto" and r["type"] == "bar")
+assert manifesto["editorial"]["awardQualified"] is True
+assert any(a["year"] == 2018 and a["category"] == "Outstanding Bar Program" and a["result"] == "semifinalist" for a in manifesto["recognitions"])
+death_and_co = next(r for r in records if r["title"] == "Death & Co Denver" and r["type"] == "bar")
+assert death_and_co["editorial"]["awardQualified"] is False and death_and_co["editorial"]["featuredException"] is True
+for name in ("Sauvage", "Gunther & Co.", "The Majestic Restaurant"):
+    rec = next(r for r in records if r["title"] == name)
+    assert rec["editorial"]["awardQualified"] is False and rec["editorial"]["featuredException"] is True
+assert {r["title"] for r in records if r["editorial"].get("awardQualified")} == {"République", "Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen", "Momofuku CCDC", "Manifesto"}
+assert all(not r["editorial"].get("awardQualified") or not r["editorial"].get("featuredException") for r in records)
+assert any(c["name"] == "Manifesto" and c["visitStatus"] == "confirmed" for c in candidates)
+assert any(c["name"] == "Death & Co Denver" and c["visitStatus"] == "confirmed" for c in candidates)
+assert 'data-type="bar"' in (ROOT / "explore.html").read_text(encoding="utf-8")
+assert 'id="bar-count"' in (ROOT / "index.html").read_text(encoding="utf-8")
+assert 'x.editorial?.featuredException' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
 assert all(c.get("confirmedVisitId") in {r["id"] for r in records}
            for c in candidates if c["visitStatus"] == "confirmed" and c.get("confirmedVisitId"))
 assert any(c["name"] == "Alma Cocina Latina" and c["visitStatus"] == "maybe" for c in candidates)
