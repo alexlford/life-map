@@ -2,10 +2,10 @@
   "version": 1,
   "updated": "2026-10-24",
   "methodology": {
-    "confirmedDefinition": "Visit expressly reported by Alex. Starred count requires a named restaurant and a Michelin star in the guide edition applicable to the visit.",
+    "confirmedDefinition": "A visit is confirmed by direct recollection of the named restaurant. The starred-venues counter requires a confirmed visit to a restaurant awarded at least one Michelin star in the guide edition matching the remembered visit period.",
     "guideVsStar": "Michelin Selected, Bib Gourmand, Green Star and Michelin Stars are separate distinctions; Michelin Selected is not a Michelin star.",
-    "editionCaveat": "Guide-edition dates do not necessarily align with the calendar year of a meal. Confirm exact visit dates before assigning historical stars.",
-    "unreconciled": "Unknown restaurant or unverified date is not counted as a confirmed starred restaurant.",
+    "editionCaveat": "A restaurant may earn its star partway through a year. The starred-venues counter describes the venue's guide recognition, not proof that the star was already awarded on the dinner date.",
+    "unreconciled": "An unidentified venue is not counted as a confirmed starred venue. When only an approximate year is recalled, whether the star existed on the precise meal date is preserved as unverified.",
     "sources": [
       {
         "title": "Michelin — République",
@@ -30,6 +30,10 @@
       {
         "title": "Michelin — US guide history",
         "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-inaugural-american-south-selection"
+      },
+      {
+        "title": "Michelin — Colorado 2023 awards, September 12",
+        "url": "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/"
       }
     ]
   },
@@ -74,24 +78,24 @@
         "precision": "range",
         "source": "Alex's direct recollection"
       },
-      "summary": "One remembered restaurant visit, exact venue unknown. Do not count all the possible venues as visits.",
+      "summary": "A single 2016/17 Michelin burger-restaurant visit. The Spotted Pig visually looks familiar, but Alex also remembers white tablecloths and an almost Italian atmosphere; the venue is not yet resolved.",
       "evidenceStatus": "restaurant_unresolved",
       "candidates": [
         {
-          "name": "Minetta Tavern",
-          "neighborhood": "Greenwich Village",
-          "reason": "Celebrated Black Label Burger; one star in the 2016 and 2017 Guides.",
-          "stars2016": 1,
-          "stars2017": 1,
-          "url": "https://guide.michelin.com/en/new-york-state/new-york/restaurant/minetta-tavern"
-        },
-        {
           "name": "The Spotted Pig",
           "neighborhood": "West Village",
-          "reason": "Known for the Roquefort burger; starred in the 2016 Guide, downgraded to Bib Gourmand for 2017.",
+          "reason": "Alex recognizes the venue as familiar; its dining room had white tablecloths, but it was primarily an English-style gastropub. Held a star in the 2016 guide, downgraded for 2017.",
           "stars2016": 1,
           "stars2017": 0,
           "url": "https://ny.eater.com/2016/11/11/13590260/nyc-michelin-bib-gourmands-2017"
+        },
+        {
+          "name": "Minetta Tavern",
+          "neighborhood": "Greenwich Village",
+          "reason": "Strong match for white linen and the nearly Italian feel: the vintage brasserie originated as an Italian restaurant and saloon. Famous Black Label Burger; one star in 2016 and 2017.",
+          "stars2016": 1,
+          "stars2017": 1,
+          "url": "https://guide.michelin.com/en/new-york-state/new-york/restaurant/minetta-tavern"
         },
         {
           "name": "The Breslin",
@@ -101,47 +105,55 @@
           "stars2017": 1,
           "url": "https://guide.michelin.com/hk/en/article/news-and-views/full-list-the-2018-michelin-guide-nyc-results-announced"
         }
+      ],
+      "memoryClues": [
+        {
+          "clue": "The Spotted Pig looks familiar",
+          "source": "Alex's recollection on 2026-10-24",
+          "confidence": "tentative"
+        },
+        {
+          "clue": "Classic white tablecloths",
+          "source": "Alex's recollection on 2026-10-24",
+          "confidence": "recalled"
+        },
+        {
+          "clue": "Almost Italian atmosphere",
+          "source": "Alex's recollection on 2026-10-24",
+          "confidence": "recalled"
+        }
       ]
     },
     {
-      "id": "denver-first-stars-2023",
-      "kind": "reconstruction",
-      "status": "researching",
-      "name": "Denver · first Michelin stars",
+      "id": "beckon-denver-2023",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Beckon",
       "city": "Denver",
       "region": "Colorado",
       "country": "USA",
+      "neighborhood": "RiNo",
+      "address": "2843 Larimer St., Denver, CO 80205",
       "visit": {
         "date": null,
-        "dateText": "Around the September 2023 announcement",
+        "dateText": "Around its first Michelin star in 2023 (exact date unknown)",
+        "approximateYear": 2023,
         "precision": "approximate",
-        "source": "Alex's direct recollection"
+        "source": "Alex's direct confirmation of Beckon on 2026-10-24; previously recalled visiting near the initial 2023 star announcement",
+        "timingRelativeToAward": "unverified"
       },
-      "summary": "The first Colorado stars were announced September 12, 2023. Exactly three restaurants in Denver were awarded one star in that first round.",
-      "evidenceStatus": "restaurant_unresolved",
-      "candidates": [
-        {
-          "name": "Beckon",
-          "neighborhood": "RiNo / Five Points",
-          "reason": "One Michelin star in the inaugural 2023 Colorado Guide.",
-          "stars2023": 1,
-          "url": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurants/1-star-michelin"
-        },
-        {
-          "name": "Brutø",
-          "neighborhood": "LoDo / Dairy Block",
-          "reason": "One Michelin star plus a Green Star in September 2023.",
-          "stars2023": 1,
-          "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars"
-        },
-        {
-          "name": "The Wolf's Tailor",
-          "neighborhood": "Sunnyside",
-          "reason": "One Michelin star plus a Green Star in September 2023; its later star level should not be applied retroactively.",
-          "stars2023": 1,
-          "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars"
-        }
-      ]
+      "guide": {
+        "edition": 2023,
+        "distinction": "starred",
+        "stars": 1,
+        "starAwardDate": "2023-09-12",
+        "sourceUrl": "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/",
+        "historicalVisitDistinction": "unverified",
+        "starsAtVisit": null
+      },
+      "summary": "Confirmed visit to Beckon around the time it received one Michelin star in the inaugural Colorado Guide, announced September 12, 2023. The precise visit date is still unknown.",
+      "evidenceStatus": "reported",
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Beckon+2843+Larimer+St+Denver"
     }
   ],
   "excludedResearch": [

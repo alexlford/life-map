@@ -28,6 +28,10 @@ def main():
                 "selected", "bib_gourmand", "green_star", "starred"
             }, record["id"]
             assert not record.get("candidates"), "Confirmed visit cannot be a multi-restaurant lead"
+            if record["guide"]["distinction"] == "starred":
+                assert record["guide"].get("stars") in (1, 2, 3), record["id"]
+                assert record["guide"].get("starAwardDate"), "Star award date required"
+                assert record["visit"].get("approximateYear") == record["guide"]["edition"], "Star counter needs matched guide edition"
             if record["guide"]["historicalVisitDistinction"] == "starred":
                 assert record["guide"].get("starsAtVisit") in (1, 2, 3), record["id"]
                 assert record["visit"]["date"], "Star needs a historically checkable visit date"
@@ -45,7 +49,12 @@ def main():
     assert republique["guide"]["historicalVisitDistinction"] == "unverified"
 
     leads = [r for r in DATA["entries"] if r["status"] == "researching"]
-    assert len(leads) == 2, "NYC and Denver should each remain a single unidentified visit"
+    assert len(leads) == 1 and leads[0]["id"] == "nyc-burger-2016-2017", "Only the NYC burger visit remains unresolved"
+    beckon = next(r for r in DATA["entries"] if r["id"] == "beckon-denver-2023")
+    assert beckon["status"] == "confirmed" and beckon["kind"] == "restaurant"
+    assert beckon["guide"]["stars"] == 1 and beckon["guide"]["edition"] == 2023
+    assert beckon["guide"]["starAwardDate"] == "2023-09-12"
+    assert beckon["visit"]["date"] is None and beckon["guide"]["historicalVisitDistinction"] == "unverified"
     assert "Michelin Dining Passport" in HTML
     assert "./data/dining.json" in JS
     assert "./dining.html" in INDEX
