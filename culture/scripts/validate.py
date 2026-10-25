@@ -219,7 +219,7 @@ for name in ("Safta", "Smok"):
 
 # The story should lead the experience page, with precise booking details tucked away.
 assert sum(bool(r.get("memory")) for r in records) >= 19
-assert 'Archive details & sources' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
+assert 'Historical notes & sources' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
 assert 'const storyPeriod=(r)' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
 assert 'function timelineChapter' not in (ROOT / "assets/app.js").read_text(encoding="utf-8") or 'Other memories' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
 
@@ -316,7 +316,7 @@ assert next(c for c in candidates if c["name"] == "Existing Conditions")["visitS
 assert any(c["id"] == "lyric-ring-performances" for c in stage_research["candidates"])
 date_app=(ROOT / "assets/app.js").read_text(encoding="utf-8")
 assert "const readableDate=(d)=>" in date_app
-assert "reservation on file" in date_app
+assert "Historical notes & sources" in date_app
 assert "Reservation evidence:" in date_app
 assert "Production's engagement dates:" in date_app
 assert "const dateMonth=" in date_app
@@ -340,7 +340,7 @@ assert {"The Book of Mormon", "SIX", "The Second City — Chicago holiday outing
 
 
 # Provenance and geography integrity for the new Boston / Cape Cod memory lead.
-assert {"Boston", "Cape Cod"}.issubset(interview_data["periods"])
+assert {"Boston", "Cape Cod", "Cambridge, UK"}.issubset(interview_data["periods"])
 assert any(lead["id"] == "boston-cape-cod-seafood-unknown"
            and lead["venueIdentityConfirmed"] is False
            and lead["publishAsExperience"] is False
@@ -351,3 +351,9 @@ assert not any(r["title"].startswith("Unidentified excellent fish restaurant") f
 assert all(r["visit"]["date"] is None for r in records if r["visit"].get("evidenceType") == "completed_reservation_only")
 assert not any(r["status"] == "confirmed" and r["visit"]["attendanceCertainty"] == "not_independently_verified"
                for r in records if "attendanceCertainty" in r["visit"])
+
+# Culture Passport prioritizes memory and approximate periods over exact booking days.
+assert 'const isDining=["dining","bar"].includes(r.type);' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
+assert 'const allAreas=[...new Set([...included.map(x=>x.area),...Object.keys(db.periods||{})])];' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
+assert any(x["id"] == "cambridge-uk-restaurants-unknown" and x["publishAsExperience"] is False
+           for x in interview_data["memoryLeads"])
