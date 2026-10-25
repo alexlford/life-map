@@ -114,7 +114,7 @@ def main():
     assert magdalena["visitStatus"] == "unreviewed"
     assert "2020" in magdalena["interviewCue"]
     assert "visitStatus===\"maybe\"" in (ROOT / "dining-interview.js").read_text(encoding="utf-8")
-    assert len([r for r in DATA["entries"] if r["status"] == "confirmed"]) == 15
+    assert len([r for r in DATA["entries"] if r["status"] == "confirmed"]) == 16
     breck = next(r for r in DATA["entries"] if r["name"] == "Breckenridge Distillery Restaurant")
     assert breck["visit"]["visitYears"] == [2021, 2022, 2023]
     assert breck["visit"]["date"] is None
