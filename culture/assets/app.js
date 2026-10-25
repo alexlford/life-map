@@ -7,7 +7,21 @@
   const link=(label,url,cls)=>{const a=el("a",cls,label);a.href=url;return a;};
   const byId=(id)=>document.getElementById(id);
   const href=(r)=>"./record.html?id="+encodeURIComponent(r.id);
-  const yearLabel=(r)=>r.visit?.label||"Date uncertain";
+  // The archive keeps precision; the public UI favors memories and meaningful periods.
+  const storyPeriod=(r)=>{
+    if(r.memory?.period)return r.memory.period;
+    if(r.visit?.year)return String(r.visit.year);
+    const yrs=r.visit?.possibleYears||[];
+    if(yrs.length===1)return String(yrs[0]);
+    if(yrs.length>1)return String(yrs[0])+"–"+String(yrs[yrs.length-1]).slice(-2);
+    return "A time worth remembering";
+  };
+  const storyTeaser=(r)=>r.memory?.teaser||(r.visit?.evidenceType==="completed_reservation"?"A restaurant that surfaced in the reservation archive. Its personal story is still to be told.":r.summary);
+  const timelineChapter=(r)=>{
+    if(r.visit?.year)return String(r.visit.year);
+    const yrs=r.visit?.possibleYears||[];
+    return yrs.length?String(yrs[0]):"Other memories";
+  };
   const displayYear=(r)=>{
     if(r.visit?.year)return String(r.visit.year);
     const yrs=r.visit?.possibleYears||[];
@@ -33,9 +47,9 @@
     const a=link(" ",href(r),"record-card");
     a.textContent="";
     const top=el("p","eyebrow",r.type.toUpperCase()+" / "+(v?.city||"LOCATION UNKNOWN"));
-    const h=el("h3","",r.title),description=el("p","",r.summary);
+    const h=el("h3","",r.title),description=el("p","",storyTeaser(r));
     const bottom=el("div","record-footer");
-    bottom.append(el("span","",yearLabel(r)+(r.favorite?" · A favorite":"")),el("span","","Open record ↗"));
+    bottom.append(el("span","",storyPeriod(r)+(r.favorite?" · A favorite":"")),el("span","","Open record ↗"));
     a.append(top,h,description,bottom);
     return a;
   }
@@ -58,8 +72,8 @@
     records.forEach(r=>{
       const v=venues.get(r.venueId);
       const a=link("",href(r),"feature-row");
-      a.append(el("span","feature-year",displayYear(r)));
-      const mid=el("div");mid.append(el("strong","",r.title),el("small","",v.city+" · "+(r.favorite?"Personal favorite":"Confirmed visit")));
+      a.append(el("span","feature-year",timelineChapter(r)==="Other memories"?"✳":timelineChapter(r)));
+      const mid=el("div");mid.append(el("strong","",r.title),el("small","",v.city+" · "+(r.memory?.headline||"A place in the collection")));
       a.append(mid,el("span","feature-arrow","↗"));host.append(a);
     });
   }
@@ -77,7 +91,7 @@
       const q=search.value.trim().toLocaleLowerCase();
       const rows=db.records.filter(r=>{
         const v=venues.get(r.venueId);
-        const content=[r.title,r.summary,v?.city,v?.region,v?.name].join(" ").toLocaleLowerCase();
+        const content=[r.title,r.summary,r.memory?.headline,r.memory?.teaser,r.memory?.story,v?.city,v?.region,v?.name].join(" ").toLocaleLowerCase();
         return r.status==="confirmed"&&(!["dining","bar"].includes(r.type)||r.editorial?.awardQualified||r.editorial?.featuredException||includeMemories.checked)&&(filter==="all"||r.type===filter)&&(!city.value||city.value===v?.city)&&(!q||content.includes(q));
       }).sort(byDate);
       count.textContent=rows.length+" confirmed experience"+(rows.length===1?"":"s");
@@ -94,14 +108,14 @@
     function render(){
       const grouped=new Map();
       const results=db.records.filter(r=>r.status==="confirmed"&&(includeMemories.checked||!["dining","bar"].includes(r.type)||r.editorial?.awardQualified||r.editorial?.featuredException)&&(select.value==="all"||r.type===select.value)).sort(byDate);
-      for(const r of results){const label=displayYear(r);if(!grouped.has(label))grouped.set(label,[]);grouped.get(label).push(r);}
+      for(const r of results){const label=timelineChapter(r);if(!grouped.has(label))grouped.set(label,[]);grouped.get(label).push(r);}
       count.textContent=results.length+" recorded experience"+(results.length===1?"":"s");
       host.replaceChildren();
       if(!results.length){empty(host,"Nothing confirmed in this chapter yet.","The timeline is ready for your first verified memory.");return;}
       for(const [label,rows] of grouped){
         const section=el("section","timeline-group"),year=el("div","timeline-year",label),stack=el("div","timeline-stack");
         rows.forEach(r=>{const v=venues.get(r.venueId);const a=link("",href(r),"timeline-entry"),mid=el("div");
-          mid.append(el("small","",r.type.toUpperCase()+" · "+v.city+" · "+yearLabel(r)),el("h3","",r.title));
+          mid.append(el("small","",r.type.toUpperCase()+" · "+v.city+" · "+storyPeriod(r)),el("h3","",r.title),el("p","timeline-memory",storyTeaser(r)));
           a.append(mid,el("span","","↗"));stack.append(a);
         });
         section.append(year,stack);host.append(section);
@@ -141,29 +155,55 @@
   function detail(db){
     const host=byId("record-detail"),params=new URLSearchParams(window.location.search),id=params.get("id");
     const r=db.records.find(x=>x.id===id&&x.status==="confirmed");
-    if(!r){empty(host,"Experience not found.","This record may have moved or has not been confirmed.", "./explore.html","Back to the archive →");return;}
+    if(!r){empty(host,"Experience not found.","This record may have moved or has not been confirmed.","./explore.html","Back to the archive →");return;}
     document.title=r.title+" | Culture Passport";
-    const v=db.venues.find(x=>x.id===r.venueId)||{};
+    const v=db.venues.find(x=>x.id===r.venueId)||{},context=r.memory;
     host.replaceChildren();
-    host.append(el("p","eyebrow",r.type.toUpperCase()+" / "+(v.city||"")),
-                el("h1","",r.title),el("p","detail-lead",r.summary));
-    if(r.favorite){const favorite=el("p","eyebrow","✳ A PERSONAL FAVORITE");host.append(favorite);}if(["dining","bar"].includes(r.type)&&!r.editorial?.awardQualified){host.append(el("div","caveat",r.editorial?.featuredException?"Included as a personal favorite by your explicit choice. No Michelin or James Beard distinction is claimed for this venue.":"This remains a personal memory, not a Michelin / James Beard qualifying record. It is excluded from the default collection until venue-specific recognition is verified."));}
-    const grid=el("div","detail-grid");
-    for(const [label,value] of [["EXPERIENCE DATE",yearLabel(r)],["LOCATION",[v.city,v.region].filter(Boolean).join(", ")],["VENUE",v.name||r.title],["STATUS",r.visit?.evidenceType==="completed_reservation"?"Completed reservation documented; actual dining unverified":"Confirmed firsthand visit"]]){
-      const block=el("div","detail-metric");block.append(el("small","",label),el("strong","",value));grid.append(block);
+    host.append(el("p","eyebrow",r.type.toUpperCase()+" / "+(v.city||"")),el("h1","",r.title));
+    const period=el("p","memory-period",storyPeriod(r)+" · "+[v.city,v.region].filter(Boolean).join(", "));
+    host.append(period);
+    if(context){
+      host.append(el("h2","memory-heading",context.headline),el("p","memory-quote",context.story));
+    }else{
+      host.append(el("h2","memory-heading","A page in the collection"),
+        el("p","memory-quote",storyTeaser(r)));
     }
-    host.append(grid);
-    if(v.address)host.append(el("p","detail-note","Venue address: "+v.address+". The geographic map currently uses city-level approximate markers."));
-    const note=el("div","caveat","Historical accuracy: the date of the visit and the date of external restaurant awards are separate facts. No unknown day is invented.");
-    host.append(note);
-    const badges=el("div","award-list");
-    const g=r.guide;
-    if(g&&g.distinction==="starred"){const card=el("div","award-card");card.append(el("strong","","Michelin · "+g.stars+" star"+(g.stars===1?"":"s")+(g.edition?" · "+g.edition+" guide":"")),el("p","","The precise meal date relative to the annual award may be unverified."));if(g.sourceUrl)card.append(link("Michelin source ↗",g.sourceUrl));badges.append(card);}
-    else if(g&&g.distinction==="plate"){const card=el("div","award-card");card.append(el("strong","","Michelin · The Plate · "+g.edition),el("p","","The Plate is a historical recommendation, not a Michelin star. Recognition at the exact visit date is unknown."));if(g.sourceUrl)card.append(link("Guide source ↗",g.sourceUrl));badges.append(card);}
-    else if(g&&g.distinction==="selected"){const card=el("div","award-card");card.append(el("strong","","Michelin Selected · "+g.edition),el("p","","Guide listing is distinct from Michelin star recognition, and may postdate the visit."));if(g.sourceUrl)card.append(link("Guide source ↗",g.sourceUrl));badges.append(card);}
-    for(const award of r.recognitions||[]){const block=el("div","award-card");block.append(el("strong","",award.organization+" · "+award.year+" · "+award.result),el("p","",award.category+" — "+award.recipient));if(award.relationship)block.append(el("p","",award.relationship));if(award.timingRelativeToVisit==="after_visit")block.append(el("p","","Awarded after the remembered visit."));if(award.sourceUrl)block.append(link("Award source ↗",award.sourceUrl));badges.append(block);}
-    if(badges.childElementCount){host.append(el("h2","","Recognition & context"),badges);}
-    else host.append(el("h2","","Recognition & context"),el("p","detail-note","No Michelin star or James Beard honor is claimed for this visit. Its place in the collection comes from the memory itself."));
+    if(r.favorite||r.editorial?.featuredException){
+      host.append(el("p","eyebrow memory-favorite","✳ KEPT FOR THE MEMORY"));
+    }
+    if(["dining","bar"].includes(r.type)&&!r.editorial?.awardQualified){
+      host.append(el("p","memory-disclosure",r.editorial?.featuredException?
+        "A personal favorite, kept for the experience rather than an award.":
+        "A remembered place, with no verified Michelin or James Beard qualification."));
+    }
+    const badges=el("div","award-list"),g=r.guide;
+    if(g?.distinction==="starred"){
+      const b=el("div","award-card");b.append(el("strong","","Michelin · "+g.stars+" star"+(g.stars===1?"":"s")),el("p","","Recognition belongs to the restaurant, but may differ from the date of the meal."));if(g.sourceUrl)b.append(link("Guide source ↗",g.sourceUrl));badges.append(b);
+    }else if(g?.distinction==="plate"||g?.distinction==="selected"){
+      const b=el("div","award-card");b.append(el("strong","",g.distinction==="plate"?"Michelin · The Plate (historical)":"Michelin Selected"),el("p","","Guide recognition, not a Michelin star. The listing year may differ from the dining year."));if(g.sourceUrl)b.append(link("Guide source ↗",g.sourceUrl));badges.append(b);
+    }
+    for(const a of r.recognitions||[]){
+      if(a.recognitionAtDifferentVenue)continue;
+      const b=el("div","award-card");
+      b.append(el("strong","",a.organization+" · "+a.category+" · "+a.year),
+        el("p","",a.recipient+" · "+a.result));
+      if(a.relationship)b.append(el("p","",a.relationship));
+      if(a.timingRelativeToVisit==="after_visit")b.append(el("p","","Recognized after the remembered visit."));
+      if(a.sourceUrl)b.append(link("Award source ↗",a.sourceUrl));
+      badges.append(b);
+    }
+    if(badges.childElementCount)host.append(el("h2","","Why it stands out"),badges);
+    // Retain dates and party size for provenance without making them the story.
+    const details=el("details","archive-details"),heading=el("summary","","Archive details & sources"),body=el("div","archive-details-body");
+    details.append(heading);
+    const note=(label,value)=>{if(!value)return;const row=el("p");row.append(el("strong","",label+" "));row.append(document.createTextNode(String(value)));body.append(row);};
+    note("Place:",[v.name||r.title,v.city,v.region].filter(Boolean).join(" · "));
+    note("Date on file:",r.visit?.date||r.visit?.label||"Not established");
+    if(r.visit?.partySize)note("Reservation party:",r.visit.partySize);
+    note("Evidence:",r.visit?.source);
+    if(r.visit?.evidenceType==="completed_reservation"||r.visit?.attendanceCertainty==="not_independently_verified")note("Reservation status:","A completed reservation does not independently prove the meal occurred.");
+    note("Award context:",r.editorial?.note);
+    details.append(body);host.append(details);
   }
   const key="alexford:culture-interview:v1";
   function interview(db){

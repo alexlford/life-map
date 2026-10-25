@@ -103,3 +103,7 @@ Source links:
 - **Award recipient integrity**: bartender-level semifinalist nominations for Best Intentions (Christopher Marty), Fern Bar (Diana Condori) and Wild Child (Jay Sanders) are attributed to the professional, not passed off as venue-level awards.
 - **Temporal screening**: entries awarded in 2025 or 2026 may only have been available on later visits. Do not present those bars as 2018–2020 NYC destinations or infer their existence on a user's earlier trip.
 - Official records: https://archive.jamesbeard.org/blog/the-2018-james-beard-award-semifinalists ; https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists ; https://www.jamesbeard.org/stories/james-beard-award-semifinalists-2026 .
+
+## Memory-first editorial direction (October 25, 2026)
+
+The primary audience is the user revisiting great memories, not auditing transactions. Tell the story first: the venue, atmosphere, personal occasion, and historical recognition. Dates are optional context, never a hurdle or the leading visual element. The public timeline groups by year or loosely recalled chapter; seasonal and meaningful occasions such as "Winter 2021" or "Valentine's Day 2020" are preferable to precise clock/calendar labels. When date is not known, retain "Other memories". Keep original booking dates and party size unchanged in the data and expose them in collapsed **Archive details & sources** on a record's page. Never invent companions, food orders, or feelings.

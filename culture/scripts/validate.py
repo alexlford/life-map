@@ -154,3 +154,13 @@ assert not any(r["title"] in {"Uchi Denver", "Mister Oso Wash Park"} for r in re
 assert "culture.alexlford.com" in (ROOT / "README.md").read_text(encoding="utf-8")
 print("Culture Passport OK: %d experiences, %d venues, %d interview prospects" %
       (len(records), len(venues), len(candidates)))
+
+# Stories carry the emphasis; exact reservations remain available only in the archive.
+stories = {r["title"] for r in records if r.get("memory")}
+assert {"Gunther & Co.", "Sauvage", "The Majestic Restaurant", "Minetta Tavern", "Manifesto", "Death & Co Denver"}.issubset(stories)
+assert records_data["methodology"].get("storyFirst")
+js = (ROOT / "assets/app.js").read_text(encoding="utf-8")
+assert "Archive details & sources" in js and "memory-heading" in js
+assert 'const storyPeriod=(r)' in js and 'const timelineChapter=(r)' in js
+assert "yearLabel(r)" not in js
+assert "February 14, 2020" not in (ROOT / "timeline.html").read_text(encoding="utf-8")
