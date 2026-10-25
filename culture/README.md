@@ -113,3 +113,12 @@ The user explicitly confirmed dining at République on **2026-10-24**, after Mar
 Yuan Wonton in Denver is a user-recalled confirmed visit (date unknown), and clearly qualifies for the curated collection through chef-owner Penelope Wong's **2026 James Beard Best Chef: Mountain** win. Source: https://www.jamesbeard.org/stories/james-beard-award-winners-2026. Do not assert the award predates the visit until a date is known. Bistro Barbès in Denver (closed June 2026, chef Jon Robbins) has no verified direct Michelin Guide or James Beard distinction. Preserve the user-supplied memory in `culture/data/excluded-dining-memories.json` rather than publishing it as a curated experience; this follows the user's preference for limiting displayed entries to qualified venues or explicitly selected favorites. Bistro Barbès is not currently a featured exception.
 
 October 25 merge: preserved the separately merged North Pond (Chicago) unreviewed memory lead and the original 20 typed reservation entries, then appended 39 supplemental review-only screenshot rows; Le Fou Frog was excluded entirely from the public ledger in accordance with user preference.
+
+## Story-first Mister Oso history (October 2026)
+
+Mister Oso is a single user-confirmed restaurant story, not a branch-level award eligibility interview. In 2017, chef Blake Edmunds and Culinary Creative opened Señor Bear in Highland, followed by Mister Oso as its casual sibling in RiNo in November 2019. Mister Oso expanded to Wash Park in summer 2022; the original RiNo restaurant received Michelin Bib Gourmand recognition beginning in 2023. The user had a Wash Park reservation on file but did not ask for precision about which branch earned the award. Feature the family-and-expansion story with Michelin context and keep source/address details in a secondary archive section. Cite primary Michelin and Mister Oso sources and contemporary reporting:
+- https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/mister-oso
+- https://www.misterosodenver.com/about/
+- https://www.westword.com/food-drink/mr-oso-wash-park-open-14893628/
+
+Public Culture pages prioritize story over booking fields. Story copy migrated from an earlier editorial branch has been merged with newer records without reverting the Yuan Wonton, Safta, or Smok updates. 
