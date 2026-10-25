@@ -302,3 +302,20 @@ assert "reservation on file" in date_app
 assert "Reservation evidence:" in date_app
 assert "Production's engagement dates:" in date_app
 assert "const dateMonth=" in date_app
+
+# The performing-arts interview must preserve all published memories and keep research leads separate.
+performance_leads=json.loads((ROOT / "data/performance-interview.json").read_text(encoding="utf-8"))
+assert len(performance_leads["candidates"]) >= 9
+assert len({c["id"] for c in performance_leads["candidates"]}) == len(performance_leads["candidates"])
+assert any(c["id"] == "denver-unknown-play" for c in performance_leads["candidates"])
+assert any(c["id"] == "denver-hamlet-2024" and c["confirmation"] == "unreviewed_candidate" for c in performance_leads["candidates"])
+assert all(c["sourceUrl"].startswith("https://") for c in performance_leads["candidates"])
+performance_page=(ROOT / "performance-interview.html").read_text(encoding="utf-8")
+performance_js=(ROOT / "assets/performance-interview.js").read_text(encoding="utf-8")
+assert "performance-candidates" in performance_page and "performance-notes" in performance_page
+assert "performance-interview.js" in performance_page and "performance-interview.html" in (ROOT / "interview.html").read_text(encoding="utf-8")
+assert "performance-interview.html" in (ROOT / "index.html").read_text(encoding="utf-8")
+assert 'localStorage.setItem(storageKey' in performance_js
+assert "preserve the entire card" in performance_js
+assert "denver-unknown-play" in performance_js
+assert {"The Book of Mormon", "SIX", "The Second City — Chicago holiday outing", "Denver holiday theater outing"}.issubset({x["title"] for x in stage})
