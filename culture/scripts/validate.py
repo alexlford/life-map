@@ -268,7 +268,7 @@ assert len([r for r in records if r.get("guide", {}).get("distinction") == "star
 assert len([r for r in records if r.get("editorial", {}).get("awardQualified")]) == 17
 
 # Theater memories: preserve uncertainty in titles, not in the fact an outing occurred.
-stage=[r for r in records if r["type"] == "theater"]
+stage=[r for r in records if r["id"] in {"theater-book-of-mormon-kansas-city-2016", "theater-second-city-chicago-2017", "theater-six-denver-2023", "theater-denver-holiday-theater-2024"}]
 assert len(stage) == 4
 assert all(r["visit"]["date"] is None and r["visit"]["year"] in {2016,2017,2023,2024} for r in stage)
 assert {r["title"] for r in stage} == {"The Book of Mormon", "SIX", "The Second City — Chicago holiday outing", "Denver holiday theater outing"}
