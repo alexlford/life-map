@@ -41,4 +41,3 @@ jobs:
           python scripts/validate_frontend.py
           python scripts/validate_dining.py
           python culture/scripts/validate.py
-          python culture/scripts/validate.py
