@@ -49,6 +49,11 @@ rec_pier = next(c for c in candidates if c["name"] == "Rec Pier Chop House" and 
 assert rec_pier["visitStatus"] == "confirmed" and rec_pier["confirmedVisitId"] == "dining-rec-pier-chop-house-baltimore"
 assert not any(r["title"] == "Le Fou Frog" for r in records)
 assert not any(c["name"] == "Le Fou Frog" for c in candidates)
+north_pond = next(c for c in candidates if c["name"] == "North Pond" and c["area"] == "Chicago")
+assert north_pond["visitStatus"] == "unreviewed"
+assert north_pond["userMemoryLead"]["identityConfirmed"] is False
+assert north_pond["screening"]["basis"] == "both"
+assert not any(r["title"] == "North Pond" for r in records)
 assert len([r for r in records if r["type"] == "dining" and r["status"] == "confirmed"]) == 17
 assert len([r for r in records if r["type"] == "bar" and r["status"] == "confirmed"]) == 2
 breck = [r for r in records if r["venueId"] == "venue-breckenridge-distillery"]
@@ -147,8 +152,8 @@ print("Culture Passport OK: %d experiences, %d venues, %d interview prospects" %
 
 # Reservation provenance must be distinct from user-confirmed visits.
 evidence = json.loads((ROOT / "data/reservation-evidence.json").read_text(encoding="utf-8"))
-assert len(evidence["rows"]) == 40 and len({r["name"] for r in evidence["rows"]}) == 38
-assert next(r for r in evidence["rows"] if r["name"] == "Le Fou Frog")["publicationEligibility"] == "explicitly_excluded"
+assert len(evidence["entries"]) == 20 and len(evidence["rows"]) == 39 and len({r["name"] for r in evidence["rows"]}) == 37
+assert not any(r["name"] == "Le Fou Frog" for r in evidence["rows"])
 assert not any(r["title"] == "Le Fou Frog" for r in records)
 for title, date in [("République","2026-10-24"),("Woodberry Kitchen","2018-05-16"),("Momofuku CCDC","2018-08-21"),("Rec Pier Chop House","2018-05-16")]:
     row = next(r for r in records if r["title"] == title)
