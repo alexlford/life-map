@@ -1,0 +1,509 @@
+{
+  "version": 1,
+  "project": "Culture Passport",
+  "updated": "2026-10-25",
+  "categories": [
+    {
+      "id": "dining",
+      "label": "Dining",
+      "description": "Restaurants and remarkable tables"
+    },
+    {
+      "id": "concert",
+      "label": "Concerts",
+      "description": "Live music worth remembering"
+    },
+    {
+      "id": "opera",
+      "label": "Opera",
+      "description": "Companies, productions, performances"
+    },
+    {
+      "id": "theater",
+      "label": "Theater",
+      "description": "Plays, musicals and live stage"
+    }
+  ],
+  "methodology": {
+    "evidence": "Directly confirmed restaurant visits only; do not promote interview leads automatically.",
+    "date": "Exact visit date remains null unless verified. An assigned year is approximate, and a range is retained as a range.",
+    "awards": "Awards link to their actual recipient and their actual year; later recognition does not imply historical status at time of meal.",
+    "map": "Map groups experiences at approximate city centers, not exact venue entrances.",
+    "favorites": "Favorites come only from explicit user preference statements, independent of restaurant awards."
+  },
+  "venues": [
+    {
+      "id": "venue-republique-los-angeles",
+      "name": "République",
+      "city": "Los Angeles",
+      "region": "California",
+      "country": "USA",
+      "address": null,
+      "neighborhood": "La Brea / Hollywood",
+      "location": {
+        "lat": 34.0522,
+        "lng": -118.2437,
+        "precision": "city-centroid"
+      },
+      "sourceId": "republique-los-angeles"
+    },
+    {
+      "id": "venue-minetta-tavern-nyc-2016-2017",
+      "name": "Minetta Tavern",
+      "city": "New York City",
+      "region": "New York",
+      "country": "USA",
+      "address": "113 MacDougal St., New York, NY 10012",
+      "neighborhood": "Greenwich Village",
+      "location": {
+        "lat": 40.7128,
+        "lng": -74.006,
+        "precision": "city-centroid"
+      },
+      "sourceId": "minetta-tavern-nyc-2016-2017"
+    },
+    {
+      "id": "venue-beckon-denver-2023",
+      "name": "Beckon",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "address": "2843 Larimer St., Denver, CO 80205",
+      "neighborhood": "RiNo",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903,
+        "precision": "city-centroid"
+      },
+      "sourceId": "beckon-denver-2023"
+    },
+    {
+      "id": "venue-charleston-baltimore-2018-2021",
+      "name": "Charleston",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "USA",
+      "address": "1000 Lancaster St, Baltimore, MD 21202",
+      "neighborhood": "Harbor East",
+      "location": {
+        "lat": 39.2904,
+        "lng": -76.6122,
+        "precision": "city-centroid"
+      },
+      "sourceId": "charleston-baltimore-2018-2021"
+    },
+    {
+      "id": "venue-woodberry-kitchen-baltimore-2018-2021",
+      "name": "Woodberry Kitchen",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "USA",
+      "address": null,
+      "neighborhood": "Woodberry",
+      "location": {
+        "lat": 39.2904,
+        "lng": -76.6122,
+        "precision": "city-centroid"
+      },
+      "sourceId": "woodberry-kitchen-baltimore-2018-2021"
+    },
+    {
+      "id": "venue-momofuku-ccdc-washington-dc",
+      "name": "Momofuku CCDC",
+      "city": "Washington, DC",
+      "region": "District of Columbia",
+      "country": "USA",
+      "address": "1090 I St NW, Washington, DC 20001",
+      "neighborhood": "CityCenterDC",
+      "location": {
+        "lat": 38.9072,
+        "lng": -77.0369,
+        "precision": "city-centroid"
+      },
+      "sourceId": "momofuku-ccdc-washington-dc"
+    },
+    {
+      "id": "venue-sauvage-steamboat-2021-01",
+      "name": "Sauvage",
+      "city": "Steamboat Springs",
+      "region": "Colorado",
+      "country": "USA",
+      "address": "910 Yampa Street, Unit C4, Steamboat Springs, CO 80487",
+      "neighborhood": "Downtown",
+      "location": {
+        "lat": 40.4848,
+        "lng": -106.8317,
+        "precision": "city-centroid"
+      },
+      "sourceId": "sauvage-steamboat-2021-01"
+    },
+    {
+      "id": "venue-gunther-and-co-baltimore-2020-02-14",
+      "name": "Gunther & Co.",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "USA",
+      "address": "3650 Toone Street, Baltimore, MD 21224",
+      "neighborhood": "Brewers Hill",
+      "location": {
+        "lat": 39.2904,
+        "lng": -76.6122,
+        "precision": "city-centroid"
+      },
+      "sourceId": "gunther-and-co-baltimore-2020-02-14"
+    },
+    {
+      "id": "venue-thames-street-oyster-house-baltimore",
+      "name": "Thames Street Oyster House",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "USA",
+      "address": "1728 Thames Street, Baltimore, MD 21231",
+      "neighborhood": "Fells Point",
+      "location": {
+        "lat": 39.2904,
+        "lng": -76.6122,
+        "precision": "city-centroid"
+      },
+      "sourceId": "thames-street-oyster-house-baltimore"
+    }
+  ],
+  "records": [
+    {
+      "id": "dining-republique-los-angeles",
+      "type": "dining",
+      "title": "République",
+      "venueId": "venue-republique-los-angeles",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Date not established",
+        "precision": "unknown",
+        "source": "Alex's direct recollection"
+      },
+      "summary": "A confirmed visit to a Michelin Guide-listed restaurant. It is Michelin Selected, not Michelin-starred in the 2026 Guide.",
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2023,
+          "result": "winner",
+          "category": "Outstanding Pastry Chef or Baker",
+          "recipient": "Margarita Manzke",
+          "relationship": "chef at restaurant",
+          "sourceUrl": "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
+        }
+      ],
+      "guide": {
+        "edition": 2026,
+        "distinction": "selected",
+        "stars": 0,
+        "sourceUrl": "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
+        "historicalVisitDistinction": "unverified"
+      },
+      "sourceUrl": "https://guide.michelin.com/en/california/hollywood/restaurant/republique"
+    },
+    {
+      "id": "dining-minetta-tavern-nyc-2016-2017",
+      "type": "dining",
+      "title": "Minetta Tavern",
+      "venueId": "venue-minetta-tavern-nyc-2016-2017",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [
+          2016,
+          2017
+        ],
+        "label": "2016 or 2017",
+        "precision": "year_range",
+        "source": "Alex's direct confirmation of Minetta Tavern on 2026-10-24"
+      },
+      "summary": "Confirmed visit to Minetta Tavern in 2016 or 2017. The Black Label Burger and white-tablecloth dining room match the remembered experience. Minetta Tavern held one Michelin star in both years.",
+      "recognitions": [],
+      "guide": {
+        "edition": 2017,
+        "verifiedEditions": [
+          2016,
+          2017
+        ],
+        "distinction": "starred",
+        "stars": 1,
+        "sourceUrl": "https://michelinmedia.com/michelin-guide-nyc-2017/",
+        "sourceUrls": [
+          "https://michelinmedia.com/c0/michelinguidenyc2016/",
+          "https://michelinmedia.com/michelin-guide-nyc-2017/"
+        ],
+        "historicalVisitDistinction": "starred",
+        "starsAtVisit": 1
+      },
+      "sourceUrl": "https://michelinmedia.com/michelin-guide-nyc-2017/"
+    },
+    {
+      "id": "dining-beckon-denver-2023",
+      "type": "dining",
+      "title": "Beckon",
+      "venueId": "venue-beckon-denver-2023",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": 2023,
+        "possibleYears": [
+          2023
+        ],
+        "label": "2023",
+        "precision": "approximate",
+        "source": "Alex's direct confirmation of Beckon on 2026-10-24; previously recalled visiting near the initial 2023 star announcement"
+      },
+      "summary": "Confirmed visit to Beckon around the time it received one Michelin star in the inaugural Colorado Guide, announced September 12, 2023. The precise visit date is still unknown.",
+      "recognitions": [],
+      "guide": {
+        "edition": 2023,
+        "distinction": "starred",
+        "stars": 1,
+        "starAwardDate": "2023-09-12",
+        "sourceUrl": "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/",
+        "historicalVisitDistinction": "unverified",
+        "starsAtVisit": null
+      },
+      "sourceUrl": "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/"
+    },
+    {
+      "id": "dining-charleston-baltimore-2018-2021",
+      "type": "dining",
+      "title": "Charleston",
+      "venueId": "venue-charleston-baltimore-2018-2021",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": 2020,
+        "possibleYears": [
+          2020
+        ],
+        "label": "2020",
+        "precision": "approximate_year",
+        "source": "Alex's explicit confirmation in conversation on 2026-10-24; timeline year 2020 chosen directly by Alex on 2026-10-24"
+      },
+      "summary": "Confirmed Charleston visit, placed on the 2020 timeline (exact date unknown). Chef Cindy Wolf earned multiple James Beard nominations; Charleston later won the Outstanding Wine and Other Beverages Program award in 2025.",
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2018,
+          "result": "finalist",
+          "category": "Best Chef: Mid-Atlantic",
+          "recipient": "Cindy Wolf",
+          "relationship": "chef at restaurant",
+          "timingRelativeToVisit": "within_possible_visit_window",
+          "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf"
+        },
+        {
+          "organization": "James Beard Foundation",
+          "year": 2019,
+          "result": "finalist",
+          "category": "Best Chef: Mid-Atlantic",
+          "recipient": "Cindy Wolf",
+          "relationship": "chef at restaurant",
+          "timingRelativeToVisit": "within_possible_visit_window",
+          "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf"
+        },
+        {
+          "organization": "James Beard Foundation",
+          "year": 2020,
+          "result": "finalist",
+          "category": "Best Chef: Mid-Atlantic",
+          "recipient": "Cindy Wolf",
+          "relationship": "chef at restaurant",
+          "timingRelativeToVisit": "within_possible_visit_window",
+          "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf"
+        },
+        {
+          "organization": "James Beard Foundation",
+          "year": 2025,
+          "result": "winner",
+          "category": "Outstanding Wine and Other Beverages Program",
+          "recipient": "Charleston",
+          "relationship": "restaurant award",
+          "timingRelativeToVisit": "after_visit",
+          "sourceUrl": "https://web.jamesbeard.org/stories/the-2025-james-beard-award-winners"
+        }
+      ],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "Baltimore was not covered by Michelin's US restaurant guide during the 2018–2021 visit window. Absence of stars here is not a negative dining assessment."
+      },
+      "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf"
+    },
+    {
+      "id": "dining-woodberry-kitchen-baltimore-2018-2021",
+      "type": "dining",
+      "title": "Woodberry Kitchen",
+      "venueId": "venue-woodberry-kitchen-baltimore-2018-2021",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": 2018,
+        "possibleYears": [
+          2018
+        ],
+        "label": "2018",
+        "precision": "approximate_year",
+        "source": "Alex's explicit confirmation of having dined at Woodberry Kitchen on 2026-10-24; timeline year 2018 chosen directly by Alex on 2026-10-24"
+      },
+      "summary": "Confirmed Woodberry Kitchen visit, placed on the 2018 timeline (exact date unknown). Chef Spike Gjerde won the James Beard Best Chef: Mid-Atlantic award in 2015, before this visit.",
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2015,
+          "result": "winner",
+          "category": "Best Chef: Mid-Atlantic",
+          "recipient": "Spike Gjerde",
+          "relationship": "chef at restaurant",
+          "timingRelativeToVisit": "before_visit",
+          "sourceUrl": "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners"
+        }
+      ],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "Baltimore was not within a Michelin restaurant Guide region in the 2018–2021 period; no star claim is being made."
+      },
+      "sourceUrl": "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners"
+    },
+    {
+      "id": "dining-momofuku-ccdc-washington-dc",
+      "type": "dining",
+      "title": "Momofuku CCDC",
+      "venueId": "venue-momofuku-ccdc-washington-dc",
+      "status": "confirmed",
+      "visit": {
+        "date": null,
+        "year": null,
+        "possibleYears": [],
+        "label": "Date not established",
+        "precision": "unknown",
+        "source": "Alex expressly confirmed Momofuku CCDC in the Culinary Passport interview on 2026-10-25; no exact visit date stated"
+      },
+      "summary": "Confirmed visit to David Chang's Momofuku CCDC in Washington, DC. Exact meal date uncertain; restaurant operated 2015 to March 2020. Michelin listed it with The Plate designation in 2019 (not a star). Chang's 2013 James Beard Outstanding Chef award was for Momofuku Noodle Bar in New York, not this restaurant.",
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2013,
+          "result": "winner",
+          "category": "Outstanding Chef",
+          "recipient": "David Chang",
+          "relationship": "Momofuku founder; award attributed to Momofuku Noodle Bar in New York City, not Momofuku CCDC",
+          "recognitionAtDifferentVenue": true,
+          "timingRelativeToVisit": "before_visit",
+          "sourceUrl": "https://archive.jamesbeard.org/blog/winner-recap-4"
+        }
+      ],
+      "guide": {
+        "edition": 2019,
+        "distinction": "plate",
+        "stars": 0,
+        "sourceUrl": "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week",
+        "historicalVisitDistinction": "unverified",
+        "note": "Michelin referred to Momofuku CCDC as The Plate in a 2019 Guide article. Its designation at the exact date of Alex's meal is not confirmed, and The Plate is not a Michelin star."
+      },
+      "sourceUrl": "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week"
+    },
+    {
+      "id": "dining-sauvage-steamboat-2021-01",
+      "type": "dining",
+      "title": "Sauvage",
+      "venueId": "venue-sauvage-steamboat-2021-01",
+      "status": "confirmed",
+      "favorite": true,
+      "visit": {
+        "date": null,
+        "year": 2021,
+        "month": 1,
+        "possibleYears": [
+          2021
+        ],
+        "label": "January 2021",
+        "precision": "month",
+        "source": "Alex's direct recollection, October 25, 2026"
+      },
+      "summary": "One of Alex's favorite dining experiences: a French-inspired tasting-menu dinner at Sauvage in Steamboat Springs in January 2021. The precise day is unknown. The restaurant has since closed.",
+      "recognitions": [],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No historical Michelin distinction is asserted for this visit. Colorado's first Michelin Guide selection arrived in 2023; Baltimore was not covered."
+      },
+      "sourceUrl": "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf"
+    },
+    {
+      "id": "dining-gunther-and-co-baltimore-2020-02-14",
+      "type": "dining",
+      "title": "Gunther & Co.",
+      "venueId": "venue-gunther-and-co-baltimore-2020-02-14",
+      "status": "confirmed",
+      "favorite": true,
+      "visit": {
+        "date": "2020-02-14",
+        "year": 2020,
+        "month": 2,
+        "possibleYears": [
+          2020
+        ],
+        "label": "February 14, 2020",
+        "precision": "day",
+        "source": "Alex's direct recollection, October 25, 2026"
+      },
+      "summary": "A standout Valentine's Day dinner at Gunther & Co. in Baltimore's historic Gunther Boiler Building, February 14, 2020. One of Alex's favorite dining experiences.",
+      "recognitions": [],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No historical Michelin distinction is asserted for this visit. Colorado's first Michelin Guide selection arrived in 2023; Baltimore was not covered."
+      },
+      "sourceUrl": "https://eatatgunther.com/contact"
+    },
+    {
+      "id": "dining-thames-street-oyster-house-baltimore",
+      "type": "dining",
+      "title": "Thames Street Oyster House",
+      "venueId": "venue-thames-street-oyster-house-baltimore",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "date": null,
+        "year": null,
+        "month": null,
+        "possibleYears": [],
+        "label": "Date to be established",
+        "precision": "unknown",
+        "source": "Alex's direct recollection, October 25, 2026"
+      },
+      "summary": "Confirmed visit to Thames Street Oyster House, a Fells Point seafood restaurant and raw bar serving Mid-Atlantic and New England seafood. Exact visit date is not yet recalled.",
+      "recognitions": [],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No historical Michelin distinction is asserted for this visit. Colorado's first Michelin Guide selection arrived in 2023; Baltimore was not covered."
+      },
+      "sourceUrl": "https://thamesstreetoysterhouse.com/"
+    }
+  ],
+  "origin": {
+    "repository": "alexlford/life-map",
+    "path": "data/dining.json",
+    "interviewPath": "data/dining-interview.json",
+    "asOf": "2026-10-25"
+  }
+}

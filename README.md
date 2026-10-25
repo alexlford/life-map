@@ -162,3 +162,13 @@ For the Culinary Passport timeline, Alex selected **2018** as the approximate ye
 - The 2013 James Beard Outstanding Chef honor belongs to David Chang at New York City's Momofuku Noodle Bar, **not** to Momofuku CCDC. The 49-candidate interview now premarks Momofuku CCDC as confirmed and Ekiben and Foraged as not visited. The Culinary Passport has six confirmed restaurant visits, including two Michelin-starred venues.
 
 On October 25, 2026, Alex marked **Alma Cocina Latina** in Baltimore (2018–2021) as **possibly visited**. This is a canonical but uncertain interview answer, locked as `maybe` and excluded from confirmed restaurant totals pending identification of a specific visit. The next Baltimore question is **Magdalena**, inside The Ivy Hotel; its fine-dining experience changed to a Maryland bistro in October 2020, a useful period-specific clue.
+
+## Culture Passport preview (October 2026)
+
+Culture Passport is intended to become an independent fourth property at `culture.alexlford.com`, alongside Sports, Adventures and Personal Atlas. The currently deployable **isolated preview** is served from `/culture/` while its own repository, GitHub Pages configuration and custom domain are arranged. The preview has no runtime imports from the Life Map application. Its complete source is under `culture/`.
+
+The seeded archive includes all six previously confirmed Michelin/James Beard-related restaurant visits plus three newly confirmed dining visits: **Sauvage**, January 2021 (Steamboat Springs; favorite); **Gunther & Co.**, Valentine's Day, February 14, 2020 (Baltimore; favorite); and **Thames Street Oyster House**, Baltimore (date unknown). Exact dates and award histories are never inferred. The hotel restaurant visited at the Sagamore Pendry Baltimore is a confirmed *experience*, but its specific restaurant identity remains an interview lead: **Rec Pier Chop House** is plausible, not yet confirmed.
+
+The interview queue contains 57 period-specific restaurant candidates, including new Baltimore and Steamboat entries. Excluded and tentative visits remain separate from the published experiences. All pages are static, accessible and mobile-responsive: home, explore, timeline, map, record and interview. No concert, opera or theater attendance is invented. Run `python culture/scripts/validate.py` plus `node --check culture/assets/app.js` before publishing.
+
+Do not add a `CNAME` in this repository for `culture.alexlford.com`, as that would hijack the existing Life Map GitHub Pages configuration. Once the destination repository is provisioned, copy the `culture/` tree to its root, configure Pages and DNS independently, and create redirect links from the legacy Culinary Passport.

@@ -13,7 +13,7 @@
     "maybe",
     "not_visited"
   ],
-  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand.",
+  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House.",
   "candidates": [
     {
       "id": "altimore-charleston",
@@ -593,6 +593,100 @@
       "awardFamily": "michelin",
       "interviewCue": "South Pearl Street; contemporary tasting menu.",
       "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed"
+    },
+    {
+      "id": "candidate-baltimore-rec-pier-chop-house",
+      "area": "Baltimore",
+      "name": "Rec Pier Chop House",
+      "recognition": "Historical restaurant memory check; no Michelin star or James Beard award asserted",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "The main Italian chophouse at the Sagamore Pendry Hotel in Fells Point; opened in March 2017. Stylish dining room with leather booths, green velvet banquettes, pasta, steaks and large windows overlooking Thames Street.",
+      "sourceUrl": "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/",
+      "visitStatus": "unreviewed",
+      "userMemoryLead": {
+        "recalled": "Alex confirmed visiting a restaurant inside Sagamore Pendry Baltimore, but the specific venue has not yet been identified.",
+        "candidateConfidence": "high",
+        "identityConfirmed": false,
+        "source": "Alex's recollection on 2026-10-25"
+      }
+    },
+    {
+      "id": "candidate-baltimore-le-comptoir-du-vin",
+      "area": "Baltimore",
+      "name": "Le Comptoir du Vin",
+      "recognition": "Historical restaurant memory check; no Michelin star or James Beard award asserted",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "Station North French wine bar and small plates, cozy exposed brick, 2018–2021 Baltimore candidate.",
+      "sourceUrl": "https://www.baltimoremagazine.com/section/fooddrink/le-comptoir-du-vin-opens-in-station-north/",
+      "visitStatus": "unreviewed"
+    },
+    {
+      "id": "candidate-baltimore-the-food-market",
+      "area": "Baltimore",
+      "name": "The Food Market",
+      "recognition": "Historical restaurant memory check; no Michelin star or James Beard award asserted",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "Hampden restaurant on West 36th Street, inventive contemporary comfort food in a bustling modern dining room.",
+      "sourceUrl": "https://www.thefoodmarketbaltimore.com/",
+      "visitStatus": "unreviewed"
+    },
+    {
+      "id": "candidate-baltimore-cosima",
+      "area": "Baltimore",
+      "name": "Cosima",
+      "recognition": "Historical restaurant memory check; no Michelin star or James Beard award asserted",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "Italian and Sicilian restaurant in the restored Mill No. 1 by Jones Falls, near Hampden.",
+      "sourceUrl": "https://www.cosimamill1.com/",
+      "visitStatus": "unreviewed"
+    },
+    {
+      "id": "candidate-steamboat-springs-caf-diva",
+      "area": "Steamboat Springs",
+      "name": "Café Diva",
+      "recognition": "Historical restaurant memory check; no Michelin star or James Beard award asserted",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "Fine dining at the base of Steamboat resort, known for seasonal tasting-inspired menus, extensive wines and romantic dinners.",
+      "sourceUrl": "https://www.cafediva.com/",
+      "visitStatus": "unreviewed"
+    },
+    {
+      "id": "candidate-steamboat-springs-laundry-kitchen-cocktails",
+      "area": "Steamboat Springs",
+      "name": "Laundry Kitchen & Cocktails",
+      "recognition": "Historical restaurant memory check; no Michelin star or James Beard award asserted",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "Old Town Steamboat restaurant in former laundry building, known for inventive shared plates and cocktails.",
+      "sourceUrl": "https://www.laundryrestaurant.com/",
+      "visitStatus": "unreviewed"
+    },
+    {
+      "id": "candidate-steamboat-springs-b-same-steamboat",
+      "area": "Steamboat Springs",
+      "name": "Bésame Steamboat",
+      "recognition": "Historical restaurant memory check; no Michelin star or James Beard award asserted",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "Downtown Steamboat, Latin tapas-style plates and lively cocktails, existed by January 2021.",
+      "sourceUrl": "https://www.besamesteamboat.com/",
+      "visitStatus": "unreviewed"
+    },
+    {
+      "id": "candidate-steamboat-springs-primrose",
+      "area": "Steamboat Springs",
+      "name": "Primrose",
+      "recognition": "Historical restaurant memory check; no Michelin star or James Beard award asserted",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "Steamboat restaurant listed by the resort among 2020–21 openings; ask whether visited on same ski trip.",
+      "sourceUrl": "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf",
       "visitStatus": "unreviewed"
     }
   ]
