@@ -41,7 +41,13 @@ assert dante["visitStatus"] == "not_visited" and dante["visitPeriod"].startswith
 assert "did not visit" in dante["reviewSource"].lower()
 assert "2018" in dante["recognition"] and dante["screening"]["status"] == "award_qualified"
 bar_goto = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "Bar Goto")
-assert bar_goto["visitStatus"] == "unreviewed"
+assert bar_goto["visitStatus"] == "not_visited"
+assert bar_goto["reviewedOn"] == "2026-10-25"
+assert "did not visit" in bar_goto["reviewSource"].lower()
+assert bar_goto["recognitionYear"] == 2018 and bar_goto["screening"]["status"] == "award_qualified"
+assert not any(r["title"] in {"Bar Goto", "The Dead Rabbit", "Dante", "Leyenda", "PDT (Please Don't Tell)"} for r in records)
+existing_conditions = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "Existing Conditions")
+assert existing_conditions["visitStatus"] == "unreviewed"
 assert pdt["visitStatus"] == "maybe" and rabbit["visitStatus"] == "not_visited"
 assert leyenda["visitStatus"] == "not_visited"
 assert not any(r["title"] in {"Leyenda", "Dante"} for r in records)
