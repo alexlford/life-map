@@ -92,6 +92,9 @@ def main():
     assert clavel["visitStatus"] == "not_visited"
     cinghiale = next(r for r in INTERVIEW["candidates"] if r["name"] == "Cinghiale" and r["area"] == "Baltimore")
     assert cinghiale["visitStatus"] == "not_visited"
+    petit_louis = next(r for r in INTERVIEW["candidates"] if r["name"] == "Petit Louis Bistro" and r["area"] == "Baltimore")
+    assert petit_louis["visitStatus"] == "not_visited"
+    assert not any(r["name"] == "Petit Louis Bistro" for r in DATA["entries"])
     assert not any(r["name"] == "Cinghiale" for r in DATA["entries"])
     assert not any(r["name"] == "Clavel" for r in DATA["entries"])
     assert "visitStatus===\"not_visited\"" in (ROOT / "dining-interview.js").read_text(encoding="utf-8")

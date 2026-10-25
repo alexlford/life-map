@@ -13,7 +13,7 @@
     "maybe",
     "not_visited"
   ],
-  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit.",
+  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021.",
   "candidates": [
     {
       "id": "altimore-charleston",
@@ -84,17 +84,20 @@
       "awardFamily": "context",
       "interviewCue": "Roland Park; classic French bistro, red banquettes.",
       "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf",
-      "visitStatus": "unreviewed"
+      "visitStatus": "not_visited",
+      "reviewedOn": "2026-10-24",
+      "reviewSource": "Alex's explicit answer in the Culinary Passport interview: did not visit during 2018–2021.",
+      "visitPeriod": "2018–2021: did not visit"
     },
     {
       "id": "altimore-foraged",
       "area": "Baltimore",
       "name": "Foraged",
-      "recognition": "James Beard semifinalist (2023, after your Baltimore years)",
+      "recognition": "Chef Chris Amendola: 2023 James Beard Best Chef: Mid-Atlantic semifinalist (after the 2018–2021 interview window)",
       "recognitionYear": 2023,
       "awardFamily": "beard",
-      "interviewCue": "Hyper-seasonal chef's cooking; Hampden location.",
-      "sourceUrl": "https://www.thebanner.com/culture/food-drink/james-beard-award-finals-baltimore-maryland-TXFG4OX6UZDITGNA6PNRHIIOXI/",
+      "interviewCue": "Chris Amendola's hyper-seasonal restaurant with mushrooms and foraged ingredients. Small dining room on Chestnut Avenue in Hampden during 2018–November 2021; moved to Station North in late 2021.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2023-james-beard-awards-semifinalists",
       "visitStatus": "unreviewed"
     },
     {
