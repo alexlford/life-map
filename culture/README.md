@@ -113,3 +113,14 @@ The user explicitly confirmed dining at République on **2026-10-24**, after Mar
 Yuan Wonton in Denver is a user-recalled confirmed visit (date unknown), and clearly qualifies for the curated collection through chef-owner Penelope Wong's **2026 James Beard Best Chef: Mountain** win. Source: https://www.jamesbeard.org/stories/james-beard-award-winners-2026. Do not assert the award predates the visit until a date is known. Bistro Barbès in Denver (closed June 2026, chef Jon Robbins) has no verified direct Michelin Guide or James Beard distinction. Preserve the user-supplied memory in `culture/data/excluded-dining-memories.json` rather than publishing it as a curated experience; this follows the user's preference for limiting displayed entries to qualified venues or explicitly selected favorites. Bistro Barbès is not currently a featured exception.
 
 October 25 merge: preserved the separately merged North Pond (Chicago) unreviewed memory lead and the original 20 typed reservation entries, then appended 39 supplemental review-only screenshot rows; Le Fou Frog was excluded entirely from the public ledger in accordance with user preference.
+
+## Story-first Mister Oso and Colorado rapid interview (October 25, 2026)
+
+Mister Oso is one confirmed Denver memory, not two location-specific records. Its narrative tracks the Señor Bear happy-hour inspiration, the 2019 RiNo opening in the former Populist space, the summer 2022 Wash Park expansion, and the original restaurant's 2023 Michelin Bib Gourmand. The user supplied a Wash Park reservation, but the public story does not nitpick venue addresses. A single venue record stores both location histories and archival evidence.
+
+The broader Culture Passport now uses story-first pages: remembered occasion and setting lead, year/season drives the timeline, and precise reservation metadata stays in collapsed archival notes. Boulder and mountain-town candidate interviews are expanded using the 2026 Michelin Colorado Guide across Boulder, Breckenridge, Aspen, Vail/Beaver Creek, Telluride and more RiNo/Denver restaurants. The queue is not a claim that the user visited the candidate restaurants.
+
+Historical sources:
+- https://guide.michelin.com/us/en/article/dining-out/mister-oso-denver-colorado-latin-menu-restaurant-michelin-guide-bib-gourmand
+- https://303magazine.com/2023/09/two-chefs-discuss-michelins-bib-gourmand/
+- https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado
