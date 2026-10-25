@@ -35,9 +35,9 @@
       add(card,"p","record-summary",r.summary);
       if(r.kind==="restaurant"){
         if(r.guide && r.guide.distinction!=="not_covered"){
-          const distinction=r.guide.distinction==="selected"?"Michelin Selected":r.guide.distinction==="starred"?(r.guide.stars+" Michelin Star"+(r.guide.stars===1?"":"s")):r.guide.distinction;
+          const distinction=r.guide.distinction==="plate"?"Michelin Plate (historical)":r.guide.distinction==="selected"?"Michelin Selected":r.guide.distinction==="starred"?(r.guide.stars+" Michelin Star"+(r.guide.stars===1?"":"s")):r.guide.distinction;
           add(card,"span","distinction",distinction+" · "+r.guide.edition+" Guide");
-          add(card,"p","note",r.guide.distinction==="starred"&&r.visit.timingRelativeToAward==="unverified"?"Exact meal date unknown; whether the star was awarded by then remains unverified.":r.guide.historicalVisitDistinction==="starred"?"One Michelin star in each possible visit year; exact visit date remains unknown.":"Exact visit date and Michelin recognition at the time of the meal are not yet established.");
+          add(card,"p","note",r.guide.distinction==="starred"&&r.visit.timingRelativeToAward==="unverified"?"Exact meal date unknown; whether the star was awarded by then remains unverified.":r.guide.distinction==="plate"?"Recommended in the 2019 Michelin Guide (Plate, not a star); the meal date and recognition at that time are unknown.":r.guide.historicalVisitDistinction==="starred"?"One Michelin star in each possible visit year; exact visit date remains unknown.":"Exact visit date and Michelin recognition at the time of the meal are not yet established.");
         }else{
           add(card,"span","distinction","James Beard-recognized · Outside Michelin coverage");
           add(card,"p","note","No Michelin Guide stars are claimed for Baltimore. Chef honors and later restaurant awards are tracked separately.");
@@ -46,7 +46,7 @@
           const recognitionArea=add(card,"div","recognition-area");
           r.recognitions.forEach(rec=>{const row=add(recognitionArea,"div","recognition-item");
             add(row,"strong","",rec.organization+" · "+rec.year+" "+rec.result+(rec.timingRelativeToVisit==="after_visit"?" · after visit":""));
-            add(row,"span","",rec.category+" — "+rec.recipient);
+            add(row,"span","",rec.category+" — "+rec.recipient);if(rec.relationship){add(row,"span","",rec.relationship);}
             external(row,"Source ↗",rec.sourceUrl);
           });
         }

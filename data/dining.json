@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "methodology": {
     "confirmedDefinition": "Named visits are confirmed from direct recollection. A Michelin-starred venue counts only when every plausible visit year is documented as starred by the relevant guide edition.",
     "guideVsStar": "Michelin Selected, Bib Gourmand, Green Star and Michelin Stars are separate distinctions; Michelin Selected is not a Michelin star.",
@@ -54,11 +54,25 @@
       {
         "title": "James Beard Foundation — Spike Gjerde, 2015 Best Chef: Mid-Atlantic winner at Woodberry Kitchen",
         "url": "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners"
+      },
+      {
+        "title": "Michelin Guide: 2019 Momofuku CCDC The Plate designation",
+        "url": "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week"
+      },
+      {
+        "title": "Eater DC: Momofuku CCDC permanently closes May 13, 2020",
+        "url": "https://dc.eater.com/2020/5/13/21257706/momofuku-ccdc-closing-permanently-citycenter-dc-coronavirus"
+      },
+      {
+        "title": "James Beard Foundation 2013: David Chang Outstanding Chef, Momofuku Noodle Bar NYC",
+        "url": "https://archive.jamesbeard.org/blog/winner-recap-4"
       }
     ],
     "jamesBeard": "James Beard recognitions record award category, result (winner/finalist/semifinalist), year, the honoree, and associated restaurant. Chef recognition does not mean the restaurant itself won an institutional award. Award years after a meal remain subsequent achievements. A restaurant recognized after a user's visit may be tagged as subsequently awarded, rather than suggesting it held the award on the dinner date.",
     "interview": "Interview candidates are research leads except those expressly flagged as confirmed and linked to a canonical dining visit. Client selections remain browser-local and cannot override the canonical confirmed visit.",
-    "timeline": "Visit years are user-chosen approximate chronological placements when exact dates are unknown, not verified day-specific dates. Approximate placement must be marked separately from award dates."
+    "timeline": "Visit years are user-chosen approximate chronological placements when exact dates are unknown, not verified day-specific dates. Approximate placement must be marked separately from award dates.",
+    "plate": "The historical Michelin Plate is a recommended-restaurant designation, not a Michelin star. A Plate in a known guide edition does not imply it existed on an unknown meal date.",
+    "founderRecognition": "If a founder won a James Beard award for a different restaurant, preserve the credited venue and never attribute the award to the visited branch."
   },
   "entries": [
     {
@@ -309,6 +323,52 @@
       "summary": "Confirmed Woodberry Kitchen visit, placed on the 2018 timeline (exact date unknown). Chef Spike Gjerde won the James Beard Best Chef: Mid-Atlantic award in 2015, before this visit.",
       "evidenceStatus": "reported",
       "locationUrl": "https://www.google.com/maps/search/?api=1&query=Woodberry+Kitchen+Baltimore+Maryland"
+    },
+    {
+      "id": "momofuku-ccdc-washington-dc",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Momofuku CCDC",
+      "city": "Washington, DC",
+      "region": "District of Columbia",
+      "country": "USA",
+      "neighborhood": "CityCenterDC",
+      "address": "1090 I St NW, Washington, DC 20001",
+      "visit": {
+        "date": null,
+        "dateText": "Date uncertain (restaurant served 2015–March 2020)",
+        "precision": "unknown",
+        "source": "Alex expressly confirmed Momofuku CCDC in the Culinary Passport interview on 2026-10-25; no exact visit date stated",
+        "restaurantOperatingWindow": {
+          "opened": "2015-10-24",
+          "lastService": "2020-03-13",
+          "permanentlyClosed": "2020-05-13"
+        }
+      },
+      "guide": {
+        "edition": 2019,
+        "distinction": "plate",
+        "stars": 0,
+        "sourceUrl": "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week",
+        "historicalVisitDistinction": "unverified",
+        "note": "Michelin referred to Momofuku CCDC as The Plate in a 2019 Guide article. Its designation at the exact date of Alex's meal is not confirmed, and The Plate is not a Michelin star."
+      },
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2013,
+          "result": "winner",
+          "category": "Outstanding Chef",
+          "recipient": "David Chang",
+          "relationship": "Momofuku founder; award attributed to Momofuku Noodle Bar in New York City, not Momofuku CCDC",
+          "recognitionAtDifferentVenue": true,
+          "timingRelativeToVisit": "before_visit",
+          "sourceUrl": "https://archive.jamesbeard.org/blog/winner-recap-4"
+        }
+      ],
+      "summary": "Confirmed visit to David Chang's Momofuku CCDC in Washington, DC. Exact meal date uncertain; restaurant operated 2015 to March 2020. Michelin listed it with The Plate designation in 2019 (not a star). Chang's 2013 James Beard Outstanding Chef award was for Momofuku Noodle Bar in New York, not this restaurant.",
+      "evidenceStatus": "reported",
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Momofuku+CCDC+1090+I+Street+NW+Washington+DC"
     }
   ],
   "excludedResearch": [
