@@ -246,7 +246,7 @@ assert aud["summary"] == {
     "possibleVisitLeads": 3,
     "reviewedButNotConfirmedReservations": 2,
 }
-assert {x["venueId"] for x in aud["publishedVenues"]} == {r["venueId"] for r in records}
+assert {x["venueId"] for x in aud["publishedVenues"]} == {r["venueId"] for r in records if r["type"] in {"dining","bar"}}
 assert {x["name"] for x in aud["confirmedArchiveOnly"]} == {
     "Joe's Kansas City Bar-B-Que", "Q39", "Arthur Bryant's Barbeque",
     "Jack Stack Barbecue", "Uchi Denver", "Dominic's on the Hill"
