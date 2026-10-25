@@ -25,7 +25,7 @@ def main():
         if record["status"] == "confirmed":
             assert record["kind"] == "restaurant", record["id"]
             assert record["guide"]["distinction"] in {
-                "selected", "bib_gourmand", "green_star", "starred"
+                "selected", "bib_gourmand", "green_star", "starred", "not_covered"
             }, record["id"]
             assert not record.get("candidates"), "Confirmed visit cannot be a multi-restaurant lead"
             if record["guide"]["distinction"] == "starred":
@@ -66,13 +66,23 @@ def main():
     ATLAS = (ROOT / "atlas.html").read_text(encoding="utf-8")
     assert "Personal Atlas" in ATLAS and "./index.html" in ATLAS and "./dining.html" in ATLAS
     assert "./atlas.html" in INDEX and "./atlas.html" in HTML
+    charleston = next(r for r in DATA["entries"] if r["id"] == "charleston-baltimore-2018-2021")
+    assert charleston["status"] == "confirmed"
+    assert charleston["visit"]["date"] is None
+    assert charleston["visit"]["possibleYears"] == [2018, 2019, 2020, 2021]
+    assert charleston["guide"]["distinction"] == "not_covered"
+    assert charleston["guide"]["stars"] == 0
+    assert any(r["year"] == 2025 and r["result"] == "winner" and r["timingRelativeToVisit"] == "after_visit" for r in charleston["recognitions"])
     assert "Culinary Passport" in HTML
     INTERVIEW = json.loads((ROOT / "data/dining-interview.json").read_text(encoding="utf-8"))
     QUESTIONS = (ROOT / "dining-interview.html").read_text(encoding="utf-8")
     assert len(INTERVIEW["candidates"]) >= 40
     assert len(set(r["id"] for r in INTERVIEW["candidates"])) == len(INTERVIEW["candidates"])
     assert set(r["area"] for r in INTERVIEW["candidates"]) == {"Baltimore", "Washington, DC", "Denver Metro"}
-    assert all(r["visitStatus"] == "unreviewed" and r["sourceUrl"].startswith("https://") for r in INTERVIEW["candidates"])
+    assert all(r["visitStatus"] in {"unreviewed", "confirmed"} and r["sourceUrl"].startswith("https://") for r in INTERVIEW["candidates"])
+    confirmed_interview = [r for r in INTERVIEW["candidates"] if r["visitStatus"] == "confirmed"]
+    assert len(confirmed_interview) == 1 and confirmed_interview[0]["confirmedVisitId"] == charleston["id"]
+    assert "getAnswer(r)" in (ROOT / "dining-interview.js").read_text(encoding="utf-8")
     assert "Charleston" in [r["name"] for r in INTERVIEW["candidates"]]
     assert "Interview" in QUESTIONS
     assert "./data/dining.json" in JS

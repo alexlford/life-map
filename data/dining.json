@@ -42,10 +42,18 @@
       {
         "title": "James Beard Foundation — 2023 winners (République)",
         "url": "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
+      },
+      {
+        "title": "James Beard Foundation: Cindy Wolf chef recognition history",
+        "url": "https://archive.jamesbeard.org/chef/cindy-wolf"
+      },
+      {
+        "title": "James Beard Foundation: 2025 Outstanding Wine and Other Beverages Program Winner Charleston",
+        "url": "https://web.jamesbeard.org/stories/the-2025-james-beard-award-winners"
       }
     ],
-    "jamesBeard": "James Beard recognitions record award category, result (winner/finalist/semifinalist), year, the honoree, and associated restaurant. Chef recognition does not mean the restaurant itself won an institutional award. Award years after a meal remain subsequent achievements.",
-    "interview": "Candidates in dining-interview.json are research leads, not confirmed visits. Browser interview answers are not published to the main passport until explicitly reviewed and confirmed."
+    "jamesBeard": "James Beard recognitions record award category, result (winner/finalist/semifinalist), year, the honoree, and associated restaurant. Chef recognition does not mean the restaurant itself won an institutional award. Award years after a meal remain subsequent achievements. A restaurant recognized after a user's visit may be tagged as subsequently awarded, rather than suggesting it held the award on the dinner date.",
+    "interview": "Interview candidates are research leads except those expressly flagged as confirmed and linked to a canonical dining visit. Client selections remain browser-local and cannot override the canonical confirmed visit."
   },
   "entries": [
     {
@@ -175,6 +183,82 @@
       "evidenceStatus": "reported",
       "locationUrl": "https://www.google.com/maps/search/?api=1&query=Beckon+2843+Larimer+St+Denver",
       "recognitions": []
+    },
+    {
+      "id": "charleston-baltimore-2018-2021",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Charleston",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "USA",
+      "neighborhood": "Harbor East",
+      "address": "1000 Lancaster St, Baltimore, MD 21202",
+      "visit": {
+        "date": null,
+        "dateText": "2018–2021 (exact year uncertain)",
+        "possibleYears": [
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "precision": "year_range",
+        "source": "Alex's explicit confirmation in conversation on 2026-10-24",
+        "timingRelativeToAward": "mixed: contemporaneous chef nominations; 2025 restaurant award occurred after visit"
+      },
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "Baltimore was not covered by Michelin's US restaurant guide during the 2018–2021 visit window. Absence of stars here is not a negative dining assessment."
+      },
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2018,
+          "result": "finalist",
+          "category": "Best Chef: Mid-Atlantic",
+          "recipient": "Cindy Wolf",
+          "relationship": "chef at restaurant",
+          "timingRelativeToVisit": "within_possible_visit_window",
+          "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf"
+        },
+        {
+          "organization": "James Beard Foundation",
+          "year": 2019,
+          "result": "finalist",
+          "category": "Best Chef: Mid-Atlantic",
+          "recipient": "Cindy Wolf",
+          "relationship": "chef at restaurant",
+          "timingRelativeToVisit": "within_possible_visit_window",
+          "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf"
+        },
+        {
+          "organization": "James Beard Foundation",
+          "year": 2020,
+          "result": "finalist",
+          "category": "Best Chef: Mid-Atlantic",
+          "recipient": "Cindy Wolf",
+          "relationship": "chef at restaurant",
+          "timingRelativeToVisit": "within_possible_visit_window",
+          "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf"
+        },
+        {
+          "organization": "James Beard Foundation",
+          "year": 2025,
+          "result": "winner",
+          "category": "Outstanding Wine and Other Beverages Program",
+          "recipient": "Charleston",
+          "relationship": "restaurant award",
+          "timingRelativeToVisit": "after_visit",
+          "sourceUrl": "https://web.jamesbeard.org/stories/the-2025-james-beard-award-winners"
+        }
+      ],
+      "summary": "A confirmed visit during the Baltimore years, 2018–2021, exact year unknown. Chef Cindy Wolf received James Beard Best Chef: Mid-Atlantic nominations in this period; Charleston won Outstanding Wine and Other Beverages Program in 2025, after the visit.",
+      "evidenceStatus": "reported",
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Charleston+1000+Lancaster+Street+Baltimore+MD"
     }
   ],
   "excludedResearch": [
