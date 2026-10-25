@@ -84,7 +84,7 @@ def main():
     QUESTIONS = (ROOT / "dining-interview.html").read_text(encoding="utf-8")
     assert len(INTERVIEW["candidates"]) >= 40
     assert len(set(r["id"] for r in INTERVIEW["candidates"])) == len(INTERVIEW["candidates"])
-    assert set(r["area"] for r in INTERVIEW["candidates"]) == {"Baltimore", "Washington, DC", "Denver Metro", "Steamboat Springs", "Kansas City Metro"}
+    assert set(r["area"] for r in INTERVIEW["candidates"]) == {"Baltimore", "Washington, DC", "Denver Metro", "Steamboat Springs", "Kansas City Metro", "Chicago"}
     assert all(r["visitStatus"] in {"unreviewed", "confirmed", "not_visited", "maybe"} and r["sourceUrl"].startswith("https://") for r in INTERVIEW["candidates"])
     confirmed_interview = [r for r in INTERVIEW["candidates"] if r["visitStatus"] == "confirmed"]
     assert len(confirmed_interview) == 12 and {r["confirmedVisitId"] for r in confirmed_interview} == {charleston["id"], woodberry["id"], "momofuku-ccdc-washington-dc", "rec-pier-chop-house-baltimore", "majestic-kansas-city", "yuan-wonton-denver", "safta-denver", "smok-denver", "annette-aurora", "mercantile-denver", "north-pond-chicago-2021", "barolo-grill-denver"}
