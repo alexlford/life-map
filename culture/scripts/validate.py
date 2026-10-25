@@ -219,7 +219,7 @@ for name in ("Safta", "Smok"):
 
 # The story should lead the experience page, with precise booking details tucked away.
 assert sum(bool(r.get("memory")) for r in records) >= 19
-assert 'Archive details & sources' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
+assert 'Historical notes & sources' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
 assert 'const storyPeriod=(r)' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
 assert 'function timelineChapter' not in (ROOT / "assets/app.js").read_text(encoding="utf-8") or 'Other memories' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
 
