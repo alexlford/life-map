@@ -11,7 +11,11 @@
     "New York City": "2018–2020 (unidentified speakeasy; previously confirmed 2016–2017 NYC meal separate)",
     "Chicago": "Frequent visits 2010–present",
     "St. Louis": "2011–2014 (restaurant on The Hill)",
-    "Breckenridge": "2021, 2022 and 2023"
+    "Breckenridge": "2021–2026 mountain trips, restaurant visits to be confirmed",
+    "Boulder": "Visits to Boulder, dates not specified",
+    "Aspen": "Mountain trips, dates not specified",
+    "Vail / Beaver Creek": "Mountain trips, dates not specified",
+    "Telluride": "Mountain trips, dates not specified"
   },
   "statuses": [
     "unreviewed",
@@ -19,7 +23,7 @@
     "maybe",
     "not_visited"
   ],
-  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House. Continued discovery batch 2026-10-25: 15 additional time-compatible Baltimore/DC restaurant candidates from dated historical sources. All remain unreviewed and excluded from public experience totals. Interview returns to Magdalena next; candidate discovery can continue periodically during future review sessions. Gunther & Co. appears as a confirmed dining record in the Culture Passport source archive. Its candidate status is locked as confirmed rather than inviting duplicate confirmation. Two new interview areas from direct user history: Charleston, South Carolina, three-month stay 2017–2018, and Kansas City metro frequent visits from 2010–present. The Majestic Restaurant is a strong identification lead for steakhouse + basement jazz, not confirmed by name. Distinguish James Beard chef awards from awards for the restaurant; consider post-visit award years. Confirmed by user: The Majestic Restaurant (Kansas City), Rec Pier Chop House (Baltimore). User dated Breckenridge Distillery dining to three separate years 2021/2022/2023; NYC speakeasy interview window 2018–2020; Chicago and Kansas City 2010–present; St Louis Hill Italian meal 2011–2014. None of these regional windows establish a visit to any unconfirmed candidate. Breckenridge has three year-specific Culture experience IDs attached to one venue. User uploaded OpenTable reservation screenshots on 2026-10-25. They establish Dominic's on the Hill (2012-12-28), Q House (2021-10-21), Wildflower (2022-03-21), Uchi Denver (2022-05-15), and other completed reservations. Le Fou Frog intentionally omitted from the published records and ledger per user's opt-out. Mister Oso reservation is WASH PARK, unlike the Bib Gourmand RiNo location. NYC PDT (Please Don't Tell) classified as a possibly visited bar during 2018–2020, not confirmed. The bar's 2012 James Beard Outstanding Bar Program victory is independently verified. Nine further JBF-recognized bar leads from 2018, 2025 and 2026: none counted as visited. Person-level JBF distinctions remain attributed to the person. User's direct 2026-10-25 interview response: The Dead Rabbit was NOT visited in NYC 2018–2020. PDT (Please Don't Tell) remains a possible visit only. Do not promote either to confirmed experiences or counts. North Pond Chicago is an unreviewed Michelin/James Beard candidate proposed in an independently merged update; this lead has not been confirmed by name.",
+  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House. Continued discovery batch 2026-10-25: 15 additional time-compatible Baltimore/DC restaurant candidates from dated historical sources. All remain unreviewed and excluded from public experience totals. Interview returns to Magdalena next; candidate discovery can continue periodically during future review sessions. Gunther & Co. appears as a confirmed dining record in the Culture Passport source archive. Its candidate status is locked as confirmed rather than inviting duplicate confirmation. Two new interview areas from direct user history: Charleston, South Carolina, three-month stay 2017–2018, and Kansas City metro frequent visits from 2010–present. The Majestic Restaurant is a strong identification lead for steakhouse + basement jazz, not confirmed by name. Distinguish James Beard chef awards from awards for the restaurant; consider post-visit award years. Confirmed by user: The Majestic Restaurant (Kansas City), Rec Pier Chop House (Baltimore). User dated Breckenridge Distillery dining to three separate years 2021/2022/2023; NYC speakeasy interview window 2018–2020; Chicago and Kansas City 2010–present; St Louis Hill Italian meal 2011–2014. None of these regional windows establish a visit to any unconfirmed candidate. Breckenridge has three year-specific Culture experience IDs attached to one venue. User uploaded OpenTable reservation screenshots on 2026-10-25. They establish Dominic's on the Hill (2012-12-28), Q House (2021-10-21), Wildflower (2022-03-21), Uchi Denver (2022-05-15), and other completed reservations. Le Fou Frog intentionally omitted from the published records and ledger per user's opt-out. Mister Oso reservation is WASH PARK, unlike the Bib Gourmand RiNo location. NYC PDT (Please Don't Tell) classified as a possibly visited bar during 2018–2020, not confirmed. The bar's 2012 James Beard Outstanding Bar Program victory is independently verified. Nine further JBF-recognized bar leads from 2018, 2025 and 2026: none counted as visited. Person-level JBF distinctions remain attributed to the person. User's direct 2026-10-25 interview response: The Dead Rabbit was NOT visited in NYC 2018–2020. PDT (Please Don't Tell) remains a possible visit only. Do not promote either to confirmed experiences or counts. North Pond Chicago is an unreviewed Michelin/James Beard candidate proposed in an independently merged update; this lead has not been confirmed by name. Expand Michelin interview for Boulder, Breckenridge, Vail/Beaver Creek, Aspen, Telluride and RiNo/Denver. Source is Michelin's official 2026 Colorado selection. All are explicitly unreviewed unless user already confirmed a named venue. Display as batch interview without requiring dates.",
   "candidates": [
     {
       "id": "altimore-charleston",
@@ -874,21 +878,21 @@
     },
     {
       "id": "enveretro-frasca-food-and-wine",
-      "area": "Denver Metro",
+      "area": "Boulder",
       "name": "Frasca Food and Wine",
-      "recognition": "Michelin 1★ (from 2023)",
-      "recognitionYear": 2023,
+      "recognition": "2026 Michelin one star; historical James Beard connections",
+      "recognitionYear": 2026,
       "awardFamily": "michelin",
-      "interviewCue": "Boulder/Pearl Street; Friulian fine dining and wine.",
-      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
+      "interviewCue": "Pearl Street Boulder, renowned Italian fine dining and wine; one Michelin star in 2026.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
       "visitStatus": "unreviewed",
       "screening": {
         "status": "award_qualified",
         "basis": "michelin",
-        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
-        "note": "Direct venue Michelin listing or a James Beard restaurant/chef-in-post recognition. Year and award level are kept in the recognition text; some awards postdate a possible meal."
+        "note": "Michelin one-star restaurant in Boulder, included as a historical visit candidate only."
       },
       "eligibility": {
         "status": "eligible_candidate",
@@ -4015,6 +4019,816 @@
         "status": "eligible_candidate",
         "basis": "michelin",
         "reason": "Direct Michelin Guide inclusion; user confirmed visit.",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-boulder-basta",
+      "area": "Boulder",
+      "name": "Basta",
+      "recognition": "Michelin Bib Gourmand (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Wood-fired contemporary cooking near Arapahoe, with seasonal ingredients.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "3601 Arapahoe Ave",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Bib Gourmand (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-boulder-cozobi-fonda-fina",
+      "area": "Boulder",
+      "name": "Cozobi Fonda Fina",
+      "recognition": "Michelin Bib Gourmand (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Mexican cooking and a warm dining room near Pearl Street.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "909 Walnut St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Bib Gourmand (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-boulder-blackbelly-market-restaurant",
+      "area": "Boulder",
+      "name": "Blackbelly Market & Restaurant",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Boulder butcher-driven restaurant by chef Hosea Rosenberg.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "1606 Conestoga St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-boulder-boulder-dushanbe-tea-house",
+      "area": "Boulder",
+      "name": "Boulder Dushanbe Tea House",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Colorful hand-carved Tajik tea house beside Boulder Creek.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "1770 13th St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-boulder-bramble-hare",
+      "area": "Boulder",
+      "name": "Bramble & Hare",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Eric Skokan's Pearl Street farm-to-table restaurant.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "1964 13th St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-boulder-casa-juani",
+      "area": "Boulder",
+      "name": "Casa Juani",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Spanish restaurant on Pearl Street, added to Michelin in 2026.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "901 Pearl St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-boulder-oak-at-fourteenth",
+      "area": "Boulder",
+      "name": "Oak at Fourteenth",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Contemporary restaurant on Pearl Street near the mall.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "1400 Pearl St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-boulder-santo",
+      "area": "Boulder",
+      "name": "Santo",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Northern New Mexican cooking in North Boulder.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "1265 Alpine Ave",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-boulder-stella-s-cucina",
+      "area": "Boulder",
+      "name": "Stella's Cucina",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Elegant Italian dining downtown on Walnut Street.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "1123 Walnut St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-boulder-zoe-ma-ma",
+      "area": "Boulder",
+      "name": "Zoe Ma Ma",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Boulder noodle and dumpling spot on Pearl Street.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "919 Pearl St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-breckenridge-radicato",
+      "area": "Breckenridge",
+      "name": "Radicato",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Seasonal handmade pastas on South Main Street.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "137 S Main St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-breckenridge-rootstalk",
+      "area": "Breckenridge",
+      "name": "Rootstalk",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Refined Colorado cooking in a Victorian house on North Main Street.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "207 N Main St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-aspen-bosq",
+      "area": "Aspen",
+      "name": "Bosq",
+      "recognition": "One Michelin star (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Modern seasonal tasting menus on South Mill Street.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "312 S Mill St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "One Michelin star (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-aspen-element-47",
+      "area": "Aspen",
+      "name": "Element 47",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "The Little Nell's signature fine dining near Aspen Mountain.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "675 E Durant Ave",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-aspen-mawa-s-kitchen",
+      "area": "Aspen",
+      "name": "Mawa's Kitchen",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Global cooking near Aspen Airport.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "305 Aspen Airport Business Center",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-aspen-prospect",
+      "area": "Aspen",
+      "name": "Prospect",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Dining at the historic Hotel Jerome.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "330 E Main St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-vail-beaver-creek-osaki-s",
+      "area": "Vail / Beaver Creek",
+      "name": "Osaki's",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Japanese seafood and sushi in Vail.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "100 E Meadow Dr",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-vail-beaver-creek-sweet-basil",
+      "area": "Vail / Beaver Creek",
+      "name": "Sweet Basil",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Long-running contemporary restaurant in Vail Village.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "193 Gore Creek Dr",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-vail-beaver-creek-splendido-at-the-chateau",
+      "area": "Vail / Beaver Creek",
+      "name": "Splendido at the Chateau",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Elegant dining at the Chateau in Beaver Creek.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "17 Chateau Ln",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-vail-beaver-creek-mirabelle",
+      "area": "Vail / Beaver Creek",
+      "name": "Mirabelle",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Fine dining in a historic-style farmhouse setting in Avon.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "55 Village Rd",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-telluride-the-national",
+      "area": "Telluride",
+      "name": "The National",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Intimate Telluride restaurant on Colorado Avenue, new Michelin selection 2026.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "100 E Colorado Ave",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-denver-metro-a5-steakhouse",
+      "area": "Denver Metro",
+      "name": "A5 Steakhouse",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Modern steakhouse in LoDo with distinctive steak displays.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "1600 15th St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-denver-metro-dio-mio",
+      "area": "Denver Metro",
+      "name": "Dio Mio",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Casual scratch-made pasta in RiNo on Larimer Street.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "3264 Larimer St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-denver-metro-marco-s-coal-fired",
+      "area": "Denver Metro",
+      "name": "Marco's Coal-Fired",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Wood- and coal-fired pizza near Coors Field.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "2129 Larimer St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-denver-metro-barolo-grill",
+      "area": "Denver Metro",
+      "name": "Barolo Grill",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Refined Italian restaurant near Cherry Creek.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "3030 E 6th Ave",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-denver-metro-heretik",
+      "area": "Denver Metro",
+      "name": "Heretík",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Basque-leaning coastal Spanish restaurant near 26th Street; 2026 recommended.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "1441 26th St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
+        "screenedOn": "2026-10-25",
+        "verifiedForPublication": true
+      }
+    },
+    {
+      "id": "candidate-denver-metro-brasserie-brixton",
+      "area": "Denver Metro",
+      "name": "Brasserie Brixton",
+      "recognition": "Michelin Selected / Recommended (2026)",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Neighborhood French bistro on Williams Street.",
+      "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+      "visitStatus": "unreviewed",
+      "researchStatus": "guide_verified_candidate",
+      "addedOn": "2026-10-25",
+      "priority": "high",
+      "addressHint": "3701 N Williams St",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "michelin",
+        "evidenceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named in Michelin's official 2026 Colorado Guide. A candidate is not a claimed personal visit."
+      },
+      "eligibility": {
+        "status": "eligible_candidate",
+        "basis": "michelin",
+        "reason": "Michelin Selected / Recommended (2026) in official guide",
         "screenedOn": "2026-10-25",
         "verifiedForPublication": true
       }
