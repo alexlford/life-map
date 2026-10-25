@@ -13,7 +13,7 @@
     "maybe",
     "not_visited"
   ],
-  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC.",
+  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand.",
   "candidates": [
     {
       "id": "altimore-charleston",
@@ -126,17 +126,21 @@
       "awardFamily": "beard",
       "interviewCue": "Venezuelan cuisine; arepas; Baltimore restaurant formerly near Canton.",
       "sourceUrl": "https://www.thebanner.com/culture/food-drink/james-beard-award-finals-baltimore-maryland-TXFG4OX6UZDITGNA6PNRHIIOXI/",
-      "visitStatus": "unreviewed"
+      "visitStatus": "maybe",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex's direct answer in Culinary Passport interview on 2026-10-25: possibly visited during Baltimore years, 2018–2021.",
+      "visitPeriod": "2018–2021, visit uncertain",
+      "interviewNote": "Possible visit only, not counted as confirmed. Confirm memory and date before including in the Culinary Passport."
     },
     {
       "id": "altimore-magdalena",
       "area": "Baltimore",
       "name": "Magdalena",
-      "recognition": "Historical fine-dining memory check; not asserted as Michelin/JBF awardee",
-      "recognitionYear": null,
+      "recognition": "Baltimore Magazine Best Restaurant recognition (2018); no Michelin star or specific James Beard award claimed",
+      "recognitionYear": 2018,
       "awardFamily": "context",
-      "interviewCue": "The Ivy Hotel in Mount Vernon; elegant garden restaurant.",
-      "sourceUrl": "https://www.thebanner.com/culture/food-drink/james-beard-award-finals-baltimore-maryland-TXFG4OX6UZDITGNA6PNRHIIOXI/",
+      "interviewCue": "Mount Vernon, 205 E Biddle Street, inside The Ivy Hotel's restored mansion: Garden Room overlooking a courtyard, Treasury, intimate wine cellar, and refined dining rooms. Fine dining in 2018–early 2020; reopened October 2020 as Magdalena, A Maryland Bistro.",
+      "sourceUrl": "https://www.baltimoremagazine.com/event/the-dinner-party/",
       "visitStatus": "unreviewed"
     },
     {

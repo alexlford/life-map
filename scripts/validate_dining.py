@@ -85,7 +85,7 @@ def main():
     assert len(INTERVIEW["candidates"]) >= 40
     assert len(set(r["id"] for r in INTERVIEW["candidates"])) == len(INTERVIEW["candidates"])
     assert set(r["area"] for r in INTERVIEW["candidates"]) == {"Baltimore", "Washington, DC", "Denver Metro"}
-    assert all(r["visitStatus"] in {"unreviewed", "confirmed", "not_visited"} and r["sourceUrl"].startswith("https://") for r in INTERVIEW["candidates"])
+    assert all(r["visitStatus"] in {"unreviewed", "confirmed", "not_visited", "maybe"} and r["sourceUrl"].startswith("https://") for r in INTERVIEW["candidates"])
     confirmed_interview = [r for r in INTERVIEW["candidates"] if r["visitStatus"] == "confirmed"]
     assert len(confirmed_interview) == 3 and {r["confirmedVisitId"] for r in confirmed_interview} == {charleston["id"], woodberry["id"], "momofuku-ccdc-washington-dc"}
     clavel = next(r for r in INTERVIEW["candidates"] if r["area"] == "Baltimore" and r["name"] == "Clavel")
@@ -106,6 +106,14 @@ def main():
     assert not any(r["name"] in {"Foraged", "Ekiben"} for r in DATA["entries"])
     ekiben = next(r for r in INTERVIEW["candidates"] if r["name"] == "Ekiben" and r["area"] == "Baltimore")
     assert ekiben["visitStatus"] == "not_visited"
+    alma = next(r for r in INTERVIEW["candidates"] if r["name"] == "Alma Cocina Latina" and r["area"] == "Baltimore")
+    assert alma["visitStatus"] == "maybe"
+    assert "possibly visited" in alma["reviewSource"]
+    assert not any(r["name"] == "Alma Cocina Latina" for r in DATA["entries"])
+    magdalena = next(r for r in INTERVIEW["candidates"] if r["name"] == "Magdalena" and r["area"] == "Baltimore")
+    assert magdalena["visitStatus"] == "unreviewed"
+    assert "2020" in magdalena["interviewCue"]
+    assert "visitStatus===\"maybe\"" in (ROOT / "dining-interview.js").read_text(encoding="utf-8")
     assert len([r for r in DATA["entries"] if r["status"] == "confirmed"]) == 6
     assert len(INTERVIEW["candidates"]) == 49
     assert not any(r["name"] == "Petit Louis Bistro" for r in DATA["entries"])
