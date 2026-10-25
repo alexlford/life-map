@@ -154,3 +154,9 @@ In addition to the Michelin Guide, `data/dining.json` can associate a named chef
 Woodberry Kitchen is also confirmed as visited in Baltimore during 2018–2021 (precise year unknown), with Spike Gjerde's James Beard 2015 Best Chef: Mid-Atlantic win represented as an award to the chef **before** the remembered dining visit. Both Charleston and Woodberry Kitchen are now locked as canonical confirmed visits in the interview rather than asking Alex to reconfirm them.
 
 For the Culinary Passport timeline, Alex selected **2018** as the approximate year for Woodberry Kitchen and **2020** for Charleston (exact dining dates remain unknown). Timeline entries sort chronologically by the chosen year. Alex explicitly confirmed **not visiting Clavel** during 2018–2021; this answer is locked in the interview and excluded from confirmed visit totals.
+
+## Baltimore and DC dining interview (October 24, 2026)
+
+- **Foraged:** Explicitly not visited during 2018–2021. Kept as a locked negative interview answer, excluded from confirmed visits.
+- **David Chang DC restaurant:** Alex recalls definitely visiting a restaurant operated by David Chang in Washington, DC. **Momofuku CCDC** (CityCenterDC, October 2015–March 2020 service, permanently closed May 2020) is the leading historical identification, but has **not yet been specifically confirmed** by name. It is a high-priority interview lead, not counted as a confirmed named restaurant or Michelin-starred venue.
+- The 2013 James Beard Outstanding Chef honor belongs to David Chang at New York City's Momofuku Noodle Bar, **not** to Momofuku CCDC. The candidate list now contains 49 entries.
