@@ -28,7 +28,8 @@
     "evidence": "Directly confirmed restaurant visits only; do not promote interview leads automatically.",
     "date": "Exact visit date remains null unless verified. An assigned year is approximate, and a range is retained as a range.",
     "awards": "Awards link to their actual recipient and their actual year; later recognition does not imply historical status at time of meal.",
-    "map": "Map groups experiences at approximate city centers, not exact venue entrances."
+    "map": "Map groups experiences at approximate city centers, not exact venue entrances.",
+    "favorites": "Favorites come only from explicit user preference statements, independent of restaurant awards."
   },
   "venues": [
     {
@@ -120,6 +121,51 @@
         "precision": "city-centroid"
       },
       "sourceId": "momofuku-ccdc-washington-dc"
+    },
+    {
+      "id": "venue-sauvage-steamboat-2021-01",
+      "name": "Sauvage",
+      "city": "Steamboat Springs",
+      "region": "Colorado",
+      "country": "USA",
+      "address": "910 Yampa Street, Unit C4, Steamboat Springs, CO 80487",
+      "neighborhood": "Downtown",
+      "location": {
+        "lat": 40.4848,
+        "lng": -106.8317,
+        "precision": "city-centroid"
+      },
+      "sourceId": "sauvage-steamboat-2021-01"
+    },
+    {
+      "id": "venue-gunther-and-co-baltimore-2020-02-14",
+      "name": "Gunther & Co.",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "USA",
+      "address": "3650 Toone Street, Baltimore, MD 21224",
+      "neighborhood": "Brewers Hill",
+      "location": {
+        "lat": 39.2904,
+        "lng": -76.6122,
+        "precision": "city-centroid"
+      },
+      "sourceId": "gunther-and-co-baltimore-2020-02-14"
+    },
+    {
+      "id": "venue-thames-street-oyster-house-baltimore",
+      "name": "Thames Street Oyster House",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "USA",
+      "address": "1728 Thames Street, Baltimore, MD 21231",
+      "neighborhood": "Fells Point",
+      "location": {
+        "lat": 39.2904,
+        "lng": -76.6122,
+        "precision": "city-centroid"
+      },
+      "sourceId": "thames-street-oyster-house-baltimore"
     }
   ],
   "records": [
@@ -367,6 +413,91 @@
         "note": "Michelin referred to Momofuku CCDC as The Plate in a 2019 Guide article. Its designation at the exact date of Alex's meal is not confirmed, and The Plate is not a Michelin star."
       },
       "sourceUrl": "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week"
+    },
+    {
+      "id": "dining-sauvage-steamboat-2021-01",
+      "type": "dining",
+      "title": "Sauvage",
+      "venueId": "venue-sauvage-steamboat-2021-01",
+      "status": "confirmed",
+      "favorite": true,
+      "visit": {
+        "date": null,
+        "year": 2021,
+        "month": 1,
+        "possibleYears": [
+          2021
+        ],
+        "label": "January 2021",
+        "precision": "month",
+        "source": "Alex's direct recollection, October 25, 2026"
+      },
+      "summary": "One of Alex's favorite dining experiences: a French-inspired tasting-menu dinner at Sauvage in Steamboat Springs in January 2021. The precise day is unknown. The restaurant has since closed.",
+      "recognitions": [],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No historical Michelin distinction is asserted for this visit. Colorado's first Michelin Guide selection arrived in 2023; Baltimore was not covered."
+      },
+      "sourceUrl": "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf"
+    },
+    {
+      "id": "dining-gunther-and-co-baltimore-2020-02-14",
+      "type": "dining",
+      "title": "Gunther & Co.",
+      "venueId": "venue-gunther-and-co-baltimore-2020-02-14",
+      "status": "confirmed",
+      "favorite": true,
+      "visit": {
+        "date": "2020-02-14",
+        "year": 2020,
+        "month": 2,
+        "possibleYears": [
+          2020
+        ],
+        "label": "February 14, 2020",
+        "precision": "day",
+        "source": "Alex's direct recollection, October 25, 2026"
+      },
+      "summary": "A standout Valentine's Day dinner at Gunther & Co. in Baltimore's historic Gunther Boiler Building, February 14, 2020. One of Alex's favorite dining experiences.",
+      "recognitions": [],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No historical Michelin distinction is asserted for this visit. Colorado's first Michelin Guide selection arrived in 2023; Baltimore was not covered."
+      },
+      "sourceUrl": "https://eatatgunther.com/contact"
+    },
+    {
+      "id": "dining-thames-street-oyster-house-baltimore",
+      "type": "dining",
+      "title": "Thames Street Oyster House",
+      "venueId": "venue-thames-street-oyster-house-baltimore",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "date": null,
+        "year": null,
+        "month": null,
+        "possibleYears": [],
+        "label": "Date to be established",
+        "precision": "unknown",
+        "source": "Alex's direct recollection, October 25, 2026"
+      },
+      "summary": "Confirmed visit to Thames Street Oyster House, a Fells Point seafood restaurant and raw bar serving Mid-Atlantic and New England seafood. Exact visit date is not yet recalled.",
+      "recognitions": [],
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No historical Michelin distinction is asserted for this visit. Colorado's first Michelin Guide selection arrived in 2023; Baltimore was not covered."
+      },
+      "sourceUrl": "https://thamesstreetoysterhouse.com/"
     }
   ],
   "origin": {
