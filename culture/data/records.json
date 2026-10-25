@@ -41,7 +41,9 @@
     "featuredExceptions": "Venue-specific Michelin/JBF honors are the default inclusion criteria, but the user's express favorites Sauvage, Gunther & Co., Death & Co Denver and provisional favorite The Majestic are displayed in the primary collection despite no established qualifying award.",
     "beverages": "Stand-alone cocktail bars are type=bar, never counted as restaurants. James Beard Outstanding Bar Program includes bar semifinalists. Never borrow recognition from another location within a chain.",
     "repeatVisits": "A venue may be visited in multiple years. Each confirmed year is represented as a separate experience record with a stable unique ID, sharing one venue ID; do not manufacture precise calendar dates or collapse years into one event.",
-    "reservationEvidence": "Date and party size from completed reservation screenshots are documentary evidence, not independent proof of check-in or dining. Only directly restaurant-level Michelin/JBF recognition enters the curated collection automatically. The user explicitly excluded Le Fou Frog: it must not enter any deployed venue/experience ledger, even though its date appears in private conversation uploads."
+    "reservationEvidence": "Date and party size from completed reservation screenshots are documentary evidence, not independent proof of check-in or dining. Only directly restaurant-level Michelin/JBF recognition enters the curated collection automatically. The user explicitly excluded Le Fou Frog: it must not enter any deployed venue/experience ledger, even though its date appears in private conversation uploads.",
+    "storyFirst": "Each published entry leads with a grounded personal memory, atmosphere, or occasion. Dates are retained in provenance but the public timeline emphasizes approximate years, seasons, and meaningful events. Never fabricate meals, companion details, specific actions, or feelings not supplied by the user.",
+    "dateDisplay": "Date/party details are backend evidence, available in a collapsed archive-notes section on experience pages, not default cards or timeline. Exact date may be shown only if necessary to a user-given occasion (Valentine's Day, etc.)."
   },
   "venues": [
     {
@@ -356,6 +358,13 @@
         "reviewedOn": "2026-10-25",
         "confidence": "documented",
         "awardAtVisit": "Both listed Michelin Selected status in 2026 and the 2023 pastry award predate the meal."
+      },
+      "memory": {
+        "headline": "An evening at République",
+        "teaser": "A Los Angeles dinner worth remembering, at a restaurant celebrated for both its kitchen and pastry.",
+        "story": "You singled out your République dinner as one that belongs in Culture Passport. Its Michelin listing and Margarita Manzke’s James Beard recognition are part of the context, rather than the reason the evening needs to be remembered.",
+        "period": "2026",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -410,6 +419,13 @@
         "reviewedOn": "2026-10-25",
         "confidence": "documented",
         "awardAtVisit": "consult dated award records; meal date may be unknown"
+      },
+      "memory": {
+        "headline": "A burger in a white-tablecloth dining room",
+        "teaser": "A classic New York room, almost Italian in atmosphere, and a burger that stuck with you.",
+        "story": "Your memory started with a great New York hamburger and an unusually traditional dining room. The white tablecloths and almost Italian atmosphere ultimately helped identify Minetta Tavern.",
+        "period": "2016–17",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -456,6 +472,13 @@
         "reviewedOn": "2026-10-25",
         "confidence": "documented",
         "awardAtVisit": "consult dated award records; meal date may be unknown"
+      },
+      "memory": {
+        "headline": "Denver’s first Michelin chapter",
+        "teaser": "A special Denver meal remembered around the city's inaugural Michelin recognition.",
+        "story": "You remember being at Beckon around the time it earned its first Michelin star. The moment matters more than pinning down the day of the reservation.",
+        "period": "2023",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -542,6 +565,13 @@
         "reviewedOn": "2026-10-25",
         "confidence": "documented",
         "awardAtVisit": "consult dated award records; meal date may be unknown"
+      },
+      "memory": {
+        "headline": "A favorite chapter of Baltimore dining",
+        "teaser": "Charleston belongs to the Baltimore years you want to remember.",
+        "story": "You confirmed this restaurant from your Baltimore period and placed it on your 2020 timeline. The finer details of the evening can be added when you remember them.",
+        "period": "2020",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -600,6 +630,13 @@
         "reviewedOn": "2026-10-25",
         "confidence": "documented",
         "awardAtVisit": "consult dated award records; meal date may be unknown"
+      },
+      "memory": {
+        "headline": "A table from the Baltimore years",
+        "teaser": "A Baltimore dining memory associated with your 2018 chapter.",
+        "story": "You recognized Woodberry Kitchen from your time in Baltimore. We can preserve it here without asking you to reconstruct a detailed reservation.",
+        "period": "2018",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -660,6 +697,13 @@
         "reviewedOn": "2026-10-25",
         "confidence": "documented",
         "awardAtVisit": "consult dated award records; meal date may be unknown"
+      },
+      "memory": {
+        "headline": "The David Chang restaurant in Washington",
+        "teaser": "The Washington, DC restaurant you remembered through David Chang's name.",
+        "story": "You recalled visiting one of David Chang's restaurants in Washington and then confirmed it was Momofuku CCDC. That identification is the story worth preserving.",
+        "period": "2018",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -705,6 +749,13 @@
         "evidenceUrls": [],
         "reviewedOn": "2026-10-25",
         "confidence": "no_qualifying_evidence_found"
+      },
+      "memory": {
+        "headline": "A favorite winter dinner in Steamboat",
+        "teaser": "A French-inspired tasting-menu evening remembered as one of your favorite meals.",
+        "story": "You remembered Sauvage in Steamboat Springs as one of your favorite dining experiences during a winter trip. That feeling is why it remains in the collection, irrespective of award criteria.",
+        "period": "Winter 2021",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -750,6 +801,13 @@
         "evidenceUrls": [],
         "reviewedOn": "2026-10-25",
         "confidence": "no_qualifying_evidence_found"
+      },
+      "memory": {
+        "headline": "Valentine’s Day in Baltimore",
+        "teaser": "A Valentine’s Day dinner that became one of your favorite restaurant memories.",
+        "story": "You singled out Gunther & Co. as a favorite, especially your Valentine’s Day dinner in Baltimore. The occasion and the setting are the heart of the entry.",
+        "period": "Valentine’s Day · 2020",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -791,6 +849,13 @@
         "evidenceUrls": [],
         "reviewedOn": "2026-10-25",
         "confidence": "no_qualifying_evidence_found"
+      },
+      "memory": {
+        "headline": "Seafood in Fells Point",
+        "teaser": "A seafood-house memory from your Baltimore chapter.",
+        "story": "You confirmed visiting Thames Street Oyster House in Fells Point. There is no need to invent the meal or the occasion before that memory comes back to you.",
+        "period": "Baltimore years",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -832,6 +897,13 @@
         "evidenceUrls": [],
         "reviewedOn": "2026-10-25",
         "confidence": "no_qualifying_evidence_found"
+      },
+      "memory": {
+        "headline": "Steak and jazz in Kansas City",
+        "teaser": "A wonderful steakhouse with a jazz club in its basement—the atmosphere made it unmistakable.",
+        "story": "You remembered a terrific Kansas City steakhouse with live jazz in a basement bar. That distinctive combination led you back to The Majestic; it is kept because it mattered to you.",
+        "period": "Kansas City years",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -879,6 +951,13 @@
         ],
         "reviewedOn": "2026-10-25",
         "confidence": "indirect_only"
+      },
+      "memory": {
+        "headline": "Dinner inside the Sagamore Pendry",
+        "teaser": "An Italian chophouse in Baltimore's waterfront hotel, recalled from your Fells Point days.",
+        "story": "You recalled dining at the Sagamore Pendry Baltimore and identified its restaurant as Rec Pier Chop House. It connects another place and occasion to your Baltimore years.",
+        "period": "Baltimore years",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -921,6 +1000,13 @@
         "collection": "recognized_cocktail_bar",
         "basis": "james_beard",
         "note": "The user explicitly described Manifesto as an amazing cocktail-bar experience; the venue was a named 2018 James Beard semifinalist."
+      },
+      "memory": {
+        "headline": "A hidden Kansas City cocktail bar",
+        "teaser": "An amazing speakeasy tucked beneath a historic Kansas City building.",
+        "story": "You remembered Manifesto as an amazing cocktail-bar experience. The subterranean speakeasy atmosphere is the main memory; its James Beard semifinalist recognition adds context.",
+        "period": "Kansas City years",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -953,6 +1039,13 @@
         "collection": "featured_cocktail_memory",
         "basis": null,
         "note": "The user expressly described Death & Co Denver as amazing and asked to include memorable cocktail bars. Awards earned by the New York location or at other competitions must not be attributed to the Denver site."
+      },
+      "memory": {
+        "headline": "A standout evening in RiNo",
+        "teaser": "A memorable cocktail-bar outing at Death & Co in Denver's Ramble Hotel.",
+        "story": "You singled out Death & Co in Denver as another exceptional cocktail experience. It stays in the collection as a personal favorite, without borrowing award recognition from the New York location.",
+        "period": "Denver years",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -1005,6 +1098,13 @@
         ],
         "reviewedOn": "2026-10-25",
         "confidence": "indirect_only"
+      },
+      "memory": {
+        "headline": "A meal worth returning for",
+        "teaser": "A fun distillery meal you returned to across several Breckenridge trips.",
+        "story": "You described Breckenridge Distillery as a fun, nice meal and recalled visits in several different years. The story here is the place you returned to, not an exact ledger of each reservation.",
+        "period": "2021",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -1057,6 +1157,13 @@
         ],
         "reviewedOn": "2026-10-25",
         "confidence": "indirect_only"
+      },
+      "memory": {
+        "headline": "A meal worth returning for",
+        "teaser": "A fun distillery meal you returned to across several Breckenridge trips.",
+        "story": "You described Breckenridge Distillery as a fun, nice meal and recalled visits in several different years. The story here is the place you returned to, not an exact ledger of each reservation.",
+        "period": "2022",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {
@@ -1109,6 +1216,13 @@
         ],
         "reviewedOn": "2026-10-25",
         "confidence": "indirect_only"
+      },
+      "memory": {
+        "headline": "A meal worth returning for",
+        "teaser": "A fun distillery meal you returned to across several Breckenridge trips.",
+        "story": "You described Breckenridge Distillery as a fun, nice meal and recalled visits in several different years. The story here is the place you returned to, not an exact ledger of each reservation.",
+        "period": "2023",
+        "source": "User’s directly shared recollection, with verified contextual description where applicable"
       }
     },
     {

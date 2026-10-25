@@ -168,3 +168,13 @@ assert next(q for q in candidates if q["name"] == "Yuan Wonton")["confirmedVisit
 assert not any(r["title"] == "Bistro Barbès" for r in records)
 excluded = json.loads((ROOT / "data/excluded-dining-memories.json").read_text(encoding="utf-8"))
 assert any(r["name"] == "Bistro Barbès" and r["qualifies"] is False for r in excluded["entries"])
+
+# Stories carry the emphasis; exact reservations remain available only in the archive.
+stories = {r["title"] for r in records if r.get("memory")}
+assert {"Gunther & Co.", "Sauvage", "The Majestic Restaurant", "Minetta Tavern", "Manifesto", "Death & Co Denver"}.issubset(stories)
+assert records_data["methodology"].get("storyFirst")
+js = (ROOT / "assets/app.js").read_text(encoding="utf-8")
+assert "Archive details & sources" in js and "memory-heading" in js
+assert 'const storyPeriod=(r)' in js and 'const timelineChapter=(r)' in js
+assert "yearLabel(r)" not in js
+assert "February 14, 2020" not in (ROOT / "timeline.html").read_text(encoding="utf-8")
