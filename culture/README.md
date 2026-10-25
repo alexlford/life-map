@@ -51,3 +51,7 @@ Sources:
 - https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners
 - https://carolinas.eater.com/2018/2/16/17017044/james-beard-awards-2018-charleston
 - https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/
+
+## October 25, 2026 confirmations
+
+**The Majestic Restaurant** in Kansas City and **Rec Pier Chop House** in Baltimore (Sagamore Pendry) are confirmed restaurant visits, exact dates unknown. Rec Pier belongs to the 2018–2021 Baltimore period. **Le Fou Frog** at 400 E. 5th Street in Kansas City is a high-confidence but unconfirmed identification lead for the remembered "frog" restaurant. Never count it as visited until the user directly confirms. 11 confirmed dining restaurants; two Michelin-starred venues. Dining with live jazz at The Majestic is not itself a separately documented concert.

@@ -8,7 +8,7 @@ interview_data = json.loads((ROOT / "data/interview.json").read_text(encoding="u
 records, venues = records_data["records"], records_data["venues"]
 candidates = interview_data["candidates"]
 assert records_data["project"] == "Culture Passport" and records_data["version"] == 1
-assert len(records) >= 9 and len(venues) >= 9
+assert len(records) >= 11 and len(venues) >= 11
 assert len({r["id"] for r in records}) == len(records)
 assert len({v["id"] for v in venues}) == len(venues)
 types = {"dining", "concert", "opera", "theater"}
@@ -25,7 +25,7 @@ assert all(r["guide"]["stars"] == 0 for r in records if r.get("guide") and r["gu
 assert {"Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen",
         "Momofuku CCDC", "République", "Sauvage", "Gunther & Co.",
         "Thames Street Oyster House"}.issubset({r["title"] for r in records})
-assert len(candidates) >= 105
+assert len(candidates) >= 106
 assert len({c["id"] for c in candidates}) == len(candidates)
 assert len({(c["area"].casefold(), c["name"].casefold()) for c in candidates}) == len(candidates)
 assert all(c["sourceUrl"].startswith("https://") for c in candidates)
@@ -34,9 +34,16 @@ assert {"Baltimore", "Washington, DC", "Denver Metro", "Steamboat Springs", "Cha
 assert interview_data["periods"]["Charleston, SC"].endswith("2017–2018")
 assert "2010" in interview_data["periods"]["Kansas City Metro"]
 majestic = next(c for c in candidates if c["name"] == "The Majestic Restaurant" and c["area"] == "Kansas City Metro")
-assert majestic["visitStatus"] == "unreviewed" and majestic["userMemoryLead"]["identityConfirmed"] is False
+assert majestic["visitStatus"] == "confirmed" and majestic["userMemoryLead"]["identityConfirmed"] is True
+assert majestic["confirmedVisitId"] == "dining-majestic-kansas-city"
 assert "DOWNSTAIRS" in majestic["interviewCue"]
-assert not any(r["title"] == "The Majestic Restaurant" for r in records)
+assert any(r["title"] == "The Majestic Restaurant" and r["status"] == "confirmed" for r in records)
+rec_pier = next(c for c in candidates if c["name"] == "Rec Pier Chop House" and c["area"] == "Baltimore")
+assert rec_pier["visitStatus"] == "confirmed" and rec_pier["confirmedVisitId"] == "dining-rec-pier-chop-house-baltimore"
+frog = next(c for c in candidates if c["name"] == "Le Fou Frog" and c["area"] == "Kansas City Metro")
+assert frog["visitStatus"] == "unreviewed" and frog["userMemoryLead"]["identityConfirmed"] is False
+assert not any(r["title"] == "Le Fou Frog" for r in records)
+assert len([r for r in records if r["type"] == "dining" and r["status"] == "confirmed"]) == 11
 assert all(c.get("confirmedVisitId") in {r["id"] for r in records}
            for c in candidates if c["visitStatus"] == "confirmed" and c.get("confirmedVisitId"))
 assert any(c["name"] == "Alma Cocina Latina" and c["visitStatus"] == "maybe" for c in candidates)
