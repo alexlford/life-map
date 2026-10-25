@@ -433,7 +433,10 @@
       "awardFamily": "both",
       "interviewCue": "Stanley Marketplace, Aurora; small-plates restaurant.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2022-james-beard-award-winners",
-      "visitStatus": "unreviewed"
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "annette-aurora",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex marked visited in the rapid-fire Culture Passport interview"
     },
     {
       "id": "enveretro-mercantile-dining-provision",
@@ -444,7 +447,10 @@
       "awardFamily": "beard",
       "interviewCue": "Union Station; farm-to-table bistro, market and bakery.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
-      "visitStatus": "unreviewed"
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "mercantile-denver",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex marked visited in the rapid-fire Culture Passport interview"
     },
     {
       "id": "enveretro-rioja",
@@ -573,7 +579,8 @@
       "awardFamily": "beard",
       "interviewCue": "Park Hill; Latin/Mediterranean-influenced neighborhood dining.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2024-james-beard-awards-semifinalists",
-      "visitStatus": "unreviewed"
+      "visitStatus": "maybe",
+      "visitPeriod": "Possibly visited"
     },
     {
       "id": "enveretro-makfam",

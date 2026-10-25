@@ -23,7 +23,7 @@
     "maybe",
     "not_visited"
   ],
-  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House. Continued discovery batch 2026-10-25: 15 additional time-compatible Baltimore/DC restaurant candidates from dated historical sources. All remain unreviewed and excluded from public experience totals. Interview returns to Magdalena next; candidate discovery can continue periodically during future review sessions. Gunther & Co. appears as a confirmed dining record in the Culture Passport source archive. Its candidate status is locked as confirmed rather than inviting duplicate confirmation. Two new interview areas from direct user history: Charleston, South Carolina, three-month stay 2017–2018, and Kansas City metro frequent visits from 2010–present. The Majestic Restaurant is a strong identification lead for steakhouse + basement jazz, not confirmed by name. Distinguish James Beard chef awards from awards for the restaurant; consider post-visit award years. Confirmed by user: The Majestic Restaurant (Kansas City), Rec Pier Chop House (Baltimore). User dated Breckenridge Distillery dining to three separate years 2021/2022/2023; NYC speakeasy interview window 2018–2020; Chicago and Kansas City 2010–present; St Louis Hill Italian meal 2011–2014. None of these regional windows establish a visit to any unconfirmed candidate. Breckenridge has three year-specific Culture experience IDs attached to one venue. User uploaded OpenTable reservation screenshots on 2026-10-25. They establish Dominic's on the Hill (2012-12-28), Q House (2021-10-21), Wildflower (2022-03-21), Uchi Denver (2022-05-15), and other completed reservations. Le Fou Frog intentionally omitted from the published records and ledger per user's opt-out. Mister Oso reservation is WASH PARK, unlike the Bib Gourmand RiNo location. NYC PDT (Please Don't Tell) classified as a possibly visited bar during 2018–2020, not confirmed. The bar's 2012 James Beard Outstanding Bar Program victory is independently verified. Nine further JBF-recognized bar leads from 2018, 2025 and 2026: none counted as visited. Person-level JBF distinctions remain attributed to the person. User's direct 2026-10-25 interview response: The Dead Rabbit was NOT visited in NYC 2018–2020. PDT (Please Don't Tell) remains a possible visit only. Do not promote either to confirmed experiences or counts. North Pond Chicago is an unreviewed Michelin/James Beard candidate proposed in an independently merged update; this lead has not been confirmed by name. Mister Oso is a CONFIRMED restaurant visit; tell the family story with Señor Bear, RiNo 2019, Wash Park 2022, and Michelin's 2023 Bib Gourmand for the RiNo original. No extra branch-level interview question is necessary. Additional Boulder and mountain-town Michelin Guide candidates added from Michelin's official 2026 Colorado list for faster, batch-style questioning. Entries are leads only, no user visit claims. User explicitly marked Dante (Greenwich Village NYC) not visited during 2018–2020. Preserve PDT possibly visited and Dead Rabbit/Leyenda not visited, and skip repeat questions for answered venues. NYC cocktail interview: Bar Goto explicitly not visited (2018–2020). Previous answers are preserved: PDT possible, The Dead Rabbit not visited, Leyenda not visited and Dante not visited. Existing Conditions is the next unanswered James Beard-recognized bar.",
+  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House. Continued discovery batch 2026-10-25: 15 additional time-compatible Baltimore/DC restaurant candidates from dated historical sources. All remain unreviewed and excluded from public experience totals. Interview returns to Magdalena next; candidate discovery can continue periodically during future review sessions. Gunther & Co. appears as a confirmed dining record in the Culture Passport source archive. Its candidate status is locked as confirmed rather than inviting duplicate confirmation. Two new interview areas from direct user history: Charleston, South Carolina, three-month stay 2017–2018, and Kansas City metro frequent visits from 2010–present. The Majestic Restaurant is a strong identification lead for steakhouse + basement jazz, not confirmed by name. Distinguish James Beard chef awards from awards for the restaurant; consider post-visit award years. Confirmed by user: The Majestic Restaurant (Kansas City), Rec Pier Chop House (Baltimore). User dated Breckenridge Distillery dining to three separate years 2021/2022/2023; NYC speakeasy interview window 2018–2020; Chicago and Kansas City 2010–present; St Louis Hill Italian meal 2011–2014. None of these regional windows establish a visit to any unconfirmed candidate. Breckenridge has three year-specific Culture experience IDs attached to one venue. User uploaded OpenTable reservation screenshots on 2026-10-25. They establish Dominic's on the Hill (2012-12-28), Q House (2021-10-21), Wildflower (2022-03-21), Uchi Denver (2022-05-15), and other completed reservations. Le Fou Frog intentionally omitted from the published records and ledger per user's opt-out. Mister Oso reservation is WASH PARK, unlike the Bib Gourmand RiNo location. NYC PDT (Please Don't Tell) classified as a possibly visited bar during 2018–2020, not confirmed. The bar's 2012 James Beard Outstanding Bar Program victory is independently verified. Nine further JBF-recognized bar leads from 2018, 2025 and 2026: none counted as visited. Person-level JBF distinctions remain attributed to the person. User's direct 2026-10-25 interview response: The Dead Rabbit was NOT visited in NYC 2018–2020. PDT (Please Don't Tell) remains a possible visit only. Do not promote either to confirmed experiences or counts. North Pond Chicago is an unreviewed Michelin/James Beard candidate proposed in an independently merged update; this lead has not been confirmed by name. Mister Oso is a CONFIRMED restaurant visit; tell the family story with Señor Bear, RiNo 2019, Wash Park 2022, and Michelin's 2023 Bib Gourmand for the RiNo original. No extra branch-level interview question is necessary. Additional Boulder and mountain-town Michelin Guide candidates added from Michelin's official 2026 Colorado list for faster, batch-style questioning. Entries are leads only, no user visit claims. User explicitly marked Dante (Greenwich Village NYC) not visited during 2018–2020. Preserve PDT possibly visited and Dead Rabbit/Leyenda not visited, and skip repeat questions for answered venues. NYC cocktail interview: Bar Goto explicitly not visited (2018–2020). Previous answers are preserved: PDT possible, The Dead Rabbit not visited, Leyenda not visited and Dante not visited. Existing Conditions is the next unanswered James Beard-recognized bar. Recent rapid-fire results synchronized: Annette, Mercantile, North Pond, Barolo confirmed; Lucina maybe; KC BBQ Joe's, Q39, Arthur Bryant's and Jack Stack confirmed but archive-only due to no direct Michelin/JBF recognition; Jack Stack location unconfirmed. Avoid duplicate candidate questions. Personal Culture Passport continues to concerts, opera, plays and other arts.",
   "candidates": [
     {
       "id": "altimore-charleston",
@@ -937,10 +937,10 @@
       "awardFamily": "both",
       "interviewCue": "Stanley Marketplace, Aurora; small-plates restaurant.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2022-james-beard-award-winners",
-      "visitStatus": "unreviewed",
+      "visitStatus": "confirmed",
       "screening": {
         "status": "award_qualified",
-        "basis": "michelin",
+        "basis": "both",
         "evidenceUrl": "https://www.jamesbeard.org/stories/the-2022-james-beard-award-winners",
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
@@ -952,7 +952,11 @@
         "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
         "screenedOn": "2026-10-25",
         "verifiedForPublication": false
-      }
+      },
+      "confirmedVisitId": "dining-annette-aurora",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex marked visited in the rapid-fire Culture Passport interview",
+      "visitPeriod": "Visit confirmed; date not specified"
     },
     {
       "id": "enveretro-mercantile-dining-provision",
@@ -963,10 +967,10 @@
       "awardFamily": "beard",
       "interviewCue": "Union Station; farm-to-table bistro, market and bakery.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
-      "visitStatus": "unreviewed",
+      "visitStatus": "confirmed",
       "screening": {
         "status": "award_qualified",
-        "basis": "james_beard",
+        "basis": "both",
         "evidenceUrl": "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
@@ -978,7 +982,11 @@
         "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
         "screenedOn": "2026-10-25",
         "verifiedForPublication": false
-      }
+      },
+      "confirmedVisitId": "dining-mercantile-denver",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex marked visited in the rapid-fire Culture Passport interview",
+      "visitPeriod": "Visit confirmed; date not specified"
     },
     {
       "id": "enveretro-rioja",
@@ -1261,7 +1269,7 @@
       "awardFamily": "beard",
       "interviewCue": "Park Hill; Latin/Mediterranean-influenced neighborhood dining.",
       "sourceUrl": "https://www.jamesbeard.org/stories/the-2024-james-beard-awards-semifinalists",
-      "visitStatus": "unreviewed",
+      "visitStatus": "maybe",
       "screening": {
         "status": "award_qualified",
         "basis": "james_beard",
@@ -1276,7 +1284,10 @@
         "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
         "screenedOn": "2026-10-25",
         "verifiedForPublication": false
-      }
+      },
+      "visitPeriod": "Possibly visited; date unconfirmed",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex submitted 'possibly visited' in rapid-fire Culture Passport interview"
     },
     {
       "id": "enveretro-makfam",
@@ -2746,7 +2757,7 @@
       "awardFamily": "context",
       "interviewCue": "Kansas City chef-driven barbecue with smoked meat, competition heritage and wood-fired preparations.",
       "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
-      "visitStatus": "unreviewed",
+      "visitStatus": "confirmed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
       "priority": "standard",
@@ -2756,7 +2767,7 @@
         "evidenceUrl": null,
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
-        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+        "note": "Confirmed barbecue memory; no direct Michelin or James Beard distinction established. Recorded in BBQ trail, outside curated awards view."
       },
       "eligibility": {
         "status": "outside_scope",
@@ -2764,7 +2775,11 @@
         "reason": "No Michelin Guide or James Beard honor established for the named venue.",
         "screenedOn": "2026-10-25",
         "verifiedForPublication": false
-      }
+      },
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "User directly confirmed visiting this Kansas City barbecue restaurant, location/date unspecified.",
+      "visitPeriod": "Kansas City visits, 2010–present; specific meal date not recorded",
+      "researchOnly": true
     },
     {
       "id": "candidate-kansas-city-metro-joe-s-kansas-city-bar-b-que",
@@ -2775,7 +2790,7 @@
       "awardFamily": "context",
       "interviewCue": "Iconic original gas-station barbecue restaurant in Kansas City, Kansas; ribs, brisket and Z-Man sandwiches.",
       "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
-      "visitStatus": "unreviewed",
+      "visitStatus": "confirmed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
       "priority": "standard",
@@ -2785,7 +2800,7 @@
         "evidenceUrl": null,
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
-        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+        "note": "Confirmed barbecue memory; no direct Michelin or James Beard distinction established. Recorded in BBQ trail, outside curated awards view."
       },
       "eligibility": {
         "status": "outside_scope",
@@ -2793,7 +2808,11 @@
         "reason": "No Michelin Guide or James Beard honor established for the named venue.",
         "screenedOn": "2026-10-25",
         "verifiedForPublication": false
-      }
+      },
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "User directly confirmed visiting this Kansas City barbecue restaurant, location/date unspecified.",
+      "visitPeriod": "Kansas City visits, 2010–present; specific meal date not recorded",
+      "researchOnly": true
     },
     {
       "id": "candidate-kansas-city-metro-jack-stack-barbecue-freight-house",
@@ -2802,9 +2821,9 @@
       "recognition": "Historical dining candidate, no Michelin star or restaurant-level James Beard honor asserted",
       "recognitionYear": null,
       "awardFamily": "context",
-      "interviewCue": "Historic Freight House restaurant in Crossroads with higher-end barbecue, red meat, and upscale warehouse dining.",
+      "interviewCue": "Historic Freight House restaurant in Crossroads with higher-end barbecue, red meat, and upscale warehouse dining. User confirmed Jack Stack generally; the particular branch, including Freight House, is NOT confirmed.",
       "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/",
-      "visitStatus": "unreviewed",
+      "visitStatus": "confirmed",
       "researchStatus": "historical_candidate",
       "addedOn": "2026-10-25",
       "priority": "standard",
@@ -2814,7 +2833,7 @@
         "evidenceUrl": null,
         "sourceTier": null,
         "verifiedAt": "2026-10-25",
-        "note": "No qualifying Michelin or James Beard distinction established for this restaurant. It remains available as a memory lead."
+        "note": "Confirmed barbecue memory; no direct Michelin or James Beard distinction established. Recorded in BBQ trail, outside curated awards view."
       },
       "eligibility": {
         "status": "outside_scope",
@@ -2822,7 +2841,12 @@
         "reason": "No Michelin Guide or James Beard honor established for the named venue.",
         "screenedOn": "2026-10-25",
         "verifiedForPublication": false
-      }
+      },
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "User directly confirmed visiting this Kansas City barbecue restaurant, location/date unspecified.",
+      "visitPeriod": "Kansas City visits, 2010–present; specific meal date not recorded",
+      "locationConfirmed": false,
+      "researchOnly": true
     },
     {
       "id": "candidate-kansas-city-metro-lidia-s-kansas-city",
@@ -3325,9 +3349,10 @@
         "note": "Identity lead only. No venue-specific qualifying award established."
       },
       "userMemoryLead": {
-        "recalled": "Alex remembers an upscale Italian meal in The Hill neighborhood of St. Louis, between 2011 and 2014.",
-        "identityConfirmed": false,
-        "source": "User memory on 2026-10-25"
+        "recalled": "OpenTable screenshot confirms Dominic's on the Hill booking December 28, 2012, and Alex recognized it as the Italian restaurant.",
+        "identityConfirmed": true,
+        "source": "User memory on 2026-10-25",
+        "confirmedOn": "2026-10-25"
       },
       "visitPeriod": "December 28, 2012",
       "reviewSource": "User-supplied screenshot showing completed reservation on 2012-12-28 for two diners (not independently verified attendance).",
@@ -3984,26 +4009,31 @@
       "interviewCue": "2610 N Cannon Drive, inside Lincoln Park near Lake Michigan. A historic low, wood-and-stone building beside a pond (not directly on Lake Michigan), formerly a 1912 ice-skating warming house. Warm wooden dining room, brick, large park-facing windows, white tablecloths and seasonal tasting menus. Take a short walk through the park to enter.",
       "sourceUrl": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-chicago-2020-results",
       "secondarySourceUrl": "https://archive.jamesbeard.org/blog/best-chef-great-lakes-bruce-sherman",
-      "visitStatus": "unreviewed",
+      "visitStatus": "confirmed",
       "addedOn": "2026-10-25",
       "priority": "very_high",
       "researchStatus": "high_priority_identification",
       "userMemoryLead": {
-        "recalled": "Alex vaguely remembers dining at an upscale restaurant in Chicago located inside a park near Lake Michigan. Exact restaurant, meal date, and year are not confirmed.",
+        "recalled": "User confirmed this Lincoln Park restaurant, associated with the Chicago Marathon trip.",
         "candidateConfidence": "very high",
-        "identityConfirmed": false,
+        "identityConfirmed": true,
         "source": "Alex's firsthand memory in the current Culture Passport interview, October 25, 2026",
-        "historicalWindow": "Chicago visits from 2010 to present; no specific year asserted for this dinner."
+        "historicalWindow": "Chicago visits from 2010 to present; no specific year asserted for this dinner.",
+        "confirmedOn": "2026-10-25"
       },
       "screening": {
         "status": "award_qualified",
         "basis": "both",
-        "evidenceUrl": "https://guide.michelin.com/en/article/news-and-views/michelin-guide-chicago-2020-results",
+        "evidenceUrl": "https://chicago.eater.com/2021/4/29/22399621/michelin-restaurants-chicago-stars-2021",
         "secondaryEvidenceUrl": "https://archive.jamesbeard.org/blog/best-chef-great-lakes-bruce-sherman",
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
         "note": "Michelin one star in Chicago 2016, 2018, 2019, 2020; Bruce Sherman won 2012 JBF Best Chef: Great Lakes at North Pond. These do not establish an actual visit. Exact award status at an unknown visit date is unknown."
-      }
+      },
+      "confirmedVisitId": "dining-north-pond-chicago-2021",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex directly confirmed visiting North Pond, Chicago in October 2021, the week after the October 10 Chicago Marathon (message Oct 25, 2026).",
+      "visitPeriod": "October 2021, the week after the Chicago Marathon; exact date unknown"
     },
     {
       "id": "candidate-denver-metro-smok-denver",
@@ -4764,7 +4794,7 @@
       "awardFamily": "michelin",
       "interviewCue": "Refined Italian restaurant near Cherry Creek.",
       "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado",
-      "visitStatus": "unreviewed",
+      "visitStatus": "confirmed",
       "researchStatus": "guide_verified_candidate",
       "addedOn": "2026-10-25",
       "priority": "high",
@@ -4783,7 +4813,11 @@
         "reason": "Michelin Selected / Recommended (2026) in official guide",
         "screenedOn": "2026-10-25",
         "verifiedForPublication": true
-      }
+      },
+      "confirmedVisitId": "dining-barolo-grill-denver",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Alex marked visited in the rapid-fire Culture Passport interview",
+      "visitPeriod": "Visit confirmed; date not specified"
     },
     {
       "id": "candidate-denver-metro-heretik",
@@ -4844,6 +4878,30 @@
         "screenedOn": "2026-10-25",
         "verifiedForPublication": true
       }
+    },
+    {
+      "id": "candidate-kansas-city-metro-arthur-bryants-barbeque",
+      "area": "Kansas City Metro",
+      "name": "Arthur Bryant's Barbeque",
+      "recognition": "Historic Kansas City barbecue destination; no venue-specific James Beard or Michelin honor independently verified",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "An iconic old-school Kansas City barbecue stop in the historic 18th and Vine area.",
+      "sourceUrl": "https://www.arthurbryantsbbq.com/",
+      "visitStatus": "confirmed",
+      "priority": "memory",
+      "screening": {
+        "status": "memory_only",
+        "basis": null,
+        "evidenceUrl": null,
+        "sourceTier": null,
+        "verifiedAt": "2026-10-25",
+        "note": "Confirmed barbecue memory; no direct Michelin or James Beard distinction established. Recorded in BBQ trail, outside curated awards view."
+      },
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "User directly confirmed visiting this Kansas City barbecue restaurant, location/date unspecified.",
+      "visitPeriod": "Kansas City visits, 2010–present; specific meal date not recorded",
+      "researchOnly": true
     }
   ],
   "source": {
