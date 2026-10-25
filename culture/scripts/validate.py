@@ -169,7 +169,7 @@ print("Culture Passport OK: %d experiences, %d venues, %d interview prospects" %
 
 # Reservation provenance must be distinct from user-confirmed visits.
 evidence = json.loads((ROOT / "data/reservation-evidence.json").read_text(encoding="utf-8"))
-assert len(evidence["entries"]) == 20 and len(evidence["rows"]) == 39 and len({r["name"] for r in evidence["rows"]}) == 37
+assert len(evidence["entries"]) == 20 and len(evidence["rows"]) == 52 and len({r["name"] for r in evidence["rows"]}) == 46
 assert not any(r["name"] == "Le Fou Frog" for r in evidence["rows"])
 assert not any(r["title"] == "Le Fou Frog" for r in records)
 for title, date in [("République","2026-10-24"),("Woodberry Kitchen","2018-05-16"),("Momofuku CCDC","2018-08-21"),("Rec Pier Chop House","2018-05-16")]:
@@ -209,3 +209,20 @@ for name,area in (("Basta","Boulder"),("Bosq","Aspen"),("Radicato","Breckenridge
     c = next(c for c in candidates if c["name"] == name and c["area"] == area)
     assert c["visitStatus"] == "unreviewed" and c["screening"]["status"] == "award_qualified"
 assert next(c for c in candidates if c["name"] == "Frasca Food and Wine")["area"] == "Boulder"
+
+# Stable batch interview: answering must never rebuild the list and lose scroll position.
+app_js = (ROOT / "assets/app.js").read_text(encoding="utf-8")
+interview_html = (ROOT / "interview.html").read_text(encoding="utf-8")
+assert 'const batchSize=12' in app_js
+assert 'do not rebuild the card or page after answering' in app_js
+assert 'localStorage.setItem(uiKey' in app_js
+assert 'id="interview-next"' in interview_html and 'id="interview-previous"' in interview_html
+assert 'id="interview-save-status"' in interview_html
+for title in ("Sauvage", "Charleston", "Safta", "Manifesto"):
+    rec = next(r for r in records if r["title"] == title)
+    assert rec.get("reservations") and rec.get("memory",{}).get("story")
+manifesto = next(r for r in records if r["title"] == "Manifesto")
+assert manifesto["reservations"][0]["date"] == "2019-10-25"
+assert len([r for r in evidence["rows"] if r["name"] == "Sauvage"]) == 2
+assert len([r for r in evidence["rows"] if r["name"] == "Michelob Ultra Mountain House"]) == 3
+assert not any(r["title"] in {"Michelob Ultra Mountain House", "The Butcher's Daughter - West Hollywood", "Willow Creek Restaurant", "Q39 South"} for r in records)
