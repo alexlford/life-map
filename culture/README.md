@@ -54,7 +54,7 @@ Sources:
 
 ## October 25, 2026 confirmations
 
-**The Majestic Restaurant** in Kansas City and **Rec Pier Chop House** in Baltimore (Sagamore Pendry) are confirmed restaurant visits, exact dates unknown. Rec Pier belongs to the 2018–2021 Baltimore period. **Le Fou Frog** at 400 E. 5th Street in Kansas City is a high-confidence but unconfirmed identification lead for the remembered "frog" restaurant. Never count it as visited until the user directly confirms. 11 confirmed dining restaurants; two Michelin-starred venues. Dining with live jazz at The Majestic is not itself a separately documented concert.
+**The Majestic Restaurant** in Kansas City and **Rec Pier Chop House** in Baltimore (Sagamore Pendry) are confirmed restaurant visits, exact dates unknown. Rec Pier belongs to the 2018–2021 Baltimore period. 11 confirmed dining restaurants; two Michelin-starred venues. Dining with live jazz at The Majestic is not itself a separately documented concert.
 
 ## Cocktail bars and explicit personal favorites (October 25, 2026)
 
@@ -63,3 +63,7 @@ The user elected to keep **Sauvage** (January 2021), **Gunther & Co.** (Valentin
 **Manifesto**, Kansas City, is a confirmed cocktail-bar experience and a verified **2018 James Beard Outstanding Bar Program semifinalist**, directly supported by https://www.jamesbeard.org/stories/the-2018-james-beard-award-semifinalists . Its exact visit date is unrecorded. Manifesto subsequently closed. Death & Co Denver opened May 2018 at The Ramble Hotel per https://denver.eater.com/2018/5/7/17327296/death-and-co-rino-denver-ramble-hotel . This adds the fifth site chapter, Cocktail Bars, with two confirmed bar visits and 11 confirmed restaurant visits.
 
 The default collection shows either verified Michelin/James Beard-eligible records or expressly requested favorites. Other memories are preserved and can be revealed with the 'include other memories' filter. Candidate bars with James Beard recognition (Drastic Measures, Lady Jane, Yacht Club) enter the interview as unreviewed, not as visited.
+
+## Selective curation
+
+Historical interview candidates without verified qualifying Michelin or James Beard recognition are subject to exclusion from the public collection and the website interview at the user's direction. The award-selection rule never overrides explicitly retained favorites, which are labeled as personal exceptions rather than award-winning venues.

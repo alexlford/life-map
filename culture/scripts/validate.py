@@ -25,7 +25,7 @@ assert all(r["guide"]["stars"] == 0 for r in records if r.get("guide") and r["gu
 assert {"Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen",
         "Momofuku CCDC", "République", "Sauvage", "Gunther & Co.",
         "Thames Street Oyster House"}.issubset({r["title"] for r in records})
-assert len(candidates) >= 119
+assert len(candidates) >= 118
 assert len({c["id"] for c in candidates}) == len(candidates)
 assert len({(c["area"].casefold(), c["name"].casefold()) for c in candidates}) == len(candidates)
 assert all(c["sourceUrl"].startswith("https://") for c in candidates)
@@ -40,9 +40,8 @@ assert "DOWNSTAIRS" in majestic["interviewCue"]
 assert any(r["title"] == "The Majestic Restaurant" and r["status"] == "confirmed" for r in records)
 rec_pier = next(c for c in candidates if c["name"] == "Rec Pier Chop House" and c["area"] == "Baltimore")
 assert rec_pier["visitStatus"] == "confirmed" and rec_pier["confirmedVisitId"] == "dining-rec-pier-chop-house-baltimore"
-frog = next(c for c in candidates if c["name"] == "Le Fou Frog" and c["area"] == "Kansas City Metro")
-assert frog["visitStatus"] == "unreviewed" and frog["userMemoryLead"]["identityConfirmed"] is False
 assert not any(r["title"] == "Le Fou Frog" for r in records)
+assert not any(c["name"] == "Le Fou Frog" for c in candidates)
 assert len([r for r in records if r["type"] == "dining" and r["status"] == "confirmed"]) == 11
 assert len([r for r in records if r["type"] == "bar" and r["status"] == "confirmed"]) == 2
 manifesto = next(r for r in records if r["title"] == "Manifesto" and r["type"] == "bar")

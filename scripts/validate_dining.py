@@ -129,15 +129,14 @@ def main():
     pending = next(r for r in INTERVIEW["candidates"] if r["name"] == "Rec Pier Chop House")
     assert pending["visitStatus"] == "confirmed" and pending["userMemoryLead"]["identityConfirmed"] is True
     assert pending["confirmedVisitId"] == "rec-pier-chop-house-baltimore"
-    frog = next(r for r in INTERVIEW["candidates"] if r["area"] == "Kansas City Metro" and r["name"] == "Le Fou Frog")
-    assert frog["visitStatus"] == "unreviewed" and frog["userMemoryLead"]["identityConfirmed"] is False
     assert not any(r["name"] == "Le Fou Frog" for r in DATA["entries"])
+    assert not any(r["name"] == "Le Fou Frog" for r in INTERVIEW["candidates"])
     majestic = next(r for r in DATA["entries"] if r["id"] == "majestic-kansas-city")
     rec_pier = next(r for r in DATA["entries"] if r["id"] == "rec-pier-chop-house-baltimore")
     assert majestic["status"] == rec_pier["status"] == "confirmed"
     assert majestic["visit"]["date"] is None and rec_pier["visit"]["date"] is None
     assert any(r["name"] == "Rec Pier Chop House" for r in DATA["entries"])
-    assert len(INTERVIEW["candidates"]) == 59
+    assert len(INTERVIEW["candidates"]) == 58
     assert not any(r["name"] == "Petit Louis Bistro" for r in DATA["entries"])
     assert not any(r["name"] == "Cinghiale" for r in DATA["entries"])
     assert not any(r["name"] == "Clavel" for r in DATA["entries"])
