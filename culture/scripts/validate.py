@@ -264,7 +264,7 @@ for name in ("Q39", "Joe's Kansas City Bar-B-Que", "Arthur Bryant's Barbeque", "
     assert candidate["visitStatus"] == "confirmed" and candidate["screening"]["status"] == "memory_only"
     assert not any(r["title"] == name for r in records)
 assert next(q for q in candidates if q["name"] == "Lucina Eatery & Bar")["visitStatus"] == "maybe"
-assert len([r for r in records if r["guide"]["distinction"] == "starred"]) == 3
+assert len([r for r in records if r.get("guide",{}).get("distinction") == "starred"]) == 3
 assert len([r for r in records if r["editorial"].get("awardQualified")]) == 17
 
 
