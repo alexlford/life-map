@@ -520,12 +520,16 @@
       "id": "enveretro-mister-oso",
       "area": "Denver Metro",
       "name": "Mister Oso",
-      "recognition": "Michelin Bib Gourmand (from 2023)",
+      "recognition": "Michelin Bib Gourmand at Mister Oso (original RiNo restaurant) from 2023; narrative covers the restaurant's Wash Park expansion and Señor Bear roots.",
       "recognitionYear": 2023,
       "awardFamily": "michelin",
-      "interviewCue": "RiNo; Latin American plates and plant-filled patio.",
-      "sourceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
-      "visitStatus": "unreviewed"
+      "interviewCue": "Denver restaurant started in RiNo in 2019, expanded to Wash Park in 2022, and grew from chef Blake Edmunds's Señor Bear concept. Tropical, lively, tacos and ceviche.",
+      "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/mister-oso",
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "mister-oso-denver",
+      "visitPeriod": "Denver years; personal visit confirmed; Wash Park reservation recorded in 2024",
+      "reviewSource": "Alex directly confirmed having been to Mister Oso and requested one brand-wide story encompassing RiNo, the Wash Park expansion, and Señor Bear.",
+      "reviewedOn": "2026-10-25"
     },
     {
       "id": "enveretro-glo-noodle-house",

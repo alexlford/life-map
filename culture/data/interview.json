@@ -1140,28 +1140,31 @@
       "id": "enveretro-mister-oso",
       "area": "Denver Metro",
       "name": "Mister Oso",
-      "recognition": "Michelin Bib Gourmand (from 2023)",
+      "recognition": "Michelin Bib Gourmand at Mister Oso (original RiNo restaurant) from 2023; narrative covers the restaurant's Wash Park expansion and Señor Bear roots.",
       "recognitionYear": 2023,
       "awardFamily": "michelin",
-      "interviewCue": "RiNo; Latin American plates and plant-filled patio.",
-      "sourceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
-      "visitStatus": "unreviewed",
+      "interviewCue": "Denver restaurant started in RiNo in 2019, expanded to Wash Park in 2022, and grew from chef Blake Edmunds's Señor Bear concept. Tropical, lively, tacos and ceviche.",
+      "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/mister-oso",
+      "visitStatus": "confirmed",
       "screening": {
-        "status": "needs_verification",
+        "status": "award_qualified",
         "basis": "michelin",
-        "evidenceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-bib-gourmands-colorado",
+        "evidenceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/mister-oso",
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
-        "note": "Michelin recognizes the RiNo location; the user's reservation is at Wash Park. Do not automatically credit Wash Park with the RiNo Michelin distinction."
+        "note": "Recognized restaurant concept; historical location detail kept in backend provenance, not highlighted in the public story."
       },
       "eligibility": {
         "status": "eligible_candidate",
         "basis": "michelin",
-        "reason": "Reported Michelin/James Beard distinction in the research ledger; confirm official award category, recipient, and year before promoting a visit.",
+        "reason": "Bib Gourmand to original RiNo operation; user confirmed the restaurant, story unifies Denver locations.",
         "screenedOn": "2026-10-25",
-        "verifiedForPublication": false
+        "verifiedForPublication": true
       },
-      "branchWarning": "Screenshot is specifically Mister Oso WASH PARK, March 31, 2024, whereas Michelin's Bib Gourmand is explicitly for 3163 Larimer St. (RiNo). This is not direct proof of award recognition for the Wash Park branch."
+      "confirmedVisitId": "dining-mister-oso-denver",
+      "visitPeriod": "Denver years; personal visit confirmed; Wash Park reservation recorded in 2024",
+      "reviewSource": "Alex directly confirmed having been to Mister Oso and requested one brand-wide story encompassing RiNo, the Wash Park expansion, and Señor Bear.",
+      "reviewedOn": "2026-10-25"
     },
     {
       "id": "enveretro-glo-noodle-house",

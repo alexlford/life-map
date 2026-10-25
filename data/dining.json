@@ -973,6 +973,66 @@
         "reviewedOn": "2026-10-25",
         "confidence": "documented_recognition; firsthand user-confirmed visit; time unknown"
       }
+    },
+    {
+      "id": "mister-oso-denver",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Mister Oso",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "neighborhood": "RiNo and Wash Park",
+      "address": "3163 Larimer St, Denver, CO 80205",
+      "visit": {
+        "date": null,
+        "dateText": "Denver years",
+        "precision": "unknown",
+        "source": "Alex confirmed visiting Mister Oso in Denver. A reservation screenshot identifies Wash Park in March 2024, but a completed booking alone does not establish the date of the visit."
+      },
+      "guide": {
+        "edition": 2026,
+        "distinction": "bib_gourmand",
+        "stars": 0,
+        "historicalVisitDistinction": "exact_meal_date_not_established",
+        "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/mister-oso",
+        "note": "The original RiNo location has held a Michelin Bib Gourmand since Colorado's 2023 Guide. The Culture Passport presents Mister Oso as one brand with multiple Denver locations; a Bib is not a star."
+      },
+      "recognitions": [],
+      "summary": "What began at Señor Bear in LoHi grew into something more playful. Chef Blake Edmunds took the energy of Señor Bear’s Latin-inspired happy hours and built Mister Oso around tacos, ceviche, cocktails and a colorful, tropical atmosphere. The first Mister Oso opened in RiNo in the former Populist space in November 2019. Its popularity led to a second location in Wash Park in summer 2022. You've confirmed eating at Mister Oso, and the Wash Park restaurant appears in your reservation history. Along the way, the original restaurant earned a Michelin Bib Gourmand in 2023. The link between those neighborhoods, the food and the wider Denver dining scene is the story worth keeping.",
+      "evidenceStatus": "user_confirmed; Wash Park booking documented",
+      "referenceUrl": "https://guide.michelin.com/us/en/article/dining-out/mister-oso-denver-colorado-latin-menu-restaurant-michelin-guide-bib-gourmand",
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Mister+Oso+Denver",
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "Original RiNo restaurant earned Michelin Bib Gourmand beginning in 2023. User confirmed a Mister Oso visit, with documentary evidence relating to Wash Park; keep one entry for the restaurant concept, not a claim that the specific meal received a distinction.",
+        "evidenceUrls": [
+          "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/mister-oso",
+          "https://guide.michelin.com/us/en/article/dining-out/mister-oso-denver-colorado-latin-menu-restaurant-michelin-guide-bib-gourmand",
+          "https://303magazine.com/2023/09/two-chefs-discuss-michelins-bib-gourmand/"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "michelin_primary; direct_user_confirmation"
+      },
+      "branches": [
+        {
+          "name": "RiNo (original)",
+          "address": "3163 Larimer St, Denver, CO 80205",
+          "opened": "2019-11",
+          "michelin": "Bib Gourmand since 2023"
+        },
+        {
+          "name": "Wash Park (expansion)",
+          "address": "103 S. Ogden St, Denver, CO 80209",
+          "opened": "summer 2022",
+          "archivedReservation": {
+            "date": "2024-03-31",
+            "partySize": 4,
+            "attendanceInference": "not_independently_verified"
+          }
+        }
+      ]
     }
   ],
   "excludedResearch": [
