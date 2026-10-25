@@ -745,6 +745,36 @@
       "visitPeriod": "Denver years; date not recalled",
       "reviewSource": "Alex's direct confirmation on 2026-10-25",
       "reviewedOn": "2026-10-25"
+    },
+    {
+      "id": "candidate-chicago-north-pond",
+      "area": "Chicago",
+      "name": "North Pond",
+      "recognition": "Michelin 1 star in 2021; Bruce Sherman won 2012 James Beard Best Chef: Great Lakes at North Pond.",
+      "recognitionYear": 2021,
+      "awardFamily": "both",
+      "interviewCue": "Chicago's Lincoln Park, historic skating shelter beside the pond.",
+      "sourceUrl": "https://chicago.eater.com/2021/4/29/22399621/michelin-restaurants-chicago-stars-2021",
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "north-pond-chicago-2021",
+      "visitPeriod": "Autumn 2021 · after the Chicago Marathon",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "User's rapid-fire dining interview and earlier confirmation; exact visit date not implied."
+    },
+    {
+      "id": "candidate-denver-metro-barolo-grill",
+      "area": "Denver Metro",
+      "name": "Barolo Grill",
+      "recognition": "2026 Michelin Selected / Recommended; not a star.",
+      "recognitionYear": 2026,
+      "awardFamily": "michelin",
+      "interviewCue": "Long-established Northern Italian restaurant near Cherry Creek.",
+      "sourceUrl": "https://guide.michelin.com/en/colorado/denver_1261491/restaurant/barolo-grill",
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "barolo-grill-denver",
+      "visitPeriod": "Denver years, date not established",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "User's rapid-fire dining interview and earlier confirmation; exact visit date not implied."
     }
   ]
 }
