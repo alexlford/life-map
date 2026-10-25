@@ -41,3 +41,19 @@
 .choices button{min-height:40px;cursor:pointer}
 .choices button:focus-visible,.interview-pagination button:focus-visible{outline:3px solid var(--wine);outline-offset:3px}
 @media(max-width:520px){.interview-pagination{flex-wrap:wrap}.interview-pagination span{order:-1;flex:1 0 100%}.interview-pagination button{flex:1}}
+
+/* Performance interview; selections retain layout, focus and scroll position. */
+.arts-interview-invite{display:flex;align-items:center;justify-content:space-between;gap:30px;margin:0 0 28px;padding:22px 24px;border:1px solid var(--line);background:var(--cream)}
+.arts-interview-invite h2{font-family:var(--serif);font-size:25px;margin:5px 0}.arts-interview-invite p:not(.eyebrow){font-size:13px;color:var(--muted);max-width:620px;margin:5px 0}
+.arts-interview-invite .text-link{flex-shrink:0}
+.performance-confirmed,.performance-screening,.performance-memory-notes{margin:40px 0}
+.performance-known-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.performance-known-grid a{display:flex;flex-direction:column;gap:6px;padding:16px;border:1px solid var(--line);color:var(--ink);text-decoration:none;background:var(--cream)}
+.performance-known-grid a:hover{border-color:var(--wine)}.performance-known-grid strong{font-size:15px}.performance-known-grid span{color:var(--muted);font-size:12px}
+.performance-candidates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.performance-candidates .interview-item{margin:0}
+.performance-lead-context{font-style:italic}.performance-progress{font-size:12px;color:var(--muted)}
+.performance-memory-notes{max-width:800px}.performance-memory-notes h2{font-family:var(--serif);font-size:30px}.performance-memory-notes p{color:var(--muted)}
+.performance-memory-notes label{display:block;font-size:12px;font-weight:bold;margin:16px 0 8px}
+.performance-memory-notes textarea{width:100%;box-sizing:border-box;padding:15px;border:1px solid var(--line);background:var(--cream);color:var(--ink);font:inherit}
+.performance-return{padding:12px 0 50px}
+@media(max-width:730px){.arts-interview-invite{display:block}.arts-interview-invite .text-link{display:inline-block;margin-top:18px}.performance-known-grid,.performance-candidates{grid-template-columns:1fr}}
