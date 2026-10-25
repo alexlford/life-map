@@ -110,7 +110,7 @@ for name, date in [("Q House", "2021-10-21"), ("Wildflower", "2022-03-21")]:
     restaurant = next(r for r in records if r["title"] == name)
     assert restaurant["visit"]["date"] == date and restaurant["visit"]["evidenceType"] == "completed_reservation"
     assert restaurant["editorial"]["awardQualified"] is True
-    assert any(e["publishedRecordId"] == restaurant["id"] for e in reservations)
+    assert any(e.get("publishedRecordId") == restaurant["id"] for e in reservations)
 q_house = next(r for r in records if r["title"] == "Q House")
 assert any(a["organization"] == "James Beard Foundation" and a["year"] == 2019 and a["result"] == "semifinalist" and a["timingRelativeToVisit"] == "before_visit" for a in q_house["recognitions"])
 wildflower = next(r for r in records if r["title"] == "Wildflower")
