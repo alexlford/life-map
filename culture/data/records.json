@@ -30,7 +30,8 @@
     "awards": "Awards link to their actual recipient and their actual year; later recognition does not imply historical status at time of meal.",
     "map": "Map groups experiences at approximate city centers, not exact venue entrances.",
     "favorites": "Favorites come only from explicit user preference statements, independent of restaurant awards.",
-    "musicAndDining": "Attending a restaurant with live jazz does not automatically count as a distinct concert. Require a separately confirmed performance before adding a concert record."
+    "musicAndDining": "Attending a restaurant with live jazz does not automatically count as a distinct concert. Require a separately confirmed performance before adding a concert record.",
+    "awardFocusedCollection": "Default Culture Passport Dining chapter shows only venues with verified historical Michelin inclusion or James Beard recognition of restaurant itself or chef at that restaurant. Memory-only confirmed visits are preserved but hidden by default, discoverable with a separate toggle. Recognition year may differ from dinner year."
   },
   "venues": [
     {
@@ -233,7 +234,13 @@
         "sourceUrl": "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
         "historicalVisitDistinction": "unverified"
       },
-      "sourceUrl": "https://guide.michelin.com/en/california/hollywood/restaurant/republique"
+      "sourceUrl": "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "michelin_and_beard",
+        "note": "Michelin Selected 2026; Margarita Manzke 2023 JBF pastry winner at this restaurant."
+      }
     },
     {
       "id": "dining-minetta-tavern-nyc-2016-2017",
@@ -270,7 +277,13 @@
         "historicalVisitDistinction": "starred",
         "starsAtVisit": 1
       },
-      "sourceUrl": "https://michelinmedia.com/michelin-guide-nyc-2017/"
+      "sourceUrl": "https://michelinmedia.com/michelin-guide-nyc-2017/",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "michelin",
+        "note": "Michelin 1 star in both possible visit years, 2016 and 2017."
+      }
     },
     {
       "id": "dining-beckon-denver-2023",
@@ -299,7 +312,13 @@
         "historicalVisitDistinction": "unverified",
         "starsAtVisit": null
       },
-      "sourceUrl": "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/"
+      "sourceUrl": "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "michelin",
+        "note": "Michelin 1 star in inaugural Colorado 2023 selection; meal date relative to award uncertain."
+      }
     },
     {
       "id": "dining-charleston-baltimore-2018-2021",
@@ -367,7 +386,13 @@
         "sourceUrl": null,
         "note": "Baltimore was not covered by Michelin's US restaurant guide during the 2018–2021 visit window. Absence of stars here is not a negative dining assessment."
       },
-      "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf"
+      "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "james_beard",
+        "note": "Cindy Wolf Best Chef: Mid-Atlantic recognition during Baltimore period; restaurant-level wine program award in 2025, after meal."
+      }
     },
     {
       "id": "dining-woodberry-kitchen-baltimore-2018-2021",
@@ -405,7 +430,13 @@
         "sourceUrl": null,
         "note": "Baltimore was not within a Michelin restaurant Guide region in the 2018–2021 period; no star claim is being made."
       },
-      "sourceUrl": "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners"
+      "sourceUrl": "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "james_beard",
+        "note": "Spike Gjerde won 2015 JBF Best Chef: Mid-Atlantic while associated with Woodberry Kitchen."
+      }
     },
     {
       "id": "dining-momofuku-ccdc-washington-dc",
@@ -443,7 +474,13 @@
         "historicalVisitDistinction": "unverified",
         "note": "Michelin referred to Momofuku CCDC as The Plate in a 2019 Guide article. Its designation at the exact date of Alex's meal is not confirmed, and The Plate is not a Michelin star."
       },
-      "sourceUrl": "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week"
+      "sourceUrl": "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week",
+      "editorial": {
+        "awardQualified": true,
+        "collection": "recognized_dining",
+        "basis": "michelin",
+        "note": "2019 Michelin Plate selection, a recommendation but NOT a Michelin star; 2013 David Chang JBF honor at NYC Momofuku Noodle Bar is excluded from basis."
+      }
     },
     {
       "id": "dining-sauvage-steamboat-2021-01",
@@ -472,7 +509,13 @@
         "sourceUrl": null,
         "note": "No historical Michelin distinction is asserted for this visit. Colorado's first Michelin Guide selection arrived in 2023; Baltimore was not covered."
       },
-      "sourceUrl": "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf"
+      "sourceUrl": "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf",
+      "editorial": {
+        "awardQualified": false,
+        "collection": "personal_memories",
+        "basis": null,
+        "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+      }
     },
     {
       "id": "dining-gunther-and-co-baltimore-2020-02-14",
@@ -501,7 +544,13 @@
         "sourceUrl": null,
         "note": "No historical Michelin distinction is asserted for this visit. Colorado's first Michelin Guide selection arrived in 2023; Baltimore was not covered."
       },
-      "sourceUrl": "https://eatatgunther.com/contact"
+      "sourceUrl": "https://eatatgunther.com/contact",
+      "editorial": {
+        "awardQualified": false,
+        "collection": "personal_memories",
+        "basis": null,
+        "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+      }
     },
     {
       "id": "dining-thames-street-oyster-house-baltimore",
@@ -528,7 +577,13 @@
         "sourceUrl": null,
         "note": "No historical Michelin distinction is asserted for this visit. Colorado's first Michelin Guide selection arrived in 2023; Baltimore was not covered."
       },
-      "sourceUrl": "https://thamesstreetoysterhouse.com/"
+      "sourceUrl": "https://thamesstreetoysterhouse.com/",
+      "editorial": {
+        "awardQualified": false,
+        "collection": "personal_memories",
+        "basis": null,
+        "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+      }
     },
     {
       "id": "dining-majestic-kansas-city",
@@ -553,7 +608,13 @@
         "sourceUrl": null,
         "note": "No Michelin star or James Beard distinction is claimed for this venue or this visit."
       },
-      "sourceUrl": "https://majestickc.com/jazz-club/"
+      "sourceUrl": "https://majestickc.com/jazz-club/",
+      "editorial": {
+        "awardQualified": false,
+        "collection": "personal_memories",
+        "basis": null,
+        "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+      }
     },
     {
       "id": "dining-rec-pier-chop-house-baltimore",
@@ -583,7 +644,13 @@
         "sourceUrl": null,
         "note": "No Michelin star or James Beard distinction is claimed for this venue or this visit."
       },
-      "sourceUrl": "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/"
+      "sourceUrl": "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/",
+      "editorial": {
+        "awardQualified": false,
+        "collection": "personal_memories",
+        "basis": null,
+        "note": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view."
+      }
     }
   ],
   "origin": {
