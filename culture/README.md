@@ -126,3 +126,7 @@ Public Culture pages prioritize story over booking fields. Story copy migrated f
 ## Faster Boulder and mountain-town dining interview (2026-10-25)
 
 27 historically relevant Michelin Guide 2026 candidates have been added across Boulder, Aspen, Breckenridge, Vail/Beaver Creek, Telluride, and RiNo/Denver. Frasca Food and Wine is correctly assigned to Boulder. All new candidates are **unreviewed** until confirmed directly by the user and are not included in the visited collection. Main source: https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado . Collect replies in batches rather than demanding exact dates or multiple follow-up questions per venue.
+
+## NYC cocktail interview: Dante (October 25, 2026)
+
+Dante in Greenwich Village is explicitly **not visited** during the user's 2018–2020 New York City period, despite the bar's recognized 2018 James Beard semifinalist status. This result remains an interview exclusion and never creates a confirmed culture experience. Preserve prior answers: **PDT** possibly visited; **The Dead Rabbit** and **Leyenda** not visited. The next unreviewed, award-recognized NYC cocktail-bar candidate is **Bar Goto**.
