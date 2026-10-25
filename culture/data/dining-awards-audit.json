@@ -1,0 +1,627 @@
+{
+  "version": 1,
+  "auditedOn": "2026-10-25",
+  "scope": "The confirmed Culture Passport dining/bar records, plus new restaurant and Kansas City BBQ memories and high-value uncertain booking leads. The separate 178-candidate interview is an ongoing research queue, not 178 fully reverified places.",
+  "criteria": {
+    "qualifies": "Documented Michelin Guide star, Bib Gourmand, Selected/recommended/historical Plate, or a James Beard winner/finalist/semifinalist for the restaurant or chef during their tenure there.",
+    "personal": "User explicitly chose to preserve a personally meaningful venue regardless of award.",
+    "archive": "Confirmed personal restaurant experience without verified qualifying honor, or a nonqualifying reservation/chef association.",
+    "timing": "Preserve recognition date; do not assert the award was held on a meal date unless independently grounded.",
+    "visit": "User confirmations and completed reservation records remain distinct. A reservation alone does not establish arrival."
+  },
+  "summary": {
+    "canonExperienceRecords": 26,
+    "distinctPublishedVenues": 24,
+    "recognized": 17,
+    "featuredPersonal": 4,
+    "unfeaturedOther": 3,
+    "additionalConfirmedArchiveOnly": 6,
+    "possibleVisitLeads": 3,
+    "reviewedButNotConfirmedReservations": 2
+  },
+  "publishedVenues": [
+    {
+      "venueId": "venue-republique-los-angeles",
+      "name": "République",
+      "city": "Los Angeles",
+      "region": "California",
+      "experienceIds": [
+        "dining-republique-los-angeles"
+      ],
+      "rememberedPeriods": [
+        "2026"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://guide.michelin.com/en/california/hollywood/restaurant/republique",
+        "https://archive.jamesbeard.org/blog/the-2023-james-beard-award-winners"
+      ],
+      "recognitionSummary": [
+        "Michelin Selected (2026)",
+        "James Beard winner 2023: Margarita Manzke, Outstanding Pastry Chef or Baker"
+      ],
+      "editorialNote": "Michelin Selected 2026; Margarita Manzke 2023 JBF pastry winner at this restaurant.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-minetta-tavern-nyc-2016-2017",
+      "name": "Minetta Tavern",
+      "city": "New York City",
+      "region": "New York",
+      "experienceIds": [
+        "dining-minetta-tavern-nyc-2016-2017"
+      ],
+      "rememberedPeriods": [
+        "2016–17"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://michelinmedia.com/michelin-guide-nyc-2017/"
+      ],
+      "recognitionSummary": [
+        "Michelin 1 star, historical Guide 2017"
+      ],
+      "editorialNote": "Michelin 1 star in both possible visit years, 2016 and 2017.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-beckon-denver-2023",
+      "name": "Beckon",
+      "city": "Denver",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-beckon-denver-2023"
+      ],
+      "rememberedPeriods": [
+        "2023"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/"
+      ],
+      "recognitionSummary": [
+        "Michelin 1 star, historical Guide 2023"
+      ],
+      "editorialNote": "Michelin 1 star in inaugural Colorado 2023 selection; meal date relative to award uncertain.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-charleston-baltimore-2018-2021",
+      "name": "Charleston",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "experienceIds": [
+        "dining-charleston-baltimore-2018-2021"
+      ],
+      "rememberedPeriods": [
+        "2020"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://archive.jamesbeard.org/chef/cindy-wolf",
+        "https://web.jamesbeard.org/stories/the-2025-james-beard-award-winners"
+      ],
+      "recognitionSummary": [
+        "James Beard finalist 2018: Cindy Wolf, Best Chef: Mid-Atlantic",
+        "James Beard finalist 2019: Cindy Wolf, Best Chef: Mid-Atlantic",
+        "James Beard finalist 2020: Cindy Wolf, Best Chef: Mid-Atlantic",
+        "James Beard winner 2025: Charleston, Outstanding Wine and Other Beverages Program"
+      ],
+      "editorialNote": "Cindy Wolf Best Chef: Mid-Atlantic recognition during Baltimore period; restaurant-level wine program award in 2025, after meal.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-woodberry-kitchen-baltimore-2018-2021",
+      "name": "Woodberry Kitchen",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "experienceIds": [
+        "dining-woodberry-kitchen-baltimore-2018-2021"
+      ],
+      "rememberedPeriods": [
+        "2018"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners"
+      ],
+      "recognitionSummary": [
+        "James Beard winner 2015: Spike Gjerde, Best Chef: Mid-Atlantic"
+      ],
+      "editorialNote": "Spike Gjerde won 2015 JBF Best Chef: Mid-Atlantic while associated with Woodberry Kitchen.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-momofuku-ccdc-washington-dc",
+      "name": "Momofuku CCDC",
+      "city": "Washington, DC",
+      "region": "District of Columbia",
+      "experienceIds": [
+        "dining-momofuku-ccdc-washington-dc"
+      ],
+      "rememberedPeriods": [
+        "2018"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://guide.michelin.com/en/article/dining-out/washington-dc-restaurant-week",
+        "https://archive.jamesbeard.org/blog/winner-recap-4"
+      ],
+      "recognitionSummary": [
+        "Michelin Plate (historical) (2019)"
+      ],
+      "editorialNote": "2019 Michelin Plate selection, a recommendation but NOT a Michelin star; 2013 David Chang JBF honor at NYC Momofuku Noodle Bar is excluded from basis.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-sauvage-steamboat-2021-01",
+      "name": "Sauvage",
+      "city": "Steamboat Springs",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-sauvage-steamboat-2021-01"
+      ],
+      "rememberedPeriods": [
+        "Winter 2021"
+      ],
+      "recognitionStatus": "featured_personal_exception",
+      "sourceUrls": [
+        "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf"
+      ],
+      "recognitionSummary": [],
+      "editorialNote": "Personally selected: one of the user's favorite dining experiences, January 2021, Steamboat Springs. No award claim.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-gunther-and-co-baltimore-2020-02-14",
+      "name": "Gunther & Co.",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "experienceIds": [
+        "dining-gunther-and-co-baltimore-2020-02-14"
+      ],
+      "rememberedPeriods": [
+        "Valentine’s Day · 2020"
+      ],
+      "recognitionStatus": "featured_personal_exception",
+      "sourceUrls": [
+        "https://eatatgunther.com/contact"
+      ],
+      "recognitionSummary": [],
+      "editorialNote": "Personally selected: Valentine's Day 2020 dinner in Baltimore. No award claim.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-thames-street-oyster-house-baltimore",
+      "name": "Thames Street Oyster House",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "experienceIds": [
+        "dining-thames-street-oyster-house-baltimore"
+      ],
+      "rememberedPeriods": [
+        "Baltimore years"
+      ],
+      "recognitionStatus": "personal_archive_only",
+      "sourceUrls": [
+        "https://thamesstreetoysterhouse.com/"
+      ],
+      "recognitionSummary": [],
+      "editorialNote": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-majestic-kansas-city",
+      "name": "The Majestic Restaurant",
+      "city": "Kansas City",
+      "region": "Missouri",
+      "experienceIds": [
+        "dining-majestic-kansas-city"
+      ],
+      "rememberedPeriods": [
+        "Kansas City years"
+      ],
+      "recognitionStatus": "featured_personal_exception",
+      "sourceUrls": [
+        "https://majestickc.com/jazz-club/"
+      ],
+      "recognitionSummary": [],
+      "editorialNote": "User wants The Majestic kept in the visible collection, provisionally, because of the memorable steakhouse and basement jazz experience. No award claim.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-rec-pier-chop-house-baltimore",
+      "name": "Rec Pier Chop House",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "experienceIds": [
+        "dining-rec-pier-chop-house-baltimore"
+      ],
+      "rememberedPeriods": [
+        "Baltimore years"
+      ],
+      "recognitionStatus": "unverified_chef_link",
+      "sourceUrls": [
+        "https://www.ciachef.edu/cia-bios/andrew-carmellini/",
+        "https://www.eater.com/2017/9/20/16301624/andrew-carmellini-rye-street-tavern-baltimore-opening",
+        "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/"
+      ],
+      "recognitionSummary": [],
+      "editorialNote": "Confirmed personal dining memory. No venue-specific Michelin or James Beard recognition verified; excluded from the award-focused default view.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-manifesto-kansas-city",
+      "name": "Manifesto",
+      "city": "Kansas City",
+      "region": "Missouri",
+      "experienceIds": [
+        "bar-manifesto-kansas-city"
+      ],
+      "rememberedPeriods": [
+        "Kansas City years"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://www.jamesbeard.org/stories/the-2018-james-beard-award-semifinalists"
+      ],
+      "recognitionSummary": [
+        "James Beard semifinalist 2018: Manifesto, Kansas City, Outstanding Bar Program"
+      ],
+      "editorialNote": "The user explicitly described Manifesto as an amazing cocktail-bar experience; the venue was a named 2018 James Beard semifinalist.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-death-and-co-denver",
+      "name": "Death & Co Denver",
+      "city": "Denver",
+      "region": "Colorado",
+      "experienceIds": [
+        "bar-death-and-co-denver"
+      ],
+      "rememberedPeriods": [
+        "Denver years"
+      ],
+      "recognitionStatus": "featured_personal_exception",
+      "sourceUrls": [
+        "https://www.deathandcompany.com/location/death-and-company-denver/"
+      ],
+      "recognitionSummary": [],
+      "editorialNote": "The user expressly described Death & Co Denver as amazing and asked to include memorable cocktail bars. Awards earned by the New York location or at other competitions must not be attributed to the Denver site.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-breckenridge-distillery",
+      "name": "Breckenridge Distillery Restaurant",
+      "city": "Breckenridge",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-breckenridge-distillery-2021",
+        "dining-breckenridge-distillery-2022",
+        "dining-breckenridge-distillery-2023"
+      ],
+      "rememberedPeriods": [
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "recognitionStatus": "unverified_chef_link",
+      "sourceUrls": [
+        "https://breckenridgedistillery.com/the-breckenridge-distillery-restaurant-inventive-cuisine-creative-cocktails/"
+      ],
+      "recognitionSummary": [],
+      "editorialNote": "The restaurant opened in 2016. James Beard-winning chef David Burke served as culinary ambassador, but this is not a venue-specific James Beard award; his involvement in any particular 2021–2023 meal is not verified.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-q-house-denver-2021-10-21",
+      "name": "Q House",
+      "city": "Denver",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-q-house-denver-2021-10-21"
+      ],
+      "rememberedPeriods": [
+        "2021-10-21"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
+        "https://www.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists"
+      ],
+      "recognitionSummary": [
+        "Michelin Selected (2023)",
+        "James Beard semifinalist 2019: Q House, Denver, Best New Restaurant"
+      ],
+      "editorialNote": "2019 James Beard semifinalist predates the meal; Michelin 2023 selection postdates it.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-wildflower-denver-2022-03-21",
+      "name": "Wildflower",
+      "city": "Denver",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-wildflower-denver-2022-03-21"
+      ],
+      "rememberedPeriods": [
+        "2022-03-21"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/wildflower",
+        "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/aiden-tibbetts-wildflower-young-chef-award-winner-michelin-star-guide-ceremony-colorado"
+      ],
+      "recognitionSummary": [
+        "Michelin Selected (2026)",
+        "James Beard winner 2025: Aiden Tibbetts, Young Chef Award"
+      ],
+      "editorialNote": "Michelin recognition documented after this reservation, not a Michelin star.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-yuan-wonton-denver",
+      "name": "Yuan Wonton",
+      "city": "Denver",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-yuan-wonton-denver"
+      ],
+      "rememberedPeriods": [
+        "Date not established"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://www.jamesbeard.org/stories/james-beard-award-winners-2026"
+      ],
+      "recognitionSummary": [
+        "James Beard winner 2026: Penelope Wong, Best Chef: Mountain (CO, ID, MT, UT, WY)"
+      ],
+      "editorialNote": "Penelope Wong won 2026 James Beard Best Chef: Mountain. Visit date not established.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-safta-denver",
+      "name": "Safta",
+      "city": "Denver",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-safta-denver"
+      ],
+      "rememberedPeriods": [
+        "Denver years"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/safta",
+        "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado"
+      ],
+      "recognitionSummary": [
+        "Michelin Selected (2026)"
+      ],
+      "editorialNote": "Michelin Guide Selected/Recommended from inaugural Colorado selection 2023 onward, including 2026. Not starred and not Bib Gourmand. Alon Shaya's 2015 James Beard Best Chef: South award was earned at Domenica in New Orleans and is not attributed to Safta.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-smok-denver",
+      "name": "Smok",
+      "city": "Denver",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-smok-denver"
+      ],
+      "rememberedPeriods": [
+        "Denver years"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/smok",
+        "https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado"
+      ],
+      "recognitionSummary": [
+        "Michelin Selected (2026)"
+      ],
+      "editorialNote": "Michelin Guide Selected/Recommended from Colorado's inaugural 2023 selection through the 2026 edition. Not starred and not Bib Gourmand.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-mister-oso-denver",
+      "name": "Mister Oso",
+      "city": "Denver",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-mister-oso-denver"
+      ],
+      "rememberedPeriods": [
+        "Denver years"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/mister-oso",
+        "https://www.westword.com/food-drink/mr-oso-wash-park-open-14893628/"
+      ],
+      "recognitionSummary": [
+        "Michelin Bib Gourmand (Guide 2023)"
+      ],
+      "editorialNote": "The original RiNo restaurant received Michelin Bib Gourmand recognition. Mister Oso is one restaurant story spanning both RiNo and Wash Park; no separate branch award is claimed.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-annette-aurora",
+      "name": "Annette",
+      "city": "Aurora",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-annette-aurora"
+      ],
+      "rememberedPeriods": [
+        "Denver years"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://www.jamesbeard.org/stories/the-2022-james-beard-award-winners",
+        "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurants/bib-gourmand"
+      ],
+      "recognitionSummary": [
+        "Michelin Bib Gourmand (Guide 2026)",
+        "James Beard winner 2022: Caroline Glover, Best Chef: Mountain"
+      ],
+      "editorialNote": "Michelin/James Beard qualification is about the restaurant, not proof an award had already been received at an undated meal.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-mercantile-denver",
+      "name": "Mercantile Dining & Provision",
+      "city": "Denver",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-mercantile-denver"
+      ],
+      "rememberedPeriods": [
+        "Denver years"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://www.jamesbeard.org/stories/the-2018-james-beard-award-winners",
+        "https://guide.michelin.com/en/colorado/denver_1261491/restaurants"
+      ],
+      "recognitionSummary": [
+        "Michelin Selected (2026)",
+        "James Beard winner 2018: Alex Seidel, Best Chef: Southwest"
+      ],
+      "editorialNote": "Michelin/James Beard qualification is about the restaurant, not proof an award had already been received at an undated meal.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-barolo-grill-denver",
+      "name": "Barolo Grill",
+      "city": "Denver",
+      "region": "Colorado",
+      "experienceIds": [
+        "dining-barolo-grill-denver"
+      ],
+      "rememberedPeriods": [
+        "Denver years"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://guide.michelin.com/en/colorado/denver_1261491/restaurant/barolo-grill"
+      ],
+      "recognitionSummary": [
+        "Michelin Selected (2026)"
+      ],
+      "editorialNote": "Michelin/James Beard qualification is about the restaurant, not proof an award had already been received at an undated meal.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    },
+    {
+      "venueId": "venue-north-pond-chicago",
+      "name": "North Pond",
+      "city": "Chicago",
+      "region": "Illinois",
+      "experienceIds": [
+        "dining-north-pond-chicago-2021"
+      ],
+      "rememberedPeriods": [
+        "Autumn 2021"
+      ],
+      "recognitionStatus": "qualifies",
+      "sourceUrls": [
+        "https://chicago.eater.com/2021/4/29/22399621/michelin-restaurants-chicago-stars-2021",
+        "https://archive.jamesbeard.org/blog/best-chef-great-lakes-bruce-sherman",
+        "https://www.chicagomag.com/dining-drinking/november-2019/bruce-sherman-is-leaving-north-pond/"
+      ],
+      "recognitionSummary": [
+        "Michelin 1 star, historical Guide 2021",
+        "James Beard winner 2012: Bruce Sherman, Best Chef: Great Lakes"
+      ],
+      "editorialNote": "One Michelin star in the 2021 Guide at visit; Bruce Sherman won the 2012 JBF Best Chef: Great Lakes award at North Pond, but had departed daily leadership by 2021.",
+      "visitConfidence": "user_confirmed_or_recorded_reservation"
+    }
+  ],
+  "confirmedArchiveOnly": [
+    {
+      "name": "Joe's Kansas City Bar-B-Que",
+      "city": "Kansas City",
+      "period": "Kansas City years",
+      "status": "confirmed_memory_no_eligible_award_verified",
+      "note": "Confirmed Kansas City barbecue experience; no direct Michelin/JBF distinction established."
+    },
+    {
+      "name": "Q39",
+      "city": "Kansas City",
+      "period": "Kansas City years; historical reservation at Q39 South in 2025",
+      "status": "confirmed_memory_no_eligible_award_verified",
+      "note": "Chef-driven competition barbecue credentials do not substitute for a Michelin or James Beard honor."
+    },
+    {
+      "name": "Arthur Bryant's Barbeque",
+      "city": "Kansas City",
+      "period": "Kansas City years",
+      "status": "confirmed_memory_no_eligible_award_verified",
+      "note": "Historic KC institution, but no direct qualifying Michelin or James Beard honor verified."
+    },
+    {
+      "name": "Jack Stack Barbecue",
+      "city": "Kansas City",
+      "period": "Kansas City years",
+      "status": "confirmed_memory_no_eligible_award_verified",
+      "note": "Visit to Jack Stack confirmed; particular branch not confirmed."
+    },
+    {
+      "name": "Uchi Denver",
+      "city": "Denver",
+      "period": "2022",
+      "status": "confirmed_memory_award_elsewhere",
+      "note": "Founder Tyson Cole's James Beard win pertains to Austin Uchi; don't transfer it to Denver."
+    },
+    {
+      "name": "Dominic's on the Hill",
+      "city": "St. Louis",
+      "period": "2012",
+      "status": "confirmed_memory_no_eligible_award_verified",
+      "note": "Italian restaurant on The Hill identified by user and booking evidence; no qualifying distinction established."
+    }
+  ],
+  "possiblyVisited": [
+    {
+      "name": "Alma Cocina Latina",
+      "area": "Baltimore",
+      "recognition": "James Beard chef semifinalist (2024, later recognition)",
+      "visitStatus": "possibly_visited"
+    },
+    {
+      "name": "Lucina Eatery & Bar",
+      "area": "Denver Metro",
+      "recognition": "James Beard Best Chef Mountain semifinalists (2024–2025)",
+      "visitStatus": "possibly_visited"
+    },
+    {
+      "name": "PDT (Please Don't Tell)",
+      "area": "New York City",
+      "recognition": "2012 James Beard Outstanding Bar Program WINNER (first-ever winner, confirmed by JBF primary record)",
+      "visitStatus": "possibly_visited"
+    }
+  ],
+  "bookingLeads": [
+    {
+      "name": "Rye Plaza",
+      "period": "2018",
+      "recognition": "James Beard semifinalist Megan Garrelts while at Rye, 2017–2020",
+      "status": "completed_reservation_needs_attendance_confirmation",
+      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/"
+    },
+    {
+      "name": "Affäre",
+      "period": "2018",
+      "recognition": "Chef Martin Heuser 2013 JBF semifinalist; restaurant wine program semifinalist 2024",
+      "status": "completed_reservation_needs_attendance_confirmation",
+      "sourceUrl": "https://www.visitkc.com/articles/kansas-citys-james-beard-award-restaurants-and-bars/"
+    }
+  ],
+  "interviewCandidateCount": 178,
+  "artsNext": {
+    "concerts": "Collect artist, venue, tour/event, city, approximate year and the memory rather than set times.",
+    "opera": "Collect production, opera house, approximate year and occasion.",
+    "theater": "Collect play, musical or theatrical production, venue, year and companion/occasion only if remembered."
+  }
+}
