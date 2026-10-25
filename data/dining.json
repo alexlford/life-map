@@ -717,6 +717,108 @@
         "reviewedOn": "2026-10-25",
         "confidence": "indirect_only"
       }
+    },
+    {
+      "id": "q-house-denver-2021-10-21",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Q House",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "neighborhood": "City Park / East Colfax",
+      "address": "3421 E Colfax Ave, Denver, CO 80206",
+      "visit": {
+        "date": "2021-10-21",
+        "dateText": "2021-10-21",
+        "precision": "day",
+        "source": "User-provided screenshot: completed reservation (possible attendance, not independently verified)",
+        "partySize": 2
+      },
+      "guide": {
+        "edition": 2023,
+        "distinction": "selected",
+        "stars": 0,
+        "historicalVisitDistinction": "not_yet_awarded_at_visit",
+        "sourceUrl": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-2023-colorado-introducing-the-first-michelin-stars",
+        "note": "Recognition as Michelin Selected came after the 2021 reservation."
+      },
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2019,
+          "result": "semifinalist",
+          "category": "Best New Restaurant",
+          "recipient": "Q House, Denver",
+          "relationship": "restaurant itself",
+          "timingRelativeToVisit": "before_visit",
+          "sourceUrl": "https://www.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists"
+        }
+      ],
+      "summary": "A completed reservation for two at Q House on October 21, 2021. Q House was a 2019 James Beard Best New Restaurant semifinalist and later became a Michelin Selected restaurant in Colorado's inaugural 2023 guide. The restaurant closed in 2025.",
+      "evidenceStatus": "reservation_completed",
+      "referenceUrl": "https://www.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists",
+      "curation": {
+        "status": "qualifies",
+        "basis": "james_beard_and_michelin",
+        "reason": "2019 James Beard semifinalist predates the meal; Michelin 2023 selection postdates it.",
+        "evidenceUrls": [
+          "https://www.jamesbeard.org/blog/the-2019-james-beard-award-semifinalists"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented"
+      }
+    },
+    {
+      "id": "wildflower-denver-2022-03-21",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Wildflower",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "neighborhood": "LoHi",
+      "address": "3638 Navajo St, Denver, CO 80211",
+      "visit": {
+        "date": "2022-03-21",
+        "dateText": "2022-03-21",
+        "precision": "day",
+        "source": "User-provided screenshot: completed reservation (possible attendance, not independently verified)",
+        "partySize": 7
+      },
+      "guide": {
+        "edition": 2026,
+        "distinction": "selected",
+        "stars": 0,
+        "historicalVisitDistinction": "not_yet_awarded_at_visit",
+        "sourceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/wildflower",
+        "note": "Current Michelin Selected; exact first guide edition needs historical verification."
+      },
+      "recognitions": [
+        {
+          "organization": "MICHELIN Guide",
+          "year": 2025,
+          "result": "winner",
+          "category": "Young Chef Award",
+          "recipient": "Aiden Tibbetts",
+          "relationship": "chef at Wildflower",
+          "timingRelativeToVisit": "after_visit",
+          "sourceUrl": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/aiden-tibbetts-wildflower-young-chef-award-winner-michelin-star-guide-ceremony-colorado"
+        }
+      ],
+      "summary": "Completed reservation for seven at Wildflower, March 21, 2022. Wildflower subsequently appeared as Michelin Selected in the Colorado Guide, and its chef Aiden Tibbetts received Michelin's 2025 Young Chef Award; neither recognition is presumed to have existed at the time of the meal.",
+      "evidenceStatus": "reservation_completed",
+      "referenceUrl": "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/wildflower",
+      "curation": {
+        "status": "qualifies",
+        "basis": "michelin",
+        "reason": "Michelin recognition documented after this reservation, not a Michelin star.",
+        "evidenceUrls": [
+          "https://guide.michelin.com/us/en/colorado/denver_1261491/restaurant/wildflower"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented"
+      }
     }
   ],
   "excludedResearch": [
