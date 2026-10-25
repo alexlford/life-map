@@ -25,7 +25,7 @@
       "interviewCue": "Harbor East; formal white linens; Cindy Wolf; tasting menu and wine pairings.",
       "sourceUrl": "https://archive.jamesbeard.org/chef/cindy-wolf",
       "visitStatus": "confirmed",
-      "confirmedVisitId": "charleston-baltimore-2018-2021",
+      "confirmedVisitId": "dining-charleston-baltimore-2018-2021",
       "visitPeriod": "2020 (approximate timeline year; exact date unknown)",
       "visitSource": "Alex's explicit confirmation in conversation, 2026-10-24",
       "timelineYear": 2020,
@@ -41,7 +41,7 @@
       "interviewCue": "Woodberry/Hampden; farm-to-table; converted mill interior.",
       "sourceUrl": "https://archive.jamesbeard.org/index.php/blog/2015-james-beard-award-winners",
       "visitStatus": "confirmed",
-      "confirmedVisitId": "woodberry-kitchen-baltimore-2018-2021",
+      "confirmedVisitId": "dining-woodberry-kitchen-baltimore-2018-2021",
       "visitPeriod": "2018 (approximate timeline year; exact date unknown)",
       "visitSource": "Alex explicitly confirmed visiting Woodberry Kitchen in current Culinary Passport interview on 2026-10-24",
       "timelineYear": 2018,
@@ -173,7 +173,7 @@
         "dateRange": "Unknown; compare Momofuku CCDC's 2015–March 2020 operating dates with the remembered visit.",
         "confirmedOn": "2026-10-25"
       },
-      "confirmedVisitId": "momofuku-ccdc-washington-dc",
+      "confirmedVisitId": "dining-momofuku-ccdc-washington-dc",
       "visitPeriod": "Date uncertain, historically operating 2015-10-24–2020-03-13; user was discussing 2018–2021 DC experiences",
       "visitSource": "Alex directly identified Momofuku CCDC on 2026-10-25 as the David Chang DC restaurant previously remembered"
     },
