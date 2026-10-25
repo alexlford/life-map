@@ -183,6 +183,7 @@
     }
     function render(){
       list.replaceChildren();
+      const period=byId("interview-period");if(period)period.textContent=(db.periods&&db.periods[active])?"HISTORICAL INTERVIEW WINDOW  /  "+db.periods[active]:"";
       const candidates=db.candidates.filter(x=>x.area===active);
       if(!candidates.length){empty(list,"No candidates in this area yet.","New historically relevant restaurants can be added over time.");return;}
       candidates.forEach((x,i)=>{
