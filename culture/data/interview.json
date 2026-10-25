@@ -19,7 +19,7 @@
     "maybe",
     "not_visited"
   ],
-  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House. Continued discovery batch 2026-10-25: 15 additional time-compatible Baltimore/DC restaurant candidates from dated historical sources. All remain unreviewed and excluded from public experience totals. Interview returns to Magdalena next; candidate discovery can continue periodically during future review sessions. Gunther & Co. appears as a confirmed dining record in the Culture Passport source archive. Its candidate status is locked as confirmed rather than inviting duplicate confirmation. Two new interview areas from direct user history: Charleston, South Carolina, three-month stay 2017–2018, and Kansas City metro frequent visits from 2010–present. The Majestic Restaurant is a strong identification lead for steakhouse + basement jazz, not confirmed by name. Distinguish James Beard chef awards from awards for the restaurant; consider post-visit award years. Confirmed by user: The Majestic Restaurant (Kansas City), Rec Pier Chop House (Baltimore). User dated Breckenridge Distillery dining to three separate years 2021/2022/2023; NYC speakeasy interview window 2018–2020; Chicago and Kansas City 2010–present; St Louis Hill Italian meal 2011–2014. None of these regional windows establish a visit to any unconfirmed candidate. Breckenridge has three year-specific Culture experience IDs attached to one venue.",
+  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House. Continued discovery batch 2026-10-25: 15 additional time-compatible Baltimore/DC restaurant candidates from dated historical sources. All remain unreviewed and excluded from public experience totals. Interview returns to Magdalena next; candidate discovery can continue periodically during future review sessions. Gunther & Co. appears as a confirmed dining record in the Culture Passport source archive. Its candidate status is locked as confirmed rather than inviting duplicate confirmation. Two new interview areas from direct user history: Charleston, South Carolina, three-month stay 2017–2018, and Kansas City metro frequent visits from 2010–present. The Majestic Restaurant is a strong identification lead for steakhouse + basement jazz, not confirmed by name. Distinguish James Beard chef awards from awards for the restaurant; consider post-visit award years. Confirmed by user: The Majestic Restaurant (Kansas City), Rec Pier Chop House (Baltimore). User dated Breckenridge Distillery dining to three separate years 2021/2022/2023; NYC speakeasy interview window 2018–2020; Chicago and Kansas City 2010–present; St Louis Hill Italian meal 2011–2014. None of these regional windows establish a visit to any unconfirmed candidate. Breckenridge has three year-specific Culture experience IDs attached to one venue. PDT in NYC is locked as possibly visited during 2018–2020, per user, distinct from its verified 2012 JBF Outstanding Bar Program victory. Not in published experiences or counts. Added official JBF-sourced cocktail bar candidates across NYC, DC, Chicago, Kansas City, and Denver, distinguishing professional awards from venue awards and older trips from post-2020 openings.",
   "candidates": [
     {
       "id": "altimore-charleston",
@@ -3378,12 +3378,12 @@
       "id": "candidate-new-york-city-pdt-please-don-t-tell-",
       "area": "New York City",
       "name": "PDT (Please Don't Tell)",
-      "recognition": "2012 James Beard Outstanding Bar Program winner",
+      "recognition": "2012 James Beard Outstanding Bar Program WINNER (first-ever winner, confirmed by JBF primary record)",
       "recognitionYear": 2012,
       "awardFamily": "beard",
       "interviewCue": "East Village, entrance concealed inside Crif Dogs hot dog shop; enter through old telephone booth, intimate dark cocktail bar.",
       "sourceUrl": "https://archive.jamesbeard.org/blog/outstanding-bar-program-pdt",
-      "visitStatus": "unreviewed",
+      "visitStatus": "maybe",
       "venueType": "cocktail_bar",
       "priority": "high",
       "addedOn": "2026-10-25",
@@ -3393,8 +3393,12 @@
         "evidenceUrl": "https://archive.jamesbeard.org/blog/outstanding-bar-program-pdt",
         "sourceTier": "primary",
         "verifiedAt": "2026-10-25",
-        "note": "Verified named restaurant or bar's James Beard recognition; does not establish user visit or visit date."
-      }
+        "note": "Venue won the 2012 James Beard Outstanding Bar Program award. This evidence does NOT confirm the user's visit."
+      },
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "User explicitly stated PDT (Please Don't Tell) was possibly visited in NYC during 2018–2020, in the Culture Passport interview.",
+      "visitPeriod": "New York City, 2018–2020 (possible visit; specific date unknown)",
+      "interviewNote": "Possible, not confirmed. Preserve the venue's verified 2012 James Beard Outstanding Bar Program award independently of whether Alex visited."
     },
     {
       "id": "candidate-new-york-city-the-dead-rabbit",
@@ -3659,6 +3663,204 @@
         "verifiedAt": "2026-10-25",
         "note": "Verified named restaurant or bar's James Beard recognition; does not establish user visit or visit date."
       }
+    },
+    {
+      "id": "candidate-new-york-city-clover-club",
+      "area": "New York City",
+      "name": "Clover Club",
+      "recognition": "2018 James Beard Outstanding Bar Program semifinalist",
+      "recognitionYear": 2018,
+      "awardFamily": "beard",
+      "interviewCue": "Brooklyn, Carroll Gardens. Classic cocktail den with polished wood, vintage wallpaper, comfortable banquettes and intimate booths; established long before your 2018–2020 NYC window.",
+      "sourceUrl": "https://archive.jamesbeard.org/blog/the-2018-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://archive.jamesbeard.org/blog/the-2018-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named bar featured in official JBF semifinalist list; user visit not established."
+      }
+    },
+    {
+      "id": "candidate-washington-dc-columbia-room",
+      "area": "Washington, DC",
+      "name": "Columbia Room",
+      "recognition": "2018 James Beard Outstanding Bar Program semifinalist",
+      "recognitionYear": 2018,
+      "awardFamily": "beard",
+      "interviewCue": "Blagden Alley, tucked-away upscale cocktail tasting room by Derek Brown; elegant counter, multi-course creative cocktails; operated during your 2018–2021 DC years.",
+      "sourceUrl": "https://archive.jamesbeard.org/blog/the-2018-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://archive.jamesbeard.org/blog/the-2018-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named bar featured in official JBF semifinalist list; user visit not established."
+      }
+    },
+    {
+      "id": "candidate-chicago-best-intentions",
+      "area": "Chicago",
+      "name": "Best Intentions",
+      "recognition": "2025 James Beard Outstanding Professional in Cocktail Service semifinalist — Christopher Marty",
+      "recognitionYear": 2025,
+      "awardFamily": "beard",
+      "interviewCue": "Logan Square, laid-back neighborhood cocktail bar with retro vibes and strong drinks; opened before 2025. The honor recognizes its bartender rather than a bar-level award.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named individual at this bar received JBF Outstanding Professional in Cocktail Service semifinalist recognition, not a bar-level award. No visit assumed."
+      }
+    },
+    {
+      "id": "candidate-chicago-bisous",
+      "area": "Chicago",
+      "name": "Bisous",
+      "recognition": "2025 James Beard Best New Bar semifinalist",
+      "recognitionYear": 2025,
+      "awardFamily": "beard",
+      "interviewCue": "West Loop cocktail lounge with French-style influences. A recent candidate, relevant only to Chicago visits after the bar opened, not to earlier 2010s trips.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "normal",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named bar featured in official JBF semifinalist list; user visit not established."
+      }
+    },
+    {
+      "id": "candidate-chicago-hopleaf-bar",
+      "area": "Chicago",
+      "name": "Hopleaf Bar",
+      "recognition": "2026 James Beard Outstanding Bar semifinalist",
+      "recognitionYear": 2026,
+      "awardFamily": "beard",
+      "interviewCue": "Andersonville bar known for an extensive Belgian and craft-beer list, vintage wood interior and pub food. Beverage bar recognition, not necessarily a cocktail speakeasy.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/james-beard-award-semifinalists-2026",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/james-beard-award-semifinalists-2026",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named bar featured in official JBF semifinalist list; user visit not established."
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-fern-bar",
+      "area": "Kansas City Metro",
+      "name": "Fern Bar",
+      "recognition": "2026 James Beard Outstanding Professional in Cocktail Service semifinalist — Diana Condori",
+      "recognitionYear": 2026,
+      "awardFamily": "beard",
+      "interviewCue": "Kansas City cocktail bar associated with Diana Condori. A newer option; confirm its opening year before assigning any historical visit.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/james-beard-award-semifinalists-2026",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/james-beard-award-semifinalists-2026",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named individual at this bar received JBF Outstanding Professional in Cocktail Service semifinalist recognition, not a bar-level award. No visit assumed."
+      }
+    },
+    {
+      "id": "candidate-kansas-city-metro-wild-child",
+      "area": "Kansas City Metro",
+      "name": "Wild Child",
+      "recognition": "2025 James Beard Outstanding Professional in Cocktail Service semifinalist — Jay Sanders",
+      "recognitionYear": 2025,
+      "awardFamily": "beard",
+      "interviewCue": "Shawnee, Kansas, a cocktail-bar destination west of Kansas City associated with bartender Jay Sanders; 2025 nomination for the professional, not the whole bar.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named individual at this bar received JBF Outstanding Professional in Cocktail Service semifinalist recognition, not a bar-level award. No visit assumed."
+      }
+    },
+    {
+      "id": "candidate-denver-metro-traveling-mercies",
+      "area": "Denver Metro",
+      "name": "Traveling Mercies",
+      "recognition": "2025 James Beard Best New Bar semifinalist",
+      "recognitionYear": 2025,
+      "awardFamily": "beard",
+      "interviewCue": "Aurora, Colorado, at Stanley Marketplace, a cocktail and oyster bar; more recent than your early 2021 Denver years.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named bar featured in official JBF semifinalist list; user visit not established."
+      }
+    },
+    {
+      "id": "candidate-chicago-truce",
+      "area": "Chicago",
+      "name": "Truce",
+      "recognition": "2025 James Beard Best New Bar semifinalist",
+      "recognitionYear": 2025,
+      "awardFamily": "beard",
+      "interviewCue": "Chicago cocktail-bar opening from the mid-2020s; possible only on more recent Chicago trips, not 2010s.",
+      "sourceUrl": "https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists",
+      "visitStatus": "unreviewed",
+      "venueType": "cocktail_bar",
+      "priority": "normal",
+      "addedOn": "2026-10-25",
+      "screening": {
+        "status": "award_qualified",
+        "basis": "james_beard",
+        "evidenceUrl": "https://www.jamesbeard.org/stories/the-2025-james-beard-award-semifinalists",
+        "sourceTier": "primary",
+        "verifiedAt": "2026-10-25",
+        "note": "Named bar featured in official JBF semifinalist list; user visit not established."
+      }
     }
   ],
   "source": {
@@ -3685,6 +3887,7 @@
     "retained": "Confirmed personal favorites and unresolved venue-identification clues are retained when eligible for inclusion; exclusions requested by the user are not shown in the public interview or collection.",
     "sourcePriority": "Prefer official James Beard and Michelin listings; secondary published reporting may support a candidate awaiting further audit.",
     "venueTypes": "Include qualifying bars and beverage programs in addition to restaurants. A bar can qualify for James Beard Outstanding Bar, Best New Bar, beverage-program and cocktail-service honors. Maintain precise location and recipient for awards.",
-    "personalExceptions": "Explicit user-selected dining and cocktail favorites remain visible even without a qualifying award; do not describe them as award-winning."
+    "personalExceptions": "Explicit user-selected dining and cocktail favorites remain visible even without a qualifying award; do not describe them as award-winning.",
+    "dateAndRecognition": "Review each venue only if it existed within the actual trip window; later James Beard awards can qualify an establishment in today's curated archive but must never be represented as held when the historical visit occurred."
   }
 }
