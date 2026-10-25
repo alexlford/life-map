@@ -31,3 +31,13 @@
 .archive-details-body p{margin:0 0 12px}
 .archive-details-body strong{color:var(--ink)}
 .timeline-memory{color:var(--muted);font-size:12px;line-height:1.7;margin:4px 0 0;max-width:560px}
+
+/* Stable, keyboard- and touch-friendly interview batching. */
+.interview-pagination{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:24px 0 0;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.interview-pagination button{min-height:42px;border:1px solid var(--line);background:var(--cream);color:var(--wine);font-size:12px;font-weight:750;padding:10px 15px;cursor:pointer}
+.interview-pagination button:disabled{opacity:.35;cursor:not-allowed}
+.interview-pagination span{color:var(--muted);font-size:12px;text-align:center}
+.interview-save-status{color:var(--muted);font-size:12px;margin:3px 0 18px}
+.choices button{min-height:40px;cursor:pointer}
+.choices button:focus-visible,.interview-pagination button:focus-visible{outline:3px solid var(--wine);outline-offset:3px}
+@media(max-width:520px){.interview-pagination{flex-wrap:wrap}.interview-pagination span{order:-1;flex:1 0 100%}.interview-pagination button{flex:1}}
