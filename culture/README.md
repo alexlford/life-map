@@ -1,34 +1,39 @@
-# Culture Passport
+# Culture Passport — independent site preview
 
-A distinct cultural-experiences passport for Alex Ford: **Restaurants · Concerts · Opera · Theater**.
+Culture Passport is a fourth personal experience website alongside Sports, Adventures, and Personal Atlas. It covers restaurants, concerts, opera, plays, musicals, and live theater.
 
-## Status
+## Publishing status
 
-This folder is a functional static-site **preview**, temporarily deployed at `https://alexlford.github.io/life-map/culture/` while an independent `alexlford/culture-passport` GitHub repository and the proposed `culture.alexlford.com` subdomain are configured. The current GitHub connection cannot create new repositories, and this preview must not alter the Life Map Pages domain.
+Preview: https://alexlford.github.io/life-map/culture/
+Proposed independent domain: culture.alexlford.com (not configured or live).
 
-## Architecture
+The preview is isolated under the culture/ subdirectory within the existing life-map repository because the current GitHub connector can edit repository files but cannot create a new repository or configure DNS. The new site should ultimately live in its own GitHub repository and publishing pipeline, independent of all three existing websites.
 
-The website is self-contained under `culture/`. It uses `data/records.json` as its canonical preview experience and venue catalog and `data/interview.json` as its independent research queue. Both were seeded by a deliberate snapshot of the Life Map's existing dining history, with a one-way consistency validator. The site contains no runtime imports from the Life Map. Individual experiences have a stable ID, type, confirmation status, date precision, venue reference, user favorite status, and attribution for externally awarded distinctions. Map pins deliberately use city centroids until validated venue coordinates are available.
+## Experience archive
 
-Confirmed dining experiences total **nine**. Two named dining favorites are Sauvage (Jan 2021) and Gunther & Co. (Feb 14 2020). Thames Street Oyster House is confirmed, exact date unknown. The Rec Pier Chop House name is only a possible identity for the user's recalled Pendry Hotel restaurant. Other restaurants in the interview are unverified candidates and do not increment the visit count. There are **no** fabricated concert, opera, or theater experiences.
+- index.html: editorial home with four cultural chapters
+- explore.html: category and city search
+- timeline.html: chronological experiences, with undated visits preserved as undated
+- map.html: city-center pins with explicit approximate-coordinate disclaimers
+- record.html: per-experience evidence, dated awards and provenance
+- interview.html: historical restaurant questionnaire, locally saved until reviewed
 
-## Local preview
+data/records.json is the independent canonical dataset of confirmed experiences (currently nine documented restaurants); no concerts, operas or theater appearances are invented. Each experience references a stable venue ID. Repeat restaurant trips will receive unique experience IDs. Unknown dates remain unknown.
 
-```sh
-python -m http.server 8000
-```
+data/interview.json is a separate candidate ledger with directly answered visited/not-visited/maybe statuses and new research candidates. Browsing or clicking a response never publishes an unverified visit. New answers are saved only in the browser and must be copied into ChatGPT for review and commit.
 
-Navigate to `http://localhost:8000/culture/` from the repository root. Run checks:
+## Ongoing restaurant discovery
 
-```sh
-python culture/scripts/validate.py
-node --check culture/assets/app.js
-```
+Continue asking Alex about one plausible restaurant at a time: first Magdalena, then La Cuchara, then new Baltimore candidates, then Washington DC, Denver and Steamboat. Keep researching credible period-matched candidates and historically dated Michelin and James Beard distinctions. Source every new candidate and remember that a chef award is not necessarily a restaurant award, a guide selection is not a star, and a later honor cannot be retroactively attached to a meal. Do not recount confirmed visits or assume ambiguous dates.
 
-## Independent deployment
+## Migration plan
 
-1. Provision `alexlford/culture-passport`, then copy the **contents** of `culture/` to its root.
-2. Enable GitHub Pages from main (or a Pages Actions deployment) and verify the temporary github.io address.
-3. Create a DNS CNAME for `culture.alexlford.com` pointing to `alexlford.github.io`, and configure the GitHub Pages custom domain on the **new** repository; verify HTTPS.
-4. Update links from the Life Map's historical Culinary Passport, leaving a compatibility redirect or curated link behind.
-5. Migrate ongoing historical interview additions to the new single source of truth so the two copies do not diverge.
+1. Create a separate Culture Passport GitHub repository.
+2. Copy the complete culture/ folder contents into its repository root.
+3. Configure independent GitHub Pages, DNS and HTTPS at culture.alexlford.com.
+4. Verify all URLs, maps, permissions and mobile layouts.
+5. Redirect the previous Culinary Passport URL without breaking old inbound links.
+
+## Validation
+
+Run python culture/scripts/validate.py and node --check culture/assets/app.js from the parent life-map repository. Enforce these in CI before merging.

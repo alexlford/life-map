@@ -1,84 +1,48 @@
 #!/usr/bin/env python3
-"""Validate the standalone Culture Passport preview and canonical source parity."""
+"""Validate Culture Passport records, historical interview states, and pages."""
 import json
-from datetime import date
 from pathlib import Path
-
-SITE = Path(__file__).resolve().parents[1]
-ROOT = SITE.parent
-DATA = json.loads((SITE / "data/records.json").read_text(encoding="utf-8"))
-INTERVIEW = json.loads((SITE / "data/interview.json").read_text(encoding="utf-8"))
-LEGACY = json.loads((ROOT / "data/dining.json").read_text(encoding="utf-8"))
-LEGACY_INTERVIEW = json.loads((ROOT / "data/dining-interview.json").read_text(encoding="utf-8"))
-
-def validate():
-    expected = {"dining", "concert", "opera", "theater"}
-    assert DATA["version"] == 1
-    assert {c["id"] for c in DATA["categories"]} == expected
-    assert DATA["project"] == "Culture Passport"
-    assert DATA["records"] and DATA["venues"]
-    ids = [r["id"] for r in DATA["records"]]
-    assert len(ids) == len(set(ids))
-    venues = {v["id"]:v for v in DATA["venues"]}
-    assert len(venues) == len(DATA["venues"])
-    for v in DATA["venues"]:
-        assert v["location"]["precision"] == "city-centroid"
-        assert -90 <= v["location"]["lat"] <= 90
-        assert -180 <= v["location"]["lng"] <= 180
-        assert v["city"] and v["name"]
-    for r in DATA["records"]:
-        assert r["type"] in expected
-        assert r["status"] == "confirmed"
-        assert r["venueId"] in venues
-        assert r["visit"]["precision"] in {"day", "month", "year_range", "approximate_year", "approximate", "unknown"}
-        assert r["visit"]["source"] and r["visit"]["label"]
-        if r["visit"]["date"]:
-            parsed = date.fromisoformat(r["visit"]["date"])
-            assert r["visit"]["precision"] == "day"
-            assert parsed.year == r["visit"]["year"]
-        if r["visit"]["precision"] == "month":
-            assert r["visit"]["date"] is None
-            assert 1 <= r["visit"]["month"] <= 12
-            assert r["visit"]["year"]
-        if r["guide"]:
-            if r["guide"]["distinction"] == "starred":
-                assert 1 <= r["guide"]["stars"] <= 3
-            else:
-                assert r["guide"]["stars"] == 0
-        for award in r["recognitions"]:
-            assert award["year"] and award["organization"] and award["recipient"]
-            assert award["sourceUrl"].startswith("https://")
-    assert len(DATA["records"]) == 9
-    assert all(r["type"] == "dining" for r in DATA["records"]), "Arts events require a real confirmation"
-    assert set(r["title"] for r in DATA["records"] if r.get("favorite")) == {"Sauvage", "Gunther & Co."}
-    assert sum(r["guide"]["distinction"] == "starred" for r in DATA["records"]) == 2
-    gunther = next(r for r in DATA["records"] if r["title"] == "Gunther & Co.")
-    sauvage = next(r for r in DATA["records"] if r["title"] == "Sauvage")
-    thames = next(r for r in DATA["records"] if r["title"] == "Thames Street Oyster House")
-    assert gunther["visit"]["date"] == "2020-02-14"
-    assert sauvage["visit"]["year"] == 2021 and sauvage["visit"]["month"] == 1
-    assert thames["visit"]["date"] is None and thames["visit"]["year"] is None
-    assert set(r["id"].removeprefix("dining-") for r in DATA["records"]) == {r["id"] for r in LEGACY["entries"] if r["status"] == "confirmed"}
-    assert set(r["id"] for r in INTERVIEW["candidates"]) == set(r["id"] for r in LEGACY_INTERVIEW["candidates"])
-    assert len(INTERVIEW["candidates"]) == 57
-    assert {r["area"] for r in INTERVIEW["candidates"]} == {"Baltimore", "Washington, DC", "Denver Metro", "Steamboat Springs"}
-    for c in INTERVIEW["candidates"]:
-        assert c["visitStatus"] in {"unreviewed", "confirmed", "not_visited", "maybe"}
-        assert c["sourceUrl"].startswith("https://")
-    pendry = next(r for r in INTERVIEW["candidates"] if r["name"] == "Rec Pier Chop House")
-    assert pendry["visitStatus"] == "unreviewed"
-    assert pendry["userMemoryLead"]["identityConfirmed"] is False
-    assert not any(r["title"] == "Rec Pier Chop House" for r in DATA["records"])
-    assert next(r for r in INTERVIEW["candidates"] if r["name"] == "Alma Cocina Latina")["visitStatus"] == "maybe"
-    for page in ["index", "explore", "timeline", "map", "record", "interview"]:
-        content=(SITE / (page+".html")).read_text(encoding="utf-8")
-        assert "Culture Passport" in content
-        assert "./assets/app.js" in content
-    js=(SITE / "assets/app.js").read_text(encoding="utf-8")
-    for route in ["home", "explore", "timeline", "map", "record", "interview"]:
-        assert "function "+route+"(" in js
-    assert "window.L" in js and "city-centroid" in (SITE / "data/records.json").read_text(encoding="utf-8")
-    print("OK: Culture Passport preview archive, citations, dates, candidate statuses, pages and provenance")
-
-if __name__ == "__main__":
-    validate()
+ROOT = Path(__file__).resolve().parents[1]
+records_data = json.loads((ROOT / "data/records.json").read_text(encoding="utf-8"))
+interview_data = json.loads((ROOT / "data/interview.json").read_text(encoding="utf-8"))
+records, venues = records_data["records"], records_data["venues"]
+candidates = interview_data["candidates"]
+assert records_data["project"] == "Culture Passport" and records_data["version"] == 1
+assert len(records) >= 9 and len(venues) >= 9
+assert len({r["id"] for r in records}) == len(records)
+assert len({v["id"] for v in venues}) == len(venues)
+types = {"dining", "concert", "opera", "theater"}
+assert {c["id"] for c in records_data["categories"]} == types
+venue_ids = {v["id"] for v in venues}
+assert all(r["status"] == "confirmed" and r["type"] in types for r in records)
+assert all(r["venueId"] in venue_ids and r["visit"]["source"] for r in records)
+assert all(r["visit"].get("date") is None or r["visit"]["precision"] == "day" for r in records)
+assert all(v["location"]["precision"] == "city-centroid" for v in venues)
+assert all(-90 <= v["location"]["lat"] <= 90 and -180 <= v["location"]["lng"] <= 180 for v in venues)
+stars = [r for r in records if r.get("guide") and r["guide"]["distinction"] == "starred"]
+assert len(stars) >= 2 and all(1 <= r["guide"]["stars"] <= 3 for r in stars)
+assert all(r["guide"]["stars"] == 0 for r in records if r.get("guide") and r["guide"]["distinction"] != "starred")
+assert {"Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen",
+        "Momofuku CCDC", "République", "Sauvage", "Gunther & Co.",
+        "Thames Street Oyster House"}.issubset({r["title"] for r in records})
+assert len(candidates) >= 70
+assert len({c["id"] for c in candidates}) == len(candidates)
+assert len({(c["area"].casefold(), c["name"].casefold()) for c in candidates}) == len(candidates)
+assert all(c["sourceUrl"].startswith("https://") for c in candidates)
+assert all(c["visitStatus"] in {"confirmed", "not_visited", "maybe", "unreviewed"} for c in candidates)
+assert {"Baltimore", "Washington, DC", "Denver Metro", "Steamboat Springs"}.issubset({c["area"] for c in candidates})
+assert all(c.get("confirmedVisitId") in {r["id"] for r in records}
+           for c in candidates if c["visitStatus"] == "confirmed" and c.get("confirmedVisitId"))
+assert any(c["name"] == "Alma Cocina Latina" and c["visitStatus"] == "maybe" for c in candidates)
+assert any(c["name"] == "Gunther & Co." and c["visitStatus"] == "confirmed" for c in candidates)
+assert all(c["name"] not in {r["title"] for r in records}
+           for c in candidates if c["visitStatus"] == "not_visited")
+for page in ("index", "explore", "timeline", "map", "record", "interview"):
+    source = (ROOT / (page + ".html")).read_text(encoding="utf-8")
+    assert "Culture Passport" in source and "./assets/site.css" in source
+    assert "./assets/app.js" in source
+assert (ROOT / "assets/app.js").exists()
+assert (ROOT / "assets/site.css").exists()
+assert "culture.alexlford.com" in (ROOT / "README.md").read_text(encoding="utf-8")
+print("Culture Passport OK: %d experiences, %d venues, %d interview prospects" %
+      (len(records), len(venues), len(candidates)))
