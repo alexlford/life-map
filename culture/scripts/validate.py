@@ -8,7 +8,7 @@ interview_data = json.loads((ROOT / "data/interview.json").read_text(encoding="u
 records, venues = records_data["records"], records_data["venues"]
 candidates = interview_data["candidates"]
 assert records_data["project"] == "Culture Passport" and records_data["version"] == 1
-assert len(records) == 26 and len(venues) == 24
+assert len(records) == 30 and len(venues) == 28
 assert len({r["id"] for r in records}) == len(records)
 assert len({v["id"] for v in venues}) == len(venues)
 types = {"dining", "bar", "concert", "opera", "theater"}
@@ -78,7 +78,7 @@ assert len(breck) == 3
 assert sorted(r["visit"]["year"] for r in breck) == [2021, 2022, 2023]
 assert all(r["visit"]["date"] is None and r["visit"]["precision"] == "approximate_year" for r in breck)
 assert all(r["editorial"]["awardQualified"] is False and r["editorial"]["featuredException"] is False for r in breck)
-assert len({r["venueId"] for r in records}) == 24
+assert len({r["venueId"] for r in records}) == 28
 qbreck = next(c for c in candidates if c["name"] == "Breckenridge Distillery Restaurant")
 assert qbreck["visitStatus"] == "confirmed" and set(qbreck["linkedVisitIds"]) == {r["id"] for r in breck}
 assert qbreck["screening"]["status"] == "memory_only"
@@ -266,3 +266,16 @@ for name in ("Q39", "Joe's Kansas City Bar-B-Que", "Arthur Bryant's Barbeque", "
 assert next(q for q in candidates if q["name"] == "Lucina Eatery & Bar")["visitStatus"] == "maybe"
 assert len([r for r in records if r["guide"]["distinction"] == "starred"]) == 3
 assert len([r for r in records if r["editorial"].get("awardQualified")]) == 17
+
+# Theater memories: preserve uncertainty in titles, not in the fact an outing occurred.
+stage=[r for r in records if r["type"] == "theater"]
+assert len(stage) == 4
+assert all(r["visit"]["date"] is None and r["visit"]["year"] in {2016,2017,2023,2024} for r in stage)
+assert {r["title"] for r in stage} == {"The Book of Mormon", "SIX", "The Second City — Chicago holiday outing", "Denver holiday theater outing"}
+assert next(r for r in stage if r["title"] == "The Book of Mormon")["production"]["engagementWindow"] == "December 6–11, 2016"
+assert next(r for r in stage if r["title"] == "SIX")["production"]["engagementWindow"] == "December 5–24, 2023"
+assert next(r for r in stage if r["title"] == "Denver holiday theater outing")["production"]["titleConfirmed"] is False
+assert next(r for r in stage if r["title"] == "The Second City — Chicago holiday outing")["production"]["titleConfirmed"] is False
+stage_research=json.loads((ROOT / "data/performance-interview.json").read_text(encoding="utf-8"))
+assert len(stage_research["candidates"]) >= 3
+assert any(c["id"] == "denver-unknown-play" for c in stage_research["candidates"])

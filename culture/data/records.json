@@ -45,7 +45,8 @@
     "storyFirst": "Each published entry leads with a grounded personal memory, atmosphere, or occasion. Dates are retained in provenance but the public timeline emphasizes approximate years, seasons, and meaningful events. Never fabricate meals, companion details, specific actions, or feelings not supplied by the user.",
     "dateDisplay": "Date/party details are backend evidence, available in a collapsed archive-notes section on experience pages, not default cards or timeline. Exact date may be shown only if necessary to a user-given occasion (Valentine's Day, etc.).",
     "familyStory": "A venue may carry a narrative across sister restaurants or expansions. Guide badges identify the recognized original without treating each branch as a separate unverified award.",
-    "criterionAudit": "Keep separate: verified Michelin Guide inclusion (stars, Bib, Selected/historical Plate), James Beard semifinalist/finalist/winner at the specific venue or chef while working there, explicitly featured personal memories, user-confirmed history without award, uncertain leads, and reservation-only evidence. Never count unverified founders' awards from unrelated restaurants or award years as the historical dining year."
+    "criterionAudit": "Keep separate: verified Michelin Guide inclusion (stars, Bib, Selected/historical Plate), James Beard semifinalist/finalist/winner at the specific venue or chef while working there, explicitly featured personal memories, user-confirmed history without award, uncertain leads, and reservation-only evidence. Never count unverified founders' awards from unrelated restaurants or award years as the historical dining year.",
+    "stageMemories": "Confirmed live outings can be recorded with a provisional production title. Verify the tour period and venue independently but do not infer exact performance dates; labels are about the memory."
   },
   "venues": [
     {
@@ -406,6 +407,66 @@
         "precision": "city-centroid"
       },
       "sourceId": "north-pond-chicago-2021"
+    },
+    {
+      "id": "venue-theater-book-of-mormon-kansas-city-2016",
+      "name": "Kansas City Music Hall",
+      "city": "Kansas City",
+      "region": "Missouri",
+      "country": "USA",
+      "address": "301 W 13th St, Kansas City, MO 64105",
+      "location": {
+        "lat": 39.0997,
+        "lng": -94.5786,
+        "precision": "city-centroid"
+      },
+      "sourceId": "book-of-mormon-kansas-city-2016",
+      "venueConfidence": "confirmed_title_and_tour_engagement"
+    },
+    {
+      "id": "venue-theater-second-city-chicago-2017",
+      "name": "The Second City, Chicago (exact stage unconfirmed)",
+      "city": "Chicago",
+      "region": "Illinois",
+      "country": "USA",
+      "address": "Chicago, IL",
+      "location": {
+        "lat": 41.8781,
+        "lng": -87.6298,
+        "precision": "city-centroid"
+      },
+      "sourceId": "second-city-chicago-2017",
+      "venueConfidence": "confirmed_company_and_city;exact_production_unverified"
+    },
+    {
+      "id": "venue-theater-six-denver-2023",
+      "name": "Buell Theatre",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "address": "1350 Curtis St, Denver, CO 80202",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903,
+        "precision": "city-centroid"
+      },
+      "sourceId": "six-denver-2023",
+      "venueConfidence": "confirmed_title_city_and_tour_engagement"
+    },
+    {
+      "id": "venue-theater-denver-holiday-theater-2024",
+      "name": "Denver Performing Arts Complex (specific stage unconfirmed)",
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA",
+      "address": "Denver, CO",
+      "location": {
+        "lat": 39.7392,
+        "lng": -104.9903,
+        "precision": "city-centroid"
+      },
+      "sourceId": "denver-holiday-theater-2024",
+      "venueConfidence": "confirmed_theater_outing;production_probable_not_confirmed"
     }
   ],
   "records": [
@@ -2027,6 +2088,158 @@
         "period": "Autumn 2021",
         "source": "User-confirmed North Pond visit from earlier interview, with Michelin's 2021 star and historic chef award verified separately."
       }
+    },
+    {
+      "id": "theater-book-of-mormon-kansas-city-2016",
+      "type": "theater",
+      "title": "The Book of Mormon",
+      "venueId": "venue-theater-book-of-mormon-kansas-city-2016",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "date": null,
+        "year": 2016,
+        "month": 12,
+        "possibleYears": [
+          2016
+        ],
+        "label": "December 2016",
+        "precision": "approximate_month",
+        "source": "User directly recalled the cultural outing in conversation October 25, 2026; matching production dates established independently, not a verified ticket.",
+        "evidenceType": "first_person_memory"
+      },
+      "summary": "The irreverent Broadway musical on tour at Kansas City Music Hall during the 2016 holiday season.",
+      "memory": {
+        "headline": "A Broadway comedy comes to Kansas City",
+        "teaser": "The irreverent Broadway musical on tour at Kansas City Music Hall during the 2016 holiday season.",
+        "story": "You remembered seeing The Book of Mormon in Kansas City around December 2016. That matches the touring production at Kansas City Music Hall from December 6–11, 2016. The musical combines sharp satire from Trey Parker and Matt Stone with songs by Robert Lopez, and its Kansas City run provides a solid setting for this theater memory. The particular performance night is still unrecorded.",
+        "period": "December 2016",
+        "source": "First-person recollection plus dated venue/production programming"
+      },
+      "production": {
+        "name": "The Book of Mormon",
+        "titleConfirmed": true,
+        "engagementWindow": "December 6–11, 2016",
+        "identificationConfidence": "confirmed_title_and_tour_engagement",
+        "exactAttendanceDate": null,
+        "sourceUrl": "https://www.ibdb.com/tour-production/the-book-of-mormon-jumamosi-499334"
+      },
+      "recognitions": [],
+      "sourceUrl": "https://www.ibdb.com/tour-production/the-book-of-mormon-jumamosi-499334"
+    },
+    {
+      "id": "theater-second-city-chicago-2017",
+      "type": "theater",
+      "title": "The Second City — Chicago holiday outing",
+      "venueId": "venue-theater-second-city-chicago-2017",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "date": null,
+        "year": 2017,
+        "month": 12,
+        "possibleYears": [
+          2017
+        ],
+        "label": "Christmas season 2017",
+        "precision": "approximate_month",
+        "source": "User directly recalled the cultural outing in conversation October 25, 2026; matching production dates established independently, not a verified ticket.",
+        "evidenceType": "first_person_memory"
+      },
+      "summary": "A holiday-season outing to a Second City performance during a Chicago visit in 2017.",
+      "memory": {
+        "headline": "Laughing through the holidays in Chicago",
+        "teaser": "A holiday-season outing to a Second City performance during a Chicago visit in 2017.",
+        "story": "You remember going to a Second City performance in Chicago around Christmas 2017. Sketch comedy, improvisation, and that city's distinctive theater culture are the center of this memory. The troupe had more than one production during the season, including Holidazed and Confused, so we are not assigning an exact revue or stage without a ticket, photo, or more specific recollection.",
+        "period": "Christmas season 2017",
+        "source": "First-person recollection plus dated venue/production programming"
+      },
+      "production": {
+        "name": "The Second City — holiday performance",
+        "titleConfirmed": false,
+        "engagementWindow": "December 2017",
+        "identificationConfidence": "confirmed_company_and_city;exact_production_unverified",
+        "exactAttendanceDate": null,
+        "sourceUrl": "https://chicago.suntimes.com/2017/11/22/18368555/holiday-show-guide-scrooges-nutcrackers-taylor-swift-and-more"
+      },
+      "recognitions": [],
+      "sourceUrl": "https://chicago.suntimes.com/2017/11/22/18368555/holiday-show-guide-scrooges-nutcrackers-taylor-swift-and-more"
+    },
+    {
+      "id": "theater-six-denver-2023",
+      "type": "theater",
+      "title": "SIX",
+      "venueId": "venue-theater-six-denver-2023",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "date": null,
+        "year": 2023,
+        "month": 12,
+        "possibleYears": [
+          2023
+        ],
+        "label": "December 2023",
+        "precision": "approximate_month",
+        "source": "User directly recalled the cultural outing in conversation October 25, 2026; matching production dates established independently, not a verified ticket.",
+        "evidenceType": "first_person_memory"
+      },
+      "summary": "The pop-concert musical about Henry VIII’s six wives, in Denver during the December 2023 run.",
+      "memory": {
+        "headline": "Six queens reclaim their stories",
+        "teaser": "The pop-concert musical about Henry VIII’s six wives, in Denver during the December 2023 run.",
+        "story": "You remembered seeing the musical about Henry VIII's wives in Denver and confirmed the year as 2023. The touring production of SIX played the Buell Theatre from December 5–24 that year. Its six queens tell their versions of Tudor history as a high-energy pop concert, making the concept especially memorable even without an exact performance date.",
+        "period": "December 2023",
+        "source": "First-person recollection plus dated venue/production programming"
+      },
+      "production": {
+        "name": "SIX",
+        "titleConfirmed": true,
+        "engagementWindow": "December 5–24, 2023",
+        "identificationConfidence": "confirmed_title_city_and_tour_engagement",
+        "exactAttendanceDate": null,
+        "sourceUrl": "https://www.denvercenter.org/news-center/dcpa-broadways-2023-24-season-announcement/"
+      },
+      "recognitions": [],
+      "sourceUrl": "https://www.denvercenter.org/news-center/dcpa-broadways-2023-24-season-announcement/"
+    },
+    {
+      "id": "theater-denver-holiday-theater-2024",
+      "type": "theater",
+      "title": "Denver holiday theater outing",
+      "venueId": "venue-theater-denver-holiday-theater-2024",
+      "status": "confirmed",
+      "favorite": false,
+      "visit": {
+        "date": null,
+        "year": 2024,
+        "month": 12,
+        "possibleYears": [
+          2024
+        ],
+        "label": "Christmas season 2024",
+        "precision": "approximate_month",
+        "source": "User directly recalled the cultural outing in conversation October 25, 2026; matching production dates established independently, not a verified ticket.",
+        "evidenceType": "first_person_memory"
+      },
+      "summary": "A Denver holiday performance you remember as probably A Christmas Carol.",
+      "memory": {
+        "headline": "A Christmas-season night at the theater",
+        "teaser": "A Denver holiday performance you remember as probably A Christmas Carol.",
+        "story": "You remember attending a play or musical in Denver around Christmas 2024 and think it was A Christmas Carol. The Denver Center presented its musical adaptation of Dickens's story at the Wolf Theatre from November 22 to December 29, 2024, which matches that memory. The title and particular performance remain provisional until you recognize more details.",
+        "period": "Christmas season 2024",
+        "source": "First-person recollection plus dated venue/production programming"
+      },
+      "production": {
+        "name": "Holiday theater in Denver",
+        "titleConfirmed": false,
+        "engagementWindow": "November–December 2024",
+        "identificationConfidence": "confirmed_theater_outing;production_probable_not_confirmed",
+        "exactAttendanceDate": null,
+        "sourceUrl": "https://www.denvercenter.org/news-center/denver-center-theatre-company-announces-2024-25-season/"
+      },
+      "recognitions": [],
+      "sourceUrl": "https://www.denvercenter.org/news-center/denver-center-theatre-company-announces-2024-25-season/"
     }
   ],
   "origin": {
