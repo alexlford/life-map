@@ -25,12 +25,18 @@ assert all(r["guide"]["stars"] == 0 for r in records if r.get("guide") and r["gu
 assert {"Minetta Tavern", "Beckon", "Charleston", "Woodberry Kitchen",
         "Momofuku CCDC", "République", "Sauvage", "Gunther & Co.",
         "Thames Street Oyster House"}.issubset({r["title"] for r in records})
-assert len(candidates) >= 70
+assert len(candidates) >= 105
 assert len({c["id"] for c in candidates}) == len(candidates)
 assert len({(c["area"].casefold(), c["name"].casefold()) for c in candidates}) == len(candidates)
 assert all(c["sourceUrl"].startswith("https://") for c in candidates)
 assert all(c["visitStatus"] in {"confirmed", "not_visited", "maybe", "unreviewed"} for c in candidates)
-assert {"Baltimore", "Washington, DC", "Denver Metro", "Steamboat Springs"}.issubset({c["area"] for c in candidates})
+assert {"Baltimore", "Washington, DC", "Denver Metro", "Steamboat Springs", "Charleston, SC", "Kansas City Metro"}.issubset({c["area"] for c in candidates})
+assert interview_data["periods"]["Charleston, SC"].endswith("2017–2018")
+assert "2010" in interview_data["periods"]["Kansas City Metro"]
+majestic = next(c for c in candidates if c["name"] == "The Majestic Restaurant" and c["area"] == "Kansas City Metro")
+assert majestic["visitStatus"] == "unreviewed" and majestic["userMemoryLead"]["identityConfirmed"] is False
+assert "DOWNSTAIRS" in majestic["interviewCue"]
+assert not any(r["title"] == "The Majestic Restaurant" for r in records)
 assert all(c.get("confirmedVisitId") in {r["id"] for r in records}
            for c in candidates if c["visitStatus"] == "confirmed" and c.get("confirmedVisitId"))
 assert any(c["name"] == "Alma Cocina Latina" and c["visitStatus"] == "maybe" for c in candidates)
@@ -41,6 +47,10 @@ for page in ("index", "explore", "timeline", "map", "record", "interview"):
     source = (ROOT / (page + ".html")).read_text(encoding="utf-8")
     assert "Culture Passport" in source and "./assets/site.css" in source
     assert "./assets/app.js" in source
+map_html = (ROOT / "map.html").read_text(encoding="utf-8")
+assert map_html.index("leaflet.js") < map_html.index('src="./assets/app.js'), "Load Leaflet before Culture map app"
+assert 'id="interview-period"' in (ROOT / "interview.html").read_text(encoding="utf-8")
+assert 'byId("interview-period")' in (ROOT / "assets/app.js").read_text(encoding="utf-8")
 assert (ROOT / "assets/app.js").exists()
 assert (ROOT / "assets/site.css").exists()
 assert "culture.alexlford.com" in (ROOT / "README.md").read_text(encoding="utf-8")
