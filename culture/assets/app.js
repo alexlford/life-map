@@ -154,6 +154,22 @@
     }
     host.append(grid);
     if(v.address)host.append(el("p","detail-note","Venue address: "+v.address+". The geographic map currently uses city-level approximate markers."));
+    if(r.story&&Array.isArray(r.story.paragraphs)&&r.story.paragraphs.length){
+      const section=el("section","experience-story");section.append(el("p","eyebrow","THE STORY BEHIND THE PLACE"),el("h2","",r.story.headline||"A place worth remembering"));
+      for(const paragraph of r.story.paragraphs)section.append(el("p","story-paragraph",paragraph));
+      if(Array.isArray(r.story.chapters)&&r.story.chapters.length){
+        section.append(el("h3","story-subheading","A few chapters in its history"));
+        const list=el("div","story-chapters");
+        for(const chapter of r.story.chapters){const item=el("div","story-chapter");item.append(el("strong","story-year",chapter.year),el("div","",chapter.title),el("p","",chapter.detail));list.append(item);}
+        section.append(list);
+      }
+      if(Array.isArray(r.story.sourceUrls)&&r.story.sourceUrls.length){
+        const sources=el("div","story-sources");sources.append(el("strong","","Historical references: "));
+        for(const s of r.story.sourceUrls){const a=link(s.label+" ↗",s.url);a.target="_blank";a.rel="noopener noreferrer";sources.append(a);}
+        section.append(sources);
+      }
+      host.append(section);
+    }
     const note=el("div","caveat","Historical accuracy: the date of the visit and the date of external restaurant awards are separate facts. No unknown day is invented.");
     host.append(note);
     const badges=el("div","award-list");

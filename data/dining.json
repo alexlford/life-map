@@ -107,7 +107,8 @@
     "founderRecognition": "If a founder won a James Beard award for a different restaurant, preserve the credited venue and never attribute the award to the visited branch.",
     "favorites": "Favorite dining experiences are user-designated and do not imply external culinary awards.",
     "curated": "Default Culture Passport dining views show confirmed restaurants with documented Michelin Guide recognition (star, Bib, Selected, historic Plate) or directly associated James Beard awards, finalists or semifinalists. Those awards retain their recipient and year. Chef awards at unrelated restaurants or historical awards dated after a dinner may be context, not proof of qualification at the meal date. Unverified and outside-scope visits stay in archive but are hidden from curated browsing by default.",
-    "repeatVisits": "A legacy venue record can list multiple confirmed visitYears; Culture Passport canonical stores each year as its own visit, linked to one venue."
+    "repeatVisits": "A legacy venue record can list multiple confirmed visitYears; Culture Passport canonical stores each year as its own visit, linked to one venue.",
+    "storytelling": "Each confirmed Culture Passport record should preserve the history and setting of the restaurant, the people and cuisine that defined it, and the personal memory that links it to Alex's life. A visit date is a chapter marker, not a requirement for publication. Distinguish verified venue history from directly recalled memories and never invent dishes eaten, companions, or conversations."
   },
   "entries": [
     {
@@ -891,6 +892,121 @@
         "awardAtVisit": "unknown_visit_date"
       },
       "locationUrl": "https://www.google.com/maps/search/?api=1&query=Yuan+Wonton+Denver"
+    },
+    {
+      "id": "north-pond-chicago-2021",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "North Pond",
+      "city": "Chicago",
+      "region": "Illinois",
+      "country": "USA",
+      "neighborhood": "Lincoln Park",
+      "address": "2610 N Cannon Drive, Chicago, IL 60614",
+      "visit": {
+        "date": null,
+        "dateText": "October 2021, the week after the Chicago Marathon (exact day unknown)",
+        "possibleYears": [
+          2021
+        ],
+        "approximateYear": 2021,
+        "month": 10,
+        "precision": "approximate_month",
+        "source": "Alex directly confirmed visiting North Pond, Chicago in October 2021, the week after the October 10 Chicago Marathon (message Oct 25, 2026)."
+      },
+      "guide": {
+        "edition": 2021,
+        "distinction": "starred",
+        "stars": 1,
+        "sourceUrl": "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+        "sourceUrls": [
+          "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+          "https://guide.michelin.com/us/en/illinois/chicago/restaurant/north-pond"
+        ],
+        "verifiedEditions": [
+          2021
+        ],
+        "starAwardDate": "2021-04-29",
+        "historicalVisitDistinction": "starred",
+        "starsAtVisit": 1,
+        "note": "2021 Michelin one-star selection announced April 29, ahead of user's post-marathon October visit. This documents the restaurant's star at the time, not its current award status."
+      },
+      "recognitions": [
+        {
+          "organization": "James Beard Foundation",
+          "year": 2012,
+          "result": "winner",
+          "category": "Best Chef: Great Lakes",
+          "recipient": "Bruce Sherman",
+          "relationship": "North Pond chef-partner when awarded; departed from daily kitchen leadership in 2019, before the remembered 2021 dinner.",
+          "timingRelativeToVisit": "before_visit",
+          "sourceUrl": "https://archive.jamesbeard.org/blog/best-chef-great-lakes-bruce-sherman"
+        }
+      ],
+      "summary": "An autumn dinner at North Pond, hidden inside Chicago's Lincoln Park, in the week following the 2021 Chicago Marathon. The restaurant occupies a century-old ice-skating warming house on the edge of a pond and held one Michelin star during the visit. A peaceful, seasonal counterpoint to the energy of marathon week.",
+      "evidenceStatus": "reported",
+      "referenceUrl": "https://guide.michelin.com/us/en/illinois/chicago/restaurant/north-pond",
+      "story": {
+        "headline": "A quiet table in Lincoln Park, after marathon week",
+        "paragraphs": [
+          "The memorable part begins before reaching the table. North Pond sits not on a busy downtown restaurant row, but tucked into the trees beside a pond in Lincoln Park. Its low Arts and Crafts-style building was constructed in 1912 as a warming shelter for ice skaters; decades later, that same refuge became a place for thoughtful, seasonal American cooking.",
+          "The restaurant's reputation was built in no small part by chef Bruce Sherman, whose focus on Midwestern ingredients earned him the James Beard Foundation's Best Chef: Great Lakes award in 2012. Sherman stepped away from daily kitchen leadership at the end of 2019, but the restaurant's identity endured.",
+          "In October 2021, during the week after the Chicago Marathon, this was one of the restaurants worth seeking out. That year's Michelin Guide had awarded North Pond one star months before the meal. The precise evening and dishes are not recorded; what survives is the setting, the post-race trip to Chicago, and a restaurant whose story reaches back more than a century."
+        ],
+        "chapters": [
+          {
+            "year": "1912",
+            "title": "A shelter by the water",
+            "detail": "Built to warm ice skaters in Lincoln Park."
+          },
+          {
+            "year": "2012",
+            "title": "A James Beard-winning kitchen",
+            "detail": "Bruce Sherman wins Best Chef: Great Lakes, representing North Pond."
+          },
+          {
+            "year": "2019",
+            "title": "A changing of the guard",
+            "detail": "Sherman steps away from daily kitchen leadership after two decades."
+          },
+          {
+            "year": "2021",
+            "title": "A Michelin-starred post-marathon dinner",
+            "detail": "One Michelin star in the 2021 Guide, with the remembered visit the week after the Chicago Marathon."
+          }
+        ],
+        "sourceUrls": [
+          {
+            "label": "Michelin 2021 Chicago stars",
+            "url": "https://www.opentable.com/blog/chicago-michelin-stars-2021/"
+          },
+          {
+            "label": "James Beard: Bruce Sherman",
+            "url": "https://archive.jamesbeard.org/blog/best-chef-great-lakes-bruce-sherman"
+          },
+          {
+            "label": "Sherman's departure, Chicago magazine",
+            "url": "https://www.chicagomag.com/dining-drinking/november-2019/bruce-sherman-is-leaving-north-pond/"
+          },
+          {
+            "label": "Michelin venue and heritage",
+            "url": "https://guide.michelin.com/us/en/illinois/chicago/restaurant/north-pond"
+          }
+        ]
+      },
+      "curation": {
+        "status": "qualifies",
+        "basis": "both",
+        "reason": "2021 Michelin one star at October 2021 dinner; 2012 JBF Best Chef Great Lakes awarded to Bruce Sherman while at North Pond.",
+        "evidenceUrls": [
+          "https://www.opentable.com/blog/chicago-michelin-stars-2021/",
+          "https://archive.jamesbeard.org/blog/best-chef-great-lakes-bruce-sherman",
+          "https://www.chicagomag.com/dining-drinking/november-2019/bruce-sherman-is-leaving-north-pond/"
+        ],
+        "reviewedOn": "2026-10-25",
+        "confidence": "documented",
+        "awardAtVisit": "Michelin one star verified at date of visit"
+      }
     }
   ],
   "excludedResearch": [
