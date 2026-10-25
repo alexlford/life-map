@@ -2,10 +2,10 @@
   "version": 1,
   "updated": "2026-10-24",
   "methodology": {
-    "confirmedDefinition": "A visit is confirmed by direct recollection of the named restaurant. The starred-venues counter requires a confirmed visit to a restaurant awarded at least one Michelin star in the guide edition matching the remembered visit period.",
+    "confirmedDefinition": "Named visits are confirmed from direct recollection. A Michelin-starred venue counts only when every plausible visit year is documented as starred by the relevant guide edition.",
     "guideVsStar": "Michelin Selected, Bib Gourmand, Green Star and Michelin Stars are separate distinctions; Michelin Selected is not a Michelin star.",
     "editionCaveat": "A restaurant may earn its star partway through a year. The starred-venues counter describes the venue's guide recognition, not proof that the star was already awarded on the dinner date.",
-    "unreconciled": "An unidentified venue is not counted as a confirmed starred venue. When only an approximate year is recalled, whether the star existed on the precise meal date is preserved as unverified.",
+    "unreconciled": "The exact visit day remains unrecorded for some restaurants. Historical Michelin star counts require evidence for all possible years and do not imply an invented date.",
     "sources": [
       {
         "title": "Michelin — République",
@@ -34,6 +34,10 @@
       {
         "title": "Michelin — Colorado 2023 awards, September 12",
         "url": "https://michelinmedia.com/c0/introducing-first-stars-michelin-guide-colorado/"
+      },
+      {
+        "title": "Michelin releases New York City 2017 starred restaurants",
+        "url": "https://michelinmedia.com/michelin-guide-nyc-2017/"
       }
     ]
   },
@@ -65,47 +69,44 @@
       "locationUrl": "https://www.google.com/maps/search/?api=1&query=Republique+624+S+La+Brea+Ave+Los+Angeles"
     },
     {
-      "id": "nyc-burger-2016-2017",
-      "kind": "reconstruction",
-      "status": "researching",
-      "name": "New York City · Michelin burger memory",
+      "id": "minetta-tavern-nyc-2016-2017",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Minetta Tavern",
       "city": "New York City",
       "region": "New York",
       "country": "USA",
+      "neighborhood": "Greenwich Village",
+      "address": "113 MacDougal St., New York, NY 10012",
       "visit": {
         "date": null,
-        "dateText": "2016 or 2017",
-        "precision": "range",
-        "source": "Alex's direct recollection"
+        "dateText": "2016 or 2017 (exact year unconfirmed)",
+        "possibleYears": [
+          2016,
+          2017
+        ],
+        "precision": "year_range",
+        "source": "Alex's direct confirmation of Minetta Tavern on 2026-10-24",
+        "timingRelativeToAward": "verified_in_both_guide_editions"
       },
-      "summary": "A single 2016/17 Michelin burger-restaurant visit. The Spotted Pig visually looks familiar, but Alex also remembers white tablecloths and an almost Italian atmosphere; the venue is not yet resolved.",
-      "evidenceStatus": "restaurant_unresolved",
-      "candidates": [
-        {
-          "name": "The Spotted Pig",
-          "neighborhood": "West Village",
-          "reason": "Alex recognizes the venue as familiar; its dining room had white tablecloths, but it was primarily an English-style gastropub. Held a star in the 2016 guide, downgraded for 2017.",
-          "stars2016": 1,
-          "stars2017": 0,
-          "url": "https://ny.eater.com/2016/11/11/13590260/nyc-michelin-bib-gourmands-2017"
-        },
-        {
-          "name": "Minetta Tavern",
-          "neighborhood": "Greenwich Village",
-          "reason": "Strong match for white linen and the nearly Italian feel: the vintage brasserie originated as an Italian restaurant and saloon. Famous Black Label Burger; one star in 2016 and 2017.",
-          "stars2016": 1,
-          "stars2017": 1,
-          "url": "https://guide.michelin.com/en/new-york-state/new-york/restaurant/minetta-tavern"
-        },
-        {
-          "name": "The Breslin",
-          "neighborhood": "NoMad / Flatiron",
-          "reason": "April Bloomfield's celebrated lamb burger; starred in both editions.",
-          "stars2016": 1,
-          "stars2017": 1,
-          "url": "https://guide.michelin.com/hk/en/article/news-and-views/full-list-the-2018-michelin-guide-nyc-results-announced"
-        }
-      ],
+      "guide": {
+        "edition": 2017,
+        "verifiedEditions": [
+          2016,
+          2017
+        ],
+        "distinction": "starred",
+        "stars": 1,
+        "sourceUrl": "https://michelinmedia.com/michelin-guide-nyc-2017/",
+        "sourceUrls": [
+          "https://michelinmedia.com/c0/michelinguidenyc2016/",
+          "https://michelinmedia.com/michelin-guide-nyc-2017/"
+        ],
+        "historicalVisitDistinction": "starred",
+        "starsAtVisit": 1
+      },
+      "summary": "Confirmed visit to Minetta Tavern in 2016 or 2017. The Black Label Burger and white-tablecloth dining room match the remembered experience. Minetta Tavern held one Michelin star in both years.",
+      "evidenceStatus": "reported",
       "memoryClues": [
         {
           "clue": "The Spotted Pig looks familiar",
@@ -122,7 +123,8 @@
           "source": "Alex's recollection on 2026-10-24",
           "confidence": "recalled"
         }
-      ]
+      ],
+      "locationUrl": "https://www.google.com/maps/search/?api=1&query=Minetta+Tavern+113+MacDougal+St+New+York"
     },
     {
       "id": "beckon-denver-2023",

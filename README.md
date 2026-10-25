@@ -137,4 +137,10 @@ Then open `http://localhost:8000`.
 
 `dining.html` is a standalone, responsive historical dining tracker within the Personal Atlas, linked from the Life Map (and hidden in professional embeds). `data/dining.json` is the canonical source. The site distinguishes directly reported visits, unresolved restaurant identities, Michelin Guide Selected listings, and historically confirmed Michelin stars. Do not treat restaurant *candidates* as separate visits or apply a current Michelin rating retroactively to an old visit.
 
-Current seed: République is a confirmed Guide-listed visit but not a confirmed starred visit; the 2016/17 NYC burger remains **one unresolved restaurant identity**, while Beckon (Denver) is a confirmed visit to a restaurant awarded **one star in the inaugural 2023 Colorado Guide**. The precise Beckon meal date relative to the September 12 award remains unknown. A late-1990s Wisconsin Dells Michelin star is historically impossible because Michelin did not publish a US guide until 2005.
+Current seed: République is a confirmed Guide-listed visit but not a confirmed starred visit; Minetta Tavern (NYC, 2016 or 2017) is a **confirmed visit** to a one-star restaurant in both applicable Michelin Guides. Beckon (Denver) is also a confirmed visit to a restaurant awarded **one star in the inaugural 2023 Colorado Guide**. The precise Beckon meal date relative to the September 12 award remains unknown. A late-1990s Wisconsin Dells Michelin star is historically impossible because Michelin did not publish a US guide until 2005.
+
+## Independent Personal Atlas site
+
+Personal Atlas is an independent property, separate from the `sports-passport` and `adventure-map` repositories, datasets, builds, and deployments. It now has a dedicated editorial landing page at `atlas.html` plus the Life Map at `index.html` and Michelin Dining Passport at `dining.html`.
+
+The Atlas landing page is currently served from `https://alexlford.github.io/life-map/atlas.html`. `atlas.alexlford.com` is the proposed independent custom subdomain, **not yet configured**: DNS plus GitHub Pages ownership and domain configuration are required before activating a CNAME. Until then, retain the root map page, historical map links, and existing professional embed (`?embed=1&mode=work`). Nothing is hosted inside the Sports or Adventures websites.

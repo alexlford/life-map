@@ -120,3 +120,5 @@ body.is-embedded .panel-head h1{margin-top:0}
 }
 /* Michelin Dining Passport entry: hidden from embedded professional atlas. */
 .dining-link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 12px;color:var(--gold-soft);background:rgba(217,169,78,.06);border:1px solid rgba(217,169,78,.25);border-radius:9px;text-decoration:none;font-size:11px;font-weight:800}.dining-link:hover{border-color:rgba(217,169,78,.65);background:rgba(217,169,78,.12)}body.is-embedded .dining-promo{display:none}
+
+.site-intro .atlas-brand-link{pointer-events:auto;color:var(--gold-soft);text-decoration:none}.site-intro .atlas-brand-link:hover{text-decoration:underline}body.is-embedded .atlas-brand-link{display:none}

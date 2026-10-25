@@ -30,11 +30,15 @@ def main():
             assert not record.get("candidates"), "Confirmed visit cannot be a multi-restaurant lead"
             if record["guide"]["distinction"] == "starred":
                 assert record["guide"].get("stars") in (1, 2, 3), record["id"]
-                assert record["guide"].get("starAwardDate"), "Star award date required"
-                assert record["visit"].get("approximateYear") == record["guide"]["edition"], "Star counter needs matched guide edition"
+                assert record["guide"].get("starAwardDate") or record["guide"].get("sourceUrls"), "Primary star evidence required"
+                years = record["visit"].get("possibleYears") or [record["visit"].get("approximateYear")]
+                verified = record["guide"].get("verifiedEditions") or [record["guide"]["edition"]]
+                assert all(y in verified for y in years), "Stars must cover every possible visit year"
             if record["guide"]["historicalVisitDistinction"] == "starred":
                 assert record["guide"].get("starsAtVisit") in (1, 2, 3), record["id"]
-                assert record["visit"]["date"], "Star needs a historically checkable visit date"
+                if record["visit"]["date"] is None:
+                    years = record["visit"].get("possibleYears", [])
+                    assert years and all(y in record["guide"].get("verifiedEditions", []) for y in years), "Historical stars require covered guide editions"
         else:
             assert record["kind"] == "reconstruction", record["id"]
             assert len(record["candidates"]) >= 2, record["id"]
@@ -49,12 +53,19 @@ def main():
     assert republique["guide"]["historicalVisitDistinction"] == "unverified"
 
     leads = [r for r in DATA["entries"] if r["status"] == "researching"]
-    assert len(leads) == 1 and leads[0]["id"] == "nyc-burger-2016-2017", "Only the NYC burger visit remains unresolved"
+    assert not leads, "No restaurant identities should remain unresolved"
+    minetta = next(r for r in DATA["entries"] if r["id"] == "minetta-tavern-nyc-2016-2017")
+    assert minetta["status"] == "confirmed" and minetta["guide"]["starsAtVisit"] == 1
+    assert minetta["visit"]["possibleYears"] == [2016, 2017]
+    assert minetta["guide"]["verifiedEditions"] == [2016, 2017]
     beckon = next(r for r in DATA["entries"] if r["id"] == "beckon-denver-2023")
     assert beckon["status"] == "confirmed" and beckon["kind"] == "restaurant"
     assert beckon["guide"]["stars"] == 1 and beckon["guide"]["edition"] == 2023
     assert beckon["guide"]["starAwardDate"] == "2023-09-12"
     assert beckon["visit"]["date"] is None and beckon["guide"]["historicalVisitDistinction"] == "unverified"
+    ATLAS = (ROOT / "atlas.html").read_text(encoding="utf-8")
+    assert "Personal Atlas" in ATLAS and "./index.html" in ATLAS and "./dining.html" in ATLAS
+    assert "./atlas.html" in INDEX and "./atlas.html" in HTML
     assert "Michelin Dining Passport" in HTML
     assert "./data/dining.json" in JS
     assert "./dining.html" in INDEX
