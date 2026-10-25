@@ -37,6 +37,17 @@
       "relatedExperienceId": null,
       "userMemory": "User recalled attending at least one other play or musical in Denver, title and year not yet established.",
       "sourceUrl": "https://www.denvercenter.org/"
+    },
+    {
+      "id": "lyric-ring-performances",
+      "category": "opera",
+      "name": "Which Wagner Ring Cycle performances were attended",
+      "city": "Chicago",
+      "year": null,
+      "confirmation": "series_confirmed_individual_performances_unverified",
+      "relatedExperienceId": "opera-wagner-s-ring-cycle-lyric-opera-of-chicago",
+      "userMemory": "Lyric Opera Chicago photos from 2016 and 2018 support a series experience. The individual operas and exact performance nights remain unidentified.",
+      "sourceUrl": "https://www.lyricopera.org/"
     }
   ],
   "fullyIdentified": [

@@ -156,3 +156,9 @@ User shared concert archive screenshots, two timestamped photos at Lyric Opera o
 Production sources: https://kcconvention.com/wp-content/uploads/2016/10/Convention-Update-Fall-Winter-2016-Edition.pdf ; https://www.denvercenter.org/news-center/dcpa-broadways-2023-24-season-announcement/ ; https://www.artsandvenuesdenver.com/events/detail/a-christmas-carol-3 ; https://diplosrunclub.com/denver .
 
 Existing Book of Mormon (Kansas City December 2016), SIX (Denver December 2023), Second City 2017 and tentative Denver Christmas Carol 2024 entries were published separately and preserved without duplication. 25 other performance entries were integrated.
+
+## Chronological date display and cocktail-bar history (October 25, 2026)
+
+The Culture Passport timeline now displays full calendar dates for date-precise items drawn from personal event screenshots (2007–2026), sorting events within years by month and day. Completed OpenTable/Resy/Tock restaurant reservations are displayed with explicit **reservation on file** language instead of claiming meal attendance from the booking alone. The individual experience's archival disclosure lists booking dates and party sizes, for example: Sauvage 2021-01-17 and 2022-02-14; Charleston 2020-10-26; Safta 2022-07-12; Manifesto 2019-10-25; Breckenridge Distillery 2023-01-05 and 2023-01-11. Individual opera/theater performances retain approximate attendance windows and show engagement runs separately, never as fabricated ticket dates.
+
+NYC cocktail bar **Existing Conditions** is explicitly **not visited** by the user in 2018–2020; PDT remains maybe, The Dead Rabbit remains not visited. A Ring Cycle interview lead asks which specific operas were attended; it is not a new confirmed performance.
