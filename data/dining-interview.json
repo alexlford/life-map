@@ -5,7 +5,8 @@
   "periods": {
     "Baltimore": "2018–2021",
     "Washington, DC": "2018–2021",
-    "Denver Metro": "2021–October 2026"
+    "Denver Metro": "2021–October 2026",
+    "Kansas City Metro": "Frequent visits 2010–present"
   },
   "statuses": [
     "unreviewed",
@@ -13,7 +14,7 @@
     "maybe",
     "not_visited"
   ],
-  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House.",
+  "notes": "Recognition year may predate or postdate the user's potential visit. An honor awarded to a chef is recorded as a chef honor, not proof that a restaurant received a Michelin star. Charleston is a confirmed visit and is prefilled as visited; do not require re-interview or let stale browser state override that. Woodberry Kitchen is also a confirmed visit; the restaurant interview must lock this answer as visited while retaining the 2015 chef award as pre-visit recognition. In the first-person interview, Alex explicitly ruled out Clavel as a Baltimore visit (2018–2021); it stays in interview results as not visited and is never counted as a restaurant visit. Cinghiale was explicitly ruled out in the user's Baltimore interview and must not be counted as a visit. Petit Louis Bistro is directly ruled out as an 2018–2021 Baltimore visit, and browser interview answers must not override this. Foraged originally served in Hampden and relocated to Station North in late 2021. Foraged is explicitly ruled out during Baltimore 2018–2021. Alex recalled visiting a David Chang restaurant in Washington DC, without naming the venue. Momofuku CCDC is a strong historically supported identity lead, but MUST remain unconfirmed and must NOT increment confirmed visit or Michelin-star counts until Alex identifies the venue. Ekiben is explicitly not visited (Baltimore 2018–2021). Momofuku CCDC is now specifically confirmed by Alex; the restaurant was identified in Washington, DC, and held a 2019 Michelin Plate distinction, not a star. Its exact visit date remains unknown. Its chef-founder David Chang's 2013 James Beard win was at a different location in NYC. On October 25, Alex marked Alma Cocina Latina as possibly visited during Baltimore 2018–2021; this is an explicit uncertain interview response and does not make a confirmed restaurant visit. Magdalena interview clues now distinguish pre-2020 fine dining from the October 2020 Maryland Bistro rebrand. Keep discovering period-appropriate restaurants in Baltimore/DC and Colorado based on the user's reported favorite meals. The Pendry restaurant identity remains an unconfirmed lead until the user verifies Rec Pier Chop House. Confirmed by user: The Majestic Restaurant (Kansas City), Rec Pier Chop House (Baltimore). Le Fou Frog is a high-priority 'frog' identification lead but remains unconfirmed.",
   "candidates": [
     {
       "id": "altimore-charleston",
@@ -604,13 +605,18 @@
       "awardFamily": "context",
       "interviewCue": "The main Italian chophouse at the Sagamore Pendry Hotel in Fells Point; opened in March 2017. Stylish dining room with leather booths, green velvet banquettes, pasta, steaks and large windows overlooking Thames Street.",
       "sourceUrl": "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/",
-      "visitStatus": "unreviewed",
+      "visitStatus": "confirmed",
       "userMemoryLead": {
         "recalled": "Alex confirmed visiting a restaurant inside Sagamore Pendry Baltimore, but the specific venue has not yet been identified.",
         "candidateConfidence": "high",
-        "identityConfirmed": false,
-        "source": "Alex's recollection on 2026-10-25"
-      }
+        "identityConfirmed": true,
+        "source": "Alex's recollection on 2026-10-25",
+        "confirmedOn": "2026-10-25"
+      },
+      "confirmedVisitId": "rec-pier-chop-house-baltimore",
+      "visitPeriod": "2018–2021; exact date unknown",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Direct user confirmation on 2026-10-25"
     },
     {
       "id": "candidate-baltimore-le-comptoir-du-vin",
@@ -688,6 +694,41 @@
       "interviewCue": "Steamboat restaurant listed by the resort among 2020–21 openings; ask whether visited on same ski trip.",
       "sourceUrl": "https://www.steamboat.com/-/media/steamboat/pdfs/w202122-press-kit.pdf",
       "visitStatus": "unreviewed"
+    },
+    {
+      "id": "candidate-kansas-city-metro-the-majestic-restaurant",
+      "area": "Kansas City Metro",
+      "name": "The Majestic Restaurant",
+      "recognition": "Historical steakhouse and live jazz; no Michelin/James Beard distinction claimed",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "931 Broadway, Kansas City; steakhouse upstairs, jazz supper club downstairs.",
+      "sourceUrl": "https://majestickc.com/jazz-club/",
+      "visitStatus": "confirmed",
+      "confirmedVisitId": "majestic-kansas-city",
+      "visitPeriod": "Kansas City trips since 2010, date unknown",
+      "reviewedOn": "2026-10-25",
+      "reviewSource": "Direct user confirmation October 25, 2026"
+    },
+    {
+      "id": "candidate-kansas-city-metro-le-fou-frog",
+      "area": "Kansas City Metro",
+      "name": "Le Fou Frog",
+      "recognition": "French restaurant opened 1996; no Michelin or James Beard distinction asserted",
+      "recognitionYear": null,
+      "awardFamily": "context",
+      "interviewCue": "400 E. 5th Street, River Market, Kansas City. Intimate French bistro with red curtains, white tablecloths, romantic lighting and old French posters. Established in 1996 by Mano and Barbara Rafael.",
+      "sourceUrl": "https://www.lefoufrog.com/directions",
+      "visitStatus": "unreviewed",
+      "researchStatus": "high_priority_identification",
+      "priority": "high",
+      "addedOn": "2026-10-25",
+      "userMemoryLead": {
+        "recalled": "Alex remembers visiting a Kansas City restaurant containing 'frog' in its name.",
+        "candidateConfidence": "high",
+        "identityConfirmed": false,
+        "source": "Direct user memory on October 25, 2026"
+      }
     }
   ]
 }

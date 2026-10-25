@@ -82,6 +82,18 @@
       {
         "title": "Rec Pier Chop House official hotel restaurant",
         "url": "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/"
+      },
+      {
+        "title": "The Majestic's official jazz supper club",
+        "url": "https://majestickc.com/jazz-club/"
+      },
+      {
+        "title": "Rec Pier Chop House official site",
+        "url": "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/"
+      },
+      {
+        "title": "Le Fou Frog official address and history",
+        "url": "https://www.lefoufrog.com/directions"
       }
     ],
     "jamesBeard": "James Beard recognitions record award category, result (winner/finalist/semifinalist), year, the honoree, and associated restaurant. Chef recognition does not mean the restaurant itself won an institutional award. Award years after a meal remain subsequent achievements. A restaurant recognized after a user's visit may be tagged as subsequently awarded, rather than suggesting it held the award on the dinner date.",
@@ -481,6 +493,68 @@
       "favorite": false,
       "referenceUrl": "https://thamesstreetoysterhouse.com/",
       "locationUrl": "https://www.google.com/maps/search/?api=1&query=1728%20Thames%20Street%2C%20Baltimore%2C%20MD%2021231"
+    },
+    {
+      "id": "majestic-kansas-city",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "The Majestic Restaurant",
+      "city": "Kansas City",
+      "region": "Missouri",
+      "country": "USA",
+      "neighborhood": "Downtown",
+      "address": "931 Broadway Blvd, Kansas City, MO 64105",
+      "visit": {
+        "date": null,
+        "dateText": "Kansas City visits, 2010–present (exact date unknown)",
+        "precision": "unknown",
+        "source": "Alex directly confirmed The Majestic Restaurant in the Culture Passport interview on October 25, 2026."
+      },
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No Michelin star or James Beard distinction is claimed for this venue or this visit."
+      },
+      "recognitions": [],
+      "summary": "Confirmed visit to The Majestic, a downtown Kansas City steakhouse with a basement jazz supper club. Exact dining date and jazz performers are unknown.",
+      "evidenceStatus": "reported",
+      "referenceUrl": "https://majestickc.com/jazz-club/"
+    },
+    {
+      "id": "rec-pier-chop-house-baltimore",
+      "kind": "restaurant",
+      "status": "confirmed",
+      "name": "Rec Pier Chop House",
+      "city": "Baltimore",
+      "region": "Maryland",
+      "country": "USA",
+      "neighborhood": "Fells Point",
+      "address": "1715 Thames Street, Baltimore, MD 21231",
+      "visit": {
+        "date": null,
+        "dateText": "Baltimore years, 2018–2021 (exact date unknown)",
+        "precision": "year_range",
+        "source": "Alex directly confirmed Rec Pier Chop House in the Culture Passport interview on October 25, 2026.",
+        "possibleYears": [
+          2018,
+          2019,
+          2020,
+          2021
+        ]
+      },
+      "guide": {
+        "distinction": "not_covered",
+        "stars": 0,
+        "historicalVisitDistinction": "not_applicable",
+        "sourceUrl": null,
+        "note": "No Michelin star or James Beard distinction is claimed for this venue or this visit."
+      },
+      "recognitions": [],
+      "summary": "Confirmed visit to Rec Pier Chop House, the Italian chophouse inside Sagamore Pendry Baltimore in Fells Point. Exact meal date remains unknown.",
+      "evidenceStatus": "reported",
+      "referenceUrl": "https://www.pendry.com/baltimore/dining/rec-pier-chop-house/"
     }
   ],
   "excludedResearch": [
