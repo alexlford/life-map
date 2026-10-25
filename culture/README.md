@@ -122,3 +122,7 @@ Mister Oso is a single user-confirmed restaurant story, not a branch-level award
 - https://www.westword.com/food-drink/mr-oso-wash-park-open-14893628/
 
 Public Culture pages prioritize story over booking fields. Story copy migrated from an earlier editorial branch has been merged with newer records without reverting the Yuan Wonton, Safta, or Smok updates. 
+
+## Faster Boulder and mountain-town dining interview (2026-10-25)
+
+27 historically relevant Michelin Guide 2026 candidates have been added across Boulder, Aspen, Breckenridge, Vail/Beaver Creek, Telluride, and RiNo/Denver. Frasca Food and Wine is correctly assigned to Boulder. All new candidates are **unreviewed** until confirmed directly by the user and are not included in the visited collection. Main source: https://www.michelin.com/en/publications/products-and-services/michelin-guide-unveils-first-statewide-selection-for-colorado . Collect replies in batches rather than demanding exact dates or multiple follow-up questions per venue.
