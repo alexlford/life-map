@@ -47,7 +47,14 @@ assert "did not visit" in bar_goto["reviewSource"].lower()
 assert bar_goto["recognitionYear"] == 2018 and bar_goto["screening"]["status"] == "award_qualified"
 assert not any(r["title"] in {"Bar Goto", "The Dead Rabbit", "Dante", "Leyenda", "PDT (Please Don't Tell)"} for r in records)
 existing_conditions = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "Existing Conditions")
-assert existing_conditions["visitStatus"] == "unreviewed"
+clover_club = next(c for c in candidates if c["area"] == "New York City" and c["name"] == "Clover Club")
+assert clover_club["visitStatus"] == "unreviewed"
+assert clover_club["recognitionYear"] == 2018
+assert next(c for c in candidates if c["area"] == "New York City" and c["name"] == "PDT (Please Don't Tell)")["visitStatus"] == "maybe"
+assert next(c for c in candidates if c["area"] == "New York City" and c["name"] == "The Dead Rabbit")["visitStatus"] == "not_visited"
+
+assert not any(r["title"] == "Existing Conditions" for r in records)
+assert existing_conditions["visitStatus"] == "not_visited"
 assert pdt["visitStatus"] == "maybe" and rabbit["visitStatus"] == "not_visited"
 assert leyenda["visitStatus"] == "not_visited"
 assert not any(r["title"] in {"Leyenda", "Dante"} for r in records)
