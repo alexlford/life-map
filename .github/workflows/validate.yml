@@ -20,7 +20,6 @@ jobs:
           node --check dining.js
           node --check dining-interview.js
           node --check culture/assets/app.js
-          node --check culture/assets/app.js
           node --check fast-app.js
           node --check polish.js
           node --check conference-display.js
