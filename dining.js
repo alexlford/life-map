@@ -29,7 +29,7 @@
       if(r.kind==="restaurant"){
         const distinction=r.guide.distinction==="selected"?"Michelin Selected":r.guide.distinction==="starred"?(r.guide.stars+" Michelin Star"+(r.guide.stars===1?"":"s")):r.guide.distinction;
         add(card,"span","distinction",distinction+" · "+r.guide.edition+" Guide");
-        add(card,"p","note",r.guide.distinction==="starred"&&r.visit.timingRelativeToAward==="unverified"?"Exact meal date still unknown; whether the star had already been awarded at the time is unverified.":"Exact visit date and Michelin recognition at the time of the meal are not yet established.");
+        add(card,"p","note",r.guide.distinction==="starred"&&r.visit.timingRelativeToAward==="unverified"?"Exact meal date unknown; whether the star was awarded by then remains unverified.":r.guide.historicalVisitDistinction==="starred"?"One Michelin star in each possible visit year; exact visit date remains unknown.":"Exact visit date and Michelin recognition at the time of the meal are not yet established.");
         const bottom=add(card,"div","record-footer");
         external(bottom,"View Michelin listing ↗",r.guide.sourceUrl);
       }else if(r.candidates){
@@ -49,7 +49,7 @@
   function updateStats(){
     // Count named visited venues that earned stars in the guide edition matching the remembered visit year.
     // The exact date relative to the star award is recorded separately and must never be inferred.
-    const counted=entries.filter(x=>x.status==="confirmed"&&x.kind==="restaurant"&&x.guide?.distinction==="starred"&&x.guide.stars>0&&x.visit?.approximateYear===x.guide.edition);
+    const counted=entries.filter(x=>{if(x.status!=="confirmed"||x.kind!=="restaurant"||x.guide?.distinction!=="starred"||!(x.guide.stars>0))return false;const possibleYears=Array.isArray(x.visit.possibleYears)?x.visit.possibleYears:[x.visit.approximateYear];const verified=Array.isArray(x.guide.verifiedEditions)?x.guide.verifiedEditions:[x.guide.edition];return possibleYears.length>0&&possibleYears.every(y=>Number.isInteger(y)&&verified.includes(y));});
     const visits=entries.filter(x=>x.status==="confirmed");
     const leads=entries.filter(x=>x.status==="researching");
     document.getElementById("stat-stars").textContent=String(counted.length);
