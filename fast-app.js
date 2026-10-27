@@ -44,9 +44,9 @@
 
     try {
       const [p, e, s] = await Promise.all([
-        fetch('./data/places.json', { cache: 'force-cache' }).then(ok).then(r => r.json()),
-        fetch('./data/experiences.json', { cache: 'force-cache' }).then(ok).then(r => r.json()),
-        fetch('./data/stories.json', { cache: 'force-cache' }).then(ok).then(r => r.json())
+        fetch('./data/places.json', { cache: 'no-cache' }).then(ok).then(r => r.json()),
+        fetch('./data/experiences.json', { cache: 'no-cache' }).then(ok).then(r => r.json()),
+        fetch('./data/stories.json', { cache: 'no-cache' }).then(ok).then(r => r.json())
       ]);
 
       state.places = p.places || [];
