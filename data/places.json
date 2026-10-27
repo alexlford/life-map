@@ -733,6 +733,26 @@
         "name": "Downtown Honolulu representative point",
         "url": "https://mapcarta.com/Honolulu/Downtown"
       }
+    },
+    {
+      "id": "guam-general",
+      "name": "Guam (island-wide travel)",
+      "displayName": "Guam · RGS-A work trips",
+      "kind": "island-region",
+      "region": "GU",
+      "country": "US",
+      "mapRegion": "guam",
+      "coordinates": {
+        "lat": 13.468,
+        "lng": 144.77
+      },
+      "coordinatePrecision": "region",
+      "verificationStatus": "verified_representative",
+      "source": {
+        "name": "Approximate Guam island reference point; no specific facility asserted",
+        "url": "https://www.openstreetmap.org/#map=11/13.468/144.770"
+      },
+      "coordinateNote": "Representative location only, not a visited base, building, or test site. Two RGS-A trips were confirmed, but destinations within Guam were not specified."
     }
   ]
 }
