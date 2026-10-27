@@ -50,7 +50,7 @@ def main() -> None:
         lng = p["coordinates"]["lng"]
         assert -90 <= lat <= 90, f"Invalid latitude: {p['id']}"
         assert -180 <= lng <= 180, f"Invalid longitude: {p['id']}"
-        assert p["coordinatePrecision"] in {"building", "installation", "campus", "venue", "city"}
+        assert p["coordinatePrecision"] in {"building", "installation", "campus", "venue", "city", "region"}
 
     for e in experiences:
         assert e["placeId"] in by_id, f"Unknown placeId in {e['id']}: {e['placeId']}"
