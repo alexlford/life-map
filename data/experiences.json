@@ -173,11 +173,18 @@
       "placeId": "ng-azusa",
       "domain": "work",
       "category": "ng-campus",
-      "label": "Azusa campus",
+      "label": "Frequent visits to Azusa campus · senior management",
       "organization": "Northrop Grumman",
       "period": null,
-      "dateStatus": "to-be-added",
-      "displayPriority": 70
+      "dateStatus": "exact_travel_dates_unknown",
+      "displayPriority": 70,
+      "note": "Repeated personal visits during Boulder systems engineering management; director and senior director based at Azusa.",
+      "roleContext": "Boulder Systems Engineering Manager 3 (2021–2025)",
+      "source": {
+        "type": "First-person recollection",
+        "date": "2026-10-27"
+      },
+      "visitStatus": "personally_visited"
     },
     {
       "id": "work-campus-melbourne",
@@ -206,22 +213,36 @@
       "placeId": "ng-space-park",
       "domain": "work",
       "category": "ng-campus",
-      "label": "Space Park",
+      "label": "Visits to Space Park campus",
       "organization": "Northrop Grumman",
       "period": null,
-      "dateStatus": "to-be-added",
-      "displayPriority": 70
+      "dateStatus": "exact_travel_dates_unknown",
+      "displayPriority": 70,
+      "note": "Personally visited Space Park during the Boulder Systems Engineering Manager 3 period.",
+      "roleContext": "Boulder Systems Engineering Manager 3 (2021–2025)",
+      "source": {
+        "type": "First-person recollection",
+        "date": "2026-10-27"
+      },
+      "visitStatus": "personally_visited"
     },
     {
       "id": "work-campus-dayton",
       "placeId": "ng-dayton",
       "domain": "work",
       "category": "ng-campus",
-      "label": "Dayton campus",
+      "label": "Dayton campus · distributed engineering team",
       "organization": "Northrop Grumman",
       "period": null,
-      "dateStatus": "to-be-added",
-      "displayPriority": 70
+      "dateStatus": "exact_travel_dates_unknown",
+      "displayPriority": 70,
+      "note": "Personally visited Dayton; a direct-report manager and several team members were based there and supported NASIC at Wright-Patterson Air Force Base.",
+      "roleContext": "Boulder Systems Engineering Manager 3 (2021–2025)",
+      "source": {
+        "type": "First-person recollection",
+        "date": "2026-10-27"
+      },
+      "visitStatus": "personally_visited"
     },
     {
       "id": "work-campus-huntsville",
@@ -280,10 +301,17 @@
       "placeId": "wright-patterson-afb",
       "domain": "work",
       "category": "mission-site",
-      "label": "Worked on Wright-Patterson AFB",
+      "label": "Team work at NASIC · Wright-Patterson AFB",
       "period": null,
-      "dateStatus": "to-be-added",
-      "displayPriority": 85
+      "dateStatus": "exact_travel_dates_unknown",
+      "displayPriority": 62,
+      "note": "Dayton-based manager and employees supported NASIC work at Wright-Patterson AFB. User's personal visit to the base was not confirmed.",
+      "roleContext": "Boulder Systems Engineering Manager 3 (2021–2025)",
+      "source": {
+        "type": "First-person recollection",
+        "date": "2026-10-27"
+      },
+      "visitStatus": "team_assignment_only_personal_visit_unverified"
     },
     {
       "id": "work-site-peterson",
