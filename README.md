@@ -58,7 +58,7 @@ The production entry point is deliberately **dependency-free**. `index.html` loa
 
 `fast-app.js` performs Web Mercator projection, pan/zoom, marker clustering, filtering, timeline behavior, deep-link state, and detail-card interactions without requiring a third-party mapping library.
 
-CARTO Dark Matter raster tiles are progressive enhancement only. They are created as ordinary image elements after the local interface is running. If the tile service is slow or unavailable, the map remains usable on the navy/grid background with projected markers and all controls intact.
+OpenStreetMap raster tiles are progressive enhancement only. The native cartographic layer is recolored with CSS to preserve the dark design, with visible OpenStreetMap attribution. Browser caching and provider usage policy must be respected; tiles are requested only for the current viewport. They are created as ordinary image elements after the local interface is running. If the tile service is slow or unavailable, the map remains usable on the navy/grid background with projected markers and all controls intact.
 
 Legacy MapLibre files remain in the repository for reference and possible future enhanced-mode experiments, but they are **not loaded by the production page**.
 
@@ -80,7 +80,8 @@ Current precision levels:
 - `installation` — a military/base installation reference point or centroid;
 - `campus` — a university or multi-building corporate campus point;
 - `venue` — a conference/event venue;
-- `city` — representative city-center point only.
+- `city` — representative city-center point only;
+- `region` — an approximate island or regional reference point only, never evidence of a particular visited facility.
 
 ## Initial scope
 
@@ -150,3 +151,10 @@ The destination repository's independent CI is active and passing. GitHub Pages 
 ## Content hygiene
 
 Use approximate periods and years for personal history; do not invent precision. Keep geography in the location datasets. For restaurant, chef, award, and performance histories, edit the separate Culture Passport repository instead. 
+
+## October 2026 map maintenance
+
+- Replaced CARTO's formerly keyless dark raster tiles after CARTO began returning an API-key watermark for unauthenticated requests. The new browser tile source is `https://tile.openstreetmap.org/{z}/{x}/{y}.png`, with visible attribution and ordinary browser caching. Do not bulk-prefetch tiles. The map remains functional without background tiles.
+- Changed the first Work map view to a US-centered overview, avoiding the unreadable global clusters shown in the previous opening view. The **View all** control still fits all locations, including Guam and the United Kingdom.
+- Added a region-level Guam marker for **two first-person-confirmed Guam work trips** supporting RGS-A. It is deliberately not pinned to Naval Base Guam or any particular installation because the user did not specify visited facilities or trip dates. Region-level coordinate precision is separately validated.
+- Updated JSON data fetches to revalidate on load without changing browser caching of tile images.
