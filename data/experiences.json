@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-08-10",
+  "updated": "2026-10-27",
   "experiences": [
     {
       "id": "birth-peoria-1988",
@@ -8,7 +8,11 @@
       "domain": "life",
       "category": "birthplace",
       "label": "Born in Peoria, Illinois",
-      "period": { "start": "1988-02", "end": "1988-02", "precision": "month" },
+      "period": {
+        "start": "1988-02",
+        "end": "1988-02",
+        "precision": "month"
+      },
       "displayPriority": 100
     },
     {
@@ -17,7 +21,11 @@
       "domain": "life",
       "category": "residence",
       "label": "Lived in Lewistown, Illinois",
-      "period": { "start": "1988", "end": "1996", "precision": "year" },
+      "period": {
+        "start": "1988",
+        "end": "1996",
+        "precision": "year"
+      },
       "displayPriority": 90
     },
     {
@@ -26,7 +34,11 @@
       "domain": "life",
       "category": "residence",
       "label": "Lived in Carterville, Illinois",
-      "period": { "start": "1996", "end": "2006", "precision": "year" },
+      "period": {
+        "start": "1996",
+        "end": "2006",
+        "precision": "year"
+      },
       "displayPriority": 90
     },
     {
@@ -36,7 +48,11 @@
       "category": "university",
       "label": "University of Illinois",
       "organization": "University of Illinois Urbana-Champaign",
-      "period": { "start": "2006", "end": "2010", "precision": "year" },
+      "period": {
+        "start": "2006",
+        "end": "2010",
+        "precision": "year"
+      },
       "displayPriority": 95
     },
     {
@@ -46,7 +62,11 @@
       "category": "university",
       "label": "University of Kansas",
       "organization": "University of Kansas",
-      "period": { "start": "2010", "end": "2017", "precision": "year" },
+      "period": {
+        "start": "2010",
+        "end": "2017",
+        "precision": "year"
+      },
       "displayPriority": 95
     },
     {
@@ -55,7 +75,11 @@
       "domain": "life",
       "category": "residence",
       "label": "Lived in Charleston, South Carolina",
-      "period": { "start": "2017", "end": "2018", "precision": "year" },
+      "period": {
+        "start": "2017",
+        "end": "2018",
+        "precision": "year"
+      },
       "periodNote": "Approximately three months; exact months not yet recorded.",
       "displayPriority": 80
     },
@@ -65,7 +89,11 @@
       "domain": "life",
       "category": "residence",
       "label": "Lived in Baltimore, Maryland",
-      "period": { "start": "2018", "end": "2021", "precision": "year" },
+      "period": {
+        "start": "2018",
+        "end": "2021",
+        "precision": "year"
+      },
       "displayPriority": 90
     },
     {
@@ -74,7 +102,11 @@
       "domain": "life",
       "category": "residence",
       "label": "Lives in Denver, Colorado",
-      "period": { "start": "2021", "end": null, "precision": "year" },
+      "period": {
+        "start": "2021",
+        "end": null,
+        "precision": "year"
+      },
       "ongoing": true,
       "displayPriority": 100
     },
@@ -85,7 +117,11 @@
       "category": "home-campus",
       "label": "Graduate Assistant — University of Kansas",
       "organization": "University of Kansas",
-      "period": { "start": "2010", "end": "2017", "precision": "year" },
+      "period": {
+        "start": "2010",
+        "end": "2017",
+        "precision": "year"
+      },
       "displayPriority": 100
     },
     {
@@ -95,7 +131,11 @@
       "category": "home-campus",
       "label": "Physics Project Manager — Hawkes Learning",
       "organization": "Hawkes Learning",
-      "period": { "start": "2017", "end": "2018", "precision": "year" },
+      "period": {
+        "start": "2017",
+        "end": "2018",
+        "precision": "year"
+      },
       "periodNote": "Approximately three months; exact months not yet recorded.",
       "displayPriority": 100
     },
@@ -106,7 +146,11 @@
       "category": "home-campus",
       "label": "Northrop Grumman BWI — career base",
       "organization": "Northrop Grumman",
-      "period": { "start": "2018", "end": "2021", "precision": "year" },
+      "period": {
+        "start": "2018",
+        "end": "2021",
+        "precision": "year"
+      },
       "displayPriority": 100
     },
     {
@@ -114,21 +158,15 @@
       "placeId": "ng-boulder",
       "domain": "work",
       "category": "home-campus",
-      "label": "Boulder Gunbarrel District — career base",
+      "label": "Boulder Gunbarrel District — career base (September 2021–present)",
       "organization": "Northrop Grumman",
-      "period": { "start": "2021", "end": "2025", "precision": "year" },
-      "displayPriority": 100
-    },
-    {
-      "id": "work-home-ng-aurora",
-      "placeId": "ng-aurora",
-      "domain": "work",
-      "category": "home-campus",
-      "label": "Aurora — career base",
-      "organization": "Northrop Grumman",
-      "period": { "start": "2025", "end": null, "precision": "year" },
-      "ongoing": true,
-      "displayPriority": 100
+      "period": {
+        "start": "2021-09",
+        "end": null,
+        "precision": "month"
+      },
+      "displayPriority": 100,
+      "ongoing": true
     },
     {
       "id": "work-campus-azusa",
@@ -374,7 +412,11 @@
       "category": "conference",
       "label": "2019 IEEE International Symposium on Phased Array Systems and Technology",
       "organization": "IEEE",
-      "period": { "start": "2019-10-15", "end": "2019-10-18", "precision": "day" },
+      "period": {
+        "start": "2019-10-15",
+        "end": "2019-10-18",
+        "precision": "day"
+      },
       "displayPriority": 60,
       "details": {
         "eventName": "2019 IEEE International Symposium on Phased Array Systems and Technology",

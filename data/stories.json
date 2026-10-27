@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-08-10",
+  "updated": "2026-10-27",
   "careerChapters": [
     {
       "id": "lawrence",
@@ -31,21 +31,12 @@
     },
     {
       "id": "boulder",
-      "period": "2021–2025",
+      "period": "Sep 2021–present",
       "placeId": "ng-boulder",
       "location": "Boulder, Colorado",
-      "title": "Systems Engineering Leadership",
-      "role": "Systems Engineering Manager",
-      "summary": "Systems engineering leadership across ground processing and relay ground stations, including SEIT leadership for six next-generation sites on Guam."
-    },
-    {
-      "id": "aurora",
-      "period": "2025–present",
-      "placeId": "ng-aurora",
-      "location": "Aurora, Colorado",
-      "title": "Lead Systems Engineering",
-      "role": "Senior Staff Engineer, Systems",
-      "summary": "A return to a fully technical role focused on lead systems engineering, system architecture, integration, and mission execution."
+      "title": "Systems Engineering Leadership & Technical Execution",
+      "role": "Systems Engineering Manager → Senior Staff Engineer, Systems / Lead Systems Engineer",
+      "summary": "Boulder has remained my Northrop Grumman career base since September 2021. Here I led multidisciplinary ground-systems engineering and relay-station efforts and later returned to a senior technical lead role, without relocating my career base to Aurora."
     }
   ],
   "places": {
@@ -83,26 +74,16 @@
       "chapter": "RF & Hardware"
     },
     "ng-boulder": {
-      "eyebrow": "CAREER BASE // 2021–2025",
-      "headline": "Scaling from subsystem engineering to systems leadership",
-      "summary": "The Boulder Gunbarrel District became my home base as I moved into Space Systems and broader systems engineering leadership.",
+      "eyebrow": "CAREER BASE // SEP 2021–PRESENT",
+      "headline": "Boulder: systems leadership and technical execution",
+      "summary": "The Boulder Gunbarrel District has remained my Northrop Grumman career base since September 2021, spanning systems engineering management, ground-system integration and my present Senior Staff Engineer / Lead Systems Engineer role.",
       "highlights": [
         "Led systems engineering teams supporting operational ground-processing missions.",
         "Served as SEIT lead for six next-generation relay ground stations on Guam.",
-        "Combined waterfall program milestones with Agile execution, including Scrum Master responsibilities."
+        "Transitioned from engineering management into senior technical systems leadership while continuing to work from Boulder.",
+        "Connected architecture, interfaces, integration, verification and technical decision-making."
       ],
-      "chapter": "Systems Engineering Leadership"
-    },
-    "ng-aurora": {
-      "eyebrow": "CAREER BASE // 2025–PRESENT",
-      "headline": "Back to a fully technical systems role",
-      "summary": "Aurora marks the next chapter: Senior Staff Engineer, Systems, with a focus on lead systems engineering and technical mission execution.",
-      "highlights": [
-        "Lead systems engineering across complex ground and mission-system problems.",
-        "Focus on architecture, interfaces, integration, verification, and technical decision-making.",
-        "Carry forward experience spanning RF hardware, software-enabled ground systems, and engineering leadership."
-      ],
-      "chapter": "Lead Systems Engineering"
+      "chapter": "Systems Engineering Leadership & Technical Execution"
     },
     "naval-base-guam": {
       "eyebrow": "MISSION SITE // GUAM",
@@ -113,7 +94,10 @@
         "Scrum Master from program startup through Preliminary Design Review.",
         "Technical oversight of ground-terminal equipment and antenna subcontractors, including site visits."
       ],
-      "relatedPlaceIds": ["camp-blaz", "andersen-afb"],
+      "relatedPlaceIds": [
+        "camp-blaz",
+        "andersen-afb"
+      ],
       "chapter": "Systems Engineering Leadership"
     },
     "camp-blaz": {
@@ -125,7 +109,10 @@
         "On-island coordination across government, industry, and subcontractor teams.",
         "Part of a Guam mission footprint spanning northern and western installations."
       ],
-      "relatedPlaceIds": ["andersen-afb", "naval-base-guam"],
+      "relatedPlaceIds": [
+        "andersen-afb",
+        "naval-base-guam"
+      ],
       "chapter": "Systems Engineering Leadership"
     },
     "andersen-afb": {
@@ -137,7 +124,10 @@
         "Supported technical coordination for ground infrastructure and mission interfaces.",
         "Connected geographically to Camp Blaz and Naval Base Guam within the same program footprint."
       ],
-      "relatedPlaceIds": ["camp-blaz", "naval-base-guam"],
+      "relatedPlaceIds": [
+        "camp-blaz",
+        "naval-base-guam"
+      ],
       "chapter": "Systems Engineering Leadership"
     },
     "raf-molesworth": {
@@ -149,7 +139,9 @@
         "Part of a UK work footprint that also included nearby RAF Alconbury.",
         "Molesworth and Alconbury are separated by only about eight miles."
       ],
-      "relatedPlaceIds": ["raf-alconbury"]
+      "relatedPlaceIds": [
+        "raf-alconbury"
+      ]
     },
     "raf-alconbury": {
       "eyebrow": "MISSION SITE // UNITED KINGDOM",
@@ -160,7 +152,9 @@
         "Closely linked geographically with RAF Molesworth.",
         "Part of the international expansion of my professional work map."
       ],
-      "relatedPlaceIds": ["raf-molesworth"]
+      "relatedPlaceIds": [
+        "raf-molesworth"
+      ]
     },
     "darpa-hq": {
       "eyebrow": "GOVERNMENT SITE // ARLINGTON",

@@ -88,7 +88,7 @@ The seed data includes:
 
 - Personal geography from Peoria, Illinois (1988) through Denver, Colorado (2021–present).
 - University of Illinois and University of Kansas.
-- Five professional career chapters: Lawrence, Charleston, Baltimore/BWI, Boulder, and Aurora.
+- Four professional career chapters: Lawrence, Charleston, Baltimore/BWI, and Boulder. Boulder remains the career base from September 2021 through the present, spanning engineering management and senior technical leadership; Aurora is not a separate career chapter.
 - Northrop Grumman campuses around the United States.
 - U.S. military/government mission sites.
 - Guam and United Kingdom work sites.
