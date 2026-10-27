@@ -423,6 +423,29 @@
         "venue": "The Westin Waltham Boston",
         "city": "Waltham, Massachusetts"
       }
+    },
+    {
+      "id": "work-rgs-a-two-guam-trips",
+      "placeId": "guam-general",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "RGS-A · two trips to Guam",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "unconfirmed",
+      "displayPriority": 95,
+      "visitCount": 2,
+      "details": {
+        "program": "Relay Ground Station–Asia (RGS-A)",
+        "purpose": "Program support",
+        "visits": 2,
+        "geographicPrecision": "Guam island only; specific installations and facilities not confirmed"
+      },
+      "source": {
+        "type": "first-person",
+        "date": "2026-10-27",
+        "statement": "I went to Guam twice in support of the program."
+      }
     }
   ]
 }
