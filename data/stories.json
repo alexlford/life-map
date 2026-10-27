@@ -188,14 +188,26 @@
     },
     "guam-general": {
       "eyebrow": "WORK TRAVEL // RGS-A",
-      "headline": "Two journeys to Guam in support of RGS-A",
-      "summary": "I traveled to Guam twice to support Relay Ground Station–Asia, bringing the program's ground-station work beyond the proposal and engineering reviews and into the geography of the mission.",
+      "headline": "Two Guam trips. Two very different summit stories.",
+      "summary": "I traveled to Guam twice for Northrop Grumman's RGS-A program. The first trip was for the initial site survey and became memorable for taking the wrong mountain trail, getting lost in high grass, and an unexpected German beachside pub afterward. On the second visit, I traveled with more colleagues, learned a lot, and made time to climb the island's highest peak.",
       "highlights": [
-        "Two first-person-confirmed Guam visits in support of RGS-A.",
-        "RGS-A was my first major space-to-ground communications program after moving to Boulder.",
-        "Travel dates, specific locations on Guam and particular trip activities remain to be documented."
+        "First trip: initial RGS-A site survey, followed by a wrong turn that led to Mount Jumullong Manglo instead of Mount Lamlam.",
+        "Lost the trail on the return, army-crawled through high grass before sunset, and found a gas station for hydrogen peroxide before discovering a lively German pub near the beach.",
+        "Second trip: traveled with a larger Northrop Grumman group, learned a lot, and successfully climbed Mount Lamlam.",
+        "Related Strava-backed hiking records: May 11, 2022 (Jumullong Manglo), and March 9, 2023 (Lamlam). These dates do not define the work-trip dates."
       ],
-      "chapter": "Systems Engineering Leadership"
+      "chapter": "Systems Engineering Leadership",
+      "adventures": [
+        {
+          "title": "First hike · Mount Jumullong Manglo",
+          "url": "https://adventures.alexlford.com/record/2022-05-11-mount-jumullong-manglo/"
+        },
+        {
+          "title": "Second hike · Mount Lamlam",
+          "url": "https://adventures.alexlford.com/record/2023-03-09-mount-lamlam/"
+        }
+      ],
+      "evidence": "User's October 27, 2026 recollection and existing date-stamped Adventures hiking entries; work travel dates and exact sites unspecified; pub unidentified."
     }
   }
 }
