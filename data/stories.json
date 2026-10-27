@@ -36,7 +36,7 @@
       "location": "Boulder, Colorado",
       "title": "Systems Engineering Leadership & Technical Execution",
       "role": "Systems Engineering Manager → Senior Staff Engineer, Systems / Lead Systems Engineer",
-      "summary": "Boulder has remained my Northrop Grumman career base since September 2021. Here I led multidisciplinary ground-systems engineering and relay-station efforts and later returned to a senior technical lead role, without relocating my career base to Aurora."
+      "summary": "Boulder remained my Northrop Grumman career base from September 2021 onward. As a senior manager I led roughly 50 OPIR ground-processing systems engineers across four managers, frequently traveled to Azusa and also visited Space Park and Dayton, while my Dayton-based team supported NASIC work. Later I transitioned from functional leadership into Senior Staff Engineer, Systems (November 2025), then Senior Staff Chief Engineer (April 2026)."
     }
   ],
   "places": {
@@ -217,6 +217,70 @@
           "url": "https://maps.apple.com/place?address=115%20Kalamasa%20Cir,%20Inarajan,%20Guam%20%2096915,%20United%20States&coordinate=13.304852,144.762106&name=MC%20Kraut's%20Restaurant&place-id=IAB4C202910475A6F&map=explore"
         }
       ]
+    },
+    "ng-azusa": {
+      "eyebrow": "WORK TRAVEL // AZUSA",
+      "headline": "Staying connected to the leadership team",
+      "summary": "During my Boulder years as Systems Engineering Manager 3, I traveled frequently to Northrop Grumman's Azusa campus, where my director and senior director were based. Those visits were part of leading an engineering organization spread across multiple locations.",
+      "highlights": [
+        "Repeated personal campus visits, dates not yet cataloged.",
+        "Director and senior director worked at Azusa during this period.",
+        "This is a work-travel location, not a relocation or career base."
+      ],
+      "chapter": "Systems Engineering Leadership",
+      "relatedPlaceIds": [
+        "ng-boulder",
+        "ng-space-park",
+        "ng-dayton"
+      ],
+      "evidence": "First-person interview, October 27, 2026; no individual leadership names or visit dates disclosed."
+    },
+    "ng-space-park": {
+      "eyebrow": "WORK TRAVEL // SPACE PARK",
+      "headline": "Across the Southern California space organization",
+      "summary": "I visited Northrop Grumman's Space Park campus while managing a geographically dispersed OPIR ground-processing engineering organization based in Boulder.",
+      "highlights": [
+        "Personally confirmed site visit during my Boulder management years.",
+        "No exact visit dates or program-specific on-site activities yet recorded."
+      ],
+      "chapter": "Systems Engineering Leadership",
+      "relatedPlaceIds": [
+        "ng-azusa",
+        "ng-boulder"
+      ],
+      "evidence": "First-person interview, October 27, 2026."
+    },
+    "ng-dayton": {
+      "eyebrow": "WORK TRAVEL // DAYTON",
+      "headline": "Leading colleagues beyond the home campus",
+      "summary": "I visited Northrop Grumman's Dayton campus as part of leading a geographically distributed engineering organization. A manager and several employees worked in Dayton and supported NASIC work at Wright-Patterson Air Force Base.",
+      "highlights": [
+        "Dayton campus visits are personally confirmed.",
+        "Dayton-based manager and staff supported NASIC at Wright-Patterson.",
+        "Personal visits to the air base itself have not been established."
+      ],
+      "chapter": "Systems Engineering Leadership",
+      "relatedPlaceIds": [
+        "ng-boulder",
+        "wright-patterson-afb"
+      ],
+      "evidence": "First-person interview, October 27, 2026. Distinguishes visited Northrop Grumman campus from employee assignment location."
+    },
+    "wright-patterson-afb": {
+      "eyebrow": "TEAM ASSIGNMENT // NASIC",
+      "headline": "Where the Dayton-based engineering team supported the mission",
+      "summary": "During my Boulder engineering-management tenure, a Dayton-based manager and several employees supported the National Air and Space Intelligence Center (NASIC) at Wright-Patterson Air Force Base. This is a connection through the team; my own visit to the installation is unconfirmed.",
+      "highlights": [
+        "Team assignment at NASIC is confirmed by first-person recollection.",
+        "Personal visit to Wright-Patterson Air Force Base not established.",
+        "Shown as a related work location, not a claimed personal visit."
+      ],
+      "chapter": "Systems Engineering Leadership",
+      "relatedPlaceIds": [
+        "ng-dayton",
+        "ng-boulder"
+      ],
+      "evidence": "First-person interview, October 27, 2026; avoids implying personal access or visit to the installation."
     }
   }
 }
