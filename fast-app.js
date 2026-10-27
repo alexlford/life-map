@@ -63,7 +63,8 @@
       updateAll();
 
       requestAnimationFrame(() => {
-        fitVisible();
+        if (state.mode === 'work' && !qs.get('place')) focusWorkOverview();
+        else fitVisible();
         renderMap();
         const deep = qs.get('place');
         if (deep && state.placeById.has(deep)) showPlace(deep, true);
@@ -432,7 +433,7 @@
           img.draggable = false;
           img.decoding = 'async';
           img.fetchPriority = 'low';
-          img.src = `https://a.basemaps.cartocdn.com/dark_all/${z}/${wx}/${ty}.png`;
+          img.src = `https://tile.openstreetmap.org/${z}/${wx}/${ty}.png`;
           img.onerror = () => {
             tileNodes.delete(key);
             img.remove();
@@ -544,6 +545,17 @@
     const lng = adjusted.reduce((sum, c) => sum + c.lng, 0) / adjusted.length;
     const lat = adjusted.reduce((sum, c) => sum + c.lat, 0) / adjusted.length;
     return { lng: wrapLng(lng), lat };
+  }
+
+  function focusWorkOverview() {
+    // Begin with a recognizable North American context rather than a
+    // global all-sites fit that collapses most of the user's work into clusters.
+    // View all locations is still available through the existing fit control.
+    const width = el.map.getBoundingClientRect().width;
+    state.camera.zoom = width <= 600 ? 3 : width <= 900 ? 3.2 : 3.75;
+    state.camera.lng = -91.5;
+    state.camera.lat = width <= 900 ? 16 : 38.5;
+    queueRender();
   }
 
   function fitVisible() {
