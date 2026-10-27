@@ -323,6 +323,7 @@
       <h2>${esc(place.displayName || place.name)}</h2>
       <div class="detail-location">${esc(prettyLocation(place))}</div>
       ${story ? `<section class="story-card"><h3>${esc(story.headline || '')}</h3><p>${esc(story.summary || '')}</p>${story.highlights?.length ? `<ul>${story.highlights.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}</section>` : ''}
+      ${story?.adventures?.length ? `<div class="adventures-related"><span>Related hiking adventures</span>${story.adventures.filter(x => /^https:\/\/adventures\.alexlford\.com\/record\//.test(x.url)).map(x => `<a href="${attr(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.title)} ↗</a>`).join('')}</div>` : ''}
       ${related.length ? `<div class="related-sites"><span>Related places</span><div>${related.map(x => `<button type="button" data-related-place="${esc(x.id)}">${esc(x.displayName || x.name)}</button>`).join('')}</div></div>` : ''}
       <div>${exps.map(x => `<div class="experience"><strong>${esc(x.label || x.organization || 'Experience')}</strong><span>${esc(formatPeriod(x))}${x.organization ? ` · ${esc(x.organization)}` : ''}</span></div>`).join('')}</div>
       <details class="map-meta"><summary>Map location details</summary><div>${place.coordinates.lat.toFixed(5)}, ${place.coordinates.lng.toFixed(5)} · ${esc(place.coordinatePrecision || 'mapped')}${place.address ? `<br>${esc(place.address)}` : ''}${place.source?.url ? `<br><a href="${attr(place.source.url)}" target="_blank" rel="noopener">Coordinate source</a>` : ''}</div></details>
