@@ -119,3 +119,10 @@ body.is-embedded .panel-head h1{margin-top:0}
   .marker,.cluster{transition:none}
 }
 .site-intro .atlas-brand-link{pointer-events:auto;color:var(--gold-soft);text-decoration:none}.site-intro .atlas-brand-link:hover{text-decoration:underline}body.is-embedded .atlas-brand-link{display:none}
+
+/* Links from the Work map's Guam story to original hiking records. */
+.adventures-related{display:flex;flex-direction:column;gap:9px;padding:18px 0;margin:13px 0;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.adventures-related>span{font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--gold-soft);text-transform:uppercase;margin-bottom:3px}
+.adventures-related a{font-size:12px;font-weight:700;color:#edcf96;line-height:1.5;text-decoration:none}
+.adventures-related a:hover{text-decoration:underline}
+.adventures-related a:focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px}
