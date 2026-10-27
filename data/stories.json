@@ -189,10 +189,10 @@
     "guam-general": {
       "eyebrow": "WORK TRAVEL // RGS-A",
       "headline": "Two Guam trips. Two very different summit stories.",
-      "summary": "I traveled to Guam twice for Northrop Grumman's RGS-A program. The first trip was for the initial site survey and became memorable for taking the wrong mountain trail, getting lost in high grass, and an unexpected German beachside pub afterward. On the second visit, I traveled with more colleagues, learned a lot, and made time to climb the island's highest peak.",
+      "summary": "I traveled to Guam twice for Northrop Grumman's RGS-A program. The first trip was for the initial site survey and became memorable for taking the wrong mountain trail, getting lost in high grass, and a surprise stop at McKraut's German restaurant afterward. On the second visit, I traveled with more colleagues, learned a lot, and made time to climb the island's highest peak.",
       "highlights": [
         "First trip: initial RGS-A site survey, followed by a wrong turn that led to Mount Jumullong Manglo instead of Mount Lamlam.",
-        "Lost the trail on the return, army-crawled through high grass before sunset, and found a gas station for hydrogen peroxide before discovering a lively German pub near the beach.",
+        "Lost the trail on the return, army-crawled through high grass before sunset, and found a gas station for hydrogen peroxide before discovering McKraut's, a lively German restaurant near the beach.",
         "Second trip: traveled with a larger Northrop Grumman group, learned a lot, and successfully climbed Mount Lamlam.",
         "Related Strava-backed hiking records: May 11, 2022 (Jumullong Manglo), and March 9, 2023 (Lamlam). These dates do not define the work-trip dates."
       ],
@@ -207,7 +207,15 @@
           "url": "https://adventures.alexlford.com/record/2023-03-09-mount-lamlam/"
         }
       ],
-      "evidence": "User's October 27, 2026 recollection and existing date-stamped Adventures hiking entries; work travel dates and exact sites unspecified; pub unidentified."
+      "evidence": "User's October 27, 2026 recollection and existing date-stamped Adventures hiking entries; work travel dates and exact sites unspecified; pub unidentified. Restaurant identity identified by first-person Apple Maps link on October 27, 2026; location corroborated by Inalåhan directory. Restaurant stop date still approximate.",
+      "restaurants": [
+        {
+          "name": "McKraut's Bar & Restaurant",
+          "location": "115 Kalamasa Circle, Malojloj, Inalåhan (Inarajan), Guam",
+          "relation": "Remembered stop after the first trip's Mount Jumullong Manglo hike",
+          "url": "https://maps.apple.com/place?address=115%20Kalamasa%20Cir,%20Inarajan,%20Guam%20%2096915,%20United%20States&coordinate=13.304852,144.762106&name=MC%20Kraut's%20Restaurant&place-id=IAB4C202910475A6F&map=explore"
+        }
+      ]
     }
   }
 }
