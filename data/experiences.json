@@ -368,10 +368,19 @@
       "placeId": "raf-molesworth",
       "domain": "work",
       "category": "mission-site",
-      "label": "Worked at RAF Molesworth",
+      "label": "Worked at RAF Molesworth · RMWT GMI UK trip",
       "period": null,
-      "dateStatus": "to-be-added",
-      "displayPriority": 90
+      "dateStatus": "confirmed-visit-exact-dates-unknown",
+      "displayPriority": 90,
+      "visitStatus": "personally_confirmed_work_site",
+      "note": "User directly confirmed working at RAF Molesworth during a memorable UK work trip associated with the RMWT GMI GEP Lead chapter, while staying in Cambridge. Do not infer specific facility/mission details or status as an operational GEP.",
+      "linkedPlaceIds": [
+        "cambridge-england"
+      ],
+      "source": {
+        "type": "Direct first-person interview",
+        "date": "2026-10-27"
+      }
     },
     {
       "id": "work-site-raf-alconbury",
@@ -492,6 +501,26 @@
       },
       "source": {
         "type": "first-person",
+        "date": "2026-10-27"
+      }
+    },
+    {
+      "id": "work-trip-cambridge-rmwt-gmi",
+      "placeId": "cambridge-england",
+      "domain": "work",
+      "category": "work-trip-stay",
+      "label": "Stayed in Cambridge during RMWT GMI UK trip",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "trip-dates-not-established",
+      "displayPriority": 82,
+      "visitStatus": "personally_confirmed_stay",
+      "note": "During a standout United Kingdom work trip associated with the RMWT GMI GEP Lead chapter, stayed in Cambridge while working at RAF Molesworth. No specific lodging property or daily travel arrangement asserted.",
+      "linkedPlaceIds": [
+        "raf-molesworth"
+      ],
+      "source": {
+        "type": "Direct first-person interview",
         "date": "2026-10-27"
       }
     }
