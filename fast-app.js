@@ -292,7 +292,7 @@
       <div class="detail-eyebrow">${esc(CONFIG[category(exps[0] || {})]?.label || 'Mapped place')}</div>
       <h2>${esc(place.displayName || place.name)}</h2>
       <div class="detail-location">${esc(prettyLocation(place))}</div>
-      <div>${exps.map(x => `<div class="experience"><strong>${esc(x.label || x.organization || 'Location')}</strong><span>${esc(formatPeriod(x))}${x.organization ? ` · ${esc(x.organization)}` : ''}</span></div>`).join('')}</div>
+      <div>${exps.map(x => `<div class="experience"><strong>${esc(x.label || x.organization || 'Location')}</strong><span>${esc(formatPeriod(x))}${x.organization ? ` · ${esc(x.organization)}` : ''}</span>${(x.passportLinks || []).filter(link => /^https:\/\//.test(link.url || '')).map(link => `<a class="passport-record-link" href="${attr(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label || 'Open in Passport')} ↗</a>`).join('')}</div>`).join('')}</div>
       <div class="map-meta"><div>${place.coordinates.lat.toFixed(5)}, ${place.coordinates.lng.toFixed(5)} · ${esc(place.coordinatePrecision || 'mapped')}${place.address ? ` · ${esc(place.address)}` : ''}${place.source?.url ? ` · <a href="${attr(place.source.url)}" target="_blank" rel="noopener noreferrer">Coordinate source</a>` : ''}</div></div>
     </div>`;
 
