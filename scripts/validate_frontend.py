@@ -51,14 +51,17 @@ def main() -> None:
     assert 'is-expanded' in POLISH_JS
     assert '--sheet-compact' in POLISH_CSS
     assert '--sheet-expanded' in POLISH_CSS
-    assert 'career-map-label' in POLISH_JS and 'career-map-label' in POLISH_CSS
-    assert 'career-cluster' in POLISH_JS and 'career-cluster' in POLISH_CSS
-
+    assert 'career-map-label' not in POLISH_JS
+    assert './data/stories.json' not in APP
+    assert 'story-card' not in APP
+    assert 'id="journey"' not in INDEX
+    assert 'passport-record-link' in APP
+    assert 'data/places.json' in APP and 'data/experiences.json' in APP
     # Basemap images are progressive enhancement only: index may preconnect, but does not load tile assets itself.
-    assert INDEX.count('basemaps.cartocdn.com') == 2, "Only DNS/preconnect hints should mention the basemap host"
-    assert 'basemaps.cartocdn.com' in APP
+    assert 'tile.openstreetmap.org' in INDEX
+    assert 'tile.openstreetmap.org' in APP
 
-    print("OK: production entry point is dependency-free, mobile-scroll safe, and map-first polished")
+    print("OK: map-only frontend, outbound Passport links, and mobile scroll controls")
 
 
 if __name__ == "__main__":
