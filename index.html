@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#04131f" />
   <meta name="color-scheme" content="dark" />
-  <meta name="description" content="An interactive geographic timeline of the places that have shaped Alex Ford's life, education, and professional work." />
+  <meta name="description" content="Interactive map of places associated with Alex Ford's life, education, and work." />
   <title>Life Map | Alex Ford</title>
   <link rel="dns-prefetch" href="//tile.openstreetmap.org" />
   <link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin />
-  <link rel="stylesheet" href="./fast-app.css?v=20261027-guam-stories" />
+  <link rel="stylesheet" href="./fast-app.css?v=20261027-map-only" />
   <link rel="stylesheet" href="./polish.css?v=20260810-1757" />
   <link rel="stylesheet" href="./conference-display.css?v=20260810-1757" />
   <link rel="stylesheet" href="./readability.css?v=20260828-1" />
   <link rel="stylesheet" href="./touch-targets.css?v=20260828-1" />
   <link rel="stylesheet" href="./brand-lockup.css?v=20260828-1" />
-  <script defer src="./fast-app.js?v=20261027-mckrauts"></script>
+  <script defer src="./fast-app.js?v=20261027-map-only"></script>
   <script defer src="./polish.js?v=20260810-1757"></script>
   <script defer src="./conference-display.js?v=20260810-1757"></script>
   <script defer src="./labels.js?v=20260810-1757"></script>
@@ -48,18 +48,13 @@
 
     <aside class="panel" aria-label="Journey controls">
       <div class="panel-head">
-        <div><small>Alex Ford · Life and Work</small><h1 id="panelTitle">Explore the journey</h1></div>
+        <div><small>Alex Ford · Life and Work</small><h1 id="panelTitle">Explore locations</h1></div>
         <div class="count" aria-live="polite"><strong id="count">0</strong><span>places</span></div>
       </div>
 
-      <section id="journey" class="journey">
-        <div class="journey-heading"><span>Career chapters</span><span>Select to zoom</span></div>
-        <div id="chapters" class="chapters"></div>
-      </section>
-
       <div class="panel-scroll">
         <div class="search-wrap">
-          <label class="search" for="search"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="Search a place or experience" /></label>
+          <label class="search" for="search"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="Search locations" /></label>
           <div id="searchResults" class="search-results" hidden></div>
         </div>
 
