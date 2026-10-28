@@ -63,13 +63,6 @@ body.is-embedded .panel-head h1{margin-top:0}
 .panel-head h1{margin:4px 0 0;font-size:21px;letter-spacing:-.035em;line-height:1.12}
 .count{text-align:right}.count strong{display:block;color:var(--gold-soft);font-size:19px}.count span{color:#78909e;font-size:9px;text-transform:uppercase;letter-spacing:.08em}
 
-.journey{padding:0 19px 14px;border-bottom:1px solid var(--line)}
-.journey-heading{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;color:#c9d3d9;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
-.journey-heading span:last-child{color:#718795;font-size:9px;font-weight:500;text-transform:none;letter-spacing:0}
-.chapters{display:flex;gap:7px;overflow-x:auto;padding:1px 1px 4px;scrollbar-width:none}.chapters::-webkit-scrollbar{display:none}
-.chapter{flex:0 0 139px;padding:9px 10px 10px;border:1px solid rgba(217,169,78,.18);border-radius:9px;background:rgba(217,169,78,.045);text-align:left;cursor:pointer}
-.chapter:hover,.chapter.active{border-color:rgba(217,169,78,.48);background:rgba(217,169,78,.09)}
-.chapter span{display:block;color:var(--gold);font-size:9px;font-weight:700}.chapter strong{display:block;margin-top:3px;font-size:11px;line-height:1.2}.chapter em{display:block;margin-top:4px;color:#718795;font-size:9px;font-style:normal}
 
 .panel-scroll{min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;padding:14px 19px 20px}
 .search{display:flex;align-items:center;gap:8px;padding:0 11px;border:1px solid rgba(255,255,255,.10);border-radius:9px;background:rgba(255,255,255,.035)}
@@ -87,8 +80,7 @@ body.is-embedded .panel-head h1{margin-top:0}
 
 .detail-panel{position:absolute;z-index:35;top:68px;right:14px;width:min(410px,calc(100vw - 28px));max-height:calc(100dvh - 96px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;border:1px solid rgba(255,255,255,.10);border-radius:14px;background:rgba(7,29,45,.97);box-shadow:var(--shadow);backdrop-filter:blur(18px)}
 .detail-close{position:sticky;z-index:2;top:8px;float:right;width:32px;height:32px;margin:8px 8px 0 0;padding:0;border:1px solid rgba(255,255,255,.12);border-radius:50%;background:#071d2d;cursor:pointer;font-size:19px}
-.detail{padding:21px 20px 19px}.detail-eyebrow{color:var(--gold);font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.detail h2{margin:6px 40px 6px 0;font-size:23px;line-height:1.08;letter-spacing:-.035em}.detail-location{color:#8398a5;font-size:10px}.story-card{margin:17px 0 14px;padding:15px 16px;border:1px solid rgba(217,169,78,.25);border-radius:12px;background:linear-gradient(145deg,rgba(217,169,78,.075),rgba(255,255,255,.018))}.story-card h3{margin:0;font-size:17px;line-height:1.2}.story-card p{margin:9px 0 0;color:#b8c5cc;font-size:11px;line-height:1.55}.story-card ul{display:grid;gap:7px;margin:11px 0 0;padding:0;list-style:none}.story-card li{position:relative;padding-left:14px;color:#d4dde2;font-size:10px;line-height:1.45}.story-card li::before{content:"";position:absolute;left:1px;top:.62em;width:7px;height:1px;background:var(--gold)}
-.related-sites{margin:0 0 13px}.related-sites>span{display:block;margin-bottom:7px;color:#8499a6;font-size:9px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}.related-sites>div{display:flex;flex-wrap:wrap;gap:6px}.related-sites button{padding:7px 9px;border:1px solid rgba(217,169,78,.23);border-radius:999px;background:rgba(217,169,78,.055);color:#dce5e9;cursor:pointer;font-size:9px;font-weight:700}.related-sites button:hover{border-color:rgba(217,169,78,.48);background:rgba(217,169,78,.10)}
+.detail{padding:21px 20px 19px}.detail-eyebrow{color:var(--gold);font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.detail h2{margin:6px 40px 6px 0;font-size:23px;line-height:1.08;letter-spacing:-.035em}.detail-location{color:#8398a5;font-size:10px}
 .experience{padding:11px 0;border-top:1px solid rgba(255,255,255,.075)}.experience strong{display:block;font-size:11px;line-height:1.3}.experience span{display:block;margin-top:4px;color:#8397a4;font-size:9px;line-height:1.35}
 .map-meta{margin-top:13px;padding-top:11px;border-top:1px solid rgba(255,255,255,.075);color:#718795;font-size:9px;line-height:1.55}.map-meta summary{width:max-content;max-width:100%;color:#93a5b0;cursor:pointer;font-weight:700}.map-meta>div{margin-top:8px}.map-meta a{color:var(--gold-soft)}
 
@@ -98,7 +90,6 @@ body.is-embedded .panel-head h1{margin-top:0}
   .map-toolbar{right:10px}
   .panel{top:auto;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));width:auto;max-height:min(56dvh,580px);display:block;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;border-radius:12px}
   .panel-head{padding:15px 16px 11px}
-  .journey{padding:0 16px 11px}
   .panel-scroll{overflow:visible;padding:12px 16px 20px}
   .detail-panel{top:auto;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));width:auto;max-height:72dvh;border-radius:12px}
   .attribution{bottom:calc(58dvh + 13px);font-size:7px}
@@ -109,8 +100,6 @@ body.is-embedded .panel-head h1{margin-top:0}
   .map-tool{width:32px;height:32px}.map-tool.wide{display:none}
   .panel{max-height:58dvh}
   .count{display:none}
-  .journey-heading{margin-bottom:6px}
-  .chapter{flex-basis:124px;padding:8px 9px}.chapter em{display:none}
   .filters{gap:5px}.filter{padding:7px 8px}
   .detail h2{font-size:21px}
 }
@@ -120,9 +109,3 @@ body.is-embedded .panel-head h1{margin-top:0}
 }
 .site-intro .atlas-brand-link{pointer-events:auto;color:var(--gold-soft);text-decoration:none}.site-intro .atlas-brand-link:hover{text-decoration:underline}body.is-embedded .atlas-brand-link{display:none}
 
-/* Links from the Work map's Guam story to original hiking records. */
-.adventures-related{display:flex;flex-direction:column;gap:9px;padding:18px 0;margin:13px 0;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
-.adventures-related>span{font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--gold-soft);text-transform:uppercase;margin-bottom:3px}
-.adventures-related a{font-size:12px;font-weight:700;color:#edcf96;line-height:1.5;text-decoration:none}
-.adventures-related a:hover{text-decoration:underline}
-.adventures-related a:focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px}
