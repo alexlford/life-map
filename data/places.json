@@ -774,6 +774,27 @@
         "url": "https://mapcarta.com/Plano"
       },
       "coordinateNote": "Representative city-level coordinate only, not a contractor office, review venue, or visited facility."
+    },
+    {
+      "id": "cambridge-england",
+      "name": "Cambridge",
+      "displayName": "Cambridge, England",
+      "kind": "city",
+      "city": "Cambridge",
+      "region": "Cambridgeshire",
+      "country": "GB",
+      "mapRegion": "great-britain",
+      "coordinates": {
+        "lat": 52.204862,
+        "lng": 0.11968025
+      },
+      "coordinatePrecision": "city",
+      "verificationStatus": "verified_representative",
+      "source": {
+        "name": "Gazetteer of British Place Names · Cambridge city centroid (Ordnance Survey Open Names)",
+        "url": "https://gazetteer.org.uk/place/Cambridge%2C_Cambridgeshire_7642"
+      },
+      "coordinateNote": "Representative Cambridge city center only; not a known hotel, residence address or commute starting point."
     }
   ]
 }
