@@ -131,17 +131,20 @@
       "chapter": "Systems Engineering Leadership"
     },
     "raf-molesworth": {
-      "eyebrow": "MISSION SITE // UNITED KINGDOM",
-      "headline": "Professional work at RAF Molesworth",
-      "summary": "RAF Molesworth expanded my professional map beyond the United States and Guam, adding on-site mission work in the United Kingdom.",
+      "eyebrow": "RMWT GMI WORK TRIP // UNITED KINGDOM",
+      "headline": "Technical work at RAF Molesworth, evenings based in Cambridge",
+      "summary": "One of the most memorable experiences of my RMWT GMI Ground Entry Point Lead chapter so far was a trip to the UK. I stayed in Cambridge and worked at RAF Molesworth. The combination of international travel and technical work stands out, though the specific dates and off-duty memories are still to be explored.",
       "highlights": [
-        "Worked on-site at RAF Molesworth.",
-        "Part of a UK work footprint that also included nearby RAF Alconbury.",
-        "Molesworth and Alconbury are separated by only about eight miles."
+        "Worked at RAF Molesworth during a personally confirmed UK work trip.",
+        "Stayed in Cambridge during the visit.",
+        "The trip was singled out as the standout international GEP Lead work experience so far.",
+        "Dates, lodging, daily activities, travel logistics and any operational installation details are not yet documented."
       ],
       "relatedPlaceIds": [
-        "raf-alconbury"
-      ]
+        "cambridge-england"
+      ],
+      "chapter": "Senior Technical Leadership",
+      "evidence": "First-person interview, October 27, 2026. Personal work visit to RAF Molesworth and stay in Cambridge directly confirmed. The interview does not confirm a personal visit to RAF Alconbury or identify RAF Molesworth as an operational GEP."
     },
     "raf-alconbury": {
       "eyebrow": "MISSION SITE // UNITED KINGDOM",
@@ -296,6 +299,21 @@
         "ng-boulder"
       ],
       "evidence": "First-person recollections, October 27, 2026, including the words: 'It was great to fully dive into technical work again. Being seen as a SME'. City-level location only; personal travel not established."
+    },
+    "cambridge-england": {
+      "eyebrow": "UK WORK TRIP // CAMBRIDGE",
+      "headline": "Staying in Cambridge while working at RAF Molesworth",
+      "summary": "I stayed in Cambridge during a UK assignment for my RMWT GMI Ground Entry Point Lead work, traveling for work at RAF Molesworth. This is the international work trip that stands out most to me so far.",
+      "highlights": [
+        "Stayed in Cambridge, England; precise accommodation is not known.",
+        "Worked at RAF Molesworth during the same trip.",
+        "No exact dates, restaurants, walks or off-duty experiences documented yet."
+      ],
+      "chapter": "Senior Technical Leadership",
+      "relatedPlaceIds": [
+        "raf-molesworth"
+      ],
+      "evidence": "Direct first-person interview, October 27, 2026. City-level stay confirmed without a hotel address or travel dates. Location point represents Cambridge city center, not the place stayed."
     }
   }
 }
