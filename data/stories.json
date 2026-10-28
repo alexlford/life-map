@@ -303,19 +303,26 @@
     "cambridge-england": {
       "eyebrow": "UK WORK TRIP // CAMBRIDGE",
       "headline": "Staying in Cambridge while working at RAF Molesworth",
-      "summary": "I stayed in Cambridge during a UK assignment for my RMWT GMI Ground Entry Point Lead work, traveling for work at RAF Molesworth. This is the international work trip that stands out most to me so far. Outside of work, I loved the pubs and punting on the river.",
+      "summary": "I stayed in Cambridge during a memorable RMWT GMI work trip to the UK, working at RAF Molesworth. Away from work, I loved visiting several Cambridge pubs and punting on the river. Punting is a traditional local pastime: traveling in a long, flat-bottomed boat propelled by pushing a pole against the riverbed.",
       "highlights": [
-        "Stayed in Cambridge, England; precise accommodation is not known.",
-        "Worked at RAF Molesworth during the same trip.",
-        "Cambridge pubs and river punting were favorite off-duty memories.",
-        "Individual pub names and exact travel dates are still to be identified."
+        "Stayed in Cambridge while working at RAF Molesworth, with exact travel dates and lodging still unknown.",
+        "Visited several Cambridge pubs; individual venues have not yet been identified.",
+        "Enjoyed punting on the river in a traditional flat-bottomed boat.",
+        "Return to identifying the pubs in a later interview, rather than guessing their names now."
       ],
       "chapter": "Senior Technical Leadership",
       "relatedPlaceIds": [
         "raf-molesworth"
       ],
-      "evidence": "Direct first-person interview, October 27, 2026. City-level stay confirmed without a hotel address or travel dates. Location point represents Cambridge city center, not the place stayed. October 27 follow-up: 'puns' was a typo for 'pubs'; the user confirmed pub memories and river punting.",
-      "pubAndPuntingMemory": "Loved the pubs and punting on the river"
+      "evidence": "First-person interview and follow-up on October 27, 2026: stayed in Cambridge during RAF Molesworth work trip, loved visiting several pubs and punting. User corrected 'puns' to 'pubs' and asked to revisit pub names later. Punting description is general cultural background; no specific route or operator established.",
+      "pubAndPuntingMemory": "Loved the pubs and punting on the river",
+      "puntingExplanation": "Traditional Cambridge river outing in a flat-bottomed punt moved by a long pole pushed against the riverbed.",
+      "pubsVisited": {
+        "confirmation": "several",
+        "venuesIdentified": [],
+        "exactNumber": null,
+        "followUp": "Deferred for later Culture Passport / Work Passport interview at user's request"
+      }
     }
   }
 }
