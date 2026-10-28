@@ -2,7 +2,7 @@
 
 A live, expandable map of the places that have shaped my personal, educational, and professional life.
 
-The site is intentionally data-first. Geography lives in structured JSON, while the interface turns that data into an interactive atlas with filtering, clustering, a timeline, search, career chapters, and place detail cards.
+The site is intentionally data-first. Geography lives in structured JSON, while the interface turns that data into an interactive atlas with filtering, clustering, a timeline, search, and compact location detail cards.
 
 ## Live site
 
@@ -20,7 +20,7 @@ The map supports three primary views:
 
 1. **Life** — birthplace, residences, and education.
 2. **Work** — career bases, other Northrop Grumman campuses, mission/government/work-travel locations, and conferences.
-3. **Combined** — the full geographic story with all layers available.
+3. **Combined** — the complete map with all location layers available.
 
 The Work taxonomy is intentionally limited to four categories:
 
@@ -36,8 +36,7 @@ The interface also includes:
 - clustered markers for dense regions;
 - career-base beacon markers;
 - place and experience search;
-- story-first detail cards with related-place navigation;
-- collapsed coordinate/source metadata;
+- concise place labels, experience categories, dates, and coordinate/source metadata;
 - URL deep links for mode, timeline/year, and selected place;
 - responsive desktop and mobile layouts.
 
@@ -54,7 +53,7 @@ The interface also includes:
 
 ## Production mapping architecture
 
-The production entry point is deliberately **dependency-free**. `index.html` loads only local `fast-app.css` and `fast-app.js` plus the project's three small JSON datasets.
+The production entry point is deliberately **dependency-free**. `index.html` loads local styles/scripts and the two location datasets.
 
 `fast-app.js` performs Web Mercator projection, pan/zoom, marker clustering, filtering, timeline behavior, deep-link state, and detail-card interactions without requiring a third-party mapping library.
 
@@ -64,13 +63,12 @@ Legacy MapLibre files remain in the repository for reference and possible future
 
 ## Data model
 
-The project uses three linked datasets:
+The project uses two linked datasets:
 
 - `data/places.json` — canonical geographic places with coordinates, precision, region, and source metadata;
-- `data/experiences.json` — life, education, and work experiences that reference those places;
-- `data/stories.json` — curated public-facing career chapters and selected place narratives.
+- `data/experiences.json` — life, education, and work experiences that reference those places.
 
-Keeping **places** separate from **experiences** lets one place support multiple chapters of the story without duplicating coordinates. Story content never changes marker placement.
+Keeping **places** separate from **experiences** lets one location support multiple map markers/categories or periods without duplicating coordinates. Personal narratives belong in their respective Passport repositories, not in Life Map.
 
 Every place has a stable `id`, coordinates, a `coordinatePrecision` value, verification metadata, and source information. Exact sites and representative city points are never treated as equivalent.
 
@@ -89,7 +87,7 @@ The seed data includes:
 
 - Personal geography from Peoria, Illinois (1988) through Denver, Colorado (2021–present).
 - University of Illinois and University of Kansas.
-- Four professional career chapters: Lawrence, Charleston, Baltimore/BWI, and Boulder. Boulder remains the career base from September 2021 through the present, spanning engineering management and senior technical leadership; Aurora is not a separate career chapter.
+- Professional career-base markers in Lawrence, Charleston, Baltimore/BWI, and Boulder. Boulder remains the career base from September 2021 through the present; Aurora is not a separate career base.
 - Northrop Grumman campuses around the United States.
 - U.S. military/government mission sites.
 - Guam and United Kingdom work sites.
@@ -117,7 +115,6 @@ Run all local validators with:
 
 ```bash
 python scripts/validate_data.py
-python scripts/validate_stories.py
 python scripts/validate_frontend.py
 node --check fast-app.js
 ```
@@ -139,7 +136,7 @@ Then open `http://localhost:8000`.
 **This repository is the canonical interactive personal and professional geography map.**
 
 - **Life:** homes, formative places, education, and places central to the user's personal history.
-- **Work:** career chapters, campuses, engineering and mission sites, work travel, and conferences.
+- **Work:** career-base locations, campuses, engineering and mission sites, work travel, and conferences.
 - **Combined:** both layers of geography together.
 - The `index.html` production map and `atlas.html` landing page present these three geographic perspectives. `?mode=work` and `?embed=1&mode=work` are explicitly preserved for professional embeds.
 - Sports, Adventures, and Culture Passport each have separate repositories and separate experience archives.
@@ -150,7 +147,7 @@ The destination repository's independent CI is active and passing. GitHub Pages 
 
 ## Content hygiene
 
-Use approximate periods and years for personal history; do not invent precision. Keep geography in the location datasets. For restaurant, chef, award, and performance histories, edit the separate Culture Passport repository instead. 
+Use approximate periods and years for geographic records; do not invent precision. Life Map is a map only: do not add narrative stories, interview notes, or memoirs. Keep reflections in the separate Work, Culture, Adventures, or other Passport repositories. 
 
 ## October 2026 map maintenance
 
