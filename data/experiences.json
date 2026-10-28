@@ -375,7 +375,17 @@
       "source": {
         "type": "Direct first-person interview",
         "date": "2026-10-27"
-      }
+      },
+      "passportLinks": [
+        {
+          "passport": "work",
+          "label": "RMWT GMI · GEP Lead",
+          "url": "https://github.com/alexlford/work-passport/blob/main/data/programs.json",
+          "destinationKind": "source-record",
+          "recordId": "rmwt",
+          "note": "Canonical narrative is maintained in Work Passport. Link points to verified source until its public website URL is available."
+        }
+      ]
     },
     {
       "id": "work-site-raf-alconbury",
@@ -512,7 +522,17 @@
       "source": {
         "type": "Direct first-person interview",
         "date": "2026-10-27"
-      }
+      },
+      "passportLinks": [
+        {
+          "passport": "work",
+          "label": "RMWT GMI · UK work trip",
+          "url": "https://github.com/alexlford/work-passport/blob/main/data/programs.json",
+          "destinationKind": "source-record",
+          "recordId": "rmwt",
+          "note": "Canonical narrative is maintained in Work Passport. Link points to verified source until its public website URL is available."
+        }
+      ]
     }
   ]
 }
