@@ -474,6 +474,26 @@
         "date": "2026-10-27",
         "statement": "I went to Guam twice in support of the program."
       }
+    },
+    {
+      "id": "work-plano-senior-staff-technical-review",
+      "placeId": "plano-tx",
+      "domain": "work",
+      "category": "mission-site",
+      "label": "Early Senior Staff technical review · Plano",
+      "organization": "Northrop Grumman",
+      "period": null,
+      "dateStatus": "date_unconfirmed",
+      "displayPriority": 64,
+      "visitStatus": "work_location_confirmed_personal_visit_unverified",
+      "details": {
+        "story": "An early technical problem-solving assignment in Plano reaffirmed the value of returning to the individual-contributor track.",
+        "privacy": "Public map intentionally omits anomaly specifics, internal team name, subcontractor identity, and findings."
+      },
+      "source": {
+        "type": "first-person",
+        "date": "2026-10-27"
+      }
     }
   ]
 }
