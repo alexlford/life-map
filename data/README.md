@@ -13,7 +13,7 @@ Required fields:
 - `displayName` — preferred map/card label.
 - `kind` — e.g. `city`, `university`, `corporate-campus`, `military-installation`, `government-site`, `conference-venue`.
 - `city`, `region`, `country` — locality metadata.
-- `mapRegion` — useful for regional zoom behavior and future storytelling.
+- `mapRegion` — useful for regional zoom behavior and future map filtering.
 - `coordinates.lat`, `coordinates.lng` — WGS84 decimal degrees.
 - `coordinatePrecision` — `building`, `installation`, `campus`, `venue`, or `city`.
 - `verificationStatus` — `verified_exact` or `verified_representative` in the seed data.
@@ -39,6 +39,27 @@ Important fields:
 - `period` — start/end plus date precision where known.
 - `dateStatus: "to-be-added"` — used when the place is known but the travel/work date has not yet been recorded.
 - `displayPriority` — relative importance for labels/cards when the map is crowded.
+
+Optional `passportLinks` is a list of external references for a mapped experience, each with `passport`, `label`, `url`, and optionally `recordId` and `destinationKind`. Links take the visitor to the owning Passport for the full story. Never embed the narrative text in the map dataset.
+
+Example:
+```json
+{
+  "id": "work-site-raf-molesworth",
+  "placeId": "raf-molesworth",
+  "passportLinks": [
+    {
+      "passport": "work",
+      "label": "RMWT GMI · GEP Lead",
+      "url": "https://github.com/alexlford/work-passport/blob/main/data/programs.json",
+      "recordId": "rmwt",
+      "destinationKind": "source-record"
+    }
+  ]
+}
+```
+
+The GitHub source link is temporary until the independent Work Passport has a verified published URL. Change only this link when the published page is available; the stable place and experience IDs and canonical coordinates do not change.
 
 Seed categories:
 
@@ -69,7 +90,7 @@ For a simplified wall-poster/work-map legend, `mission-site` and `professional-t
 
 1. Add the canonical point to `places.json`.
 2. Record the best available coordinate source and precision.
-3. Add one or more entries to `experiences.json` referencing the new `placeId`.
+3. Add one or more entries to `experiences.json` referencing the new `placeId`, optionally with an outbound Passport link.
 4. Run `python scripts/validate_data.py`.
 
 This workflow is intentionally suitable for future Alaska, Australia, and other international locations without changing the schema.
