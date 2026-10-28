@@ -25,9 +25,9 @@ The `embed=1` flag removes standalone branding. The native alexlford.com page sh
 The current production entry point is intentionally dependency-free so the Experience page cannot hang while waiting for a mapping library or vector-style service.
 
 - `index.html` loads local `fast-app.css` and `fast-app.js`.
-- Canonical data comes from `data/places.json`, `data/experiences.json`, and `data/stories.json`.
+- Canonical data comes from `data/places.json` and `data/experiences.json`.
 - Marker placement uses Web Mercator projection from the exact stored coordinates.
-- Pan, zoom, clustering, filters, timeline, search, career chapters, and detail cards are implemented locally.
+- Pan, zoom, clustering, filters, timeline, search, and concise location details are implemented locally.
 - CARTO raster tiles load only as progressive-enhancement images beneath the markers. If tiles are delayed or unavailable, the interface remains usable on its navy/grid background.
 - Legacy MapLibre assets are not part of the production page's critical path.
 
@@ -35,14 +35,13 @@ The current production entry point is intentionally dependency-free so the Exper
 
 The embedded Work view is designed to act as the centerpiece of the Experience page rather than as a standalone novelty map. It includes:
 
-- five career chapters: Lawrence, Charleston, Baltimore/BWI, Boulder, and Aurora;
+- professional career-base location markers, including Lawrence, Charleston, Baltimore/BWI, and Boulder;
 - gold beacon markers for career bases;
 - the four locked Work layers: Career bases, Other NG campuses, Mission/government/travel, and Conferences;
-- curated story cards for selected career bases, mission sites, international work, and conferences;
-- related-site navigation for geographic clusters such as Guam and the United Kingdom;
-- collapsed coordinate/source metadata so the professional story is presented before the mapping mechanics.
+- factual location labels, experience categories, periods, and coordinate/source metadata;
+- URL deep links to map locations, including Guam and the United Kingdom.
 
-Curated public-facing copy lives in `data/stories.json`. Coordinates remain canonical in `data/places.json`; the story layer never changes marker placement.
+Life Map contains geography only. Narrative material belongs in the independent Work, Culture, and Adventures Passport repositories. Coordinates remain canonical in `data/places.json`.
 
 ## Visual relationship to alexlford.com
 
@@ -136,11 +135,11 @@ For the Experience page, place the map immediately below a short introduction su
 
 Below the map, retain a concise conventional professional timeline, education, selected credentials, and resume link. The map becomes the visual centerpiece while the resume-style material remains available for visitors who want detail.
 
-## Story data workflow
+## Map data workflow
 
 When adding a future location such as Alaska or Australia:
 
 1. Add or verify the canonical place in `data/places.json`.
 2. Add the mapped experience in `data/experiences.json`, using one of the four Work categories when applicable.
-3. Add curated public-facing copy to `data/stories.json` only when the location benefits from a deeper narrative.
-4. Run `python scripts/validate_data.py`, `python scripts/validate_stories.py`, and `python scripts/validate_frontend.py` before publishing.
+3. Keep stories and interviews in the relevant Passport repository rather than Life Map.
+4. Run `python scripts/validate_data.py` and `python scripts/validate_frontend.py` before publishing.
