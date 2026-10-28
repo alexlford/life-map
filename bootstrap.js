@@ -5,8 +5,7 @@
   const originalFetch = window.fetch.bind(window);
   const dataPaths = [
     './data/places.json',
-    './data/experiences.json',
-    './data/stories.json'
+    './data/experiences.json'
   ];
   const dataUrls = new Set(dataPaths.map(path => new URL(path, window.location.href).href));
   const responseCache = new Map();
