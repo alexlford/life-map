@@ -133,18 +133,20 @@
     "raf-molesworth": {
       "eyebrow": "RMWT GMI WORK TRIP // UNITED KINGDOM",
       "headline": "Technical work at RAF Molesworth, evenings based in Cambridge",
-      "summary": "One of the most memorable experiences of my RMWT GMI Ground Entry Point Lead chapter so far was a trip to the UK. I stayed in Cambridge and worked at RAF Molesworth. The combination of international travel and technical work stands out, though the specific dates and off-duty memories are still to be explored.",
+      "summary": "A memorable RMWT GMI UK work trip took me to RAF Molesworth, while I stayed in Cambridge. I remember the heat of an English summer and, outside work, Cambridge pubs and punting on the river.",
       "highlights": [
         "Worked at RAF Molesworth during a personally confirmed UK work trip.",
-        "Stayed in Cambridge during the visit.",
-        "The trip was singled out as the standout international GEP Lead work experience so far.",
-        "Dates, lodging, daily activities, travel logistics and any operational installation details are not yet documented."
+        "Stayed in Cambridge during the visit and enjoyed pubs and steering a punt on the river.",
+        "Remembered it as a hot summer in England; the exact year and dates are still unknown."
       ],
       "relatedPlaceIds": [
         "cambridge-england"
       ],
       "chapter": "Senior Technical Leadership",
-      "evidence": "First-person interview, October 27, 2026. Personal work visit to RAF Molesworth and stay in Cambridge directly confirmed. The interview does not confirm a personal visit to RAF Alconbury or identify RAF Molesworth as an operational GEP."
+      "evidence": "First-person interview, October 27, 2026. Confirmed work visit to RAF Molesworth and stay in Cambridge during a hot English summer, without exact year. User's typed phrase 'Quite base' not interpreted as 'quiet base' until confirmed. No operational GEP site details inferred.",
+      "baseDescriptionFirsthand": "Quite base",
+      "baseDescriptionPendingClarification": "Possibly 'quiet base'; meaning not yet established, so do not render as definite.",
+      "season": "summer"
     },
     "raf-alconbury": {
       "eyebrow": "MISSION SITE // UNITED KINGDOM",
