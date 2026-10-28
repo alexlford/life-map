@@ -20,7 +20,7 @@
 
   const state = {
     mode: ['work', 'life', 'combined'].includes(qs.get('mode')) ? qs.get('mode') : (qs.get('embed') === '1' ? 'work' : 'combined'),
-    places: [], experiences: [], stories: { careerChapters: [], places: {} },
+    places: [], experiences: [],
     placeById: new Map(), expByPlace: new Map(), active: new Set(Object.keys(CONFIG)),
     timeline: timelineRequested, year: initialYear, selected: null,
     camera: { lng: 10, lat: 25, zoom: 1 },
@@ -43,22 +43,19 @@
     setMode(state.mode, false);
 
     try {
-      const [p, e, s] = await Promise.all([
+      const [p, e] = await Promise.all([
         fetch('./data/places.json', { cache: 'no-cache' }).then(ok).then(r => r.json()),
-        fetch('./data/experiences.json', { cache: 'no-cache' }).then(ok).then(r => r.json()),
-        fetch('./data/stories.json', { cache: 'no-cache' }).then(ok).then(r => r.json())
+        fetch('./data/experiences.json', { cache: 'no-cache' }).then(ok).then(r => r.json())
       ]);
 
       state.places = p.places || [];
       state.experiences = e.experiences || [];
-      state.stories = s || { careerChapters: [], places: {} };
       state.placeById = new Map(state.places.map(x => [x.id, x]));
       state.experiences.forEach(x => {
         if (!state.expByPlace.has(x.placeId)) state.expByPlace.set(x.placeId, []);
         state.expByPlace.get(x.placeId).push(x);
       });
 
-      renderChapters();
       renderFilters();
       updateAll();
 
@@ -80,7 +77,7 @@
   }
 
   function cache() {
-    ['map','tiles','markers','modeSwitch','count','panelTitle','chapters','journey','search','searchResults','filters','showAll','timelineToggle','timeline','timelineYear','timelineNote','list','detail','detailBody','zoomIn','zoomOut','reset'].forEach(id => el[id] = document.getElementById(id));
+    ['map','tiles','markers','modeSwitch','count','panelTitle','search','searchResults','filters','showAll','timelineToggle','timeline','timelineYear','timelineNote','list','detail','detailBody','zoomIn','zoomOut','reset'].forEach(id => el[id] = document.getElementById(id));
   }
 
   function bind() {
@@ -131,8 +128,6 @@
         closeDetail();
         return;
       }
-      const related = ev.target.closest('[data-related-place]');
-      if (related) showPlace(related.dataset.relatedPlace, true, Math.max(7, state.camera.zoom));
     });
 
     el.map.addEventListener('pointerdown', startDrag);
@@ -164,7 +159,7 @@
     el.timelineYear.textContent = state.timeline ? String(state.year) : 'Present';
     el.timelineNote.textContent = state.timeline
       ? `Showing dated experiences through ${state.year}. Undated professional locations remain available in All time.`
-      : 'Turn on the timeline to build the journey year by year.';
+      : 'Turn on the timeline to see locations by year.';
   }
 
   function setMode(mode, refit) {
@@ -174,8 +169,7 @@
       b.classList.toggle('active', active);
       b.setAttribute('aria-pressed', String(active));
     });
-    if (el.panelTitle) el.panelTitle.textContent = mode === 'work' ? 'Professional footprint' : mode === 'life' ? 'Life & education' : 'Explore the journey';
-    if (el.journey) el.journey.hidden = mode === 'life';
+    if (el.panelTitle) el.panelTitle.textContent = mode === 'work' ? 'Professional footprint' : mode === 'life' ? 'Life & education' : 'Explore locations';
     updateUrl();
     if (state.places.length) {
       renderFilters();
@@ -218,26 +212,6 @@
         priority: Math.max(...exps.map(x => x.displayPriority || 0))
       };
     }).filter(Boolean).sort((a,b) => b.priority - a.priority || a.place.displayName.localeCompare(b.place.displayName));
-  }
-
-  function renderChapters() {
-    const chapters = state.stories.careerChapters || [];
-    el.chapters.innerHTML = chapters.map(c => `<button class="chapter" data-chapter="${esc(c.id)}" data-place="${esc(c.placeId)}" type="button"><span>${esc(c.period)}</span><strong>${esc(c.title)}</strong><em>${esc(c.location)}</em></button>`).join('');
-    el.chapters.addEventListener('click', ev => {
-      const b = ev.target.closest('[data-place]');
-      if (!b) return;
-      setMode('work', false);
-      showPlace(b.dataset.place, true, 7);
-    });
-  }
-
-  function syncActiveChapter(placeId) {
-    document.querySelectorAll('.chapter').forEach(x => {
-      const active = x.dataset.place === placeId;
-      x.classList.toggle('active', active);
-      if (active) x.setAttribute('aria-current', 'true');
-      else x.removeAttribute('aria-current');
-    });
   }
 
   function relevantCats() {
@@ -304,7 +278,6 @@
     if (!place) return;
 
     state.selected = id;
-    syncActiveChapter(id);
     updateUrl();
 
     if (focus) {
@@ -315,19 +288,12 @@
     }
 
     const exps = (state.expByPlace.get(id) || []).filter(modeOk).sort((a,b) => (b.displayPriority || 0) - (a.displayPriority || 0));
-    const story = state.stories.places?.[id];
-    const related = (story?.relatedPlaceIds || []).map(placeId => state.placeById.get(placeId)).filter(Boolean);
-
     el.detailBody.innerHTML = `<div class="detail">
-      <div class="detail-eyebrow">${esc(story?.eyebrow || CONFIG[category(exps[0] || {})]?.label || 'Mapped place')}</div>
+      <div class="detail-eyebrow">${esc(CONFIG[category(exps[0] || {})]?.label || 'Mapped place')}</div>
       <h2>${esc(place.displayName || place.name)}</h2>
       <div class="detail-location">${esc(prettyLocation(place))}</div>
-      ${story ? `<section class="story-card"><h3>${esc(story.headline || '')}</h3><p>${esc(story.summary || '')}</p>${story.highlights?.length ? `<ul>${story.highlights.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}</section>` : ''}
-      ${story?.restaurants?.length ? `<div class="adventures-related"><span>Remembered stop on Guam</span>${story.restaurants.map(x => `<a href="${attr(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.name)} · Apple Maps ↗</a>`).join('')}</div>` : ''}
-      ${story?.adventures?.length ? `<div class="adventures-related"><span>Related hiking adventures</span>${story.adventures.filter(x => /^https:\/\/adventures\.alexlford\.com\/record\//.test(x.url)).map(x => `<a href="${attr(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.title)} ↗</a>`).join('')}</div>` : ''}
-      ${related.length ? `<div class="related-sites"><span>Related places</span><div>${related.map(x => `<button type="button" data-related-place="${esc(x.id)}">${esc(x.displayName || x.name)}</button>`).join('')}</div></div>` : ''}
-      <div>${exps.map(x => `<div class="experience"><strong>${esc(x.label || x.organization || 'Experience')}</strong><span>${esc(formatPeriod(x))}${x.organization ? ` · ${esc(x.organization)}` : ''}</span></div>`).join('')}</div>
-      <details class="map-meta"><summary>Map location details</summary><div>${place.coordinates.lat.toFixed(5)}, ${place.coordinates.lng.toFixed(5)} · ${esc(place.coordinatePrecision || 'mapped')}${place.address ? `<br>${esc(place.address)}` : ''}${place.source?.url ? `<br><a href="${attr(place.source.url)}" target="_blank" rel="noopener">Coordinate source</a>` : ''}</div></details>
+      <div>${exps.map(x => `<div class="experience"><strong>${esc(x.label || x.organization || 'Location')}</strong><span>${esc(formatPeriod(x))}${x.organization ? ` · ${esc(x.organization)}` : ''}</span></div>`).join('')}</div>
+      <div class="map-meta"><div>${place.coordinates.lat.toFixed(5)}, ${place.coordinates.lng.toFixed(5)} · ${esc(place.coordinatePrecision || 'mapped')}${place.address ? ` · ${esc(place.address)}` : ''}${place.source?.url ? ` · <a href="${attr(place.source.url)}" target="_blank" rel="noopener noreferrer">Coordinate source</a>` : ''}</div></div>
     </div>`;
 
     el.detail.hidden = false;
@@ -337,7 +303,6 @@
 
   function closeDetail() {
     state.selected = null;
-    syncActiveChapter(null);
     el.detail.hidden = true;
     updateUrl();
     renderMarkers(records());
