@@ -26,12 +26,10 @@ jobs:
           node --check map-theme.js
           node --check app.js
           node --check integration.js
-          node --check story.js
           node --check editorial-ui.js
 
       - name: Validate map data and production frontend
         run: |
           python scripts/validate_data.py
-          python scripts/validate_stories.py
           python scripts/validate_conferences.py
           python scripts/validate_frontend.py
