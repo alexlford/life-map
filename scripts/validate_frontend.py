@@ -56,6 +56,7 @@ def main() -> None:
     assert 'story-card' not in APP
     assert 'id="journey"' not in INDEX
     assert 'passport-record-link' in APP
+    assert chr(0x2197) not in APP, "Emoji-capable north-east arrows must not appear in the embedded Work map"
     assert 'data/places.json' in APP and 'data/experiences.json' in APP
     # Basemap images are progressive enhancement only: index may preconnect, but does not load tile assets itself.
     assert 'tile.openstreetmap.org' in INDEX
